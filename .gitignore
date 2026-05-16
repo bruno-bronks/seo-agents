@@ -1,0 +1,17 @@
+# Outputs gerados pelos agentes
+relatorio_execucao_*.md
+bronks_*.html
+santech_*.html
+santechseguranca_*.html
+bronks_*.xml
+santech_*.xml
+bronks_*.txt
+santech_*.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.swp
