@@ -1,8 +1,11 @@
-# Outputs gerados pelos agentes
+# Outputs gerados pelos agentes (relatórios temporários)
 relatorio_execucao_*.md
-bronks_*.html
-santech_*.html
-santechseguranca_*.html
+
+# Artefatos temporários de deploy (prefixo com domínio_slug)
+bronks_blog_*.html
+santech_blog_*.html
+bronks_*_*.html
+santech_*_*.html
 bronks_*.xml
 santech_*.xml
 bronks_*.txt
