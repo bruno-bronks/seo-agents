@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultoria em IA para Empresas | Bronks IA — Rio de Janeiro</title>
+  <meta name="description" content="Consultoria especializada em Inteligência Artificial para empresas. Diagnóstico, roadmap e implementação de agentes de IA, RAG e automação. Agende uma conversa gratuita!">
+  <link rel="canonical" href="https://bronks.ia.br/consultoria-ia/">
+  <meta property="og:title" content="Consultoria em IA para Empresas | Bronks IA">
+  <meta property="og:description" content="Implante Inteligência Artificial na sua empresa com estratégia e execução técnica de ponta. Agentes, RAG, automação e muito mais.">
+  <meta property="og:url" content="https://bronks.ia.br/consultoria-ia/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bronks.ia.br/og-consultoria-ia.png">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Consultoria em Inteligência Artificial para Empresas",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "description": "Consultoria especializada em agentes de IA, RAG, automação inteligente e IA generativa para empresas.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "description": "Diagnóstico, roadmap e implementação de soluções de Inteligência Artificial para empresas brasileiras.",
+    "areaServed": "Brasil",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços de IA",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Diagnóstico de maturidade em IA"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desenvolvimento de agentes de IA"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Implementação de RAG corporativo"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automação de processos com IA"}}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é consultoria em IA para empresas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consultoria em IA é o processo de identificar oportunidades de aplicar Inteligência Artificial nos processos de uma empresa, desenhar a solução técnica ideal e implementar com segurança e escalabilidade. A Bronks IA faz diagnóstico da maturidade digital da empresa, define um roadmap de implementação e entrega a solução funcionando, seja um agente autônomo, um sistema RAG ou uma automação inteligente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto custa uma consultoria em IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O investimento varia conforme o escopo do projeto: desde diagnósticos e projetos piloto para PMEs até implementações corporativas completas. A Bronks IA oferece uma primeira conversa gratuita para entender o contexto da empresa e estimar o que faz sentido para seu momento. Entre em contato para agendar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para implementar IA na minha empresa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Um projeto piloto focado (um agente ou automação específica) pode estar em produção em 4 a 8 semanas. Implementações mais amplas, como um sistema RAG corporativo completo ou múltiplos agentes integrados, levam de 2 a 6 meses dependendo da complexidade das integrações e da infraestrutura existente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso de infraestrutura de TI para usar IA na minha empresa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não necessariamente. A maioria das soluções da Bronks IA roda em nuvem (AWS, Azure, GCP) e se integra com os sistemas que a empresa já usa. Não é preciso investir em servidores próprios. Para empresas com requisitos de segurança mais rígidos, também desenvolvemos soluções on-premise."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --azul: #4F46E5;
+      --azul-claro: #6366F1;
+      --roxo: #7C3AED;
+      --roxo-claro: #8B5CF6;
+      --preto: #080812;
+      --cinza-escuro: #12121E;
+      --cinza: #1E1E2E;
+      --branco: #F8F8FF;
+      --branco-suave: #C4C4D4;
+      --verde-cta: #10B981;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--preto); color: var(--branco); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { background: rgba(8,8,18,0.97); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #1E1E30; backdrop-filter: blur(10px); }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.3rem; background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .nav-cta { background: var(--verde-cta); color: #fff; padding: 0.55rem 1.3rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: opacity 0.2s; }
+    .nav-cta:hover { opacity: 0.9; }
+    .hero { padding: 5rem 2rem 4rem; text-align: center; background: radial-gradient(ellipse at 50% 0%, rgba(79,70,229,0.15) 0%, transparent 70%); }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(79,70,229,0.12); border: 1px solid rgba(79,70,229,0.3); color: #818CF8; padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 500; margin-bottom: 2rem; }
+    .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.5rem; }
+    .hero h1 .gradient { background: linear-gradient(90deg, #4F46E5, #7C3AED, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.15rem; color: var(--branco-suave); max-width: 620px; margin: 0 auto 2.5rem; }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: linear-gradient(135deg, #4F46E5, #7C3AED); color: #fff; padding: 0.95rem 2.2rem; border-radius: 10px; font-weight: 700; font-size: 1rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(79,70,229,0.35); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(79,70,229,0.5); }
+    .btn-secondary { background: transparent; color: var(--branco); padding: 0.95rem 2.2rem; border-radius: 10px; font-weight: 600; border: 1px solid #2a2a3e; font-size: 1rem; transition: border-color 0.2s; }
+    .btn-secondary:hover { border-color: var(--azul-claro); }
+    .trust-bar { background: var(--cinza-escuro); padding: 1.5rem 2rem; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; border-top: 1px solid #1E1E30; border-bottom: 1px solid #1E1E30; }
+    .trust-item { font-size: 0.88rem; color: #888; display: flex; align-items: center; gap: 0.4rem; }
+    .trust-item strong { color: var(--branco); }
+    .section { padding: 4.5rem 2rem; max-width: 940px; margin: 0 auto; }
+    .section h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 1.5rem; }
+    .section h2 .g { background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .section p { color: var(--branco-suave); margin-bottom: 1rem; font-size: 1rem; }
+    .servicos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .servico-card { background: var(--cinza); border: 1px solid #2a2a3e; border-radius: 14px; padding: 1.8rem; transition: border-color 0.2s, transform 0.2s; }
+    .servico-card:hover { border-color: var(--azul-claro); transform: translateY(-3px); }
+    .servico-icon { font-size: 2.2rem; margin-bottom: 1rem; }
+    .servico-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.6rem; }
+    .servico-card p { font-size: 0.9rem; color: #888; margin: 0; line-height: 1.6; }
+    .processo { counter-reset: step; margin: 2rem 0; }
+    .passo { display: flex; gap: 1.5rem; margin-bottom: 2rem; }
+    .passo-num { counter-increment: step; width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #4F46E5, #7C3AED); display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+    .passo-content h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; font-weight: 600; margin-bottom: 0.4rem; }
+    .passo-content p { font-size: 0.92rem; color: #888; margin: 0; }
+    .resultados-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.2rem; margin: 2rem 0; }
+    .resultado-box { background: var(--cinza); border: 1px solid #2a2a3e; border-radius: 12px; padding: 1.5rem; text-align: center; }
+    .resultado-num { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 700; background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .resultado-label { font-size: 0.85rem; color: #888; margin-top: 0.3rem; }
+    .faq-list { margin: 1.5rem 0; }
+    .faq-item { border: 1px solid #1E1E30; border-radius: 12px; margin-bottom: 0.8rem; overflow: hidden; }
+    .faq-q { padding: 1.1rem 1.5rem; font-weight: 600; font-size: 0.95rem; background: var(--cinza); display: flex; justify-content: space-between; }
+    .faq-a { padding: 1rem 1.5rem; color: var(--branco-suave); font-size: 0.92rem; background: var(--cinza-escuro); }
+    .cta-section { background: linear-gradient(135deg, rgba(79,70,229,0.15) 0%, rgba(124,58,237,0.1) 100%); border: 1px solid rgba(79,70,229,0.2); border-radius: 20px; margin: 4rem 2rem; padding: 3.5rem 2rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; }
+    .cta-section h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin-bottom: 1rem; }
+    .cta-section p { color: var(--branco-suave); max-width: 500px; margin: 0 auto 2rem; }
+    footer { background: #050510; padding: 2rem; text-align: center; color: #444; font-size: 0.85rem; border-top: 1px solid #1E1E30; }
+    footer a { color: var(--azul-claro); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Bronks IA</div>
+  <a class="nav-cta" href="https://bronks.ia.br/contato">Consultoria Gratuita</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">🤖 Especialistas em IA para empresas · Rio de Janeiro</div>
+  <h1>Consultoria em<br><span class="gradient">Inteligência Artificial</span><br>para Empresas</h1>
+  <p>Da estratégia à implementação: transformamos processos empresariais com agentes de IA, automação inteligente e RAG. Resultados mensuráveis, sem jargão tecnológico.</p>
+  <div class="hero-btns">
+    <a class="btn-primary" href="https://bronks.ia.br/contato">Agendar Consultoria Gratuita</a>
+    <a class="btn-secondary" href="#como-funciona">Como Funciona →</a>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-item">🏆 <strong>Projetos em produção</strong> com ROI mensurável</div>
+  <div class="trust-item">⚡ <strong>Piloto em 4 semanas</strong> para validar antes de escalar</div>
+  <div class="trust-item">🔒 <strong>Dados seguros</strong> · On-premise ou nuvem privada</div>
+  <div class="trust-item">📍 <strong>Rio de Janeiro</strong> + atendimento em todo o Brasil</div>
+</div>
+
+<section class="section">
+  <h2>O que a Bronks IA <span class="g">entrega</span></h2>
+  <p>Consultoria em IA não é só estratégia em PowerPoint. Saímos do diagnóstico até o deploy em produção — com código funcionando, métricas acompanhadas e equipe do cliente treinada.</p>
+
+  <div class="servicos-grid">
+    <div class="servico-card">
+      <div class="servico-icon">🔍</div>
+      <h3>Diagnóstico de IA</h3>
+      <p>Mapeamos os processos da empresa e identificamos onde a IA gera maior retorno. Você sai com um ranking de oportunidades priorizado por ROI estimado.</p>
+    </div>
+    <div class="servico-card">
+      <div class="servico-icon">🤖</div>
+      <h3>Agentes de IA</h3>
+      <p>Desenvolvemos agentes autônomos que executam tarefas complexas: análise de documentos, atendimento ao cliente, geração de relatórios, negociação e muito mais.</p>
+    </div>
+    <div class="servico-card">
+      <div class="servico-icon">📚</div>
+      <h3>RAG Corporativo</h3>
+      <p>Sistemas de recuperação aumentada por geração que permitem que a IA responda com base nos documentos, contratos e dados internos da empresa.</p>
+    </div>
+    <div class="servico-card">
+      <div class="servico-icon">⚙️</div>
+      <h3>Automação com IA</h3>
+      <p>Eliminamos trabalho manual repetitivo conectando sistemas via IA: ERP, CRM, e-mail, WhatsApp e planilhas integrados numa única inteligência.</p>
+    </div>
+    <div class="servico-card">
+      <div class="servico-icon">🧩</div>
+      <h3>Multiagentes</h3>
+      <p>Sistemas onde múltiplos agentes de IA colaboram: um pesquisa, outro analisa, outro redige — como uma equipe virtual especializada trabalhando em paralelo.</p>
+    </div>
+    <div class="servico-card">
+      <div class="servico-icon">📊</div>
+      <h3>Deploy e Monitoramento</h3>
+      <p>Não entregamos só o código. Fazemos o deploy, configuramos monitoramento e acompanhamos os resultados para garantir que a IA funcione em produção.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="como-funciona" style="padding-top:0;">
+  <h2>Como funciona a <span class="g">consultoria</span></h2>
+  <div class="processo">
+    <div class="passo">
+      <div class="passo-num">1</div>
+      <div class="passo-content">
+        <h3>Conversa inicial gratuita (30 min)</h3>
+        <p>Entendemos o contexto da empresa, os principais gargalos operacionais e o que você já tentou ou avaliou em termos de IA. Sem compromisso, sem PowerPoint.</p>
+      </div>
+    </div>
+    <div class="passo">
+      <div class="passo-num">2</div>
+      <div class="passo-content">
+        <h3>Diagnóstico e proposta técnica</h3>
+        <p>Com base na conversa, preparamos um diagnóstico com as 3 a 5 maiores oportunidades de IA para a empresa, estimativa de ROI e proposta técnica detalhada.</p>
+      </div>
+    </div>
+    <div class="passo">
+      <div class="passo-num">3</div>
+      <div class="passo-content">
+        <h3>Piloto em 4 semanas</h3>
+        <p>Começamos pelo caso de maior impacto. Em 4 semanas você tem um agente ou automação rodando em ambiente de teste, com dados reais da empresa.</p>
+      </div>
+    </div>
+    <div class="passo">
+      <div class="passo-num">4</div>
+      <div class="passo-content">
+        <h3>Deploy em produção e acompanhamento</h3>
+        <p>Validado o piloto, fazemos o deploy em produção com monitoramento contínuo. Acompanhamos as métricas e ajustamos a IA conforme a empresa cresce.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <h2><span class="g">Resultados</span> reais de implementações</h2>
+  <p>Exemplos de resultados de projetos implantados — adaptados ao contexto real de cada cliente:</p>
+  <div class="resultados-grid">
+    <div class="resultado-box">
+      <div class="resultado-num">97%</div>
+      <div class="resultado-label">Redução no tempo de análise de crédito (de 3 dias para &lt;5 min)</div>
+    </div>
+    <div class="resultado-box">
+      <div class="resultado-num">85%</div>
+      <div class="resultado-label">Redução em tarefas manuais de triagem de e-mails</div>
+    </div>
+    <div class="resultado-box">
+      <div class="resultado-num">10x</div>
+      <div class="resultado-label">Aumento na capacidade de atendimento sem novos contratados</div>
+    </div>
+    <div class="resultado-box">
+      <div class="resultado-num">4 sem.</div>
+      <div class="resultado-label">Da conversa inicial ao primeiro agente em produção</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <h2>Para quais <span class="g">segmentos</span> a Bronks IA atende?</h2>
+  <p>Trabalhamos com empresas de diferentes segmentos que querem escalar operações, reduzir custos ou criar vantagem competitiva com IA:</p>
+  <ul style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:1rem; list-style:none; margin:1.5rem 0;">
+    <li style="background:#1E1E2E; border-radius:10px; padding:1rem 1.2rem; border:1px solid #2a2a3e;">⚖️ <strong>Jurídico</strong> — análise de contratos e petições com IA</li>
+    <li style="background:#1E1E2E; border-radius:10px; padding:1rem 1.2rem; border:1px solid #2a2a3e;">🏦 <strong>Finanças</strong> — automação de análise de crédito e relatórios</li>
+    <li style="background:#1E1E2E; border-radius:10px; padding:1rem 1.2rem; border:1px solid #2a2a3e;">🏥 <strong>Saúde</strong> — triagem de pacientes e análise de prontuários</li>
+    <li style="background:#1E1E2E; border-radius:10px; padding:1rem 1.2rem; border:1px solid #2a2a3e;">📦 <strong>Logística</strong> — rastreamento inteligente e previsão de demanda</li>
+    <li style="background:#1E1E2E; border-radius:10px; padding:1rem 1.2rem; border:1px solid #2a2a3e;">🛒 <strong>Varejo e E-commerce</strong> — atendimento e recomendação com IA</li>
+    <li style="background:#1E1E2E; border-radius:10px; padding:1rem 1.2rem; border:1px solid #2a2a3e;">🔧 <strong>Indústria</strong> — controle de qualidade e manutenção preditiva</li>
+  </ul>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <h2>Perguntas <span class="g">Frequentes</span></h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">O que é consultoria em IA para empresas? <span>▼</span></div>
+      <div class="faq-a">Consultoria em IA é o processo de identificar onde a Inteligência Artificial pode gerar valor real na empresa, desenhar a solução técnica e implementá-la com segurança. A Bronks IA faz isso de ponta a ponta: diagnóstico, roadmap, desenvolvimento e deploy — sem deixar o cliente na mão depois da entrega.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Quanto custa uma consultoria em IA? <span>▼</span></div>
+      <div class="faq-a">O investimento varia conforme o escopo. Projetos piloto para validar um caso de uso específico têm custo menor. Implementações corporativas completas com múltiplos agentes integrados são maiores. A primeira conversa é gratuita e sem compromisso — é nela que estimamos o que faz sentido para o seu momento.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Quanto tempo leva para ter IA funcionando na minha empresa? <span>▼</span></div>
+      <div class="faq-a">Um piloto focado (um agente ou automação específica) pode estar em produção em 4 a 8 semanas. Implementações maiores levam de 2 a 6 meses conforme a complexidade das integrações com sistemas legados.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Preciso de infraestrutura de TI robusta para usar IA? <span>▼</span></div>
+      <div class="faq-a">Não. A maioria das soluções roda em nuvem (AWS, Azure, GCP) e se integra com os sistemas já utilizados. Para empresas com requisitos de segurança rígidos, também desenvolvemos soluções on-premise com modelos de linguagem rodando internamente.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">A Bronks IA atende só no Rio de Janeiro? <span>▼</span></div>
+      <div class="faq-a">Temos base no Rio de Janeiro, mas atendemos empresas em todo o Brasil e no exterior. A maioria dos projetos é conduzida de forma remota, com reuniões por videoconferência e entrega de artefatos digitais. Para clientes em RJ, também oferecemos reuniões presenciais.</div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section">
+  <h2>Pronto para implementar IA na sua empresa?</h2>
+  <p>Agende uma conversa gratuita de 30 minutos. Saímos dela com um diagnóstico inicial e as principais oportunidades de IA para o seu negócio.</p>
+  <a class="btn-primary" href="https://bronks.ia.br/contato">
+    Agendar Consultoria Gratuita →
+  </a>
+</div>
+
+<footer>
+  <p>© 2026 Bronks IA — Rio de Janeiro, RJ | <a href="https://bronks.ia.br">bronks.ia.br</a></p>
+  <p style="margin-top:0.5rem;"><a href="/agentes-ia/">Agentes de IA</a> · <a href="/rag-empresarial/">RAG Empresarial</a> · <a href="/automacao-com-ia/">Automação com IA</a> · <a href="/blog/">Blog</a></p>
+</footer>
+
+</body>
+</html>

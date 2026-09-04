@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentes de IA para Empresas | Bronks IA — Automação Inteligente</title>
+  <meta name="description" content="Desenvolvemos agentes de IA autônomos para empresas: atendimento, análise de documentos, geração de relatórios e automação de processos. Piloto em 4 semanas!">
+  <link rel="canonical" href="https://bronks.ia.br/agentes-ia/">
+  <meta property="og:title" content="Agentes de IA para Empresas | Bronks IA">
+  <meta property="og:description" content="Agentes autônomos que executam tarefas complexas na sua empresa. Da estratégia ao deploy em produção.">
+  <meta property="og:url" content="https://bronks.ia.br/agentes-ia/">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Desenvolvimento de Agentes de IA",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "address": {"@type": "PostalAddress", "addressLocality": "Rio de Janeiro", "addressRegion": "RJ", "addressCountry": "BR"}
+    },
+    "description": "Desenvolvimento de agentes de IA autônomos para automatizar processos empresariais complexos.",
+    "areaServed": "Brasil"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é um agente de IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Um agente de IA é um sistema que usa modelos de linguagem (como Claude ou GPT) para planejar, decidir e executar tarefas complexas de forma autônoma. Diferente de um chatbot simples, um agente pode usar ferramentas (buscar dados, enviar e-mails, preencher formulários, acessar sistemas) e encadear múltiplos passos até concluir uma tarefa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual a diferença entre agente de IA e chatbot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Um chatbot responde perguntas. Um agente de IA age: acessa sistemas, toma decisões, executa etapas múltiplas e produz resultados concretos. Por exemplo: um chatbot diz 'vou te transferir para o financeiro'. Um agente consulta o sistema de cobrança, verifica o contrato, calcula a parcela e já envia o boleto por e-mail."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais processos empresariais podem ser automatizados com agentes de IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os principais casos de uso são: análise e triagem de documentos (contratos, laudos, notas fiscais), atendimento ao cliente via WhatsApp com resolução autônoma, geração de relatórios financeiros e operacionais, qualificação e follow-up de leads no CRM, pesquisa de mercado e análise competitiva, e onboarding automatizado de clientes ou funcionários."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --azul: #4F46E5; --roxo: #7C3AED; --preto: #080812; --cinza-escuro: #12121E; --cinza: #1E1E2E; --branco: #F8F8FF; --suave: #C4C4D4; }
+    body { font-family: 'Inter', sans-serif; background: var(--preto); color: var(--branco); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { background: rgba(8,8,18,0.97); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #1E1E30; }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.3rem; background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .nav-cta { background: linear-gradient(135deg, #4F46E5, #7C3AED); color: #fff; padding: 0.55rem 1.3rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; }
+    .hero { padding: 5rem 2rem 4rem; text-align: center; background: radial-gradient(ellipse at 50% 0%, rgba(124,58,237,0.15) 0%, transparent 70%); }
+    .hero-badge { display: inline-block; background: rgba(124,58,237,0.12); border: 1px solid rgba(124,58,237,0.3); color: #A78BFA; padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 500; margin-bottom: 2rem; }
+    .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.5rem; }
+    .hero h1 .g { background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.1rem; color: var(--suave); max-width: 620px; margin: 0 auto 2.5rem; }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: linear-gradient(135deg, #4F46E5, #7C3AED); color: #fff; padding: 0.95rem 2.2rem; border-radius: 10px; font-weight: 700; font-size: 1rem; transition: transform 0.2s; box-shadow: 0 4px 20px rgba(79,70,229,0.35); }
+    .btn-primary:hover { transform: translateY(-2px); }
+    .btn-ghost { border: 1px solid #2a2a3e; color: #fff; padding: 0.95rem 2.2rem; border-radius: 10px; font-weight: 600; font-size: 1rem; }
+    .section { padding: 4.5rem 2rem; max-width: 940px; margin: 0 auto; }
+    .section h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 1.5rem; }
+    .section h2 .g { background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .section p { color: var(--suave); margin-bottom: 1rem; }
+    .casos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .caso-card { background: var(--cinza); border: 1px solid #2a2a3e; border-radius: 14px; padding: 1.8rem; }
+    .caso-card:hover { border-color: #4F46E5; }
+    .caso-tag { display: inline-block; font-size: 0.75rem; font-weight: 600; color: #818CF8; background: rgba(79,70,229,0.12); padding: 0.2rem 0.7rem; border-radius: 50px; margin-bottom: 0.8rem; }
+    .caso-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 0.6rem; }
+    .caso-antes-depois { display: flex; gap: 1rem; margin-top: 1rem; }
+    .antes, .depois { flex: 1; padding: 0.8rem; border-radius: 8px; font-size: 0.82rem; }
+    .antes { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2); color: #FCA5A5; }
+    .depois { background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.2); color: #6EE7B7; }
+    .antes strong, .depois strong { display: block; margin-bottom: 0.3rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .comp-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.9rem; }
+    .comp-table th { background: var(--cinza); padding: 0.9rem 1rem; text-align: left; font-family: 'Space Grotesk', sans-serif; border-bottom: 2px solid #2a2a3e; }
+    .comp-table td { padding: 0.8rem 1rem; border-bottom: 1px solid #1E1E30; color: var(--suave); }
+    .comp-table tr:hover td { background: rgba(79,70,229,0.05); }
+    .sim { color: #6EE7B7; }
+    .nao { color: #FCA5A5; }
+    .faq-list { margin: 1.5rem 0; }
+    .faq-item { border: 1px solid #1E1E30; border-radius: 12px; margin-bottom: 0.8rem; }
+    .faq-q { padding: 1.1rem 1.5rem; font-weight: 600; font-size: 0.95rem; background: var(--cinza); }
+    .faq-a { padding: 1rem 1.5rem; color: var(--suave); font-size: 0.92rem; background: var(--cinza-escuro); }
+    .cta-box { background: linear-gradient(135deg, rgba(79,70,229,0.15), rgba(124,58,237,0.1)); border: 1px solid rgba(79,70,229,0.2); border-radius: 20px; padding: 3.5rem 2rem; text-align: center; margin: 4rem 2rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+    .cta-box h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; margin-bottom: 1rem; }
+    .cta-box p { color: var(--suave); max-width: 500px; margin: 0 auto 2rem; }
+    footer { background: #050510; padding: 2rem; text-align: center; color: #444; font-size: 0.85rem; border-top: 1px solid #1E1E30; }
+    footer a { color: #818CF8; }
+    @media (max-width: 600px) { .caso-antes-depois { flex-direction: column; } .comp-table { font-size: 0.8rem; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Bronks IA</div>
+  <a class="nav-cta" href="https://bronks.ia.br/contato">Consultoria Gratuita</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">🤖 Agentes de IA para automação empresarial</div>
+  <h1><span class="g">Agentes de IA</span><br>que trabalham por você</h1>
+  <p>Desenvolvemos agentes autônomos que executam tarefas complexas na sua empresa: analisam documentos, atendem clientes, geram relatórios e integram sistemas — sem supervisão humana constante.</p>
+  <div class="hero-btns">
+    <a class="btn-primary" href="https://bronks.ia.br/contato">Ver uma Demo Gratuita</a>
+    <a class="btn-ghost" href="#casos">Ver casos de uso →</a>
+  </div>
+</section>
+
+<section class="section" id="casos">
+  <h2>O que agentes de IA <span class="g">fazem na prática</span></h2>
+  <p>Agente de IA não é chatbot. É um sistema que planeja, decide e executa — como se você tivesse um analista que nunca dorme, nunca esquece e processa dezenas de tarefas em paralelo:</p>
+
+  <div class="casos-grid">
+    <div class="caso-card">
+      <span class="caso-tag">⚖️ JURÍDICO</span>
+      <h3>Análise de Contratos</h3>
+      <p>O agente lê contratos em PDF, identifica cláusulas de risco, compara com o padrão da empresa e gera um relatório de análise em minutos.</p>
+      <div class="caso-antes-depois">
+        <div class="antes"><strong>❌ Antes</strong>3h por contrato, custo de advogado sênior</div>
+        <div class="depois"><strong>✅ Depois</strong>8 min por contrato, 97% de precisão</div>
+      </div>
+    </div>
+    <div class="caso-card">
+      <span class="caso-tag">💬 ATENDIMENTO</span>
+      <h3>Atendimento no WhatsApp</h3>
+      <p>O agente responde dúvidas, qualifica leads, abre tickets e resolve problemas com base no histórico e nas políticas da empresa — 24/7.</p>
+      <div class="caso-antes-depois">
+        <div class="antes"><strong>❌ Antes</strong>Equipe sobrecarregada, tempo de resposta &gt;2h</div>
+        <div class="depois"><strong>✅ Depois</strong>Resposta em &lt;30s, escala ilimitada</div>
+      </div>
+    </div>
+    <div class="caso-card">
+      <span class="caso-tag">💰 FINANCEIRO</span>
+      <h3>Análise de Crédito</h3>
+      <p>O agente coleta dados do solicitante, consulta fontes externas, aplica critérios de crédito e produz parecer com aprovação ou negação fundamentada.</p>
+      <div class="caso-antes-depois">
+        <div class="antes"><strong>❌ Antes</strong>3 dias úteis por análise, gargalo no time</div>
+        <div class="depois"><strong>✅ Depois</strong>&lt;5 minutos, mesma qualidade analítica</div>
+      </div>
+    </div>
+    <div class="caso-card">
+      <span class="caso-tag">📊 RELATÓRIOS</span>
+      <h3>Relatórios Automáticos</h3>
+      <p>O agente consolida dados de ERP, CRM e planilhas, gera o relatório no padrão da empresa e envia por e-mail para os gestores — diariamente ou sob demanda.</p>
+      <div class="caso-antes-depois">
+        <div class="antes"><strong>❌ Antes</strong>2h/semana de analista para montar relatórios</div>
+        <div class="depois"><strong>✅ Depois</strong>Zero horas manuais, relatório sempre no prazo</div>
+      </div>
+    </div>
+    <div class="caso-card">
+      <span class="caso-tag">🔄 CRM E VENDAS</span>
+      <h3>Follow-up de Leads</h3>
+      <p>O agente monitora leads no CRM, envia mensagens de follow-up personalizadas, qualifica interesse e agenda reuniões automaticamente no Google Calendar.</p>
+      <div class="caso-antes-depois">
+        <div class="antes"><strong>❌ Antes</strong>Leads esfriando sem acompanhamento</div>
+        <div class="depois"><strong>✅ Depois</strong>100% dos leads com follow-up em &lt;1h</div>
+      </div>
+    </div>
+    <div class="caso-card">
+      <span class="caso-tag">🏥 SAÚDE</span>
+      <h3>Triagem de Pacientes</h3>
+      <p>O agente coleta sintomas, verifica histórico e agenda consulta com o especialista correto — reduzindo tempo de espera e melhorando a experiência do paciente.</p>
+      <div class="caso-antes-depois">
+        <div class="antes"><strong>❌ Antes</strong>Recepcionistas sobrecarregadas, filas longas</div>
+        <div class="depois"><strong>✅ Depois</strong>Triagem 24/7, sem filas telefônicas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <h2>Agente de IA vs. <span class="g">Chatbot simples</span></h2>
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Capacidade</th>
+        <th>Chatbot simples</th>
+        <th>Agente de IA (Bronks)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Responder perguntas</td><td class="sim">✅</td><td class="sim">✅</td></tr>
+      <tr><td>Memória de conversas anteriores</td><td class="nao">❌</td><td class="sim">✅</td></tr>
+      <tr><td>Executar ações em sistemas externos</td><td class="nao">❌</td><td class="sim">✅</td></tr>
+      <tr><td>Tomar decisões baseadas em regras complexas</td><td class="nao">❌</td><td class="sim">✅</td></tr>
+      <tr><td>Encadear múltiplos passos (planejar + executar)</td><td class="nao">❌</td><td class="sim">✅</td></tr>
+      <tr><td>Integrar com ERP, CRM, WhatsApp API</td><td class="nao">❌</td><td class="sim">✅</td></tr>
+      <tr><td>Aprender com feedback e melhorar com o tempo</td><td class="nao">❌</td><td class="sim">✅</td></tr>
+      <tr><td>Operar como multiagente (equipe de IAs)</td><td class="nao">❌</td><td class="sim">✅</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <h2>Perguntas <span class="g">Frequentes</span></h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">O que é um agente de IA?</div>
+      <div class="faq-a">Um agente de IA é um sistema que usa modelos de linguagem avançados (como Claude da Anthropic) para planejar, decidir e executar tarefas complexas de forma autônoma. Diferente de um chatbot, o agente pode usar ferramentas (buscar dados, enviar e-mails, acessar sistemas), encadear múltiplos passos e produzir resultados concretos sem supervisão humana constante.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Qual a diferença entre agente de IA e chatbot?</div>
+      <div class="faq-a">Um chatbot responde perguntas seguindo um roteiro. Um agente age: consulta sistemas, toma decisões com base em contexto, executa etapas múltiplas e produz resultados reais. Por exemplo: um chatbot diz "vou transferir para o financeiro". Um agente verifica o contrato, calcula o débito e já envia o boleto por e-mail — sem intervenção humana.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Meus dados ficam seguros com agentes de IA?</div>
+      <div class="faq-a">Sim. Desenvolvemos agentes com princípios de segurança by design: os dados da empresa ficam na infraestrutura controlada pelo cliente (AWS, Azure ou on-premise). Usamos criptografia em trânsito e em repouso, controle de acesso por função e logs completos de auditoria. Para empresas com requisitos rigorosos (saúde, jurídico, financeiro), desenvolvemos soluções totalmente on-premise.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Quais processos da minha empresa podem ser automatizados com agentes?</div>
+      <div class="faq-a">Os principais casos de uso são: análise de contratos e documentos, atendimento ao cliente via WhatsApp, geração de relatórios operacionais e financeiros, qualificação e follow-up de leads no CRM, onboarding de clientes ou funcionários, triagem de e-mails e tickets de suporte, e pesquisa de mercado e análise competitiva. Agende uma conversa e identificamos os maiores ganhos para o seu setor.</div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-box">
+  <h2>Veja um agente de IA funcionando para o seu setor</h2>
+  <p>Agende uma demo gratuita de 30 minutos. Mostramos agentes reais em funcionamento e mapeamos o caso de uso mais relevante para a sua empresa.</p>
+  <a class="btn-primary" href="https://bronks.ia.br/contato">Agendar Demo Gratuita →</a>
+</div>
+
+<footer>
+  <p>© 2026 Bronks IA — Rio de Janeiro, RJ | <a href="https://bronks.ia.br">bronks.ia.br</a></p>
+  <p style="margin-top:0.5rem;"><a href="/consultoria-ia/">Consultoria em IA</a> · <a href="/rag-empresarial/">RAG Empresarial</a> · <a href="/automacao-com-ia/">Automação com IA</a></p>
+</footer>
+</body>
+</html>

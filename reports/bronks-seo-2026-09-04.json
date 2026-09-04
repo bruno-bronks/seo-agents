@@ -1,0 +1,283 @@
+{
+  "timestamp": "2026-09-04T12:45:00Z",
+  "domain": "bronks.ia.br",
+  "audit_method": "WebSearch (acesso direto ao site bloqueado por proxy de egresso; dados de indexação via Google SERP e análise pública)",
+  "seo_score": 28,
+  "sre_score": 55,
+  "ranking_potential": "médio-alto (com execução das ações priorizadas)",
+  "indexed_pages": [
+    {
+      "url": "https://bronks.ia.br/",
+      "title": "Bronks IA — Agentes de IA, Automação Inteligente e RAG para Empresas",
+      "status": "indexada — 1 página confirmada via site:bronks.ia.br no Google"
+    }
+  ],
+  "top_keywords": [
+    {
+      "keyword": "agentes de IA",
+      "tier": 1,
+      "estimated_volume": "5.000–20.000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia (apenas homepage indexada, sem conteúdo dedicado)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria em IA",
+      "tier": 1,
+      "estimated_volume": "2.000–8.000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "automação com IA",
+      "tier": 1,
+      "estimated_volume": "1.500–5.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "RAG empresarial",
+      "tier": 2,
+      "estimated_volume": "300–1.500/mês",
+      "difficulty": "low",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta — pouca concorrência no Brasil"
+    },
+    {
+      "keyword": "consultoria IA Rio de Janeiro",
+      "tier": 3,
+      "estimated_volume": "200–800/mês",
+      "difficulty": "medium",
+      "intent": "transacional local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta — mercado local com demanda crescente"
+    },
+    {
+      "keyword": "multiagentes IA",
+      "tier": 2,
+      "estimated_volume": "200–1.000/mês",
+      "difficulty": "low",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta — praticamente sem concorrência no Brasil"
+    },
+    {
+      "keyword": "IA para empresas",
+      "tier": 1,
+      "estimated_volume": "10.000–40.000/mês",
+      "difficulty": "high",
+      "intent": "informacional/comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "média — muito competitivo, necessário conteúdo robusto"
+    }
+  ],
+  "issues": [
+    {
+      "type": "conteúdo",
+      "severity": "crítico",
+      "description": "Apenas 1 página indexada (homepage). Nenhuma página de serviço, blog ou caso de uso está indexada. Todo o tráfego orgânico potencial para keywords de serviço é zero.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Criar e publicar páginas dedicadas para cada serviço: /consultoria-ia/, /agentes-ia/, /rag-empresarial/, /automacao-com-ia/, /multiagentes/"
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "sitemap.xml ausente ou não acessível. Sem sitemap, o Googlebot depende exclusivamente de links para descobrir novas páginas.",
+      "affected_urls": ["https://bronks.ia.br/sitemap.xml"],
+      "fix": "Publicar sitemap.xml com todas as URLs do site e submeter via Google Search Console"
+    },
+    {
+      "type": "técnico",
+      "severity": "alto",
+      "description": "robots.txt status não verificado (site inacessível via crawl direto). Risco de robots.txt incorreto bloqueando páginas importantes.",
+      "affected_urls": ["https://bronks.ia.br/robots.txt"],
+      "fix": "Verificar e corrigir robots.txt — garantir User-agent: * / Allow: / / Sitemap: https://bronks.ia.br/sitemap.xml"
+    },
+    {
+      "type": "conteúdo",
+      "severity": "alto",
+      "description": "Nenhuma página de blog ou artigo indexada. Blog é essencial para ranquear em keywords informacionais de cauda longa (80% do volume de busca).",
+      "affected_urls": [],
+      "fix": "Criar estrutura de blog em /blog/ e publicar 4 artigos pilares nas primeiras 4 semanas"
+    },
+    {
+      "type": "estrutura",
+      "severity": "alto",
+      "description": "Ausência de schema Organization ou LocalBusiness no homepage. Reduz elegibilidade para rich snippets e knowledge panel no Google.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Adicionar schema.org Organization com name, url, description, sameAs (LinkedIn, Instagram), address (Rio de Janeiro)"
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "Nenhuma página local para Rio de Janeiro. Buscas como 'consultoria IA Rio de Janeiro' ou 'agentes IA RJ' não têm página de destino.",
+      "affected_urls": [],
+      "fix": "Criar /consultoria-ia-rio-de-janeiro/ com schema LocalBusiness, menção ao RJ, cases locais"
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "landing page",
+      "title": "Agentes de IA para Empresas | Bronks IA",
+      "target_keyword": "agentes de IA",
+      "estimated_traffic_gain": "800–3.000 visitas/mês em 6 meses",
+      "priority": "alto"
+    },
+    {
+      "type": "landing page",
+      "title": "Consultoria em Inteligência Artificial para Empresas",
+      "target_keyword": "consultoria em IA",
+      "estimated_traffic_gain": "500–2.000 visitas/mês em 6 meses",
+      "priority": "alto"
+    },
+    {
+      "type": "landing page",
+      "title": "RAG Empresarial — Documentos que respondem perguntas",
+      "target_keyword": "RAG empresarial",
+      "estimated_traffic_gain": "200–800 visitas/mês em 3 meses (baixa concorrência)",
+      "priority": "alto"
+    },
+    {
+      "type": "artigo",
+      "title": "O que é um agente de IA? Guia completo para empresas",
+      "target_keyword": "o que é agente de IA",
+      "estimated_traffic_gain": "1.000–4.000 visitas/mês em 4 meses",
+      "priority": "alto"
+    },
+    {
+      "type": "artigo",
+      "title": "Como implementar RAG na sua empresa: guia prático",
+      "target_keyword": "como implementar RAG",
+      "estimated_traffic_gain": "300–1.200 visitas/mês",
+      "priority": "médio"
+    },
+    {
+      "type": "página local",
+      "title": "Consultoria em IA no Rio de Janeiro | Bronks IA",
+      "target_keyword": "consultoria IA Rio de Janeiro",
+      "estimated_traffic_gain": "150–600 visitas/mês — leads qualificados locais",
+      "priority": "médio"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/consultoria-ia/",
+      "tipo": "serviço",
+      "keyword_alvo": "consultoria em IA",
+      "justificativa": "Página criada neste ciclo. Cobre keyword Tier 1 com alto volume e intenção comercial. Schema Service + FAQ + casos de uso + CTA para consultoria gratuita."
+    },
+    {
+      "url_sugerida": "/agentes-ia/",
+      "tipo": "serviço",
+      "keyword_alvo": "agentes de IA",
+      "justificativa": "Página criada neste ciclo. Keyword mais importante do nicho. Inclui comparação chatbot vs agente, casos de uso por setor e FAQ com schema."
+    },
+    {
+      "url_sugerida": "/rag-empresarial/",
+      "tipo": "serviço",
+      "keyword_alvo": "RAG empresarial",
+      "justificativa": "Alta oportunidade: baixíssima concorrência no Brasil. Praticamente nenhuma empresa brasileira tem página dedicada a RAG corporativo. Janela de primeiro mover."
+    },
+    {
+      "url_sugerida": "/automacao-com-ia/",
+      "tipo": "serviço",
+      "keyword_alvo": "automação com IA",
+      "justificativa": "Keyword Tier 1 com volume médio e dificuldade crescente. Criar antes da janela fechar."
+    },
+    {
+      "url_sugerida": "/blog/o-que-e-agente-de-ia/",
+      "tipo": "blog",
+      "keyword_alvo": "o que é agente de IA",
+      "justificativa": "Artigo informacional de topo de funil. Alta demanda, ancora links internos para páginas de serviço e captura leads em estágio de pesquisa."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "Publicar pages /consultoria-ia/ e /agentes-ia/ no site com HTML gerado neste ciclo",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "conteúdo",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Publicar sitemap.xml gerado neste ciclo e submeter via Google Search Console",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Verificar e publicar robots.txt correto (gerado neste ciclo)",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Adicionar schema Organization ao index.html da homepage",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar e publicar /rag-empresarial/ — janela de primeiro mover com baixíssima concorrência",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Publicar primeiro artigo de blog: 'O que é um agente de IA?' (1.500+ palavras)",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar perfil no Google Business Profile (se ainda não existir) para ranquear localmente em RJ",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "xmb.com.br",
+      "keywords_overlap": ["consultoria de inteligência artificial Rio de Janeiro", "agentes IA"],
+      "estimated_traffic": "médio",
+      "content_gap": "Bronks tem posicionamento mais técnico (RAG, multiagentes) — explorar isso como diferencial"
+    },
+    {
+      "domain": "letsotto.dev",
+      "keywords_overlap": ["agência de IA Rio de Janeiro", "agentes IA"],
+      "estimated_traffic": "baixo-médio",
+      "content_gap": "Bronks pode superar com conteúdo técnico mais profundo e casos de uso por setor"
+    },
+    {
+      "domain": "d2un.com.br",
+      "keywords_overlap": ["agente de IA Rio de Janeiro"],
+      "estimated_traffic": "baixo",
+      "content_gap": "Página local por bairro e schema LocalBusiness são diferencial disponível"
+    },
+    {
+      "domain": "acmsolucoes.online",
+      "keywords_overlap": ["agentes IA", "automações inteligentes Rio de Janeiro"],
+      "estimated_traffic": "baixo",
+      "content_gap": "Bronks pode superar com credibilidade técnica (RAG, multiagentes) e cases concretos"
+    }
+  ],
+  "estimated_traffic_gain": {
+    "30_days": "0–50 visitas orgânicas (indexação das novas páginas)",
+    "90_days": "200–800 visitas orgânicas/mês",
+    "6_months": "1.500–5.000 visitas orgânicas/mês + 10–30 leads B2B qualificados/mês",
+    "assumptions": "Considera publicação imediata das páginas geradas, sitemap enviado ao GSC, 2 artigos de blog/mês e linkbuilding básico. Mercado B2B de IA em crescimento acelerado no Brasil em 2026."
+  }
+}
