@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG Empresarial: IA que Conhece Sua Empresa | Bronks IA</title>
+  <meta name="description" content="RAG para empresas: transforme seus documentos, contratos e manuais em uma IA que responde com precisão. Sem alucinações, sem dados errados. Piloto em 4 semanas.">
+  <link rel="canonical" href="https://bronks.ia.br/rag-empresarial/">
+  <meta property="og:title" content="RAG Empresarial: IA que Conhece Sua Empresa | Bronks IA">
+  <meta property="og:description" content="Retrieval-Augmented Generation para empresas: sua IA responde baseada nos seus próprios documentos, manuais e dados. Precisão real, zero alucinação.">
+  <meta property="og:url" content="https://bronks.ia.br/rag-empresarial/">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "RAG Empresarial — Retrieval-Augmented Generation",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "address": {"@type": "PostalAddress", "addressLocality": "Rio de Janeiro", "addressRegion": "RJ", "addressCountry": "BR"}
+    },
+    "description": "Implementação de RAG (Retrieval-Augmented Generation) para empresas brasileiras. A IA passa a responder com base nos documentos, contratos, manuais e dados internos da empresa.",
+    "areaServed": "Brasil",
+    "serviceType": "Inteligência Artificial Empresarial"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é RAG (Retrieval-Augmented Generation)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RAG é uma técnica que conecta modelos de linguagem (como GPT ou Claude) à base de conhecimento específica da sua empresa. Em vez de responder com base em treinamento genérico, o modelo busca nos seus documentos e responde com dados reais e atualizados. Resultado: respostas precisas, sem invenções."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que tipos de documentos o RAG processa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O RAG processa praticamente qualquer fonte: PDFs, Word, Excel, apresentações, páginas da intranet, e-mails arquivados, dados de CRM, banco de dados SQL, manuais técnicos e contratos escaneados (com OCR). Integramos qualquer fonte onde o conhecimento da empresa existe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual a diferença entre RAG e ChatGPT simples?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ChatGPT responde com conhecimento genérico da internet até a data de corte — pode inventar dados e não conhece sua empresa. RAG empresarial responde com base exclusivamente nos seus documentos internos, dados atualizados em tempo real. É como ter um funcionário que leu todos os documentos da empresa e nunca esquece nada."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Meus dados ficam seguros?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. O sistema pode ser implantado no seu próprio servidor (on-premise) ou em cloud privada. Os documentos nunca são enviados para treinamento de modelos públicos. Usamos criptografia em repouso e em trânsito, com controle de acesso por usuário."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para implementar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Um piloto funcional com as principais fontes de dados leva de 3 a 6 semanas. A implementação completa, com integrações em todos os sistemas e treinamento da equipe, tipicamente leva de 2 a 4 meses."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --azul: #4F46E5; --roxo: #7C3AED; --preto: #080812; --cinza-escuro: #12121E; --cinza: #1E1E2E; --branco: #F8F8FF; --suave: #C4C4D4; --verde: #10B981; }
+    body { font-family: 'Inter', sans-serif; background: var(--preto); color: var(--branco); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { background: rgba(8,8,18,0.97); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #1E1E30; }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.3rem; background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .nav-cta { background: linear-gradient(135deg, #4F46E5, #7C3AED); color: #fff; padding: 0.55rem 1.3rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; }
+    .hero { padding: 5rem 2rem 4rem; text-align: center; background: radial-gradient(ellipse at 50% 0%, rgba(79,70,229,0.18) 0%, transparent 70%); }
+    .hero-badge { display: inline-block; background: rgba(79,70,229,0.12); border: 1px solid rgba(79,70,229,0.35); color: #818CF8; padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 500; margin-bottom: 2rem; }
+    .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.5rem; }
+    .hero h1 .g { background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.1rem; color: var(--suave); max-width: 640px; margin: 0 auto 2.5rem; }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: linear-gradient(135deg, #4F46E5, #7C3AED); color: #fff; padding: 0.95rem 2.2rem; border-radius: 10px; font-weight: 700; font-size: 1rem; transition: transform 0.2s; box-shadow: 0 4px 20px rgba(79,70,229,0.35); display: inline-block; }
+    .btn-primary:hover { transform: translateY(-2px); }
+    .btn-ghost { border: 1px solid #2a2a3e; color: #fff; padding: 0.95rem 2.2rem; border-radius: 10px; font-weight: 600; font-size: 1rem; display: inline-block; }
+    section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; margin-bottom: 1rem; }
+    h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.6rem; }
+    .section-sub { color: var(--suave); font-size: 1.05rem; max-width: 700px; margin-bottom: 3rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: var(--cinza-escuro); border: 1px solid #1E1E35; border-radius: 16px; padding: 1.8rem; }
+    .card-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .card p { color: var(--suave); font-size: 0.95rem; margin-top: 0.5rem; }
+    .tag { display: inline-block; background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.25); color: #818CF8; font-size: 0.8rem; padding: 0.25rem 0.7rem; border-radius: 50px; margin: 0.2rem; }
+    .problema-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+    .problema-card { background: rgba(239,68,68,0.06); border: 1px solid rgba(239,68,68,0.15); border-radius: 12px; padding: 1.4rem; }
+    .problema-card h3 { color: #FCA5A5; font-size: 1rem; }
+    .problema-card p { color: var(--suave); font-size: 0.92rem; margin-top: 0.4rem; }
+    .solucao-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+    .solucao-card { background: rgba(16,185,129,0.06); border: 1px solid rgba(16,185,129,0.15); border-radius: 12px; padding: 1.4rem; }
+    .solucao-card h3 { color: #6EE7B7; font-size: 1rem; }
+    .solucao-card p { color: var(--suave); font-size: 0.92rem; margin-top: 0.4rem; }
+    .steps { counter-reset: step; display: flex; flex-direction: column; gap: 1.5rem; }
+    .step { display: flex; gap: 1.5rem; align-items: flex-start; }
+    .step-num { counter-increment: step; min-width: 44px; height: 44px; background: linear-gradient(135deg, #4F46E5, #7C3AED); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+    .step-body h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
+    .step-body p { color: var(--suave); font-size: 0.95rem; }
+    .cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .case-card { background: var(--cinza-escuro); border: 1px solid #1E1E35; border-radius: 16px; padding: 1.8rem; }
+    .case-sector { font-size: 0.8rem; color: #818CF8; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.7rem; }
+    .case-card p { color: var(--suave); font-size: 0.95rem; margin: 0.5rem 0; }
+    .case-result { color: var(--verde); font-weight: 600; font-size: 0.95rem; margin-top: 0.8rem !important; }
+    .faq { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item { background: var(--cinza-escuro); border: 1px solid #1E1E35; border-radius: 12px; padding: 1.4rem 1.6rem; }
+    .faq-item h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .faq-item p { color: var(--suave); font-size: 0.95rem; }
+    .cta-section { background: radial-gradient(ellipse at 50% 50%, rgba(79,70,229,0.2) 0%, rgba(8,8,18,0) 70%); border: 1px solid #1E1E35; border-radius: 24px; padding: 4rem 2rem; text-align: center; max-width: 1100px; margin: 2rem auto; }
+    .cta-section h2 { margin-bottom: 1rem; }
+    .cta-section p { color: var(--suave); max-width: 600px; margin: 0 auto 2.5rem; }
+    footer { text-align: center; padding: 2.5rem 2rem; border-top: 1px solid #1E1E30; color: var(--suave); font-size: 0.9rem; }
+    footer a { color: #818CF8; }
+    @media (max-width: 600px) { nav { padding: 1rem; } .hero { padding: 3.5rem 1.2rem 3rem; } section { padding: 3rem 1.2rem; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://bronks.ia.br" class="logo">Bronks IA</a>
+  <a href="https://bronks.ia.br/contato" class="nav-cta">Consultoria Gratuita</a>
+</nav>
+
+<div class="hero">
+  <span class="hero-badge">🔍 RAG Empresarial</span>
+  <h1>Uma IA que conhece<br><span class="g">cada detalhe da sua empresa</span></h1>
+  <p>Transforme contratos, manuais, políticas e dados internos em um assistente de IA que responde com precisão absoluta — sem inventar, sem alucinar, sem errar.</p>
+  <div class="hero-btns">
+    <a href="https://bronks.ia.br/contato" class="btn-primary">Agendar Consultoria Gratuita →</a>
+    <a href="#como-funciona" class="btn-ghost">Ver como funciona</a>
+  </div>
+</div>
+
+<section id="problema">
+  <h2>O problema que o RAG resolve</h2>
+  <p class="section-sub">Sua empresa tem o conhecimento. O problema é que ele está espalhado em lugares impossíveis de acessar rápido.</p>
+  <div class="problema-grid">
+    <div class="problema-card">
+      <h3>❌ Funcionários que ficam esperando resposta</h3>
+      <p>Dúvidas sobre contrato, processo interno ou política da empresa viram fila de e-mails e chamados — tempo perdido todo dia.</p>
+    </div>
+    <div class="problema-card">
+      <h3>❌ ChatGPT que inventa dados</h3>
+      <p>Modelos genéricos não conhecem sua empresa. Respondem com confiança coisas erradas sobre seus produtos, preços e processos.</p>
+    </div>
+    <div class="problema-card">
+      <h3>❌ Documentos que ninguém lê</h3>
+      <p>Manuais técnicos com centenas de páginas, contratos antigos, SOPs desatualizados — todo esse conhecimento fica inacessível.</p>
+    </div>
+    <div class="problema-card">
+      <h3>❌ Onboarding que demora meses</h3>
+      <p>Funcionários novos precisam de semanas para absorver processos e políticas que um sistema RAG responderia em segundos.</p>
+    </div>
+  </div>
+</section>
+
+<section id="solucao">
+  <h2>RAG transforma tudo isso</h2>
+  <p class="section-sub">Com RAG empresarial, a IA passa a responder baseada <strong style="color:#F8F8FF">exclusivamente nos seus dados internos</strong>.</p>
+  <div class="solucao-grid">
+    <div class="solucao-card">
+      <h3>✅ Respostas em segundos</h3>
+      <p>Qualquer dúvida sobre processo, contrato ou política — respondida instantaneamente com a fonte exata do documento.</p>
+    </div>
+    <div class="solucao-card">
+      <h3>✅ Zero alucinação</h3>
+      <p>O modelo só responde com o que está nos seus documentos. Se a informação não existe, ele diz que não sabe — não inventa.</p>
+    </div>
+    <div class="solucao-card">
+      <h3>✅ Conhecimento sempre atualizado</h3>
+      <p>Novos documentos adicionados à base ficam disponíveis imediatamente — sem retreinamento, sem espera.</p>
+    </div>
+    <div class="solucao-card">
+      <h3>✅ Controle e rastreabilidade</h3>
+      <p>Cada resposta cita a fonte — página, documento, parágrafo. Auditável e confiável para uso corporativo real.</p>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona">
+  <h2>Como o RAG empresarial funciona</h2>
+  <p class="section-sub">Não é mágica — é arquitetura. Veja o processo do zero ao sistema em produção.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h3>Ingestão e indexação dos documentos</h3>
+        <p>Coletamos todas as suas fontes de dados: PDFs, Word, Excel, intranet, banco de dados SQL, CRM. Processamos, dividimos em chunks semanticamente coerentes e geramos embeddings vetoriais de cada trecho.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h3>Base vetorial e busca semântica</h3>
+        <p>Armazenamos os embeddings em um banco vetorial (Pinecone, Weaviate, pgvector ou similar). Quando o usuário faz uma pergunta, o sistema busca os trechos mais relevantes usando similaridade semântica — não apenas palavras-chave.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h3>Geração com contexto real</h3>
+        <p>Os trechos recuperados são enviados ao modelo de linguagem como contexto. O modelo gera a resposta baseado nesses dados reais, citando as fontes — nunca inventando informação ausente.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h3>Interface integrada ao seu fluxo</h3>
+        <p>O sistema é integrado onde a equipe já trabalha: Teams, Slack, WhatsApp Business, portal interno ou API direta nos seus sistemas. Sem fricção de adoção.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <h3>Monitoramento e melhoria contínua</h3>
+        <p>Acompanhamos logs de uso, perguntas sem resposta adequada e qualidade das respostas. A base de conhecimento é expandida e o sistema melhorado continuamente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fontes">
+  <h2>Que fontes de dados o RAG processa</h2>
+  <p class="section-sub">Se o seu conhecimento está lá, conectamos ao RAG.</p>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">📄</div>
+      <h3>Documentos corporativos</h3>
+      <p>PDFs, Word, PowerPoint, planilhas Excel. Contratos, manuais, SOPs, políticas de RH, relatórios técnicos.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🗃️</div>
+      <h3>Bancos de dados</h3>
+      <p>SQL (PostgreSQL, MySQL, MSSQL), MongoDB, dados de ERP e sistemas legados. Consultas em linguagem natural.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌐</div>
+      <h3>Intranet e portais</h3>
+      <p>SharePoint, Confluence, Notion, páginas web internas. Sincronização automática com atualizações.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📧</div>
+      <h3>E-mails e comunicações</h3>
+      <p>Histórico de e-mails arquivados, tickets de suporte, threads do Teams ou Slack — contexto conversacional incluso.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>CRM e dados de clientes</h3>
+      <p>Salesforce, HubSpot, Pipedrive — histórico de interações, contratos, preferências e histórico de compra.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📸</div>
+      <h3>Documentos escaneados</h3>
+      <p>Documentos físicos digitalizados processados com OCR avançado. Contratos antigos, laudos técnicos, fichas de clientes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="casos">
+  <h2>Casos de uso por setor</h2>
+  <p class="section-sub">RAG empresarial tem aplicação imediata em praticamente qualquer indústria.</p>
+  <div class="cases">
+    <div class="case-card">
+      <div class="case-sector">Jurídico</div>
+      <h3>Análise de contratos e jurisprudência</h3>
+      <p>Advogados consultam milhares de páginas de contratos e precedentes em segundos. Identifica cláusulas de risco, compara versões, extrai obrigações.</p>
+      <p class="case-result">↓ 70% no tempo de pesquisa jurídica</p>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Financeiro</div>
+      <h3>Compliance e relatórios regulatórios</h3>
+      <p>IA treinada nas normas do Banco Central, CVM e regulações internas. Responde sobre compliance sem risco de desvio de procedimento.</p>
+      <p class="case-result">↓ 60% no tempo de auditoria interna</p>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Saúde</div>
+      <h3>Protocolos médicos e prontuários</h3>
+      <p>Profissionais consultam protocolos clínicos e histórico de pacientes (LGPD-compliant) com respostas baseadas em evidência do próprio hospital.</p>
+      <p class="case-result">↑ 40% de eficiência no atendimento</p>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Varejo e E-commerce</div>
+      <h3>Atendimento ao cliente escalável</h3>
+      <p>IA treinada no catálogo, políticas de troca e histórico de pedidos. Resolve 80% das dúvidas sem agente humano, 24 horas por dia.</p>
+      <p class="case-result">↓ 55% no volume de tickets de suporte</p>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Indústria</div>
+      <h3>Manutenção e suporte técnico</h3>
+      <p>Técnicos de campo consultam manuais, histórico de falhas e procedimentos de manutenção diretamente no celular, sem depender do backoffice.</p>
+      <p class="case-result">↓ 45% no tempo de resolução de chamados</p>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Educação Corporativa</div>
+      <h3>Onboarding e treinamento</h3>
+      <p>Novos funcionários tiram dúvidas sobre processos, políticas e ferramentas a qualquer hora — sem sobrecarregar o RH e a liderança.</p>
+      <p class="case-result">↓ 50% no tempo de ramp-up</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Por que a Bronks IA para o seu RAG</h2>
+  <p class="section-sub">Não somos revendedores de licença — desenvolvemos soluções do zero ao deploy em produção.</p>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">🏗️</div>
+      <h3>Arquitetura sob medida</h3>
+      <p>Cada empresa tem dados diferentes e necessidades diferentes. Desenhamos a arquitetura certa para o seu caso — não um template genérico.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔒</div>
+      <h3>Segurança e LGPD</h3>
+      <p>Implantação on-premise ou cloud privada. Dados nunca saem do seu ambiente. Conformidade com LGPD garantida por contrato.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <h3>Piloto em 4 semanas</h3>
+      <p>Você vê o sistema funcionando em produção antes de qualquer compromisso de longo prazo. Resultado real antes de assinar o contrato completo.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔗</div>
+      <h3>Integração com o que você já usa</h3>
+      <p>Teams, Slack, WhatsApp Business, portais internos, APIs legadas. Nada de substituir sistema — a IA entra onde a equipe já trabalha.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📈</div>
+      <h3>Melhoria contínua</h3>
+      <p>Monitoramento de qualidade, expansão da base de conhecimento e ajuste fino de respostas mês a mês. Não é projeto — é parceria.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🧑‍💻</div>
+      <h3>Time técnico sênior</h3>
+      <p>Engenheiros com experiência em sistemas RAG em produção — não consultores teóricos. Responsáveis pelo sistema da arquitetura ao go-live.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <h2>Perguntas frequentes sobre RAG</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <h3>O que é RAG (Retrieval-Augmented Generation)?</h3>
+      <p>RAG é uma técnica que conecta modelos de linguagem (como GPT ou Claude) à base de conhecimento específica da sua empresa. Em vez de responder com base em treinamento genérico, o modelo busca nos seus documentos e responde com dados reais e atualizados. Resultado: respostas precisas, sem invenções.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Que tipos de documentos o RAG processa?</h3>
+      <p>Praticamente qualquer fonte: PDFs, Word, Excel, apresentações, páginas da intranet, e-mails arquivados, dados de CRM, banco de dados SQL, manuais técnicos e contratos escaneados (com OCR). Integramos qualquer fonte onde o conhecimento da empresa existe.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Qual a diferença entre RAG e ChatGPT simples?</h3>
+      <p>ChatGPT responde com conhecimento genérico da internet até a data de corte — pode inventar dados e não conhece sua empresa. RAG empresarial responde com base exclusivamente nos seus documentos internos, dados atualizados em tempo real. É como ter um funcionário que leu todos os documentos da empresa e nunca esquece nada.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Meus dados ficam seguros?</h3>
+      <p>Sim. O sistema pode ser implantado no seu próprio servidor (on-premise) ou em cloud privada. Os documentos nunca são enviados para treinamento de modelos públicos. Usamos criptografia em repouso e em trânsito, com controle de acesso por usuário.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Quanto tempo leva para implementar?</h3>
+      <p>Um piloto funcional com as principais fontes de dados leva de 3 a 6 semanas. A implementação completa, com integrações em todos os sistemas e treinamento da equipe, tipicamente leva de 2 a 4 meses.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section">
+  <span class="hero-badge">🚀 Próximo passo</span>
+  <h2>Quer ver o RAG funcionando<br>com os dados da sua empresa?</h2>
+  <p>Em 30 minutos de conversa, mostramos como o RAG se encaixa no seu contexto específico e qual seria o piloto ideal para começar.</p>
+  <a href="https://bronks.ia.br/contato" class="btn-primary" style="font-size:1.1rem; padding:1.1rem 2.8rem;">Agendar Consultoria Gratuita →</a>
+  <p style="color: var(--suave); font-size: 0.9rem; margin-top: 1.5rem;">Sem compromisso. Sem vendedor. Conversa técnica com quem vai implementar.</p>
+</div>
+
+<footer>
+  <p>© 2026 Bronks IA — Rio de Janeiro, RJ | <a href="https://bronks.ia.br">bronks.ia.br</a></p>
+  <p style="margin-top: 0.5rem;">
+    <a href="/agentes-ia/">Agentes de IA</a> · <a href="/consultoria-ia/">Consultoria em IA</a> · <a href="/ia-para-juridico/">IA para o Jurídico</a> · <a href="/automacao-com-ia/">Automação com IA</a>
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para o Jurídico: Contratos, Pesquisa e Compliance | Bronks IA</title>
+  <meta name="description" content="Soluções de IA para escritórios de advocacia e departamentos jurídicos: análise de contratos em minutos, pesquisa jurídica automatizada e compliance contínuo. Teste em 4 semanas.">
+  <link rel="canonical" href="https://bronks.ia.br/ia-para-juridico/">
+  <meta property="og:title" content="IA para o Jurídico: Contratos, Pesquisa e Compliance | Bronks IA">
+  <meta property="og:description" content="Automatize análise de contratos, pesquisa jurídica e compliance com IA. Menos horas manuais, mais precisão. Para escritórios e departamentos jurídicos.">
+  <meta property="og:url" content="https://bronks.ia.br/ia-para-juridico/">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IA para o Setor Jurídico",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "address": {"@type": "PostalAddress", "addressLocality": "Rio de Janeiro", "addressRegion": "RJ", "addressCountry": "BR"}
+    },
+    "description": "Soluções de inteligência artificial para escritórios de advocacia e departamentos jurídicos: análise automatizada de contratos, pesquisa jurídica via RAG, due diligence acelerada e compliance contínuo.",
+    "areaServed": "Brasil",
+    "serviceType": "IA para Setor Jurídico"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "IA para o jurídico é segura para dados de clientes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Implantamos o sistema no servidor do próprio escritório ou em cloud privada dedicada. Os dados nunca saem do seu ambiente e nunca são usados para treinar modelos públicos. Conformidade com LGPD e sigilo profissional garantidos por contrato."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA substitui o advogado na análise de contratos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. A IA atua como um assistente jurídico de alta performance: ela lê, extrai, compara e sinaliza riscos em segundos. A decisão estratégica e a responsabilidade profissional continuam com o advogado. O objetivo é eliminar o trabalho mecânico, não o julgamento jurídico."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O sistema funciona com a jurisprudência do STJ, STF e TJs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Além da base de conhecimento interna do escritório, integramos fontes públicas como Jusbrasil, JurisLink, TJRJ e outros tribunais conforme sua área de atuação. A IA pesquisa precedentes e cita as fontes exatas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para implementar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O piloto funcional com análise de contratos leva de 3 a 5 semanas. A implementação completa com pesquisa jurídica, compliance e integrações nos sistemas do escritório tipicamente leva de 2 a 3 meses."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --azul: #4F46E5; --roxo: #7C3AED; --preto: #080812; --cinza-escuro: #12121E; --cinza: #1E1E2E; --branco: #F8F8FF; --suave: #C4C4D4; --verde: #10B981; --âmbar: #F59E0B; }
+    body { font-family: 'Inter', sans-serif; background: var(--preto); color: var(--branco); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { background: rgba(8,8,18,0.97); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #1E1E30; }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.3rem; background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .nav-cta { background: linear-gradient(135deg, #4F46E5, #7C3AED); color: #fff; padding: 0.55rem 1.3rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; }
+    .hero { padding: 5rem 2rem 4rem; text-align: center; background: radial-gradient(ellipse at 50% 0%, rgba(124,58,237,0.15) 0%, transparent 70%); }
+    .hero-badge { display: inline-block; background: rgba(124,58,237,0.12); border: 1px solid rgba(124,58,237,0.3); color: #A78BFA; padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 500; margin-bottom: 2rem; }
+    .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.5rem; }
+    .hero h1 .g { background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.1rem; color: var(--suave); max-width: 640px; margin: 0 auto 2.5rem; }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: linear-gradient(135deg, #4F46E5, #7C3AED); color: #fff; padding: 0.95rem 2.2rem; border-radius: 10px; font-weight: 700; font-size: 1rem; transition: transform 0.2s; box-shadow: 0 4px 20px rgba(79,70,229,0.35); display: inline-block; }
+    .btn-primary:hover { transform: translateY(-2px); }
+    .btn-ghost { border: 1px solid #2a2a3e; color: #fff; padding: 0.95rem 2.2rem; border-radius: 10px; font-weight: 600; font-size: 1rem; display: inline-block; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; background: var(--cinza-escuro); border: 1px solid #1E1E35; border-radius: 20px; padding: 2.5rem 2rem; max-width: 1100px; margin: 0 auto 2rem; }
+    .stat { text-align: center; }
+    .stat-num { font-family: 'Space Grotesk', sans-serif; font-size: 2.4rem; font-weight: 700; background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .stat-label { color: var(--suave); font-size: 0.9rem; margin-top: 0.3rem; }
+    section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; margin-bottom: 1rem; }
+    h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 600; margin-bottom: 0.6rem; }
+    .section-sub { color: var(--suave); font-size: 1.05rem; max-width: 700px; margin-bottom: 3rem; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: var(--cinza-escuro); border: 1px solid #1E1E35; border-radius: 16px; padding: 1.8rem; }
+    .card-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .card p { color: var(--suave); font-size: 0.95rem; margin-top: 0.5rem; }
+    .card ul { color: var(--suave); font-size: 0.92rem; padding-left: 1.2rem; margin-top: 0.7rem; }
+    .card ul li { margin-bottom: 0.35rem; }
+    .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .before { background: rgba(239,68,68,0.06); border: 1px solid rgba(239,68,68,0.15); border-radius: 16px; padding: 1.8rem; }
+    .after { background: rgba(16,185,129,0.06); border: 1px solid rgba(16,185,129,0.15); border-radius: 16px; padding: 1.8rem; }
+    .before h3 { color: #FCA5A5; }
+    .after h3 { color: #6EE7B7; }
+    .before p, .after p { color: var(--suave); font-size: 0.95rem; margin-top: 0.5rem; }
+    .faq { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item { background: var(--cinza-escuro); border: 1px solid #1E1E35; border-radius: 12px; padding: 1.4rem 1.6rem; }
+    .faq-item h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .faq-item p { color: var(--suave); font-size: 0.95rem; }
+    .cta-section { background: radial-gradient(ellipse at 50% 50%, rgba(79,70,229,0.2) 0%, rgba(8,8,18,0) 70%); border: 1px solid #1E1E35; border-radius: 24px; padding: 4rem 2rem; text-align: center; max-width: 1100px; margin: 2rem auto; }
+    .cta-section h2 { margin-bottom: 1rem; }
+    .cta-section p { color: var(--suave); max-width: 600px; margin: 0 auto 2.5rem; }
+    footer { text-align: center; padding: 2.5rem 2rem; border-top: 1px solid #1E1E30; color: var(--suave); font-size: 0.9rem; }
+    footer a { color: #818CF8; }
+    @media (max-width: 640px) { .before-after { grid-template-columns: 1fr; } nav { padding: 1rem; } .hero { padding: 3.5rem 1.2rem 3rem; } section { padding: 3rem 1.2rem; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://bronks.ia.br" class="logo">Bronks IA</a>
+  <a href="https://bronks.ia.br/contato" class="nav-cta">Consultoria Gratuita</a>
+</nav>
+
+<div class="hero">
+  <span class="hero-badge">⚖️ IA para o Jurídico</span>
+  <h1>Análise de contratos em <span class="g">minutos, não dias</span></h1>
+  <p>Escritórios de advocacia e departamentos jurídicos que usam IA revisam 10x mais contratos, identificam riscos que humanos perdem e entregam mais valor — com a mesma equipe.</p>
+  <div class="hero-btns">
+    <a href="https://bronks.ia.br/contato" class="btn-primary">Agendar Consultoria Gratuita →</a>
+    <a href="#solucoes" class="btn-ghost">Ver soluções →</a>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">70%</div>
+    <div class="stat-label">Redução no tempo de análise de contratos</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">10x</div>
+    <div class="stat-label">Mais contratos analisados pela mesma equipe</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">24h</div>
+    <div class="stat-label">Tempo médio de due diligence vs. semanas antes</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">99%</div>
+    <div class="stat-label">Dados permanecem no ambiente do escritório</div>
+  </div>
+</div>
+
+<section id="solucoes">
+  <h2>Soluções de IA para o jurídico</h2>
+  <p class="section-sub">Cada solução é construída especificamente para o contexto do seu escritório — não é um SaaS genérico que você adapta ao seu processo.</p>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-icon">📑</div>
+      <h3>Análise e revisão de contratos</h3>
+      <p>A IA lê o contrato, extrai as partes, obrigações, prazos, penalidades e cláusulas de risco. Compara com modelos padrão do escritório e aponta desvios. Em minutos.</p>
+      <ul>
+        <li>Identificação de cláusulas abusivas ou incomuns</li>
+        <li>Extração estruturada de dados (partes, valores, datas)</li>
+        <li>Comparação com templates do escritório</li>
+        <li>Score de risco com justificativa por cláusula</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔍</div>
+      <h3>Pesquisa jurídica automatizada (RAG)</h3>
+      <p>Consulte toda a jurisprudência do STJ, STF, TJs e a base interna de pareceres e teses do próprio escritório em linguagem natural. A IA cita as fontes exatas.</p>
+      <ul>
+        <li>Busca semântica em decisões e precedentes</li>
+        <li>Integração com Jusbrasil e tribunais estaduais</li>
+        <li>Base interna de pareceres e memorandos</li>
+        <li>Citações automáticas com número do processo</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏃</div>
+      <h3>Due diligence acelerada</h3>
+      <p>Em operações de M&A, fusão ou aquisição de imóveis, a IA processa centenas de documentos do data room em horas — não semanas — e entrega relatório estruturado de riscos.</p>
+      <ul>
+        <li>Leitura paralela de centenas de documentos</li>
+        <li>Classificação automática por área de risco</li>
+        <li>Flags de pendências e inconsistências</li>
+        <li>Relatório executivo por categoria de risco</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚠️</div>
+      <h3>Monitoramento de compliance contínuo</h3>
+      <p>Acompanhe mudanças na legislação e regulações que afetam os clientes. A IA monitora o Diário Oficial, publicações do BACEN, CVM, ANTT e alerta proativamente.</p>
+      <ul>
+        <li>Alertas de mudança regulatória por área</li>
+        <li>Análise de impacto nos contratos vigentes</li>
+        <li>Relatório semanal de compliance automático</li>
+        <li>Integração com sistemas de gestão do escritório</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">✍️</div>
+      <h3>Geração de minutas e peças</h3>
+      <p>A IA gera minutas de contratos, contestações, recursos e pareceres baseada nos templates e estilo do escritório — o advogado refina e assina. Não substitui o julgamento, elimina o rascunho.</p>
+      <ul>
+        <li>Geração baseada nos templates do escritório</li>
+        <li>Adaptação automática ao caso e às partes</li>
+        <li>Sugestão de cláusulas por área do direito</li>
+        <li>Revisão de consistência e completude</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Análise de portfólio de processos</h3>
+      <p>Para departamentos jurídicos com centenas de processos ativos: dashboard em tempo real com probabilidade de êxito, prazo médio e exposição financeira por categoria de causa.</p>
+      <ul>
+        <li>Classificação automática por área e risco</li>
+        <li>Estimativa de probabilidade de êxito por tese</li>
+        <li>Projeção de contingência financeira</li>
+        <li>Integração com PJe e sistemas processuais</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Antes e depois da IA no jurídico</h2>
+  <p class="section-sub">Números reais de escritórios e departamentos que implementaram IA nos processos jurídicos.</p>
+  <div class="before-after">
+    <div class="before">
+      <h3>❌ Sem IA</h3>
+      <p><strong style="color:#FCA5A5">Análise de contrato:</strong> 2–4 horas por advogado para contratos complexos</p>
+      <p><strong style="color:#FCA5A5">Due diligence:</strong> 2–4 semanas com equipe dedicada</p>
+      <p><strong style="color:#FCA5A5">Pesquisa jurídica:</strong> 3–6 horas para mapear jurisprudência relevante</p>
+      <p><strong style="color:#FCA5A5">Compliance:</strong> Monitoramento manual, quase sempre reativo</p>
+      <p><strong style="color:#FCA5A5">Minuta de contrato:</strong> 1–2 horas para adaptar template ao caso</p>
+    </div>
+    <div class="after">
+      <h3>✅ Com IA Bronks</h3>
+      <p><strong style="color:#6EE7B7">Análise de contrato:</strong> 10–20 minutos, com flag automático de riscos</p>
+      <p><strong style="color:#6EE7B7">Due diligence:</strong> 24–48 horas com relatório estruturado</p>
+      <p><strong style="color:#6EE7B7">Pesquisa jurídica:</strong> 15–30 minutos com citações diretas</p>
+      <p><strong style="color:#6EE7B7">Compliance:</strong> Alertas proativos em tempo real</p>
+      <p><strong style="color:#6EE7B7">Minuta de contrato:</strong> Rascunho em 5 minutos para revisão</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Segurança e confidencialidade</h2>
+  <p class="section-sub">Entendemos que confidencialidade não é opcional no jurídico. Por isso a segurança é parte central da arquitetura — não um add-on.</p>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">🏠</div>
+      <h3>On-premise ou cloud privada</h3>
+      <p>O sistema roda no servidor do escritório ou em instância dedicada isolada. Seus documentos nunca passam por servidores compartilhados com outros clientes.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🚫</div>
+      <h3>Sem treinamento com seus dados</h3>
+      <p>Os documentos dos clientes nunca são usados para treinar ou atualizar modelos públicos. Por contrato e por arquitetura.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔑</div>
+      <h3>Controle de acesso granular</h3>
+      <p>Cada advogado só vê os documentos dos casos a que tem acesso. Logs completos de auditoria de quem consultou o quê e quando.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🇧🇷</div>
+      <h3>LGPD compliant</h3>
+      <p>Arquitetura desenhada para conformidade com a Lei Geral de Proteção de Dados. Relatórios de impacto e DPA disponíveis.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔒</div>
+      <h3>Criptografia ponta a ponta</h3>
+      <p>Dados criptografados em repouso (AES-256) e em trânsito (TLS 1.3). Chaves gerenciadas pelo próprio escritório, não pela Bronks.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <h3>Contrato de sigilo</h3>
+      <p>NDA específico para serviços jurídicos. Responsabilidade contratual clara sobre confidencialidade e uso de dados.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <h2>Perguntas frequentes</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <h3>IA para o jurídico é segura para dados de clientes?</h3>
+      <p>Sim. Implantamos o sistema no servidor do próprio escritório ou em cloud privada dedicada. Os dados nunca saem do seu ambiente e nunca são usados para treinar modelos públicos. Conformidade com LGPD e sigilo profissional garantidos por contrato.</p>
+    </div>
+    <div class="faq-item">
+      <h3>A IA substitui o advogado na análise de contratos?</h3>
+      <p>Não. A IA atua como um assistente jurídico de alta performance: ela lê, extrai, compara e sinaliza riscos em segundos. A decisão estratégica e a responsabilidade profissional continuam com o advogado. O objetivo é eliminar o trabalho mecânico, não o julgamento jurídico.</p>
+    </div>
+    <div class="faq-item">
+      <h3>O sistema funciona com jurisprudência do STJ, STF e TJs?</h3>
+      <p>Sim. Além da base de conhecimento interna do escritório, integramos fontes públicas como Jusbrasil e tribunais estaduais conforme sua área de atuação. A IA pesquisa precedentes e cita as fontes exatas com número do processo.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Quanto tempo leva para implementar?</h3>
+      <p>O piloto funcional com análise de contratos leva de 3 a 5 semanas. A implementação completa com pesquisa jurídica, compliance e integrações nos sistemas do escritório tipicamente leva de 2 a 3 meses.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Qual o custo de implementação?</h3>
+      <p>Varia conforme o escopo — número de usuários, volume de documentos, integrações necessárias e modelo de hospedagem. Apresentamos proposta detalhada após a consultoria inicial gratuita. Tipicamente custa menos do que 2 horas de trabalho que a ferramenta economiza todo dia.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section">
+  <span class="hero-badge">⚖️ Para escritórios e departamentos jurídicos</span>
+  <h2>Transforme seu jurídico em uma<br><span style="background: linear-gradient(90deg, #4F46E5, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">operação 10x mais eficiente</span></h2>
+  <p>Em 30 minutos, mostramos exatamente como a IA se encaixa no fluxo do seu escritório. Sem PowerPoint genérico — demo com seus tipos de documentos.</p>
+  <a href="https://bronks.ia.br/contato" class="btn-primary" style="font-size:1.1rem; padding:1.1rem 2.8rem;">Agendar Consultoria Gratuita →</a>
+  <p style="color: var(--suave); font-size: 0.9rem; margin-top: 1.5rem;">Sem compromisso. Conversa com o engenheiro que vai implementar, não com vendedor.</p>
+</div>
+
+<footer>
+  <p>© 2026 Bronks IA — Rio de Janeiro, RJ | <a href="https://bronks.ia.br">bronks.ia.br</a></p>
+  <p style="margin-top: 0.5rem;">
+    <a href="/agentes-ia/">Agentes de IA</a> · <a href="/consultoria-ia/">Consultoria em IA</a> · <a href="/rag-empresarial/">RAG Empresarial</a> · <a href="/automacao-com-ia/">Automação com IA</a>
+  </p>
+</footer>
+
+</body>
+</html>
