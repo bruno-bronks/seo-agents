@@ -2,10 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://santechseguranca.com.br/</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- Páginas de serviço -->
   <url>
     <loc>https://santechseguranca.com.br/instalacao-cameras/</loc>
     <lastmod>2026-09-04</lastmod>
@@ -31,6 +32,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://santechseguranca.com.br/controle-acesso/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/manutencao-ar-condicionado/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Páginas locais -->
+  <url>
     <loc>https://santechseguranca.com.br/cameras-barra-da-tijuca/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -43,9 +57,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://santechseguranca.com.br/cameras-tijuca/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Blog -->
+  <url>
     <loc>https://santechseguranca.com.br/blog/quanto-custa-instalar-cameras-rio-de-janeiro/</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/blog/camera-wifi-ou-cabeada/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
