@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Recursos Humanos | Automação de RH com IA | Bronks IA</title>
+  <meta name="description" content="Automatize recrutamento, onboarding, avaliação de desempenho e gestão de talentos com IA. Agentes inteligentes que transformam o RH da sua empresa. Fale com um especialista!">
+  <link rel="canonical" href="https://bronks.ia.br/ia-para-recursos-humanos/">
+  <meta property="og:title" content="IA para Recursos Humanos | Automação de RH com IA | Bronks IA">
+  <meta property="og:description" content="Do recrutamento ao desenvolvimento de talentos: IA que automatiza os processos de RH mais críticos da sua empresa sem perder o toque humano.">
+  <meta property="og:url" content="https://bronks.ia.br/ia-para-recursos-humanos/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bronks.ia.br/og-ia-rh.png">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IA para Recursos Humanos",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "description": "Especialistas em automação de RH com IA: recrutamento inteligente, onboarding automatizado, agentes de gestão de talentos.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "description": "Automação de processos de Recursos Humanos com Inteligência Artificial: triagem de currículos, agentes de recrutamento, onboarding automatizado, avaliação de desempenho e análise de clima organizacional.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Brasil"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como a IA pode ajudar o departamento de RH?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A IA pode automatizar triagem de currículos, agendamento de entrevistas, onboarding de novos funcionários, resposta a dúvidas trabalhistas, análise de clima organizacional e geração de relatórios de desempenho — liberando o time de RH para focar em decisões estratégicas e relacionamento humano."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA substitui os profissionais de RH?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. A IA automatiza as tarefas repetitivas e operacionais do RH — triagem, agendamento, documentação — mas decisões estratégicas, gestão de conflitos, desenvolvimento de cultura e liderança continuam sendo responsabilidade humana. O resultado é um time de RH mais estratégico e menos sobrecarregado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais dados de RH podem ser usados com IA de forma segura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Com conformidade à LGPD, dados de currículos, feedbacks anônimos, histórico de desempenho, dados de onboarding e registros de ponto podem ser processados por IA de forma segura. Trabalhamos com anonimização, controle de acesso e armazenamento em território nacional quando necessário."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --border: #1e1e2e;
+      --accent: #6366f1;
+      --accent2: #818cf8;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --green: #10b981;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,15,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent); color: #fff; padding: 0.5rem 1.25rem;
+      border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;
+    }
+
+    .hero {
+      max-width: 900px; margin: 0 auto; padding: 5rem 2rem 3rem;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block; background: rgba(99,102,241,0.15); color: var(--accent2);
+      border: 1px solid rgba(99,102,241,0.3); border-radius: 100px;
+      padding: 0.35rem 1rem; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 700; line-height: 1.15; margin-bottom: 1.25rem;
+    }
+    h1 span { color: var(--accent); }
+    .hero p { font-size: 1.15rem; color: var(--muted); max-width: 650px; margin: 0 auto 2rem; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--accent); color: #fff; padding: 0.85rem 2rem;
+      border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1rem;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .btn-primary:hover { background: var(--accent2); transform: translateY(-1px); }
+    .btn-secondary {
+      background: transparent; color: var(--text); padding: 0.85rem 2rem;
+      border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem;
+      border: 1px solid var(--border);
+    }
+
+    .stats {
+      display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;
+      padding: 2rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      margin: 0 2rem;
+    }
+    .stat { text-align: center; }
+    .stat strong { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; color: var(--accent); }
+    .stat span { font-size: 0.85rem; color: var(--muted); }
+
+    section { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700; margin-bottom: 1rem;
+    }
+    h2 span { color: var(--accent); }
+    .section-lead { color: var(--muted); margin-bottom: 3rem; max-width: 600px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1.5rem; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.75rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .card ul { padding-left: 1.25rem; color: var(--muted); font-size: 0.9rem; }
+    .card ul li { margin-bottom: 0.35rem; }
+
+    .highlight-bar {
+      background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(99,102,241,0.03));
+      border: 1px solid rgba(99,102,241,0.2); border-radius: 12px;
+      padding: 2rem; margin: 2rem 0;
+      display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;
+    }
+    .highlight-bar-icon { font-size: 2.5rem; flex-shrink: 0; }
+    .highlight-bar h3 { font-family: 'Space Grotesk', sans-serif; margin-bottom: 0.5rem; }
+    .highlight-bar p { color: var(--muted); font-size: 0.95rem; margin: 0; }
+
+    .faq-list { display: grid; gap: 1rem; }
+    details {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+    }
+    details[open] { border-color: var(--accent); }
+    summary {
+      font-weight: 600; cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    summary::after { content: '+'; color: var(--accent); font-size: 1.25rem; }
+    details[open] summary::after { content: '−'; }
+    details p { margin-top: 1rem; color: var(--muted); font-size: 0.95rem; }
+
+    .cta-section {
+      background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(99,102,241,0.05));
+      border: 1px solid rgba(99,102,241,0.3); border-radius: 16px;
+      padding: 3rem 2rem; text-align: center; max-width: 700px; margin: 0 auto;
+    }
+    .cta-section h2 { margin-bottom: 1rem; }
+    .cta-section p { color: var(--muted); margin-bottom: 2rem; }
+
+    footer {
+      border-top: 1px solid var(--border); padding: 2rem;
+      text-align: center; color: var(--muted); font-size: 0.9rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    .breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; text-align: center; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    .breadcrumb span { margin: 0 0.4rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://bronks.ia.br/" class="logo">Bronks <span>IA</span></a>
+  <a href="https://bronks.ia.br/#contato" class="nav-cta">Falar com especialista</a>
+</nav>
+
+<div class="hero">
+  <div class="breadcrumb">
+    <a href="https://bronks.ia.br/">Home</a><span>›</span>IA para Recursos Humanos
+  </div>
+  <div class="badge">IA para RH</div>
+  <h1>O RH que usa <span>IA</span> faz mais<br>com menos — e melhor</h1>
+  <p>Agentes inteligentes que automatizam triagem, onboarding, dúvidas trabalhistas e avaliação de desempenho. Seu time de RH foca no que importa: pessoas e estratégia.</p>
+  <div class="cta-group">
+    <a href="https://bronks.ia.br/#contato" class="btn-primary">Automatizar meu RH</a>
+    <a href="https://bronks.ia.br/automacao-com-ia/" class="btn-secondary">Ver automações</a>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><strong>70%</strong><span>redução no tempo de triagem de currículos</span></div>
+  <div class="stat"><strong>5×</strong><span>mais rápido no onboarding de novos funcionários</span></div>
+  <div class="stat"><strong>24/7</strong><span>atendimento de dúvidas trabalhistas sem fila</span></div>
+  <div class="stat"><strong>LGPD</strong><span>conformidade garantida nos dados de pessoas</span></div>
+</div>
+
+<section>
+  <h2>O que a <span>IA faz no seu RH</span></h2>
+  <p class="section-lead">Da atração à retenção, a IA pode tornar cada fase do ciclo de vida do funcionário mais eficiente, personalizada e rastreável.</p>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">🔍</div>
+      <h3>Triagem de currículos</h3>
+      <p>Agentes que analisam centenas de currículos, comparam com o perfil da vaga e entregam um ranking fundamentado em habilidades, experiência e fit cultural — em minutos.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📅</div>
+      <h3>Agendamento de entrevistas</h3>
+      <p>Bots que entram em contato com candidatos aprovados, apresentam a empresa, coletam disponibilidade e confirmam automaticamente o agendamento na agenda do recrutador.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🚀</div>
+      <h3>Onboarding automatizado</h3>
+      <p>Fluxo de boas-vindas personalizado: envia documentação, guia o novo funcionário pelos sistemas internos, responde dúvidas e garante que todas as etapas do onboarding sejam concluídas.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💬</div>
+      <h3>Chatbot de dúvidas de RH</h3>
+      <p>Agente que responde 24/7 às dúvidas mais comuns dos funcionários: férias, benefícios, holerite, ponto, convenção coletiva e políticas internas — sem abrir chamado para o RH.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Avaliação de desempenho</h3>
+      <p>Automatiza a coleta de autoavaliações e feedbacks, consolida as respostas, identifica padrões e gera relatórios individuais e por equipe prontos para a gestão.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌡️</div>
+      <h3>Clima organizacional</h3>
+      <p>Pesquisas de pulso automatizadas com análise semântica das respostas abertas. Identifica temas críticos antes que virem problemas, com alertas para o CHRO.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); max-width: 100%; padding: 4rem 2rem;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <h2>Casos de uso por <span>porte de empresa</span></h2>
+    <p class="section-lead">As necessidades de RH variam. Veja onde a IA tem maior impacto em cada fase de crescimento.</p>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-icon">🏢</div>
+        <h3>Pequenas e médias empresas (20–200 pessoas)</h3>
+        <p>O desafio é fazer muito com equipe enxuta. A IA resolve:</p>
+        <ul style="margin-top: 0.75rem;">
+          <li>Triagem automática de currículos sem ATS caro</li>
+          <li>Onboarding padronizado sem depender de um único RH</li>
+          <li>FAQ de dúvidas trabalhistas via WhatsApp</li>
+          <li>Coleta e análise de pesquisas de clima</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏗️</div>
+        <h3>Empresas em crescimento acelerado (200–1.000 pessoas)</h3>
+        <p>O desafio é escalar processos que funcionavam no artesanal. A IA resolve:</p>
+        <ul style="margin-top: 0.75rem;">
+          <li>Recrutamento em volume com qualidade consistente</li>
+          <li>Onboarding por departamento e nível hierárquico</li>
+          <li>Agente de suporte interno para políticas e benefícios</li>
+          <li>Analytics de retenção e predição de turnover</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight-bar" style="margin-top: 2rem;">
+      <div class="highlight-bar-icon">🔒</div>
+      <div>
+        <h3>Segurança e LGPD</h3>
+        <p>Dados de funcionários e candidatos são sensíveis por natureza. Todas as nossas implementações de IA para RH incluem: anonimização de dados pessoais, controle de acesso por função, auditoria de logs, e opção de processamento on-premise para empresas com requisitos mais rígidos. Trabalhamos em conformidade total com a Lei Geral de Proteção de Dados (LGPD).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Perguntas frequentes sobre <span>IA no RH</span></h2>
+  <p class="section-lead">As perguntas que todo gestor de RH nos faz antes de começar.</p>
+  <div class="faq-list">
+    <details>
+      <summary>Como a IA pode ajudar o departamento de RH?</summary>
+      <p>A IA pode automatizar triagem de currículos, agendamento de entrevistas, onboarding de novos funcionários, resposta a dúvidas trabalhistas, análise de clima organizacional e geração de relatórios de desempenho — liberando o time de RH para focar em decisões estratégicas e relacionamento humano.</p>
+    </details>
+    <details>
+      <summary>A IA substitui os profissionais de RH?</summary>
+      <p>Não. A IA automatiza as tarefas repetitivas e operacionais do RH — triagem, agendamento, documentação — mas decisões estratégicas, gestão de conflitos, desenvolvimento de cultura e liderança continuam sendo responsabilidade humana. O resultado é um time de RH mais estratégico e menos sobrecarregado.</p>
+    </details>
+    <details>
+      <summary>Quais dados de RH podem ser usados com IA de forma segura?</summary>
+      <p>Com conformidade à LGPD, dados de currículos, feedbacks anônimos, histórico de desempenho, dados de onboarding e registros de ponto podem ser processados por IA de forma segura. Trabalhamos com anonimização, controle de acesso e armazenamento em território nacional quando necessário.</p>
+    </details>
+    <details>
+      <summary>A solução se integra com nosso ATS e sistema de folha?</summary>
+      <p>Sim. Desenvolvemos integrações com os principais sistemas de RH usados no Brasil: Gupy, Kenoby, Totvs RH, Senior, ADP, Sênior Sistemas e outros. Se o sistema tem API, conseguimos integrar. Se não tem, trabalhamos com conectores de arquivo ou automação de interface.</p>
+    </details>
+    <details>
+      <summary>Qual é o prazo e custo para implantar IA no RH?</summary>
+      <p>Projetos focados (ex: automação de triagem + agendamento) são entregues em 3–5 semanas. Soluções mais completas (triagem + onboarding + chatbot de dúvidas) levam de 6 a 10 semanas. O custo depende do escopo, mas trabalhamos com projetos a partir de R$ 12.000 para automações pontuais.</p>
+    </details>
+  </div>
+</section>
+
+<section>
+  <div class="cta-section">
+    <h2>Seu RH merece trabalhar<br>com <span>inteligência</span></h2>
+    <p>Agende uma conversa gratuita. Mostramos quais processos de RH da sua empresa têm maior potencial de automação e o que é possível implementar nas próximas semanas.</p>
+    <a href="https://bronks.ia.br/#contato" class="btn-primary">Falar com especialista em IA para RH</a>
+  </div>
+</section>
+
+<footer>
+  <p>
+    <a href="https://bronks.ia.br/">Bronks IA</a> — IA para Recursos Humanos | Rio de Janeiro, RJ<br>
+    <a href="https://bronks.ia.br/agentes-ia/">Agentes de IA</a> ·
+    <a href="https://bronks.ia.br/automacao-com-ia/">Automação com IA</a> ·
+    <a href="https://bronks.ia.br/consultoria-ia/">Consultoria em IA</a> ·
+    <a href="https://bronks.ia.br/ia-para-juridico/">IA para Jurídico</a>
+  </p>
+  <p style="margin-top:0.75rem; font-size:0.8rem;">© 2026 Bronks IA · bronks.ia.br</p>
+</footer>
+
+</body>
+</html>

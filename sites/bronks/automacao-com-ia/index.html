@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automação com IA para Empresas | Bronks IA — Rio de Janeiro</title>
+  <meta name="description" content="Automatize processos repetitivos com Inteligência Artificial. Agentes autônomos, fluxos inteligentes e integração com seus sistemas. Reduza custos e escale operações. Fale com um especialista!">
+  <link rel="canonical" href="https://bronks.ia.br/automacao-com-ia/">
+  <meta property="og:title" content="Automação com IA para Empresas | Bronks IA">
+  <meta property="og:description" content="Pare de fazer manualmente o que a IA pode automatizar. Agentes, fluxos e integrações que trabalham 24/7 pela sua empresa.">
+  <meta property="og:url" content="https://bronks.ia.br/automacao-com-ia/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bronks.ia.br/og-automacao-ia.png">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Automação com IA para Empresas",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "description": "Especialistas em automação inteligente com IA: agentes autônomos, RAG, fluxos e integrações corporativas.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/bronks-ia",
+        "https://www.instagram.com/bronks.ia"
+      ]
+    },
+    "description": "Automação de processos empresariais com Inteligência Artificial: agentes autônomos, fluxos de trabalho inteligentes, integração com ERPs e APIs. Redução de custos operacionais e escalabilidade.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Brasil"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é automação com IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Automação com IA vai além de scripts e macros tradicionais. Usa modelos de linguagem e agentes inteligentes para executar tarefas complexas que exigem compreensão de contexto, tomada de decisão e adaptação — como responder e-mails, qualificar leads, processar documentos, gerar relatórios e integrar sistemas diferentes de forma autônoma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais processos podem ser automatizados com IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Praticamente qualquer processo baseado em dados e regras: atendimento ao cliente (WhatsApp, e-mail, chat), qualificação de leads e CRM, análise e extração de documentos (contratos, notas fiscais, laudos), geração de relatórios e dashboards, onboarding de clientes, cobrança e inadimplência, rotinas de RH, monitoramento de dados e alertas proativos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para implementar automação com IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Projetos simples (automação de um processo específico) podem ser entregues em 2–4 semanas. Implementações mais complexas, envolvendo múltiplos sistemas e fluxos multiagente, levam tipicamente de 6 a 12 semanas. Trabalhamos com sprints curtos para entregar valor desde as primeiras semanas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A automação com IA se integra com os sistemas que já uso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Desenvolvemos integrações com ERPs (SAP, TOTVS, Sankhya), CRMs (HubSpot, Salesforce, RD Station), plataformas de comunicação (WhatsApp Business API, Slack, Teams), bancos de dados e APIs internas. Se o sistema tem API ou banco de dados acessível, conseguimos integrar."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --border: #1e1e2e;
+      --accent: #6366f1;
+      --accent2: #818cf8;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --green: #10b981;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,15,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent); color: #fff; padding: 0.5rem 1.25rem;
+      border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--accent2); }
+
+    .hero {
+      max-width: 900px; margin: 0 auto; padding: 5rem 2rem 3rem;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block; background: rgba(99,102,241,0.15); color: var(--accent2);
+      border: 1px solid rgba(99,102,241,0.3); border-radius: 100px;
+      padding: 0.35rem 1rem; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 700; line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    h1 span { color: var(--accent); }
+    .hero p { font-size: 1.15rem; color: var(--muted); max-width: 650px; margin: 0 auto 2rem; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--accent); color: #fff; padding: 0.85rem 2rem;
+      border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1rem;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .btn-primary:hover { background: var(--accent2); transform: translateY(-1px); }
+    .btn-secondary {
+      background: transparent; color: var(--text); padding: 0.85rem 2rem;
+      border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem;
+      border: 1px solid var(--border); transition: border-color 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--accent); }
+
+    .stats {
+      display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;
+      padding: 2rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      margin: 0 2rem;
+    }
+    .stat { text-align: center; }
+    .stat strong { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; color: var(--accent); }
+    .stat span { font-size: 0.85rem; color: var(--muted); }
+
+    section { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700; margin-bottom: 1rem;
+    }
+    h2 span { color: var(--accent); }
+    .section-lead { color: var(--muted); margin-bottom: 3rem; max-width: 600px; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.75rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+
+    .process-list { list-style: none; display: grid; gap: 1.25rem; }
+    .process-item {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.25rem 1.5rem; display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .step-num {
+      flex-shrink: 0; width: 2rem; height: 2rem; border-radius: 50%;
+      background: rgba(99,102,241,0.2); color: var(--accent);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.9rem; font-family: 'Space Grotesk', sans-serif;
+    }
+    .process-item h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; margin-bottom: 0.25rem; }
+    .process-item p { color: var(--muted); font-size: 0.95rem; }
+
+    .sectors { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .sector-tag {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+      padding: 1rem 1.25rem; display: flex; align-items: center; gap: 0.75rem;
+    }
+    .sector-tag span { font-size: 1.25rem; }
+    .sector-tag p { font-weight: 500; font-size: 0.95rem; }
+
+    .faq-list { display: grid; gap: 1rem; }
+    details {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+    }
+    details[open] { border-color: var(--accent); }
+    summary {
+      font-weight: 600; cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    summary::after { content: '+'; color: var(--accent); font-size: 1.25rem; transition: transform 0.2s; }
+    details[open] summary::after { transform: rotate(45deg); }
+    details p { margin-top: 1rem; color: var(--muted); font-size: 0.95rem; }
+
+    .cta-section {
+      background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(99,102,241,0.05));
+      border: 1px solid rgba(99,102,241,0.3); border-radius: 16px;
+      padding: 3rem 2rem; text-align: center; max-width: 700px; margin: 0 auto;
+    }
+    .cta-section h2 { margin-bottom: 1rem; }
+    .cta-section p { color: var(--muted); margin-bottom: 2rem; }
+
+    footer {
+      border-top: 1px solid var(--border); padding: 2rem;
+      text-align: center; color: var(--muted); font-size: 0.9rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    .breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    .breadcrumb span { margin: 0 0.4rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://bronks.ia.br/" class="logo">Bronks <span>IA</span></a>
+  <a href="https://bronks.ia.br/#contato" class="nav-cta">Falar com especialista</a>
+</nav>
+
+<div class="hero">
+  <div class="breadcrumb">
+    <a href="https://bronks.ia.br/">Home</a><span>›</span>Automação com IA
+  </div>
+  <div class="badge">Automação Inteligente</div>
+  <h1>Pare de fazer manualmente<br>o que a <span>IA pode automatizar</span></h1>
+  <p>Agentes autônomos, fluxos inteligentes e integrações corporativas que trabalham 24 horas por dia, 7 dias por semana — sem erro humano, sem custo adicional de escala.</p>
+  <div class="cta-group">
+    <a href="https://bronks.ia.br/#contato" class="btn-primary">Automatizar minha empresa</a>
+    <a href="https://bronks.ia.br/agentes-ia/" class="btn-secondary">Ver agentes de IA</a>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><strong>40%</strong><span>redução média em tempo de processamento</span></div>
+  <div class="stat"><strong>30%</strong><span>ganho de precisão em tarefas repetitivas</span></div>
+  <div class="stat"><strong>24/7</strong><span>operação contínua sem intervenção humana</span></div>
+  <div class="stat"><strong>2–4 sem.</strong><span>tempo médio para primeira automação em produção</span></div>
+</div>
+
+<section>
+  <h2>O que automatizamos com <span>IA</span></h2>
+  <p class="section-lead">Qualquer processo que hoje depende de uma pessoa executar a mesma tarefa repetidamente pode ser automatizado com inteligência artificial. Veja as categorias mais comuns:</p>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">💬</div>
+      <h3>Atendimento ao cliente</h3>
+      <p>Agentes no WhatsApp, chat e e-mail que respondem, qualificam e resolvem dúvidas dos clientes sem fila de espera — escalando automaticamente para humanos quando necessário.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📄</div>
+      <h3>Processamento de documentos</h3>
+      <p>Extração automática de dados de contratos, notas fiscais, laudos, pedidos e formulários. Classifica, valida e alimenta seu ERP ou banco de dados sem digitação manual.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎯</div>
+      <h3>Qualificação de leads</h3>
+      <p>Agentes que recebem leads do seu site ou anúncios, realizam a primeira conversa qualificadora, pontuam o lead no CRM e agendam reuniões com o time de vendas.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Relatórios e análises</h3>
+      <p>Consolidação automática de dados de múltiplas fontes, geração de relatórios executivos e envio proativo de alertas quando indicadores saem dos limites configurados.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💰</div>
+      <h3>Cobrança e inadimplência</h3>
+      <p>Fluxos automáticos de régua de cobrança com mensagens personalizadas por WhatsApp e e-mail, baseados no perfil do cliente e histórico de pagamento.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔗</div>
+      <h3>Integração entre sistemas</h3>
+      <p>Sincronização automática entre ERP, CRM, planilhas, e-commerce e APIs externas. Elimine o retrabalho de inserção manual de dados entre plataformas diferentes.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); max-width: 100%; padding: 4rem 2rem;">
+  <div style="max-width: 900px; margin: 0 auto;">
+    <h2>Como funciona o processo de <span>automação</span></h2>
+    <p class="section-lead">Da conversa inicial ao processo rodando em produção, passamos por etapas estruturadas que garantem resultado sem surpresas.</p>
+    <ul class="process-list">
+      <li class="process-item">
+        <span class="step-num">1</span>
+        <div>
+          <h4>Diagnóstico e mapeamento</h4>
+          <p>Mapeamos os processos que consomem mais tempo e têm maior potencial de automatização. Priorizamos pelo impacto em custo operacional e ganho de escala.</p>
+        </div>
+      </li>
+      <li class="process-item">
+        <span class="step-num">2</span>
+        <div>
+          <h4>Arquitetura da solução</h4>
+          <p>Definimos quais modelos de IA, ferramentas e integrações serão usados. Documentamos o fluxo completo antes de escrever uma linha de código.</p>
+        </div>
+      </li>
+      <li class="process-item">
+        <span class="step-num">3</span>
+        <div>
+          <h4>Desenvolvimento e integração</h4>
+          <p>Construímos os agentes, fluxos e conectores. Integramos com os sistemas que você já usa: ERP, CRM, WhatsApp Business API, bancos de dados internos.</p>
+        </div>
+      </li>
+      <li class="process-item">
+        <span class="step-num">4</span>
+        <div>
+          <h4>Testes com dados reais</h4>
+          <p>Testamos com dados reais da sua empresa em ambiente controlado. Ajustamos prompts, regras e fluxos até o resultado estar dentro do esperado.</p>
+        </div>
+      </li>
+      <li class="process-item">
+        <span class="step-num">5</span>
+        <div>
+          <h4>Deploy e monitoramento</h4>
+          <p>Colocamos em produção com monitoramento de logs, alertas e painel de acompanhamento. Você sabe exatamente o que está acontecendo em tempo real.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Automação com IA por <span>setor</span></h2>
+  <p class="section-lead">Atendemos empresas de diferentes segmentos, adaptando as soluções para as particularidades de cada mercado.</p>
+  <div class="sectors">
+    <div class="sector-tag"><span>⚖️</span><p>Jurídico e escritórios</p></div>
+    <div class="sector-tag"><span>🏥</span><p>Saúde e clínicas</p></div>
+    <div class="sector-tag"><span>🧮</span><p>Contabilidade</p></div>
+    <div class="sector-tag"><span>🏗️</span><p>Construção civil</p></div>
+    <div class="sector-tag"><span>🛒</span><p>E-commerce e varejo</p></div>
+    <div class="sector-tag"><span>🏦</span><p>Fintechs e finanças</p></div>
+    <div class="sector-tag"><span>🚚</span><p>Logística e supply chain</p></div>
+    <div class="sector-tag"><span>👥</span><p>RH e recrutamento</p></div>
+    <div class="sector-tag"><span>🏢</span><p>Imobiliárias</p></div>
+    <div class="sector-tag"><span>📦</span><p>Indústria e manufatura</p></div>
+  </div>
+</section>
+
+<section style="max-width: 100%; padding: 4rem 2rem; background: rgba(99,102,241,0.04); border-top: 1px solid var(--border);">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h2>Perguntas frequentes sobre <span>automação com IA</span></h2>
+    <p class="section-lead">Respostas diretas para as dúvidas mais comuns antes de iniciar um projeto.</p>
+    <div class="faq-list">
+      <details>
+        <summary>O que é automação com IA?</summary>
+        <p>Automação com IA vai além de scripts e macros tradicionais. Usa modelos de linguagem e agentes inteligentes para executar tarefas complexas que exigem compreensão de contexto, tomada de decisão e adaptação — como responder e-mails, qualificar leads, processar documentos, gerar relatórios e integrar sistemas diferentes de forma autônoma.</p>
+      </details>
+      <details>
+        <summary>Quais processos podem ser automatizados com IA?</summary>
+        <p>Praticamente qualquer processo baseado em dados e regras: atendimento ao cliente (WhatsApp, e-mail, chat), qualificação de leads, análise e extração de documentos (contratos, notas fiscais, laudos), geração de relatórios, onboarding de clientes, cobrança e inadimplência, rotinas de RH, monitoramento de dados e alertas proativos.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo leva para implementar?</summary>
+        <p>Projetos simples (automação de um processo específico) podem ser entregues em 2–4 semanas. Implementações mais complexas, envolvendo múltiplos sistemas e fluxos multiagente, levam tipicamente de 6 a 12 semanas. Trabalhamos com sprints curtos para entregar valor desde as primeiras semanas.</p>
+      </details>
+      <details>
+        <summary>A automação se integra com os sistemas que já uso?</summary>
+        <p>Sim. Desenvolvemos integrações com ERPs (SAP, TOTVS, Sankhya), CRMs (HubSpot, Salesforce, RD Station), plataformas de comunicação (WhatsApp Business API, Slack, Teams), bancos de dados e APIs internas. Se o sistema tem API ou banco de dados acessível, conseguimos integrar.</p>
+      </details>
+      <details>
+        <summary>Qual é o ROI esperado de uma automação com IA?</summary>
+        <p>Depende do processo, mas clientes relatam: redução de 40% no tempo de execução de tarefas, eliminação de erros em processos manuais, disponibilidade 24/7 sem custo adicional e escala de operações sem contratar mais pessoas. O retorno costuma aparecer já nos primeiros 60–90 dias após a implantação.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="cta-section">
+    <h2>Pronto para automatizar sua <span>operação</span>?</h2>
+    <p>Agende uma conversa gratuita de 30 minutos. Mostramos quais processos da sua empresa têm maior potencial de automação e qual seria o impacto esperado.</p>
+    <a href="https://bronks.ia.br/#contato" class="btn-primary">Quero automatizar minha empresa</a>
+  </div>
+</section>
+
+<footer>
+  <p>
+    <a href="https://bronks.ia.br/">Bronks IA</a> — Automação com IA para empresas | Rio de Janeiro, RJ<br>
+    <a href="https://bronks.ia.br/agentes-ia/">Agentes de IA</a> ·
+    <a href="https://bronks.ia.br/rag-empresarial/">RAG Empresarial</a> ·
+    <a href="https://bronks.ia.br/consultoria-ia/">Consultoria em IA</a> ·
+    <a href="https://bronks.ia.br/ia-para-juridico/">IA para Jurídico</a>
+  </p>
+  <p style="margin-top:0.75rem; font-size:0.8rem;">© 2026 Bronks IA · bronks.ia.br</p>
+</footer>
+
+</body>
+</html>
