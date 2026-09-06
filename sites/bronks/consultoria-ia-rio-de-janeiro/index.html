@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultoria em IA Rio de Janeiro | Bronks IA</title>
+  <meta name="description" content="Consultoria em Inteligência Artificial no Rio de Janeiro. Implante agentes de IA, RAG e automação na sua empresa. Agende uma conversa gratuita com a Bronks IA!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Schema.org: LocalBusiness / ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Bronks IA",
+    "url": "https://bronks.ia.br",
+    "logo": "https://bronks.ia.br/assets/logo.png",
+    "description": "Consultoria em Inteligência Artificial no Rio de Janeiro. Agentes de IA, RAG empresarial, automação de processos e integração com sistemas legados.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Rio de Janeiro",
+    "telephone": "+55-21-00000-0000",
+    "email": "contato@bronks.ia.br",
+    "priceRange": "$$",
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "sameAs": [
+      "https://www.linkedin.com/company/bronks-ia",
+      "https://www.instagram.com/bronks.ia"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é consultoria em IA e como ela pode ajudar minha empresa no Rio de Janeiro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consultoria em IA é o processo pelo qual especialistas avaliam os processos da sua empresa e identificam onde a Inteligência Artificial pode gerar mais valor — reduzindo custos, aumentando eficiência ou criando novos produtos. Para empresas cariocas, isso pode significar automatizar atendimento ao cliente, otimizar operações logísticas no Porto de Santos ou criar sistemas de recomendação para o setor de turismo e hotelaria, muito forte no Rio de Janeiro."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto custa uma consultoria de IA para empresas no Rio de Janeiro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O custo varia conforme o escopo do projeto, complexidade dos sistemas existentes e os objetivos de negócio. A Bronks IA oferece um diagnóstico inicial gratuito para entender suas necessidades e, a partir daí, apresentamos uma proposta técnica e comercial transparente. Projetos de automação de processos podem começar em investimentos menores, enquanto implantações de agentes multimodais ou sistemas RAG de grande escala exigem maior investimento. O retorno sobre investimento (ROI) costuma ser mensurável em 3 a 6 meses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais setores da economia carioca se beneficiam mais da IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O Rio de Janeiro tem uma economia diversa e vários setores se beneficiam muito da IA: óleo e gás (análise preditiva de equipamentos, segurança operacional), turismo e hotelaria (atendimento automatizado, personalização de ofertas), setor financeiro (detecção de fraude, análise de crédito), logística portuária (otimização de rotas e rastreamento), imobiliário (avaliação de imóveis, chatbots para corretores) e saúde (triagem de pacientes, análise de exames). A Bronks IA tem experiência em todos esses verticais."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O que é RAG e por que minha empresa no Rio precisa disso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RAG (Retrieval-Augmented Generation) é uma tecnologia que combina modelos de linguagem como o GPT com a base de conhecimento interna da sua empresa. Em vez de um chatbot genérico, seu sistema passa a responder com base nos seus documentos, contratos, manuais técnicos e histórico de dados. Para empresas no Rio de Janeiro, isso significa que um agente de IA pode responder perguntas específicas sobre seus produtos, normas setoriais (como as da ANP para óleo e gás, ou do BACEN para financeiras) e procedimentos internos — com precisão e segurança."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A Bronks IA atende presencialmente em empresas do Rio de Janeiro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim! Uma das nossas grandes vantagens é estar sediada no Rio de Janeiro. Nossa equipe pode realizar reuniões presenciais, workshops e acompanhamento in loco nas fases críticas do projeto. Também atendemos clientes remotamente em todo o Brasil, mas para empresas cariocas priorizamos o atendimento presencial sempre que faz sentido para o projeto. Isso garante maior alinhamento, comunicação mais ágil e a construção de uma parceria sólida e de longo prazo."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --dark: #0A0E1A;
+      --dark-2: #111827;
+      --accent: #7C3AED;
+      --accent-light: #A78BFA;
+      --accent-glow: rgba(124, 58, 237, .15);
+      --white: #FFFFFF;
+      --gray-400: #9CA3AF;
+      --gray-600: #4B5563;
+      --gray-800: #1F2937;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--dark);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.2;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      background: rgba(10, 14, 26, 0.95);
+      border-bottom: 1px solid rgba(124, 58, 237, 0.15);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .nav__logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .nav__logo span {
+      color: var(--accent);
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav__links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--gray-400);
+      transition: color 0.2s;
+    }
+
+    .nav__links a:hover {
+      color: var(--white);
+    }
+
+    .nav__cta {
+      display: inline-flex;
+      align-items: center;
+      background: var(--accent);
+      color: var(--white) !important;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .nav__cta:hover {
+      background: #6D28D9;
+      transform: translateY(-1px);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      padding: 100px 0 96px;
+      overflow: hidden;
+      background: var(--dark);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 600px;
+      background: radial-gradient(ellipse at center, rgba(124, 58, 237, 0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-glow);
+      border: 1px solid rgba(124, 58, 237, 0.3);
+      border-radius: 50px;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--accent-light);
+      margin-bottom: 28px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .hero__badge::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background: var(--accent-light);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .hero__h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      max-width: 780px;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #fff 60%, var(--accent-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero__sub {
+      font-size: 1.15rem;
+      color: var(--gray-400);
+      max-width: 620px;
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: var(--white);
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 0 0 0 rgba(124, 58, 237, 0);
+    }
+
+    .btn-primary:hover {
+      background: #6D28D9;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(124, 58, 237, 0.35);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--white);
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(167, 139, 250, 0.5);
+      background: rgba(124, 58, 237, 0.08);
+    }
+
+    .hero__stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 64px;
+      padding-top: 48px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .hero__stat-value {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-light);
+    }
+
+    .hero__stat-label {
+      font-size: 0.85rem;
+      color: var(--gray-400);
+      margin-top: 2px;
+    }
+
+    /* ── SECTIONS SHARED ── */
+    section {
+      padding: 88px 0;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-light);
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      max-width: 600px;
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--gray-400);
+      max-width: 560px;
+      line-height: 1.7;
+      margin-bottom: 56px;
+    }
+
+    /* ── WHY LOCAL ── */
+    .why-local {
+      background: var(--dark-2);
+    }
+
+    .why-local__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .advantage-card {
+      background: var(--gray-800);
+      border: 1px solid rgba(124, 58, 237, 0.2);
+      border-radius: 16px;
+      padding: 36px 32px;
+      transition: border-color 0.25s, transform 0.2s;
+    }
+
+    .advantage-card:hover {
+      border-color: rgba(124, 58, 237, 0.5);
+      transform: translateY(-3px);
+    }
+
+    .advantage-card__icon {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .advantage-card__title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .advantage-card__text {
+      font-size: 0.95rem;
+      color: var(--gray-400);
+      line-height: 1.65;
+    }
+
+    /* ── SERVICES ── */
+    .services {
+      background: var(--dark);
+    }
+
+    .services__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: rgba(124, 58, 237, 0.08);
+      border: 1px solid rgba(124, 58, 237, 0.2);
+      border-radius: 16px;
+      padding: 36px 32px;
+      transition: border-color 0.25s, background 0.25s, transform 0.2s;
+    }
+
+    .service-card:hover {
+      background: rgba(124, 58, 237, 0.14);
+      border-color: rgba(124, 58, 237, 0.45);
+      transform: translateY(-3px);
+    }
+
+    .service-card__icon {
+      width: 48px;
+      height: 48px;
+      background: var(--accent-glow);
+      border: 1px solid rgba(124, 58, 237, 0.3);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    .service-card__title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--white);
+    }
+
+    .service-card__text {
+      font-size: 0.93rem;
+      color: var(--gray-400);
+      line-height: 1.65;
+    }
+
+    /* ── PROCESS ── */
+    .process {
+      background: var(--dark-2);
+    }
+
+    .process__steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+      position: relative;
+    }
+
+    .process__step {
+      position: relative;
+      padding: 40px 28px;
+    }
+
+    .process__step-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: rgba(124, 58, 237, 0.18);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .process__step-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--white);
+    }
+
+    .process__step-text {
+      font-size: 0.9rem;
+      color: var(--gray-400);
+      line-height: 1.6;
+    }
+
+    .process__step::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 40px;
+      height: calc(100% - 80px);
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(124, 58, 237, 0.3), transparent);
+    }
+
+    .process__step:last-child::after {
+      display: none;
+    }
+
+    /* ── SECTORS ── */
+    .sectors {
+      background: var(--dark);
+    }
+
+    .sectors__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .sector-tag {
+      background: var(--gray-800);
+      border: 1px solid rgba(124, 58, 237, 0.2);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .sector-tag:hover {
+      border-color: rgba(124, 58, 237, 0.5);
+      background: rgba(124, 58, 237, 0.1);
+    }
+
+    .sector-tag__icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .sector-tag__name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .sectors__text {
+      background: rgba(124, 58, 237, 0.08);
+      border: 1px solid rgba(124, 58, 237, 0.2);
+      border-radius: 16px;
+      padding: 36px 40px;
+    }
+
+    .sectors__text p {
+      font-size: 1rem;
+      color: var(--gray-400);
+      line-height: 1.75;
+    }
+
+    .sectors__text p + p {
+      margin-top: 16px;
+    }
+
+    /* ── WHY BRONKS ── */
+    .why-bronks {
+      background: var(--dark-2);
+    }
+
+    .why-bronks__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .diff-card {
+      background: var(--gray-800);
+      border: 1px solid rgba(124, 58, 237, 0.15);
+      border-radius: 16px;
+      padding: 32px 28px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .diff-card:hover {
+      border-color: rgba(124, 58, 237, 0.45);
+      transform: translateY(-3px);
+    }
+
+    .diff-card__check {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      font-size: 1rem;
+    }
+
+    .diff-card__title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .diff-card__text {
+      font-size: 0.9rem;
+      color: var(--gray-400);
+      line-height: 1.6;
+    }
+
+    /* ── FAQ ── */
+    .faq {
+      background: var(--dark);
+    }
+
+    .faq__list {
+      max-width: 780px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq__item {
+      background: var(--gray-800);
+      border: 1px solid rgba(124, 58, 237, 0.15);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .faq__item:hover {
+      border-color: rgba(124, 58, 237, 0.35);
+    }
+
+    .faq__question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: left;
+      padding: 24px 28px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .faq__question:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: -2px;
+    }
+
+    .faq__arrow {
+      color: var(--accent-light);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      transition: transform 0.25s;
+    }
+
+    .faq__item.open .faq__arrow {
+      transform: rotate(180deg);
+    }
+
+    .faq__answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq__item.open .faq__answer {
+      max-height: 400px;
+    }
+
+    .faq__answer-inner {
+      padding: 0 28px 24px;
+      font-size: 0.95rem;
+      color: var(--gray-400);
+      line-height: 1.7;
+    }
+
+    /* ── CTA FINAL ── */
+    .cta-final {
+      background: var(--dark-2);
+      text-align: center;
+    }
+
+    .cta-final__box {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(124, 58, 237, 0.05) 100%);
+      border: 1px solid rgba(124, 58, 237, 0.3);
+      border-radius: 24px;
+      padding: 72px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-final__box::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.2) 0%, transparent 70%);
+    }
+
+    .cta-final__title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-final__text {
+      font-size: 1.05rem;
+      color: var(--gray-400);
+      margin-bottom: 40px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--dark);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 48px 0 32px;
+    }
+
+    .footer__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    .footer__logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .footer__logo span {
+      color: var(--accent);
+    }
+
+    .footer__tagline {
+      font-size: 0.875rem;
+      color: var(--gray-400);
+      max-width: 240px;
+      line-height: 1.5;
+    }
+
+    .footer__nav-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray-600);
+      margin-bottom: 14px;
+    }
+
+    .footer__nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer__nav-list a {
+      font-size: 0.9rem;
+      color: var(--gray-400);
+      transition: color 0.2s;
+    }
+
+    .footer__nav-list a:hover {
+      color: var(--white);
+    }
+
+    .footer__bottom {
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer__copy {
+      font-size: 0.83rem;
+      color: var(--gray-600);
+    }
+
+    .footer__legal {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer__legal a {
+      font-size: 0.83rem;
+      color: var(--gray-600);
+      transition: color 0.2s;
+    }
+
+    .footer__legal a:hover {
+      color: var(--gray-400);
+    }
+
+    /* ── MOBILE NAV ── */
+    @media (max-width: 768px) {
+      .nav__links {
+        display: none;
+      }
+
+      .hero {
+        padding: 72px 0 64px;
+      }
+
+      .hero__stats {
+        gap: 28px;
+      }
+
+      .process__step::after {
+        display: none;
+      }
+
+      .cta-final__box {
+        padding: 48px 24px;
+      }
+
+      .footer__inner {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Navegação principal">
+    <div class="container nav__inner">
+      <a href="https://bronks.ia.br/" class="nav__logo">Bronks<span>IA</span></a>
+      <ul class="nav__links">
+        <li><a href="https://bronks.ia.br/servicos/">Serviços</a></li>
+        <li><a href="https://bronks.ia.br/sobre/">Sobre</a></li>
+        <li><a href="https://bronks.ia.br/cases/">Cases</a></li>
+        <li><a href="https://bronks.ia.br/blog/">Blog</a></li>
+        <li>
+          <a href="https://bronks.ia.br/contato/" class="nav__cta">Falar com especialista</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+      <div class="hero__badge">Consultoria IA · Rio de Janeiro</div>
+      <h1 class="hero__h1" id="hero-heading">Consultoria em Inteligência Artificial no Rio de Janeiro</h1>
+      <p class="hero__sub">
+        A empresa de IA que entende o mercado carioca. Somos uma consultoria especializada em Inteligência Artificial sediada no Rio de Janeiro, com profundo conhecimento dos setores que movem a economia da cidade — do óleo e gás à logística portuária, do turismo ao mercado financeiro.
+      </p>
+      <div class="hero__actions">
+        <a href="https://bronks.ia.br/contato/" class="btn-primary">
+          Agendar consultoria gratuita ↗
+        </a>
+        <a href="#servicos" class="btn-secondary">
+          Ver nossos serviços
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div>
+          <div class="hero__stat-value">+50</div>
+          <div class="hero__stat-label">projetos de IA entregues</div>
+        </div>
+        <div>
+          <div class="hero__stat-value">3x</div>
+          <div class="hero__stat-label">ROI médio nos primeiros 12 meses</div>
+        </div>
+        <div>
+          <div class="hero__stat-value">100%</div>
+          <div class="hero__stat-label">baseados no Rio de Janeiro</div>
+        </div>
+        <div>
+          <div class="hero__stat-value">48h</div>
+          <div class="hero__stat-label">para primeira proposta técnica</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE LOCAL -->
+  <section class="why-local" aria-labelledby="why-local-heading">
+    <div class="container">
+      <span class="section-label">Por que local importa</span>
+      <h2 class="section-title" id="why-local-heading">Por que contratar consultoria de IA em RJ de uma empresa local</h2>
+      <p class="section-desc">
+        Empresas do Rio de Janeiro têm desafios únicos. Uma consultoria de IA que entende o contexto carioca entrega resultados mais rápidos, mais relevantes e mais duradouros.
+      </p>
+      <div class="why-local__grid">
+        <div class="advantage-card">
+          <div class="advantage-card__icon">📍</div>
+          <h3 class="advantage-card__title">Proximidade e agilidade</h3>
+          <p class="advantage-card__text">
+            Reuniões presenciais quando você precisa, visitas técnicas ao seu escritório ou operação, e uma equipe que opera no mesmo fuso horário e entende o ritmo de negócios carioca. Sem demoras de comunicação por conta de distâncias ou diferenças de horário. Quando um projeto entra em fase crítica, nossa equipe está a uma conversa de distância.
+          </p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">🌊</div>
+          <h3 class="advantage-card__title">Conhecimento do mercado local</h3>
+          <p class="advantage-card__text">
+            O Rio de Janeiro tem um ecossistema de negócios único: a força do setor de óleo e gás, a importância do turismo e da cultura, o peso do Porto, a presença de grandes instituições financeiras e de saúde. Conhecemos esses verticais por dentro e sabemos como a IA pode gerar valor real em cada um deles — sem soluções genéricas.
+          </p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">🤝</div>
+          <h3 class="advantage-card__title">Parceria de longo prazo</h3>
+          <p class="advantage-card__text">
+            Projetos de IA bem-sucedidos exigem parceria contínua, não entrega e abandono. Por estar no Rio, construímos relações presenciais sólidas com nossos clientes. Isso significa mais contexto, mais confiança e a capacidade de evoluir os sistemas de IA junto com o crescimento do seu negócio — mês após mês.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="servicos" aria-labelledby="services-heading">
+    <div class="container">
+      <span class="section-label">O que entregamos</span>
+      <h2 class="section-title" id="services-heading">Nossos serviços de IA para empresas do Rio</h2>
+      <p class="section-desc">
+        Da estratégia à implementação em produção, cobrimos todo o ciclo de vida de uma iniciativa de Inteligência Artificial — com tecnologia de ponta e foco em resultados mensuráveis.
+      </p>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon">🤖</div>
+          <h3 class="service-card__title">Agentes de IA</h3>
+          <p class="service-card__text">
+            Desenvolvemos agentes autônomos capazes de executar tarefas complexas de ponta a ponta: pesquisar informações, tomar decisões, acionar APIs, gerar relatórios e escalar para humanos quando necessário. Ideal para automação de processos de back-office, geração de propostas comerciais e atendimento especializado.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">📚</div>
+          <h3 class="service-card__title">RAG Empresarial</h3>
+          <p class="service-card__text">
+            Implantamos sistemas de Retrieval-Augmented Generation (RAG) que conectam modelos de linguagem à base de conhecimento da sua empresa — documentos técnicos, contratos, manuais, dados históricos. O resultado é um assistente de IA que responde com precisão sobre o seu negócio, sem alucinações e com rastreabilidade de fontes.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">⚙️</div>
+          <h3 class="service-card__title">Automação de Processos</h3>
+          <p class="service-card__text">
+            Mapeamos os processos operacionais da sua empresa e identificamos onde a IA pode eliminar trabalho manual repetitivo, reduzir erros e acelerar fluxos. De aprovações de documentos à geração automática de relatórios financeiros, entregamos automações que operam 24/7 com alta confiabilidade.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">🔗</div>
+          <h3 class="service-card__title">Integração com Sistemas Legados</h3>
+          <p class="service-card__text">
+            Muitas empresas no Rio possuem sistemas legados críticos que não podem ser substituídos. Nossa especialidade é integrar capacidades de IA a esses ambientes via APIs, camadas de dados e conectores customizados — sem interromper a operação atual e respeitando todos os requisitos de segurança e conformidade.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">💬</div>
+          <h3 class="service-card__title">IA para Atendimento</h3>
+          <p class="service-card__text">
+            Construímos soluções de atendimento inteligente que vão muito além dos chatbots simples: assistentes com memória de contexto, capacidade de resolver problemas reais, integração com CRM e sistemas de tickets, e transferência suave para atendentes humanos quando necessário. Reduz tempo de resposta e eleva a satisfação do cliente.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">🏭</div>
+          <h3 class="service-card__title">IA por Setor Vertical</h3>
+          <p class="service-card__text">
+            Desenvolvemos soluções verticalizadas para os principais setores do Rio de Janeiro: análise preditiva para óleo e gás, IA de atendimento para hotéis e turismo, modelos de crédito e detecção de fraude para o setor financeiro, otimização logística para operações portuárias e soluções de triagem e diagnóstico auxiliar para a saúde.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="process" aria-labelledby="process-heading">
+    <div class="container">
+      <span class="section-label">Como trabalhamos</span>
+      <h2 class="section-title" id="process-heading">Como funciona nossa consultoria de IA</h2>
+      <p class="section-desc">
+        Um processo estruturado em quatro etapas que vai do diagnóstico à evolução contínua do sistema em produção.
+      </p>
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="process__step-num">01</div>
+          <h3 class="process__step-title">Diagnóstico gratuito</h3>
+          <p class="process__step-text">
+            Começamos com uma conversa de 60 minutos onde entendemos os seus processos, desafios e objetivos de negócio. Não cobramos por essa etapa. Ao final, você recebe um mapa de oportunidades de IA para a sua empresa — independentemente de avançar conosco ou não.
+          </p>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">02</div>
+          <h3 class="process__step-title">Proposta técnica</h3>
+          <p class="process__step-text">
+            Em até 48 horas, entregamos uma proposta técnica detalhada com arquitetura da solução, tecnologias recomendadas, cronograma, KPIs de sucesso e estimativa de ROI. Sem jargão desnecessário — tudo traduzido para linguagem de negócios.
+          </p>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">03</div>
+          <h3 class="process__step-title">Desenvolvimento</h3>
+          <p class="process__step-text">
+            Nossa equipe de engenheiros e cientistas de dados trabalha em sprints de duas semanas, com demonstrações regulares e atualizações constantes. Você acompanha o progresso em tempo real e participa ativamente das decisões de produto. A qualidade é validada em cada ciclo.
+          </p>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">04</div>
+          <h3 class="process__step-title">Deploy e evolução</h3>
+          <p class="process__step-text">
+            O sistema vai para produção com monitoramento ativo, relatórios de performance e um plano de evolução contínua. IA não é projeto com fim — é produto vivo. Nosso modelo de parceria garante que a solução melhora continuamente conforme os dados e o negócio evoluem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SETORES RJ -->
+  <section class="sectors" aria-labelledby="sectors-heading">
+    <div class="container">
+      <span class="section-label">Presença no Rio</span>
+      <h2 class="section-title" id="sectors-heading">Cases e setores que atendemos no RJ</h2>
+      <p class="section-desc">
+        O Rio de Janeiro concentra alguns dos setores mais dinâmicos e complexos do Brasil. Atuamos com profundidade em cada um deles.
+      </p>
+      <div class="sectors__grid">
+        <div class="sector-tag">
+          <div class="sector-tag__icon">🛢️</div>
+          <div class="sector-tag__name">Óleo &amp; Gás</div>
+        </div>
+        <div class="sector-tag">
+          <div class="sector-tag__icon">🏖️</div>
+          <div class="sector-tag__name">Turismo &amp; Hotelaria</div>
+        </div>
+        <div class="sector-tag">
+          <div class="sector-tag__icon">🏦</div>
+          <div class="sector-tag__name">Mercado Financeiro</div>
+        </div>
+        <div class="sector-tag">
+          <div class="sector-tag__icon">⚓</div>
+          <div class="sector-tag__name">Logística Portuária</div>
+        </div>
+        <div class="sector-tag">
+          <div class="sector-tag__icon">🏢</div>
+          <div class="sector-tag__name">Imobiliário</div>
+        </div>
+        <div class="sector-tag">
+          <div class="sector-tag__icon">🏥</div>
+          <div class="sector-tag__name">Saúde</div>
+        </div>
+      </div>
+      <div class="sectors__text">
+        <p>
+          <strong style="color:var(--white)">Óleo e gás:</strong> O Rio de Janeiro é o coração da indústria de petróleo do Brasil, com a Petrobras e dezenas de empresas de serviço sediadas na cidade. Desenvolvemos soluções de IA para manutenção preditiva de equipamentos offshore, análise de dados sísmicos, automação de relatórios de conformidade regulatória e assistentes de engenharia treinados nas normas técnicas do setor.
+        </p>
+        <p>
+          <strong style="color:var(--white)">Turismo e hotelaria:</strong> Com mais de 6 milhões de turistas por ano, o Rio exige infraestrutura digital de ponta para o setor. Nossos sistemas de IA ajudam hotéis a personalizar ofertas, agências a automatizar o atendimento multicanal, e operadoras a prever demanda e otimizar preços em tempo real.
+        </p>
+        <p>
+          <strong style="color:var(--white)">Financeiro e imobiliário:</strong> Para bancos, corretoras e fintechs, implementamos modelos de análise de crédito, detecção de fraude e conformidade regulatória com o Banco Central. Para o setor imobiliário carioca — um dos mais aquecidos do país — construímos sistemas de precificação inteligente e ferramentas de IA para corretores.
+        </p>
+        <p>
+          <strong style="color:var(--white)">Logística e saúde:</strong> O Porto do Rio e Itaguaí movimentam volumes expressivos de carga. Nossos sistemas de IA otimizam rastreamento, previsão de chegada e gestão de pátio. Na saúde, atuamos com triagem inteligente de pacientes, assistentes clínicos com base em protocolos médicos e automação de processos administrativos hospitalares.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE BRONKS -->
+  <section class="why-bronks" aria-labelledby="why-bronks-heading">
+    <div class="container">
+      <span class="section-label">Nossos diferenciais</span>
+      <h2 class="section-title" id="why-bronks-heading">Por que a Bronks IA</h2>
+      <p class="section-desc">
+        Existem muitas consultorias de IA no Brasil. O que nos torna a escolha certa para empresas cariocas?
+      </p>
+      <div class="why-bronks__grid">
+        <div class="diff-card">
+          <div class="diff-card__check">✓</div>
+          <h3 class="diff-card__title">Sediados no Rio de Janeiro</h3>
+          <p class="diff-card__text">
+            Nossa equipe vive e trabalha no Rio. Entendemos a cultura de negócios local, temos relacionamentos com o ecossistema de inovação da cidade — incluindo a FIRJAN, a UFRJ e o Porto Maravilha — e estamos disponíveis para encontros presenciais sempre que o projeto exigir.
+          </p>
+        </div>
+        <div class="diff-card">
+          <div class="diff-card__check">✓</div>
+          <h3 class="diff-card__title">Profundidade técnica em RAG e multiagentes</h3>
+          <p class="diff-card__text">
+            Não vendemos projetos que não sabemos entregar. Nossa equipe tem especialização comprovada em arquiteturas de RAG de alta precisão, sistemas multiagentes orquestrados e integração com os principais modelos de linguagem do mercado — GPT-4o, Claude, Gemini e modelos open-source.
+          </p>
+        </div>
+        <div class="diff-card">
+          <div class="diff-card__check">✓</div>
+          <h3 class="diff-card__title">Cobertura end-to-end</h3>
+          <p class="diff-card__text">
+            Da descoberta de oportunidades ao deploy em produção e à evolução contínua do sistema, somos responsáveis por todo o ciclo. Você não precisa coordenar múltiplos fornecedores ou entender a arquitetura técnica — nós gerenciamos tudo com transparência total.
+          </p>
+        </div>
+        <div class="diff-card">
+          <div class="diff-card__check">✓</div>
+          <h3 class="diff-card__title">Resultados mensuráveis</h3>
+          <p class="diff-card__text">
+            Antes de começar qualquer projeto, definimos em conjunto os KPIs de sucesso — redução de custo operacional, aumento de conversão, tempo de resposta do atendimento, etc. Reportamos o progresso a cada sprint e o resultado ao final. Nosso sucesso é medido pelo seu.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <span class="section-label">Dúvidas frequentes</span>
+      <h2 class="section-title" id="faq-heading">Perguntas frequentes sobre consultoria IA no Rio de Janeiro</h2>
+      <p class="section-desc">
+        Respostas diretas para as principais dúvidas de empresários e líderes cariocas que estão avaliando projetos de IA.
+      </p>
+      <div class="faq__list" role="list">
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question" aria-expanded="false" onclick="toggleFaq(this)">
+            O que é consultoria em IA e como ela pode ajudar minha empresa no Rio de Janeiro?
+            <span class="faq__arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq__answer" hidden>
+            <div class="faq__answer-inner">
+              Consultoria em IA é o processo pelo qual especialistas avaliam os processos da sua empresa e identificam onde a Inteligência Artificial pode gerar mais valor — reduzindo custos, aumentando eficiência ou criando novos produtos. Para empresas cariocas, isso pode significar automatizar o atendimento ao cliente, otimizar operações logísticas no Porto do Rio, criar sistemas de recomendação para o setor de turismo e hotelaria ou aplicar análise preditiva nas operações de óleo e gás. O diagnóstico inicial é sempre gratuito e personalizado para o seu negócio.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question" aria-expanded="false" onclick="toggleFaq(this)">
+            Quanto custa uma consultoria de IA para empresas no Rio de Janeiro?
+            <span class="faq__arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq__answer" hidden>
+            <div class="faq__answer-inner">
+              O custo varia conforme o escopo do projeto, a complexidade dos sistemas existentes e os objetivos de negócio. A Bronks IA oferece um diagnóstico inicial totalmente gratuito para entender suas necessidades. A partir daí, apresentamos uma proposta técnica e comercial transparente. Projetos de automação de processos mais focados podem começar com investimentos menores, enquanto implantações de sistemas RAG de grande escala ou plataformas de multiagentes exigem maior investimento. O retorno sobre investimento (ROI) costuma ser mensurável em 3 a 6 meses de operação.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question" aria-expanded="false" onclick="toggleFaq(this)">
+            Quais setores da economia carioca se beneficiam mais da IA?
+            <span class="faq__arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq__answer" hidden>
+            <div class="faq__answer-inner">
+              O Rio de Janeiro tem uma economia diversa e vários setores se beneficiam muito da IA: óleo e gás (análise preditiva de equipamentos, segurança operacional, conformidade com a ANP), turismo e hotelaria (atendimento automatizado, personalização de ofertas, revenue management), setor financeiro (detecção de fraude, análise de crédito, conformidade com o BACEN), logística portuária (otimização de rotas e rastreamento de cargas), imobiliário (avaliação de imóveis, chatbots para corretores) e saúde (triagem de pacientes, análise de exames, automação administrativa). A Bronks IA tem experiência em todos esses verticais.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question" aria-expanded="false" onclick="toggleFaq(this)">
+            O que é RAG e por que minha empresa no Rio precisa disso?
+            <span class="faq__arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq__answer" hidden>
+            <div class="faq__answer-inner">
+              RAG (Retrieval-Augmented Generation) é uma tecnologia que combina grandes modelos de linguagem com a base de conhecimento interna da sua empresa. Em vez de um chatbot genérico que responde com informações da internet, seu sistema passa a responder com base nos seus documentos, contratos, manuais técnicos e histórico de dados proprietários — com precisão, rastreabilidade de fontes e sem alucinações. Para empresas no Rio, isso significa que um agente de IA pode responder perguntas específicas sobre seus produtos, normas setoriais e procedimentos internos de forma confiável, disponível 24 horas por dia.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question" aria-expanded="false" onclick="toggleFaq(this)">
+            A Bronks IA atende presencialmente em empresas do Rio de Janeiro?
+            <span class="faq__arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq__answer" hidden>
+            <div class="faq__answer-inner">
+              Sim! Uma das nossas grandes vantagens é estar sediada no Rio de Janeiro. Nossa equipe realiza reuniões presenciais, workshops e acompanhamento in loco nas fases críticas do projeto — seja na Zona Sul, no Centro, na Barra da Tijuca ou em municípios como Niterói e Macaé. Também atendemos clientes remotamente em todo o Brasil, mas para empresas cariocas priorizamos o atendimento presencial sempre que agrega valor ao projeto. Isso garante maior alinhamento, comunicação mais ágil e a construção de uma parceria sólida e de longo prazo.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-final__box">
+        <h2 class="cta-final__title" id="cta-heading">Agende sua consultoria gratuita em IA</h2>
+        <p class="cta-final__text">
+          Em 60 minutos, nossa equipe entende o seu negócio e apresenta um mapa de oportunidades de IA personalizado para a sua empresa no Rio de Janeiro. Sem compromisso, sem custo.
+        </p>
+        <a href="https://bronks.ia.br/contato/" class="btn-primary" style="font-size:1.05rem; padding:16px 36px;">
+          Agendar consultoria gratuita ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__logo">Bronks<span>IA</span></div>
+          <p class="footer__tagline">Consultoria em Inteligência Artificial sediada no Rio de Janeiro.</p>
+        </div>
+        <div>
+          <div class="footer__nav-title">Serviços</div>
+          <ul class="footer__nav-list">
+            <li><a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a></li>
+            <li><a href="https://bronks.ia.br/rag-empresarial/">RAG Empresarial</a></li>
+            <li><a href="https://bronks.ia.br/automacao-processos/">Automação de Processos</a></li>
+            <li><a href="https://bronks.ia.br/ia-atendimento/">IA para Atendimento</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__nav-title">Empresa</div>
+          <ul class="footer__nav-list">
+            <li><a href="https://bronks.ia.br/sobre/">Sobre a Bronks IA</a></li>
+            <li><a href="https://bronks.ia.br/cases/">Cases de sucesso</a></li>
+            <li><a href="https://bronks.ia.br/blog/">Blog de IA</a></li>
+            <li><a href="https://bronks.ia.br/contato/">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__nav-title">Localização</div>
+          <ul class="footer__nav-list">
+            <li><a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/">Consultoria IA Rio de Janeiro</a></li>
+            <li><a href="https://bronks.ia.br/consultoria-ia-niteroi/">Consultoria IA Niterói</a></li>
+            <li><a href="https://bronks.ia.br/consultoria-ia-macae/">Consultoria IA Macaé</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2025 Bronks IA. Todos os direitos reservados.</span>
+        <div class="footer__legal">
+          <a href="https://bronks.ia.br/privacidade/">Política de privacidade</a>
+          <a href="https://bronks.ia.br/termos/">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFaq(btn) {
+      var item = btn.closest('.faq__item');
+      var answer = item.querySelector('.faq__answer');
+      var isOpen = item.classList.contains('open');
+
+      // close all
+      document.querySelectorAll('.faq__item.open').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+        el.querySelector('.faq__answer').hidden = true;
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.hidden = false;
+      }
+    }
+  </script>
+</body>
+</html>
