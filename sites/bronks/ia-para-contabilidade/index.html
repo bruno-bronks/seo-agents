@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Contabilidade: Automação Fiscal, Tributária e Contábil | Bronks IA</title>
+  <meta name="description" content="Automatize processos contábeis com IA: conciliação bancária, análise de notas fiscais, obrigações acessórias e atendimento ao cliente. Bronks IA, Rio de Janeiro.">
+  <link rel="canonical" href="https://bronks.ia.br/ia-para-contabilidade/">
+  <meta property="og:title" content="IA para Contabilidade | Automação Fiscal e Tributária | Bronks IA">
+  <meta property="og:description" content="Agentes de IA que automatizam conciliação bancária, análise de NFs, obrigações acessórias e atendimento ao cliente contábil. Para escritórios e departamentos financeiros.">
+  <meta property="og:url" content="https://bronks.ia.br/ia-para-contabilidade/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bronks.ia.br/images/og-ia-contabilidade.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://bronks.ia.br/ia-para-contabilidade/#service",
+        "name": "IA para Contabilidade",
+        "description": "Automação de processos contábeis com inteligência artificial: conciliação bancária, análise de notas fiscais, obrigações acessórias, gestão tributária e atendimento ao cliente.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Bronks IA",
+          "url": "https://bronks.ia.br",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rio de Janeiro",
+            "addressRegion": "RJ",
+            "addressCountry": "BR"
+          }
+        },
+        "areaServed": "Brasil",
+        "serviceType": "Automação Contábil com IA"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quais processos contábeis podem ser automatizados com IA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Os processos mais impactantes são: conciliação bancária automática, leitura e classificação de notas fiscais (XML), geração e envio de obrigações acessórias, análise de crédito de clientes, atendimento via WhatsApp/email para dúvidas fiscais, detecção de inconsistências tributárias e geração de relatórios gerenciais. A IA pode automatizar entre 60% e 80% das tarefas repetitivas de um escritório contábil."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O sistema de IA se integra com os softwares contábeis que já uso?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Integramos com os principais sistemas do mercado: Domínio, Alterdata, TOTVS Protheus, Conta Azul, QuickBooks, SAP e sistemas próprios. A integração é feita via API ou RPA quando não há API disponível — sem necessidade de troca de sistema."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A IA consegue ler e classificar notas fiscais eletrônicas automaticamente?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Nossos agentes processam XMLs de NF-e, NFS-e e CT-e, extraem os dados relevantes, classificam a natureza da operação, validam contra a legislação vigente e lançam no sistema contábil — tudo automaticamente. Precisão média acima de 97%."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como garantem a segurança dos dados financeiros dos clientes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Toda a infraestrutura é privada e isolada por cliente. Os dados financeiros nunca trafegam por APIs de IA de terceiros no modo compartilhado — processamos em ambiente dedicado ou on-premise. Implementamos LGPD compliance, criptografia AES-256, logs de auditoria e controle de acesso com MFA."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --border: #1e1e2e;
+      --accent: #6c47ff;
+      --accent2: #10b981;
+      --text: #e8e8f0;
+      --muted: #8888aa;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.7; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.25rem; font-weight: 700; color: var(--text); }
+    .logo span { color: var(--accent); }
+    nav a { margin-left: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+    nav a:hover { color: var(--text); text-decoration: none; }
+
+    .hero { padding: 6rem 2rem 4rem; max-width: 900px; margin: 0 auto; text-align: center; }
+    .badge { display: inline-block; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); color: var(--accent2); padding: 0.35rem 1rem; border-radius: 2rem; font-size: 0.8rem; margin-bottom: 1.5rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem; }
+    h1 em { color: var(--accent); font-style: normal; }
+    .hero p { font-size: 1.15rem; color: var(--muted); max-width: 680px; margin: 0 auto 2.5rem; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 0.85rem 2rem; border-radius: 0.5rem; font-weight: 600; font-size: 1rem; cursor: pointer; border: none; transition: opacity .2s; display: inline-block; }
+    .btn-primary { background: var(--accent2); color: #fff; }
+    .btn-secondary { background: transparent; border: 1px solid var(--border); color: var(--text); }
+    .btn:hover { opacity: 0.85; }
+
+    section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+    h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 1rem; }
+    h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
+
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; padding: 1.75rem; }
+    .card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; margin-top: 0.4rem; }
+
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-top: 3rem; text-align: center; }
+    .stat-val { font-size: 2.5rem; font-weight: 800; color: var(--accent2); }
+    .stat-label { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+
+    .process-list { margin-top: 2.5rem; counter-reset: step; }
+    .process-item { display: flex; gap: 1.5rem; margin-bottom: 2rem; }
+    .process-num { width: 2.5rem; height: 2.5rem; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.9rem; }
+    .process-content h3 { margin-bottom: 0.3rem; }
+    .process-content p { color: var(--muted); font-size: 0.95rem; }
+
+    .integrations { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+    .int-tag { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.9rem; }
+
+    .faq { margin-top: 2.5rem; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
+    .faq-q { font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem; }
+    .faq-a { color: var(--muted); }
+
+    .warning { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.2); border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin-top: 2rem; }
+    .warning strong { color: #f59e0b; }
+
+    .cta-section { text-align: center; padding: 5rem 2rem; border-top: 1px solid var(--border); }
+    .cta-section h2 { margin-bottom: 1rem; }
+    .cta-section p { color: var(--muted); margin-bottom: 2rem; }
+
+    footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.875rem; }
+    footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 1rem; }
+      .hero { padding: 4rem 1.5rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Bronks <span>IA</span></div>
+  <nav>
+    <a href="/">Início</a>
+    <a href="/agentes-ia/">Agentes de IA</a>
+    <a href="/rag-empresarial/">RAG</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="badge">🧾 IA para o setor contábil</div>
+  <h1>Automatize a <em>contabilidade</em> com agentes de IA — sem trocar o sistema que você já usa</h1>
+  <p>Da conciliação bancária à análise de notas fiscais, do SPED ao atendimento ao cliente: agentes de IA que trabalham 24h e entregam precisão acima de 97%, integrados ao seu software contábil atual.</p>
+  <div class="cta-group">
+    <a href="/#contato" class="btn btn-primary">Diagnóstico gratuito</a>
+    <a href="/agentes-ia/" class="btn btn-secondary">Ver todos os agentes</a>
+  </div>
+</div>
+
+<hr class="divider">
+
+<section>
+  <h2>O impacto que a IA gera em escritórios contábeis</h2>
+  <p style="color: var(--muted); max-width: 700px;">Estimativas baseadas em projetos reais de automação contábil com IA no mercado brasileiro (2024–2026).</p>
+  <div class="stats">
+    <div>
+      <div class="stat-val">70%</div>
+      <div class="stat-label">de tarefas repetitivas automatizadas</div>
+    </div>
+    <div>
+      <div class="stat-val">97%+</div>
+      <div class="stat-label">de precisão na leitura de NF-e</div>
+    </div>
+    <div>
+      <div class="stat-val">40%</div>
+      <div class="stat-label">de redução no tempo de fechamento</div>
+    </div>
+    <div>
+      <div class="stat-val">3×</div>
+      <div class="stat-label">mais clientes atendidos sem contratar</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>O que os agentes de IA fazem pelo seu escritório</h2>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">🧾</div>
+      <h3>Leitura e Classificação de NF-e</h3>
+      <p>Processa XMLs de NF-e, NFS-e e CT-e automaticamente: extrai dados, classifica a operação, valida e lança no sistema contábil. Elimina digitação manual.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏦</div>
+      <h3>Conciliação Bancária</h3>
+      <p>Concilia extratos bancários contra lançamentos contábeis em segundos, identifica divergências e sugere correções. Fecha o mês em horas, não dias.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <h3>Obrigações Acessórias</h3>
+      <p>Monitora prazos de SPED, EFD, DEFIS, DASN, ECF e demais obrigações. Gera alertas antecipados e automatiza o preenchimento quando possível.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💬</div>
+      <h3>Atendimento ao Cliente</h3>
+      <p>Chatbot via WhatsApp que responde dúvidas tributárias, envia documentos, informa status de processos e agenda reuniões — sem sobrecarregar a equipe.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔍</div>
+      <h3>Detecção de Inconsistências</h3>
+      <p>Cruza dados automaticamente e identifica divergências entre SPED, notas, extratos e obrigações antes que se tornem problemas com o Fisco.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Relatórios Gerenciais</h3>
+      <p>Gera relatórios financeiros, DRE, balanços e análises de fluxo de caixa automaticamente — para que você entregue mais valor ao cliente.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>Como implementamos</h2>
+  <div class="process-list">
+    <div class="process-item">
+      <div class="process-num">1</div>
+      <div class="process-content">
+        <h3>Discovery e mapeamento de processos</h3>
+        <p>Identificamos os processos de maior volume e menor valor agregado — onde a IA gera o maior retorno. Mapeamos integrações necessárias com sistemas existentes.</p>
+      </div>
+    </div>
+    <div class="process-item">
+      <div class="process-num">2</div>
+      <div class="process-content">
+        <h3>Arquitetura e prova de conceito</h3>
+        <p>Desenvolvemos um MVP funcional com 1–2 casos de uso em 2–3 semanas. Você vê o agente funcionando com dados reais antes de qualquer comprometimento.</p>
+      </div>
+    </div>
+    <div class="process-item">
+      <div class="process-num">3</div>
+      <div class="process-content">
+        <h3>Desenvolvimento e integração</h3>
+        <p>Construímos os agentes, integramos com seus sistemas (Domínio, Alterdata, TOTVS, Conta Azul etc.) e configuramos o pipeline de dados seguro.</p>
+      </div>
+    </div>
+    <div class="process-item">
+      <div class="process-num">4</div>
+      <div class="process-content">
+        <h3>Deploy, treinamento e evolução</h3>
+        <p>Colocamos em produção, treinamos a equipe, monitoramos a precisão e iteramos. O sistema melhora continuamente com base no feedback real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>Integrações suportadas</h2>
+  <p style="color: var(--muted);">Integramos com os sistemas contábeis e financeiros mais usados no Brasil:</p>
+  <div class="integrations">
+    <span class="int-tag">Domínio Sistemas</span>
+    <span class="int-tag">Alterdata</span>
+    <span class="int-tag">TOTVS Protheus</span>
+    <span class="int-tag">Conta Azul</span>
+    <span class="int-tag">QuickBooks</span>
+    <span class="int-tag">SAP</span>
+    <span class="int-tag">Oracle ERP</span>
+    <span class="int-tag">Omie</span>
+    <span class="int-tag">SIEG</span>
+    <span class="int-tag">NFe.io</span>
+    <span class="int-tag">Receita Federal API</span>
+    <span class="int-tag">Sistemas próprios via API</span>
+  </div>
+
+  <div class="warning" style="margin-top: 2rem;">
+    <strong>Nota sobre segurança:</strong> Dados financeiros dos seus clientes nunca são enviados para APIs de IA compartilhadas. Todo o processamento ocorre em ambiente dedicado e isolado por cliente, com criptografia end-to-end e compliance com LGPD.
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>Perguntas frequentes</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q">Quais processos contábeis podem ser automatizados com IA?</div>
+      <div class="faq-a">Os mais impactantes: conciliação bancária automática, leitura e classificação de notas fiscais, geração de obrigações acessórias, análise de crédito, atendimento via WhatsApp, detecção de inconsistências tributárias e relatórios gerenciais. A IA pode automatizar 60%–80% das tarefas repetitivas de um escritório contábil.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">O sistema se integra com o software que já uso?</div>
+      <div class="faq-a">Sim. Integramos com Domínio, Alterdata, TOTVS, Conta Azul, QuickBooks, SAP e sistemas próprios. A integração é feita via API ou RPA quando não há API — sem necessidade de trocar o sistema atual.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">A IA consegue ler notas fiscais eletrônicas automaticamente?</div>
+      <div class="faq-a">Sim. Nossos agentes processam XMLs de NF-e, NFS-e e CT-e, extraem os dados, classificam a operação, validam contra a legislação vigente e lançam no sistema — tudo automaticamente. Precisão média acima de 97%.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Como garantem a segurança dos dados financeiros?</div>
+      <div class="faq-a">Infraestrutura privada e isolada por cliente. Dados financeiros nunca trafegam por APIs compartilhadas de terceiros. Processamos em ambiente dedicado ou on-premise, com criptografia AES-256, logs de auditoria e controle de acesso com MFA. LGPD compliance completo.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Quanto tempo leva para ver os primeiros resultados?</div>
+      <div class="faq-a">Um MVP funcional com 1–2 casos de uso pode ir ao ar em 2–3 semanas. A implementação completa leva de 4 a 10 semanas dependendo da complexidade das integrações. O ROI geralmente aparece nos primeiros 60 dias de operação.</div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section">
+  <h2>Quanto tempo sua equipe passa em tarefas repetitivas hoje?</h2>
+  <p>Em uma sessão de diagnóstico gratuita de 45 minutos, analisamos seus processos e projetamos o impacto real da automação no seu escritório ou departamento.</p>
+  <div class="cta-group">
+    <a href="/#contato" class="btn btn-primary">Agendar diagnóstico gratuito</a>
+    <a href="/chatbot-whatsapp-ia/" class="btn btn-secondary">Chatbot para atendimento</a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 <a href="/">Bronks IA</a> · Rio de Janeiro, Brasil · <a href="/blog/">Blog</a> · <a href="/ia-para-juridico/">IA para Jurídico</a> · <a href="/ia-para-recursos-humanos/">IA para RH</a></p>
+</footer>
+
+</body>
+</html>

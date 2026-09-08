@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot com IA para WhatsApp | Atendimento Inteligente para Empresas | Bronks IA</title>
+  <meta name="description" content="Desenvolva chatbots com IA para WhatsApp que realmente entendem seus clientes. RAG, NLP avançado e integração com seus sistemas. Bronks IA, Rio de Janeiro.">
+  <link rel="canonical" href="https://bronks.ia.br/chatbot-whatsapp-ia/">
+  <meta property="og:title" content="Chatbot com IA para WhatsApp | Bronks IA">
+  <meta property="og:description" content="Chatbots inteligentes para WhatsApp com RAG e NLP avançado. Atendimento 24h, qualificação de leads e integração com CRM. Para empresas que exigem mais.">
+  <meta property="og:url" content="https://bronks.ia.br/chatbot-whatsapp-ia/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bronks.ia.br/images/og-chatbot-whatsapp.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://bronks.ia.br/chatbot-whatsapp-ia/#service",
+        "name": "Chatbot com IA para WhatsApp",
+        "description": "Desenvolvimento de chatbots inteligentes para WhatsApp usando RAG, NLP avançado e integração com sistemas corporativos. Atendimento 24h, qualificação de leads e automação de processos.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Bronks IA",
+          "url": "https://bronks.ia.br",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rio de Janeiro",
+            "addressRegion": "RJ",
+            "addressCountry": "BR"
+          }
+        },
+        "areaServed": "Brasil",
+        "serviceType": "Chatbot com IA"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qual a diferença entre um chatbot com IA e um chatbot com fluxo fixo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Um chatbot com fluxo fixo segue regras predefinidas — se o usuário não digitar exatamente o esperado, o bot trava. Um chatbot com IA (especialmente com RAG e LLMs) entende a intenção do usuário em linguagem natural, busca nas bases de conhecimento da empresa e gera respostas contextualizadas. Resultado: mais conversas resolvidas sem intervenção humana."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O chatbot pode acessar os dados do meu CRM em tempo real?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Integramos o chatbot com CRMs (Salesforce, HubSpot, RD Station, Pipedrive, sistemas próprios) via API. O bot pode consultar status de pedido, histórico do cliente, estoque, agendar reuniões e registrar interações — tudo em tempo real durante a conversa no WhatsApp."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O chatbot funciona para vendas B2B?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim, com adaptações específicas para o ciclo B2B: qualificação de leads com BANT, roteamento para consultor especializado, envio de materiais técnicos (datasheets, propostas), agendamento de demos e follow-up automatizado. O bot aprende com as interações e melhora continuamente."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto tempo leva para desenvolver e implantar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Um chatbot funcional com casos de uso bem definidos leva entre 3 e 8 semanas: 1–2 semanas de discovery e arquitetura, 2–4 semanas de desenvolvimento e treinamento, 1–2 semanas de testes e ajustes. Versões mais simples podem ir ao ar em 2 semanas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O bot funciona 24 horas por dia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. O chatbot opera 24h/7d sem custo adicional por horário. Quando não consegue resolver, transfere para um atendente humano com o histórico completo da conversa — sem o cliente precisar repetir nada."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --border: #1e1e2e;
+      --accent: #6c47ff;
+      --accent2: #25d366;
+      --text: #e8e8f0;
+      --muted: #8888aa;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.7; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.25rem; font-weight: 700; color: var(--text); }
+    .logo span { color: var(--accent); }
+    nav a { margin-left: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+    nav a:hover { color: var(--text); text-decoration: none; }
+
+    .hero { padding: 6rem 2rem 4rem; max-width: 900px; margin: 0 auto; text-align: center; }
+    .badge { display: inline-block; background: rgba(37,211,102,0.1); border: 1px solid rgba(37,211,102,0.3); color: var(--accent2); padding: 0.35rem 1rem; border-radius: 2rem; font-size: 0.8rem; margin-bottom: 1.5rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem; }
+    h1 em { color: var(--accent); font-style: normal; }
+    .hero p { font-size: 1.15rem; color: var(--muted); max-width: 680px; margin: 0 auto 2.5rem; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 0.85rem 2rem; border-radius: 0.5rem; font-weight: 600; font-size: 1rem; cursor: pointer; border: none; transition: opacity .2s; }
+    .btn-primary { background: var(--accent2); color: #000; }
+    .btn-secondary { background: transparent; border: 1px solid var(--border); color: var(--text); }
+    .btn:hover { opacity: 0.85; }
+
+    section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+    h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 1rem; }
+    h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem; }
+
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; padding: 1.75rem; }
+    .card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; margin-top: 0.4rem; }
+
+    .highlight { color: var(--accent2); }
+
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-top: 3rem; text-align: center; }
+    .stat-val { font-size: 2.5rem; font-weight: 800; color: var(--accent2); }
+    .stat-label { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+
+    .comparison { overflow-x: auto; margin-top: 2.5rem; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 1rem 1.25rem; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.95rem; }
+    th { background: var(--surface); color: var(--muted); font-weight: 600; }
+    td:first-child { color: var(--muted); }
+    .yes { color: var(--accent2); font-weight: 600; }
+    .no { color: #ff4d6d; }
+    .partial { color: #f59e0b; }
+
+    .use-cases { margin-top: 2.5rem; }
+    .use-case { border-left: 3px solid var(--accent); padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; background: var(--surface); border-radius: 0 0.75rem 0.75rem 0; }
+    .use-case .sector { color: var(--accent); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem; }
+    .use-case p { color: var(--muted); font-size: 0.95rem; margin-top: 0.4rem; }
+
+    .tech-stack { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+    .tag { background: rgba(108,71,255,0.1); border: 1px solid rgba(108,71,255,0.3); color: var(--accent); padding: 0.4rem 0.85rem; border-radius: 2rem; font-size: 0.85rem; }
+
+    .faq { margin-top: 2.5rem; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
+    .faq-q { font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem; }
+    .faq-a { color: var(--muted); }
+
+    .cta-section { text-align: center; padding: 5rem 2rem; border-top: 1px solid var(--border); }
+    .cta-section h2 { margin-bottom: 1rem; }
+    .cta-section p { color: var(--muted); margin-bottom: 2rem; }
+
+    footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.875rem; }
+    footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 1rem; }
+      nav a { margin-left: 0.75rem; }
+      .hero { padding: 4rem 1.5rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Bronks <span>IA</span></div>
+  <nav>
+    <a href="/">Início</a>
+    <a href="/agentes-ia/">Agentes de IA</a>
+    <a href="/rag-empresarial/">RAG</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="badge">💬 WhatsApp + IA Generativa</div>
+  <h1>Chatbot com <em>IA</em> para WhatsApp que realmente entende seus clientes</h1>
+  <p>Vá além dos fluxos fixos. Construímos chatbots inteligentes com RAG, NLP avançado e integração real com seus sistemas — para empresas que precisam de resultados, não de demos bonitos.</p>
+  <div class="cta-group">
+    <a href="/#contato" class="btn btn-primary">Falar com especialista</a>
+    <a href="/rag-empresarial/" class="btn btn-secondary">Entender o RAG</a>
+  </div>
+</div>
+
+<hr class="divider">
+
+<section>
+  <h2>Por que chatbots com IA de verdade fazem diferença</h2>
+  <p style="color: var(--muted); max-width: 700px;">A maioria dos chatbots de mercado são glorificados menus de URA. Quando o cliente faz uma pergunta fora do script, o bot trava ou joga para atendente. Nosso approach é diferente.</p>
+
+  <div class="stats">
+    <div>
+      <div class="stat-val">78%</div>
+      <div class="stat-label">de conversas resolvidas sem humano</div>
+    </div>
+    <div>
+      <div class="stat-val">24/7</div>
+      <div class="stat-label">operação sem custo adicional</div>
+    </div>
+    <div>
+      <div class="stat-val">3x</div>
+      <div class="stat-label">mais leads qualificados vs. fluxo fixo</div>
+    </div>
+    <div>
+      <div class="stat-val">60%</div>
+      <div class="stat-label">redução no tempo de atendimento</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>Chatbot tradicional vs. Chatbot com IA da Bronks</h2>
+  <div class="comparison">
+    <table>
+      <thead>
+        <tr>
+          <th>Capacidade</th>
+          <th>Chatbot de fluxo fixo</th>
+          <th>Bronks IA (RAG + LLM)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Entende linguagem natural</td><td class="no">Não</td><td class="yes">Sim</td></tr>
+        <tr><td>Responde perguntas fora do script</td><td class="no">Não</td><td class="yes">Sim</td></tr>
+        <tr><td>Busca em documentos da empresa</td><td class="no">Não</td><td class="yes">Sim (RAG)</td></tr>
+        <tr><td>Integração com CRM/ERP em tempo real</td><td class="partial">Limitada</td><td class="yes">Sim</td></tr>
+        <tr><td>Aprende com interações</td><td class="no">Não</td><td class="yes">Sim</td></tr>
+        <tr><td>Qualificação de leads inteligente</td><td class="partial">BANT manual</td><td class="yes">Automático</td></tr>
+        <tr><td>Handoff para humano com contexto</td><td class="partial">Perda de histórico</td><td class="yes">Histórico completo</td></tr>
+        <tr><td>Funciona em português coloquial</td><td class="no">Não</td><td class="yes">Sim</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>O que construímos junto</h2>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">🤖</div>
+      <h3>Atendimento Inteligente 24/7</h3>
+      <p>O bot responde perguntas complexas buscando em manuais, FAQs, políticas e documentos internos via RAG — sem scripts rígidos.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎯</div>
+      <h3>Qualificação de Leads</h3>
+      <p>Identifica automaticamente oportunidades, aplica critérios de BANT em conversa natural e roteia para o consultor certo.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔗</div>
+      <h3>Integração com seus Sistemas</h3>
+      <p>CRM (Salesforce, HubSpot, RD Station), ERP, agendamento, estoque e APIs próprias — tudo acessível via WhatsApp.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Análise de Conversas</h3>
+      <p>Dashboard com taxas de resolução, tópicos mais consultados, funil de leads e pontos de fricção — para otimização contínua.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔒</div>
+      <h3>Segurança e Compliance</h3>
+      <p>Dados processados com criptografia, LGPD compliance, histórico de conversas auditável e controle de acesso granular.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <h3>Handoff Inteligente</h3>
+      <p>Quando necessário, transfere para humano com todo o contexto da conversa — o cliente não precisa repetir nada.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>Casos de uso por setor</h2>
+  <div class="use-cases">
+    <div class="use-case">
+      <div class="sector">Serviços Financeiros</div>
+      <h3>Atendimento e qualificação de crédito</h3>
+      <p>Bot que responde dúvidas sobre produtos financeiros, coleta dados para análise de crédito, agenda reunião com gerente e consulta situação de propostas — tudo pelo WhatsApp, 24 horas.</p>
+    </div>
+    <div class="use-case">
+      <div class="sector">Saúde e Clínicas</div>
+      <h3>Agendamento e triagem inteligente</h3>
+      <p>Agenda consultas, faz triagem de sintomas, lembra de exames e envia resultados — integrado com sistemas de prontuário (HIS). Reduz 60% das ligações para a recepção.</p>
+    </div>
+    <div class="use-case">
+      <div class="sector">Indústria e Atacado</div>
+      <h3>Pedidos e acompanhamento B2B</h3>
+      <p>Representantes fazem pedidos pelo WhatsApp, consultam estoque em tempo real, verificam status de entrega e recebem segunda via de notas — sem depender de equipe interna.</p>
+    </div>
+    <div class="use-case">
+      <div class="sector">Jurídico</div>
+      <h3>Atendimento inicial e triagem de casos</h3>
+      <p>Bot coleta informações do caso, qualifica o potencial cliente, agenda consulta com advogado e envia materiais informativos — sem sobrecarregar a recepção do escritório.</p>
+    </div>
+    <div class="use-case">
+      <div class="sector">E-commerce e Varejo</div>
+      <h3>Suporte pós-venda e rastreamento</h3>
+      <p>Status de pedido, rastreamento de entrega, processamento de trocas e devolução, e upsell baseado no histórico de compras — bot que gera receita, não apenas resolve tickets.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>Stack tecnológico</h2>
+  <p style="color: var(--muted);">Construímos com as melhores ferramentas do mercado, selecionadas para o seu caso de uso específico:</p>
+  <div class="tech-stack">
+    <span class="tag">WhatsApp Business API</span>
+    <span class="tag">RAG (Retrieval-Augmented Generation)</span>
+    <span class="tag">GPT-4o / Claude 3.5</span>
+    <span class="tag">LangChain / LlamaIndex</span>
+    <span class="tag">Qdrant / Pinecone (vetores)</span>
+    <span class="tag">Twilio / 360dialog</span>
+    <span class="tag">Webhook + REST API</span>
+    <span class="tag">LGPD Compliance</span>
+    <span class="tag">Redis (memória de conversa)</span>
+    <span class="tag">PostgreSQL</span>
+    <span class="tag">Docker / Kubernetes</span>
+    <span class="tag">Observabilidade (Langfuse)</span>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>Perguntas frequentes</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q">Qual a diferença entre um chatbot com IA e um chatbot com fluxo fixo?</div>
+      <div class="faq-a">Um chatbot de fluxo fixo segue menus pré-programados — se o usuário digitar algo fora do script, o bot trava. Um chatbot com IA (RAG + LLM) entende linguagem natural, busca nas bases de conhecimento da empresa e gera respostas contextualizadas. Resultado: mais conversas resolvidas, clientes menos frustrados.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">O chatbot pode acessar os dados do meu CRM em tempo real?</div>
+      <div class="faq-a">Sim. Integramos com Salesforce, HubSpot, RD Station, Pipedrive e sistemas próprios via API. O bot consulta status de pedido, histórico do cliente, estoque, agenda reuniões e registra interações — tudo em tempo real durante a conversa.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Quanto tempo leva para desenvolver e implantar?</div>
+      <div class="faq-a">Um chatbot funcional leva entre 3 e 8 semanas: 1–2 semanas de discovery e arquitetura, 2–4 semanas de desenvolvimento, 1–2 semanas de testes. Versões mais simples podem ir ao ar em 2 semanas.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">O bot funciona para vendas B2B com ciclo longo?</div>
+      <div class="faq-a">Sim, com adaptações específicas: qualificação BANT, roteamento para consultor especializado, envio de materiais técnicos, agendamento de demos e follow-up automatizado. O bot aprende com cada interação e melhora continuamente.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Como garantem a privacidade e conformidade com a LGPD?</div>
+      <div class="faq-a">Toda conversa é processada com criptografia em trânsito e em repouso. Implementamos consentimento explícito, direito de exclusão de dados, logs de auditoria e opção de processamento on-premise para dados sensíveis. Entregamos documentação LGPD completa.</div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section">
+  <h2>Pronto para um chatbot que realmente funciona?</h2>
+  <p>Agende uma sessão de discovery gratuita de 45 minutos — analisamos o seu caso e mostramos o que é possível construir.</p>
+  <div class="cta-group">
+    <a href="/#contato" class="btn btn-primary">Agendar sessão gratuita</a>
+    <a href="/agentes-ia/" class="btn btn-secondary">Explorar agentes de IA</a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 <a href="/">Bronks IA</a> · Rio de Janeiro, Brasil · <a href="/blog/">Blog</a> · <a href="/agentes-ia/">Agentes de IA</a> · <a href="/rag-empresarial/">RAG</a></p>
+</footer>
+
+</body>
+</html>

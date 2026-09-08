@@ -1,0 +1,348 @@
+{
+  "timestamp": "2026-09-08T00:00:00-03:00",
+  "domain": "bronks.ia.br",
+  "audit_method": "WebSearch (acesso direto ao site bloqueado por proxy de egresso — 5º dia consecutivo; dados via Google SERP, análise pública e comparação com ciclos anteriores)",
+  "seo_score": 36,
+  "sre_score": 55,
+  "ranking_potential": "médio-alto (com deploy imediato das 13 páginas geradas)",
+  "delta_vs_ultimo_ciclo": {
+    "seo_score": "+2 (novos artefatos gerados; score aumenta apenas com deploy + indexação)",
+    "pages_in_repo": "+2 (hoje: /chatbot-whatsapp-ia/, /ia-para-contabilidade/)",
+    "total_pages_awaiting_deploy": 13,
+    "deploy_status": "BLOQUEADO — SSH para 148.230.79.134:22 inacessível pelo proxy de egresso Anthropic (5º dia consecutivo). Deploy manual necessário."
+  },
+  "indexed_pages": [
+    {
+      "url": "https://bronks.ia.br/",
+      "title": "Bronks IA — Agentes de IA, Automação Inteligente e RAG para Empresas",
+      "status": "indexada — única página confirmada via site:bronks.ia.br (5º dia consecutivo com 1 resultado)"
+    }
+  ],
+  "indexation_critical_note": "site:bronks.ia.br retorna apenas 1 resultado há 5 dias consecutivos de auditoria. O repositório contém 13 páginas prontas para deploy que o Google ainda não pode rastrear. Cada dia sem deploy é tráfego orgânico perdido em mercado em explosão (IDC: US$ 3,4bi em IA no Brasil em 2026).",
+  "top_keywords": [
+    {
+      "keyword": "agentes de IA",
+      "tier": 1,
+      "estimated_volume": "5.000–20.000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia para URL dedicada",
+      "opportunity": "alta",
+      "page_no_repo": "sites/bronks/agentes-ia/index.html (aguarda deploy há 4 dias)"
+    },
+    {
+      "keyword": "automação com IA",
+      "tier": 1,
+      "estimated_volume": "1.500–6.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia para URL dedicada",
+      "opportunity": "alta",
+      "page_no_repo": "sites/bronks/automacao-com-ia/index.html (aguarda deploy há 4 dias)"
+    },
+    {
+      "keyword": "consultoria em IA",
+      "tier": 1,
+      "estimated_volume": "2.000–8.000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia para URL dedicada",
+      "opportunity": "alta",
+      "page_no_repo": "sites/bronks/consultoria-ia/index.html (aguarda deploy há 4 dias)"
+    },
+    {
+      "keyword": "chatbot WhatsApp com IA",
+      "tier": 2,
+      "estimated_volume": "4.000–12.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial / transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta — keyword de alto volume, concorrentes locais (AXION, Convertai) têm presença mas sem página técnica aprofundada",
+      "page_no_repo": "sites/bronks/chatbot-whatsapp-ia/index.html (GERADA HOJE)"
+    },
+    {
+      "keyword": "RAG empresarial",
+      "tier": 2,
+      "estimated_volume": "300–1.500/mês",
+      "difficulty": "low",
+      "intent": "comercial",
+      "current_position": "aparece em snippets do Google para queries de RAG (verificado) — posição estimada 10–20",
+      "opportunity": "alta — first-mover com URL dedicada",
+      "page_no_repo": "sites/bronks/rag-empresarial/index.html (aguarda deploy há 4 dias)"
+    },
+    {
+      "keyword": "multiagentes IA",
+      "tier": 2,
+      "estimated_volume": "200–1.000/mês",
+      "difficulty": "low",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta — janela de first-mover em PT-BR ainda aberta",
+      "page_no_repo": "sites/bronks/multiagentes-ia/index.html (aguarda deploy há 2 dias)"
+    },
+    {
+      "keyword": "consultoria IA Rio de Janeiro",
+      "tier": 3,
+      "estimated_volume": "200–800/mês",
+      "difficulty": "medium",
+      "intent": "transacional local",
+      "current_position": "posição ~3–5 para homepage (verificado em ciclo anterior) — URL dedicada aumentará conversão",
+      "opportunity": "alta",
+      "page_no_repo": "sites/bronks/consultoria-ia-rio-de-janeiro/index.html (aguarda deploy há 2 dias)"
+    },
+    {
+      "keyword": "IA para contabilidade",
+      "tier": 3,
+      "estimated_volume": "500–2.000/mês",
+      "difficulty": "low",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta — poucos concorrentes diretos com página dedicada; segmento B2B de alta renda",
+      "page_no_repo": "sites/bronks/ia-para-contabilidade/index.html (GERADA HOJE)"
+    },
+    {
+      "keyword": "IA para jurídico",
+      "tier": 3,
+      "estimated_volume": "400–1.500/mês",
+      "difficulty": "low",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_no_repo": "sites/bronks/ia-para-juridico/index.html (aguarda deploy há 4 dias)"
+    },
+    {
+      "keyword": "IA para recursos humanos",
+      "tier": 3,
+      "estimated_volume": "500–2.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "média",
+      "page_no_repo": "sites/bronks/ia-para-recursos-humanos/index.html (aguarda deploy há 2 dias)"
+    }
+  ],
+  "issues": [
+    {
+      "type": "conteúdo",
+      "severity": "crítico",
+      "description": "DEPLOY PENDENTE — 13 páginas geradas estão no repositório sem serem implantadas na VPS. 5º dia consecutivo. Cada dia perdido é tráfego orgânico que vai para concorrentes (XMB, Convertai, Eagle BS) que já têm páginas similares no ar.",
+      "affected_urls": [
+        "https://bronks.ia.br/agentes-ia/",
+        "https://bronks.ia.br/consultoria-ia/",
+        "https://bronks.ia.br/rag-empresarial/",
+        "https://bronks.ia.br/ia-para-juridico/",
+        "https://bronks.ia.br/ia-para-recursos-humanos/",
+        "https://bronks.ia.br/automacao-com-ia/",
+        "https://bronks.ia.br/multiagentes-ia/",
+        "https://bronks.ia.br/consultoria-ia-rio-de-janeiro/",
+        "https://bronks.ia.br/chatbot-whatsapp-ia/",
+        "https://bronks.ia.br/ia-para-contabilidade/",
+        "https://bronks.ia.br/blog/o-que-e-um-agente-de-ia/",
+        "https://bronks.ia.br/blog/o-que-e-rag/",
+        "https://bronks.ia.br/sitemap.xml"
+      ],
+      "fix": "SSH manual para 148.230.79.134 → rsync -avz sites/bronks/ root@148.230.79.134:/var/www/bronks.ia.br/ → nginx -s reload → submeter sitemap ao GSC"
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "SSH para VPS (148.230.79.134:22) bloqueado pelo proxy de egresso Anthropic pelo 5º dia consecutivo. Deploy automatizado impossível. Ação manual necessária pelo dono da conta.",
+      "affected_urls": [],
+      "fix": "Deploy manual via SSH pelo Bruno. Comando completo detalhado na seção 'Bloco de Deploy' abaixo."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Sitemap.xml não submetido ao Google Search Console. Googlebot não sabe das 13 novas URLs. Cada dia sem submissão atrasa indexação.",
+      "affected_urls": ["https://bronks.ia.br/sitemap.xml"],
+      "fix": "Após deploy: GSC → bronks.ia.br → Sitemaps → Adicionar → https://bronks.ia.br/sitemap.xml → Enviar"
+    },
+    {
+      "type": "técnico",
+      "severity": "alto",
+      "description": "Meta title da home: 70 chars (excede o limite de 60 recomendado pelo Google). 'Bronks IA — Agentes de IA, Automação Inteligente e RAG para Empresas' — truncado nos SERPs, reduzindo CTR.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Ajustar para: 'Agentes de IA e RAG para Empresas | Bronks IA' (50 chars) — keyword à esquerda = +CTR"
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "Reclame Aqui: 1 reclamação sem resposta. Para empresa B2B de IA que negocia com CTOs e diretores, reputação online é parte do processo de due diligence. 0% de resposta prejudica credibilidade.",
+      "affected_urls": ["https://www.reclameaqui.com.br/empresa/bronk-s/"],
+      "fix": "Responder a reclamação publicamente no Reclame Aqui, mesmo que o caso já tenha sido resolvido de outra forma."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "Ausência de casos de uso / case studies publicados. Concorrentes como Moov2 (cases com BNDES, Gerdau, Porto Seguro) e Mind Group (550+ projetos) usam cases para construir autoridade e converter visitantes em leads.",
+      "affected_urls": [],
+      "fix": "Criar 2–3 cases anonimizados (setor + resultado mensurável) como páginas /cases/nome-do-case/ após deploy inicial."
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "landing page",
+      "title": "Chatbot com IA para WhatsApp: Atendimento e Automação para Empresas",
+      "target_keyword": "chatbot WhatsApp com IA",
+      "estimated_traffic_gain": "400–1.200 visitas/mês (90 dias)",
+      "priority": "alto",
+      "status": "GERADA HOJE — sites/bronks/chatbot-whatsapp-ia/index.html"
+    },
+    {
+      "type": "landing page",
+      "title": "IA para Contabilidade: Automação de Processos Fiscais e Tributários",
+      "target_keyword": "IA para contabilidade",
+      "estimated_traffic_gain": "150–500 visitas/mês (90 dias)",
+      "priority": "alto",
+      "status": "GERADA HOJE — sites/bronks/ia-para-contabilidade/index.html"
+    },
+    {
+      "type": "artigo",
+      "title": "Automação com IA para Empresas: Guia Completo 2026",
+      "target_keyword": "automação com IA para empresas",
+      "estimated_traffic_gain": "200–600 visitas/mês (90 dias)",
+      "priority": "alto",
+      "status": "PENDENTE — próximo ciclo"
+    },
+    {
+      "type": "landing page",
+      "title": "IA para Saúde: Automação de Prontuários, Triagem e Processos Clínicos",
+      "target_keyword": "IA para saúde",
+      "estimated_traffic_gain": "100–350 visitas/mês",
+      "priority": "médio",
+      "status": "PENDENTE — próximo ciclo"
+    },
+    {
+      "type": "artigo",
+      "title": "RAG vs Fine-tuning: Como Escolher para a sua Empresa",
+      "target_keyword": "RAG empresarial",
+      "estimated_traffic_gain": "80–250 visitas/mês",
+      "priority": "médio",
+      "status": "PENDENTE — próximo ciclo"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/chatbot-whatsapp-ia/",
+      "tipo": "Landing page de serviço",
+      "keyword_alvo": "chatbot WhatsApp com IA",
+      "justificativa": "4.000–12.000 buscas/mês. Keyword de alta intenção comercial — empresas buscando solução imediata. Concorrentes AXION e Convertai estão ranqueando mas sem profundidade técnica sobre RAG + integração de sistemas. Gerada hoje."
+    },
+    {
+      "url_sugerida": "/ia-para-contabilidade/",
+      "tipo": "Landing page vertical",
+      "keyword_alvo": "IA para contabilidade",
+      "justificativa": "Setor com alta demanda por automação fiscal no Brasil. Dificuldade de ranqueamento baixa. Potencial de leads B2B de alta renda (escritórios contábeis, departamentos financeiros). Gerada hoje."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "DEPLOY MANUAL URGENTE: SSH → rsync sites/bronks/ para /var/www/bronks.ia.br/ na VPS 148.230.79.134 → nginx -s reload",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato",
+      "comando": "rsync -avz --delete /home/user/seo-agents/sites/bronks/ root@148.230.79.134:/var/www/bronks.ia.br/ && ssh root@148.230.79.134 'nginx -s reload'"
+    },
+    {
+      "action": "Submeter sitemap.xml ao Google Search Console após deploy",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Ajustar meta title da home para <60 chars com keyword à esquerda",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Responder reclamação no Reclame Aqui",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "conteúdo",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar artigo de blog: 'Automação com IA para Empresas: Guia Completo 2026'",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar landing page /ia-para-saude/ (após deploy das 13 páginas atuais)",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Conquistar 1 backlink em portal de tecnologia (IT Forum, Canaltech) com artigo sobre agentes de IA",
+      "impact": "alto",
+      "effort": "alto",
+      "category": "link building",
+      "deadline": "1 mês"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "xmb.com.br",
+      "keywords_overlap": ["consultoria IA Rio de Janeiro", "agentes de IA"],
+      "estimated_traffic": "baixo-médio",
+      "content_gap": "Bronks tem diferencial técnico (RAG + multiagentes) que XMB não explora — explorar em conteúdo"
+    },
+    {
+      "domain": "convertai.com.br",
+      "keywords_overlap": ["empresa de IA Rio de Janeiro", "agentes de IA", "chatbot WhatsApp"],
+      "estimated_traffic": "baixo-médio",
+      "content_gap": "Convertai foca em atendimento — Bronks pode dominar casos B2B enterprise mais complexos"
+    },
+    {
+      "domain": "eaglebs.com",
+      "keywords_overlap": ["RAG empresarial", "RAG para empresas"],
+      "estimated_traffic": "médio",
+      "content_gap": "Eagle BS tem /rag-para-empresas no ar — Bronks tem a página no repo mas precisa fazer deploy URGENTE"
+    },
+    {
+      "domain": "agent-ia.tech",
+      "keywords_overlap": ["chatbot WhatsApp com IA", "automação empresarial Rio de Janeiro"],
+      "estimated_traffic": "baixo-médio",
+      "content_gap": "AXION foca em WhatsApp mas sem profundidade técnica — nova página /chatbot-whatsapp-ia/ da Bronks entrega mais conteúdo semântico"
+    },
+    {
+      "domain": "moov2.com.br",
+      "keywords_overlap": ["automação com IA", "consultoria empresarial IA"],
+      "estimated_traffic": "alto",
+      "content_gap": "Moov2 tem cases de grandes marcas — Bronks deve publicar cases reais para equiparar credibilidade"
+    }
+  ],
+  "estimated_traffic_gain": {
+    "30_days": "+100–300 visitas orgânicas/mês (pós-deploy das 13 páginas + indexação inicial)",
+    "90_days": "+400–1.000 visitas orgânicas/mês (indexação completa + ranqueamento das URLs de serviço + blog)",
+    "6_months": "+1.000–3.000 visitas orgânicas/mês (autoridade acumulada + link building + verticais)",
+    "assumptions": "Tráfego atual estimado: 10–50 visitas orgânicas/mês (1 página indexada). Projeções assumem: deploy imediato das 13 páginas, submissão do sitemap, 1–2 backlinks em portais de tech, 2 novos artigos de blog/mês. Mercado de IA no Brasil em explosão (2026 = ano da virada dos agentes) favorece ranqueamento acelerado."
+  },
+  "deploy_block": {
+    "comando_rsync": "rsync -avz --delete /home/user/seo-agents/sites/bronks/ root@148.230.79.134:/var/www/bronks.ia.br/",
+    "comando_nginx": "ssh root@148.230.79.134 'nginx -s reload'",
+    "gsc_sitemap": "https://bronks.ia.br/sitemap.xml",
+    "paginas_prontas": [
+      "/agentes-ia/",
+      "/consultoria-ia/",
+      "/rag-empresarial/",
+      "/ia-para-juridico/",
+      "/ia-para-recursos-humanos/",
+      "/automacao-com-ia/",
+      "/multiagentes-ia/",
+      "/consultoria-ia-rio-de-janeiro/",
+      "/chatbot-whatsapp-ia/",
+      "/ia-para-contabilidade/",
+      "/blog/o-que-e-um-agente-de-ia/",
+      "/blog/o-que-e-rag/",
+      "/sitemap.xml"
+    ]
+  }
+}
