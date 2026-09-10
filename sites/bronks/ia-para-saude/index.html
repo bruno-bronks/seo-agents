@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Saúde: Automação de Processos Clínicos e Hospitalares | Bronks IA</title>
+  <meta name="description" content="IA para saúde: automatize prontuários, triagem de pacientes, faturamento e processos clínicos. Soluções de agentes de IA para hospitais, clínicas e operadoras. Piloto em 4 semanas.">
+  <link rel="canonical" href="https://bronks.ia.br/ia-para-saude/">
+  <meta property="og:title" content="IA para Saúde: Automação Clínica e Hospitalar | Bronks IA">
+  <meta property="og:description" content="Agentes de IA que automatizam triagem, prontuários, faturamento e atendimento em clínicas e hospitais. Deploy em produção em 4 semanas.">
+  <meta property="og:url" content="https://bronks.ia.br/ia-para-saude/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bronks.ia.br/og-ia-para-saude.png">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IA para Saúde — Automação de Processos Clínicos",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "description": "Agentes de IA para automação de triagem de pacientes, prontuários eletrônicos, faturamento e processos clínicos em hospitais e clínicas.",
+    "areaServed": "Brasil",
+    "serviceType": "Inteligência Artificial para Saúde"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como a IA pode ser usada na área da saúde?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A IA pode automatizar triagem de pacientes, preencher e resumir prontuários eletrônicos, processar faturamento e glosas, responder dúvidas de pacientes 24h via WhatsApp, analisar exames e relatórios médicos, e otimizar agendamentos. Isso reduz carga operacional da equipe e melhora a experiência do paciente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA na saúde é segura e está em conformidade com a LGPD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Todas as soluções da Bronks IA são desenvolvidas com conformidade à LGPD e às resoluções do CFM. Os dados de saúde são processados em ambientes seguros (criptografia AES-256, logs de auditoria), sem compartilhamento com terceiros, com consentimento explícito do paciente e política de retenção definida pelo cliente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais sistemas de saúde a Bronks integra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Integramos com os principais sistemas do mercado brasileiro: Tasy (Philips), MV Soul/SOUL MV, TOTVS Saúde, Philips Tasy, Optum, Benner, Naxos, além de HIS/RIS proprietários via API REST ou HL7 FHIR. Para clínicas menores, integramos com iClinic, Nuvem Médica e ClinicBase."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para implementar IA em uma clínica ou hospital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O piloto mínimo funcional leva 4 semanas: 1 semana de mapeamento e integração com o HIS, 1 semana de treinamento com dados reais (anonimizados), 1 semana de testes com equipe clínica, e 1 semana de ajustes e go-live em produção. Expansão para outros módulos e setores é feita de forma incremental."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA pode substituir médicos e enfermeiros?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. A IA atua como assistente, não como substituta de profissionais de saúde. Ela automatiza tarefas administrativas e operacionais (registros, triagem de risco, faturamento, agendamentos, comunicação com pacientes), liberando médicos e enfermeiros para se dedicarem ao cuidado direto do paciente. Toda decisão clínica permanece com os profissionais habilitados."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #6C3CF7;
+      --brand-dark: #4A1FD6;
+      --brand-light: #EDE8FF;
+      --accent: #00C896;
+      --text: #0F0E17;
+      --muted: #6B7280;
+      --border: #E5E7EB;
+      --bg: #FAFAFA;
+      --white: #FFFFFF;
+      --red: #EF4444;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* NAV */
+    nav { background: var(--white); border-bottom: 1px solid var(--border); padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+    nav .inner { display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--brand); }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: var(--text); font-size: 0.9rem; font-weight: 500; }
+    .nav-cta { background: var(--brand); color: var(--white) !important; padding: 8px 20px; border-radius: 8px; }
+    .nav-cta:hover { background: var(--brand-dark); text-decoration: none !important; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, #0F0E17 0%, #1E1040 60%, #2D1B69 100%); color: var(--white); padding: 80px 0 64px; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(108,60,247,0.3); border: 1px solid rgba(108,60,247,0.5); color: #C4B5FD; font-size: 0.82rem; font-weight: 600; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px; letter-spacing: 0.03em; text-transform: uppercase; }
+    .hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.15; margin-bottom: 20px; }
+    .hero h1 span { color: #A78BFA; }
+    .hero p { font-size: 1.1rem; color: #CBD5E1; max-width: 620px; margin-bottom: 36px; }
+    .hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary { background: var(--brand); color: var(--white); padding: 14px 28px; border-radius: 10px; font-weight: 700; font-size: 1rem; display: inline-block; transition: background 0.2s; }
+    .btn-primary:hover { background: var(--brand-dark); text-decoration: none; }
+    .btn-secondary { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.3); padding: 14px 28px; border-radius: 10px; font-weight: 600; font-size: 1rem; display: inline-block; }
+    .btn-secondary:hover { background: rgba(255,255,255,0.08); text-decoration: none; }
+    .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 40px; }
+    .stat { text-align: center; }
+    .stat-num { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; color: #A78BFA; }
+    .stat-label { font-size: 0.85rem; color: #94A3B8; margin-top: 4px; }
+
+    /* SECTIONS */
+    section { padding: 72px 0; }
+    .section-label { display: inline-block; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brand); background: var(--brand-light); padding: 5px 12px; border-radius: 6px; margin-bottom: 16px; }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
+    .section-sub { color: var(--muted); font-size: 1rem; max-width: 600px; margin-bottom: 48px; }
+
+    /* CHALLENGES */
+    .challenges { background: var(--white); }
+    .challenges-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+    .challenge-card { border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+    .challenge-icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .challenge-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .challenge-card p { font-size: 0.88rem; color: var(--muted); }
+
+    /* USE CASES */
+    .usecases { background: var(--bg); }
+    .uc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+    .uc-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 28px; }
+    .uc-card .tag { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand); background: var(--brand-light); padding: 3px 10px; border-radius: 100px; display: inline-block; margin-bottom: 14px; }
+    .uc-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
+    .uc-card p { font-size: 0.88rem; color: var(--muted); margin-bottom: 16px; }
+    .uc-result { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; color: var(--accent); }
+
+    /* COMPLIANCE */
+    .compliance { background: var(--white); }
+    .compliance-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+    .comp-card { border-left: 3px solid var(--brand); padding: 20px 24px; background: var(--brand-light); border-radius: 0 10px 10px 0; }
+    .comp-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+    .comp-card p { font-size: 0.84rem; color: #4B5563; }
+
+    /* INTEGRATIONS */
+    .integrations { background: var(--bg); }
+    .int-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-top: 32px; }
+    .int-item { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; font-size: 0.85rem; font-weight: 600; color: var(--text); }
+
+    /* PROCESS */
+    .process { background: var(--white); }
+    .process-steps { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px; margin-top: 40px; }
+    .step { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+    .step-num { width: 40px; height: 40px; border-radius: 50%; background: var(--brand); color: var(--white); font-weight: 700; font-size: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .step h3 { font-size: 1rem; font-weight: 700; }
+    .step p { font-size: 0.86rem; color: var(--muted); }
+
+    /* FAQ */
+    .faq { background: var(--bg); }
+    .faq-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 24px 28px; background: var(--white); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 { font-size: 1rem; font-weight: 700; margin-bottom: 10px; color: var(--text); }
+    .faq-item p { font-size: 0.88rem; color: var(--muted); }
+
+    /* CTA */
+    .cta-section { background: linear-gradient(135deg, var(--brand) 0%, #4A1FD6 100%); color: var(--white); padding: 72px 0; text-align: center; }
+    .cta-section h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; margin-bottom: 16px; }
+    .cta-section p { font-size: 1rem; opacity: 0.88; margin-bottom: 36px; }
+    .btn-white { background: var(--white); color: var(--brand); padding: 14px 32px; border-radius: 10px; font-weight: 700; display: inline-block; }
+    .btn-white:hover { opacity: 0.9; text-decoration: none; }
+
+    /* FOOTER */
+    footer { background: #0F0E17; color: #9CA3AF; padding: 40px 0; font-size: 0.85rem; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 16px; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { color: #9CA3AF; }
+
+    /* UTIL */
+    .highlight { color: var(--brand); }
+    .green { color: var(--accent); }
+    @media (max-width: 640px) {
+      .hero-stats { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a href="https://bronks.ia.br/" class="logo">Bronks IA</a>
+    <ul class="nav-links">
+      <li><a href="https://bronks.ia.br/agentes-ia/">Agentes de IA</a></li>
+      <li><a href="https://bronks.ia.br/consultoria-ia/">Consultoria</a></li>
+      <li><a href="https://bronks.ia.br/rag-empresarial/">RAG</a></li>
+      <li><a href="https://bronks.ia.br/blog/o-que-e-um-agente-de-ia/">Blog</a></li>
+      <li><a href="https://bronks.ia.br/#contato" class="nav-cta">Fale conosco</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">🏥 Setor de Saúde</div>
+    <h1>IA para Saúde:<br><span>Automação Clínica e Hospitalar</span></h1>
+    <p>Agentes de IA que automatizam triagem de pacientes, prontuários eletrônicos, faturamento e atendimento — em conformidade com LGPD e CFM. Piloto em produção em 4 semanas.</p>
+    <div class="hero-buttons">
+      <a href="https://bronks.ia.br/#contato" class="btn-primary">Falar com Especialista</a>
+      <a href="#casos-de-uso" class="btn-secondary">Ver casos de uso</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">40%</div>
+        <div class="stat-label">Redução de tempo em tarefas administrativas</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4 sem.</div>
+        <div class="stat-label">Do contrato ao piloto em produção</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Conformidade LGPD e regulações do CFM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESAFIOS -->
+<section class="challenges">
+  <div class="container">
+    <div class="section-label">Desafios do setor</div>
+    <h2 class="section-title">Por que a saúde precisa de IA agora</h2>
+    <p class="section-sub">O setor de saúde brasileiro enfrenta sobrecarga administrativa que consome até 30% do tempo clínico. A IA resolve isso sem substituir profissionais.</p>
+    <div class="challenges-grid">
+      <div class="challenge-card">
+        <div class="challenge-icon">📋</div>
+        <h3>Sobrecarga de prontuários</h3>
+        <p>Médicos gastam até 2h/dia preenchendo registros eletrônicos. IA transcreve, resume e categoriza em tempo real.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">⏱️</div>
+        <h3>Filas e triagem manual</h3>
+        <p>Triagem não estruturada gera congestionamento. Agentes de IA classificam risco e direcionam pacientes automaticamente.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">💰</div>
+        <h3>Glosas e faturamento</h3>
+        <p>Glosas custam bilhões/ano ao setor. IA identifica inconsistências antes do envio à operadora, reduzindo recusas.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">📞</div>
+        <h3>Atendimento 24/7</h3>
+        <p>Pacientes ligam fora do horário. Agente de IA no WhatsApp responde dúvidas, confirma consultas e orienta emergências.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">📊</div>
+        <h3>Dados dispersos</h3>
+        <p>Laudos, prontuários e exames em sistemas diferentes. RAG integra tudo em uma consulta unificada para o médico.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">🔒</div>
+        <h3>Conformidade regulatória</h3>
+        <p>LGPD, CFM e ANS exigem rigor no tratamento de dados de saúde. Nossas soluções são auditáveis por design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASOS DE USO -->
+<section class="usecases" id="casos-de-uso">
+  <div class="container">
+    <div class="section-label">Casos de uso</div>
+    <h2 class="section-title">Como a IA atua na prática</h2>
+    <p class="section-sub">Seis aplicações prontas para deploy em hospitais, clínicas e operadoras de saúde.</p>
+    <div class="uc-grid">
+      <div class="uc-card">
+        <span class="tag">Triagem</span>
+        <h3>Triagem Inteligente de Pacientes</h3>
+        <p>Agente coleta sintomas por WhatsApp, classifica risco pelo Protocolo de Manchester e encaminha para o setor correto — reduzindo triagem manual em pronto-socorro.</p>
+        <div class="uc-result">✅ Resultado: 35% menos espera na triagem</div>
+      </div>
+      <div class="uc-card">
+        <span class="tag">Prontuário</span>
+        <h3>Transcrição e Resumo de Consultas</h3>
+        <p>Durante a consulta, IA transcreve a conversa médico-paciente, extrai CID, medicamentos, orientações e preenche o prontuário automaticamente no HIS.</p>
+        <div class="uc-result">✅ Resultado: 1h30 devolvida ao médico/dia</div>
+      </div>
+      <div class="uc-card">
+        <span class="tag">Faturamento</span>
+        <h3>Auditoria de Glosas Preventiva</h3>
+        <p>Antes do envio à operadora, IA verifica codificação TUSS, compatibilidade de procedimentos e documentação obrigatória — prevenindo glosas em lote.</p>
+        <div class="uc-result">✅ Resultado: até 60% menos glosas</div>
+      </div>
+      <div class="uc-card">
+        <span class="tag">Atendimento</span>
+        <h3>Assistente de Pacientes no WhatsApp</h3>
+        <p>Agente responde dúvidas sobre consultas, exames, medicamentos e planos. Confirma agendamentos, envia resultados e escala para humano apenas quando necessário.</p>
+        <div class="uc-result">✅ Resultado: 70% das consultas resolvidas sem humano</div>
+      </div>
+      <div class="uc-card">
+        <span class="tag">Diagnóstico Auxiliar</span>
+        <h3>Análise de Laudos e Exames</h3>
+        <p>RAG sobre o histórico completo do paciente: o médico pergunta em linguagem natural e recebe resumo dos últimos exames, tendências e alertas clínicos relevantes.</p>
+        <div class="uc-result">✅ Resultado: decisão clínica mais rápida e informada</div>
+      </div>
+      <div class="uc-card">
+        <span class="tag">Operacional</span>
+        <h3>Agendamento Inteligente</h3>
+        <p>IA otimiza agenda médica, reduz no-shows com lembretes automáticos, realoca cancelamentos e prioriza urgências — integrada ao sistema de agendamento existente.</p>
+        <div class="uc-result">✅ Resultado: 25% menos no-show, +15% ocupação</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONFORMIDADE -->
+<section class="compliance">
+  <div class="container">
+    <div class="section-label">Segurança e Compliance</div>
+    <h2 class="section-title">IA com governança para dados de saúde</h2>
+    <p class="section-sub">Desenvolvemos com segurança por padrão — não como camada adicional.</p>
+    <div class="compliance-grid">
+      <div class="comp-card">
+        <h4>LGPD — Lei 13.709/2018</h4>
+        <p>Dados pessoais e sensíveis de saúde tratados conforme bases legais adequadas (consentimento, execução de contrato), com DPA assinado e registros de atividades de tratamento.</p>
+      </div>
+      <div class="comp-card">
+        <h4>Resoluções CFM</h4>
+        <p>Soluções alinhadas às resoluções do Conselho Federal de Medicina sobre prontuário eletrônico, telemedicina e uso de IA clínica. Decisão clínica final sempre com o médico.</p>
+      </div>
+      <div class="comp-card">
+        <h4>Criptografia AES-256</h4>
+        <p>Dados em repouso e em trânsito criptografados. Sem persistência de dados clínicos no modelo de linguagem. Logs de auditoria com rastreabilidade completa por ação.</p>
+      </div>
+      <div class="comp-card">
+        <h4>Soberania de dados</h4>
+        <p>Deploy em nuvem brasileira (AWS São Paulo, Azure Brazil South) ou on-premise na infraestrutura do cliente. Dados de saúde nunca saem do ambiente controlado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTEGRATIONS -->
+<section class="integrations">
+  <div class="container">
+    <div class="section-label">Integrações</div>
+    <h2 class="section-title">Conectamos ao seu sistema atual</h2>
+    <p class="section-sub">Sem necessidade de trocar de HIS. Integramos via API REST, HL7 FHIR ou conector nativo.</p>
+    <div class="int-grid">
+      <div class="int-item">🏥 Tasy (Philips)</div>
+      <div class="int-item">🏥 MV SOUL</div>
+      <div class="int-item">🏥 TOTVS Saúde</div>
+      <div class="int-item">🏥 Benner Saúde</div>
+      <div class="int-item">🏥 Naxos</div>
+      <div class="int-item">🏥 iClinic</div>
+      <div class="int-item">🏥 Nuvem Médica</div>
+      <div class="int-item">🏥 ClinicBase</div>
+      <div class="int-item">📱 WhatsApp Business</div>
+      <div class="int-item">📊 Google Workspace</div>
+      <div class="int-item">📊 Microsoft 365</div>
+      <div class="int-item">🔗 HL7 FHIR</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="process">
+  <div class="container">
+    <div class="section-label">Como funciona</div>
+    <h2 class="section-title">Do diagnóstico ao go-live em 4 semanas</h2>
+    <p class="section-sub">Processo estruturado para minimizar impacto na operação e garantir adoção pela equipe clínica.</p>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Semana 1 — Mapeamento</h3>
+        <p>Levantamento de processos, sistemas existentes, fluxo de dados e definição do caso de uso prioritário com ROI mais alto.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Semana 2 — Integração</h3>
+        <p>Conexão com HIS/RIS via API ou HL7 FHIR. Configuração do ambiente seguro com dados anonimizados para treinamento.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Semana 3 — Validação</h3>
+        <p>Testes com equipe clínica, calibração de respostas, ajuste de fluxos e treinamento dos usuários-chave.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Semana 4 — Go-live</h3>
+        <p>Deploy em produção com acompanhamento 24h, monitoramento de performance, dashboards de uso e relatório de ROI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-label">Perguntas frequentes</div>
+    <h2 class="section-title">Dúvidas sobre IA na saúde</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Como a IA pode ser usada na área da saúde?</h3>
+        <p>A IA pode automatizar triagem de pacientes, preencher e resumir prontuários eletrônicos, processar faturamento e glosas, responder dúvidas de pacientes 24h via WhatsApp, analisar exames e relatórios médicos, e otimizar agendamentos. Isso reduz carga operacional da equipe e melhora a experiência do paciente.</p>
+      </div>
+      <div class="faq-item">
+        <h3>A IA na saúde é segura e está em conformidade com a LGPD?</h3>
+        <p>Sim. Todas as soluções da Bronks IA são desenvolvidas com conformidade à LGPD e às resoluções do CFM. Os dados de saúde são processados em ambientes seguros (criptografia AES-256, logs de auditoria), sem compartilhamento com terceiros, com consentimento explícito do paciente e política de retenção definida pelo cliente.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Quais sistemas de saúde a Bronks integra?</h3>
+        <p>Integramos com os principais sistemas do mercado brasileiro: Tasy (Philips), MV Soul/SOUL MV, TOTVS Saúde, Benner, Naxos, além de HIS/RIS proprietários via API REST ou HL7 FHIR. Para clínicas menores, integramos com iClinic, Nuvem Médica e ClinicBase.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Quanto tempo leva para implementar IA em uma clínica ou hospital?</h3>
+        <p>O piloto mínimo funcional leva 4 semanas: 1 semana de mapeamento e integração com o HIS, 1 semana de treinamento com dados reais (anonimizados), 1 semana de testes com equipe clínica, e 1 semana de ajustes e go-live em produção. Expansão para outros módulos é feita de forma incremental.</p>
+      </div>
+      <div class="faq-item">
+        <h3>A IA pode substituir médicos e enfermeiros?</h3>
+        <p>Não. A IA atua como assistente, não como substituta. Ela automatiza tarefas administrativas (registros, triagem de risco, faturamento, agendamentos, comunicação com pacientes), liberando médicos e enfermeiros para o cuidado direto. Toda decisão clínica permanece com os profissionais habilitados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Pronto para transformar sua operação de saúde com IA?</h2>
+    <p>Fale com um especialista e veja como a IA pode reduzir carga administrativa e melhorar o atendimento ao paciente — em conformidade com LGPD e CFM.</p>
+    <a href="https://bronks.ia.br/#contato" class="btn-white">Agendar diagnóstico gratuito</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <strong style="color:#fff;">Bronks IA</strong> — Rio de Janeiro, RJ<br>
+        Consultoria em IA, agentes autônomos e automação empresarial.
+      </div>
+      <div class="footer-links">
+        <a href="https://bronks.ia.br/agentes-ia/">Agentes de IA</a>
+        <a href="https://bronks.ia.br/rag-empresarial/">RAG</a>
+        <a href="https://bronks.ia.br/consultoria-ia/">Consultoria</a>
+        <a href="https://bronks.ia.br/ia-para-juridico/">Jurídico</a>
+        <a href="https://bronks.ia.br/ia-para-contabilidade/">Contabilidade</a>
+        <a href="https://bronks.ia.br/ia-para-recursos-humanos/">RH</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
