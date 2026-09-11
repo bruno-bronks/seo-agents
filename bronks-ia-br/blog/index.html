@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de IA para Empresas: guias práticos e estratégicos | Bronks IA</title>
+  <meta name="description" content="Blog da Bronks IA: guias práticos sobre agentes de IA, RAG, automação inteligente e consultoria em IA para empresas. Conteúdo técnico sem enrolação.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bronks.ia.br/blog/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog de IA para Empresas | Bronks IA">
+  <meta property="og:description" content="Guias práticos sobre agentes de IA, RAG, automação e consultoria em IA para empresas brasileiras.">
+  <meta property="og:url" content="https://bronks.ia.br/blog/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Schema.org Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog Bronks IA",
+    "description": "Guias práticos sobre agentes de IA, RAG, automação inteligente e consultoria em IA para empresas.",
+    "url": "https://bronks.ia.br/blog/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bronks.ia.br/assets/logo.png"
+      }
+    },
+    "inLanguage": "pt-BR"
+  }
+  </script>
+
+  <!-- Schema.org BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bronks.ia.br/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bronks.ia.br/blog/" }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --dark: #0A0E1A;
+      --dark-2: #111827;
+      --accent: #7C3AED;
+      --accent-light: #A78BFA;
+      --accent-glow: rgba(124, 58, 237, .15);
+      --white: #FFFFFF;
+      --gray-100: #F3F4F6;
+      --gray-300: #D1D5DB;
+      --gray-400: #9CA3AF;
+      --gray-600: #4B5563;
+      --gray-700: #374151;
+      --gray-800: #1F2937;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background-color: var(--dark); color: var(--white); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.25; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+    /* NAV */
+    .nav { background: rgba(10,14,26,0.95); border-bottom: 1px solid rgba(124,58,237,0.15); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+    .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .nav__logo { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    .nav__logo span { color: var(--accent); }
+    .nav__links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav__links a { font-size: 0.9rem; font-weight: 500; color: var(--gray-400); transition: color 0.2s; }
+    .nav__links a:hover { color: var(--white); text-decoration: none; }
+    .nav__cta { display: inline-flex; align-items: center; background: var(--accent); color: var(--white) !important; padding: 10px 22px; border-radius: 8px; font-size: 0.875rem; font-weight: 600; }
+    .nav__cta:hover { opacity: 0.9; text-decoration: none !important; }
+    @media (max-width: 768px) { .nav__links { display: none; } }
+
+    /* HERO */
+    .hero { padding: 64px 0 48px; }
+    .hero__label { display: inline-block; background: var(--accent-glow); border: 1px solid rgba(124,58,237,0.3); color: var(--accent-light); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 16px; }
+    .hero h1 { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 16px; }
+    .hero__lead { font-size: 1.05rem; color: var(--gray-400); max-width: 560px; }
+
+    /* FILTERS */
+    .filters { display: flex; gap: 10px; flex-wrap: wrap; padding: 24px 0 32px; }
+    .filter-btn { background: transparent; border: 1px solid rgba(255,255,255,0.12); color: var(--gray-400); padding: 8px 18px; border-radius: 24px; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: all 0.2s; font-family: 'Inter', sans-serif; }
+    .filter-btn:hover, .filter-btn.active { background: var(--accent); border-color: var(--accent); color: var(--white); }
+
+    /* FEATURED */
+    .featured { background: linear-gradient(135deg, rgba(124,58,237,0.12) 0%, rgba(30,50,120,0.12) 100%); border: 1px solid rgba(124,58,237,0.2); border-radius: 20px; padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-bottom: 64px; }
+    .featured__meta { font-size: 0.8rem; color: var(--accent-light); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px; }
+    .featured__title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; margin-bottom: 14px; line-height: 1.25; }
+    .featured__title a { color: var(--white); }
+    .featured__title a:hover { color: var(--accent-light); }
+    .featured__desc { color: var(--gray-400); font-size: 0.95rem; margin-bottom: 20px; }
+    .featured__info { display: flex; align-items: center; gap: 16px; font-size: 0.8rem; color: var(--gray-400); }
+    .featured__img { background: linear-gradient(135deg, #1a0533 0%, #0d1a3a 100%); border-radius: 16px; aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+    @media (max-width: 700px) { .featured { grid-template-columns: 1fr; } .featured__img { display: none; } }
+
+    /* ARTICLE GRID */
+    .section-title { font-size: 1.1rem; font-weight: 600; color: var(--gray-300); margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+    .section-title::after { content: ''; flex: 1; height: 1px; background: var(--gray-800); }
+
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-bottom: 64px; }
+    .article-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; transition: border-color 0.2s, background 0.2s; }
+    .article-card:hover { border-color: rgba(124,58,237,0.3); background: rgba(124,58,237,0.04); }
+    .article-card__tag { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-light); margin-bottom: 12px; }
+    .article-card__title { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; line-height: 1.3; flex: 1; }
+    .article-card__title a { color: var(--white); }
+    .article-card__title a:hover { color: var(--accent-light); }
+    .article-card__desc { font-size: 0.875rem; color: var(--gray-400); margin-bottom: 16px; flex: 1; }
+    .article-card__footer { display: flex; align-items: center; justify-content: space-between; font-size: 0.8rem; color: var(--gray-600); margin-top: auto; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.06); }
+    .article-card__read { color: var(--accent-light); font-weight: 600; font-size: 0.85rem; }
+
+    /* NEWSLETTER */
+    .newsletter { background: var(--gray-800); border-radius: 20px; padding: 48px; text-align: center; margin: 48px 0; }
+    .newsletter h2 { font-size: 1.5rem; margin-bottom: 10px; }
+    .newsletter p { color: var(--gray-400); max-width: 480px; margin: 0 auto 28px; }
+    .newsletter__form { display: flex; gap: 12px; max-width: 440px; margin: 0 auto; }
+    .newsletter__input { flex: 1; background: var(--dark); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 12px 16px; color: var(--white); font-size: 0.9rem; font-family: 'Inter', sans-serif; outline: none; }
+    .newsletter__input:focus { border-color: var(--accent); }
+    .newsletter__btn { background: var(--accent); color: var(--white); border: none; padding: 12px 20px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; cursor: pointer; white-space: nowrap; font-family: 'Inter', sans-serif; }
+    @media (max-width: 480px) { .newsletter__form { flex-direction: column; } .newsletter { padding: 32px 20px; } }
+
+    /* CTA BOX */
+    .cta-box { background: linear-gradient(135deg, #1a0533 0%, #0d1a3a 100%); border: 1px solid rgba(124,58,237,0.3); border-radius: 16px; padding: 40px; display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; margin-bottom: 64px; }
+    .cta-box h2 { font-size: 1.3rem; margin-bottom: 8px; }
+    .cta-box p { color: var(--gray-400); font-size: 0.9rem; max-width: 480px; margin: 0; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: var(--white); font-size: 0.95rem; font-weight: 700; padding: 14px 28px; border-radius: 10px; white-space: nowrap; }
+    .btn-primary:hover { opacity: 0.9; text-decoration: none; }
+
+    /* FOOTER */
+    footer { background: var(--dark-2); border-top: 1px solid var(--gray-800); padding: 40px 24px; text-align: center; }
+    footer p { color: var(--gray-400); font-size: 0.875rem; }
+    footer a { color: var(--accent-light); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="https://bronks.ia.br/" class="nav__logo">Bronks<span>IA</span></a>
+        <ul class="nav__links">
+          <li><a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a></li>
+          <li><a href="https://bronks.ia.br/rag-empresarial/">RAG</a></li>
+          <li><a href="https://bronks.ia.br/blog/" style="color:#fff;">Blog</a></li>
+          <li><a href="https://bronks.ia.br/#contato" class="nav__cta">Consultoria gratuita</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <header class="hero">
+        <div class="hero__label">Blog</div>
+        <h1>IA para Empresas: guias que você realmente usa</h1>
+        <p class="hero__lead">Sem enrolação. Conteúdo técnico e estratégico sobre agentes de IA, RAG, automação e como implementar inteligência artificial no seu negócio.</p>
+      </header>
+
+      <!-- FEATURED ARTICLE -->
+      <article class="featured">
+        <div>
+          <div class="featured__meta">✦ Artigo em destaque · Automação</div>
+          <h2 class="featured__title">
+            <a href="https://bronks.ia.br/blog/chatbot-whatsapp-com-ia-para-empresas/">
+              Chatbot com IA no WhatsApp para Empresas: guia completo para 2026
+            </a>
+          </h2>
+          <p class="featured__desc">Como implementar chatbot com IA generativa no WhatsApp Business — do credenciamento na Meta às integrações, passando por custo real, LGPD e plataformas que realmente funcionam.</p>
+          <div class="featured__info">
+            <span>11 set 2026</span>
+            <span>·</span>
+            <span>12 min de leitura</span>
+          </div>
+        </div>
+        <div class="featured__img">💬</div>
+      </article>
+
+      <!-- ARTICLES GRID -->
+      <div class="section-title">Todos os artigos</div>
+
+      <div class="articles-grid">
+
+        <article class="article-card">
+          <div class="article-card__tag">Fundamentos</div>
+          <h2 class="article-card__title">
+            <a href="https://bronks.ia.br/blog/o-que-e-agente-de-ia/">O que é um agente de IA e como ele funciona na prática?</a>
+          </h2>
+          <p class="article-card__desc">Do conceito técnico ao caso de uso real: o que é um agente de IA, como ele raciocina, planeja e executa ações — sem jargão desnecessário.</p>
+          <div class="article-card__footer">
+            <span>11 set 2026</span>
+            <a href="https://bronks.ia.br/blog/o-que-e-agente-de-ia/" class="article-card__read">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-card__tag">Implementação</div>
+          <h2 class="article-card__title">
+            <a href="https://bronks.ia.br/blog/como-implementar-agentes-de-ia-na-empresa/">Como implementar agentes de IA na sua empresa: passo a passo</a>
+          </h2>
+          <p class="article-card__desc">Guia prático para CTOs e gestores: escolha de tecnologia, fases de implementação, gestão de mudança e como evitar os erros mais comuns.</p>
+          <div class="article-card__footer">
+            <span>11 set 2026</span>
+            <a href="https://bronks.ia.br/blog/como-implementar-agentes-de-ia-na-empresa/" class="article-card__read">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-card__tag">Automação · WhatsApp</div>
+          <h2 class="article-card__title">
+            <a href="https://bronks.ia.br/blog/chatbot-whatsapp-com-ia-para-empresas/">Chatbot com IA no WhatsApp: guia completo para empresas</a>
+          </h2>
+          <p class="article-card__desc">Plataformas, custo real, API oficial da Meta, LGPD e passo a passo para implementar em 4 semanas. O guia mais completo do mercado em português.</p>
+          <div class="article-card__footer">
+            <span>11 set 2026</span>
+            <a href="https://bronks.ia.br/blog/chatbot-whatsapp-com-ia-para-empresas/" class="article-card__read">Ler artigo →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div class="newsletter">
+        <h2>Receba novos artigos por e-mail</h2>
+        <p>Conteúdo técnico sobre IA para empresas, sem spam. Uma edição por semana, quando há algo relevante para publicar.</p>
+        <form class="newsletter__form" onsubmit="handleSubmit(event)">
+          <input class="newsletter__input" type="email" placeholder="seu@email.com" required>
+          <button type="submit" class="newsletter__btn">Inscrever</button>
+        </form>
+      </div>
+
+      <!-- CTA CONSULTORIA -->
+      <div class="cta-box">
+        <div>
+          <h2>Precisa de mais do que artigos?</h2>
+          <p>A Bronks IA implementa agentes de IA, RAG e automações para empresas de todos os portes. Comece com um diagnóstico gratuito — sem compromisso.</p>
+        </div>
+        <a href="https://bronks.ia.br/#contato" class="btn-primary">Agendar consultoria gratuita</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 <a href="https://bronks.ia.br/">Bronks IA</a> — Agentes de IA, Automação Inteligente e RAG para Empresas · Rio de Janeiro, RJ</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Inscrito! ✓';
+      btn.style.background = '#10B981';
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>

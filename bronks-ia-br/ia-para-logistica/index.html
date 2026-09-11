@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Logística: agentes inteligentes que reduzem custo e atraso | Bronks IA</title>
+  <meta name="description" content="IA para logística: agentes que otimizam rotas, preveem rupturas, automatizam rastreamento e reduzem custos operacionais. Consultoria especializada — Bronks IA.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bronks.ia.br/ia-para-logistica/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IA para Logística: agentes que reduzem custo e atraso | Bronks IA">
+  <meta property="og:description" content="Implante agentes de IA na sua operação logística: otimização de rotas, previsão de demanda, automação de rastreamento e integração com TMS/WMS.">
+  <meta property="og:url" content="https://bronks.ia.br/ia-para-logistica/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://bronks.ia.br/assets/og-ia-logistica.jpg">
+
+  <!-- Schema.org Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IA para Logística",
+    "description": "Agentes de IA para operações logísticas: otimização de rotas, previsão de demanda, automação de rastreamento, integração com TMS/WMS e redução de custos operacionais.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "logo": "https://bronks.ia.br/assets/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/bronks-ia",
+        "https://www.instagram.com/bronks.ia"
+      ]
+    },
+    "serviceType": "Consultoria em Inteligência Artificial para Logística",
+    "areaServed": "Brasil",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "BRL",
+      "description": "Diagnóstico inicial gratuito"
+    }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como a IA pode reduzir custos logísticos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A IA reduz custos logísticos por meio de: otimização de rotas (reduz combustível e km rodados em 15–25%), previsão de demanda mais precisa (reduz estoque parado e rupturas), automação de processos burocráticos (emissão de NF, CTe, comunicação com transportadoras), redução de devoluções com triagem preditiva e manutenção preditiva de frota. Em média, empresas que implantam IA em logística reportam redução de 12–30% no custo operacional total nos primeiros 12 meses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IA para logística funciona para empresas pequenas ou só para grandes transportadoras?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Funciona para todos os portes. Para empresas menores, o ponto de entrada mais comum é a automação de comunicação com clientes (rastreamento automático via WhatsApp), automação de cotação com transportadoras e previsão de demanda para compras. O investimento inicial é proporcional ao porte — não é necessário ser uma grande transportadora para ter ROI positivo com IA logística."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA se integra com o TMS ou WMS que já uso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. A Bronks IA tem experiência em integração com os principais TMS e WMS do mercado brasileiro, incluindo TOTVS Protheus, SAP, Infor, Oracle, Siagri, GKO e outros. A integração é feita via API ou conector específico, sem necessidade de substituir os sistemas existentes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual é o prazo para implementar IA na operação logística?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende do escopo. Automações pontuais (chatbot de rastreamento, cotação automática) podem entrar em produção em 4–6 semanas. Projetos mais completos com otimização de rotas, previsão de demanda e integração com TMS/WMS levam de 3 a 6 meses. A Bronks IA prioriza entregas incrementais — cada módulo entra em produção e já gera valor antes do projeto completo estar pronto."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --dark: #0A0E1A;
+      --dark-2: #111827;
+      --accent: #7C3AED;
+      --accent-light: #A78BFA;
+      --accent-glow: rgba(124, 58, 237, .15);
+      --white: #FFFFFF;
+      --gray-100: #F3F4F6;
+      --gray-300: #D1D5DB;
+      --gray-400: #9CA3AF;
+      --gray-600: #4B5563;
+      --gray-800: #1F2937;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--dark);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.2; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; }
+
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+    /* NAV */
+    .nav {
+      background: rgba(10,14,26,0.95);
+      border-bottom: 1px solid rgba(124,58,237,0.15);
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+    .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .nav__logo { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    .nav__logo span { color: var(--accent); }
+    .nav__links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav__links a { font-size: 0.9rem; font-weight: 500; color: var(--gray-400); transition: color 0.2s; }
+    .nav__links a:hover { color: var(--white); text-decoration: none; }
+    .nav__cta { display: inline-flex; align-items: center; background: var(--accent); color: var(--white) !important; padding: 10px 22px; border-radius: 8px; font-size: 0.875rem; font-weight: 600; transition: opacity 0.2s; }
+    .nav__cta:hover { opacity: 0.9; text-decoration: none !important; }
+    @media (max-width: 768px) { .nav__links { display: none; } }
+
+    /* HERO */
+    .hero { padding: 80px 0 64px; text-align: center; }
+    .hero__label { display: inline-block; background: var(--accent-glow); border: 1px solid rgba(124,58,237,0.3); color: var(--accent-light); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; margin-bottom: 20px; max-width: 860px; margin-left: auto; margin-right: auto; }
+    .hero h1 span { color: var(--accent-light); }
+    .hero__lead { font-size: 1.15rem; color: var(--gray-300); max-width: 680px; margin: 0 auto 36px; }
+    .hero__cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: var(--white); font-size: 1rem; font-weight: 700; padding: 18px 36px; border-radius: 10px; transition: opacity 0.2s; }
+    .hero__cta:hover { opacity: 0.9; text-decoration: none; }
+    .hero__secondary { display: inline-flex; align-items: center; gap: 6px; border: 1px solid rgba(124,58,237,0.4); color: var(--accent-light); font-size: 0.9rem; padding: 14px 28px; border-radius: 10px; margin-left: 12px; }
+    .hero__secondary:hover { background: var(--accent-glow); text-decoration: none; }
+    .hero__stats { display: flex; justify-content: center; gap: 48px; margin-top: 56px; flex-wrap: wrap; }
+    .stat { text-align: center; }
+    .stat__value { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; color: var(--white); }
+    .stat__label { font-size: 0.85rem; color: var(--gray-400); margin-top: 4px; }
+
+    /* SECTION */
+    .section { padding: 80px 0; }
+    .section--alt { background: var(--gray-800); }
+    .section__tag { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-light); margin-bottom: 12px; }
+    .section h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 16px; }
+    .section__lead { font-size: 1rem; color: var(--gray-400); max-width: 640px; margin-bottom: 48px; }
+
+    /* USE CASES */
+    .use-cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .use-case { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 28px; }
+    .use-case__icon { font-size: 2.2rem; margin-bottom: 16px; }
+    .use-case h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: var(--white); }
+    .use-case p { color: var(--gray-400); font-size: 0.9rem; margin: 0; }
+    .use-case .result { margin-top: 14px; font-size: 0.85rem; color: var(--accent-light); font-weight: 600; }
+
+    /* INTEGRATION */
+    .integrations { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .int-tag { background: var(--gray-800); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 8px 16px; font-size: 0.85rem; color: var(--gray-300); font-weight: 500; }
+
+    /* ROI TABLE */
+    .table-wrap { overflow-x: auto; margin: 24px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { background: var(--gray-800); color: var(--gray-100); font-weight: 600; padding: 12px 16px; text-align: left; }
+    td { padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,0.06); color: var(--gray-300); vertical-align: top; }
+    tr:hover td { background: rgba(124,58,237,0.04); }
+    td.good { color: #34d399; font-weight: 600; }
+
+    /* PROCESS */
+    .process { display: flex; flex-direction: column; gap: 0; max-width: 680px; }
+    .process-step { display: flex; gap: 24px; align-items: flex-start; padding: 24px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .process-step:last-child { border-bottom: none; }
+    .step-circle { background: var(--accent); color: var(--white); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+    .process-step h3 { font-size: 1.05rem; margin-bottom: 6px; color: var(--white); }
+    .process-step p { color: var(--gray-400); font-size: 0.9rem; margin: 0; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 16px; }
+    .faq-item { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px 24px; }
+    .faq-item h3 { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 10px; }
+    .faq-item p { color: var(--gray-400); font-size: 0.9rem; margin: 0; }
+
+    /* CTA */
+    .cta-section { background: linear-gradient(135deg, #1a0533 0%, #0d1a3a 100%); border-top: 1px solid rgba(124,58,237,0.2); border-bottom: 1px solid rgba(124,58,237,0.2); padding: 80px 0; text-align: center; }
+    .cta-section h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 16px; }
+    .cta-section p { color: var(--gray-300); max-width: 520px; margin: 0 auto 36px; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: var(--white); font-size: 1rem; font-weight: 700; padding: 18px 36px; border-radius: 10px; transition: opacity 0.2s; }
+    .btn-primary:hover { opacity: 0.9; text-decoration: none; }
+
+    /* RELATED */
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 32px; }
+    .related-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px; }
+    .related-card .tag { font-size: 0.75rem; color: var(--accent-light); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+    .related-card h3 { font-size: 0.95rem; font-weight: 600; }
+    .related-card a { color: var(--white); }
+    .related-card a:hover { color: var(--accent-light); }
+
+    /* FOOTER */
+    footer { background: var(--dark-2); border-top: 1px solid var(--gray-800); padding: 40px 24px; text-align: center; }
+    footer p { color: var(--gray-400); font-size: 0.875rem; }
+    footer a { color: var(--accent-light); }
+
+    @media (max-width: 640px) {
+      .hero { padding: 56px 0 48px; }
+      .hero__stats { gap: 28px; }
+      .hero__secondary { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="https://bronks.ia.br/" class="nav__logo">Bronks<span>IA</span></a>
+        <ul class="nav__links">
+          <li><a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a></li>
+          <li><a href="https://bronks.ia.br/rag-empresarial/">RAG</a></li>
+          <li><a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/">Consultoria RJ</a></li>
+          <li><a href="https://bronks.ia.br/#contato" class="nav__cta">Consultoria gratuita</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__label">Vertical · Logística</div>
+        <h1>IA para Logística: <span>agentes que reduzem custo</span> e eliminam atrasos</h1>
+        <p class="hero__lead">
+          Implante agentes de IA na sua operação: otimização de rotas, previsão de demanda, automação de rastreamento, integração com TMS/WMS e redução real de custo operacional.
+        </p>
+        <a href="https://bronks.ia.br/#contato" class="hero__cta">Agendar diagnóstico gratuito</a>
+        <a href="#casos-de-uso" class="hero__secondary">Ver casos de uso →</a>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <div class="stat__value">15–25%</div>
+            <div class="stat__label">redução em custo de frete</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value">40%</div>
+            <div class="stat__label">menos atraso de entrega</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value">60%</div>
+            <div class="stat__label">automação de processos manuais</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value">3–6 meses</div>
+            <div class="stat__label">tempo médio de retorno do investimento</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="casos-de-uso">
+      <div class="container">
+        <span class="section__tag">Casos de uso</span>
+        <h2>O que a IA faz na prática na sua operação logística</h2>
+        <p class="section__lead">Não se trata de substituir seu sistema — é adicionar inteligência onde há mais desperdício.</p>
+
+        <div class="use-cases">
+          <div class="use-case">
+            <div class="use-case__icon">🗺️</div>
+            <h3>Otimização de rotas em tempo real</h3>
+            <p>Agente recalcula rotas de entrega considerando trânsito em tempo real, janelas de entrega, capacidade de veículo e custo de combustível. Funciona com frota própria e terceirizada.</p>
+            <div class="result">↓ 15–25% em custo de combustível e km</div>
+          </div>
+          <div class="use-case">
+            <div class="use-case__icon">📈</div>
+            <h3>Previsão de demanda</h3>
+            <p>Modelos de ML treinados no seu histórico de vendas, sazonalidade e eventos externos (feriados, picos promocionais) preveem demanda por SKU com precisão de 85–92%, reduzindo estoque parado e rupturas.</p>
+            <div class="result">↓ 20–35% em custo de estoque</div>
+          </div>
+          <div class="use-case">
+            <div class="use-case__icon">📱</div>
+            <h3>Rastreamento automático via WhatsApp</h3>
+            <p>Agente envia atualizações de entrega proativamente para o cliente final, responde dúvidas sobre status do pedido e redireciona para atendente humano só quando necessário.</p>
+            <div class="result">↓ 60% em chamadas de "onde está meu pedido?"</div>
+          </div>
+          <div class="use-case">
+            <div class="use-case__icon">🔧</div>
+            <h3>Manutenção preditiva de frota</h3>
+            <p>Analisa dados dos sensores dos veículos (OBD-II ou telemática) e prevê falhas antes que aconteçam — evitando quebras em rota, multas por veículos irregulares e custos de emergência.</p>
+            <div class="result">↓ 30–40% em custo de manutenção corretiva</div>
+          </div>
+          <div class="use-case">
+            <div class="use-case__icon">📋</div>
+            <h3>Automação de documentos e processos</h3>
+            <p>Emissão automática de NF-e, CTe, DANFE e comunicação com transportadoras. Leitura inteligente de notas de entrada, conciliação de fretes e geração de relatórios de desempenho.</p>
+            <div class="result">↓ 70% no tempo de processamento documental</div>
+          </div>
+          <div class="use-case">
+            <div class="use-case__icon">🤝</div>
+            <h3>Cotação automática com transportadoras</h3>
+            <p>Agente consulta tarifas de múltiplas transportadoras em tempo real, seleciona a melhor opção por critérios definidos (prazo, custo, confiabilidade) e gera o pedido de coleta automaticamente.</p>
+            <div class="result">↓ 10–18% no custo médio de frete</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <span class="section__tag">Integrações</span>
+        <h2>Integramos com os sistemas que você já usa</h2>
+        <p class="section__lead">Nenhum sistema é abandonado. A IA se encaixa na sua operação existente.</p>
+
+        <div class="integrations">
+          <span class="int-tag">TOTVS Protheus</span>
+          <span class="int-tag">SAP S/4HANA</span>
+          <span class="int-tag">Oracle TMS</span>
+          <span class="int-tag">Infor Nexus</span>
+          <span class="int-tag">GKO Cargo</span>
+          <span class="int-tag">Siagri</span>
+          <span class="int-tag">Microsoft Dynamics</span>
+          <span class="int-tag">Salesforce</span>
+          <span class="int-tag">WhatsApp Business API</span>
+          <span class="int-tag">Correios API</span>
+          <span class="int-tag">Mercado Livre</span>
+          <span class="int-tag">Shopify</span>
+          <span class="int-tag">VTEX</span>
+          <span class="int-tag">APIs de transportadoras</span>
+        </div>
+
+        <p style="color: var(--gray-400); font-size: 0.9rem; margin-top: 20px;">Não vê seu sistema na lista? A Bronks IA integra com qualquer sistema que tenha API ou exportação de dados estruturados. <a href="https://bronks.ia.br/#contato">Pergunte sobre o seu.</a></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="section__tag">ROI documentado</span>
+        <h2>Resultados esperados por tipo de empresa</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Perfil da empresa</th>
+                <th>Principal problema</th>
+                <th>Solução de IA</th>
+                <th>Resultado esperado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>E-commerce (500+ pedidos/dia)</td>
+                <td>Rastreamento manual, alto volume de contatos "onde está meu pedido"</td>
+                <td>Agente de rastreamento + chatbot WhatsApp</td>
+                <td class="good">↓ 60% em tickets de suporte, NPS +15 pts</td>
+              </tr>
+              <tr>
+                <td>Distribuidora (frota própria)</td>
+                <td>Rotas ineficientes, alto custo de combustível</td>
+                <td>Otimização de rotas em tempo real</td>
+                <td class="good">↓ 18–25% no custo de frete</td>
+              </tr>
+              <tr>
+                <td>Indústria (supply chain)</td>
+                <td>Ruptura de estoque ou excesso de inventário</td>
+                <td>Previsão de demanda por ML</td>
+                <td class="good">↓ 30% em capital imobilizado em estoque</td>
+              </tr>
+              <tr>
+                <td>3PL / operador logístico</td>
+                <td>Processamento manual de documentos e fretes</td>
+                <td>Automação documental + cotação multi-carrier</td>
+                <td class="good">3× mais operações com equipe atual</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <span class="section__tag">Processo</span>
+        <h2>Como funciona a implementação</h2>
+
+        <div class="process">
+          <div class="process-step">
+            <div class="step-circle">1</div>
+            <div>
+              <h3>Diagnóstico gratuito (1–2 semanas)</h3>
+              <p>Mapeamento da operação atual, identificação dos maiores gargalos e oportunidades de IA, priorização por ROI e complexidade. Resultado: roadmap de implementação com estimativa de retorno.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-circle">2</div>
+            <div>
+              <h3>Prova de conceito (2–4 semanas)</h3>
+              <p>Desenvolvemos o módulo de IA de maior ROI primeiro — você vê o sistema funcionando em ambiente real com dados reais antes de aprovar o projeto completo.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-circle">3</div>
+            <div>
+              <h3>Implementação incremental (2–6 meses)</h3>
+              <p>Cada módulo entra em produção e já gera resultado enquanto os próximos são desenvolvidos. Integração com seus sistemas existentes sem downtime operacional.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-circle">4</div>
+            <div>
+              <h3>Monitoramento e evolução contínua</h3>
+              <p>Painel de KPIs em tempo real, retreinamento periódico dos modelos com novos dados e suporte técnico contínuo. A IA fica cada vez mais inteligente com o tempo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="section__tag">FAQ</span>
+        <h2>Perguntas frequentes</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>Como a IA pode reduzir custos logísticos?</h3>
+            <p>Através de otimização de rotas (↓15–25% em combustível), previsão de demanda mais precisa (↓30% em estoque parado), automação documental (70% menos tempo de processamento) e manutenção preditiva de frota (↓30–40% em manutenção corretiva). O custo operacional total cai 12–30% nos primeiros 12 meses em média.</p>
+          </div>
+          <div class="faq-item">
+            <h3>IA para logística funciona para empresas pequenas?</h3>
+            <p>Sim. Para empresas menores, o ponto de entrada mais acessível é automação de comunicação com clientes (rastreamento por WhatsApp), cotação automática com transportadoras e previsão de demanda. O investimento é proporcional ao porte — não é preciso ser uma grande transportadora para ter ROI positivo.</p>
+          </div>
+          <div class="faq-item">
+            <h3>A IA se integra com o TMS ou WMS que já uso?</h3>
+            <p>Sim. Integramos com TOTVS Protheus, SAP, Oracle, Infor, GKO, Siagri e outros, via API ou conector específico — sem necessidade de substituir seus sistemas existentes.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Qual é o prazo para implementar?</h3>
+            <p>Automações pontuais (chatbot de rastreamento, cotação automática) entram em produção em 4–6 semanas. Projetos completos levam de 3 a 6 meses. A Bronks IA usa entregas incrementais — cada módulo gera valor antes do projeto estar 100% pronto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Pronto para levar IA para a sua operação logística?</h2>
+        <p>Comece com um diagnóstico gratuito. Em 1–2 semanas você terá um mapa claro dos gargalos, das oportunidades e do retorno esperado para cada módulo de IA.</p>
+        <a href="https://bronks.ia.br/#contato" class="btn-primary">Agendar diagnóstico gratuito</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Outros verticais que atendemos</h2>
+        <div class="related-grid">
+          <div class="related-card">
+            <div class="tag">Vertical</div>
+            <h3><a href="https://bronks.ia.br/ia-para-saude/">IA para Saúde</a></h3>
+          </div>
+          <div class="related-card">
+            <div class="tag">Vertical</div>
+            <h3><a href="https://bronks.ia.br/ia-para-juridico/">IA para Jurídico</a></h3>
+          </div>
+          <div class="related-card">
+            <div class="tag">Serviço</div>
+            <h3><a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a></h3>
+          </div>
+          <div class="related-card">
+            <div class="tag">Serviço</div>
+            <h3><a href="https://bronks.ia.br/rag-empresarial/">RAG Empresarial</a></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 <a href="https://bronks.ia.br/">Bronks IA</a> — Agentes de IA, Automação Inteligente e RAG para Empresas · Rio de Janeiro, RJ</p>
+    </div>
+  </footer>
+
+</body>
+</html>

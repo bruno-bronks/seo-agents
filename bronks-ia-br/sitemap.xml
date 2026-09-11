@@ -74,6 +74,22 @@
     <priority>0.80</priority>
   </url>
 
+  <!-- Páginas de vertical adicionais -->
+  <url>
+    <loc>https://bronks.ia.br/ia-para-logistica/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Blog hub -->
+  <url>
+    <loc>https://bronks.ia.br/blog/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- Blog -->
   <url>
     <loc>https://bronks.ia.br/blog/o-que-e-agente-de-ia/</loc>
@@ -98,5 +114,11 @@
     <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bronks.ia.br/blog/chatbot-whatsapp-com-ia-para-empresas/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 </urlset>
