@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG Empresarial: guia completo para implementar em 2026 | Bronks IA</title>
+  <meta name="description" content="O que é RAG empresarial, como funciona, quanto custa e como implementar na sua empresa em 2026. Guia completo da equipe Bronks IA com exemplos reais.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bronks.ia.br/blog/rag-empresarial-guia-completo/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="RAG Empresarial: guia completo para implementar em 2026 | Bronks IA">
+  <meta property="og:description" content="O que é RAG, como funciona, quando usar, quanto custa e como a sua empresa pode implementar. Guia prático com exemplos reais de cases B2B no Brasil.">
+  <meta property="og:url" content="https://bronks.ia.br/blog/rag-empresarial-guia-completo/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://bronks.ia.br/assets/og-rag-guia.jpg">
+
+  <!-- Schema.org Article + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "RAG Empresarial: guia completo para implementar em 2026",
+    "description": "O que é RAG empresarial, como funciona, quanto custa e como implementar na sua empresa em 2026.",
+    "author": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "logo": { "@type": "ImageObject", "url": "https://bronks.ia.br/assets/logo.png" }
+    },
+    "datePublished": "2026-09-12",
+    "dateModified": "2026-09-12",
+    "mainEntityOfPage": "https://bronks.ia.br/blog/rag-empresarial-guia-completo/",
+    "inLanguage": "pt-BR"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é RAG (Retrieval-Augmented Generation)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina modelos de linguagem (LLMs) com uma base de conhecimento específica da empresa. Em vez de o modelo depender apenas do que foi treinado, ele busca informações relevantes em documentos, manuais, contratos ou banco de dados da empresa antes de responder. O resultado é uma IA que conhece o contexto do seu negócio, responde com precisão e cita as fontes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual a diferença entre RAG e ChatGPT normal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O ChatGPT é treinado com dados genéricos da internet, sem acesso aos dados da sua empresa. Com RAG, você conecta o modelo de linguagem à sua base de conhecimento proprietária: manuais técnicos, contratos, histórico de atendimento, base de produtos, documentos internos. O resultado é uma IA que responde com o conhecimento específico do seu negócio, não com informações genéricas — e sem vazar seus dados para terceiros."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto custa implementar RAG em uma empresa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O custo varia conforme a complexidade: um RAG focado (base de conhecimento de um departamento, integração com uma fonte de dados) parte de R$ 40k–80k. Plataformas RAG completas com múltiplas fontes, autenticação, múltiplos canais de acesso e manutenção contínua ficam entre R$ 100k e R$ 350k. O ROI típico é de 3 a 6 meses, especialmente em empresas com alto volume de atendimento ou consultas internas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "RAG funciona com documentos em português?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, com excelente desempenho. Os modelos modernos de linguagem — como Claude, GPT-4, Llama 3 e Mistral — têm compreensão muito boa do português brasileiro. Embeddings multilíngues (como o text-embedding-3 da OpenAI ou modelos do Hugging Face treinados em PT-BR) garantem buscas precisas em documentos em português. Trabalhamos com empresas cujas bases de conhecimento são 100% em PT-BR."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "RAG é seguro para dados corporativos sensíveis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, quando implementado corretamente. A arquitetura padrão que usamos mantém todos os dados da empresa dentro da sua própria infraestrutura (cloud privada ou on-premise). O modelo de linguagem acessa apenas o trecho de texto recuperado para formular a resposta, sem armazenar seus dados. Implementamos controle de acesso por usuário (cada colaborador vê apenas o que tem permissão), logs de todas as consultas e criptografia em trânsito e em repouso."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f;
+      --bg2: #12121a;
+      --bg3: #1a1a28;
+      --accent: #7c3aed;
+      --accent2: #06b6d4;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #2d2d44;
+      --card: #16162a;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; color: var(--text); }
+    .nav-brand span { color: var(--accent); }
+    .nav-cta { background: var(--accent); color: #fff; padding: 8px 20px; border-radius: 8px; font-size: 0.9rem; font-weight: 600; }
+    .nav-cta:hover { background: #6d28d9; text-decoration: none; }
+
+    .article-wrap { max-width: 780px; margin: 0 auto; padding: 64px 24px 80px; }
+    .article-meta { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 32px; }
+    .meta-tag { background: rgba(124,58,237,0.15); border: 1px solid rgba(124,58,237,0.3); color: #a78bfa; padding: 4px 14px; border-radius: 16px; font-size: 0.8rem; font-weight: 600; }
+    .meta-date { color: var(--muted); font-size: 0.88rem; }
+    .meta-read { color: var(--muted); font-size: 0.88rem; }
+
+    h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 24px; }
+    .article-lead { font-size: 1.15rem; color: var(--muted); margin-bottom: 48px; line-height: 1.7; border-left: 3px solid var(--accent); padding-left: 20px; }
+
+    .article-body h2 { font-size: 1.6rem; font-weight: 700; margin: 56px 0 20px; color: var(--text); }
+    .article-body h3 { font-size: 1.2rem; font-weight: 600; margin: 36px 0 12px; color: var(--text); }
+    .article-body p { color: var(--muted); margin-bottom: 20px; font-size: 1rem; }
+    .article-body ul, .article-body ol { color: var(--muted); padding-left: 24px; margin-bottom: 20px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body strong { color: var(--text); font-weight: 600; }
+
+    .callout { background: var(--bg3); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 32px 0; }
+    .callout p { margin: 0; color: var(--text); }
+
+    .highlight-box { background: rgba(6,182,212,0.08); border: 1px solid rgba(6,182,212,0.2); border-radius: 12px; padding: 24px 28px; margin: 32px 0; }
+    .highlight-box h4 { font-size: 1rem; font-weight: 700; color: var(--accent2); margin-bottom: 12px; }
+    .highlight-box p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+    .faq-section { margin-top: 64px; }
+    .faq-section h2 { font-size: 1.6rem; margin-bottom: 32px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 { font-size: 1rem; font-weight: 600; margin-bottom: 12px; }
+    .faq-item p { color: var(--muted); margin: 0; font-size: 0.95rem; }
+
+    .cta-block { background: linear-gradient(135deg, rgba(124,58,237,0.15), rgba(6,182,212,0.1)); border: 1px solid rgba(124,58,237,0.25); border-radius: 20px; padding: 40px; text-align: center; margin: 64px 0; }
+    .cta-block h3 { font-size: 1.4rem; margin-bottom: 12px; }
+    .cta-block p { color: var(--muted); margin-bottom: 24px; }
+    .btn-primary { display: inline-block; background: linear-gradient(135deg, #7c3aed, #5b21b6); color: #fff; padding: 14px 32px; border-radius: 10px; font-weight: 600; font-size: 1rem; box-shadow: 0 4px 20px rgba(124,58,237,0.4); }
+    .btn-primary:hover { transform: translateY(-2px); text-decoration: none; }
+
+    .related-posts { margin-top: 64px; padding-top: 40px; border-top: 1px solid var(--border); }
+    .related-posts h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 24px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .related-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .related-card h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+    .related-card a { color: var(--accent2); font-size: 0.85rem; }
+
+    footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; }
+    .footer-brand { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--text); margin-bottom: 12px; }
+    .footer-brand span { color: var(--accent); }
+    .footer-copy { color: var(--muted); font-size: 0.82rem; margin-top: 8px; }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 16px; }
+      .article-wrap { padding: 48px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand"><span>Bronks</span> IA</div>
+  <a href="https://bronks.ia.br/#contato" class="nav-cta">Consultoria gratuita</a>
+</nav>
+
+<main>
+  <article class="article-wrap">
+    <div class="article-meta">
+      <span class="meta-tag">RAG · Inteligência Artificial</span>
+      <span class="meta-date">12 de setembro de 2026</span>
+      <span class="meta-read">· 12 min de leitura</span>
+    </div>
+
+    <h1>RAG Empresarial: guia completo para implementar na sua empresa em 2026</h1>
+
+    <p class="article-lead">
+      RAG é hoje a tecnologia mais adotada por empresas que querem IA com conhecimento do próprio negócio — sem vazar dados, sem alucinações e com respostas que citam fontes reais. Este guia explica o que é, como funciona, quanto custa e como dar o primeiro passo.
+    </p>
+
+    <div class="article-body">
+
+      <h2>O que é RAG (Retrieval-Augmented Generation)?</h2>
+
+      <p>RAG — Geração Aumentada por Recuperação — é uma arquitetura que combina um modelo de linguagem (LLM) com uma base de conhecimento específica da empresa. Em vez de o modelo depender apenas do que foi treinado com dados genéricos da internet, ele <strong>busca informações relevantes</strong> nos documentos da empresa antes de formular cada resposta.</p>
+
+      <p>O nome descreve bem o processo: "Retrieval" (recuperação) de documentos relevantes → "Augmented" (aumentar o contexto do modelo com esses documentos) → "Generation" (geração da resposta com base nesse contexto enriquecido).</p>
+
+      <div class="callout">
+        <p><strong>Analogia prática:</strong> imagine um advogado que, antes de responder ao cliente, consulta rapidamente os precedentes e contratos relevantes ao caso. RAG faz isso em milissegundos — consulta sua base de documentos e usa as informações encontradas para responder com precisão.</p>
+      </div>
+
+      <h2>RAG vs. Fine-tuning: qual a diferença?</h2>
+
+      <p>Essa é uma das dúvidas mais comuns. A confusão é compreensível, pois ambas as técnicas tornam um LLM mais útil para o contexto empresarial — mas funcionam de formas muito diferentes:</p>
+
+      <ul>
+        <li><strong>Fine-tuning:</strong> você re-treina o modelo com dados da sua empresa, modificando seus pesos internos. É caro (R$ 50k–500k), exige grandes volumes de dados estruturados, e o conhecimento "envelhece" — precisa ser re-treinado quando as informações mudam.</li>
+        <li><strong>RAG:</strong> você não modifica o modelo. Em vez disso, conecta-o a uma base de documentos atualizada em tempo real. Quando um funcionário faz uma pergunta, o sistema recupera os trechos relevantes e os entrega ao modelo como contexto. É mais barato, mais rápido e a base de conhecimento pode ser atualizada sem re-treinar nada.</li>
+      </ul>
+
+      <p>Para a maioria dos casos empresariais — assistentes de RH, bases de conhecimento de atendimento, consultores internos — <strong>RAG é a escolha certa</strong>. Fine-tuning faz sentido apenas quando você precisa que o modelo adote um estilo ou comportamento muito específico.</p>
+
+      <h2>Como funciona o RAG na prática?</h2>
+
+      <p>A arquitetura de um sistema RAG tem três componentes principais:</p>
+
+      <h3>1. Ingestão e vetorização de documentos</h3>
+
+      <p>Seus documentos (PDFs, manuais, contratos, páginas de wiki, histórico de atendimento, planilhas) são processados, divididos em trechos e convertidos em vetores numéricos — representações matemáticas do significado do texto — por um modelo de embedding. Esses vetores ficam armazenados em um banco de dados vetorial (Pinecone, Weaviate, Qdrant, pgvector).</p>
+
+      <h3>2. Recuperação (Retrieval)</h3>
+
+      <p>Quando um usuário faz uma pergunta, a mesma pergunta é convertida em vetor. O sistema busca os trechos de documentos mais semanticamente próximos dessa pergunta — não por palavras-chave exatas, mas por <strong>similaridade de significado</strong>. Isso é o que torna o RAG superior a uma busca simples: ele encontra a informação relevante mesmo quando as palavras são diferentes.</p>
+
+      <h3>3. Geração (Generation)</h3>
+
+      <p>Os trechos recuperados são enviados ao LLM junto com a pergunta original. O modelo usa essas informações como contexto para formular uma resposta precisa, coerente e fundamentada em documentos reais da empresa. A resposta pode incluir citações das fontes usadas.</p>
+
+      <div class="highlight-box">
+        <h4>Exemplo real: assistente jurídico com RAG</h4>
+        <p>Um escritório de advocacia implantou RAG sobre 50.000 contratos e petições. Advogados juniors agora consultam o sistema para verificar precedentes e cláusulas padrão em segundos. Tempo médio de pesquisa caiu de 45 minutos para 2 minutos. ROI positivo em 4 meses.</p>
+      </div>
+
+      <h2>Quais empresas se beneficiam mais do RAG?</h2>
+
+      <p>RAG tem ROI comprovado em empresas que enfrentam pelo menos um desses desafios:</p>
+
+      <ul>
+        <li><strong>Alto volume de atendimento interno:</strong> funcionários fazem as mesmas perguntas repetidamente ao RH, TI ou jurídico (processos, políticas, benefícios, contratos).</li>
+        <li><strong>Documentação extensa e difícil de navegar:</strong> manuais técnicos, regulamentos, procedimentos operacionais que ninguém lê mas todos precisam consultar.</li>
+        <li><strong>Atendimento ao cliente com conhecimento complexo:</strong> produtos técnicos, seguros, serviços financeiros — onde os agentes precisam consultar muitas informações antes de responder.</li>
+        <li><strong>Gestão do conhecimento:</strong> know-how que existe na cabeça de pessoas-chave e precisa ser democratizado na organização.</li>
+        <li><strong>Compliance e regulatório:</strong> responder perguntas sobre normas, procedimentos e regulamentos com precisão e rastreabilidade.</li>
+      </ul>
+
+      <h2>Fontes de dados que o RAG pode consumir</h2>
+
+      <p>Um dos pontos fortes do RAG é a variedade de fontes que pode integrar:</p>
+
+      <ul>
+        <li>PDFs, Word, PowerPoint, planilhas Excel</li>
+        <li>Páginas de Confluence, Notion, SharePoint, Google Docs</li>
+        <li>Histórico de tickets de suporte (Zendesk, Freshdesk, Jira)</li>
+        <li>Base de produtos (Shopify, VTEX, sistemas próprios)</li>
+        <li>Contratos e documentos jurídicos</li>
+        <li>Manuais técnicos e documentação de engenharia</li>
+        <li>E-mails e comunicações internas (com controle de acesso por usuário)</li>
+        <li>Banco de dados SQL / NoSQL via conectores</li>
+        <li>APIs de sistemas ERP, CRM e legados</li>
+      </ul>
+
+      <h2>Quanto custa implementar RAG em 2026?</h2>
+
+      <p>Os custos variam muito conforme o escopo, mas aqui estão os ranges praticados no mercado brasileiro:</p>
+
+      <ul>
+        <li><strong>Piloto RAG focado</strong> (1 departamento, 1 fonte de dados, base de até 5.000 documentos): R$ 40k–80k, entrega em 6–10 semanas</li>
+        <li><strong>RAG departamental</strong> (múltiplas fontes, integração com Slack/Teams/WhatsApp, autenticação por usuário): R$ 80k–180k, 3–5 meses</li>
+        <li><strong>Plataforma RAG corporativa</strong> (organização inteira, múltiplos casos de uso, governança, monitoramento): R$ 180k–400k+, 6–12 meses</li>
+      </ul>
+
+      <p>Custo de operação contínua (cloud + API de LLM + manutenção): tipicamente 15–25% do custo de implantação por ano.</p>
+
+      <div class="callout">
+        <p><strong>ROI típico:</strong> empresas com alto volume de atendimento interno (RH, TI, jurídico) relatam ROI em 3–6 meses, com redução de 40–70% no tempo que equipes especializadas gastam respondendo perguntas repetitivas.</p>
+      </div>
+
+      <h2>Desafios comuns na implementação de RAG e como resolvê-los</h2>
+
+      <h3>Qualidade dos documentos</h3>
+      <p>Documentos mal formatados, duplicados ou desatualizados prejudicam a qualidade das respostas. A etapa de curadoria e limpeza da base de conhecimento é frequentemente subestimada e deve receber atenção antes da implementação técnica.</p>
+
+      <h3>Chunking e estratégia de indexação</h3>
+      <p>Dividir documentos em pedaços muito pequenos perde contexto; dividir em pedaços muito grandes reduz precisão. A estratégia de chunking (com overlap, hierárquica ou semântica) é um dos principais fatores de qualidade de um RAG.</p>
+
+      <h3>Controle de acesso por usuário</h3>
+      <p>Em organizações, nem todos devem ter acesso a todos os documentos. Implementar filtros de acesso no nível do retrieval (não só no front-end) é essencial para segurança.</p>
+
+      <h3>Alucinações residuais</h3>
+      <p>Mesmo com RAG, modelos podem gerar informações incorretas quando os documentos não têm a resposta. A solução é: instrução explícita para o modelo responder "não encontrei essa informação na nossa base" quando os documentos recuperados não cobrem a pergunta, e citação obrigatória de fontes.</p>
+
+      <h2>RAG na Bronks IA: como trabalhamos</h2>
+
+      <p>Na Bronks IA, RAG Empresarial é um dos nossos serviços principais. Nossa abordagem combina:</p>
+
+      <ul>
+        <li>Diagnóstico dos casos de uso e fontes de dados com maior ROI</li>
+        <li>Estratégia de ingestão, limpeza e chunking adaptada ao tipo de documento</li>
+        <li>Seleção do LLM e do modelo de embedding adequados (considerando custo, desempenho e privacidade)</li>
+        <li>Implementação de controle de acesso granular por usuário e grupo</li>
+        <li>Integração com canais: WhatsApp Business, Slack, Teams, portal web interno</li>
+        <li>Monitoramento contínuo de qualidade das respostas e atualização da base</li>
+        <li>Toda a infraestrutura pode rodar na cloud do cliente (AWS, Azure, GCP) ou on-premise — seus dados não saem da sua infraestrutura</li>
+      </ul>
+
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-section">
+      <h2>Perguntas frequentes sobre RAG Empresarial</h2>
+
+      <div class="faq-item">
+        <h3>O que é RAG (Retrieval-Augmented Generation)?</h3>
+        <p>RAG é uma técnica que combina modelos de linguagem (LLMs) com uma base de conhecimento específica da empresa. Em vez de o modelo depender apenas do que foi treinado, ele busca informações relevantes em documentos, manuais, contratos ou banco de dados da empresa antes de responder. O resultado é uma IA que conhece o contexto do seu negócio, responde com precisão e cita as fontes.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Qual a diferença entre RAG e ChatGPT normal?</h3>
+        <p>O ChatGPT é treinado com dados genéricos da internet, sem acesso aos dados da sua empresa. Com RAG, você conecta o modelo de linguagem à sua base de conhecimento proprietária — manuais técnicos, contratos, histórico de atendimento, base de produtos, documentos internos. O resultado é uma IA que responde com o conhecimento específico do seu negócio, sem vazar seus dados para terceiros.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Quanto custa implementar RAG em uma empresa?</h3>
+        <p>Um RAG focado (base de conhecimento de um departamento) parte de R$ 40k–80k. Plataformas RAG completas com múltiplas fontes e múltiplos canais de acesso ficam entre R$ 100k e R$ 350k. O ROI típico é de 3 a 6 meses, especialmente em empresas com alto volume de atendimento ou consultas internas.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>RAG funciona com documentos em português?</h3>
+        <p>Sim, com excelente desempenho. Os modelos modernos — como Claude, GPT-4 e Llama 3 — têm compreensão muito boa do português brasileiro. Embeddings multilíngues garantem buscas precisas em documentos em português. Trabalhamos com empresas cujas bases de conhecimento são 100% em PT-BR.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>RAG é seguro para dados corporativos sensíveis?</h3>
+        <p>Sim, quando implementado corretamente. A arquitetura que usamos mantém todos os dados dentro da sua própria infraestrutura (cloud privada ou on-premise). Implementamos controle de acesso por usuário, logs de todas as consultas e criptografia em trânsito e em repouso. Seus dados não chegam a servidores de terceiros.</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-block">
+      <h3>Pronto para implementar RAG na sua empresa?</h3>
+      <p>Agende uma consultoria gratuita de 60 minutos. Mapeamos seus casos de uso, fontes de dados e estimamos o ROI antes de qualquer investimento.</p>
+      <a href="https://bronks.ia.br/#contato" class="btn-primary">Agendar consultoria gratuita →</a>
+    </div>
+
+    <!-- Related -->
+    <div class="related-posts">
+      <h3>Artigos relacionados</h3>
+      <div class="related-grid">
+        <div class="related-card">
+          <h4>O que é um Agente de IA?</h4>
+          <a href="https://bronks.ia.br/blog/o-que-e-agente-de-ia/">Ler artigo →</a>
+        </div>
+        <div class="related-card">
+          <h4>Como implementar agentes de IA na empresa</h4>
+          <a href="https://bronks.ia.br/blog/como-implementar-agentes-de-ia-na-empresa/">Ler artigo →</a>
+        </div>
+        <div class="related-card">
+          <h4>Chatbot com IA no WhatsApp para empresas</h4>
+          <a href="https://bronks.ia.br/blog/chatbot-whatsapp-com-ia-para-empresas/">Ler artigo →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <p style="color: var(--muted); font-size: 0.88rem; margin-top: 40px;">
+      <a href="https://bronks.ia.br/">Início</a> →
+      <a href="https://bronks.ia.br/blog/">Blog</a> →
+      RAG Empresarial: guia completo
+    </p>
+  </article>
+</main>
+
+<footer>
+  <div class="footer-brand"><span>Bronks</span> IA</div>
+  <p class="footer-copy">© 2026 Bronks IA — Rio de Janeiro, RJ · Consultoria em Inteligência Artificial para Empresas</p>
+</footer>
+
+</body>
+</html>

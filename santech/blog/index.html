@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Santech Segurança — Dicas de Segurança Eletrônica no Rio de Janeiro</title>
+  <meta name="description" content="Dicas de segurança eletrônica, câmeras, alarmes e automação para residências e empresas no Rio de Janeiro. Blog da Santech Segurança.">
+  <link rel="canonical" href="https://santechseguranca.com.br/blog/">
+  <meta property="og:title" content="Blog Santech Segurança — Dicas de Segurança Eletrônica no Rio">
+  <meta property="og:description" content="Artigos sobre câmeras de segurança, alarmes, cerca elétrica, automação de portão e monitoramento 24h para residências e empresas no Rio de Janeiro.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://santechseguranca.com.br/blog/">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0f172a;
+      --bg2: #1e293b;
+      --accent: #f97316;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --border: #334155;
+      --card: #1e293b;
+    }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { background: #0f172a; border-bottom: 2px solid var(--accent); padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { font-weight: 800; font-size: 1.15rem; color: var(--text); }
+    .nav-brand span { color: var(--accent); }
+    .nav-wpp { background: #25d366; color: #fff; padding: 8px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; }
+    .nav-wpp:hover { background: #1db954; text-decoration: none; }
+
+    .page-header { padding: 56px 20px 40px; max-width: 860px; margin: 0 auto; }
+    .page-header h1 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; margin-bottom: 12px; }
+    .page-header p { color: var(--muted); font-size: 1rem; }
+
+    .blog-grid { max-width: 1000px; margin: 0 auto; padding: 0 20px 60px; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+    .post-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; transition: border-color 0.2s; }
+    .post-card:hover { border-color: var(--accent); }
+    .post-cat { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 12px; }
+    .post-card h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4; }
+    .post-card h2 a { color: var(--text); }
+    .post-card h2 a:hover { color: var(--accent); text-decoration: none; }
+    .post-card p { color: var(--muted); font-size: 0.88rem; margin-bottom: 20px; flex-grow: 1; }
+    .post-meta { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+    .post-date { color: var(--muted); font-size: 0.8rem; }
+    .post-read { color: var(--accent); font-size: 0.85rem; font-weight: 600; }
+
+    .cta-band { background: linear-gradient(135deg, #f97316, #ea580c); padding: 48px 20px; text-align: center; }
+    .cta-band h2 { font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
+    .cta-band p { color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+    .btn-wpp-lg { background: #fff; color: #ea580c; padding: 14px 32px; border-radius: 10px; font-weight: 800; font-size: 1rem; display: inline-block; }
+    .btn-wpp-lg:hover { background: #f1f5f9; text-decoration: none; }
+
+    .wpp-float { position: fixed; bottom: 24px; right: 24px; z-index: 999; }
+    .wpp-float a { background: #25d366; color: #fff; width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; box-shadow: 0 4px 20px rgba(37,211,102,0.4); text-decoration: none; }
+
+    footer { background: #0a0f1e; border-top: 1px solid var(--border); padding: 36px 20px; text-align: center; }
+    .footer-brand { font-weight: 800; font-size: 1.05rem; color: var(--text); margin-bottom: 12px; }
+    .footer-brand span { color: var(--accent); }
+    .footer-copy { color: var(--muted); font-size: 0.8rem; margin-top: 8px; }
+
+    @media (max-width: 640px) {
+      .page-header { padding: 40px 16px 28px; }
+      .blog-grid { padding: 0 16px 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand"><span>Santech</span> Segurança</div>
+  <a href="https://wa.me/5521999990000?text=Ol%C3%A1%2C+quero+or%C3%A7amento+de+seguran%C3%A7a" class="nav-wpp">💬 WhatsApp</a>
+</nav>
+
+<main>
+  <div class="page-header">
+    <p style="font-size:0.82rem;color:var(--muted);margin-bottom:16px;"><a href="https://santechseguranca.com.br/" style="color:var(--muted);">Início</a> → Blog</p>
+    <h1>Blog Santech Segurança</h1>
+    <p>Dicas práticas sobre câmeras, alarmes, cerca elétrica e automação para proteger sua casa ou empresa no Rio de Janeiro.</p>
+  </div>
+
+  <div class="blog-grid">
+    <div class="post-card">
+      <div class="post-cat">Câmeras · Guia</div>
+      <h2><a href="https://santechseguranca.com.br/blog/como-escolher-cameras-seguranca-residencial/">Como escolher câmeras de segurança para sua residência: guia completo 2026</a></h2>
+      <p>Descubra quais câmeras se adaptam melhor ao seu imóvel, como funciona a resolução na prática e o que avaliar antes de contratar a instalação.</p>
+      <div class="post-meta">
+        <span class="post-date">12 set. 2026</span>
+        <a href="https://santechseguranca.com.br/blog/como-escolher-cameras-seguranca-residencial/" class="post-read">Ler artigo →</a>
+      </div>
+    </div>
+
+    <div class="post-card">
+      <div class="post-cat">Câmeras · Preços</div>
+      <h2><a href="https://santechseguranca.com.br/blog/quanto-custa-instalar-cameras-rj/">Quanto custa instalar câmeras de segurança no Rio de Janeiro em 2026?</a></h2>
+      <p>Tabela de preços atualizada para kits de câmeras CFTV e IP no Rio de Janeiro, com o que está incluso em cada pacote e o que pode elevar o custo.</p>
+      <div class="post-meta">
+        <span class="post-date">10 set. 2026</span>
+        <a href="https://santechseguranca.com.br/blog/quanto-custa-instalar-cameras-rj/" class="post-read">Ler artigo →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-band">
+    <h2>Pronto para proteger seu imóvel?</h2>
+    <p>Fale com a Santech agora. Orçamento grátis e instalação rápida em toda a Zona Oeste e Região Metropolitana do Rio.</p>
+    <a href="https://wa.me/5521999990000?text=Ol%C3%A1%2C+quero+or%C3%A7amento+de+c%C3%A2meras+de+seguran%C3%A7a" class="btn-wpp-lg">💬 Falar no WhatsApp</a>
+  </div>
+</main>
+
+<div class="wpp-float">
+  <a href="https://wa.me/5521999990000?text=Ol%C3%A1%2C+quero+or%C3%A7amento+de+seguran%C3%A7a" title="WhatsApp Santech" aria-label="WhatsApp">💬</a>
+</div>
+
+<footer>
+  <div class="footer-brand"><span>Santech</span> Segurança</div>
+  <p class="footer-copy">© 2026 Santech Segurança — Rio de Janeiro, RJ</p>
+</footer>
+
+</body>
+</html>

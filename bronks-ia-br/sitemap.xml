@@ -121,4 +121,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
+
+  <!-- Páginas verticais adicionadas em ciclo #12 -->
+  <url>
+    <loc>https://bronks.ia.br/ia-para-financas/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Blog adicionado em ciclo #12 -->
+  <url>
+    <loc>https://bronks.ia.br/blog/rag-empresarial-guia-completo/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
 </urlset>

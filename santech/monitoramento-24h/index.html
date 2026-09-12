@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoramento 24 Horas Rio de Janeiro — Central de Segurança | Santech Segurança</title>
+  <meta name="description" content="Monitoramento 24 horas de câmeras e alarmes no Rio de Janeiro. Central de monitoramento com resposta imediata e acionamento de emergência. Cobertura em toda a Zona Oeste. Orçamento grátis!">
+  <link rel="canonical" href="https://santechseguranca.com.br/monitoramento-24h/">
+  <meta property="og:title" content="Monitoramento 24 Horas RJ — Câmeras e Alarmes | Santech Segurança">
+  <meta property="og:description" content="Central de monitoramento 24h para câmeras e alarmes no Rio de Janeiro. Resposta imediata, acionamento de emergência, cobertura em toda a Zona Oeste e Região Metropolitana.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://santechseguranca.com.br/monitoramento-24h/">
+  <meta name="robots" content="index, follow">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Santech Segurança",
+    "url": "https://santechseguranca.com.br",
+    "telephone": "+55-21-99999-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Monitoramento 24 Horas",
+      "itemListElement": [
+        {
+          "@type": "Service",
+          "name": "Monitoramento de Câmeras 24h",
+          "description": "Monitoramento remoto de câmeras de segurança 24 horas por dia com equipe de vigilância.",
+          "areaServed": "Rio de Janeiro, RJ"
+        },
+        {
+          "@type": "Service",
+          "name": "Monitoramento de Alarmes 24h",
+          "description": "Monitoramento de sistemas de alarme residencial e comercial com acionamento de emergência."
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como funciona o monitoramento 24 horas de câmeras?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O monitoramento 24 horas funciona de duas formas: monitoramento remoto próprio (você mesmo acompanha pelo celular e recebe alertas de movimento) e monitoramento por central profissional (uma equipe treinada acompanha as câmeras e aciona a polícia ou guarda municipal em caso de incidente). A Santech Segurança instala e configura o sistema completo — você escolhe o modelo que melhor atende sua necessidade."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto custa o monitoramento 24h no Rio de Janeiro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O monitoramento remoto básico pelo celular é gratuito (incluso na instalação). O monitoramento por central profissional tem mensalidades a partir de R$ 89 a R$ 250/mês dependendo do número de pontos monitorados e dos serviços incluídos. Entre em contato pelo WhatsApp para um orçamento personalizado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O monitoramento 24h funciona mesmo sem energia elétrica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os sistemas de alarme têm bateria de no-break interna que mantém o sistema funcionando por 4 a 8 horas sem energia. Para câmeras IP, recomendamos um no-break externo para garantir continuidade. Em casos de queda de internet, sistemas com backup por chip 4G continuam monitorados via rede móvel."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0f172a;
+      --bg2: #1e293b;
+      --accent: #f97316;
+      --accent2: #22c55e;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --border: #334155;
+      --card: #1e293b;
+    }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { background: #0f172a; border-bottom: 2px solid var(--accent); padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { font-weight: 800; font-size: 1.15rem; color: var(--text); }
+    .nav-brand span { color: var(--accent); }
+    .nav-wpp { background: #25d366; color: #fff; padding: 8px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; }
+    .nav-wpp:hover { background: #1db954; text-decoration: none; }
+
+    .hero { padding: 64px 20px 56px; max-width: 860px; margin: 0 auto; text-align: center; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3); color: #4ade80; padding: 6px 18px; border-radius: 20px; font-size: 0.82rem; font-weight: 700; margin-bottom: 24px; }
+    .hero-badge::before { content: "●"; animation: blink 1.5s infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.9rem); font-weight: 800; line-height: 1.2; margin-bottom: 20px; }
+    h1 em { font-style: normal; color: var(--accent); }
+    .hero-sub { font-size: 1.1rem; color: var(--muted); max-width: 580px; margin: 0 auto 36px; }
+    .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-wpp { background: #25d366; color: #fff; padding: 14px 28px; border-radius: 10px; font-weight: 700; font-size: 1rem; }
+    .btn-wpp:hover { background: #1db954; text-decoration: none; }
+    .btn-outline { border: 2px solid var(--accent); color: var(--accent); padding: 12px 28px; border-radius: 10px; font-weight: 600; font-size: 1rem; }
+    .btn-outline:hover { background: rgba(249,115,22,0.1); text-decoration: none; }
+
+    section { padding: 56px 20px; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    h2.sec-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; margin-bottom: 16px; }
+    p.sec-sub { color: var(--muted); font-size: 1rem; max-width: 580px; margin-bottom: 36px; }
+
+    /* Comparison */
+    .compare { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 32px; }
+    .compare-card { background: var(--card); border: 2px solid var(--border); border-radius: 16px; padding: 28px; }
+    .compare-card.highlight { border-color: var(--accent); }
+    .compare-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 20px; }
+    .compare-card ul { list-style: none; padding: 0; }
+    .compare-card li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--muted); display: flex; gap: 10px; align-items: flex-start; }
+    .compare-card li:last-child { border: none; }
+    .check { color: var(--accent2); font-weight: 700; flex-shrink: 0; }
+    .cross { color: #ef4444; font-weight: 700; flex-shrink: 0; }
+
+    /* Plans */
+    .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 32px; }
+    .plan { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; position: relative; }
+    .plan.featured { border-color: var(--accent); }
+    .plan-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--accent); color: #fff; padding: 4px 16px; border-radius: 12px; font-size: 0.78rem; font-weight: 700; white-space: nowrap; }
+    .plan h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .plan-price { font-size: 2rem; font-weight: 800; color: var(--accent); margin: 12px 0 4px; }
+    .plan-price span { font-size: 0.9rem; font-weight: 400; color: var(--muted); }
+    .plan ul { list-style: none; padding: 0; margin: 16px 0 24px; }
+    .plan li { font-size: 0.9rem; color: var(--muted); padding: 6px 0; border-bottom: 1px solid var(--border); display: flex; gap: 8px; }
+    .plan li:last-child { border: none; }
+    .plan li::before { content: "✓"; color: var(--accent2); font-weight: 700; }
+    .plan-cta { display: block; text-align: center; background: #25d366; color: #fff; padding: 12px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; }
+    .plan-cta:hover { background: #1db954; text-decoration: none; }
+
+    /* How it works */
+    .steps { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; }
+    .step { display: flex; gap: 20px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; align-items: flex-start; }
+    .step-num { flex-shrink: 0; width: 36px; height: 36px; background: var(--accent); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.9rem; }
+    .step h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+    .step p { color: var(--muted); font-size: 0.88rem; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
+    .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; }
+    .faq-item h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; }
+    .faq-item p { color: var(--muted); font-size: 0.9rem; }
+
+    .cta-band { background: linear-gradient(135deg, #f97316, #ea580c); padding: 56px 20px; text-align: center; }
+    .cta-band h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; margin-bottom: 12px; color: #fff; }
+    .cta-band p { color: rgba(255,255,255,0.85); font-size: 1rem; margin-bottom: 28px; }
+    .btn-wpp-lg { background: #fff; color: #ea580c; padding: 16px 36px; border-radius: 12px; font-weight: 800; font-size: 1.05rem; display: inline-block; }
+    .btn-wpp-lg:hover { background: #f1f5f9; text-decoration: none; }
+
+    .wpp-float { position: fixed; bottom: 24px; right: 24px; z-index: 999; }
+    .wpp-float a { background: #25d366; color: #fff; width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; box-shadow: 0 4px 20px rgba(37,211,102,0.4); text-decoration: none; }
+
+    footer { background: #0a0f1e; border-top: 1px solid var(--border); padding: 36px 20px; text-align: center; }
+    .footer-brand { font-weight: 800; font-size: 1.05rem; color: var(--text); margin-bottom: 12px; }
+    .footer-brand span { color: var(--accent); }
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin: 12px 0; }
+    .footer-links a { color: var(--muted); font-size: 0.88rem; }
+    .footer-copy { color: var(--muted); font-size: 0.8rem; margin-top: 12px; }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 12px; }
+      .hero { padding: 48px 16px 40px; }
+      section { padding: 40px 16px; }
+      .cta-band { padding: 40px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand"><span>Santech</span> Segurança</div>
+  <a href="https://wa.me/5521999990000?text=Quero+saber+sobre+monitoramento+24h" class="nav-wpp">💬 WhatsApp</a>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="hero-badge">Central ativa agora</div>
+    <h1>Monitoramento <em>24 horas</em><br>para câmeras e alarmes no Rio</h1>
+    <p class="hero-sub">Proteção que nunca dorme: câmeras com acesso remoto pelo celular, alarmes com acionamento imediato e central de monitoramento profissional para sua residência ou empresa na Zona Oeste do Rio.</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/5521999990000?text=Quero+monitoramento+24h" class="btn-wpp">💬 Contratar pelo WhatsApp</a>
+      <a href="tel:+5521999990000" class="btn-outline">📞 Ligar agora</a>
+    </div>
+  </div>
+
+  <!-- Comparison: with vs without -->
+  <section>
+    <div class="container">
+      <div class="section-label">Por que monitorar 24h?</div>
+      <h2 class="sec-title">Segurança com monitoramento vs. câmeras sem monitoramento</h2>
+      <div class="compare">
+        <div class="compare-card">
+          <h3>📹 Câmera sem monitoramento</h3>
+          <ul>
+            <li><span class="check">✓</span> Registra o que aconteceu</li>
+            <li><span class="cross">✗</span> Não avisa em tempo real</li>
+            <li><span class="cross">✗</span> Ninguém aciona emergência</li>
+            <li><span class="cross">✗</span> Imagens servem só para provar o crime depois</li>
+            <li><span class="cross">✗</span> Você precisa ficar olhando o celular</li>
+          </ul>
+        </div>
+        <div class="compare-card highlight">
+          <h3>🔒 Câmera + Monitoramento 24h</h3>
+          <ul>
+            <li><span class="check">✓</span> Alerta imediato no celular</li>
+            <li><span class="check">✓</span> Central aciona polícia automaticamente</li>
+            <li><span class="check">✓</span> Vigilância mesmo quando você dorme</li>
+            <li><span class="check">✓</span> Resposta rápida em qualquer horário</li>
+            <li><span class="check">✓</span> Relatório mensal de eventos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans -->
+  <section style="background: var(--bg2);">
+    <div class="container">
+      <div class="section-label">Planos de monitoramento</div>
+      <h2 class="sec-title">Escolha o nível de proteção ideal</h2>
+      <p class="sec-sub">Todos os planos incluem configuração e treinamento. Sem fidelidade no primeiro contrato.</p>
+      <div class="plans">
+        <div class="plan">
+          <h3>Monitoramento Próprio</h3>
+          <p style="color:var(--muted);font-size:0.85rem;margin-bottom:8px;">Incluso na instalação — sem mensalidade</p>
+          <div class="plan-price">Grátis <span>incluso</span></div>
+          <ul>
+            <li>Acesso remoto pelo celular 24h</li>
+            <li>Alertas de movimento por notificação</li>
+            <li>Gravação local em HD/NVR</li>
+            <li>Acesso às gravações pelo app</li>
+            <li>Você decide quando acionar emergência</li>
+          </ul>
+          <a href="https://wa.me/5521999990000?text=Quero+saber+sobre+monitoramento+proprio" class="plan-cta">💬 Saiba mais</a>
+        </div>
+        <div class="plan featured">
+          <div class="plan-badge">Recomendado</div>
+          <h3>Monitoramento Inteligente</h3>
+          <p style="color:var(--muted);font-size:0.85rem;margin-bottom:8px;">Central que age quando você não pode</p>
+          <div class="plan-price">R$ 149 <span>/mês</span></div>
+          <ul>
+            <li>Tudo do plano próprio</li>
+            <li>Central de monitoramento profissional 24h</li>
+            <li>Acionamento automático da polícia</li>
+            <li>Notificação por SMS + WhatsApp + app</li>
+            <li>Protocolo de verificação antes de acionar</li>
+            <li>Relatório mensal de eventos</li>
+            <li>Suporte técnico prioritário</li>
+          </ul>
+          <a href="https://wa.me/5521999990000?text=Quero+o+Monitoramento+Inteligente" class="plan-cta">💬 Contratar agora</a>
+        </div>
+        <div class="plan">
+          <h3>Monitoramento Empresarial</h3>
+          <p style="color:var(--muted);font-size:0.85rem;margin-bottom:8px;">Para comércio, empresa ou condomínio</p>
+          <div class="plan-price">R$ 249+ <span>/mês</span></div>
+          <ul>
+            <li>Monitoramento de múltiplos locais</li>
+            <li>Rondas virtuais por câmera</li>
+            <li>Controle de acesso integrado</li>
+            <li>Relatório detalhado diário</li>
+            <li>Gestor de conta dedicado</li>
+            <li>SLA de resposta garantido</li>
+          </ul>
+          <a href="https://wa.me/5521999990000?text=Quero+or%C3%A7amento+monitoramento+empresarial" class="plan-cta">💬 Solicitar proposta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section>
+    <div class="container">
+      <div class="section-label">Como funciona</div>
+      <h2 class="sec-title">Do alerta ao acionamento: como o monitoramento age</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div>
+            <h3>Câmera ou alarme detecta evento</h3>
+            <p>O sensor de movimento, abertura de porta ou câmera com IA detecta atividade suspeita no imóvel — dia ou noite, 24 horas por dia.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div>
+            <h3>Alerta instantâneo</h3>
+            <p>Em segundos, você recebe uma notificação no celular com a imagem ou clipe do evento. No plano com central, a equipe de monitoramento também é acionada simultaneamente.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div>
+            <h3>Verificação (evita falsos acionamentos)</h3>
+            <p>A central verifica o evento nas câmeras antes de acionar a emergência — reduz falsos alarmes e garante que quando a polícia é chamada, é realmente necessário.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div>
+            <h3>Acionamento de emergência</h3>
+            <p>Em caso de invasão confirmada, a central aciona automaticamente a polícia militar, guarda municipal ou segurança particular — com a localização e as imagens em tempo real.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div>
+            <h3>Relatório e acompanhamento</h3>
+            <p>Você recebe um relatório completo do evento: horário, imagens, ações tomadas. No mês seguinte, relatório com todos os eventos do período.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content block -->
+  <section style="background: var(--bg2);">
+    <div class="container" style="max-width: 760px;">
+      <div class="section-label">Monitoramento 24h no Rio de Janeiro</div>
+      <h2 class="sec-title">Por que o monitoramento profissional faz diferença</h2>
+      <p style="color:var(--muted);margin-bottom:20px;">Câmeras de segurança sem monitoramento ativo são como câmeras de televisão sem alguém assistindo. Elas registram tudo — mas se ninguém está olhando quando o evento acontece, o registro serve apenas para a investigação policial depois do crime. O monitoramento 24 horas muda essa equação: alguém está sempre olhando e pronto para agir.</p>
+      <p style="color:var(--muted);margin-bottom:20px;">Na Zona Oeste do Rio de Janeiro — Jacarepaguá, Barra da Tijuca, Recreio, Campo Grande, Bangu — o monitoramento remoto via celular já é um padrão em condomínios e residências. O acesso pelo smartphone permite que você acompanhe o que está acontecendo em casa ou no negócio de qualquer lugar do mundo.</p>
+      <p style="color:var(--muted);margin-bottom:20px;">Para imóveis desocupados em parte do dia — escritórios, galpões, lojas — o monitoramento por central profissional é especialmente valioso. A central funciona como uma equipe de segurança que está de olho enquanto você trabalha ou dorme.</p>
+      <h3 style="font-size:1.1rem;margin:28px 0 12px;">Compatível com os sistemas que instalamos</h3>
+      <p style="color:var(--muted);">Nosso serviço de monitoramento é compatível com câmeras Intelbras, Hikvision, Dahua e Axis, e com sistemas de alarme JFL, DSC e Intelbras. Se você já tem câmeras de outra marca, entre em contato — provavelmente conseguimos integrar ao nosso sistema de monitoramento.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-label">Dúvidas sobre monitoramento 24h</div>
+      <h2 class="sec-title">Perguntas frequentes</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Como funciona o monitoramento 24 horas de câmeras?</h3>
+          <p>Funciona de duas formas: monitoramento próprio (você acompanha pelo celular e recebe alertas) e monitoramento por central profissional (equipe treinada acompanha e aciona emergência). A Santech instala e configura o sistema completo — você escolhe o modelo que melhor atende sua necessidade.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Quanto custa o monitoramento 24h no Rio de Janeiro?</h3>
+          <p>O monitoramento próprio pelo celular é gratuito (incluso na instalação). O monitoramento por central profissional tem mensalidades a partir de R$ 149/mês para residências. Entre em contato pelo WhatsApp para um orçamento personalizado.</p>
+        </div>
+        <div class="faq-item">
+          <h3>O monitoramento funciona sem energia elétrica?</h3>
+          <p>Os sistemas de alarme têm bateria interna que mantém o funcionamento por 4 a 8 horas sem energia. Para câmeras, recomendamos um no-break externo. Sistemas com backup por chip 4G continuam monitorados mesmo sem internet cabeada.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Posso cancelar o monitoramento quando quiser?</h3>
+          <p>Sim, trabalhamos sem fidelidade forçada no primeiro contrato. Após o primeiro mês, pode cancelar com aviso de 30 dias. Nossa prioridade é que você fique conosco porque está satisfeito, não por contrato.</p>
+        </div>
+        <div class="faq-item">
+          <h3>O monitoramento 24h atende toda a Zona Oeste?</h3>
+          <p>Sim. Atendemos toda a Zona Oeste — Jacarepaguá, Barra da Tijuca, Recreio, Campo Grande, Bangu, Realengo — e toda a Região Metropolitana do Rio de Janeiro. O monitoramento é feito remotamente, portanto o serviço cobre qualquer bairro onde instalamos o sistema.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <h2>Sua segurança não pode esperar até amanhã</h2>
+    <p>Fale com a Santech agora pelo WhatsApp. Orçamento grátis, atendimento hoje.</p>
+    <a href="https://wa.me/5521999990000?text=Quero+monitoramento+24h+para+minha+resid%C3%AAncia" class="btn-wpp-lg">💬 Quero monitoramento 24h</a>
+  </div>
+
+  <!-- Internal links -->
+  <section style="padding: 40px 20px;">
+    <div class="container">
+      <p style="color:var(--muted);font-size:0.9rem;margin-bottom:12px;">Veja também:</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a href="https://santechseguranca.com.br/instalacao-cameras/" style="color:var(--accent);font-size:0.9rem;">Instalação de Câmeras</a>
+        <a href="https://santechseguranca.com.br/alarme-residencial/" style="color:var(--accent);font-size:0.9rem;">Alarme Residencial</a>
+        <a href="https://santechseguranca.com.br/cameras-jacarepagua/" style="color:var(--accent);font-size:0.9rem;">Câmeras Jacarepaguá</a>
+        <a href="https://santechseguranca.com.br/cameras-barra-da-tijuca/" style="color:var(--accent);font-size:0.9rem;">Câmeras Barra da Tijuca</a>
+        <a href="https://santechseguranca.com.br/cerca-eletrica/" style="color:var(--accent);font-size:0.9rem;">Cerca Elétrica</a>
+        <a href="https://santechseguranca.com.br/automacao-portoes/" style="color:var(--accent);font-size:0.9rem;">Automação de Portões</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="wpp-float">
+  <a href="https://wa.me/5521999990000?text=Quero+monitoramento+24h" title="WhatsApp Santech" aria-label="Falar pelo WhatsApp">💬</a>
+</div>
+
+<footer>
+  <div class="footer-brand"><span>Santech</span> Segurança</div>
+  <div class="footer-links">
+    <a href="https://santechseguranca.com.br/instalacao-cameras/">Câmeras</a>
+    <a href="https://santechseguranca.com.br/cerca-eletrica/">Cerca Elétrica</a>
+    <a href="https://santechseguranca.com.br/automacao-portoes/">Portão Automático</a>
+    <a href="https://santechseguranca.com.br/alarme-residencial/">Alarme</a>
+    <a href="https://santechseguranca.com.br/monitoramento-24h/">Monitoramento 24h</a>
+    <a href="https://santechseguranca.com.br/blog/">Blog</a>
+  </div>
+  <p class="footer-copy">© 2026 Santech Segurança — Rio de Janeiro, RJ · Câmeras e Segurança Eletrônica</p>
+</footer>
+
+</body>
+</html>
