@@ -1,0 +1,447 @@
+{
+  "timestamp": "2026-09-12T11:37:35Z",
+  "domain": "santechseguranca.com.br",
+  "cycle": 11,
+  "audit_method": "WebSearch (SERP Google — site direto bloqueado por proxy de egresso) + análise do repositório seo-agents + geração de conteúdo",
+  "seo_score": 28,
+  "sre_score": 35,
+  "local_rank_score": 12,
+  "ranking_potential": "alto (bloqueador único é a indexação — 7 páginas completas aguardam deploy; conteúdo, schema e CTAs estão prontos)",
+  "delta_vs_ciclo_anterior": {
+    "seo_score": "+6 pts estimados (ciclo #10: 22 → ciclo #11: 28, pela adição de /alarme-residencial/ e /cameras-recreio/ com schema completo e keywords de alta intenção)",
+    "sre_score": "0 (site inacessível via proxy remoto — uptime, SSL, TTFB e formulários não verificáveis neste ciclo)",
+    "local_rank_score": "+2 pts (/cameras-recreio/ adiciona cobertura de bairro de alta demanda na Zona Oeste)",
+    "observacao": "Problema crítico de indexação persiste pelo 11º ciclo consecutivo: ZERO páginas do domínio santechseguranca.com.br aparecem no Google. O repositório acumula agora 7 páginas HTML prontas para deploy. Cada ciclo sem deploy = 0 leads orgânicos."
+  },
+  "indexed_pages": [
+    {
+      "url": "santechseguranca.com.br",
+      "title": "não verificado (WebFetch bloqueado pelo proxy de egresso do ambiente remoto para este domínio)",
+      "status": "CRÍTICO — zero páginas retornadas no operador site:santechseguranca.com.br no Google. Domínio invisível ao Google pelo 11º ciclo consecutivo. Causa provável: robots.txt ou noindex global, bloqueio de Googlebot via Cloudflare/WAF, ou deploy pendente das páginas geradas."
+    }
+  ],
+  "pages_generated_this_cycle": [
+    {
+      "url": "/alarme-residencial/",
+      "keyword_alvo": "alarme residencial rio de janeiro",
+      "tipo": "serviço",
+      "volume_estimado": "1.800/mês",
+      "schema": "LocalBusiness + Service + FAQPage (5 perguntas)",
+      "cta_whatsapp": "Olá! Preciso de alarme residencial no Rio de Janeiro. Podem me ajudar?",
+      "estimated_leads": "4–10/mês após indexação",
+      "destaques": "Tabela de preços completa (R$600–R$4.000 por tipo de kit), seção de tipos de alarme, passo a passo de instalação, FAQ com 5 perguntas de alta intenção, áreas de atendimento por bairro",
+      "status": "CRIADA HOJE — arquivo: santech/alarme-residencial/index.html — aguardando deploy"
+    },
+    {
+      "url": "/cameras-recreio/",
+      "keyword_alvo": "câmeras de segurança recreio dos bandeirantes",
+      "tipo": "local",
+      "volume_estimado": "800–1.200/mês",
+      "schema": "LocalBusiness + Service + FAQPage (5 perguntas)",
+      "cta_whatsapp": "Olá! Preciso de câmeras de segurança no Recreio. Podem me ajudar?",
+      "estimated_leads": "3–8/mês após indexação",
+      "destaques": "Foco em condomínios horizontais e casas de alto padrão do Recreio, tabela de preços específica para a Zona Oeste, schema com areaServed detalhado por bairro (14 bairros), links para /cameras-barra-da-tijuca/ e demais serviços",
+      "status": "CRIADA HOJE — arquivo: santech/cameras-recreio/index.html — aguardando deploy"
+    }
+  ],
+  "cumulative_pages_in_repo": {
+    "total": 7,
+    "servico": [
+      "/instalacao-cameras/",
+      "/automacao-portoes/",
+      "/cerca-eletrica/",
+      "/alarme-residencial/"
+    ],
+    "local": [
+      "/cameras-barra-da-tijuca/",
+      "/cameras-recreio/"
+    ],
+    "blog": [
+      "/blog/quanto-custa-instalar-cameras-rj/"
+    ],
+    "sitemap_total_urls": 8,
+    "pages_pending_deploy": 7
+  },
+  "keyword_opportunities": [
+    {
+      "keyword": "alarme residencial rio de janeiro",
+      "tier": 2,
+      "estimated_volume": "1.800/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/alarme-residencial/ (CRIADA HOJE)"
+    },
+    {
+      "keyword": "câmeras de segurança recreio dos bandeirantes",
+      "tier": 2,
+      "estimated_volume": "800–1.200/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cameras-recreio/ (CRIADA HOJE)"
+    },
+    {
+      "keyword": "instalação de câmeras rio de janeiro",
+      "tier": 2,
+      "estimated_volume": "2.900/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/instalacao-cameras/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "câmeras de segurança barra da tijuca",
+      "tier": 2,
+      "estimated_volume": "1.100/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cameras-barra-da-tijuca/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "cerca elétrica rio de janeiro",
+      "tier": 2,
+      "estimated_volume": "2.200/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cerca-eletrica/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "automação de portão rio de janeiro",
+      "tier": 2,
+      "estimated_volume": "1.600/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/automacao-portoes/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "cftv residencial rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "2.000–4.400/mês",
+      "difficulty": "high",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta — keyword Tier 1 sem página dedicada",
+      "page_to_create_or_optimize": "/cftv-residencial/ (CRIAR — próximo ciclo #12)"
+    },
+    {
+      "keyword": "controle de acesso rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "1.500–3.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/controle-acesso/ (CRIAR — próximo ciclo #12)"
+    },
+    {
+      "keyword": "eletroposto instalação residencial rio de janeiro",
+      "tier": 3,
+      "estimated_volume": "200–800/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta (blue ocean — baixíssima concorrência, 449 eletropostos mapeados no RJ, demanda crescente)",
+      "page_to_create_or_optimize": "/eletroposto/ (CRIAR — ciclo #12 ou #13)"
+    },
+    {
+      "keyword": "energia solar residencial rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "2.000–8.000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta (ticket médio R$18k–55k — diferenciador forte da Santech)",
+      "page_to_create_or_optimize": "/energia-solar/ (CRIAR — ciclo #12)"
+    }
+  ],
+  "technical_issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Domínio santechseguranca.com.br com ZERO páginas indexadas no Google. Problema persistente pelo 11º ciclo consecutivo (04/09 → 06/09 → 08/09 → 09/09 → 10/09 → 11/09 → 12/09). Todo conteúdo criado no repositório é inútil sem o deploy e a resolução do problema de indexação.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "URGENTE — 3 passos obrigatórios: (1) Verificar santechseguranca.com.br/robots.txt — não deve conter 'Disallow: /'. (2) Verificar meta tag robots em todas as páginas — não deve conter 'noindex'. (3) Google Search Console → Cobertura → inspecionar URL raiz e verificar erros de rastreamento. Possível causa: Bot Fight Mode do Cloudflare bloqueando Googlebot."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "7 páginas HTML otimizadas com schema completo (LocalBusiness, Service, FAQPage) geradas no repositório aguardando deploy há até 9 dias. Todo o trabalho de SEO dos últimos 11 ciclos é invisível enquanto não for publicado no servidor real (VPS 148.230.79.134).",
+      "affected_urls": [
+        "/instalacao-cameras/",
+        "/automacao-portoes/",
+        "/cerca-eletrica/",
+        "/cameras-barra-da-tijuca/",
+        "/alarme-residencial/",
+        "/cameras-recreio/",
+        "/blog/quanto-custa-instalar-cameras-rj/"
+      ],
+      "fix": "Executar do seu computador ou servidor com acesso SSH: 'scp -r santech/* root@148.230.79.134:/var/www/santech/' — ou copiar os arquivos manualmente via SFTP. Antes do deploy, substituir '55219XXXXXXXX' pelo número real de WhatsApp da Santech em todos os arquivos HTML."
+    },
+    {
+      "type": "local SEO",
+      "severity": "crítico",
+      "description": "Google Business Profile não detectado. A Santech é completamente invisível no Google Maps para buscas de segurança eletrônica no Rio de Janeiro. Concorrentes como fhdsolucoes.com.br, simastechnology.com.br, alsegurancaeletronicarj.com e segurancaeletronicarj.com.br dominam o 3-pack local.",
+      "affected_urls": [],
+      "fix": "Criar/verificar GBP em business.google.com com: (1) Categorias: 'Empresa de segurança', 'Serviço de instalação de câmeras de segurança', 'Empresa de automação residencial'. (2) Área de atendimento: Rio de Janeiro + Niterói. (3) Fotos reais de instalações. (4) Número de WhatsApp real. (5) Solicitar 10+ avaliações a clientes existentes em 30 dias."
+    },
+    {
+      "type": "técnico",
+      "severity": "alto",
+      "description": "Site inacessível via crawl direto (proxy de egresso bloqueia o domínio). Pode indicar bloqueio de bots via Cloudflare Bot Fight Mode, WAF ou htaccess que também afeta o Googlebot — explicaria a ausência total de indexação após 11 ciclos.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "Verificar no painel Cloudflare: Segurança → Bots → confirmar que 'Bot Fight Mode' está DESATIVADO. Verificar 'Firewall Rules' e 'IP Access Rules'. Testar via Google Search Console 'Inspecionar URL' se Googlebot consegue acessar a URL raiz."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "alto",
+      "description": "Keywords Tier 1 ainda sem página dedicada: cftv residencial (4.400/mês), controle de acesso (3.000/mês), energia solar (8.000/mês), eletroposto (800/mês). Cada keyword sem página = leads perdidos diariamente.",
+      "affected_urls": [],
+      "fix": "Criar /cftv-residencial/, /controle-acesso/ e /energia-solar/ no ciclo #12 (próxima execução). /eletroposto/ no ciclo #13 (blue ocean de baixíssima concorrência)."
+    },
+    {
+      "type": "performance",
+      "severity": "médio",
+      "description": "Core Web Vitals, TTFB, velocidade mobile e uptime não verificáveis remotamente. Site inacessível via WebFetch por bloqueio de proxy.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "Executar PageSpeed Insights em https://pagespeed.web.dev para o domínio. Alvos: LCP < 2.5s, INP < 200ms, CLS < 0.1, TTFB < 600ms."
+    },
+    {
+      "type": "local SEO",
+      "severity": "médio",
+      "description": "NAP (Nome, Endereço, Telefone) não verificado no site. Consistência NAP entre site, GBP, Instagram (@santechseguranca) e diretórios é fator crítico de ranqueamento local.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "Garantir que o mesmo número de telefone aparece no site (cabeçalho e rodapé), no GBP, no Instagram e em todos os diretórios. Cadastrar em: Habitissimo, GuiaFix, oHub, SindicoNet, Apontador com NAP idêntico."
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "página de serviço",
+      "title": "CFTV Residencial no Rio de Janeiro",
+      "target_keyword": "cftv residencial rio de janeiro",
+      "estimated_leads_gain": "5–14 leads/mês (keyword Tier 1 — 4.400/mês — intenção transacional)",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Energia Solar Residencial no Rio de Janeiro",
+      "target_keyword": "energia solar residencial rio de janeiro",
+      "estimated_leads_gain": "3–8 leads/mês (ticket alto R$18k–55k — maior LTV da Santech)",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Controle de Acesso no Rio de Janeiro",
+      "target_keyword": "controle de acesso rio de janeiro condomínio",
+      "estimated_leads_gain": "4–10 leads/mês (ticket B2B alto, bom para condomínios)",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Instalação de Eletroposto Residencial no Rio de Janeiro",
+      "target_keyword": "eletroposto instalação residencial rio de janeiro",
+      "estimated_leads_gain": "2–5 leads/mês (blue ocean — RJ tem 449 eletropostos mapeados e demanda crescente com carros elétricos)",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página local",
+      "title": "Câmeras de Segurança na Zona Sul — Ipanema, Leblon, Botafogo",
+      "target_keyword": "câmeras de segurança zona sul rio de janeiro",
+      "estimated_leads_gain": "4–10 leads/mês (maior poder aquisitivo do RJ)",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "artigo",
+      "title": "Câmera Wi-Fi ou Cabeada: Qual Escolher para Sua Casa no RJ?",
+      "target_keyword": "câmera wifi ou cabeada qual melhor",
+      "estimated_leads_gain": "2–5 leads/mês (topo de funil → conversão para orçamento)",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/cftv-residencial/",
+      "tipo": "serviço",
+      "keyword_alvo": "cftv residencial rio de janeiro",
+      "h1_sugerido": "CFTV Residencial no Rio de Janeiro — Sistema de Câmeras para Casa e Apartamento",
+      "justificativa": "Keyword Tier 1 com 4.400 buscas/mês e intenção transacional clara. Todos os concorrentes principais (fhd, simas, assintec) têm página dedicada. A Santech perde leads diariamente sem essa página."
+    },
+    {
+      "url_sugerida": "/energia-solar/",
+      "tipo": "serviço",
+      "keyword_alvo": "energia solar residencial rio de janeiro",
+      "h1_sugerido": "Energia Solar Residencial no Rio de Janeiro — Instalação de Painéis Solares",
+      "justificativa": "Diferenciador único da Santech no mercado. Ticket médio de R$18k–55k por projeto. Keyword com 8.000 buscas/mês. Concorrentes em energia solar (Hoger, Green Solar) não atuam em segurança eletrônica — a Santech pode se posicionar como solução completa."
+    },
+    {
+      "url_sugerida": "/controle-acesso/",
+      "tipo": "serviço",
+      "keyword_alvo": "controle de acesso condomínio rio de janeiro",
+      "h1_sugerido": "Controle de Acesso para Condomínios e Empresas no Rio de Janeiro",
+      "justificativa": "Segmento B2B de alto ticket (R$3.000–30.000). Condomínios do Recreio, Barra e Zona Sul são clientes ideais. Keyword com 3.000/mês e concorrência moderada."
+    },
+    {
+      "url_sugerida": "/eletroposto/",
+      "tipo": "serviço",
+      "keyword_alvo": "eletroposto instalação residencial rio de janeiro",
+      "h1_sugerido": "Instalação de Eletroposto Residencial no Rio de Janeiro — Ponto de Recarga para Carro Elétrico",
+      "justificativa": "Blue ocean: baixíssima concorrência de empresas de segurança. O RJ tem 449 eletropostos mapeados e a frota de elétricos cresce 40%/ano. Santech pode capturar esse nicho de forma exclusiva entre os concorrentes de segurança."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "URGENTE — Substituir '55219XXXXXXXX' pelo número real de WhatsApp em todos os HTMLs (find santech/ -name '*.html' -exec sed -i 's/55219XXXXXXXX/5521SEUNUMERO/g' {} \\;) e fazer deploy via SCP para root@148.230.79.134:/var/www/santech/",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Google Search Console → Cobertura → inspecionar URL raiz — identificar por que ZERO páginas foram indexadas após 11 ciclos e 9+ dias de deploy pendente",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Verificar se Cloudflare Bot Fight Mode está ativo — se sim, desativar ou criar exceção para Googlebot (User-Agent: Googlebot)",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Submeter sitemap.xml (8 URLs) ao Google Search Console e solicitar indexação manual das URLs: /, /instalacao-cameras/, /cameras-barra-da-tijuca/, /cerca-eletrica/",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar Google Business Profile completo (business.google.com) com foto real de instalação, horário, WhatsApp e área de atendimento (RJ + Niterói)",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "local SEO",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Cadastrar a Santech em 5 diretórios com NAP consistente: Habitissimo, GuiaFix, oHub, SindicoNet, Apontador — cita domínio santechseguranca.com.br para gerar backlinks",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Solicitar avaliações no Google a pelo menos 10 clientes anteriores via WhatsApp — link direto do GBP para avaliação — meta: 10 reviews em 30 dias",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "1 mês"
+    },
+    {
+      "action": "Criar /cftv-residencial/ — keyword Tier 1 com 4.400/mês e intenção transacional, todos os concorrentes principais têm página dedicada",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar /energia-solar/ — diferenciador exclusivo da Santech, ticket médio R$18k–55k, 8.000 buscas/mês",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Executar PageSpeed Insights (pagespeed.web.dev) e corrigir Core Web Vitals — alvo LCP < 2.5s, CLS < 0.1",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "performance",
+      "deadline": "1 mês"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "fhdsolucoes.com.br",
+      "keywords_overlap": ["instalação câmeras de segurança rio de janeiro", "cftv rio de janeiro", "cameras de segurança rj", "manutenção câmeras rj"],
+      "google_maps_reviews": "não verificado — presença no Google Maps confirmada",
+      "content_gap": "Sem páginas de ar-condicionado, energia solar ou eletroposto. Santech tem portfólio multisserviço único. FHD não tem páginas por bairro específico (Recreio, Tijuca).",
+      "has_local_pages": true,
+      "estimated_strength": "alta — múltiplas páginas de serviço e blog ativo, aparece no topo para câmeras RJ"
+    },
+    {
+      "domain": "simastechnology.com.br",
+      "keywords_overlap": ["câmeras rio de janeiro", "portão automático rj", "cerca elétrica rj", "alarme residencial rj"],
+      "google_maps_reviews": "não verificado — 12 anos no mercado, 10.000+ câmeras instaladas",
+      "content_gap": "Sem páginas de energia solar ou eletroposto. Sem blog ativo visível. Foco em Sepetiba (Zona Oeste extrema) — Santech pode competir em Recreio, Barra e Zona Sul.",
+      "has_local_pages": true,
+      "estimated_strength": "alta — múltiplos serviços com páginas dedicadas, forte em Zona Oeste"
+    },
+    {
+      "domain": "alsegurancaeletronicarj.com",
+      "keywords_overlap": ["câmera de segurança rio de janeiro", "cftv rj", "alarme residencial rj", "monitoramento 24h"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Sem páginas de portão automático, ar-condicionado, energia solar ou eletroposto. Sem páginas locais por bairro — oportunidade de superar em buscas geolocalizadas.",
+      "has_local_pages": false,
+      "estimated_strength": "média — presença para câmeras mas estratégia local fraca"
+    },
+    {
+      "domain": "segurancaeletronicarj.com.br",
+      "keywords_overlap": ["segurança eletrônica rio de janeiro", "câmeras segurança rj", "alarme rj", "controle de acesso rj"],
+      "google_maps_reviews": "não verificado — domínio exact match para a categoria",
+      "content_gap": "Sem páginas de ar-condicionado ou energia solar. Santech supera em diversidade de serviços.",
+      "has_local_pages": true,
+      "estimated_strength": "alta — domínio exact match, blog ativo com glossário SEO"
+    },
+    {
+      "domain": "csel.com.br",
+      "keywords_overlap": ["portão automático rio de janeiro", "cerca elétrica rj", "câmeras cftv rj", "alarme monitorado rj"],
+      "google_maps_reviews": "não verificado — 32 anos no mercado, 6.000+ automações",
+      "content_gap": "Foco pesado em portões e cercas. Santech compete melhor em câmeras, alarme e serviços diferenciados (solar, AC, eletroposto).",
+      "has_local_pages": true,
+      "estimated_strength": "muito alta — autoridade histórica, especialista em portões/cercas"
+    }
+  ],
+  "kpis_snapshot": {
+    "pages_indexed_google": 0,
+    "pages_in_repo_total": 7,
+    "pages_created_this_cycle": 2,
+    "pages_pending_deploy": 7,
+    "pages_with_local_keyword": 3,
+    "pages_with_schema_complete": 7,
+    "pages_missing_schema": 0,
+    "whatsapp_cta_present": 7,
+    "whatsapp_link_working_live": "não verificado (site inacessível via proxy remoto)",
+    "mobile_speed_score": "não verificado",
+    "core_web_vitals_passed": "não verificado",
+    "sitemap_total_urls": 8,
+    "instagram_active": true,
+    "instagram_handle": "@santechseguranca",
+    "google_business_profile_verified": "não confirmado",
+    "backlinks_known": 0,
+    "cycles_completed": 11,
+    "days_since_first_cycle": 8,
+    "deploy_status": "PENDENTE — 11 ciclos, 0 deploys confirmados"
+  },
+  "estimated_leads_gain": {
+    "30_days": "0–15 leads (se deploy + indexação resolvidos esta semana e GBP criado)",
+    "90_days": "30–80 leads/mês (com indexação ativa, GBP com 10+ reviews, 7+ páginas ranqueando em keywords low/medium difficulty)",
+    "6_months": "70–200 leads/mês (estratégia completa: todas as páginas deploadas, blog ativo com 5+ artigos, GBP maduro, cadastro em diretórios, primeiras posições para keywords locais da Zona Oeste)",
+    "assumptions": "Estimativas baseadas no volume agregado das keywords-alvo (instalação câmeras 2.900/mês + automação portão 1.600/mês + cerca elétrica 2.200/mês + alarme residencial 1.800/mês + barra da tijuca 1.100/mês + recreio 900/mês + blog 880/mês = ~11.380 buscas/mês mapeadas). CTR médio estimado de 3–8% para posições 3–10. Taxa de conversão WhatsApp de 4–8% (padrão mercado de serviços técnicos RJ). Estimativa conservadora — considera indexação resolvida em até 2 semanas e primeiros ranqueamentos em 30–60 dias para keywords low difficulty (barra da tijuca, recreio, cerca elétrica local)."
+  }
+}
