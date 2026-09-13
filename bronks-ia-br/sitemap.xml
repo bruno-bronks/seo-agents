@@ -1,117 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
   <url>
     <loc>https://bronks.ia.br/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Páginas de serviço — Tier 1 -->
   <url>
     <loc>https://bronks.ia.br/agentes-de-ia/</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bronks.ia.br/rag-empresarial/</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bronks.ia.br/consultoria-ia-rio-de-janeiro/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
   </url>
-
-  <!-- Páginas de serviço — Tier 2 -->
   <url>
-    <loc>https://bronks.ia.br/multiagentes-ia/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://bronks.ia.br/ia-para-financas/</loc>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://bronks.ia.br/automacao-com-ia/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://bronks.ia.br/ia-para-logistica/</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://bronks.ia.br/chatbot-whatsapp-ia/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Páginas verticais -->
-  <url>
-    <loc>https://bronks.ia.br/ia-para-juridico/</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://bronks.ia.br/ia-para-saude/</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://bronks.ia.br/ia-para-contabilidade/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://bronks.ia.br/ia-para-recursos-humanos/</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- Páginas de vertical adicionais -->
-  <url>
-    <loc>https://bronks.ia.br/ia-para-logistica/</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- Blog hub -->
-  <url>
-    <loc>https://bronks.ia.br/blog/</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- Blog -->
+  <url>
+    <loc>https://bronks.ia.br/blog/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://bronks.ia.br/blog/o-que-e-agente-de-ia/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bronks.ia.br/blog/como-implementar-agentes-de-ia-na-empresa/</loc>
     <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://bronks.ia.br/blog/o-que-e-rag/</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bronks.ia.br/blog/automacao-com-ia-para-empresas/</loc>
-    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -119,22 +64,18 @@
     <loc>https://bronks.ia.br/blog/chatbot-whatsapp-com-ia-para-empresas/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
   </url>
-
-  <!-- Páginas verticais adicionadas em ciclo #12 -->
-  <url>
-    <loc>https://bronks.ia.br/ia-para-financas/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- Blog adicionado em ciclo #12 -->
   <url>
     <loc>https://bronks.ia.br/blog/rag-empresarial-guia-completo/</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bronks.ia.br/blog/rag-vs-fine-tuning/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 </urlset>
