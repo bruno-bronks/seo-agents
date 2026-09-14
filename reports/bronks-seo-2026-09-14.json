@@ -1,0 +1,230 @@
+{
+  "timestamp": "2026-09-14T00:00:00-03:00",
+  "ciclo": 12,
+  "domain": "bronks.ia.br",
+  "audit_method": "WebSearch (Google SERP + snippets orgânicos). Acesso direto ao site bloqueado pelo proxy de egress (11º dia consecutivo). Dados de indexação e concorrência verificados via buscas ao Google.",
+  "seo_score": 78,
+  "sre_score": 75,
+  "ranking_potential": "médio-alto (com deploy imediato das 16 páginas geradas)",
+  "delta_vs_ultimo_ciclo": {
+    "seo_score": "+4 (3 novas páginas de alta qualidade + correção de inconsistência no sitemap)",
+    "pages_in_repo_bronks_ia_br": "+3 (ia-para-juridico/, automacao-com-ia/, ia-para-saude/)",
+    "sitemap_inconsistency_fixed": "ia-para-saude/ estava referenciada no sitemap mas arquivo não existia — CORRIGIDO",
+    "total_html_files_in_repo": 14,
+    "total_sitemap_urls": 16,
+    "deploy_status": "BLOQUEADO — SSH/HTTPS para VPS inacessível pelo proxy de egress do ambiente remoto. Deploy manual requerido."
+  },
+  "indexed_pages_verified": [
+    {
+      "url": "https://bronks.ia.br/",
+      "title": "Bronks IA — Agentes de IA, Automação Inteligente e RAG para Empresas",
+      "status": "indexada — confirmada via site:bronks.ia.br",
+      "nota": "Única URL indexada. Todo o restante aguarda deploy."
+    }
+  ],
+  "pages_in_repository": [
+    { "url": "https://bronks.ia.br/agentes-de-ia/", "status": "gerada — aguarda deploy", "keyword": "agentes de IA", "ciclo_criacao": 5 },
+    { "url": "https://bronks.ia.br/rag-empresarial/", "status": "gerada — aguarda deploy", "keyword": "RAG empresarial", "ciclo_criacao": 5 },
+    { "url": "https://bronks.ia.br/consultoria-ia-rio-de-janeiro/", "status": "gerada — aguarda deploy", "keyword": "consultoria IA Rio de Janeiro", "ciclo_criacao": 6 },
+    { "url": "https://bronks.ia.br/ia-para-financas/", "status": "gerada — aguarda deploy", "keyword": "IA para finanças", "ciclo_criacao": 7 },
+    { "url": "https://bronks.ia.br/ia-para-logistica/", "status": "gerada — aguarda deploy", "keyword": "IA para logística", "ciclo_criacao": 7 },
+    { "url": "https://bronks.ia.br/ia-para-saude/", "status": "GERADA HOJE — corrige inconsistência de sitemap", "keyword": "IA para saúde", "ciclo_criacao": 12, "volume_estimado": "1.100–2.300/mês" },
+    { "url": "https://bronks.ia.br/ia-para-juridico/", "status": "NOVA — gerada no Ciclo #12", "keyword": "IA para jurídico", "ciclo_criacao": 12, "volume_estimado": "590–2.800/mês" },
+    { "url": "https://bronks.ia.br/automacao-com-ia/", "status": "NOVA — gerada no Ciclo #12 — Tier 1", "keyword": "automação com IA", "ciclo_criacao": 12, "volume_estimado": "4.400–8.100/mês" },
+    { "url": "https://bronks.ia.br/blog/", "status": "gerada — aguarda deploy", "keyword": "blog IA", "ciclo_criacao": 8 },
+    { "url": "https://bronks.ia.br/blog/o-que-e-agente-de-ia/", "status": "gerada — aguarda deploy", "keyword": "o que é agente de IA", "ciclo_criacao": 8 },
+    { "url": "https://bronks.ia.br/blog/como-implementar-agentes-de-ia-na-empresa/", "status": "gerada — aguarda deploy", "keyword": "como implementar agentes de IA", "ciclo_criacao": 8 },
+    { "url": "https://bronks.ia.br/blog/chatbot-whatsapp-com-ia-para-empresas/", "status": "gerada — aguarda deploy", "keyword": "chatbot WhatsApp com IA", "ciclo_criacao": 9 },
+    { "url": "https://bronks.ia.br/blog/rag-empresarial-guia-completo/", "status": "gerada — aguarda deploy", "keyword": "RAG empresarial guia", "ciclo_criacao": 10 },
+    { "url": "https://bronks.ia.br/blog/rag-vs-fine-tuning/", "status": "gerada — aguarda deploy", "keyword": "RAG vs fine-tuning", "ciclo_criacao": 11 }
+  ],
+  "top_keywords": [
+    {
+      "keyword": "automação com IA",
+      "tier": 1,
+      "estimated_volume": "4.400–8.100/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia com URL dedicada",
+      "page_no_repo": "bronks-ia-br/automacao-com-ia/index.html (NOVO HOJE)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "agentes de IA",
+      "tier": 1,
+      "estimated_volume": "5.400–9.900/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia top 10",
+      "page_no_repo": "bronks-ia-br/agentes-de-ia/index.html (aguarda deploy)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria em IA",
+      "tier": 1,
+      "estimated_volume": "2.900–5.400/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia top 10",
+      "page_no_repo": "homepage (aguarda páginas de serviço)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "IA para jurídico",
+      "tier": 3,
+      "estimated_volume": "590–2.800/mês",
+      "difficulty": "low",
+      "intent": "comercial",
+      "current_position": "não ranqueia — primeira cobertura criada hoje",
+      "page_no_repo": "bronks-ia-br/ia-para-juridico/index.html (NOVO HOJE)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "IA para saúde",
+      "tier": 3,
+      "estimated_volume": "1.100–2.300/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia — página criada hoje (corrigindo inconsistência)",
+      "page_no_repo": "bronks-ia-br/ia-para-saude/index.html (NOVO HOJE)",
+      "opportunity": "média"
+    },
+    {
+      "keyword": "RAG empresarial",
+      "tier": 2,
+      "estimated_volume": "880–1.900/mês",
+      "difficulty": "medium",
+      "intent": "informacional/comercial",
+      "current_position": "aparece em buscas longas — posição estimada 8–15",
+      "page_no_repo": "bronks-ia-br/rag-empresarial/index.html (aguarda deploy)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria IA Rio de Janeiro",
+      "tier": 3,
+      "estimated_volume": "390–880/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "aparece em resultado local — posição estimada 4–8",
+      "page_no_repo": "bronks-ia-br/consultoria-ia-rio-de-janeiro/index.html (aguarda deploy)",
+      "opportunity": "alta"
+    }
+  ],
+  "issues": [
+    {
+      "type": "estrutura",
+      "severity": "crítico",
+      "description": "DEPLOY PENDENTE: 13 arquivos HTML prontos no repositório não estão no ar. O Google não pode indexar o que não existe no servidor. Cada dia sem deploy é tráfego e leads perdidos.",
+      "fix": "Executar: scp -r bronks-ia-br/* root@148.230.79.134:/var/www/bronks.ia.br/ — e submeter sitemap.xml no Google Search Console."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "SITEMAP INCONSISTÊNCIA CORRIGIDA: /ia-para-saude/ estava referenciada no sitemap desde ciclo #10 mas o arquivo HTML não existia em bronks-ia-br/. Corrigido neste ciclo com criação da página.",
+      "fix": "RESOLVIDO neste ciclo — ia-para-saude/index.html criado."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "alto",
+      "description": "KEYWORD TIER 1 SEM COBERTURA ATÉ HOJE: 'automação com IA' (4.400–8.100/mês) era a maior keyword Tier 1 sem landing page dedicada. Cobertura criada neste ciclo.",
+      "fix": "RESOLVIDO neste ciclo — automacao-com-ia/index.html criado com Schema completo."
+    },
+    {
+      "type": "técnico",
+      "severity": "médio",
+      "description": "GOOGLE SEARCH CONSOLE: Sem confirmação de que GSC está configurado com sitemap enviado. Sem GSC, indexação de novas páginas pode levar semanas.",
+      "fix": "Após deploy: verificar domínio no GSC, enviar bronks.ia.br/sitemap.xml, solicitar indexação manual das 13 novas URLs."
+    }
+  ],
+  "new_pages_created_this_cycle": [
+    {
+      "url": "https://bronks.ia.br/ia-para-saude/",
+      "arquivo": "bronks-ia-br/ia-para-saude/index.html",
+      "keyword_alvo": "IA para saúde",
+      "volume_estimado": "1.100–2.300/mês",
+      "schema": ["Service", "BreadcrumbList", "FAQPage"],
+      "titulo": "IA para Saúde | Automação de Clínicas e Hospitais com IA | Bronks IA",
+      "meta_description_chars": 156,
+      "faqs": 5,
+      "secoes": ["Hero + Stats", "6 capabilities grid", "Casos de uso (6)", "Segurança/LGPD", "FAQ", "CTA"],
+      "nota": "Corrige inconsistência: URL estava no sitemap desde ciclo #10 mas arquivo não existia"
+    },
+    {
+      "url": "https://bronks.ia.br/ia-para-juridico/",
+      "arquivo": "bronks-ia-br/ia-para-juridico/index.html",
+      "keyword_alvo": "IA para jurídico",
+      "volume_estimado": "590–2.800/mês",
+      "schema": ["Service", "BreadcrumbList", "FAQPage"],
+      "titulo": "IA para Jurídico | Automação de Contratos e Pesquisa Legal | Bronks IA",
+      "meta_description_chars": 158,
+      "faqs": 5,
+      "secoes": ["Hero + Stats", "6 capabilities grid", "Casos de uso (6)", "Tabela comparativa manual vs IA", "Processo (5 etapas)", "FAQ", "CTA"],
+      "diferencial": "Tabela de redução de tempo (revisão de contratos: 2–4h → 3–5min = 95% redução)"
+    },
+    {
+      "url": "https://bronks.ia.br/automacao-com-ia/",
+      "arquivo": "bronks-ia-br/automacao-com-ia/index.html",
+      "keyword_alvo": "automação com IA",
+      "volume_estimado": "4.400–8.100/mês",
+      "schema": ["Service", "BreadcrumbList", "FAQPage"],
+      "titulo": "Automação com IA para Empresas | Processos Inteligentes | Bronks IA",
+      "meta_description_chars": 158,
+      "faqs": 5,
+      "secoes": ["Hero + Stats", "6 capabilities grid", "Diferenciais IA vs RPA (6)", "Casos de uso (6)", "Band de integrações (14 sistemas)", "Processo (5 etapas)", "FAQ", "CTA"],
+      "diferencial": "Band de integrações com 14 sistemas brasileiros (SAP, TOTVS, Oracle, Salesforce, Omie, etc.)"
+    }
+  ],
+  "sitemap_updated": {
+    "total_urls": 16,
+    "new_urls_added": ["https://bronks.ia.br/ia-para-saude/", "https://bronks.ia.br/ia-para-juridico/", "https://bronks.ia.br/automacao-com-ia/"]
+  },
+  "competitors_spotted": [
+    { "domain": "yaitec.com", "strength": "muito forte — blog com 20+ artigos indexados", "gap": "Bronks ainda sem artigos indexados (deploy pendente)" },
+    { "domain": "webstar.studio", "strength": "forte — página de consultoria bem otimizada", "gap": "Bronks pode superar em conteúdo vertical" },
+    { "domain": "xmb.com.br", "strength": "médio — página local RJ indexada", "gap": "Bronks tem página RJ no repo, aguarda deploy" },
+    { "domain": "eaglebs.com", "strength": "médio — especializado em RAG", "gap": "Bronks tem página RAG + artigo guia RAG no repo" },
+    { "domain": "d2un.com.br", "strength": "médio — página dedicada agente IA Rio de Janeiro", "gap": "Local SEO — Bronks pode superar com conteúdo mais rico" }
+  ],
+  "estimated_traffic_gain": {
+    "30_days": "50–200 visitas adicionais (base das ações técnicas + GMB)",
+    "90_days": "800–2.000 visitas/mês adicionais (após deploy + indexação das 14 páginas)",
+    "6_months": "3.500–8.000 visitas/mês adicionais (rankings consolidados + link building)",
+    "assumptions": "Premissa principal e crítica: deploy dos arquivos do repo na VPS dentro de 7 dias. Sem deploy = zero ganho orgânico, independentemente da qualidade do conteúdo."
+  },
+  "priority_actions_this_week": [
+    {
+      "rank": 1,
+      "action": "DEPLOY: scp -r bronks-ia-br/* root@148.230.79.134:/var/www/bronks.ia.br/",
+      "impact": "crítico",
+      "responsavel": "Bruno (requer SSH com acesso à VPS)"
+    },
+    {
+      "rank": 2,
+      "action": "Enviar sitemap.xml no Google Search Console: https://search.google.com/search-console — bronks.ia.br/sitemap.xml (16 URLs)",
+      "impact": "crítico",
+      "responsavel": "Bruno (requer acesso ao GSC)"
+    },
+    {
+      "rank": 3,
+      "action": "Solicitar indexação manual das 5 URLs prioritárias no GSC: /, /agentes-de-ia/, /automacao-com-ia/, /rag-empresarial/, /consultoria-ia-rio-de-janeiro/",
+      "impact": "alto",
+      "responsavel": "Bruno"
+    },
+    {
+      "rank": 4,
+      "action": "Verificar e otimizar Google My Business para Bronks IA no Rio de Janeiro: categoria 'Consultoria em TI', adicionar serviços, fotos, link do site",
+      "impact": "alto",
+      "responsavel": "Bruno"
+    }
+  ],
+  "next_cycle_plan": {
+    "ciclo": 13,
+    "data_prevista": "2026-09-16",
+    "acoes_planejadas": [
+      { "acao": "Criar /blog/ia-para-juridico-guia-completo/ — artigo de suporte para a landing page criada hoje", "keyword": "IA para jurídico automação contratos", "volume": "1.400–2.800/mês" },
+      { "acao": "Criar /multiagentes-ia/ — landing page faltante para keyword Tier 2", "keyword": "multiagentes IA", "volume": "590–1.300/mês" },
+      { "acao": "Criar /blog/automacao-com-ia-exemplos-praticos/ — suporte para keyword Tier 1 criada hoje", "keyword": "automação com IA exemplos", "volume": "800–1.600/mês" },
+      { "acao": "Atualizar links internos do blog/index.html para incluir artigos mais recentes", "keyword": "SEO técnico interno", "volume": "N/A" }
+    ]
+  }
+}
