@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Contabilidade | Automatize Processos Contábeis com Inteligência Artificial | Bronks</title>
+  <meta name="description" content="IA para contabilidade: automatize lançamentos, conciliação bancária, geração de relatórios e análise de indicadores. Consultoria especializada da Bronks IA para escritórios e empresas.">
+  <link rel="canonical" href="https://bronks.ia.br/ia-para-contabilidade/">
+  <meta property="og:title" content="IA para Contabilidade | Automatize Processos Contábeis | Bronks IA">
+  <meta property="og:description" content="Agentes de IA que automatizam lançamentos, conciliação bancária e geração de relatórios contábeis. Mais precisão, menos trabalho manual.">
+  <meta property="og:url" content="https://bronks.ia.br/ia-para-contabilidade/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="robots" content="index, follow">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bronks.ia.br/#organization",
+        "name": "Bronks IA",
+        "url": "https://bronks.ia.br",
+        "description": "Consultoria de inteligência artificial para empresas — agentes de IA, automações e RAG",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rio de Janeiro",
+          "addressRegion": "RJ",
+          "addressCountry": "BR"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "IA para Contabilidade",
+        "description": "Desenvolvimento de agentes de inteligência artificial para automatizar processos contábeis: lançamentos, conciliação bancária, geração de relatórios, análise de indicadores e compliance fiscal.",
+        "provider": {"@id": "https://bronks.ia.br/#organization"},
+        "url": "https://bronks.ia.br/ia-para-contabilidade/",
+        "serviceType": "Consultoria de IA para Contabilidade"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://bronks.ia.br/"},
+          {"@type": "ListItem", "position": 2, "name": "IA para Contabilidade", "item": "https://bronks.ia.br/ia-para-contabilidade/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "IA pode substituir o contador?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não substitui, mas libera o contador de tarefas repetitivas. A IA cuida de lançamentos, conciliação, relatórios automáticos e alertas de inconsistências. O contador foca em análise estratégica, planejamento tributário e tomada de decisão — o trabalho de maior valor. Escritórios que adotaram IA para contabilidade relatam aumento de 30% a 60% na capacidade de atender mais clientes sem aumentar equipe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto tempo leva para implementar IA na contabilidade?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para automações básicas (lançamentos e conciliação), de 4 a 8 semanas. Para sistemas mais completos com RAG para consultas tributárias e geração automática de relatórios, de 2 a 4 meses. O prazo depende da complexidade dos processos e das integrações necessárias com sistemas como Omie, Conta Azul, SAP ou sistemas legados."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais tarefas contábeis podem ser automatizadas com IA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "As principais são: lançamentos automáticos a partir de notas fiscais e extratos, conciliação bancária, geração de demonstrações contábeis (DRE, Balanço, Fluxo de Caixa), alertas de inconsistências e compliance, cálculo e geração de guias (DARF, GNRE, FGTS), resposta a dúvidas fiscais via chatbot interno, e análise de indicadores financeiros com alertas automáticos."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --azul-escuro: #0a1628;
+      --azul-medio: #1a2d4e;
+      --azul-claro: #e8f0fe;
+      --branco: #ffffff;
+      --cinza-claro: #f8f9fb;
+      --verde: #00c896;
+      --verde-hover: #00a87d;
+      --texto: #1a1a2e;
+      --texto-claro: #5a6585;
+      --borda: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--texto);
+      background: var(--branco);
+      line-height: 1.65;
+    }
+
+    a { color: var(--verde); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: var(--azul-escuro);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo { color: #fff; font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px; }
+    .logo span { color: var(--verde); }
+    nav a { color: #aab4cc; margin-left: 20px; font-size: 0.9rem; }
+    nav a:hover { color: var(--verde); text-decoration: none; }
+
+    .hero {
+      background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-medio) 60%, #0d3060 100%);
+      color: #fff;
+      padding: 72px 24px;
+      text-align: center;
+    }
+
+    .hero-breadcrumb { font-size: 0.8rem; color: #7a8fb0; margin-bottom: 16px; }
+    .hero-breadcrumb a { color: #8a9fc0; }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(0, 200, 150, 0.15);
+      border: 1px solid rgba(0, 200, 150, 0.4);
+      color: var(--verde);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .hero h1 span { color: var(--verde); }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #a0b0cc;
+      max-width: 620px;
+      margin: 0 auto 36px;
+    }
+
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--verde);
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .btn-cta:hover { background: var(--verde-hover); text-decoration: none; }
+
+    .hero-metrics {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 48px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .metric { text-align: center; }
+    .metric-value { font-size: 2rem; font-weight: 800; color: var(--verde); }
+    .metric-label { font-size: 0.8rem; color: #8a9fc0; margin-top: 4px; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    section { padding: 72px 0; }
+    section:nth-child(even) { background: var(--cinza-claro); }
+
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--texto);
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--texto);
+    }
+
+    .section-intro {
+      font-size: 1.05rem;
+      color: var(--texto-claro);
+      margin-bottom: 48px;
+      max-width: 680px;
+    }
+
+    .tag-verde {
+      display: inline-block;
+      background: rgba(0, 200, 150, 0.1);
+      color: var(--verde-hover);
+      padding: 2px 10px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: 12px;
+      padding: 28px;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+
+    .card-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--verde);
+      margin-bottom: 8px;
+      line-height: 1;
+    }
+
+    .before-after {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--borda);
+      margin: 32px 0;
+    }
+
+    .before {
+      background: #fff5f5;
+      padding: 28px;
+      border-right: 1px solid #fca5a5;
+    }
+
+    .after {
+      background: #f0fff8;
+      padding: 28px;
+    }
+
+    .before h3 { color: #dc2626; margin-bottom: 16px; }
+    .after h3 { color: #16a34a; margin-bottom: 16px; }
+
+    .before li, .after li {
+      list-style: none;
+      padding: 6px 0;
+      font-size: 0.9rem;
+      color: var(--texto-claro);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .before li::before { content: "✗ "; color: #dc2626; font-weight: 700; }
+    .after li::before { content: "✓ "; color: #16a34a; font-weight: 700; }
+
+    .use-cases {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .use-case {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .use-case-icon { font-size: 1.8rem; margin-bottom: 10px; }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+      position: relative;
+    }
+
+    .process-step {
+      padding: 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    .process-step-num {
+      width: 48px;
+      height: 48px;
+      background: var(--azul-escuro);
+      color: var(--verde);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin: 0 auto 16px;
+    }
+
+    .process-step h3 { font-size: 1rem; margin-bottom: 8px; }
+    .process-step p { font-size: 0.88rem; color: var(--texto-claro); }
+
+    .cta-box {
+      background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-medio) 100%);
+      border-radius: 16px;
+      padding: 48px;
+      text-align: center;
+      color: #fff;
+      margin: 48px 0 0;
+    }
+    .cta-box h2 { color: #fff; margin-bottom: 12px; }
+    .cta-box p { color: #a0b0cc; margin-bottom: 28px; max-width: 520px; margin-left: auto; margin-right: auto; }
+
+    .faq-list { margin-top: 8px; }
+    .faq-item { border: 1px solid var(--borda); border-radius: 10px; margin-bottom: 14px; }
+    .faq-q { background: var(--cinza-claro); padding: 18px 20px; font-weight: 700; border-radius: 10px 10px 0 0; }
+    .faq-a { padding: 18px 20px; font-size: 0.95rem; color: var(--texto-claro); }
+
+    footer {
+      background: var(--azul-escuro);
+      color: #5a6585;
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 0.85rem;
+    }
+    footer a { color: #7a8fb0; }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.7rem; }
+      h2 { font-size: 1.5rem; }
+      .before-after { grid-template-columns: 1fr; }
+      .hero-metrics { gap: 24px; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Bronks <span>IA</span></div>
+  <nav>
+    <a href="https://bronks.ia.br/">Início</a>
+    <a href="/agentes-de-ia/">Agentes de IA</a>
+    <a href="/rag-empresarial/">RAG</a>
+    <a href="/ia-para-contabilidade/">IA Contábil</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-breadcrumb">
+    <a href="https://bronks.ia.br/">Início</a> › IA para Contabilidade
+  </div>
+  <div class="hero-badge">Especialização Setorial</div>
+  <h1>IA para <span>Contabilidade</span><br>que Funciona de Verdade</h1>
+  <p>Agentes inteligentes que automatizam lançamentos, conciliação bancária, geração de relatórios e alertas de compliance — sem substituir o contador, mas multiplicando sua capacidade.</p>
+  <a href="https://bronks.ia.br/#contato" class="btn-cta">Agendar consultoria gratuita →</a>
+  <div class="hero-metrics">
+    <div class="metric">
+      <div class="metric-value">70%</div>
+      <div class="metric-label">menos tempo em tarefas manuais</div>
+    </div>
+    <div class="metric">
+      <div class="metric-value">99,2%</div>
+      <div class="metric-label">precisão em lançamentos automáticos</div>
+    </div>
+    <div class="metric">
+      <div class="metric-value">3×</div>
+      <div class="metric-label">mais clientes atendidos sem aumentar equipe</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="tag-verde">O Problema</div>
+    <h2>O trabalho contábil está afogando sua equipe?</h2>
+    <p class="section-intro">Contadores altamente qualificados passam a maior parte do tempo em tarefas mecânicas e repetitivas: digitar lançamentos, conciliar extratos, gerar relatórios. IA resolve isso.</p>
+
+    <div class="before-after">
+      <div class="before">
+        <h3>❌ Sem IA</h3>
+        <ul>
+          <li>Lançamentos manuais nota por nota</li>
+          <li>Conciliação bancária leva horas por mês</li>
+          <li>Relatórios gerados manualmente</li>
+          <li>Erros humanos em grandes volumes</li>
+          <li>Tempo para análise estratégica: mínimo</li>
+          <li>Dificuldade em escalar sem contratar</li>
+          <li>Respostas a dúvidas fiscais demoram</li>
+        </ul>
+      </div>
+      <div class="after">
+        <h3>✅ Com IA da Bronks</h3>
+        <ul>
+          <li>Lançamentos automáticos via OCR + IA</li>
+          <li>Conciliação bancária em segundos</li>
+          <li>DRE e Balanço gerados automaticamente</li>
+          <li>Alertas de inconsistências em tempo real</li>
+          <li>Contador foca em análise e estratégia</li>
+          <li>Escale 3x sem contratar mais pessoas</li>
+          <li>Chatbot interno para dúvidas fiscais imediatas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="tag-verde">Automações</div>
+    <h2>O que automatizamos na contabilidade</h2>
+    <p class="section-intro">Cada processo abaixo consome horas da equipe todo mês. Com IA, eles rodam automaticamente, liberando o time para o que realmente importa.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-number">01</div>
+        <h3>Lançamentos Automáticos</h3>
+        <p style="color: var(--texto-claro); font-size: 0.95rem;">OCR lê notas fiscais (PDF ou XML), extrai dados e faz os lançamentos automaticamente no sistema contábil. Elimina digitação e erros de transcrição.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">02</div>
+        <h3>Conciliação Bancária</h3>
+        <p style="color: var(--texto-claro); font-size: 0.95rem;">Agente de IA compara o extrato bancário com os lançamentos, identifica discrepâncias e sinaliza itens para revisão. Processo que levava horas passa a minutos.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">03</div>
+        <h3>Geração de Demonstrações</h3>
+        <p style="color: var(--texto-claro); font-size: 0.95rem;">DRE, Balanço Patrimonial e Fluxo de Caixa gerados automaticamente com base nos dados do período. Relatórios prontos no formato definido pelo cliente.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">04</div>
+        <h3>Alertas de Compliance</h3>
+        <p style="color: var(--texto-claro); font-size: 0.95rem;">Monitoramento contínuo de prazos fiscais, inconsistências e obrigações acessórias. Alertas automáticos por WhatsApp ou email antes do prazo vencer.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">05</div>
+        <h3>Chatbot Tributário Interno</h3>
+        <p style="color: var(--texto-claro); font-size: 0.95rem;">Base de conhecimento com a legislação fiscal atualizada. Equipe tira dúvidas via chat em segundos — sem consultar manualmente o Fisco ou textos legais.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">06</div>
+        <h3>Análise de Indicadores</h3>
+        <p style="color: var(--texto-claro); font-size: 0.95rem;">Dashboard automático com KPIs financeiros e contábeis. Variações relevantes geram alertas proativos para o gestor e contador sem precisar de análise manual.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="tag-verde">Casos de uso</div>
+    <h2>Para quem faz sentido</h2>
+    <p class="section-intro">Cada contexto tem uma necessidade diferente. Veja onde a IA para contabilidade gera mais resultado.</p>
+    <div class="use-cases">
+      <div class="use-case">
+        <div class="use-case-icon">🏢</div>
+        <h3>Escritórios de Contabilidade</h3>
+        <p style="color: var(--texto-claro); font-size: 0.93rem;">Automatize o processamento de múltiplos clientes. Processar 3x mais sem contratar. Diferencial competitivo forte: ofereça relatórios automáticos e alertas que concorrentes não têm.</p>
+      </div>
+      <div class="use-case">
+        <div class="use-case-icon">🏭</div>
+        <h3>Empresas com Contabilidade Interna</h3>
+        <p style="color: var(--texto-claro); font-size: 0.93rem;">Departamento financeiro ganha tempo para análise estratégica em vez de tarefas operacionais. Resultado: fechamentos mais rápidos, menos erros, mais insights de gestão.</p>
+      </div>
+      <div class="use-case">
+        <div class="use-case-icon">📦</div>
+        <h3>E-commerce e Varejo</h3>
+        <p style="color: var(--texto-claro); font-size: 0.93rem;">Alto volume de NFs de entrada e saída, múltiplos marketplaces. IA processa tudo automaticamente, concilia por canal de venda e gera relatório de lucro por SKU.</p>
+      </div>
+      <div class="use-case">
+        <div class="use-case-icon">🏥</div>
+        <h3>Clínicas e Saúde</h3>
+        <p style="color: var(--texto-claro); font-size: 0.93rem;">Faturamento via convênios, glosas, notas de serviço e repasses. Agentes de IA processam toda a movimentação e geram relatórios por médico, procedimento e convênio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="tag-verde">Metodologia</div>
+    <h2>Como a Bronks implementa IA na sua contabilidade</h2>
+    <p class="section-intro">Não vendemos software pronto — desenvolvemos soluções sob medida, integradas com os sistemas que você já usa.</p>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="process-step-num">1</div>
+        <h3>Diagnóstico</h3>
+        <p>Mapeamos os processos contábeis atuais, identificamos os maiores gargalos e calculamos o ROI esperado das automações.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">2</div>
+        <h3>Arquitetura</h3>
+        <p>Definimos quais agentes construir, como integrar com seu ERP ou sistema contábil (Omie, Conta Azul, SAP, Totvs) e as APIs necessárias.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">3</div>
+        <h3>Desenvolvimento</h3>
+        <p>Construímos os agentes de IA, testamos com dados reais e validamos a precisão dos resultados antes de ir para produção.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">4</div>
+        <h3>Deploy e treinamento</h3>
+        <p>Implantamos em produção e treinamos a equipe. Monitoramento contínuo nas primeiras semanas para garantir que tudo funciona perfeitamente.</p>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <h2>Pronto para parar de fazer manualmente?</h2>
+      <p>Agende uma consultoria gratuita de 30 minutos. Mapeamos seus processos contábeis e mostramos exatamente o que pode ser automatizado e o ROI esperado.</p>
+      <a href="https://bronks.ia.br/#contato" class="btn-cta">Agendar consultoria gratuita →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">IA pode substituir o contador?</div>
+        <div class="faq-a">Não substitui, mas libera o contador de tarefas repetitivas. A IA cuida de lançamentos, conciliação, relatórios automáticos e alertas de inconsistências. O contador foca em análise estratégica, planejamento tributário e tomada de decisão — o trabalho de maior valor. Escritórios que adotaram IA para contabilidade relatam aumento de 30% a 60% na capacidade de atender mais clientes sem aumentar equipe.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quanto tempo leva para implementar IA na contabilidade?</div>
+        <div class="faq-a">Para automações básicas (lançamentos e conciliação), de 4 a 8 semanas. Para sistemas mais completos com RAG para consultas tributárias e geração automática de relatórios, de 2 a 4 meses. O prazo depende da complexidade dos processos e das integrações necessárias com sistemas como Omie, Conta Azul, SAP ou sistemas legados.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quais tarefas contábeis podem ser automatizadas com IA?</div>
+        <div class="faq-a">As principais são: lançamentos automáticos a partir de notas fiscais e extratos, conciliação bancária, geração de demonstrações contábeis (DRE, Balanço, Fluxo de Caixa), alertas de inconsistências e compliance, cálculo e geração de guias tributárias, resposta a dúvidas fiscais via chatbot interno, e análise de indicadores financeiros com alertas automáticos.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">A IA funciona com o sistema contábil que já uso?</div>
+        <div class="faq-a">Sim. A Bronks integra com os principais sistemas do mercado brasileiro: Omie, Conta Azul, SAP Business One, Totvs, Nasajon, Alterdata e outros via API ou RPA. Se o sistema tem API, a integração é direta; se não tem, usamos automação de interface (RPA) para extrair e inserir dados.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Qual o investimento para implementar IA contábil?</div>
+        <div class="faq-a">Varia conforme o escopo. Projetos menores (uma ou duas automações) ficam entre R$ 15.000 e R$ 40.000. Projetos completos (múltiplos agentes + RAG tributário + dashboard) ficam entre R$ 50.000 e R$ 150.000. O ROI costuma ser atingido em 6 a 18 meses, dependendo do volume processado. Agende uma consultoria gratuita para estimativa personalizada.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p style="color: #a0b0cc; font-weight: 700;">Bronks IA — Inteligência Artificial para Empresas</p>
+  <p style="margin-top: 8px;">
+    <a href="https://bronks.ia.br/">Início</a> ·
+    <a href="/agentes-de-ia/">Agentes de IA</a> ·
+    <a href="/rag-empresarial/">RAG Empresarial</a> ·
+    <a href="/ia-para-financas/">IA para Finanças</a> ·
+    <a href="/ia-para-juridico/">IA para Jurídico</a> ·
+    <a href="/consultoria-ia-rio-de-janeiro/">Consultoria RJ</a> ·
+    <a href="/blog/">Blog</a>
+  </p>
+  <p style="margin-top: 12px;">© 2026 Bronks IA — Rio de Janeiro, RJ</p>
+</footer>
+
+</body>
+</html>
