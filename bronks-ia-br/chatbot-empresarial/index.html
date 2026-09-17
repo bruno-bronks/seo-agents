@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Empresarial com IA | Atendimento Inteligente | Bronks IA</title>
+  <meta name="description" content="Chatbot empresarial com IA para WhatsApp, site e Instagram. Atendimento 24h que qualifica leads e fecha negócios. Implementação em RJ pela Bronks IA. Consulte.">
+  <link rel="canonical" href="https://bronks.ia.br/chatbot-empresarial/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chatbot Empresarial com IA | Atendimento Inteligente | Bronks IA">
+  <meta property="og:description" content="Chatbot com IA para WhatsApp, site e Instagram. Atendimento 24h que qualifica leads e fecha negócios — implementação no Rio de Janeiro pela Bronks IA.">
+  <meta property="og:url" content="https://bronks.ia.br/chatbot-empresarial/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://bronks.ia.br/assets/og-chatbot-empresarial.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chatbot Empresarial com IA | Bronks IA RJ">
+  <meta name="twitter:description" content="Atendimento 24h via WhatsApp, site e Instagram com IA que entende contexto e fecha negócios.">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Chatbot Empresarial com IA",
+    "description": "Desenvolvimento e implementação de chatbots empresariais com inteligência artificial para atendimento 24 horas via WhatsApp, site, Instagram e Telegram. Solução personalizada para cada setor: varejo, saúde, imobiliário e advocacia.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Rio de Janeiro"
+    },
+    "serviceType": "Chatbot Empresarial com Inteligência Artificial",
+    "url": "https://bronks.ia.br/chatbot-empresarial/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-primary: #0a0e1a;
+      --bg-secondary: #111827;
+      --bg-card: #1a2236;
+      --accent-blue: #00b4f0;
+      --accent-cyan: #00e5ff;
+      --accent-glow: rgba(0, 180, 240, 0.15);
+      --text-primary: #e8edf5;
+      --text-secondary: #9aabc2;
+      --text-muted: #5a7090;
+      --border: #1e3050;
+      --success: #00c896;
+      --warning: #f0a030;
+      --danger: #f05060;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+    a { color: var(--accent-blue); text-decoration: none; }
+    a:hover { color: var(--accent-cyan); }
+
+    /* NAV */
+    nav {
+      background: rgba(10, 14, 26, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100;
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 1140px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo { font-size: 22px; font-weight: 800; color: var(--accent-cyan); letter-spacing: -0.5px; }
+    .logo span { color: var(--text-primary); }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a { color: var(--text-secondary); font-size: 15px; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent-cyan); }
+    .nav-cta {
+      background: var(--accent-blue); color: #fff !important;
+      padding: 9px 22px; border-radius: 6px; font-weight: 600; font-size: 14px;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .nav-cta:hover { background: var(--accent-cyan); color: var(--bg-primary) !important; box-shadow: 0 0 20px rgba(0,229,255,0.35); }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0a0e1a 0%, #0d1529 60%, #091522 100%);
+      padding: 100px 24px 80px;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; top: -80px; left: 50%; transform: translateX(-50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(0, 180, 240, 0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-inner { max-width: 900px; margin: 0 auto; position: relative; }
+    .hero-badge {
+      display: inline-block;
+      background: var(--accent-glow);
+      border: 1px solid rgba(0, 180, 240, 0.3);
+      color: var(--accent-blue);
+      font-size: 13px; font-weight: 600;
+      padding: 6px 16px; border-radius: 20px;
+      margin-bottom: 28px;
+      letter-spacing: 0.5px; text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(30px, 4.5vw, 50px);
+      font-weight: 800; line-height: 1.15;
+      color: var(--text-primary);
+      margin-bottom: 24px; letter-spacing: -1px;
+    }
+    h1 em { font-style: normal; color: var(--accent-cyan); }
+    .hero-sub {
+      font-size: 19px; color: var(--text-secondary);
+      max-width: 700px; margin: 0 auto 40px; line-height: 1.65;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      color: var(--bg-primary);
+      padding: 16px 36px; border-radius: 8px;
+      font-weight: 700; font-size: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,180,240,0.4); color: var(--bg-primary); }
+    .btn-secondary {
+      background: transparent; color: var(--text-primary);
+      border: 1px solid var(--border);
+      padding: 15px 32px; border-radius: 8px;
+      font-weight: 600; font-size: 16px;
+      transition: border-color 0.2s, color 0.2s;
+      display: inline-block;
+    }
+    .btn-secondary:hover { border-color: var(--accent-blue); color: var(--accent-blue); }
+    .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* SECTIONS */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1140px; margin: 0 auto; }
+    .section-tag {
+      font-size: 12px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2px; color: var(--accent-blue); margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(26px, 3.5vw, 40px); font-weight: 800;
+      color: var(--text-primary); margin-bottom: 16px; letter-spacing: -0.5px;
+    }
+    h2 em { font-style: normal; color: var(--accent-cyan); }
+    .section-lead {
+      font-size: 18px; color: var(--text-secondary);
+      max-width: 680px; margin-bottom: 56px; line-height: 1.7;
+    }
+    h3 { font-size: 20px; font-weight: 700; color: var(--text-primary); margin-bottom: 10px; }
+
+    /* O QUE É */
+    .bg-secondary { background: var(--bg-secondary); }
+    .what-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    @media (max-width: 768px) { .what-grid { grid-template-columns: 1fr; gap: 40px; } }
+    .what-text p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 18px; }
+    .what-text strong { color: var(--text-primary); }
+    .what-callout {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent-cyan);
+      border-radius: 0 10px 10px 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+      color: var(--text-secondary);
+      font-size: 15px; line-height: 1.7;
+    }
+    .what-callout strong { color: var(--accent-cyan); display: block; margin-bottom: 6px; }
+    .what-sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .sidebar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px; padding: 22px;
+    }
+    .sidebar-card h4 { color: var(--accent-cyan); font-size: 16px; margin-bottom: 8px; }
+    .sidebar-card p { color: var(--text-secondary); font-size: 14px; line-height: 1.65; }
+
+    /* CANAIS */
+    .canais-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .canal-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px; padding: 28px; text-align: center;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .canal-card:hover { border-color: var(--accent-blue); transform: translateY(-4px); }
+    .canal-icon { font-size: 40px; margin-bottom: 16px; }
+    .canal-card p { color: var(--text-secondary); font-size: 14px; line-height: 1.65; margin-top: 8px; }
+    .canal-badge {
+      display: inline-block; margin-top: 12px;
+      background: rgba(0, 180, 240, 0.1);
+      border: 1px solid rgba(0, 180, 240, 0.25);
+      color: var(--accent-blue); font-size: 12px; font-weight: 600;
+      padding: 4px 12px; border-radius: 12px;
+    }
+
+    /* SETORES */
+    .setores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
+    .setor-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 14px; padding: 32px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .setor-card:hover { border-color: var(--accent-blue); }
+    .setor-top {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 20px;
+    }
+    .setor-emoji { font-size: 32px; }
+    .setor-tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 2px; }
+    .setor-card h3 { margin-bottom: 0; font-size: 18px; }
+    .setor-card p { color: var(--text-secondary); font-size: 15px; line-height: 1.7; margin-bottom: 16px; }
+    .setor-features { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .setor-features li { font-size: 14px; color: var(--text-secondary); display: flex; gap: 8px; align-items: flex-start; }
+    .setor-features li::before { content: '✓'; color: var(--success); font-weight: 700; flex-shrink: 0; }
+
+    /* COMPARATIVO */
+    .comparativo-bg { background: var(--bg-secondary); }
+    .comparativo-table {
+      width: 100%; border-collapse: collapse;
+      background: var(--bg-card); border-radius: 14px;
+      overflow: hidden; border: 1px solid var(--border);
+    }
+    .comparativo-table th {
+      padding: 18px 24px; font-size: 15px; font-weight: 700;
+      text-align: left; background: var(--bg-secondary);
+    }
+    .comparativo-table th:nth-child(2) { color: var(--text-muted); }
+    .comparativo-table th:nth-child(3) { color: var(--accent-cyan); }
+    .comparativo-table td {
+      padding: 16px 24px; font-size: 15px;
+      border-top: 1px solid var(--border); color: var(--text-secondary);
+    }
+    .comparativo-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .comparativo-table td:first-child { color: var(--text-primary); font-weight: 500; }
+    .check-yes { color: var(--success); font-weight: 700; }
+    .check-no { color: var(--danger); font-weight: 700; }
+    .check-partial { color: var(--warning); font-weight: 700; }
+
+    /* COMO FUNCIONA NA BRONKS */
+    .como-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    @media (max-width: 768px) { .como-grid { grid-template-columns: 1fr; } }
+    .como-steps { display: flex; flex-direction: column; gap: 0; }
+    .como-step {
+      display: flex; gap: 20px; align-items: flex-start;
+      padding: 24px 0; border-bottom: 1px solid var(--border);
+    }
+    .como-step:last-child { border-bottom: none; }
+    .como-step-num {
+      width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 16px; color: var(--bg-primary);
+    }
+    .como-step-content h4 { color: var(--text-primary); font-size: 17px; margin-bottom: 6px; }
+    .como-step-content p { color: var(--text-secondary); font-size: 15px; line-height: 1.65; }
+    .como-tech {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 32px;
+    }
+    .como-tech h3 { margin-bottom: 20px; }
+    .tech-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .tech-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      background: var(--bg-secondary); border-radius: 8px; padding: 14px 16px;
+    }
+    .tech-badge {
+      background: rgba(0, 180, 240, 0.12); color: var(--accent-blue);
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      padding: 3px 8px; border-radius: 4px; flex-shrink: 0; margin-top: 2px;
+    }
+    .tech-item p { color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
+    .tech-item strong { color: var(--text-primary); display: block; font-size: 15px; margin-bottom: 2px; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 16px; max-width: 820px; margin: 0 auto; }
+    .faq-item { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .faq-q {
+      padding: 22px 28px; font-weight: 600; font-size: 16px;
+      color: var(--text-primary); cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    }
+    .faq-q::after { content: '+'; color: var(--accent-cyan); font-size: 22px; flex-shrink: 0; }
+    .faq-a { padding: 0 28px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.75; }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, #0d1529 0%, #091e3a 100%);
+      border-top: 1px solid var(--border);
+      text-align: center; padding: 100px 24px;
+      position: relative; overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(0,180,240,0.09) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .cta-inner { max-width: 680px; margin: 0 auto; position: relative; }
+    .cta-section h2 { margin-bottom: 20px; }
+    .cta-section p { color: var(--text-secondary); font-size: 18px; margin-bottom: 40px; }
+
+    /* FOOTER */
+    footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; }
+    .footer-inner { max-width: 1140px; margin: 0 auto; }
+    footer p { color: var(--text-muted); font-size: 14px; margin-top: 12px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); font-size: 14px; }
+    .footer-links a:hover { color: var(--accent-blue); }
+
+    @media (max-width: 600px) { .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a href="https://bronks.ia.br" class="logo">Bronks<span>.IA</span></a>
+    <div class="nav-links">
+      <a href="https://bronks.ia.br/ia-para-imobiliarias/">IA para Imobiliárias</a>
+      <a href="https://bronks.ia.br/automacao-de-processos/">Automação</a>
+      <a href="https://bronks.ia.br/blog/">Blog</a>
+      <a href="https://bronks.ia.br/sobre/">Sobre</a>
+      <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/" class="nav-cta">Consultoria Gratuita</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-badge">Chatbot Empresarial · Atendimento com IA</span>
+    <h1>Chatbot Empresarial com IA:<br><em>Atendimento 24h que Fecha Negócios</em></h1>
+    <p class="hero-sub">
+      Não é um menu de opções. Não é um bot que frustra o cliente. É inteligência artificial treinada para entender, responder com precisão e converter — via WhatsApp, site, Instagram ou Telegram — sem parar, sem reclamar, sem errar de cansaço.
+    </p>
+    <div class="hero-actions">
+      <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/" class="btn-primary">Agendar Consultoria Gratuita</a>
+      <a href="#como-funciona" class="btn-secondary">Ver como funciona</a>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE É UM CHATBOT EMPRESARIAL COM IA -->
+<section class="bg-secondary">
+  <div class="section-inner">
+    <div class="what-grid">
+      <div class="what-text">
+        <p class="section-tag">Fundamentos</p>
+        <h2>O que é — e o que <em>não é</em> — um chatbot com IA</h2>
+        <p>
+          Existe uma confusão frequente no mercado: muita empresa contrata um "chatbot com IA" e recebe um fluxograma glorificado. O usuário digita algo fora do script e o bot responde "Não entendi. Por favor, escolha uma opção: 1, 2 ou 3." Isso não é inteligência artificial — é automação de menu, com um nome mais caro.
+        </p>
+        <p>
+          Um <strong>chatbot empresarial com IA real</strong>, como os que a Bronks desenvolve, usa modelos de linguagem de grande escala (LLMs) ajustados para o contexto específico do seu negócio. Ele entende intenção, mantém o contexto da conversa ao longo de várias mensagens, responde perguntas abertas com precisão e sabe quando escalar para um atendente humano — e faz isso de forma natural, sem que o cliente perceba a transição.
+        </p>
+        <div class="what-callout">
+          <strong>A diferença que importa para o seu resultado</strong>
+          Um bot de fluxograma resolve 15 a 20% das dúvidas. Um chatbot com IA bem treinado resolve 75 a 85% — sem intervenção humana. Para uma empresa que recebe 500 mensagens por mês, isso significa uma equipe menor, disponível para os casos que realmente precisam de atenção humana.
+        </div>
+        <p>
+          A implementação correta envolve três camadas: o modelo de linguagem (o "cérebro"), a base de conhecimento sobre o seu negócio (produtos, serviços, políticas, procedimentos) e a camada de integração com seus sistemas (CRM, ERP, agenda, estoque, pagamentos). Sem as três camadas integradas, o chatbot sabe falar mas não sabe agir — e ação é o que gera resultado comercial.
+        </p>
+        <p>
+          É importante ser honesto sobre limitações também: chatbots com IA não são mágica. Eles precisam de tempo de treinamento, de um processo de curadoria do conhecimento da empresa e de ciclos de melhoria contínua. Os primeiros 30 dias são de aprendizado ativo. A partir do segundo mês, a curva de desempenho sobe consistentemente.
+        </p>
+      </div>
+      <div class="what-sidebar">
+        <div class="sidebar-card">
+          <h4>Chatbot de IA vs. Chatbot tradicional</h4>
+          <p>O chatbot tradicional segue roteiros. O chatbot com IA entende o que o cliente quer dizer — mesmo quando está mal escrito, em gíria ou em contexto implícito. A diferença prática: um resolve "quero cancelar", o outro resolve "oi tô com raiva do produto e quero parar tudo".</p>
+        </div>
+        <div class="sidebar-card">
+          <h4>Treinamento específico para o seu negócio</h4>
+          <p>O chatbot da Bronks não sabe só falar. Ele conhece seu catálogo, suas políticas, seus preços, seu horário de funcionamento e seus processos internos. Cada resposta é calibrada para o tom de voz da sua marca — formal, descontraído ou técnico.</p>
+        </div>
+        <div class="sidebar-card">
+          <h4>Escalada inteligente para humanos</h4>
+          <p>O chatbot sabe quando não sabe: quando detecta insatisfação, caso complexo ou pedido fora do escopo, ele transfere para um atendente com todo o histórico da conversa já disponível. O atendente não começa do zero.</p>
+        </div>
+        <div class="sidebar-card">
+          <h4>Memória de conversa e de cliente</h4>
+          <p>Clientes recorrentes são reconhecidos. O chatbot lembra o histórico de compras, preferências declaradas e interações anteriores. O atendimento personalizado acontece automaticamente — em escala de milhares de clientes simultâneos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CANAIS -->
+<section>
+  <div class="section-inner">
+    <p class="section-tag">Onde Seu Chatbot Opera</p>
+    <h2>Atenda em todos os canais<br>com <em>um único sistema</em></h2>
+    <p class="section-lead">Seus clientes estão espalhados por vários canais. O chatbot da Bronks opera em todos — com a mesma base de conhecimento, o mesmo tom de voz e o mesmo nível de qualidade.</p>
+    <div class="canais-grid">
+      <div class="canal-card">
+        <div class="canal-icon">💬</div>
+        <h3>WhatsApp Business</h3>
+        <p>O canal preferido do brasileiro. Integração via API Oficial do WhatsApp Business com suporte a texto, imagem, áudio, documentos e botões interativos. Atende múltiplas conversas simultâneas sem fila de espera.</p>
+        <span class="canal-badge">Mais popular</span>
+      </div>
+      <div class="canal-card">
+        <div class="canal-icon">🌐</div>
+        <h3>Site / Landing Page</h3>
+        <p>Widget de chat flutuante com design personalizável para o seu site. Qualifica visitantes em tempo real, captura leads, agenda demonstrações e responde dúvidas técnicas sobre produtos e serviços enquanto o prospect ainda está na página.</p>
+        <span class="canal-badge">Alta conversão</span>
+      </div>
+      <div class="canal-card">
+        <div class="canal-icon">📸</div>
+        <h3>Instagram Direct</h3>
+        <p>Automatiza respostas no Direct do Instagram, inclusive quando marcado em stories ou respondendo a comentários. Especialmente eficaz para e-commerce, moda, estética, gastronomia e negócios com forte presença visual.</p>
+        <span class="canal-badge">Social commerce</span>
+      </div>
+      <div class="canal-card">
+        <div class="canal-icon">✈️</div>
+        <h3>Telegram</h3>
+        <p>Ideal para empresas com base de clientes tech-savvy ou que precisam de comunicação em grupos e canais. Suporte a comandos, bots estruturados e integração com sistemas internos via webhook.</p>
+        <span class="canal-badge">B2B & Tech</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASOS POR SETOR -->
+<section class="bg-secondary">
+  <div class="section-inner">
+    <p class="section-tag">Casos por Setor</p>
+    <h2>Como o chatbot funciona<br>no <em>seu segmento</em></h2>
+    <p class="section-lead">A IA é treinada com o vocabulário, os processos e os objetivos específicos de cada setor — não é uma solução genérica rebranded.</p>
+    <div class="setores-grid">
+      <div class="setor-card">
+        <div class="setor-top">
+          <span class="setor-emoji">🛍️</span>
+          <div>
+            <div class="setor-tag">Setor</div>
+            <h3>Varejo & E-commerce</h3>
+          </div>
+        </div>
+        <p>No varejo, cada segundo de indecisão do cliente custa uma venda. O chatbot acompanha o funil: atrai com informação do produto, converte com oferta personalizada baseada no histórico, e retém com pós-venda proativo. Integra com estoque e sistema de pedidos em tempo real.</p>
+        <ul class="setor-features">
+          <li>Consulta de disponibilidade e prazo de entrega em tempo real</li>
+          <li>Recomendação de produtos por perfil e histórico</li>
+          <li>Rastreamento de pedido sem abrir ticket de suporte</li>
+          <li>Notificação proativa de volta ao estoque e promoções</li>
+          <li>Recuperação automática de carrinhos abandonados</li>
+        </ul>
+      </div>
+      <div class="setor-card">
+        <div class="setor-top">
+          <span class="setor-emoji">🏥</span>
+          <div>
+            <div class="setor-tag">Setor</div>
+            <h3>Saúde & Clínicas</h3>
+          </div>
+        </div>
+        <p>Clínicas médicas, odontológicas e psicológicas perdem em média 30% dos agendamentos por não conseguir responder pacientes fora do horário comercial. O chatbot cobre essa lacuna com sensibilidade — entende urgência, faz triagem inicial e agenda de forma humanizada.</p>
+        <ul class="setor-features">
+          <li>Agendamento e cancelamento de consultas 24 horas</li>
+          <li>Triagem inicial de sintomas e encaminhamento à especialidade correta</li>
+          <li>Confirmação automática com lembretes no dia anterior e 2 horas antes</li>
+          <li>Resposta a dúvidas sobre convênios, valores e documentos necessários</li>
+          <li>Captação de avaliação pós-consulta de forma natural</li>
+        </ul>
+      </div>
+      <div class="setor-card">
+        <div class="setor-top">
+          <span class="setor-emoji">🏢</span>
+          <div>
+            <div class="setor-tag">Setor</div>
+            <h3>Imobiliária & Corretores</h3>
+          </div>
+        </div>
+        <p>O mercado imobiliário tem um ciclo de venda longo — e a maioria dos leads esfria antes de falar com um corretor. O chatbot mantém o lead quente com informações de imóveis personalizadas, enquanto qualifica perfil e intenção para que o corretor receba apenas os melhores contatos.</p>
+        <ul class="setor-features">
+          <li>Qualificação de leads por renda, intenção e localização desejada</li>
+          <li>Apresentação de imóveis com fotos, planta e ficha técnica via chat</li>
+          <li>Agendamento de visitas na agenda do corretor responsável</li>
+          <li>Simulação básica de financiamento e FGTS</li>
+          <li>Follow-up automático para leads que não responderam em 48h</li>
+        </ul>
+      </div>
+      <div class="setor-card">
+        <div class="setor-top">
+          <span class="setor-emoji">⚖️</span>
+          <div>
+            <div class="setor-tag">Setor</div>
+            <h3>Advocacia & Jurídico</h3>
+          </div>
+        </div>
+        <p>Escritórios de advocacia enfrentam um paradoxo: precisam passar credibilidade e autoridade, mas também precisam ser acessíveis e responsivos. O chatbot jurídico da Bronks foi calibrado para esse equilíbrio: fornece informações gerais úteis sem dar pareceres jurídicos, enquanto qualifica o cliente para a área correta do escritório.</p>
+        <ul class="setor-features">
+          <li>Triagem por área do direito: trabalhista, cível, família, empresarial</li>
+          <li>Agendamento de consultas iniciais com briefing do caso</li>
+          <li>Resposta a FAQs sem comprometer sigilo ou dar pareceres</li>
+          <li>Acompanhamento de status processual com integração ao sistema interno</li>
+          <li>Captura de documentos iniciais via chat para agilizar o atendimento</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section class="comparativo-bg">
+  <div class="section-inner">
+    <p class="section-tag" style="text-align:center">Comparativo Técnico</p>
+    <h2 style="text-align:center; margin-bottom: 48px;">Chatbot simples vs.<br><em>Chatbot com IA da Bronks</em></h2>
+    <div style="overflow-x: auto;">
+      <table class="comparativo-table">
+        <thead>
+          <tr>
+            <th style="width: 40%">Capacidade</th>
+            <th>Chatbot de Fluxograma</th>
+            <th>Chatbot IA Bronks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Entende perguntas abertas e mal escritas</td>
+            <td><span class="check-no">✗ Não</span></td>
+            <td><span class="check-yes">✓ Sim</span></td>
+          </tr>
+          <tr>
+            <td>Mantém contexto ao longo da conversa</td>
+            <td><span class="check-no">✗ Não</span></td>
+            <td><span class="check-yes">✓ Sim</span></td>
+          </tr>
+          <tr>
+            <td>Personalização por histórico do cliente</td>
+            <td><span class="check-no">✗ Não</span></td>
+            <td><span class="check-yes">✓ Sim</span></td>
+          </tr>
+          <tr>
+            <td>Integração com CRM e sistemas internos</td>
+            <td><span class="check-partial">≈ Limitada</span></td>
+            <td><span class="check-yes">✓ Completa</span></td>
+          </tr>
+          <tr>
+            <td>Aprende com interações ao longo do tempo</td>
+            <td><span class="check-no">✗ Não</span></td>
+            <td><span class="check-yes">✓ Sim</span></td>
+          </tr>
+          <tr>
+            <td>Escalada inteligente para humanos</td>
+            <td><span class="check-partial">≈ Manual</span></td>
+            <td><span class="check-yes">✓ Automática e contextual</span></td>
+          </tr>
+          <tr>
+            <td>Tom de voz adaptável à marca</td>
+            <td><span class="check-no">✗ Não</span></td>
+            <td><span class="check-yes">✓ Sim</span></td>
+          </tr>
+          <tr>
+            <td>Resolução sem intervenção humana</td>
+            <td>15–20% das solicitações</td>
+            <td>75–85% das solicitações</td>
+          </tr>
+          <tr>
+            <td>Suporte a áudio e imagem</td>
+            <td><span class="check-no">✗ Não</span></td>
+            <td><span class="check-yes">✓ Sim (WhatsApp)</span></td>
+          </tr>
+          <tr>
+            <td>Relatórios e análise de conversas</td>
+            <td><span class="check-partial">≈ Básico</span></td>
+            <td><span class="check-yes">✓ Avançado com insights</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA NA BRONKS -->
+<section id="como-funciona">
+  <div class="section-inner">
+    <p class="section-tag">Processo Bronks</p>
+    <h2>Como funciona o chatbot<br>que a <em>Bronks implementa</em></h2>
+    <p class="section-lead">Da primeira conversa à IA em produção, cada etapa é transparente e orientada por resultado mensurável.</p>
+    <div class="como-grid">
+      <div class="como-steps">
+        <div class="como-step">
+          <div class="como-step-num">1</div>
+          <div class="como-step-content">
+            <h4>Mapeamento de conversas e objetivos</h4>
+            <p>Analisamos os tickets de atendimento, as perguntas mais frequentes e os gargalos do processo atual. Definimos os objetivos comerciais mensuráveis: taxa de resolução autônoma, redução de tempo de resposta, volume de agendamentos gerados.</p>
+          </div>
+        </div>
+        <div class="como-step">
+          <div class="como-step-num">2</div>
+          <div class="como-step-content">
+            <h4>Construção da base de conhecimento</h4>
+            <p>Organizamos todo o conhecimento da empresa em uma estrutura que o modelo de linguagem pode consultar: catálogo de produtos, FAQ, políticas, procedimentos, fluxos de compra e pós-venda. Esse processo leva de 1 a 3 semanas dependendo da complexidade do negócio.</p>
+          </div>
+        </div>
+        <div class="como-step">
+          <div class="como-step-num">3</div>
+          <div class="como-step-content">
+            <h4>Configuração do modelo e integrações</h4>
+            <p>Escolhemos e configuramos o modelo de IA adequado ao caso de uso, integramos com os sistemas existentes (CRM, ERP, agenda, e-commerce) e programamos os fluxos de escalada e notificação para a equipe humana.</p>
+          </div>
+        </div>
+        <div class="como-step">
+          <div class="como-step-num">4</div>
+          <div class="como-step-content">
+            <h4>Testes e calibração</h4>
+            <p>Rodamos o chatbot em ambiente de staging com uma amostra de conversas reais. Identificamos falhas, calibramos respostas e ajustamos o tom de voz até atingir o benchmark mínimo de qualidade definido no início do projeto.</p>
+          </div>
+        </div>
+        <div class="como-step">
+          <div class="como-step-num">5</div>
+          <div class="como-step-content">
+            <h4>Go-live e melhoria contínua</h4>
+            <p>Lançamos em produção com monitoramento intensivo nas primeiras duas semanas. A partir daí, realizamos ciclos quinzenais de revisão de desempenho, atualização da base de conhecimento e ajuste fino do modelo com base nas conversas reais.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="como-tech">
+          <h3 style="color: var(--accent-cyan); margin-bottom: 20px;">Tecnologia por trás do chatbot</h3>
+          <ul class="tech-list">
+            <li class="tech-item">
+              <span class="tech-badge">LLM</span>
+              <div><strong>Modelos de linguagem enterprise</strong><p>Usamos modelos de última geração, selecionados por desempenho no idioma português e no domínio de cada setor. O modelo certo para uma clínica é diferente do modelo certo para um e-commerce.</p></div>
+            </li>
+            <li class="tech-item">
+              <span class="tech-badge">RAG</span>
+              <div><strong>Retrieval-Augmented Generation</strong><p>A IA consulta a base de conhecimento da sua empresa em tempo real a cada resposta, garantindo que as informações estejam sempre atualizadas e precisas — não memorizadas com risco de defasagem.</p></div>
+            </li>
+            <li class="tech-item">
+              <span class="tech-badge">API</span>
+              <div><strong>Integrações bidirecionais</strong><p>O chatbot não só responde — ele age: consulta estoque, cria pedidos, agenda compromissos, atualiza CRM. Tudo em tempo real, via APIs seguras com autenticação OAuth2.</p></div>
+            </li>
+            <li class="tech-item">
+              <span class="tech-badge">LGPD</span>
+              <div><strong>Conformidade com privacidade de dados</strong><p>Todo processamento de dados segue as diretrizes da LGPD. Logs de conversa são anonimizados, dados sensíveis são criptografados e o cliente tem controle sobre seu histórico.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-secondary">
+  <div class="section-inner">
+    <p class="section-tag" style="text-align:center">Perguntas Frequentes</p>
+    <h2 style="text-align:center; margin-bottom: 48px;">Dúvidas sobre <em>chatbot empresarial</em></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">O chatbot da Bronks precisa de aprovação do Meta para o WhatsApp?</div>
+        <div class="faq-a">Sim — e nós cuidamos de todo esse processo por você. A integração com o WhatsApp Business requer aprovação pela API Oficial do Meta (anteriormente conhecida como WhatsApp Business API). A Bronks tem expertise no processo de verificação de conta empresarial, configuração de templates de mensagem e publicação via Business Manager. O prazo típico de aprovação é de 5 a 14 dias úteis. Trabalhamos com parceiros BSP (Business Solution Providers) homologados pelo Meta para garantir a integração estável e dentro das políticas da plataforma.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">O chatbot consegue atender em voz (áudio)?</div>
+        <div class="faq-a">Sim, no canal WhatsApp. Quando o cliente envia um áudio, o chatbot transcreve a mensagem usando tecnologia de Speech-to-Text em português brasileiro, processa a intenção e responde em texto (ou voz, se configurado assim). Essa capacidade é especialmente valorizada por clientes mais velhos ou em contextos de uso mobile intensivo. A transcrição tem precisão acima de 90% para áudios em português com até 3 minutos de duração.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Como o chatbot lida com reclamações e situações sensíveis?</div>
+        <div class="faq-a">O chatbot é treinado para detectar sinais de insatisfação — palavras-chave negativas, tom de urgência, uso de caps lock, menção a órgãos de defesa do consumidor como Procon ou Reclame Aqui. Quando detecta esse padrão, ele aciona imediatamente um protocolo de prioridade: reconhece o problema com empatia, informa que um responsável entrará em contato e cria um ticket de alta prioridade no sistema de atendimento. O chatbot nunca tenta resolver sozinho uma reclamação grave — isso está hardcoded no fluxo de segurança.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quantas conversas simultâneas o chatbot consegue gerenciar?</div>
+        <div class="faq-a">A arquitetura que usamos é horizontalmente escalável — não há limite prático de conversas simultâneas. Uma operação com 5.000 conversas simultâneas no WhatsApp funciona com a mesma qualidade de resposta que uma com 50. A infraestrutura é provisionada em cloud (AWS ou GCP dependendo da preferência do cliente) com autoscaling configurado. O custo varia proporcionalmente ao volume, mas o modelo de precificação inclui faixas de volume para tornar o custo previsível.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">É possível ver o histórico de todas as conversas?</div>
+        <div class="faq-a">Sim — e esse é um dos ativos mais valiosos do sistema a longo prazo. Todas as conversas são registradas em um painel de analytics que permite visualizar volume de atendimentos, taxa de resolução autônoma, tópicos mais frequentes, horários de pico e pontos onde os clientes abandonam a conversa. Além disso, há um módulo de supervisão em tempo real para que gestores acompanhem conversas específicas e intervenham quando necessário. Os dados ficam armazenados por 12 meses por padrão, com opção de retenção estendida.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <p class="section-tag" style="margin-bottom: 16px;">Próximo Passo</p>
+    <h2>Seu negócio atendendo 24h<br>a partir de <em>4 semanas</em></h2>
+    <p>Agende uma conversa gratuita de 60 minutos. Vamos analisar o volume de atendimento atual, os canais que você usa e projetar os resultados que um chatbot com IA pode gerar para o seu negócio — com números reais, não promessas vagas.</p>
+    <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/" class="btn-primary" style="font-size: 18px; padding: 18px 44px;">Agendar Consultoria Gratuita</a>
+    <p style="margin-top: 20px; font-size: 14px; color: var(--text-muted);">Sem compromisso. Diagnóstico honesto, mesmo que você não nos contrate.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="logo" style="font-size: 20px; margin-bottom: 16px; display: inline-block;">Bronks<span style="color: var(--text-secondary)">.IA</span></div>
+    <div class="footer-links">
+      <a href="https://bronks.ia.br">Início</a>
+      <a href="https://bronks.ia.br/ia-para-imobiliarias/">IA para Imobiliárias</a>
+      <a href="https://bronks.ia.br/chatbot-empresarial/">Chatbot Empresarial</a>
+      <a href="https://bronks.ia.br/automacao-de-processos/">Automação</a>
+      <a href="https://bronks.ia.br/blog/">Blog</a>
+      <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/">Consultoria</a>
+    </div>
+    <p>© 2026 Bronks IA — Consultoria em Inteligência Artificial · Rio de Janeiro, RJ · CNPJ 00.000.000/0001-00</p>
+    <p style="margin-top: 6px;"><a href="https://bronks.ia.br/privacidade/">Política de Privacidade</a> · <a href="https://bronks.ia.br/termos/">Termos de Uso</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
