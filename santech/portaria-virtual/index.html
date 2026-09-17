@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portaria Virtual Rio de Janeiro | Santech Segurança</title>
+  <meta name="description" content="Portaria virtual para condomínios no Rio de Janeiro. Reduza custos, aumente a segurança e monitore seu condomínio 24h por dia. Orçamento gratuito!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://santechseguranca.com.br/portaria-virtual/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portaria Virtual Rio de Janeiro | Santech Segurança">
+  <meta property="og:description" content="Portaria virtual 24h para condomínios no RJ. Economia de até 70% em relação ao porteiro humano. Câmeras IP, interfone IP e central de monitoramento.">
+  <meta property="og:url" content="https://santechseguranca.com.br/portaria-virtual/">
+  <meta property="og:site_name" content="Santech Segurança">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://santechseguranca.com.br/images/portaria-virtual-og.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portaria Virtual RJ | Santech Segurança">
+  <meta name="twitter:description" content="Portaria virtual 24h para condomínios no RJ. Economize até 70% e aumente a segurança.">
+
+  <!-- Schema.org JSON-LD: Service + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Portaria Virtual para Condomínios",
+    "description": "Serviço de portaria virtual com monitoramento 24 horas por dia para condomínios residenciais e comerciais no Rio de Janeiro. Inclui instalação de câmeras IP, interfone IP, reconhecimento facial e central de atendimento remota.",
+    "url": "https://santechseguranca.com.br/portaria-virtual/",
+    "areaServed": {
+      "@type": "City",
+      "name": "Rio de Janeiro"
+    },
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Santech Segurança",
+      "url": "https://santechseguranca.com.br",
+      "telephone": "+55-21-98888-7777",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "serviceType": "Portaria Virtual",
+    "category": "Segurança Eletrônica"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --dark-navy: #1a1a2e;
+      --navy-mid: #16213e;
+      --accent: #f39c12;
+      --accent-hover: #e67e22;
+      --white: #ffffff;
+      --light-bg: #f8f9fa;
+      --text-dark: #2c3e50;
+      --text-muted: #6c757d;
+      --border: #dee2e6;
+      --success: #27ae60;
+      --danger: #e74c3c;
+      --shadow: 0 4px 20px rgba(0,0,0,0.10);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-dark);
+      background: var(--white);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); }
+
+    /* HEADER */
+    header {
+      background: var(--dark-navy);
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+    .logo { font-size: 1.5rem; font-weight: 700; color: var(--white); }
+    .logo span { color: var(--accent); }
+    nav a { color: #ccc; margin-left: 22px; font-size: 0.9rem; transition: color 0.2s; }
+    nav a:hover { color: var(--accent); }
+    .btn-header {
+      background: var(--accent);
+      color: var(--dark-navy) !important;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 6px;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--dark-navy) 0%, #0f2040 60%, #1a1a2e 100%);
+      color: var(--white);
+      padding: 90px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      height: 60px;
+      background: var(--white);
+      clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(243,156,18,0.15);
+      border: 1px solid rgba(243,156,18,0.4);
+      color: var(--accent);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      max-width: 780px;
+      margin: 0 auto 20px;
+      line-height: 1.25;
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero p.subtitle {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 36px;
+      color: #ccd6f6;
+    }
+    .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--accent);
+      color: var(--dark-navy);
+      font-weight: 700;
+      padding: 14px 30px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--accent-hover); color: var(--dark-navy); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.45);
+      font-weight: 600;
+      padding: 12px 26px;
+      border-radius: 8px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+    .hero-metrics {
+      display: flex;
+      justify-content: center;
+      gap: 44px;
+      margin-top: 52px;
+      flex-wrap: wrap;
+    }
+    .metric { text-align: center; }
+    .metric-val { font-size: 2.2rem; font-weight: 800; color: var(--accent); }
+    .metric-label { font-size: 0.82rem; color: #aab; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* SECTIONS */
+    section { padding: 72px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      display: inline-block;
+      background: rgba(243,156,18,0.12);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    h2.section-title {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      font-weight: 800;
+      color: var(--dark-navy);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .section-intro { font-size: 1.02rem; color: var(--text-muted); max-width: 680px; margin-bottom: 40px; }
+
+    /* O QUE É */
+    .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .intro-visual {
+      background: var(--dark-navy);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      color: var(--white);
+    }
+    .intro-visual .big-icon { font-size: 5rem; margin-bottom: 16px; }
+    .intro-visual h3 { font-size: 1.1rem; font-weight: 700; color: var(--accent); margin-bottom: 12px; }
+    .intro-visual p { font-size: 0.9rem; color: #aab; line-height: 1.6; }
+
+    /* TABELA COMPARATIVA */
+    .table-bg { background: var(--light-bg); }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .compare-table th {
+      background: var(--dark-navy);
+      color: var(--white);
+      padding: 16px 20px;
+      text-align: left;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .compare-table th:first-child { border-right: 1px solid rgba(255,255,255,0.1); }
+    .compare-table th.accent-col { background: var(--accent); color: var(--dark-navy); }
+    .compare-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.91rem;
+      vertical-align: top;
+    }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:nth-child(even) td { background: #f9f9f9; }
+    .compare-table tr:nth-child(even) td.accent-td { background: rgba(243,156,18,0.06); }
+    .compare-table td.criterion { font-weight: 600; color: var(--dark-navy); }
+    .compare-table td.accent-td { color: var(--text-dark); }
+    .tag-good { color: var(--success); font-weight: 700; }
+    .tag-bad { color: var(--danger); font-weight: 700; }
+    .tag-neutral { color: #888; }
+
+    /* COMO FUNCIONA */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .process-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 28px 22px;
+      box-shadow: var(--shadow);
+      border-top: 4px solid var(--accent);
+      text-align: center;
+    }
+    .process-num {
+      width: 44px;
+      height: 44px;
+      background: var(--accent);
+      color: var(--dark-navy);
+      font-weight: 800;
+      font-size: 1.1rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .process-icon { font-size: 2rem; margin-bottom: 10px; }
+    .process-card h3 { font-size: 0.98rem; font-weight: 700; color: var(--dark-navy); margin-bottom: 8px; }
+    .process-card p { font-size: 0.88rem; color: var(--text-muted); }
+
+    /* TECNOLOGIAS */
+    .tech-bg { background: var(--dark-navy); color: var(--white); }
+    .tech-bg h2.section-title { color: var(--white); }
+    .tech-bg .section-intro { color: #aab; }
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .tech-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(243,156,18,0.2);
+      border-radius: 12px;
+      padding: 28px 22px;
+      transition: background 0.2s;
+    }
+    .tech-card:hover { background: rgba(243,156,18,0.08); }
+    .tech-icon { font-size: 2.2rem; margin-bottom: 12px; }
+    .tech-card h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .tech-card p { font-size: 0.88rem; color: #aab; line-height: 1.6; }
+
+    /* PARA QUAIS CONDOMÍNIOS */
+    .ideal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+    .ideal-card {
+      display: flex;
+      gap: 14px;
+      background: var(--white);
+      border-radius: 10px;
+      padding: 22px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      align-items: flex-start;
+    }
+    .ideal-icon-wrap {
+      min-width: 48px;
+      height: 48px;
+      background: rgba(243,156,18,0.12);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+    }
+    .ideal-card h3 { font-size: 0.97rem; font-weight: 700; color: var(--dark-navy); margin-bottom: 6px; }
+    .ideal-card p { font-size: 0.88rem; color: var(--text-muted); }
+
+    /* PREÇOS */
+    .pricing-bg { background: var(--light-bg); }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .price-card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 36px 28px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      position: relative;
+    }
+    .price-card.featured {
+      border: 2px solid var(--accent);
+      transform: scale(1.03);
+    }
+    .price-card .popular-badge {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: var(--dark-navy);
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 4px 16px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .price-plan { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: 8px; }
+    .price-range { font-size: 1.8rem; font-weight: 800; color: var(--dark-navy); margin-bottom: 6px; }
+    .price-desc { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; }
+    .price-features { list-style: none; text-align: left; margin-bottom: 28px; }
+    .price-features li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.88rem; color: var(--text-dark); display: flex; gap: 8px; }
+    .price-features li::before { content: '✓'; color: var(--success); font-weight: 700; flex-shrink: 0; }
+    .btn-price {
+      width: 100%;
+      padding: 13px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: block;
+      text-align: center;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-price-primary { background: var(--accent); color: var(--dark-navy); }
+    .btn-price-primary:hover { background: var(--accent-hover); color: var(--dark-navy); transform: translateY(-2px); }
+    .btn-price-outline { border: 2px solid var(--border); color: var(--text-dark); background: transparent; }
+    .btn-price-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* FAQ */
+    .faq-list { max-width: 780px; }
+    .faq-item { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+    .faq-question {
+      background: var(--white);
+      padding: 18px 24px;
+      font-weight: 700;
+      color: var(--dark-navy);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.97rem;
+    }
+    .faq-question::after { content: '+'; font-size: 1.4rem; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
+    .faq-answer { padding: 0 24px 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.7; }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, var(--dark-navy), #0f2040);
+      color: var(--white);
+      text-align: center;
+      padding: 80px 24px;
+    }
+    .cta-section h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 16px; }
+    .cta-section p { color: #aab; font-size: 1.05rem; max-width: 580px; margin: 0 auto 36px; }
+    .btn-whatsapp {
+      background: #25d366;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 16px 36px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 15px rgba(37,211,102,0.35);
+    }
+    .btn-whatsapp:hover { background: #1fb558; color: var(--white); transform: translateY(-2px); }
+
+    /* WHATSAPP FLOAT */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+      transition: transform 0.2s;
+      animation: pulse 2.5s infinite;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); }
+    .whatsapp-float svg { width: 32px; height: 32px; fill: var(--white); }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
+      50% { box-shadow: 0 4px 30px rgba(37,211,102,0.8); }
+    }
+
+    /* FOOTER */
+    footer { background: #111120; color: #99aabb; padding: 40px 24px; text-align: center; font-size: 0.87rem; }
+    footer .footer-logo { font-size: 1.3rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    footer .footer-logo span { color: var(--accent); }
+
+    @media (max-width: 700px) {
+      nav { display: none; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .price-card.featured { transform: scale(1); }
+    }
+    @media (max-width: 480px) {
+      .hero { padding: 60px 16px 70px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <div class="logo">San<span>tech</span> Segurança</div>
+    <nav>
+      <a href="https://santechseguranca.com.br">Home</a>
+      <a href="https://santechseguranca.com.br/instalacao-cameras/">Câmeras</a>
+      <a href="https://santechseguranca.com.br/portaria-virtual/" style="color:var(--accent);">Portaria Virtual</a>
+      <a href="https://wa.me/5521988887777" class="btn-header">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="badge">🏢 Solução Completa para Condomínios</div>
+    <h1>Portaria Virtual para Condomínios no <span>Rio de Janeiro</span></h1>
+    <p class="subtitle">Reduza custos operacionais em até 70%, aumente a segurança e modernize seu condomínio com portaria remota monitorada 24 horas por dia, 7 dias por semana.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/5521988887777?text=Quero%20saber%20sobre%20portaria%20virtual%20para%20meu%20condom%C3%ADnio" class="btn-primary">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.136.557 4.14 1.535 5.878L0 24l6.345-1.517A11.927 11.927 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.959 0-3.8-.5-5.41-1.378L3 21.5l.92-3.481A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Falar com Especialista
+      </a>
+      <a href="tel:+5521988887777" class="btn-outline">📞 (21) 98888-7777</a>
+    </div>
+    <div class="hero-metrics">
+      <div class="metric"><div class="metric-val">70%</div><div class="metric-label">Economia média</div></div>
+      <div class="metric"><div class="metric-val">24h</div><div class="metric-label">Monitoramento</div></div>
+      <div class="metric"><div class="metric-val">300+</div><div class="metric-label">Condomínios atendidos</div></div>
+      <div class="metric"><div class="metric-val">15s</div><div class="metric-label">Tempo de resposta</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- O que é portaria virtual -->
+<section>
+  <div class="container">
+    <div class="intro-grid">
+      <div>
+        <span class="section-label">Entenda o Conceito</span>
+        <h2 class="section-title">O Que é Portaria Virtual?</h2>
+        <p>Portaria virtual é uma modalidade de controle de acesso em que o atendimento ao visitante e o monitoramento do condomínio são realizados remotamente, por operadores especializados em uma central de telemonitoramento, 24 horas por dia.</p>
+        <p style="margin-top:14px;">Em vez de um porteiro físico na guarita, o condomínio utiliza tecnologia de ponta: câmeras IP de alta definição, interfones com videoconferência IP, sistemas de reconhecimento facial, leitura de QR Code, controle de acesso por senha ou tag RFID — tudo integrado e monitorado em tempo real por profissionais treinados.</p>
+        <p style="margin-top:14px;">O modelo já é amplamente utilizado nos principais centros urbanos do Brasil e representa o futuro da segurança condominial. Com a Santech, seu condomínio no Rio de Janeiro tem acesso a essa tecnologia com instalação profissional e suporte técnico local.</p>
+        <a href="https://wa.me/5521988887777?text=Quero%20saber%20sobre%20portaria%20virtual%20para%20meu%20condom%C3%ADnio" class="btn-primary" style="margin-top:24px; display:inline-flex;">Solicitar Apresentação Gratuita</a>
+      </div>
+      <div class="intro-visual">
+        <div class="big-icon">🏢</div>
+        <h3>Como o Operador Remoto Atua</h3>
+        <p>O operador vê a entrada do condomínio em tempo real pelo monitor, conversa com o visitante pelo interfone IP, verifica a identidade, consulta a lista de autorizados e aciona a abertura do portão remotamente — tudo em menos de 15 segundos.</p>
+        <div style="margin-top:20px; display:grid; grid-template-columns:1fr 1fr; gap:12px; text-align:left;">
+          <div style="background:rgba(243,156,18,0.1); border-radius:8px; padding:12px;">
+            <div style="font-size:1.4rem; margin-bottom:4px;">📡</div>
+            <div style="font-size:0.82rem; color:#ccd6f6;">Conexão segura criptografada</div>
+          </div>
+          <div style="background:rgba(243,156,18,0.1); border-radius:8px; padding:12px;">
+            <div style="font-size:1.4rem; margin-bottom:4px;">🔒</div>
+            <div style="font-size:0.82rem; color:#ccd6f6;">Backup de energia na central</div>
+          </div>
+          <div style="background:rgba(243,156,18,0.1); border-radius:8px; padding:12px;">
+            <div style="font-size:1.4rem; margin-bottom:4px;">📱</div>
+            <div style="font-size:0.82rem; color:#ccd6f6;">App para moradores</div>
+          </div>
+          <div style="background:rgba(243,156,18,0.1); border-radius:8px; padding:12px;">
+            <div style="font-size:1.4rem; margin-bottom:4px;">📋</div>
+            <div style="font-size:0.82rem; color:#ccd6f6;">Log de todos os acessos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tabela comparativa -->
+<section class="table-bg">
+  <div class="container">
+    <span class="section-label">Comparativo</span>
+    <h2 class="section-title">Portaria Virtual vs. Porteiro Humano</h2>
+    <p class="section-intro">Veja uma comparação direta entre os dois modelos e entenda por que a portaria virtual é a escolha mais inteligente para a maioria dos condomínios cariocas:</p>
+    <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Critério</th>
+            <th>🧑 Porteiro Humano</th>
+            <th class="accent-col">🏢 Portaria Virtual (Santech)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="criterion">Custo mensal</td>
+            <td>R$ 4.000 a R$ 8.000 (salário + encargos + benefícios por turno)</td>
+            <td class="accent-td"><span class="tag-good">R$ 800 a R$ 2.500</span> — mensalidade do serviço + infraestrutura já instalada</td>
+          </tr>
+          <tr>
+            <td class="criterion">Cobertura de horário</td>
+            <td><span class="tag-bad">Requer troca de turno</span>, férias e folgas. Risco de ausência.</td>
+            <td class="accent-td"><span class="tag-good">24h / 7 dias por semana</span>, incluindo feriados, sem interrupções</td>
+          </tr>
+          <tr>
+            <td class="criterion">Segurança</td>
+            <td>Sujeito a coerção física, "sequestro relâmpago" na portaria e erros humanos sob pressão</td>
+            <td class="accent-td"><span class="tag-good">Operador remoto e protegido</span> — não pode ser coagido presencialmente</td>
+          </tr>
+          <tr>
+            <td class="criterion">Reconhecimento facial</td>
+            <td><span class="tag-bad">Não disponível</span> — identificação visual subjetiva</td>
+            <td class="accent-td"><span class="tag-good">Sim</span> — câmeras com IA reconhecem moradores automaticamente</td>
+          </tr>
+          <tr>
+            <td class="criterion">Acesso pelo celular</td>
+            <td><span class="tag-neutral">Não</span></td>
+            <td class="accent-td"><span class="tag-good">Sim</span> — morador abre o portão pelo app e recebe visitantes remotamente</td>
+          </tr>
+          <tr>
+            <td class="criterion">Histórico de acessos</td>
+            <td><span class="tag-neutral">Parcial</span> — depende de registro manual no livro</td>
+            <td class="accent-td"><span class="tag-good">100% digitalizado</span> — log completo com foto, hora e identificação</td>
+          </tr>
+          <tr>
+            <td class="criterion">Férias e afastamentos</td>
+            <td><span class="tag-bad">Custo extra</span> com substituto, horas extras e encargos</td>
+            <td class="accent-td"><span class="tag-good">Sem custo adicional</span> — central sempre em operação</td>
+          </tr>
+          <tr>
+            <td class="criterion">Instalação inicial</td>
+            <td>Não requer investimento em tecnologia</td>
+            <td class="accent-td"><span class="tag-neutral">Investimento em câmeras, interfone IP e controlador de acesso</span> — amortizado em 4 a 8 meses</td>
+          </tr>
+          <tr>
+            <td class="criterion">Retorno do investimento</td>
+            <td><span class="tag-bad">Custo crescente</span> com dissídios e reajustes anuais</td>
+            <td class="accent-td"><span class="tag-good">ROI em menos de 1 ano</span> — economia acumulada supera o investimento rapidamente</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Como funciona o sistema -->
+<section>
+  <div class="container">
+    <span class="section-label">Passo a Passo</span>
+    <h2 class="section-title">Como Funciona o Sistema de Portaria Virtual</h2>
+    <p class="section-intro">O funcionamento da portaria virtual é simples, seguro e eficiente. Entenda o fluxo completo desde a chegada do visitante até a liberação de acesso:</p>
+    <div class="process-grid">
+      <div class="process-card">
+        <div class="process-num">1</div>
+        <div class="process-icon">🔔</div>
+        <h3>Visitante aciona o interfone</h3>
+        <p>O visitante aperta o botão do interfone IP na entrada. A chamada é enviada diretamente à central de telemonitoramento e, simultaneamente, ao app do morador.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">2</div>
+        <div class="process-icon">📹</div>
+        <h3>Operador visualiza a entrada</h3>
+        <p>O operador remoto vê o visitante em tempo real por câmeras HD, conversa via áudio e vídeo e verifica a identidade com reconhecimento facial ou documento digital.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">3</div>
+        <div class="process-icon">✅</div>
+        <h3>Consulta e autorização</h3>
+        <p>O operador consulta a lista de visitantes esperados, contata o morador pelo app se necessário e verifica se o acesso é autorizado conforme as regras do condomínio.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">4</div>
+        <div class="process-icon">🚪</div>
+        <h3>Liberação do acesso</h3>
+        <p>Autorizado o acesso, o operador aciona remotamente o acionamento do portão ou cancela, registra o acesso com foto e carimbo de tempo no sistema.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">5</div>
+        <div class="process-icon">📊</div>
+        <h3>Log e relatório</h3>
+        <p>Todo acesso — de moradores, visitantes, entregadores e prestadores de serviço — é registrado automaticamente. O síndico acessa relatórios completos pelo portal web.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tecnologias -->
+<section class="tech-bg">
+  <div class="container">
+    <span class="section-label" style="background:rgba(243,156,18,0.2);">Tecnologia</span>
+    <h2 class="section-title">Tecnologias Utilizadas na Portaria Virtual</h2>
+    <p class="section-intro">Nossa solução de portaria virtual integra as mais avançadas tecnologias de segurança eletrônica do mercado, instaladas e configuradas pela equipe técnica da Santech:</p>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="tech-icon">📷</div>
+        <h3>Câmeras IP Full HD / 4K</h3>
+        <p>Câmeras de rede com resolução de 2MP a 8MP, visão noturna colorida, WDR para contraluz e ângulo amplo para cobrir toda a área da entrada, garagem e corredores com imagens cristalinas.</p>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🤖</div>
+        <h3>Reconhecimento Facial</h3>
+        <p>Módulos de IA embarcados nas câmeras reconhecem automaticamente o rosto dos moradores cadastrados e liberam o acesso sem necessidade de acionamento manual — praticidade máxima.</p>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">📞</div>
+        <h3>Interfone IP com Vídeo</h3>
+        <p>Interfones com tela colorida, câmera HD embutida e áudio bidirecional de alta qualidade. Comunicação direta entre visitante, operador remoto e morador via app — tudo por protocolo SIP/VoIP.</p>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🔐</div>
+        <h3>Central de Acesso 24h</h3>
+        <p>Central de telemonitoramento com redundância de energia (no-break e gerador), links de internet dedicados e operadores especializados em controle de acesso condominial.</p>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">📱</div>
+        <h3>Aplicativo do Morador</h3>
+        <p>App gratuito para iOS e Android que permite ao morador ver a câmera da entrada, atender chamadas do interfone, abrir o portão remotamente e autorizar visitantes com antecedência.</p>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🏷️</div>
+        <h3>QR Code e Tag RFID</h3>
+        <p>Moradores e funcionários podem acessar o condomínio via QR Code pelo celular ou tag RFID. Sistema de biometria digital disponível como complemento ao reconhecimento facial.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Para quais condomínios -->
+<section>
+  <div class="container">
+    <span class="section-label">Perfil Ideal</span>
+    <h2 class="section-title">Para Quais Condomínios a Portaria Virtual é Ideal?</h2>
+    <p class="section-intro">A portaria virtual é uma solução versátil que atende diferentes perfis de condomínio. Conheça os casos onde a economia e a segurança são ainda mais evidentes:</p>
+    <div class="ideal-grid">
+      <div class="ideal-card">
+        <div class="ideal-icon-wrap">🏢</div>
+        <div>
+          <h3>Condomínios Residenciais Verticais</h3>
+          <p>Edifícios com 20 a 200 unidades que atualmente utilizam porteiros em turnos encontram na portaria virtual a maior redução de custos — economia de R$ 5.000 a R$ 15.000 por mês.</p>
+        </div>
+      </div>
+      <div class="ideal-card">
+        <div class="ideal-icon-wrap">🏘️</div>
+        <div>
+          <h3>Condomínios Horizontais e Fechados</h3>
+          <p>Casas em condomínio fechado com múltiplos acessos se beneficiam do controle centralizado: todas as entradas monitoradas por um único operador remoto, com custo fixo mensal.</p>
+        </div>
+      </div>
+      <div class="ideal-card">
+        <div class="ideal-icon-wrap">🏗️</div>
+        <div>
+          <h3>Condomínios em Construção ou Retrofit</h3>
+          <p>Empreendimentos novos podem projetar a portaria virtual desde o início, evitando a necessidade de guarita física e reduzindo custos de construção civil na área da portaria.</p>
+        </div>
+      </div>
+      <div class="ideal-card">
+        <div class="ideal-icon-wrap">🏬</div>
+        <div>
+          <h3>Condomínios Comerciais e Mistos</h3>
+          <p>Edifícios comerciais com grande fluxo de visitantes e prestadores externos se beneficiam do registro automatizado e do log completo de acessos por CPF e foto.</p>
+        </div>
+      </div>
+      <div class="ideal-card">
+        <div class="ideal-icon-wrap">💰</div>
+        <div>
+          <h3>Condomínios com Cota Alta</h3>
+          <p>Se a folha de pessoal representa mais de 30% das despesas condominiais, a portaria virtual é urgente. Em média, o ROI completo é atingido em 8 a 12 meses após a implantação.</p>
+        </div>
+      </div>
+      <div class="ideal-card">
+        <div class="ideal-icon-wrap">👴</div>
+        <div>
+          <h3>Condomínios com Perfil Sênior</h3>
+          <p>Moradores idosos valorizam o atendimento humano pelo interfone — a portaria virtual oferece exatamente isso, sem presença física, mas com atendimento personalizado e cuidadoso 24h.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Preços -->
+<section class="pricing-bg">
+  <div class="container">
+    <span class="section-label">Investimento</span>
+    <h2 class="section-title">Quanto Custa a Portaria Virtual?</h2>
+    <p class="section-intro">O investimento é dividido em duas partes: a implantação (câmeras, interfones e equipamentos) e a mensalidade do monitoramento. As faixas abaixo são estimativas — entre em contato para um orçamento preciso.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-plan">Pequeno Condomínio</div>
+        <div class="price-range">R$ 800–1.500<span style="font-size:0.9rem;font-weight:400;">/mês</span></div>
+        <div class="price-desc">Até 30 unidades — 1 acesso monitorado</div>
+        <ul class="price-features">
+          <li>1 câmera de entrada HD</li>
+          <li>1 interfone IP com vídeo</li>
+          <li>Reconhecimento facial básico</li>
+          <li>App para moradores</li>
+          <li>Monitoramento 24h/7</li>
+          <li>Log de acessos digitalizado</li>
+        </ul>
+        <a href="https://wa.me/5521988887777?text=Quero%20saber%20sobre%20portaria%20virtual%20para%20meu%20condom%C3%ADnio" class="btn-price btn-price-outline">Solicitar Orçamento</a>
+      </div>
+      <div class="price-card featured">
+        <div class="popular-badge">MAIS SOLICITADO</div>
+        <div class="price-plan">Condomínio Médio</div>
+        <div class="price-range">R$ 1.500–3.000<span style="font-size:0.9rem;font-weight:400;">/mês</span></div>
+        <div class="price-desc">30 a 100 unidades — 2 a 3 acessos</div>
+        <ul class="price-features">
+          <li>2 a 4 câmeras HD/4K</li>
+          <li>2 interfones IP + garagem</li>
+          <li>Reconhecimento facial avançado</li>
+          <li>App com autorização remota</li>
+          <li>Leitor de QR Code e RFID</li>
+          <li>Relatórios para síndico</li>
+          <li>Suporte técnico prioritário</li>
+        </ul>
+        <a href="https://wa.me/5521988887777?text=Quero%20saber%20sobre%20portaria%20virtual%20para%20meu%20condom%C3%ADnio" class="btn-price btn-price-primary">Quero Este Plano</a>
+      </div>
+      <div class="price-card">
+        <div class="price-plan">Grande Condomínio</div>
+        <div class="price-range">R$ 3.000+<span style="font-size:0.9rem;font-weight:400;">/mês</span></div>
+        <div class="price-desc">100+ unidades — múltiplos acessos</div>
+        <ul class="price-features">
+          <li>Câmeras ilimitadas por contrato</li>
+          <li>Múltiplos interfones IP</li>
+          <li>IA de reconhecimento de placas (LPR)</li>
+          <li>Integração com cancelas automáticas</li>
+          <li>Controle de entrega (delivery)</li>
+          <li>Gerente de conta dedicado</li>
+          <li>SLA garantido em contrato</li>
+        </ul>
+        <a href="https://wa.me/5521988887777?text=Quero%20saber%20sobre%20portaria%20virtual%20para%20meu%20condom%C3%ADnio" class="btn-price btn-price-outline">Falar com Especialista</a>
+      </div>
+    </div>
+    <p style="margin-top:28px; font-size:0.88rem; color:var(--text-muted); text-align:center;">* Valores aproximados. O orçamento final depende do número de acessos, câmeras necessárias e infraestrutura existente. Visita técnica gratuita para levantamento preciso.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <span class="section-label">Dúvidas Frequentes</span>
+    <h2 class="section-title">Perguntas Frequentes sobre Portaria Virtual</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">A portaria virtual funciona em caso de queda de internet no condomínio?</div>
+        <div class="faq-answer">Sim. Nossa solução inclui link de internet dedicado redundante no condomínio, com failover automático para 4G/5G em caso de falha do link principal. A central de monitoramento também conta com links redundantes e gerador de energia. O sistema foi projetado para ter disponibilidade de 99,9% ao mês.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Como os entregadores de delivery e correspondências são atendidos?</div>
+        <div class="faq-answer">O operador remoto atende o entregador pelo interfone, verifica o pedido no sistema (integrado com principais apps de entrega), confirma o destinatário pelo app e libera o acesso até um ponto de coleta seguro ou solicita ao morador a confirmação. Todo o processo é registrado com foto do entregador e dos volumes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Precisa de aprovação em assembleia para implantar portaria virtual?</div>
+        <div class="faq-answer">Sim, a mudança de porteiro humano para portaria virtual requer aprovação em assembleia, geralmente com quórum de maioria simples. A Santech oferece suporte completo para a apresentação: material explicativo, apresentação técnica ao síndico e conselho, demonstração ao vivo do sistema e planilha comparativa de custos para convencimento dos condôminos.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Moradores idosos conseguem usar o sistema?</div>
+        <div class="faq-answer">Sim. O sistema foi desenvolvido pensando na acessibilidade. Moradores idosos continuam sendo atendidos por uma voz humana pelo interfone — exatamente como no modelo tradicional, mas com o operador sendo remoto. O reconhecimento facial automatiza o acesso sem necessidade de nenhuma interação tecnológica. O app é opcional para quem prefere.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Qual o prazo de instalação e início de operação?</div>
+        <div class="faq-answer">Após a aprovação em assembleia e assinatura do contrato, o prazo médio de instalação é de 3 a 7 dias úteis, dependendo da complexidade do condomínio. O treinamento do síndico, dos funcionários remanescentes e dos moradores é incluído no projeto, garantindo uma transição tranquila para o novo modelo.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Final -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Modernize a Portaria do Seu Condomínio Hoje</h2>
+    <p>Fale com um de nossos consultores, receba uma proposta personalizada e descubra quanto seu condomínio pode economizar com a portaria virtual da Santech.</p>
+    <a href="https://wa.me/5521988887777?text=Quero%20saber%20sobre%20portaria%20virtual%20para%20meu%20condom%C3%ADnio" class="btn-whatsapp">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.136.557 4.14 1.535 5.878L0 24l6.345-1.517A11.927 11.927 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.959 0-3.8-.5-5.41-1.378L3 21.5l.92-3.481A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Quero Saber Mais pelo WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-logo">San<span>tech</span> Segurança</div>
+  <p>Rio de Janeiro, RJ — (21) 98888-7777</p>
+  <p style="margin-top:8px;">© 2026 Santech Segurança. Todos os direitos reservados.</p>
+</footer>
+
+<!-- WhatsApp Flutuante -->
+<a href="https://wa.me/5521988887777?text=Quero%20saber%20sobre%20portaria%20virtual%20para%20meu%20condom%C3%ADnio" class="whatsapp-float" title="WhatsApp" aria-label="Fale pelo WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.136.557 4.14 1.535 5.878L0 24l6.345-1.517A11.927 11.927 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.959 0-3.8-.5-5.41-1.378L3 21.5l.92-3.481A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+</body>
+</html>
