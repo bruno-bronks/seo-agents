@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Imobiliárias e Corretores | Bronks IA Rio de Janeiro</title>
+  <meta name="description" content="Corretores e imobiliárias no RJ aumentam 3x a conversão com IA da Bronks. Qualificação de leads, chatbot 24h e CRM inteligente. Agende consultoria gratuita.">
+  <link rel="canonical" href="https://bronks.ia.br/ia-para-imobiliarias/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IA para Imobiliárias e Corretores | Bronks IA Rio de Janeiro">
+  <meta property="og:description" content="Corretores e imobiliárias no RJ aumentam 3x a conversão com IA da Bronks. Qualificação de leads, chatbot 24h e CRM inteligente. Agende consultoria gratuita.">
+  <meta property="og:url" content="https://bronks.ia.br/ia-para-imobiliarias/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://bronks.ia.br/assets/og-ia-imobiliarias.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IA para Imobiliárias e Corretores | Bronks IA RJ">
+  <meta name="twitter:description" content="Qualificação de leads, chatbot 24h e CRM inteligente para o mercado imobiliário carioca.">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IA para Imobiliárias e Corretores",
+    "description": "Soluções de inteligência artificial para imobiliárias e corretores autônomos: qualificação automática de leads, chatbot de atendimento 24 horas, análise preditiva de mercado imobiliário, automação de documentação e CRM inteligente integrado aos principais portais.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Rio de Janeiro"
+    },
+    "serviceType": "Inteligência Artificial para Mercado Imobiliário",
+    "url": "https://bronks.ia.br/ia-para-imobiliarias/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-primary: #0a0e1a;
+      --bg-secondary: #111827;
+      --bg-card: #1a2236;
+      --accent-blue: #00b4f0;
+      --accent-cyan: #00e5ff;
+      --accent-glow: rgba(0, 180, 240, 0.15);
+      --text-primary: #e8edf5;
+      --text-secondary: #9aabc2;
+      --text-muted: #5a7090;
+      --border: #1e3050;
+      --success: #00c896;
+      --warning: #f0a030;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    a { color: var(--accent-blue); text-decoration: none; }
+    a:hover { color: var(--accent-cyan); }
+
+    /* NAVIGATION */
+    nav {
+      background: rgba(10, 14, 26, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--accent-cyan);
+      letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--text-primary); }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a { color: var(--text-secondary); font-size: 15px; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent-cyan); }
+    .nav-cta {
+      background: var(--accent-blue);
+      color: #fff !important;
+      padding: 9px 22px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .nav-cta:hover { background: var(--accent-cyan); color: var(--bg-primary) !important; box-shadow: 0 0 20px rgba(0, 229, 255, 0.35); }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0a0e1a 0%, #0d1529 50%, #091522 100%);
+      padding: 100px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; left: 50%; transform: translateX(-50%);
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(0, 180, 240, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner { max-width: 860px; margin: 0 auto; position: relative; }
+    .hero-badge {
+      display: inline-block;
+      background: var(--accent-glow);
+      border: 1px solid rgba(0, 180, 240, 0.3);
+      color: var(--accent-blue);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 28px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--text-primary);
+      margin-bottom: 24px;
+      letter-spacing: -1px;
+    }
+    h1 em { font-style: normal; color: var(--accent-cyan); }
+    .hero-sub {
+      font-size: 19px;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin: 0 auto 40px;
+      line-height: 1.65;
+    }
+    .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      color: var(--bg-primary);
+      padding: 16px 36px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0, 180, 240, 0.4); color: var(--bg-primary); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+      padding: 15px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--accent-blue); color: var(--accent-blue); }
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num { font-size: 36px; font-weight: 800; color: var(--accent-cyan); display: block; }
+    .stat-label { font-size: 14px; color: var(--text-muted); }
+
+    /* SECTIONS */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1140px; margin: 0 auto; }
+    .section-tag {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent-blue);
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    h2 em { font-style: normal; color: var(--accent-cyan); }
+    .section-lead {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 640px;
+      margin-bottom: 56px;
+      line-height: 1.7;
+    }
+    h3 { font-size: 20px; font-weight: 700; color: var(--text-primary); margin-bottom: 10px; }
+
+    /* CHALLENGES */
+    .challenges-bg { background: var(--bg-secondary); }
+    .challenges-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .challenge-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .challenge-card:hover { border-color: var(--accent-blue); transform: translateY(-3px); }
+    .challenge-icon { font-size: 30px; margin-bottom: 14px; }
+    .challenge-card p { color: var(--text-secondary); font-size: 15px; line-height: 1.65; margin-top: 8px; }
+
+    /* HOW IA TRANSFORMS */
+    .transform-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .transform-grid { grid-template-columns: 1fr; } }
+    .transform-text p { color: var(--text-secondary); margin-bottom: 20px; line-height: 1.8; }
+    .transform-text ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .transform-text ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--text-secondary);
+      font-size: 16px;
+    }
+    .transform-text ul li::before {
+      content: '→';
+      color: var(--accent-cyan);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .transform-visual {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px;
+    }
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .metric-row:last-child { border-bottom: none; }
+    .metric-label { color: var(--text-secondary); font-size: 15px; }
+    .metric-val { font-weight: 700; font-size: 18px; color: var(--accent-cyan); }
+    .metric-change { font-size: 13px; color: var(--success); margin-left: 8px; }
+
+    /* USE CASES */
+    .usecases-bg { background: var(--bg-secondary); }
+    .usecases-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .usecase-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .usecase-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+    }
+    .usecase-card:hover { border-color: var(--accent-blue); }
+    .usecase-num { font-size: 42px; font-weight: 900; color: var(--accent-glow); position: absolute; top: 16px; right: 20px; line-height: 1; }
+    .usecase-card h3 { color: var(--accent-cyan); margin-bottom: 12px; }
+    .usecase-card p { color: var(--text-secondary); font-size: 15px; line-height: 1.7; margin-bottom: 16px; }
+    .usecase-result {
+      background: rgba(0, 200, 150, 0.08);
+      border: 1px solid rgba(0, 200, 150, 0.2);
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 14px;
+      color: var(--success);
+      font-weight: 600;
+    }
+
+    /* WHY BRONKS */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .why-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      text-align: center;
+    }
+    .why-icon { font-size: 36px; margin-bottom: 16px; }
+    .why-card p { color: var(--text-secondary); font-size: 15px; margin-top: 8px; }
+
+    /* HOW IT WORKS */
+    .steps-bg { background: var(--bg-secondary); }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      position: relative;
+    }
+    @media (max-width: 768px) { .steps-grid { grid-template-columns: 1fr; } }
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px;
+      text-align: center;
+    }
+    .step-num {
+      width: 52px; height: 52px;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 800; color: var(--bg-primary);
+      margin: 0 auto 20px;
+    }
+    .step-card p { color: var(--text-secondary); font-size: 15px; line-height: 1.7; margin-top: 10px; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 16px; max-width: 820px; margin: 0 auto; }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 22px 28px;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--text-primary);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-q::after { content: '+'; color: var(--accent-cyan); font-size: 22px; flex-shrink: 0; }
+    .faq-a {
+      padding: 0 28px 22px;
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, #0d1529 0%, #091e3a 100%);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 100px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(0, 180, 240, 0.1) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .cta-inner { max-width: 680px; margin: 0 auto; position: relative; }
+    .cta-section h2 { margin-bottom: 20px; }
+    .cta-section p { color: var(--text-secondary); font-size: 18px; margin-bottom: 40px; }
+
+    /* FOOTER */
+    footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+      text-align: center;
+    }
+    .footer-inner { max-width: 1140px; margin: 0 auto; }
+    footer p { color: var(--text-muted); font-size: 14px; margin-top: 12px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); font-size: 14px; }
+    .footer-links a:hover { color: var(--accent-blue); }
+
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .hero-stats { gap: 28px; }
+      .steps-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a href="https://bronks.ia.br" class="logo">Bronks<span>.IA</span></a>
+    <div class="nav-links">
+      <a href="https://bronks.ia.br/chatbot-empresarial/">Chatbot IA</a>
+      <a href="https://bronks.ia.br/automacao-de-processos/">Automação</a>
+      <a href="https://bronks.ia.br/blog/">Blog</a>
+      <a href="https://bronks.ia.br/sobre/">Sobre</a>
+      <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/" class="nav-cta">Consultoria Gratuita</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-badge">Mercado Imobiliário · Rio de Janeiro</span>
+    <h1>IA para Imobiliárias e Corretores<br><em>no Rio de Janeiro</em></h1>
+    <p class="hero-sub">
+      Transforme seu processo comercial com inteligência artificial: qualifique leads automaticamente, atenda clientes 24 horas por dia e feche mais negócios enquanto você dorme — tudo integrado aos portais que você já usa.
+    </p>
+    <div class="hero-actions">
+      <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/" class="btn-primary">Agendar Consultoria Gratuita</a>
+      <a href="#casos-de-uso" class="btn-secondary">Ver casos de uso</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">3×</span><span class="stat-label">mais conversão de leads</span></div>
+      <div class="stat"><span class="stat-num">80%</span><span class="stat-label">das perguntas respondidas por IA</span></div>
+      <div class="stat"><span class="stat-num">24h</span><span class="stat-label">atendimento ininterrupto</span></div>
+      <div class="stat"><span class="stat-num">-60%</span><span class="stat-label">tempo em tarefas administrativas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DESAFIOS DO MERCADO IMOBILIÁRIO -->
+<section class="challenges-bg">
+  <div class="section-inner">
+    <p class="section-tag">Os Principais Obstáculos</p>
+    <h2>Por que o mercado imobiliário<br>precisa de <em>IA agora</em></h2>
+    <p class="section-lead">
+      O corretor moderno enfrenta uma contradição cruel: há mais leads disponíveis do que nunca, mas a maioria se perde por falta de resposta rápida, follow-up inconsistente e processos manuais que consomem horas preciosas.
+    </p>
+    <div class="challenges-grid">
+      <div class="challenge-card">
+        <div class="challenge-icon">⏱️</div>
+        <h3>Tempo de resposta lento</h3>
+        <p>Pesquisas mostram que leads respondidos em menos de 5 minutos têm 9 vezes mais chance de converter. A maioria dos corretores demora horas — ou dias. A IA responde em segundos, a qualquer hora.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">📋</div>
+        <h3>Excesso de burocracia</h3>
+        <p>Contratos, documentação, análise de crédito, vistorias, registros em cartório — o corretor passa mais tempo em papelada do que em negociação. A automação elimina até 70% dessas tarefas repetitivas.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">🔍</div>
+        <h3>Leads não qualificados</h3>
+        <p>Portais como ZAP, OLX e Viva Real geram volume, mas não qualidade. Sem triagem inteligente, o corretor desperdiça energia em prospects que não têm perfil, renda ou intenção real de compra.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">📉</div>
+        <h3>Follow-up negligenciado</h3>
+        <p>Estudos do setor indicam que 80% das vendas imobiliárias exigem ao menos cinco contatos. A maioria dos corretores desiste após dois. CRM com IA garante que nenhum lead seja abandonado sem motivo real.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">🌆</div>
+        <h3>Mercado carioca altamente competitivo</h3>
+        <p>O Rio de Janeiro concentra alguns dos mercados imobiliários mais disputados do Brasil — Barra da Tijuca, Ipanema, Leblon, São Conrado. Quem responde mais rápido e de forma mais precisa sai na frente.</p>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">📊</div>
+        <h3>Falta de dados para decisão</h3>
+        <p>Precificar um imóvel sem dados comparativos é arriscado. A IA consolida histórico de transações, valorização por bairro, índices de liquidez e variáveis macroeconômicas para embasar cada decisão.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO A IA TRANSFORMA O SETOR -->
+<section>
+  <div class="section-inner">
+    <div class="transform-grid">
+      <div class="transform-text">
+        <p class="section-tag">Transformação Real</p>
+        <h2>Como a IA muda a<br><em>rotina do corretor</em></h2>
+        <p>Implementar inteligência artificial no setor imobiliário não é sobre substituir o corretor — é sobre ampliar sua capacidade de atender mais clientes com a mesma energia, sem sacrificar a qualidade da experiência.</p>
+        <p>A Bronks IA projeta e implementa sistemas que se integram ao fluxo existente da sua imobiliária: o corretor continua sendo o rosto da negociação, mas com todo o trabalho de triagem, documentação e follow-up sendo feito pela máquina no background.</p>
+        <ul>
+          <li>Triagem automática de leads por renda declarada, intenção de compra e localização preferida</li>
+          <li>Agendamento automático de visitas com confirmação por WhatsApp ou e-mail</li>
+          <li>Geração de propostas e minutas de contrato com templates jurídicos validados</li>
+          <li>Análise de viabilidade de financiamento com simulação em tempo real</li>
+          <li>Relatório semanal de pipeline com probabilidade de fechamento por negócio</li>
+          <li>Integração nativa com portais: ZAP Imóveis, Viva Real, OLX, Imovelweb</li>
+        </ul>
+      </div>
+      <div class="transform-visual">
+        <h3 style="margin-bottom: 24px; color: var(--accent-cyan);">Resultados típicos após 90 dias</h3>
+        <div class="metric-row">
+          <span class="metric-label">Taxa de resposta a leads</span>
+          <span class="metric-val">98%<span class="metric-change">↑ de 42%</span></span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Tempo médio de resposta</span>
+          <span class="metric-val">&lt; 90 seg</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Leads qualificados / mês</span>
+          <span class="metric-val">+230%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Tempo em administração</span>
+          <span class="metric-val">-58%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">NPS dos clientes</span>
+          <span class="metric-val">+34 pts</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Negócios fechados/corretor</span>
+          <span class="metric-val">+2,8× <span class="metric-change">↑ média</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASOS DE USO -->
+<section id="casos-de-uso" class="usecases-bg">
+  <div class="section-inner">
+    <p class="section-tag">Aplicações Práticas</p>
+    <h2>5 formas de <em>IA que funcionam</em><br>para imobiliárias hoje</h2>
+    <p class="section-lead">Cada solução abaixo já foi implementada pela Bronks IA em operações imobiliárias no Rio de Janeiro e Grande Rio.</p>
+    <div class="usecases-grid">
+      <div class="usecase-card">
+        <span class="usecase-num">01</span>
+        <h3>Qualificação Automática de Leads</h3>
+        <p>Assim que o lead entra — seja pelo portal, pelo site, pelo Instagram ou pelo WhatsApp — a IA aplica um roteiro de qualificação conversacional: faixa de renda, modalidade (compra/aluguel), localização desejada, urgência e capacidade de financiamento. Leads fora do perfil são educadamente descartados. Os quentes chegam para o corretor já com um briefing completo.</p>
+        <div class="usecase-result">Resultado: Corretores focam só nos leads com real potencial de fechamento</div>
+      </div>
+      <div class="usecase-card">
+        <span class="usecase-num">02</span>
+        <h3>Chatbot de Atendimento 24 Horas</h3>
+        <p>O chatbot imobiliário da Bronks não usa respostas genéricas. Ele conhece o portfólio da imobiliária, faz perguntas inteligentes, apresenta imóveis filtrados por critério em tempo real e agenda visitas diretamente na agenda do corretor responsável. Funciona às 23h de domingo com a mesma qualidade que um atendente treinado às 10h de segunda.</p>
+        <div class="usecase-result">Resultado: Nenhum lead perdido fora do horário comercial — que representa 38% do volume</div>
+      </div>
+      <div class="usecase-card">
+        <span class="usecase-num">03</span>
+        <h3>Análise Preditiva de Mercado</h3>
+        <p>A IA consolida dados de transações recentes, histórico de valorização por microregião (Barra da Tijuca, Botafogo, Recreio, Tijuca, etc.), índices de liquidez por tipologia e tendências de demanda. O resultado é um painel que ajuda o corretor a precificar corretamente, identificar oportunidades de arbitragem e apresentar argumentos de venda baseados em dados concretos.</p>
+        <div class="usecase-result">Resultado: Imóveis bem precificados vendem 40% mais rápido na média</div>
+      </div>
+      <div class="usecase-card">
+        <span class="usecase-num">04</span>
+        <h3>Documentação e Contratos Automáticos</h3>
+        <p>O sistema extrai dados do lead e do imóvel, preenche automaticamente propostas, fichas cadastrais, análise de crédito e minutas de contrato usando templates juridicamente revisados. Cada documento gerado passa por uma camada de validação para garantir consistência. O que levava três horas de trabalho manual agora leva dois minutos.</p>
+        <div class="usecase-result">Resultado: Redução de 70% no tempo de geração de documentação</div>
+      </div>
+      <div class="usecase-card">
+        <span class="usecase-num">05</span>
+        <h3>CRM Inteligente com Follow-up Automático</h3>
+        <p>Diferente de um CRM tradicional, o sistema da Bronks não apenas armazena — ele age. Com base no comportamento do lead (abertura de e-mail, clique em imóvel, tempo de inatividade), ele dispara mensagens personalizadas no momento certo, pelo canal certo. O corretor recebe um alerta só quando a ação humana é realmente necessária.</p>
+        <div class="usecase-result">Resultado: Taxa de reativação de leads frios de até 22%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE A BRONKS -->
+<section>
+  <div class="section-inner">
+    <p class="section-tag">Nossa Diferença</p>
+    <h2>Por que imobiliárias cariocas<br>escolhem a <em>Bronks IA</em></h2>
+    <p class="section-lead">Não somos uma plataforma SaaS genérica. Somos uma consultoria que projeta soluções sob medida para o contexto específico do mercado imobiliário carioca.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🎯</div>
+        <h3>Especialistas em RJ</h3>
+        <p>Equipe com profundo conhecimento do mercado imobiliário carioca: dinâmica de bairros, perfis de comprador, sazonalidade, IPTU, legislação municipal.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🔧</div>
+        <h3>Implementação real</h3>
+        <p>Não entregamos slides. Entregamos sistemas funcionando, integrados ao seu CRM, portais e canais de comunicação, com treinamento completo da equipe.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📈</div>
+        <h3>ROI mensurável</h3>
+        <p>Cada projeto começa com um modelo financeiro: custo de implementação vs. ganho projetado em conversão, tempo economizado e redução de custo operacional.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🛡️</div>
+        <h3>Dados protegidos</h3>
+        <p>Todos os sistemas são desenvolvidos em conformidade com a LGPD. Os dados dos seus clientes e do seu portfólio nunca saem da sua infraestrutura sem consentimento.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🤝</div>
+        <h3>Suporte contínuo</h3>
+        <p>Não abandonamos o projeto depois da entrega. Há SLA de suporte, monitoramento proativo e ciclos de melhoria contínua nos primeiros 12 meses.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>Rápido para rodar</h3>
+        <p>A maioria dos projetos imobiliários com a Bronks entra em operação em 4 a 8 semanas. Piloto validado antes de qualquer expansão de escopo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="steps-bg">
+  <div class="section-inner">
+    <p class="section-tag" style="text-align:center">Processo Simplificado</p>
+    <h2 style="text-align:center">Como funciona em<br><em>3 etapas simples</em></h2>
+    <p class="section-lead" style="margin: 0 auto 56px; text-align:center">Do primeiro contato à IA funcionando na sua operação.</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Diagnóstico Gratuito</h3>
+        <p>Em uma reunião de 60 minutos, mapeamos os gargalos da sua operação: onde os leads estão sendo perdidos, quanto tempo é gasto em tarefas repetitivas e quais processos têm maior potencial de automação. Você sai da reunião com um diagnóstico honesto — mesmo que não nos contrate.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Proposta e Piloto</h3>
+        <p>Com base no diagnóstico, desenvolvemos uma proposta com escopo, investimento e ROI projetado. Iniciamos sempre por um piloto de 30 dias no processo de maior impacto, para que você valide resultados reais antes de escalar. Sem compromisso de contrato longo no início.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Implementação e Escala</h3>
+        <p>Com o piloto validado, expandimos para os demais processos da imobiliária. Nossa equipe treina seus corretores, integra os sistemas, documenta tudo e estabelece um ciclo de monitoramento para garantir que os resultados se mantenham e melhorem ao longo do tempo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="section-inner">
+    <p class="section-tag" style="text-align:center">Perguntas Frequentes</p>
+    <h2 style="text-align:center; margin-bottom: 48px;">Dúvidas sobre <em>IA para imobiliárias</em></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">A IA vai substituir os meus corretores?</div>
+        <div class="faq-a">Não — e essa é uma preocupação legítima que ouvimos muito. A IA da Bronks foi projetada para eliminar o trabalho repetitivo e de baixo valor: triagem inicial de leads, envio de informações padronizadas, preenchimento de documentos, lembretes de follow-up. O corretor fica livre para fazer o que humanos fazem melhor: construir confiança, negociar, entender necessidades emocionais e fechar negócios complexos. Na prática, o mesmo time fecha mais negócios, não o mesmo número com menos gente.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quanto tempo demora para implementar?</div>
+        <div class="faq-a">Depende do escopo, mas a maioria dos projetos imobiliários com a Bronks tem o piloto rodando em 3 a 5 semanas. O chatbot de qualificação de leads, por exemplo, costuma estar funcionando em 2 semanas após a assinatura do contrato. Para sistemas mais complexos — com CRM personalizado, integração com múltiplos portais e automação de documentação — o prazo típico é de 6 a 10 semanas para implementação completa.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Preciso mudar meu CRM atual?</div>
+        <div class="faq-a">Na maioria dos casos, não. A Bronks desenvolve conectores e integrações para os CRMs mais usados no mercado imobiliário brasileiro: CV CRM, Jetimob, Kenlo, Salesforce, HubSpot, Pipedrive e outros sistemas customizados. Se o seu CRM tiver uma API — e a maioria tem — conseguimos integrar sem que você precise trocar de plataforma ou perder dados históricos.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Qual é o investimento mínimo para começar?</div>
+        <div class="faq-a">O investimento inicial varia conforme o escopo, mas trabalhamos com projetos a partir de R$ 25.000 para implementações focadas (por exemplo, somente chatbot + qualificação de leads). Projetos completos — com CRM inteligente, automação documental e análise de mercado — ficam tipicamente entre R$ 80.000 e R$ 180.000. Em todos os casos, apresentamos um modelo de ROI que mostra em quantos meses o investimento se paga. A consultoria inicial de diagnóstico é gratuita e sem compromisso.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">O chatbot funciona em português com o vocabulário do mercado imobiliário?</div>
+        <div class="faq-a">Sim — e essa é uma das nossas principais diferenciações. Os modelos de linguagem que usamos são treinados e ajustados especificamente para o contexto imobiliário brasileiro. O chatbot entende termos como escritura definitiva, habite-se, ITBI, averbação, usucapião, regime de bens, FGTS para imóvel, SFH vs SFI, e responde de forma natural e precisa. Ele também aprende o portfólio específico da sua imobiliária e pode responder perguntas técnicas sobre cada imóvel — área real, área total, número de vagas, valor de condomínio, IPTU, última reforma — sem precisar de intervenção humana.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <p class="section-tag" style="margin-bottom: 16px;">Próximo Passo</p>
+    <h2>Pronto para triplicar sua conversão de leads?</h2>
+    <p>Agende uma conversa gratuita de 60 minutos com nossos especialistas. Vamos mapear os gargalos da sua operação e mostrar, com números, quanto a IA pode significar para o seu negócio imobiliário.</p>
+    <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/" class="btn-primary" style="font-size: 18px; padding: 18px 44px;">Agendar Consultoria Gratuita</a>
+    <p style="margin-top: 20px; font-size: 14px; color: var(--text-muted);">Sem compromisso. Sem pressão. 100% focado no seu negócio.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="logo" style="font-size: 20px; margin-bottom: 16px;">Bronks<span style="color: var(--text-secondary)">.IA</span></div>
+    <div class="footer-links">
+      <a href="https://bronks.ia.br">Início</a>
+      <a href="https://bronks.ia.br/ia-para-imobiliarias/">IA para Imobiliárias</a>
+      <a href="https://bronks.ia.br/chatbot-empresarial/">Chatbot Empresarial</a>
+      <a href="https://bronks.ia.br/automacao-de-processos/">Automação</a>
+      <a href="https://bronks.ia.br/blog/">Blog</a>
+      <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/">Consultoria</a>
+    </div>
+    <p>© 2026 Bronks IA — Consultoria em Inteligência Artificial · Rio de Janeiro, RJ · CNPJ 00.000.000/0001-00</p>
+    <p style="margin-top: 6px;"><a href="https://bronks.ia.br/privacidade/">Política de Privacidade</a> · <a href="https://bronks.ia.br/termos/">Termos de Uso</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
