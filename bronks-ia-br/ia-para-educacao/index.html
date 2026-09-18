@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Educação e EAD | Bronks IA Rio de Janeiro</title>
+  <meta name="description" content="Universidades, escolas e plataformas EAD no RJ aumentam engajamento com IA da Bronks. Tutores virtuais, análise de desempenho e automação acadêmica. Consultoria grátis.">
+  <link rel="canonical" href="https://bronks.ia.br/ia-para-educacao/">
+  <meta property="og:title" content="IA para Educação e EAD | Bronks IA Rio de Janeiro">
+  <meta property="og:description" content="Universidades, escolas e plataformas EAD no RJ aumentam engajamento com IA da Bronks. Tutores virtuais, análise de desempenho e automação acadêmica. Consultoria grátis.">
+  <meta property="og:url" content="https://bronks.ia.br/ia-para-educacao/">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IA para Educação e EAD",
+    "description": "Soluções de Inteligência Artificial para instituições de ensino, plataformas EAD, universidades e escolas técnicas no Rio de Janeiro.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Rio de Janeiro"
+    },
+    "serviceType": "Consultoria de Inteligência Artificial para Educação",
+    "url": "https://bronks.ia.br/ia-para-educacao/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para implementar um tutor virtual de IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A implementação de um tutor virtual básico leva entre 4 e 8 semanas, incluindo treinamento com o material didático da instituição, integração com o LMS e testes de qualidade pedagógica."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA pode realmente reduzir a evasão escolar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. A análise preditiva de evasão identifica alunos em risco com até 6 semanas de antecedência, com base em padrões de acesso, notas e engajamento. Nossos clientes relatam redução média de 25% a 40% na taxa de evasão após 6 meses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A solução integra com Moodle, Blackboard ou outros LMS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Integramos com os principais LMS do mercado, incluindo Moodle, Blackboard, Canvas, Google Classroom e plataformas proprietárias via API REST."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA substitui professores?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. A IA é uma ferramenta de apoio que libera os professores de tarefas repetitivas (correção de exercícios, responder dúvidas frequentes) para que possam focar em mentoria, debates e atividades de alto valor pedagógico."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais são os custos de implementação?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os custos variam conforme o tamanho da instituição, número de alunos e módulos escolhidos. Oferecemos modelos de licenciamento por aluno, por módulo ou por projeto. Agende uma consultoria gratuita para receber uma proposta personalizada."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg-primary: #0a0e1a;
+      --bg-secondary: #111827;
+      --bg-card: #1a2236;
+      --accent-blue: #00b4f0;
+      --accent-cyan: #00e5ff;
+      --text-primary: #e8edf5;
+      --text-secondary: #9aabc2;
+      --border: #1e3050;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+    }
+    a { color: var(--accent-blue); text-decoration: none; }
+    a:hover { color: var(--accent-cyan); }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,14,26,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.5px;
+    }
+    .nav-logo span { color: var(--accent-blue); }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { color: var(--text-secondary); font-size: 0.95rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-cta {
+      background: var(--accent-blue);
+      color: #0a0e1a !important;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--accent-cyan) !important; color: #0a0e1a !important; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0a0e1a 0%, #0d1a2e 50%, #0a1628 100%);
+      padding: 100px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; left: 50%; transform: translateX(-50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(0,180,240,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(0,180,240,0.12);
+      border: 1px solid rgba(0,180,240,0.3);
+      color: var(--accent-blue);
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.2;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      letter-spacing: -1px;
+    }
+    .hero h1 span { color: var(--accent-blue); }
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 620px;
+      margin: 0 auto 40px;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--accent-blue);
+      color: #0a0e1a;
+      padding: 14px 36px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--accent-cyan); color: #0a0e1a; transform: translateY(-2px); }
+    .btn-secondary {
+      display: inline-block;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      margin-left: 12px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--accent-blue); color: var(--accent-blue); }
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num { font-size: 2rem; font-weight: 800; color: var(--accent-blue); }
+    .stat-label { font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; }
+
+    /* SECTIONS */
+    section { padding: 80px 24px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent-blue);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+    }
+    .section-lead {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin-bottom: 48px;
+    }
+
+    /* CARDS GRID */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover { border-color: var(--accent-blue); transform: translateY(-4px); }
+    .card-icon {
+      width: 48px; height: 48px;
+      background: rgba(0,180,240,0.12);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
+    .card p { font-size: 0.93rem; color: var(--text-secondary); line-height: 1.65; }
+
+    /* STEPS */
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; }
+    .step { position: relative; padding-left: 28px; }
+    .step-num {
+      font-size: 3rem;
+      font-weight: 900;
+      color: rgba(0,180,240,0.15);
+      line-height: 1;
+      position: absolute;
+      top: -8px; left: 0;
+    }
+    .step-content { padding-top: 8px; }
+    .step h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--text-primary); }
+    .step p { font-size: 0.92rem; color: var(--text-secondary); }
+
+    /* SECTORS */
+    .sectors-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .sector-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px 20px;
+      text-align: center;
+      transition: border-color 0.2s;
+    }
+    .sector-card:hover { border-color: var(--accent-blue); }
+    .sector-card .icon { font-size: 2rem; margin-bottom: 12px; }
+    .sector-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .sector-card p { font-size: 0.85rem; color: var(--text-secondary); }
+
+    /* FAQ */
+    .faq { background: var(--bg-secondary); }
+    .faq-list { max-width: 820px; }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 10px; }
+    .faq-a { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: linear-gradient(135deg, #0d1a2e, #0a1628);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 100px 24px;
+    }
+    .cta-section h2 { margin-bottom: 16px; }
+    .cta-section p { color: var(--text-secondary); max-width: 560px; margin: 0 auto 36px; }
+
+    /* FOOTER */
+    footer {
+      background: #070b15;
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+    }
+    .footer-brand p { font-size: 0.9rem; color: var(--text-secondary); margin-top: 12px; max-width: 300px; }
+    .footer-col h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 16px; }
+    .footer-col a { display: block; font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px; }
+    .footer-col a:hover { color: var(--accent-blue); }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 32px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* ALT BG */
+    .bg-alt { background: var(--bg-secondary); }
+
+    @media (max-width: 768px) {
+      .nav-links a:not(.nav-cta) { display: none; }
+      .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+      .hero-stats { gap: 24px; }
+      .btn-secondary { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="https://bronks.ia.br/" class="nav-logo">Bronks <span>IA</span></a>
+    <div class="nav-links">
+      <a href="https://bronks.ia.br/agentes-de-ia/">Agentes</a>
+      <a href="https://bronks.ia.br/rag-empresarial/">RAG</a>
+      <a href="https://bronks.ia.br/automacao-com-ia/">Automação</a>
+      <a href="https://bronks.ia.br/#contato" class="nav-cta">Consultoria Grátis</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Educação × Inteligência Artificial</div>
+  <h1><span>Inteligência Artificial</span> para Educação e EAD</h1>
+  <p class="hero-sub">Tutores virtuais pedagógicos, análise preditiva de evasão e personalização de trilhas de aprendizado para universidades, escolas e plataformas EAD no Rio de Janeiro.</p>
+  <a href="https://bronks.ia.br/#contato" class="btn-primary">Agendar consultoria gratuita</a>
+  <a href="#solucoes" class="btn-secondary">Ver soluções</a>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">38%</div>
+      <div class="stat-label">Redução média de evasão</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">4×</div>
+      <div class="stat-label">Mais engajamento nos cursos</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">60%</div>
+      <div class="stat-label">Menos tempo em correções</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Suporte ao aluno via IA</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÕES -->
+<section id="solucoes" class="bg-alt">
+  <div class="container">
+    <div class="section-label">Soluções</div>
+    <h2>O que a IA pode fazer pela sua instituição de ensino</h2>
+    <p class="section-lead">A Bronks IA desenvolve soluções sob medida para o setor educacional, integrando inteligência artificial diretamente nos processos de aprendizado, gestão e retenção de alunos.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>Tutores Virtuais com IA</h3>
+        <p>Chatbots pedagógicos treinados com o material didático da sua instituição. O aluno faz perguntas sobre a matéria e recebe respostas precisas, contextualizadas e alinhadas à grade curricular — a qualquer hora do dia ou da noite. O tutor virtual compreende dúvidas em linguagem natural, sugere exercícios complementares, identifica gaps de aprendizado e direciona o aluno para o conteúdo correto. Diferente de um FAQ simples, ele raciocina sobre o contexto da pergunta e adapta a resposta ao nível de conhecimento detectado.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📉</div>
+        <h3>Análise Preditiva de Evasão</h3>
+        <p>Modelos de machine learning que analisam continuamente padrões de comportamento do aluno: frequência de login, tempo de permanência nas aulas, notas, engajamento em fóruns e entrega de atividades. Quando o modelo detecta sinais de risco de abandono, o sistema dispara alertas automáticos para o coordenador pedagógico e sugere ações de intervenção — contato personalizado, bônus de engajamento ou tutoria reforçada. A prevenção ativa é sempre mais barata do que a recuperação de alunos evadidos.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛤️</div>
+        <h3>Personalização de Trilhas</h3>
+        <p>Cada aluno aprende em um ritmo e com um estilo diferente. A IA da Bronks analisa o histórico de desempenho e adapta a sequência de conteúdos para maximizar a absorção. Alunos avançados recebem desafios extras; alunos com dificuldade recebem material de reforço antes de avançar. O motor de recomendação funciona de forma similar ao Netflix, mas otimizado para objetivos pedagógicos — não para tempo de tela, mas para aprendizado real e verificável.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✅</div>
+        <h3>Automação de Correção</h3>
+        <p>A correção automática com IA vai além do gabarito de múltipla escolha. Nossa solução avalia redações, respostas dissertativas e até exercícios de programação, fornecendo feedback detalhado e padronizado. O professor recebe um relatório consolidado com a distribuição de erros da turma, podendo identificar em segundos quais conceitos precisam ser reforçados. A consistência da correção automatizada elimina variações subjetivas e garante equidade na avaliação.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>Proctoring Inteligente</h3>
+        <p>Sistema de monitoramento de provas online com visão computacional. A IA detecta comportamentos suspeitos — desvio do olhar, presença de segunda pessoa, mudança de aba no navegador — e registra evidências para revisão posterior pelo professor. O sistema respeita a privacidade do aluno e é configurável para diferentes níveis de rigor, desde um monitoramento suave até uma vigilância completa com gravação e alertas em tempo real.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Dashboard de Desempenho</h3>
+        <p>Painéis executivos que consolidam todos os dados educacionais em tempo real: taxa de conclusão por curso, NPS dos alunos, pontos de abandono no funil de aprendizado, desempenho por professor e comparação entre turmas. Coordenadores pedagógicos e diretores acadêmicos tomam decisões baseadas em dados, não em percepções subjetivas. Exportação para relatórios MEC e integração com sistemas de gestão acadêmica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE ESCOLHER -->
+<section>
+  <div class="container">
+    <div class="section-label">Por que a Bronks IA</div>
+    <h2>Especialistas em IA aplicada à educação no Rio de Janeiro</h2>
+    <p class="section-lead">Não somos uma empresa de tecnologia genérica que vende IA para qualquer setor. Conhecemos os desafios específicos das instituições de ensino: pressão por resultados no ENADE, concorrência das big techs de EAD, retenção em cursos de longa duração e complexidade pedagógica dos conteúdos.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🎓</div>
+        <h3>Domínio Pedagógico</h3>
+        <p>Nossa equipe inclui especialistas em tecnologia educacional e design instrucional. Entendemos a diferença entre um chatbot que responde perguntas e um tutor que realmente ensina — e sabemos construir o segundo.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔗</div>
+        <h3>Integração com LMS</h3>
+        <p>Integramos com Moodle, Blackboard, Canvas, Google Classroom, Hotmart, Teachable e plataformas proprietárias. Não é necessário substituir o sistema atual — a IA se conecta ao que já existe.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>LGPD e Segurança</h3>
+        <p>Dados de alunos são sensíveis. Nossa infraestrutura atende à LGPD com criptografia ponta a ponta, controles de acesso granulares e políticas de retenção de dados configuráveis pela instituição.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="bg-alt">
+  <div class="container">
+    <div class="section-label">Processo</div>
+    <h2>Como funciona a implementação</h2>
+    <p class="section-lead">Nossa metodologia foi desenvolvida para minimizar o impacto operacional na instituição durante a implementação, com resultados mensuráveis a partir das primeiras semanas.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Diagnóstico e Mapeamento</h3>
+          <p>Analisamos os dados históricos da instituição: taxa de evasão por curso, pontos de abandono, padrões de desempenho, volume de dúvidas por disciplina e capacidade atual da equipe pedagógica. Com base nesse diagnóstico, priorizamos as soluções de maior impacto para o seu contexto específico — não existe implementação genérica. O processo leva de 1 a 2 semanas e já entrega insights acionáveis.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Treinamento e Integração</h3>
+          <p>Os modelos de IA são treinados com o material didático, grade curricular, histórico de avaliações e FAQs da instituição. Realizamos a integração técnica com o LMS e sistemas acadêmicos existentes via API. Nessa fase, os professores e coordenadores participam de workshops para entender como usar as ferramentas e como interpretar os relatórios. O tutor virtual passa por validação pedagógica antes de ir ao ar.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Lançamento e Evolução Contínua</h3>
+          <p>O lançamento é feito de forma gradual, começando por um curso ou turma piloto para calibrar os modelos com dados reais. Monitoramos os resultados semanalmente e ajustamos os algoritmos conforme necessário. Após a estabilização, expandimos para toda a instituição. O sistema aprende continuamente — quanto mais alunos interagem, mais preciso o tutor e mais apurada a detecção de risco de evasão.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SETORES -->
+<section>
+  <div class="container">
+    <div class="section-label">Setores atendidos</div>
+    <h2>Para qual tipo de instituição trabalhamos</h2>
+    <p class="section-lead">A IA para educação da Bronks atende desde grandes universidades até pequenas escolas de idiomas, com soluções escaláveis para cada realidade.</p>
+    <div class="sectors-grid">
+      <div class="sector-card">
+        <div class="icon">🏛️</div>
+        <h3>Universidades e Faculdades</h3>
+        <p>IES públicas e privadas com dezenas de cursos e milhares de alunos. Foco em retenção, análise de desempenho por curso e conformidade com métricas MEC.</p>
+      </div>
+      <div class="sector-card">
+        <div class="icon">🔧</div>
+        <h3>Escolas Técnicas e Profissionalizantes</h3>
+        <p>Instituições SENAI, SENAC e escolas técnicas privadas que precisam de simuladores e tutores práticos para cursos técnicos com componentes laboratoriais.</p>
+      </div>
+      <div class="sector-card">
+        <div class="icon">💻</div>
+        <h3>Plataformas EAD</h3>
+        <p>Startups e empresas de educação digital que precisam escalar o atendimento ao aluno sem escalar proporcionalmente a equipe de suporte pedagógico.</p>
+      </div>
+      <div class="sector-card">
+        <div class="icon">📚</div>
+        <h3>Cursos Livres e Treinamentos</h3>
+        <p>Escolas de idiomas, cursos preparatórios, academias de concursos e empresas de treinamento corporativo que precisam personalizar a experiência de aprendizado.</p>
+      </div>
+      <div class="sector-card">
+        <div class="icon">🏢</div>
+        <h3>Treinamento Corporativo</h3>
+        <p>Departamentos de RH e T&D que precisam medir a efetividade dos treinamentos, reduzir o tempo de onboarding e garantir a aderência a normas e procedimentos internos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Quanto tempo leva para implementar um tutor virtual de IA?</div>
+        <div class="faq-a">A implementação de um tutor virtual básico leva entre 4 e 8 semanas, incluindo treinamento com o material didático da instituição, integração com o LMS e testes de qualidade pedagógica. Projetos mais complexos, com múltiplos cursos e integrações avançadas, podem levar de 10 a 16 semanas. Utilizamos metodologia ágil com entregas incrementais, então a instituição já começa a ter resultados antes da implementação completa.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">A IA pode realmente reduzir a evasão escolar?</div>
+        <div class="faq-a">Sim. A análise preditiva de evasão identifica alunos em risco com até 6 semanas de antecedência, com base em padrões de acesso, notas e engajamento. Nossos clientes relatam redução média de 25% a 40% na taxa de evasão após 6 meses de uso ativo das ferramentas de alerta e intervenção. O resultado depende muito da qualidade da resposta pedagógica aos alertas — a IA identifica o risco, mas a ação humanizante de uma ligação ou mensagem personalizada é o que converte o aluno.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">A solução integra com Moodle, Blackboard ou outros LMS?</div>
+        <div class="faq-a">Sim. Integramos nativamente com os principais LMS do mercado: Moodle, Blackboard, Canvas, Google Classroom, Hotmart, Teachable e Coursera for Business. Para plataformas proprietárias, desenvolvemos conectores customizados via API REST. O processo de integração técnica geralmente leva de 1 a 3 semanas dependendo da documentação e acessibilidade da API do LMS.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">A IA substitui professores?</div>
+        <div class="faq-a">Não. A IA é uma ferramenta de apoio que libera os professores de tarefas repetitivas — correção de exercícios objetivos, responder as mesmas dúvidas básicas dezenas de vezes, gerar relatórios manuais — para que possam focar em mentoria, debates aprofundados, orientação de projetos e atividades de alto valor pedagógico que nenhuma IA substitui. O professor continua sendo o elemento central da experiência educacional; a IA só amplifica sua capacidade de atendimento e sua visibilidade sobre o desempenho dos alunos.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quais são os custos de implementação?</div>
+        <div class="faq-a">Os custos variam conforme o tamanho da instituição, o número de alunos ativos, os módulos escolhidos e a complexidade das integrações necessárias. Trabalhamos com modelos de licenciamento por aluno/mês (ideal para plataformas EAD escaláveis), por módulo contratado (ideal para IES com orçamento fixo) ou por projeto com manutenção anual. Para ter uma proposta personalizada com valores concretos para o seu cenário, agende uma consultoria gratuita de 45 minutos com um dos nossos especialistas.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="section-label">Próximo passo</div>
+    <h2>Pronto para transformar a experiência dos seus alunos?</h2>
+    <p>Converse com um especialista da Bronks IA e descubra quais soluções fazem mais sentido para o perfil e os desafios da sua instituição de ensino. Consultoria sem custo e sem compromisso.</p>
+    <a href="https://bronks.ia.br/#contato" class="btn-primary">Agendar consultoria gratuita</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="https://bronks.ia.br/" class="nav-logo" style="font-size:1.2rem;">Bronks <span style="color:var(--accent-blue)">IA</span></a>
+      <p>Consultoria especializada em Inteligência Artificial para empresas e instituições no Rio de Janeiro. Transformamos dados em resultados.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Soluções</h4>
+      <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a>
+      <a href="https://bronks.ia.br/rag-empresarial/">RAG Empresarial</a>
+      <a href="https://bronks.ia.br/automacao-com-ia/">Automação com IA</a>
+      <a href="https://bronks.ia.br/integracao-sistemas-ia/">Integração de Sistemas</a>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/">Consultoria no RJ</a>
+      <a href="https://bronks.ia.br/blog/">Blog</a>
+      <a href="https://bronks.ia.br/#contato">Contato</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Bronks IA. Todos os direitos reservados. Rio de Janeiro, RJ.</p>
+  </div>
+</footer>
+
+</body>
+</html>
