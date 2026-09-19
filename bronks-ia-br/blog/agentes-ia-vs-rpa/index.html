@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentes de IA vs RPA: Qual Escolher para Automação Empresarial? (2026) | Bronks IA</title>
+  <meta name="description" content="Agentes de IA ou RPA para automação na sua empresa? Comparativo completo com tabela de diferenças, casos de uso, preços e quando combinar os dois. Guia prático para gestores B2B em 2026.">
+  <link rel="canonical" href="https://bronks.ia.br/blog/agentes-ia-vs-rpa/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Agentes de IA vs RPA: Qual Escolher para Automação Empresarial? (2026)">
+  <meta property="og:description" content="Comparativo completo entre Agentes de IA e RPA: diferenças, casos de uso ideais, custo de implementação e quando combinar as duas tecnologias na sua operação.">
+  <meta property="og:url" content="https://bronks.ia.br/blog/agentes-ia-vs-rpa/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Agentes de IA vs RPA: Qual Escolher para Automação Empresarial em 2026?",
+    "description": "Comparativo completo entre Agentes de IA e RPA: diferenças técnicas, casos de uso ideais, custo, tempo de implementação e quando combinar as duas tecnologias.",
+    "author": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "logo": { "@type": "ImageObject", "url": "https://bronks.ia.br/logo.png" }
+    },
+    "datePublished": "2026-09-19",
+    "dateModified": "2026-09-19",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://bronks.ia.br/blog/agentes-ia-vs-rpa/" },
+    "keywords": ["agentes de IA", "RPA", "automação empresarial", "RPA vs IA", "robotic process automation", "diferença IA e RPA"],
+    "articleSection": "Automação com IA"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://bronks.ia.br/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bronks.ia.br/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Agentes de IA vs RPA", "item": "https://bronks.ia.br/blog/agentes-ia-vs-rpa/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual a diferença principal entre RPA e Agentes de IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RPA segue scripts fixos e executa tarefas repetitivas em interfaces gráficas sem variações. Agentes de IA entendem contexto, tomam decisões, lidam com exceções e aprendem com o tempo. RPA automatiza o previsível; Agentes de IA automatizam o complexo e adaptativo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "RPA vai ser substituído por Agentes de IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não completamente. RPA continua sendo a melhor opção para processos 100% estruturados, de alto volume, com interfaces gráficas legadas sem API. A tendência é a hiperautomação: combinar RPA para a parte mecânica com Agentes de IA para a parte decisória do mesmo processo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto custa implementar RPA versus Agentes de IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RPA: licenças de plataforma R$ 3.000–15.000/mês (UiPath, Automation Anywhere, Blue Prism) + desenvolvimento R$ 30.000–120.000 por processo. Agentes de IA customizados: desenvolvimento R$ 40.000–200.000, sem licença de plataforma cara, com custos de API de LLM (geralmente R$ 500–3.000/mês). O custo de manutenção do RPA tende a ser maior por causa de mudanças de interface."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "É possível combinar RPA com Agentes de IA no mesmo processo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, e é a abordagem mais comum em grandes empresas. O modelo de hiperautomação usa RPA para interagir com sistemas legados que não têm API, e Agentes de IA para processar documentos, entender e-mails, tomar decisões com base em contexto e lidar com exceções que o RPA não consegue tratar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual tecnologia tem maior ROI: RPA ou Agentes de IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende do processo. Para tarefas altamente repetitivas e estruturadas (entrada de notas fiscais, conciliação bancária), RPA tende a ter ROI mais rápido (3–6 meses). Para processos com linguagem natural, documentos variados e exceções frequentes, Agentes de IA têm ROI superior no médio prazo (6–18 meses) por conseguir processar o que RPA não consegue."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root { --primary: #0f172a; --accent: #6366f1; --accent2: #8b5cf6; --text: #1e293b; --muted: #475569; --bg-light: #f8fafc; --border: #e2e8f0; --white: #ffffff; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, Arial, sans-serif; color: var(--text); line-height: 1.7; background: var(--white); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header { background: var(--primary); padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .logo { color: #fff; font-size: 1.3rem; font-weight: 800; letter-spacing: -0.5px; }
+    .logo span { color: var(--accent); }
+    header nav a { color: #94a3b8; font-size: 0.9rem; margin-left: 24px; }
+    header nav a:hover { color: #fff; text-decoration: none; }
+
+    .breadcrumb { background: var(--bg-light); padding: 12px 32px; font-size: 0.85rem; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb span { margin: 0 6px; }
+
+    .article-hero { background: linear-gradient(135deg, var(--primary) 0%, #1e1b4b 100%); color: #fff; padding: 64px 32px 56px; text-align: center; }
+    .article-hero .tag { display: inline-block; background: rgba(99,102,241,0.3); color: #a5b4fc; font-size: 0.8rem; font-weight: 700; padding: 4px 14px; border-radius: 50px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .article-hero h1 { font-size: clamp(1.7rem, 4vw, 2.8rem); font-weight: 900; line-height: 1.15; margin-bottom: 16px; }
+    .article-hero p { font-size: 1.1rem; color: #94a3b8; max-width: 640px; margin: 0 auto 12px; }
+    .article-meta { font-size: 0.85rem; color: #64748b; margin-top: 20px; }
+
+    .article-body { max-width: 800px; margin: 0 auto; padding: 56px 32px; }
+    .article-body h2 { font-size: 1.75rem; color: var(--primary); margin: 48px 0 16px; font-weight: 800; }
+    .article-body h3 { font-size: 1.15rem; color: var(--primary); margin: 28px 0 10px; font-weight: 700; }
+    .article-body p { color: var(--muted); margin-bottom: 18px; font-size: 1.02rem; }
+    .article-body ul, .article-body ol { color: var(--muted); margin: 12px 0 20px 24px; font-size: 1.02rem; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body strong { color: var(--text); }
+
+    .highlight-box { background: var(--bg-light); border-left: 4px solid var(--accent); border-radius: 8px; padding: 20px 24px; margin: 28px 0; }
+    .highlight-box p { color: var(--text); margin: 0; font-size: 1rem; }
+
+    .comparison-table { overflow-x: auto; margin: 28px 0; border-radius: 12px; border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+    th { background: var(--primary); color: #fff; padding: 14px 16px; text-align: left; font-weight: 700; }
+    th:first-child { width: 30%; }
+    td { padding: 12px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: var(--bg-light); }
+    .bom { color: #16a34a; font-weight: 600; }
+    .med { color: #d97706; font-weight: 600; }
+    .ruim { color: #dc2626; font-weight: 600; }
+
+    .cards-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
+    .card-vs { border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+    .card-vs.rpa { border-top: 4px solid #f59e0b; }
+    .card-vs.ia { border-top: 4px solid var(--accent); }
+    .card-vs h3 { margin-top: 0; font-size: 1.05rem; margin-bottom: 14px; }
+    .card-vs ul { margin-left: 16px; }
+    .card-vs li { font-size: 0.92rem; color: var(--muted); margin-bottom: 6px; }
+
+    .use-case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 24px 0; }
+    .use-case { border: 1px solid var(--border); border-radius: 10px; padding: 18px; background: var(--white); }
+    .use-case .label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent); margin-bottom: 6px; }
+    .use-case h3 { font-size: 0.95rem; color: var(--primary); margin: 0 0 8px; }
+    .use-case p { font-size: 0.88rem; margin: 0; }
+
+    .faq-section { border-top: 1px solid var(--border); padding-top: 40px; margin-top: 48px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
+    .faq-item h3 { font-size: 1rem; margin: 0 0 8px; color: var(--primary); }
+    .faq-item p { margin: 0; font-size: 0.95rem; }
+
+    .cta-inline { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; border-radius: 12px; padding: 32px; text-align: center; margin: 40px 0; }
+    .cta-inline h2 { color: #fff; font-size: 1.4rem; margin: 0 0 10px; }
+    .cta-inline p { color: rgba(255,255,255,0.85); margin: 0 0 20px; font-size: 0.97rem; }
+    .btn-white { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--accent); font-size: 1rem; font-weight: 700; padding: 14px 28px; border-radius: 8px; }
+    .btn-white:hover { text-decoration: none; }
+
+    footer { background: var(--primary); color: #475569; text-align: center; padding: 32px; font-size: 0.875rem; }
+    footer a { color: #64748b; }
+
+    @media (max-width: 600px) {
+      .article-hero { padding: 44px 20px 40px; }
+      .article-body { padding: 40px 20px; }
+      .cards-2 { grid-template-columns: 1fr; }
+      .breadcrumb { padding: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="/"><span>Bronks</span> IA</a>
+  <nav>
+    <a href="/agentes-de-ia/">Agentes de IA</a>
+    <a href="/rag-empresarial/">RAG</a>
+    <a href="/automacao-com-ia/">Automação</a>
+    <a href="/#contato">Contato</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">Início</a><span>›</span><a href="/blog/">Blog</a><span>›</span><strong>Agentes de IA vs RPA</strong>
+</div>
+
+<div class="article-hero">
+  <span class="tag">Automação com IA</span>
+  <h1>Agentes de IA vs RPA: Qual Tecnologia Escolher para Automação Empresarial?</h1>
+  <p>Comparativo completo com tabela de diferenças, casos de uso ideais, custos e quando combinar as duas abordagens.</p>
+  <div class="article-meta">Por Bronks IA · Publicado em 19 de setembro de 2026 · 12 min de leitura</div>
+</div>
+
+<div class="article-body">
+
+  <p>Se você está avaliando como automatizar processos na sua empresa em 2026, provavelmente já se deparou com duas siglas que aparecem em quase toda conversa sobre eficiência operacional: <strong>RPA (Robotic Process Automation)</strong> e <strong>Agentes de IA</strong>. As duas tecnologias automatizam tarefas — mas de formas fundamentalmente diferentes, com casos de uso distintos e custos de implementação que variam bastante.</p>
+
+  <p>Neste guia, vamos esclarecer de vez as diferenças, mostrar quando cada uma faz mais sentido e explicar por que a combinação das duas — chamada de hiperautomação — está se tornando o padrão nas empresas brasileiras mais eficientes.</p>
+
+  <div class="highlight-box">
+    <p><strong>Resumo rápido:</strong> RPA automatiza o <em>previsível</em> — tarefas repetitivas, estruturadas, em interfaces fixas. Agentes de IA automatizam o <em>adaptativo</em> — decisões com contexto, documentos variados, linguagem natural e exceções. A maioria das operações complexas precisa dos dois.</p>
+  </div>
+
+  <h2>O que é RPA (Robotic Process Automation)?</h2>
+
+  <p>RPA é uma tecnologia que usa "robôs de software" para executar tarefas repetitivas em interfaces gráficas de computador — exatamente como um humano faria, só que mais rápido e sem pausas. O robô abre o sistema, clica nos campos certos, copia dados de um lugar para outro, preenche formulários e fecha janelas.</p>
+
+  <p>As principais plataformas de RPA do mercado são <strong>UiPath</strong>, <strong>Automation Anywhere</strong>, <strong>Blue Prism</strong> e <strong>Microsoft Power Automate</strong>. Todas funcionam com um modelo parecido: você grava ou programa os passos que o robô deve executar, e ele repete esses passos indefinidamente.</p>
+
+  <h3>O que RPA faz bem</h3>
+  <ul>
+    <li>Entrada de dados em sistemas legados sem API</li>
+    <li>Conciliação bancária e financeira com dados estruturados</li>
+    <li>Emissão de notas fiscais em volume alto</li>
+    <li>Geração de relatórios padronizados</li>
+    <li>Transferência de dados entre sistemas diferentes</li>
+    <li>Preenchimento de formulários governamentais (e-Social, SPED, NF-e)</li>
+  </ul>
+
+  <h3>As limitações do RPA</h3>
+  <ul>
+    <li><strong>Frágil a mudanças de interface</strong> — qualquer atualização no sistema que muda a posição de um botão quebra o robô</li>
+    <li><strong>Não entende contexto</strong> — se um campo exige julgamento ou interpretação, o RPA falha</li>
+    <li><strong>Não lida com documentos variados</strong> — uma nota fiscal num formato diferente do esperado pode travar o processo</li>
+    <li><strong>Sem aprendizado</strong> — o robô faz exatamente o que foi programado, sem adaptar a abordagem</li>
+    <li><strong>Manutenção cara</strong> — cada mudança nos sistemas exige reprogramação</li>
+  </ul>
+
+  <h2>O que são Agentes de IA?</h2>
+
+  <p>Agentes de IA são sistemas baseados em modelos de linguagem grande (LLMs como GPT-4, Claude, Gemini) que conseguem <strong>entender contexto, raciocinar sobre um problema e executar ações</strong> para atingir um objetivo. Diferente do RPA, o Agente de IA não segue um script fixo — ele interpreta a situação e decide qual caminho tomar.</p>
+
+  <p>Um Agente de IA pode ler um e-mail de um cliente em linguagem natural, entender que é uma reclamação sobre entrega atrasada, consultar o sistema de logística via API, verificar o histórico de compras do cliente e responder com a solução adequada — tudo automaticamente, sem precisar que o e-mail esteja num formato específico.</p>
+
+  <h3>O que Agentes de IA fazem bem</h3>
+  <ul>
+    <li>Leitura e interpretação de e-mails, contratos e documentos não estruturados</li>
+    <li>Atendimento ao cliente com linguagem natural (WhatsApp, chat, e-mail)</li>
+    <li>Análise de documentos variados (notas fiscais, laudos, orçamentos, propostas)</li>
+    <li>Triagem e classificação de leads, tickets, reclamações</li>
+    <li>Respostas a perguntas usando base de conhecimento da empresa (RAG)</li>
+    <li>Processos com exceções frequentes e decisões baseadas em contexto</li>
+    <li>Geração e revisão de conteúdo, relatórios e rascunhos</li>
+  </ul>
+
+  <h3>As limitações dos Agentes de IA</h3>
+  <ul>
+    <li><strong>Exigem APIs ou dados acessíveis</strong> — integrar com sistemas legados sem API pode ser desafiador</li>
+    <li><strong>Custo de token em escala muito alta</strong> — processar milhões de documentos por dia tem custo de API relevante</li>
+    <li><strong>Requerem validação humana em decisões críticas</strong> — para ações irreversíveis de alto valor, é essencial supervisão</li>
+    <li><strong>Hallucination em dados factuais</strong> — sem RAG bem configurado, o agente pode gerar informações incorretas</li>
+  </ul>
+
+  <h2>Comparativo completo: RPA vs Agentes de IA</h2>
+
+  <div class="comparison-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Dimensão</th>
+          <th>RPA</th>
+          <th>Agentes de IA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Tipo de tarefa</strong></td>
+          <td class="med">Estruturada, repetitiva, previsível</td>
+          <td class="bom">Adaptativa, com contexto e linguagem natural</td>
+        </tr>
+        <tr>
+          <td><strong>Lidar com exceções</strong></td>
+          <td class="ruim">Falha ou aciona humano</td>
+          <td class="bom">Resolve a maioria das exceções autonomamente</td>
+        </tr>
+        <tr>
+          <td><strong>Documentos variados</strong></td>
+          <td class="ruim">Precisa de formato fixo</td>
+          <td class="bom">Lê qualquer formato com compreensão</td>
+        </tr>
+        <tr>
+          <td><strong>Interfaces sem API</strong></td>
+          <td class="bom">Ponto forte — opera em qualquer tela</td>
+          <td class="med">Requer API ou integração adicional</td>
+        </tr>
+        <tr>
+          <td><strong>Custo de licença</strong></td>
+          <td class="ruim">R$ 3.000–15.000/mês (plataformas líderes)</td>
+          <td class="bom">Sem licença cara; paga por uso de API</td>
+        </tr>
+        <tr>
+          <td><strong>Custo de desenvolvimento</strong></td>
+          <td class="med">R$ 30.000–120.000 por processo</td>
+          <td class="med">R$ 40.000–200.000 (mais complexo, mas mais capaz)</td>
+        </tr>
+        <tr>
+          <td><strong>Custo de manutenção</strong></td>
+          <td class="ruim">Alto — qualquer mudança de interface quebra o robô</td>
+          <td class="bom">Baixo — agente se adapta a variações</td>
+        </tr>
+        <tr>
+          <td><strong>Tempo de implementação</strong></td>
+          <td class="bom">2–8 semanas para processos simples</td>
+          <td class="med">6–16 semanas para agente completo</td>
+        </tr>
+        <tr>
+          <td><strong>ROI para tarefas simples</strong></td>
+          <td class="bom">Rápido (3–6 meses)</td>
+          <td class="med">Médio prazo (6–12 meses)</td>
+        </tr>
+        <tr>
+          <td><strong>ROI para processos complexos</strong></td>
+          <td class="ruim">Negativo ou muito lento (não consegue fazer)</td>
+          <td class="bom">Alto (faz o que RPA não consegue)</td>
+        </tr>
+        <tr>
+          <td><strong>Aprendizado</strong></td>
+          <td class="ruim">Não aprende — faz exatamente o que foi programado</td>
+          <td class="bom">Melhora com feedback e dados adicionais</td>
+        </tr>
+        <tr>
+          <td><strong>Auditabilidade</strong></td>
+          <td class="bom">Alta — log de cada clique e ação</td>
+          <td class="med">Boa — logs de decisão e trace disponíveis</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Quando usar RPA — casos de uso ideais</h2>
+
+  <p>RPA continua sendo a escolha certa quando o processo é totalmente previsível, o volume é alto, os dados são estruturados e o sistema alvo não tem API disponível.</p>
+
+  <div class="use-case-grid">
+    <div class="use-case">
+      <div class="label">Financeiro</div>
+      <h3>Conciliação bancária automatizada</h3>
+      <p>Baixar extratos do banco, cruzar com o ERP e gerar relatório de divergências. Processo 100% estruturado, zero variação — RPA ideal.</p>
+    </div>
+    <div class="use-case">
+      <div class="label">Fiscal</div>
+      <h3>Emissão de NF-e em massa</h3>
+      <p>Pegar dados de pedidos do ERP e emitir notas fiscais eletrônicas no portal da SEFAZ. Processo fixo, alto volume — RPA se paga em semanas.</p>
+    </div>
+    <div class="use-case">
+      <div class="label">RH</div>
+      <h3>Cadastro de colaboradores em sistemas legados</h3>
+      <p>Replicar dados de admissão do sistema de RH para folha, ponto e benefícios quando não há integração nativa. Tarefa manual e repetitiva — RPA elimina.</p>
+    </div>
+    <div class="use-case">
+      <div class="label">Compras</div>
+      <h3>Pedido de compras em portal de fornecedor</h3>
+      <p>Entrar no portal do fornecedor, preencher formulário de pedido com dados do ERP e confirmar a compra. Processo fixo sem exceções — RPA perfeito.</p>
+    </div>
+  </div>
+
+  <h2>Quando usar Agentes de IA — casos de uso ideais</h2>
+
+  <p>Agentes de IA brilham quando o processo envolve linguagem natural, documentos em formatos variados, decisões baseadas em contexto ou interação direta com pessoas.</p>
+
+  <div class="use-case-grid">
+    <div class="use-case">
+      <div class="label">Atendimento</div>
+      <h3>SAC inteligente no WhatsApp</h3>
+      <p>Agente responde dúvidas, abre chamados, processa pedidos de troca e resolve reclamações simples — sem script fixo, entendendo o que o cliente quer dizer.</p>
+    </div>
+    <div class="use-case">
+      <div class="label">Jurídico</div>
+      <h3>Revisão de contratos</h3>
+      <p>Agente lê contratos variados, identifica cláusulas problemáticas, compara com padrão da empresa e gera relatório de riscos. Nenhum RPA consegue fazer isso.</p>
+    </div>
+    <div class="use-case">
+      <div class="label">Vendas</div>
+      <h3>Qualificação de leads por e-mail</h3>
+      <p>Agente lê e-mails de prospects, classifica por perfil e potencial, responde com conteúdo personalizado e agenda reuniões — sem formulário fixo.</p>
+    </div>
+    <div class="use-case">
+      <div class="label">Suprimentos</div>
+      <h3>Análise de propostas de fornecedores</h3>
+      <p>Agente lê PDFs de cotações em formatos diferentes, extrai preços, prazos e condições, e monta comparativo — impossível para o RPA sem templates fixos.</p>
+    </div>
+  </div>
+
+  <h2>É possível combinar RPA + Agentes de IA? (Hiperautomação)</h2>
+
+  <p>Sim — e essa é a abordagem mais poderosa para processos complexos. A <strong>hiperautomação</strong> usa RPA para interagir com sistemas legados que não têm API, e Agentes de IA para processar o que chega em formato variado e tomar decisões.</p>
+
+  <p>Exemplo real: processamento de notas fiscais de fornecedores.</p>
+
+  <ul>
+    <li><strong>RPA</strong> faz o download das NFs do portal de e-mail ou portal fiscal e as salva numa pasta</li>
+    <li><strong>Agente de IA</strong> lê cada NF (independente do layout do PDF), extrai dados, confere com o pedido de compra e aprova ou sinaliza divergência</li>
+    <li><strong>RPA</strong> lança a NF aprovada no ERP, que não tem API</li>
+    <li><strong>Agente de IA</strong> notifica o financeiro sobre divergências com o contexto completo</li>
+  </ul>
+
+  <p>O resultado: um processo que antes levava 3–5 horas de trabalho manual por dia é executado em minutos, com taxa de erro próxima de zero.</p>
+
+  <h2>Quanto custa implementar cada tecnologia no Brasil em 2026?</h2>
+
+  <div class="comparison-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Item de custo</th>
+          <th>RPA (UiPath / AA)</th>
+          <th>Agentes de IA customizados</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Licença de plataforma</td><td class="ruim">R$ 3.000–15.000/mês</td><td class="bom">Sem licença (open source ou API)</td></tr>
+        <tr><td>Custo de API (LLM)</td><td class="bom">Não se aplica</td><td class="med">R$ 300–3.000/mês (uso)</td></tr>
+        <tr><td>Desenvolvimento inicial</td><td class="med">R$ 30.000–120.000</td><td class="med">R$ 40.000–200.000</td></tr>
+        <tr><td>Manutenção mensal</td><td class="ruim">R$ 3.000–10.000 (mudanças de interface)</td><td class="bom">R$ 1.000–4.000</td></tr>
+        <tr><td>Tempo até produção</td><td class="bom">2–8 semanas</td><td class="med">6–16 semanas</td></tr>
+        <tr><td>Escalabilidade de custo</td><td class="ruim">Cresce com número de bots</td><td class="bom">Cresce linearmente com volume</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Conclusão de custo:</strong> para processos simples de curto prazo, RPA pode ser mais barato. Para processos complexos, com visão de 2–3 anos, Agentes de IA tendem a ter TCO (custo total de propriedade) menor — especialmente pela eliminação de licenças de plataforma e menor custo de manutenção.</p>
+
+  <div class="cta-inline">
+    <h2>Não sabe qual é o melhor para o seu processo?</h2>
+    <p>Em 30 minutos de diagnóstico gratuito, mapeamos seu processo e indicamos a abordagem com melhor relação custo-benefício para o seu contexto específico.</p>
+    <a class="btn-white" href="/#contato">Diagnóstico Gratuito →</a>
+  </div>
+
+  <div class="faq-section">
+    <h2>Perguntas frequentes</h2>
+
+    <div class="faq-item">
+      <h3>Qual a diferença principal entre RPA e Agentes de IA?</h3>
+      <p>RPA segue scripts fixos e executa tarefas repetitivas em interfaces gráficas sem variações. Agentes de IA entendem contexto, tomam decisões, lidam com exceções e aprendem com o tempo. RPA automatiza o previsível; Agentes de IA automatizam o complexo e adaptativo.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>RPA vai ser substituído por Agentes de IA?</h3>
+      <p>Não completamente. RPA continua sendo a melhor opção para processos 100% estruturados, de alto volume, com interfaces gráficas legadas sem API. A tendência é a hiperautomação: combinar RPA para a parte mecânica com Agentes de IA para a parte decisória do mesmo processo.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Quanto custa implementar RPA versus Agentes de IA?</h3>
+      <p>RPA: licenças R$ 3.000–15.000/mês + desenvolvimento R$ 30.000–120.000 por processo. Agentes de IA: desenvolvimento R$ 40.000–200.000, sem licença cara, com custos de API de LLM em torno de R$ 300–3.000/mês dependendo do volume. O custo de manutenção do RPA tende a ser maior por causa de mudanças de interface.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>É possível combinar RPA com Agentes de IA no mesmo processo?</h3>
+      <p>Sim, e é a abordagem mais comum em grandes empresas. O modelo de hiperautomação usa RPA para interagir com sistemas legados que não têm API, e Agentes de IA para processar documentos, entender e-mails, tomar decisões com contexto e lidar com exceções que o RPA não consegue tratar.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Qual tecnologia tem maior ROI: RPA ou Agentes de IA?</h3>
+      <p>Depende do processo. Para tarefas altamente repetitivas e estruturadas (entrada de notas fiscais, conciliação bancária), RPA tende a ter ROI mais rápido (3–6 meses). Para processos com linguagem natural, documentos variados e exceções frequentes, Agentes de IA têm ROI superior no médio prazo por conseguir processar o que RPA não consegue.</p>
+    </div>
+  </div>
+
+  <p style="margin-top: 40px; color: var(--muted); font-size: 0.9rem;">
+    Leia também:
+    <a href="/automacao-com-ia/">Automação com IA para Empresas</a> ·
+    <a href="/agentes-de-ia/">O que são Agentes de IA</a> ·
+    <a href="/rag-empresarial/">RAG Empresarial</a> ·
+    <a href="/blog/roi-projetos-de-ia/">Como calcular ROI de projetos de IA</a>
+  </p>
+
+</div>
+
+<footer>
+  <p>© 2026 Bronks IA · Rio de Janeiro, RJ · Brasil · <a href="/">Início</a> · <a href="/blog/">Blog</a> · <a href="/agentes-de-ia/">Agentes de IA</a> · <a href="/automacao-com-ia/">Automação</a> · <a href="/#contato">Contato</a></p>
+</footer>
+
+</body>
+</html>
