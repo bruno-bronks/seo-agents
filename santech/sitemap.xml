@@ -31,8 +31,20 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://santechseguranca.com.br/cerca-eletrica-residencial/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://santechseguranca.com.br/alarme-residencial/</loc>
     <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/alarme-comercial/</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -55,20 +67,8 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://santechseguranca.com.br/cameras-niteroi/</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://santechseguranca.com.br/cameras-campo-grande/</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://santechseguranca.com.br/alarme-comercial/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <loc>https://santechseguranca.com.br/seguranca-condominio/</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -79,8 +79,38 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://santechseguranca.com.br/cameras-zona-sul/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://santechseguranca.com.br/manutencao-ar-condicionado/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/energia-solar/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/eletroposto/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/automacao-portao-zona-oeste/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/cameras-niteroi/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/cameras-campo-grande/</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -115,8 +145,26 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://santechseguranca.com.br/cameras-zona-sul/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/cameras-copacabana/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/cameras-bangu/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://santechseguranca.com.br/blog/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -157,45 +205,15 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://santechseguranca.com.br/manutencao-ar-condicionado/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://santechseguranca.com.br/energia-solar/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://santechseguranca.com.br/eletroposto/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://santechseguranca.com.br/seguranca-condominio/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://santechseguranca.com.br/cameras-copacabana/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://santechseguranca.com.br/blog/cameras-wifi-ou-cabeada/</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://santechseguranca.com.br/automacao-portao-zona-oeste/</loc>
+    <loc>https://santechseguranca.com.br/blog/quanto-custa-portaria-virtual-condominio/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
