@@ -187,8 +187,20 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://santechseguranca.com.br/cerca-eletrica-zona-oeste/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/cameras-niteroi-centro/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://santechseguranca.com.br/blog/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -259,13 +271,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://santechseguranca.com.br/cerca-eletrica-zona-oeste/</loc>
+    <loc>https://santechseguranca.com.br/blog/energia-solar-residencial-rio-vale-a-pena/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://santechseguranca.com.br/blog/energia-solar-residencial-rio-vale-a-pena/</loc>
+    <loc>https://santechseguranca.com.br/blog/nvr-vs-dvr-qual-escolher/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
