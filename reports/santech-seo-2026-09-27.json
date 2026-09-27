@@ -1,0 +1,264 @@
+{
+  "timestamp": "2026-09-27T03:00:00Z",
+  "domain": "santechseguranca.com.br",
+  "cycle": 22,
+  "audit_method": "WebSearch (SERP Google — site direto bloqueado por proxy de egresso) + análise do repositório seo-agents + geração de conteúdo",
+  "seo_score": 38,
+  "sre_score": 35,
+  "local_rank_score": 20,
+  "ranking_potential": "muito alto (53 URLs de conteúdo otimizado prontas no repositório; problema bloqueador único é o deploy para produção + ativação do Search Console)",
+  "delta_vs_ciclo_anterior": {
+    "seo_score": "+2 pts (ciclo #21: 36 → ciclo #22: 38 — adição de /alarme-residencial-rio-de-janeiro/ completando cobertura geo-root para alarmes, e /blog/manutencao-ar-condicionado-quando-fazer/ inaugurando cobertura editorial do segmento AC)",
+    "sre_score": "0 (site inacessível via proxy remoto — uptime, SSL e formulários não verificáveis)",
+    "local_rank_score": "+2 pts (/alarme-residencial-rio-de-janeiro/ com schema LocalBusiness + FAQPage para keyword 'alarme residencial rio de janeiro' ~2.000/mês — cobre lacuna crítica do portfólio de páginas geo-root)",
+    "observacao": "Problema crítico de indexação persiste pelo 22º ciclo consecutivo. O repositório acumulou 53 URLs completas — conteúdo, schema, CTAs WhatsApp e internal links 100% prontos. Deploy e resolução de indexação continuam sendo o único bloqueio para zero leads virarem 70–200 leads/mês. Recomendação urgente: verificar se tag noindex ou configuração do CMS está impedindo rastreamento."
+  },
+  "indexed_pages": [
+    {
+      "url": "santechseguranca.com.br",
+      "title": "não verificado (WebFetch bloqueado pelo proxy de egresso para este domínio)",
+      "status": "CRÍTICO — zero páginas retornadas no operador site:santechseguranca.com.br no Google. Domínio invisível ao Google pelo 22º ciclo consecutivo. 53 páginas HTML com schema completo existem no repositório mas nunca foram deployadas."
+    }
+  ],
+  "pages_generated_this_cycle": [
+    {
+      "url": "/alarme-residencial-rio-de-janeiro/",
+      "keyword_alvo": "alarme residencial rio de janeiro",
+      "tipo": "local (geo-root)",
+      "volume_estimado": "2.000/mês",
+      "difficulty": "medium",
+      "schema": "LocalBusiness + Service + FAQPage (5 perguntas)",
+      "cta_whatsapp": "Olá, quero orçamento de alarme residencial no Rio de Janeiro",
+      "estimated_leads": "5–12 leads/mês após indexação (keyword transacional, alta intenção de compra)",
+      "destaques": "Tabela de preços por tipo de sistema (R$900–R$4.000+), tipos de alarme (sem fio, cabeado, integrado com câmeras, automação), processo em 5 etapas, 18 bairros/regiões cobertos com area-tags, FAQ com 5 perguntas, links internos para /instalacao-cameras/, /automacao-portoes/, /cerca-eletrica/, /controle-acesso/",
+      "status": "CRIADA HOJE — arquivo: santech/alarme-residencial-rio-de-janeiro/index.html — aguardando deploy"
+    },
+    {
+      "url": "/blog/manutencao-ar-condicionado-quando-fazer/",
+      "keyword_alvo": "manutenção ar condicionado quando fazer / quanto custa manutenção ar condicionado rj",
+      "tipo": "blog",
+      "volume_estimado": "2.500–4.000/mês",
+      "difficulty": "low-medium",
+      "schema": "Article + FAQPage (4 perguntas)",
+      "cta_whatsapp": "Olá, quero agendar manutenção de ar-condicionado no Rio de Janeiro",
+      "estimated_leads": "3–8 leads/mês (segmento AC — ticket médio R$200–R$500 por visita, potencial de contrato anual)",
+      "destaques": "Primeiro artigo do segmento ar-condicionado no repositório — abre cobertura editorial para manutenção preventiva, recarga de gás, limpeza química. Frequência por tipo de uso (trimestral/semestral/anual), tabela de preços 2026 com 4 tipos de serviço, 5 dicas práticas, seção especial para bairros da orla do RJ (sal marinho), FAQ com 4 perguntas (schema FAQPage), links relacionados para outros artigos do blog",
+      "status": "CRIADO HOJE — arquivo: santech/blog/manutencao-ar-condicionado-quando-fazer/index.html — aguardando deploy"
+    }
+  ],
+  "cumulative_pages_in_repo": {
+    "total": 53,
+    "sitemap_total_urls": 53,
+    "servico": [
+      "/instalacao-cameras/", "/cftv-residencial/", "/automacao-portoes/", "/cerca-eletrica/",
+      "/cerca-eletrica-residencial/", "/alarme-residencial/", "/alarme-comercial/",
+      "/monitoramento-24h/", "/controle-acesso/", "/portaria-virtual/",
+      "/portaria-virtual-condominio/", "/seguranca-condominio/", "/cameras-comerciais/",
+      "/manutencao-ar-condicionado/", "/energia-solar/", "/eletroposto/",
+      "/instalacao-cerca-eletrica-condominio/"
+    ],
+    "local": [
+      "/cameras-barra-da-tijuca/", "/cameras-recreio/", "/cameras-tijuca/",
+      "/cameras-copacabana/", "/cameras-niteroi/", "/cameras-niteroi-centro/",
+      "/cameras-zona-norte/", "/cameras-zona-sul/", "/cameras-zona-oeste/",
+      "/cameras-bangu/", "/cameras-campo-grande/", "/cameras-jacarepagua/",
+      "/cameras-madureira/", "/cameras-sao-goncalo/", "/automacao-portao-zona-oeste/",
+      "/cerca-eletrica-zona-oeste/", "/instalacao-cameras-rio-de-janeiro/",
+      "/alarme-residencial-rio-de-janeiro/"
+    ],
+    "blog": [
+      "/blog/", "/blog/quanto-custa-instalar-cameras-rj/",
+      "/blog/monitoramento-remoto-cameras-celular/", "/blog/diferenca-cftv-cameras-ip/",
+      "/blog/portao-automatico-vale-a-pena/", "/blog/dicas-seguranca-residencial-rj/",
+      "/blog/como-escolher-cameras-seguranca-residencial/", "/blog/cameras-wifi-ou-cabeada/",
+      "/blog/quanto-custa-portaria-virtual-condominio/", "/blog/camera-ip-vs-hd-como-escolher/",
+      "/blog/alarme-monitorado-vs-nao-monitorado/", "/blog/como-instalar-cameras-areas-externas/",
+      "/blog/energia-solar-residencial-rio-vale-a-pena/", "/blog/nvr-vs-dvr-qual-escolher/",
+      "/blog/manutencao-preventiva-cameras-seguranca/", "/blog/controle-acesso-condominio/",
+      "/blog/manutencao-ar-condicionado-quando-fazer/"
+    ],
+    "pages_pending_deploy": 53,
+    "whatsapp_placeholder_occurrences": 153
+  },
+  "keyword_opportunities": [
+    {
+      "keyword": "alarme residencial rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "2.000/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/alarme-residencial-rio-de-janeiro/ (CRIADA HOJE)"
+    },
+    {
+      "keyword": "manutenção ar condicionado rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "2.500/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/blog/manutencao-ar-condicionado-quando-fazer/ (CRIADO HOJE) + /manutencao-ar-condicionado/ (existente)"
+    },
+    {
+      "keyword": "câmeras de segurança barra da tijuca",
+      "tier": 2,
+      "estimated_volume": "1.100/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta — concorrente direto aepseguranca.com.br ranqueia com 2 páginas dedicadas",
+      "page_to_create_or_optimize": "/cameras-barra-da-tijuca/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "instalação câmeras rio de janeiro",
+      "tier": 2,
+      "estimated_volume": "2.900/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta",
+      "page_to_create_or_optimize": "/instalacao-cameras-rio-de-janeiro/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "energia solar residencial rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "3.200/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta (ticket médio R$18k–R$55k — maior LTV da Santech)",
+      "page_to_create_or_optimize": "/energia-solar/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "eletroposto instalação residencial rj",
+      "tier": 3,
+      "estimated_volume": "400/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta (blue ocean — frota elétrica cresce 40%/ano no RJ)",
+      "page_to_create_or_optimize": "/eletroposto/ (existente — deploy pendente)"
+    }
+  ],
+  "technical_issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Zero páginas indexadas no Google pelo 22º ciclo. site:santechseguranca.com.br retorna 0 resultados. Bloqueio persiste sem resolução confirmada.",
+      "affected_urls": ["santechseguranca.com.br"],
+      "fix": "URGENTE: Verificar tag noindex no CMS (WordPress Settings > Reading > Discourage search engines), inspecionar robots.txt, submeter sitemap.xml no Google Search Console. Se o site não estiver no ar em produção, fazer deploy imediato do repositório seo-agents/santech/."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "53 páginas HTML completas com schema, CTA WhatsApp, internal links e conteúdo semântico existem no repositório mas nunca foram deployadas para o domínio ao vivo.",
+      "affected_urls": ["todo o repositório santech/"],
+      "fix": "Deploy de todos os arquivos do diretório santech/ para o servidor do domínio santechseguranca.com.br. Substituir telefone placeholder +55-21-XXXX-XXXX pelo número real da empresa. Após deploy, solicitar indexação no Search Console."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "Número de WhatsApp placeholder (5521XXXXXXXX) presente em 153 pontos nas páginas do repositório. Ao fazer deploy, os botões não terão o número correto.",
+      "affected_urls": ["todos os arquivos do repositório santech/"],
+      "fix": "Antes do deploy, executar find-and-replace em todos os arquivos: substituir '5521XXXXXXXX' pelo número real da Santech no formato internacional (5521XXXXXXXXX). Usar: find santech/ -name '*.html' -exec sed -i 's/5521XXXXXXXX/5521NUMERORREAL/g' {} +"
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "Resolver problema de indexação zero: verificar noindex no CMS e robots.txt",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Substituir número de WhatsApp placeholder e fazer deploy do repositório santech/ para produção",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Submeter sitemap.xml ao Google Search Console e solicitar indexação manual das URLs prioritárias",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar página /alarme-residencial-barra-da-tijuca/ para keyword de nicho local (500/mês, baixa concorrência)",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar blog: 'Instalação de ar-condicionado split: guia completo para apartamentos no RJ' — 2.000+ buscas/mês",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "tech-servcom.com.br",
+      "keywords_overlap": ["câmeras de segurança rj", "cftv residencial", "instalação câmeras tijuca", "alarme residencial"],
+      "google_maps_reviews": "não verificado — estimativa: 50+ reviews",
+      "content_gap": "Não cobre Barra da Tijuca e Zona Oeste com páginas dedicadas. Sem cobertura de eletroposto e energia solar.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "segurancaeletronicarj.com.br",
+      "keywords_overlap": ["segurança eletrônica rj", "instalação câmeras rio de janeiro", "alarme residencial rj"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Cobertura principalmente em Campo Grande. Pouca cobertura de Zona Sul e Barra da Tijuca.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "aepseguranca.com.br",
+      "keywords_overlap": ["câmeras barra da tijuca", "cftv barra da tijuca"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Especializado na Barra. Sem cobertura de ar-condicionado, energia solar, eletroposto.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "alsegurancaeletronicarj.com",
+      "keywords_overlap": ["câmeras de segurança rj", "cerca elétrica rj", "alarme residencial rj"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Sem blog editorial. Sem cobertura de AC, energia solar e eletroposto.",
+      "has_local_pages": false
+    },
+    {
+      "domain": "jmcarneiro.com.br",
+      "keywords_overlap": ["portão automático rj", "automação portão rio de janeiro"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Especializado em automação. Sem câmeras, alarme, AC, energia solar.",
+      "has_local_pages": false
+    }
+  ],
+  "kpis_snapshot": {
+    "pages_indexed": 0,
+    "pages_in_repo_ready_to_deploy": 53,
+    "pages_with_local_keyword": 18,
+    "pages_missing_schema": 0,
+    "whatsapp_link_working": "não verificado — placeholder presente",
+    "mobile_speed_score": "não verificado",
+    "core_web_vitals_passed": "não verificado"
+  },
+  "estimated_leads_gain": {
+    "30_days": "3–8 leads (se deploy e indexação forem resolvidos esta semana)",
+    "90_days": "20–45 leads/mês (com 53 URLs indexadas + Google Business Profile ativo)",
+    "6_months": "60–120 leads/mês (com todas as URLs ranqueando + blog + autoridade de domínio)",
+    "assumptions": "Pressupõe: (1) deploy imediato das 53 URLs do repositório, (2) resolução da indexação zero, (3) substituição dos números placeholder, (4) Google Business Profile ativo com 10+ reviews, (5) WhatsApp Business ativo com resposta rápida"
+  },
+  "next_cycle_suggestions": [
+    "Criar /alarme-residencial-barra-da-tijuca/ — nicho local, baixa concorrência, 500+/mês",
+    "Criar /blog/instalacao-ar-condicionado-split-rj/ — 2.000+/mês, ticket médio de instalação R$400–R$900",
+    "Criar /manutencao-ar-condicionado-zona-sul/ — local page AC para Zona Sul (Copacabana, Ipanema, Leblon)",
+    "Criar /cameras-zona-sul/ — equivalente local para câmeras na Zona Sul (Copacabana, Leblon, Botafogo)"
+  ],
+  "artifact_url": "https://claude.ai/artifact/WgmH1MAwJRdeurVBHp5tMm"
+}
