@@ -1,0 +1,368 @@
+{
+  "timestamp": "2026-09-30T00:00:00-03:00",
+  "domain": "bronks.ia.br",
+  "seo_score": 38,
+  "sre_score": 76,
+  "ranking_potential": "baixo",
+  "cycle_notes": "Acesso direto ao domínio bloqueado pelo proxy de egresso (EGRESS_BLOCKED). Dados técnicos estimados via análise indireta. SSH bloqueado — deploy manual necessário.",
+  "indexed_pages": [
+    {
+      "url": "https://bronks.ia.br/",
+      "title": "Bronks IA — Agentes de IA, Automação Inteligente e RAG para Empresas",
+      "status": "indexada"
+    }
+  ],
+  "pages_in_repo": 47,
+  "pages_in_sitemap": 47,
+  "pages_indexed_by_google": 1,
+  "top_keywords": [
+    {
+      "keyword": "agentes de IA",
+      "tier": 1,
+      "estimated_volume": "8.000–18.000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia (fora do top 100)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "automação com IA",
+      "tier": 1,
+      "estimated_volume": "4.000–9.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia (fora do top 100)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "IA para empresas",
+      "tier": 1,
+      "estimated_volume": "10.000–25.000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia (fora do top 100)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria em IA",
+      "tier": 1,
+      "estimated_volume": "2.500–6.000/mês",
+      "difficulty": "high",
+      "intent": "transacional",
+      "current_position": "não ranqueia (fora do top 100)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "RAG empresarial",
+      "tier": 2,
+      "estimated_volume": "600–2.000/mês",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "multiagentes IA",
+      "tier": 2,
+      "estimated_volume": "400–1.200/mês",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "ChatGPT vs agentes de IA",
+      "tier": 2,
+      "estimated_volume": "1.000–3.000/mês",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "automação análise de crédito IA",
+      "tier": 3,
+      "estimated_volume": "300–800/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria IA Rio de Janeiro",
+      "tier": 3,
+      "estimated_volume": "300–900/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "automação empresarial RJ",
+      "tier": 3,
+      "estimated_volume": "200–600/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    }
+  ],
+  "issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Deploy pendente: 46 páginas existem no repositório mas não estão acessíveis no servidor live. SSH porta 22 bloqueada no ambiente de execução — deploy deve ser realizado manualmente pelo operador.",
+      "affected_urls": ["https://bronks.ia.br/*"],
+      "fix": "Executar deploy manual via SCP/SFTP ou configurar pipeline CI/CD (GitHub Actions) que não dependa de SSH neste ambiente."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Apenas 1 página indexada pelo Google de 47 páginas no repositório. Google não está rastreando as novas páginas.",
+      "affected_urls": ["https://bronks.ia.br/*"],
+      "fix": "1) Confirmar que páginas foram deploiadas. 2) Submeter sitemap.xml ao Google Search Console. 3) Verificar se Cloudflare Bot Fight Mode está ativo e bloqueando Googlebot."
+    },
+    {
+      "type": "técnico",
+      "severity": "alto",
+      "description": "Verificar Cloudflare Bot Fight Mode — pode estar bloqueando Googlebot como aconteceu com santechseguranca.com.br.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Acessar dash.cloudflare.com > bronks.ia.br > Security > Bots > Bot Fight Mode → Toggle OFF."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "alto",
+      "description": "Seção /casos-de-uso/ não existia — apenas criada neste ciclo.",
+      "affected_urls": ["https://bronks.ia.br/casos-de-uso/"],
+      "fix": "Página /casos-de-uso/automacao-analise-credito/ criada neste ciclo. Criar index de casos de uso para ser porta de entrada do cluster."
+    },
+    {
+      "type": "link building",
+      "severity": "alto",
+      "description": "Zero backlinks externos visíveis — domínio sem autoridade de links construída.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Submeter case study de análise de crédito para Startups.com.br, Canaltech e TecMundo como press release."
+    },
+    {
+      "type": "técnico",
+      "severity": "médio",
+      "description": "Core Web Vitals não verificados (acesso bloqueado pelo proxy).",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Verificar via PageSpeed Insights manualmente. Garantir LCP < 2.5s, CLS < 0.1, INP < 200ms."
+    },
+    {
+      "type": "estrutura",
+      "severity": "médio",
+      "description": "Ausência de página /casos-de-uso/ como hub — criado apenas o case individual, falta o index.",
+      "affected_urls": ["https://bronks.ia.br/casos-de-uso/"],
+      "fix": "Criar /casos-de-uso/index.html como hub listando todos os estudos de caso com links internos."
+    },
+    {
+      "type": "local SEO",
+      "severity": "médio",
+      "description": "Google Business Profile não confirmado como configurado.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Criar/verificar Google Business Profile com nome 'Bronks IA', endereço Rio de Janeiro, categoria 'Serviços de TI'."
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "artigo",
+      "title": "ChatGPT vs Agentes de IA: o que sua empresa realmente precisa?",
+      "target_keyword": "ChatGPT vs agentes de IA",
+      "estimated_traffic_gain": "800–2.500/mês",
+      "priority": "alto",
+      "status": "CRIADO neste ciclo — /blog/chatgpt-vs-agentes-de-ia/"
+    },
+    {
+      "type": "caso de uso",
+      "title": "Case: Automação de Análise de Crédito — de 3 dias para 5 minutos",
+      "target_keyword": "automação análise de crédito IA",
+      "estimated_traffic_gain": "300–900/mês",
+      "priority": "alto",
+      "status": "CRIADO neste ciclo — /casos-de-uso/automacao-analise-credito/"
+    },
+    {
+      "type": "landing page",
+      "title": "Hub /casos-de-uso/ — índice de todos os estudos de caso",
+      "target_keyword": "casos de uso agentes de IA",
+      "estimated_traffic_gain": "400–1.200/mês",
+      "priority": "alto",
+      "status": "PENDENTE — criar no próximo ciclo"
+    },
+    {
+      "type": "artigo",
+      "title": "Agentes de IA para o Setor Jurídico: do contrato ao compliance automatizado",
+      "target_keyword": "agentes de IA para escritórios jurídicos",
+      "estimated_traffic_gain": "500–1.500/mês",
+      "priority": "médio",
+      "status": "PENDENTE"
+    },
+    {
+      "type": "artigo",
+      "title": "Como escolher entre RAG, fine-tuning e prompt engineering para seu projeto de IA",
+      "target_keyword": "RAG vs fine-tuning vs prompt engineering",
+      "estimated_traffic_gain": "300–800/mês",
+      "priority": "médio",
+      "status": "PENDENTE"
+    },
+    {
+      "type": "página local",
+      "title": "Agentes de IA em São Paulo — Automação Empresarial SP",
+      "target_keyword": "agentes de IA São Paulo",
+      "estimated_traffic_gain": "600–1.800/mês",
+      "priority": "médio",
+      "status": "EXISTE /consultoria-ia-sao-paulo/ — verificar otimização para keyword específica"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/casos-de-uso/",
+      "tipo": "hub / landing page",
+      "keyword_alvo": "casos de uso agentes de IA",
+      "justificativa": "O case de análise de crédito foi criado mas precisa de uma página hub que liste todos os casos de uso e sirva de porta de entrada para o cluster."
+    },
+    {
+      "url_sugerida": "/blog/agentes-ia-setor-juridico/",
+      "tipo": "artigo",
+      "keyword_alvo": "agentes de IA para escritórios jurídicos",
+      "justificativa": "Keyword de nicho com baixa concorrência e alta intenção comercial. A página /ia-para-juridico/ existe mas um artigo aprofundado sobre uso em escritórios aumenta a autoridade topical."
+    },
+    {
+      "url_sugerida": "/blog/rag-vs-fine-tuning-vs-prompt-engineering/",
+      "tipo": "artigo comparativo",
+      "keyword_alvo": "RAG vs fine-tuning vs prompt engineering",
+      "justificativa": "Pergunta muito comum de CTOs e arquitetos de IA — alto volume de buscas informacionais de decisores técnicos. Bom candidato para featured snippet."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "CRÍTICO: Verificar e corrigir deploy das 47 páginas no servidor live bronks.ia.br — confirmar que estão acessíveis (SSH bloqueado neste ambiente, deploy manual necessário)",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Verificar Cloudflare Bot Fight Mode para bronks.ia.br em dash.cloudflare.com — se ativo, desativar imediatamente",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Submeter sitemap.xml ao Google Search Console e Bing Webmaster Tools após confirmar deploy",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar /casos-de-uso/index.html como hub de estudos de caso com links para o case de análise de crédito (e futuros cases)",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Publicar press release do case de análise de crédito no Startups.com.br e Canaltech — usar para backlink de alta autoridade",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "link building",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar /blog/agentes-ia-setor-juridico/ — keyword de baixa concorrência e alta intenção comercial",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Verificar e configurar Google Business Profile (Bronks IA, Rio de Janeiro) se ainda não feito",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar /blog/rag-vs-fine-tuning-vs-prompt-engineering/ — comparativo técnico visando featured snippet",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 mês"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "intelecta.digital",
+      "keywords_overlap": ["agentes de IA", "automação com IA", "IA para empresas", "RAG empresarial", "consultoria IA"],
+      "estimated_traffic": "20.000–50.000/mês",
+      "content_gap": "Sem foco em Rio de Janeiro. Sem cases de uso detalhados com métricas reais. Oportunidade para Bronks: autoridade técnica com dados reais de clientes."
+    },
+    {
+      "domain": "brabaflow.ai",
+      "keywords_overlap": ["agentes de IA", "IA para empresas", "automação empresarial"],
+      "estimated_traffic": "5.000–15.000/mês",
+      "content_gap": "Sem conteúdo técnico sobre RAG ou multiagentes. Posicionamento mais de branding do que técnico."
+    },
+    {
+      "domain": "xmb.com.br",
+      "keywords_overlap": ["consultoria IA Rio de Janeiro", "agentes de IA RJ"],
+      "estimated_traffic": "2.000–8.000/mês",
+      "content_gap": "Sem especialização em RAG ou multiagentes. Menos profundidade técnica. Oportunidade para Bronks liderar em RJ com conteúdo técnico."
+    },
+    {
+      "domain": "d2un.com.br",
+      "keywords_overlap": ["agente de IA Rio de Janeiro", "automação IA RJ"],
+      "estimated_traffic": "1.000–4.000/mês",
+      "content_gap": "Foco em WhatsApp e atendimento. Sem profundidade em B2B enterprise, RAG ou multiagentes."
+    },
+    {
+      "domain": "trilion.com.br",
+      "keywords_overlap": ["consultoria IA", "agentes de IA empresas"],
+      "estimated_traffic": "3.000–10.000/mês",
+      "content_gap": "Metodologia proprietária forte mas pouco conteúdo editorial. Sem foco em Rio de Janeiro."
+    }
+  ],
+  "estimated_traffic_gain": {
+    "30_days": "+200–500 visitas/mês (se deploy + indexação ocorrer esta semana)",
+    "90_days": "+2.000–5.000 visitas/mês (com 47 páginas indexadas + novos backlinks)",
+    "6_months": "+8.000–20.000 visitas/mês (com cluster semântico completo + autoridade de domínio crescendo)",
+    "assumptions": "Estimativa assume: deploy manual executado esta semana, Google Search Console configurado, Cloudflare Bot Fight Mode OFF, pelo menos 2 novos backlinks por mês de portais de tecnologia, conteúdo atual de alta qualidade sendo indexado e ranqueando para keywords de cauda longa nos primeiros 30 dias."
+  },
+  "pages_created_this_cycle": [
+    {
+      "url": "/blog/chatgpt-vs-agentes-de-ia/",
+      "keyword_alvo": "ChatGPT vs agentes de IA",
+      "tipo": "artigo comparativo",
+      "palavras_estimadas": 1800,
+      "schema": ["Article", "FAQPage"],
+      "internal_links": 5
+    },
+    {
+      "url": "/casos-de-uso/automacao-analise-credito/",
+      "keyword_alvo": "automação análise de crédito IA",
+      "tipo": "caso de uso",
+      "palavras_estimadas": 2200,
+      "schema": ["Article"],
+      "internal_links": 6,
+      "kpis_destacados": ["80% automação", "<5min análise", "800 análises/dia", "94% acurácia", "ROI 2.170%"]
+    }
+  ],
+  "sitemap_total_urls": 47,
+  "blockers": [
+    {
+      "blocker": "SSH porta 22 bloqueada outbound",
+      "impacto": "Deploy direto impossível",
+      "status": "PERMANENTE neste ambiente",
+      "acao_necessaria": "Deploy manual via SCP/SFTP pelo operador, ou pipeline CI/CD alternativo"
+    },
+    {
+      "blocker": "EGRESS_BLOCKED para bronks.ia.br",
+      "impacto": "Auditoria técnica direta impossível (TTFB, Core Web Vitals, HTML real)",
+      "status": "PERMANENTE neste ambiente",
+      "acao_necessaria": "Operador verifica via PageSpeed Insights e Search Console manualmente"
+    }
+  ]
+}

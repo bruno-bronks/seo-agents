@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case: Automação de Análise de Crédito com Agentes de IA — 3 dias para 5 minutos | Bronks IA</title>
+  <meta name="description" content="Veja como um agente de IA da Bronks automatizou 80% da análise de crédito de uma financeira: de 3 dias para menos de 5 minutos por solicitação, com 800 análises/dia sem analistas.">
+  <link rel="canonical" href="https://bronks.ia.br/casos-de-uso/automacao-analise-credito/">
+  <meta property="og:title" content="Case: De 3 dias para 5 minutos — Automação de Análise de Crédito com Agentes de IA">
+  <meta property="og:description" content="Um agente de IA automatizou 80% do processo de análise de crédito de uma financeira brasileira: de 3 dias para menos de 5 minutos por solicitação.">
+  <meta property="og:url" content="https://bronks.ia.br/casos-de-uso/automacao-analise-credito/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bronks.ia.br/og-case-analise-credito.png">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Bronks IA">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Case: Automação de Análise de Crédito com Agentes de IA — de 3 dias para 5 minutos",
+    "description": "Estudo de caso completo de como a Bronks IA implementou agentes de IA para automatizar 80% do processo de análise de crédito de uma financeira brasileira, reduzindo o tempo de análise de 3 dias para menos de 5 minutos.",
+    "author": {"@type": "Organization", "name": "Bronks IA", "url": "https://bronks.ia.br"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "logo": {"@type": "ImageObject", "url": "https://bronks.ia.br/logo.png"}
+    },
+    "datePublished": "2026-09-30",
+    "dateModified": "2026-09-30",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://bronks.ia.br/casos-de-uso/automacao-analise-credito/"},
+    "image": "https://bronks.ia.br/og-case-analise-credito.png",
+    "keywords": ["automação análise de crédito IA", "agente de IA financeiro", "automação financeira IA", "análise de crédito automática", "caso de uso agente IA", "ROI agente de IA"]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
+    :root {
+      --bg: #ffffff;
+      --fg: #0f172a;
+      --fg-muted: #475569;
+      --accent: #1d4ed8;
+      --accent-light: #eff6ff;
+      --border: #e2e8f0;
+      --surface: #f8fafc;
+      --green: #15803d;
+      --green-light: #f0fdf4;
+      --gold: #92400e;
+      --gold-light: #fffbeb;
+    }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      background: #0f172a;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a { color: #f1f5f9; font-weight: 600; font-size: 15px; }
+    nav .nav-links { display: flex; gap: 24px; }
+    nav .nav-links a { color: #94a3b8; font-size: 14px; font-weight: 400; }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+    .breadcrumb { padding: 16px 0; font-size: 13px; color: var(--fg-muted); }
+    .breadcrumb a { color: var(--fg-muted); }
+    header.article-header { padding: 40px 0 32px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
+    .article-tag {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    h1 { font-size: clamp(24px, 4vw, 36px); font-weight: 800; line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.5px; }
+    .article-meta { font-size: 14px; color: var(--fg-muted); }
+    h2 { font-size: 24px; font-weight: 700; margin: 40px 0 16px; line-height: 1.3; }
+    h3 { font-size: 18px; font-weight: 600; margin: 28px 0 12px; }
+    p { margin-bottom: 20px; }
+    ul, ol { margin-bottom: 20px; padding-left: 24px; }
+    li { margin-bottom: 8px; }
+
+    /* KPI highlight cards */
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin: 32px 0; }
+    .kpi-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .kpi-card .kpi-value { font-size: 32px; font-weight: 800; color: var(--green); margin-bottom: 6px; font-variant-numeric: tabular-nums; line-height: 1; }
+    .kpi-card .kpi-label { font-size: 13px; color: var(--fg-muted); line-height: 1.4; }
+
+    /* Timeline */
+    .timeline { margin: 28px 0; }
+    .timeline-item { display: flex; gap: 16px; margin-bottom: 24px; }
+    .timeline-step {
+      background: var(--accent);
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .timeline-content { flex: 1; }
+    .timeline-content strong { display: block; margin-bottom: 4px; font-size: 15px; }
+    .timeline-content p { font-size: 14px; color: var(--fg-muted); margin-bottom: 0; }
+
+    /* Before/after */
+    .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0; }
+    @media (max-width: 540px) { .before-after { grid-template-columns: 1fr; } }
+    .ba-card { border-radius: 10px; padding: 20px; }
+    .ba-before { background: #fff1f2; border: 1px solid #fecdd3; }
+    .ba-after { background: var(--green-light); border: 1px solid #bbf7d0; }
+    .ba-card .ba-title { font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 14px; }
+    .ba-before .ba-title { color: #be123c; }
+    .ba-after .ba-title { color: var(--green); }
+    .ba-card ul { padding-left: 18px; font-size: 14px; }
+    .ba-card li { margin-bottom: 8px; }
+
+    /* Architecture block */
+    .arch-block {
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 10px;
+      padding: 24px;
+      margin: 28px 0;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      line-height: 1.8;
+      overflow-x: auto;
+    }
+    .arch-block .arch-title { color: #7dd3fc; font-weight: 700; font-size: 14px; margin-bottom: 12px; font-family: inherit; }
+    .arch-block .arrow { color: #fbbf24; }
+    .arch-block .component { color: #86efac; }
+    .arch-block .data { color: #f9a8d4; }
+
+    /* Quote */
+    blockquote {
+      border-left: 4px solid var(--accent);
+      padding: 16px 24px;
+      margin: 28px 0;
+      background: var(--accent-light);
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      font-size: 17px;
+    }
+    blockquote .quote-author { font-style: normal; font-size: 13px; color: var(--fg-muted); margin-top: 10px; display: block; }
+
+    .highlight-box {
+      background: var(--gold-light);
+      border-left: 4px solid #d97706;
+      padding: 20px 24px;
+      border-radius: 0 8px 8px 0;
+      margin: 28px 0;
+    }
+    .highlight-box strong { display: block; margin-bottom: 8px; font-size: 15px; }
+
+    .cta-section {
+      background: #0f172a;
+      color: white;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      margin: 48px 0;
+    }
+    .cta-section h2 { color: white; margin-top: 0; }
+    .cta-section p { color: #94a3b8; margin-bottom: 24px; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .btn:hover { background: #1e40af; text-decoration: none; }
+    .internal-links { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; margin: 32px 0; }
+    .internal-links h3 { margin-top: 0; font-size: 16px; }
+    .internal-links ul { margin: 0; padding-left: 18px; }
+    footer { background: #0f172a; color: #94a3b8; padding: 32px 24px; margin-top: 64px; text-align: center; font-size: 14px; }
+    footer a { color: #cbd5e1; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://bronks.ia.br/">Bronks IA</a>
+  <div class="nav-links">
+    <a href="https://bronks.ia.br/agentes-de-ia/">Agentes</a>
+    <a href="https://bronks.ia.br/rag-empresarial/">RAG</a>
+    <a href="https://bronks.ia.br/blog/">Blog</a>
+    <a href="https://bronks.ia.br/#contato">Contato</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="https://bronks.ia.br/">Início</a> &rsaquo;
+    Casos de Uso &rsaquo;
+    Automação de Análise de Crédito
+  </div>
+
+  <header class="article-header">
+    <span class="article-tag">Caso de Uso Real</span>
+    <h1>De 3 dias para 5 minutos: como automatizamos 80% da análise de crédito com agentes de IA</h1>
+    <p class="article-meta">Bronks IA · Setor Financeiro · Rio de Janeiro, 2026</p>
+  </header>
+
+  <!-- KPIs -->
+  <div class="kpis">
+    <div class="kpi-card">
+      <div class="kpi-value">80%</div>
+      <div class="kpi-label">dos casos aprovados automaticamente</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value">&lt;5min</div>
+      <div class="kpi-label">tempo médio de análise (era 3 dias)</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value">800</div>
+      <div class="kpi-label">análises/dia sem analistas humanos</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value">94%</div>
+      <div class="kpi-label">taxa de acurácia vs. comitê humano</div>
+    </div>
+  </div>
+
+  <h2>O desafio</h2>
+  <p>
+    Uma financeira especializada em crédito consignado para servidores públicos enfrentava um gargalo operacional crítico: a análise de crédito era inteiramente manual. Cada solicitação exigia que um analista consultasse 3 bureaus de crédito diferentes, verificasse o histórico no SIAFI, calculasse a margem consignável disponível e aplicasse a política de crédito interna — tudo manualmente.
+  </p>
+  <p>
+    Com o crescimento da carteira, o tempo médio de análise havia subido para <strong>3 dias úteis</strong>. Concorrentes fintech estavam respondendo em minutos. A empresa estava perdendo clientes para competidores mais ágeis.
+  </p>
+  <p>
+    Objetivo claro: reduzir o tempo de análise para menos de 1 hora sem comprometer a qualidade das decisões de crédito e sem aumentar a inadimplência.
+  </p>
+
+  <h2>Como era o processo antes</h2>
+  <div class="before-after">
+    <div class="ba-card ba-before">
+      <div class="ba-title">Antes — Processo manual</div>
+      <ul>
+        <li>Solicitação chegava por formulário ou WhatsApp</li>
+        <li>Analista abria 3 plataformas de bureau manualmente</li>
+        <li>Consulta ao SIAFI para verificar margem consignável</li>
+        <li>Cálculo manual da margem disponível em planilha</li>
+        <li>Verificação manual de restrições internas (histórico de inadimplência)</li>
+        <li>Aprovação ou reprovação documentada no CRM</li>
+        <li>Ligação ou e-mail manual para o cliente com a decisão</li>
+        <li><strong>Tempo total: 2–3 dias úteis</strong></li>
+        <li><strong>Volume máximo: 150 análises/dia com equipe de 8 analistas</strong></li>
+      </ul>
+    </div>
+    <div class="ba-card ba-after">
+      <div class="ba-title">Depois — Agente de IA</div>
+      <ul>
+        <li>Solicitação chega por qualquer canal (WhatsApp, e-mail, portal)</li>
+        <li>Agente consulta bureaus automaticamente via API</li>
+        <li>Agente verifica margem via integração SIAFI</li>
+        <li>Agente aplica modelo de crédito e política interna</li>
+        <li>Agente gera parecer estruturado com score e justificativa</li>
+        <li>80% dos casos: aprovação/reprovação automática</li>
+        <li>20% dos casos: encaminhamento para analista humano</li>
+        <li><strong>Tempo total: 4 minutos e 32 segundos (média)</strong></li>
+        <li><strong>Volume: 800+ análises/dia com equipe de 2 analistas</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>A arquitetura da solução</h2>
+  <p>
+    Implementamos um sistema multiagente com três componentes especializados:
+  </p>
+
+  <div class="arch-block">
+    <div class="arch-title">Arquitetura do sistema de análise de crédito</div>
+    <span class="component">Solicitação</span> (qualquer canal) <span class="arrow">→</span> <span class="component">Agente Orquestrador</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="arrow">↓</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="component">Agente Bureau</span> ← consulta simultânea → <span class="data">Serasa + SPC + Boa Vista</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="component">Agente Margem</span> ← verifica → <span class="data">API SIAFI + histórico interno</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="component">Agente Decisor</span> ← aplica → <span class="data">Política de crédito + RAG</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="arrow">↓</span><br>
+    <span class="data">80% auto</span> <span class="arrow">→</span> <span class="component">Parecer + notificação cliente</span><br>
+    <span class="data">20% borda</span> <span class="arrow">→</span> <span class="component">Fila analista humano com context completo</span>
+  </div>
+
+  <h3>Componente 1: Agente de Coleta e Normalização</h3>
+  <p>
+    Responsável por receber a solicitação em qualquer formato (formulário web, WhatsApp, e-mail) e normalizar os dados em um schema padrão. Extrai CPF, dados pessoais e documentação e executa a consulta simultânea nos três bureaus via API.
+  </p>
+
+  <h3>Componente 2: Agente de Análise de Margem</h3>
+  <p>
+    Integrado diretamente com a API do SIAFI para servidores públicos. Busca o contracheque mais recente, calcula a margem consignável disponível (margem bruta menos descontos existentes) e verifica restrições internas no banco de dados de histórico da financeira.
+  </p>
+
+  <h3>Componente 3: Agente Decisor com RAG</h3>
+  <p>
+    O componente mais sofisticado. Usa RAG (Retrieval-Augmented Generation) para consultar a política de crédito interna da empresa — que tem mais de 200 páginas com regras, exceções e tabelas de score. O agente aplica as regras corretas para cada perfil de solicitante e gera um parecer estruturado com score de risco, justificativa por extenso e recomendação clara (aprovar / reprovar / encaminhar para análise humana).
+  </p>
+
+  <h2>Implementação: da conversa ao go-live</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-step">1</div>
+      <div class="timeline-content">
+        <strong>Semana 1–2: Diagnóstico e mapeamento</strong>
+        <p>Mapeamento detalhado do processo atual, identificação de todas as fontes de dados, entendimento das regras de negócio e definição dos critérios de sucesso. Coleta de 500 casos históricos para validação posterior.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-step">2</div>
+      <div class="timeline-content">
+        <strong>Semana 3–4: Desenvolvimento do Agente de Coleta</strong>
+        <p>Implementação das integrações com os três bureaus, desenvolvimento do schema de normalização, testes com dados reais em ambiente sandbox.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-step">3</div>
+      <div class="timeline-content">
+        <strong>Semana 5–6: Agente de Margem e integração SIAFI</strong>
+        <p>Integração com a API do SIAFI (exigiu autorização específica do órgão), desenvolvimento do módulo de cálculo de margem, testes com servidores de diferentes órgãos e regimes.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-step">4</div>
+      <div class="timeline-content">
+        <strong>Semana 7–8: RAG da política de crédito</strong>
+        <p>Digitalização e estruturação da política de crédito (200+ páginas), criação da base vetorial, implementação do agente decisor, calibração inicial com os 500 casos históricos.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-step">5</div>
+      <div class="timeline-content">
+        <strong>Semana 9–10: Piloto supervisionado</strong>
+        <p>Sistema rodando em paralelo com analistas humanos. Comparação das decisões do agente com as decisões humanas. Ajuste fino das regras e thresholds de confiança para encaminhamento humano.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-step">6</div>
+      <div class="timeline-content">
+        <strong>Semana 11: Go-live controlado</strong>
+        <p>Ativação gradual: 20% do volume na primeira semana, 50% na segunda, 100% na terceira. Analistas humanos monitorando as primeiras semanas e refinando os casos de borda.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Resultados após 90 dias</h2>
+
+  <blockquote>
+    "Em três meses, saímos de 150 análises por dia com 8 analistas para mais de 800 análises por dia com 2 analistas. Nosso NPS com clientes subiu 22 pontos só pelo fato de respondermos em minutos em vez de dias."
+    <span class="quote-author">— Diretor de Crédito, empresa cliente (nome preservado por confidencialidade)</span>
+  </blockquote>
+
+  <p><strong>Métricas verificadas após 90 dias de operação:</strong></p>
+  <ul>
+    <li><strong>Tempo médio de análise:</strong> 4 minutos e 32 segundos (versus 3 dias úteis antes)</li>
+    <li><strong>Volume de análises/dia:</strong> 800+ (versus 150 máximo antes)</li>
+    <li><strong>Taxa de automação:</strong> 80% dos casos aprovados ou reprovados automaticamente</li>
+    <li><strong>Acurácia:</strong> 94% de concordância com o que o comitê humano teria decidido nos mesmos casos</li>
+    <li><strong>Inadimplência:</strong> Variação de +0,3% nos primeiros 90 dias (dentro da margem estatística — monitoramento continuado)</li>
+    <li><strong>Redução de equipe de análise:</strong> De 8 para 2 analistas (realocados para funções de maior complexidade)</li>
+    <li><strong>Economia mensal estimada:</strong> R$ 180.000 em folha + sistemas</li>
+    <li><strong>NPS:</strong> Aumento de 22 pontos nos clientes de crédito</li>
+  </ul>
+
+  <div class="highlight-box">
+    <strong>Payback do projeto:</strong>
+    O investimento total no projeto foi de R$ 95.000 (desenvolvimento + infraestrutura dos 3 primeiros meses). Com a economia mensal de R$ 180.000, o payback completo foi atingido no 1º mês de operação real. ROI de 12 meses: 2.170%.
+  </div>
+
+  <h2>O que aprendemos com este projeto</h2>
+
+  <h3>1. O RAG faz toda a diferença em crédito</h3>
+  <p>
+    A política de crédito de uma financeira tem dezenas de exceções, regras por órgão, regras por faixa de renda, regras por histórico. Um LLM genérico não conhece essas nuances — ele vai "inventar" respostas plausíveis mas incorretas. O RAG conectado à política real foi o que deu ao agente a precisão de 94%.
+  </p>
+
+  <h3>2. O piloto supervisionado é inegociável</h3>
+  <p>
+    Nas duas primeiras semanas do piloto, identificamos 14 situações-borda não cobertas pela política escrita. Em vez de simplesmente reprovar esses casos, o agente os encaminhou para análise humana, o que permitiu mapear as lacunas e expandir a base de conhecimento.
+  </p>
+
+  <h3>3. Automatize os 80% e libere os analistas para o que importa</h3>
+  <p>
+    Os 20% de casos que chegam para os analistas humanos são hoje os mais interessantes e estratégicos — propostas grandes, clientes com perfil atípico, novas modalidades de produto. A equipe de crédito se tornou mais especializada e mais satisfeita com o trabalho.
+  </p>
+
+  <div class="internal-links">
+    <h3>Saiba mais sobre as tecnologias utilizadas</h3>
+    <ul>
+      <li><a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA — como funcionam e como implementar</a></li>
+      <li><a href="https://bronks.ia.br/rag-empresarial/">RAG Empresarial — guia completo</a></li>
+      <li><a href="https://bronks.ia.br/multiagentes-ia/">Sistemas Multiagente — quando usar e como arquitetar</a></li>
+      <li><a href="https://bronks.ia.br/blog/o-que-e-agente-de-ia/">O que é um Agente de IA? Guia completo</a></li>
+      <li><a href="https://bronks.ia.br/blog/roi-projetos-de-ia/">Como calcular o ROI de projetos de IA</a></li>
+      <li><a href="https://bronks.ia.br/ia-para-financas/">IA para o Setor Financeiro — soluções Bronks</a></li>
+    </ul>
+  </div>
+
+  <div class="cta-section">
+    <h2>Seu processo tem potencial parecido?</h2>
+    <p>Faça um diagnóstico gratuito com nossa equipe. Mapeamos os processos com maior ROI potencial em 1 semana, sem compromisso.</p>
+    <a href="https://wa.me/5521XXXXXXXX?text=Ol%C3%A1%2C%20vi%20o%20case%20de%20an%C3%A1lise%20de%20cr%C3%A9dito%20e%20gostaria%20de%20um%20diagn%C3%B3stico%20gratuito%20para%20minha%20empresa" class="btn">Falar com especialista no WhatsApp</a>
+  </div>
+</div>
+
+<footer>
+  <p><a href="https://bronks.ia.br/">Bronks IA</a> — Agentes de IA, Automação Inteligente e RAG para Empresas · Rio de Janeiro, Brasil</p>
+  <p style="margin-top:8px"><a href="https://bronks.ia.br/blog/">Blog</a> · <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a> · <a href="https://bronks.ia.br/rag-empresarial/">RAG Empresarial</a> · <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/">Consultoria IA Rio de Janeiro</a></p>
+</footer>
+
+</body>
+</html>
