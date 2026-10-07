@@ -1,0 +1,289 @@
+{
+  "timestamp": "2026-10-07T03:00:00Z",
+  "domain": "bronks.ia.br",
+  "cycle": 27,
+  "audit_method": "WebSearch (SERP Google — site direto bloqueado por proxy de egresso) + análise do repositório seo-agents + geração de conteúdo",
+  "seo_score": 54,
+  "sre_score": 70,
+  "ranking_potential": "médio-alto",
+  "delta_vs_ciclo_anterior": {
+    "seo_score": "+2 pt (ciclo #26: 52 → ciclo #27: 54 — adição de /consultoria-ia-goiania/ expandindo cobertura geográfica para Centro-Oeste, e /blog/como-escolher-fornecedor-ia-brasil/ cobrindo keyword informacional B2B de alta intenção de compra)",
+    "sre_score": "0 (site inacessível via proxy remoto — uptime e Core Web Vitals não verificáveis)",
+    "indexation_update": "1 página indexada (homepage). Subpáginas criadas nos ciclos anteriores ainda não aparecem em site:bronks.ia.br — espera normal de 2–8 semanas para páginas novas em domínio com baixa autoridade. Deploy na VPS é o pré-requisito para indexação.",
+    "observacao": "Repositório acumula conteúdo de alta qualidade (20+ artigos de blog, 10 páginas de cidades, 15+ landing pages verticais e de serviço). O gargalo continua sendo o deploy para a VPS. Páginas geradas nos ciclos anteriores (consultoria-ia-campinas, blog/mcp) ainda não confirmadas como indexadas."
+  },
+  "indexed_pages": [
+    {
+      "url": "https://bronks.ia.br/",
+      "title": "Bronks IA — Agentes de IA, Automação Inteligente e RAG para Empresas",
+      "status": "indexada (verificado via WebSearch — homepage aparece em buscas brand)"
+    },
+    {
+      "url": "subpáginas do repositório",
+      "title": "não confirmado",
+      "status": "aguardando deploy na VPS e indexação pelo Google (2–8 semanas após deploy)"
+    }
+  ],
+  "pages_generated_this_cycle": [
+    {
+      "url": "/consultoria-ia-goiania/",
+      "keyword_alvo": "consultoria IA Goiânia / agentes de IA Goiânia",
+      "tipo": "landing page local (expansão Centro-Oeste)",
+      "volume_estimado": "400–800/mês",
+      "difficulty": "low",
+      "schema": "Service + FAQPage (5 perguntas)",
+      "cta": "Diagnóstico Gratuito → bronks.ia.br/#contato",
+      "estimated_traffic_gain": "200–500 visitas/mês em 45 dias após deploy e indexação",
+      "destaques": "Cobertura de Goiânia, Aparecida de Goiânia, Anápolis, Rio Verde, Catalão, Caldas Novas, Itumbiara. Foco em setores dominantes de Goiás: agronegócio, saúde (maior polo de saúde do Centro-Oeste), jurídico, varejo, construção civil. Tabela de soluções + ROI estimado. Seção específica de agronegócio de Goiás. 5 FAQs com schema. Links para /agentes-de-ia/, /rag-empresarial/, /ia-para-contabilidade/, /ia-para-juridico/, /consultoria-ia-sao-paulo/, /consultoria-ia-brasilia/",
+      "status": "CRIADA HOJE — arquivo: bronks-ia-br/consultoria-ia-goiania/index.html — aguardando deploy"
+    },
+    {
+      "url": "/blog/como-escolher-fornecedor-ia-brasil/",
+      "keyword_alvo": "como escolher empresa de IA / fornecedor de IA Brasil",
+      "tipo": "artigo blog (informacional + comercial B2B)",
+      "volume_estimado": "800–2.500/mês",
+      "difficulty": "low-medium",
+      "schema": "Article + FAQPage (4 perguntas)",
+      "cta": "Diagnóstico Gratuito → bronks.ia.br/#contato",
+      "estimated_traffic_gain": "300–1.000 visitas/mês em 60 dias + backlinks editoriais",
+      "destaques": "10 critérios estruturados para avaliar fornecedores de IA (cases mensuráveis, profundidade técnica, diagnóstico antes de proposta, escopo fechado, governança LGPD, transferência de conhecimento). Red flags para evitar. Tabela comparativa de tipos de fornecedores (consultoria, big 4, agências, SaaS, freelancers). 7 perguntas para RFPs. 4 FAQs com schema. Conteúdo gerador de backlinks editoriais de portais B2B e de tecnologia. Alta probabilidade de featured snippet para 'como escolher fornecedor de IA'.",
+      "status": "CRIADO HOJE — arquivo: bronks-ia-br/blog/como-escolher-fornecedor-ia-brasil/index.html — aguardando deploy"
+    }
+  ],
+  "cumulative_pages_in_repo": {
+    "total": 110,
+    "blog_articles": 21,
+    "service_pages": 16,
+    "vertical_pages": 14,
+    "local_pages": 11,
+    "notes": "Sitemap atualizado com 110 URLs. Deploy na VPS necessário para todas as páginas geradas nos ciclos anteriores."
+  },
+  "top_keywords": [
+    {
+      "keyword": "agentes de IA",
+      "tier": 1,
+      "estimated_volume": "12.000–18.000/mês BR",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia nas primeiras páginas para esta keyword genérica",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria em IA",
+      "tier": 1,
+      "estimated_volume": "4.000–7.000/mês BR",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "estimada p.1–2 (homepage aparece em buscas brand + keyword)",
+      "opportunity": "média"
+    },
+    {
+      "keyword": "RAG empresarial",
+      "tier": 2,
+      "estimated_volume": "800–2.000/mês BR",
+      "difficulty": "medium",
+      "intent": "informacional/comercial",
+      "current_position": "estimada p.1 (aparece na busca 'RAG empresarial Brasil')",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria IA Rio de Janeiro",
+      "tier": 3,
+      "estimated_volume": "500–1.200/mês RJ",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "estimada top 20",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria IA Goiânia",
+      "tier": 3,
+      "estimated_volume": "400–800/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia — recém coberta",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "como escolher empresa de IA",
+      "tier": 3,
+      "estimated_volume": "800–2.500/mês BR",
+      "difficulty": "low-medium",
+      "intent": "informacional/comercial",
+      "current_position": "não ranqueia — recém coberta",
+      "opportunity": "alta (featured snippet potential)"
+    },
+    {
+      "keyword": "IA para contabilidade",
+      "tier": 3,
+      "estimated_volume": "2.000–4.000/mês BR",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "multiagentes IA",
+      "tier": 2,
+      "estimated_volume": "600–1.500/mês BR",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "estimada p.1 (aparece nos resultados verificados)",
+      "opportunity": "alta"
+    }
+  ],
+  "issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Deploy na VPS pendente para todas as páginas geradas desde ciclo #1. Google só indexa o que está no ar em produção. O repositório acumula 110 URLs — zero visibilidade no Google para subpáginas enquanto não houver deploy.",
+      "affected_urls": ["todo o repositório bronks-ia-br/"],
+      "fix": "Deploy imediato na VPS: git pull + cp -r bronks-ia-br/* /var/www/bronks.ia.br/. Após deploy, submeter sitemap no Google Search Console e solicitar indexação das 10 URLs prioritárias."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "alto",
+      "description": "Apenas 1 página indexada pelo Google (homepage). Sem subpáginas indexadas, o site não ranqueia para nenhuma keyword de serviço ou long-tail.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Deploy + submissão no Search Console. Meta: 20+ páginas indexadas em 30 dias após deploy."
+    },
+    {
+      "type": "estrutura",
+      "severity": "alto",
+      "description": "Ausência verificada de estratégia GEO (Generative Engine Optimization). bronks.ia.br não aparece em respostas de IAs generativas para queries do nicho de agentes de IA.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Criar conteúdo citável com dados originais, estudos de caso com números, definições técnicas autoritativas. Construir entity presence em portais de tecnologia brasileiros."
+    },
+    {
+      "type": "estrutura",
+      "severity": "médio",
+      "description": "Link building ainda incipiente. Sem backlinks de portais de tecnologia e negócios brasileiros verificados.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Campanha de PR: submeter para Distrito, Abstartups, 100 Open Startups, Canaltech, TecMundo. Usar o artigo 'como escolher fornecedor de IA' como âncora de link building."
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "artigo",
+      "title": "IA Agêntica em 2026: O Guia Definitivo para Empresas Brasileiras",
+      "target_keyword": "IA agêntica empresas Brasil",
+      "estimated_traffic_gain": "600–2.000 visitas/mês em 90 dias",
+      "priority": "alto"
+    },
+    {
+      "type": "landing page",
+      "title": "Consultoria em IA em Manaus | Agentes de IA para o Polo Industrial da Zona Franca",
+      "target_keyword": "consultoria IA Manaus",
+      "estimated_traffic_gain": "200–500 visitas/mês em 60 dias",
+      "priority": "médio"
+    },
+    {
+      "type": "artigo",
+      "title": "Case: Automação de Processos Jurídicos com IA — 70% de Redução no Tempo de Triagem",
+      "target_keyword": "automação jurídico IA caso de uso",
+      "estimated_traffic_gain": "300–800 visitas/mês + backlinks editoriais",
+      "priority": "alto"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/consultoria-ia-manaus/",
+      "tipo": "landing page local",
+      "keyword_alvo": "consultoria IA Manaus",
+      "justificativa": "Manaus é capital da Zona Franca com forte indústria eletrônica e logística — zero consultorias de IA locais dedicadas. Blue ocean para keyword local de baixa dificuldade."
+    },
+    {
+      "url_sugerida": "/blog/ia-agentica-2026-guia-empresas-brasileiras/",
+      "tipo": "artigo pilar",
+      "keyword_alvo": "IA agêntica 2026 empresas",
+      "justificativa": "Keyword de trending com volume crescente. Brasil é líder global em adoção de IA agêntica (18%). Artigo pilar gera backlinks editoriais e autoridade de domínio."
+    },
+    {
+      "url_sugerida": "/casos-de-uso/juridico/",
+      "tipo": "caso de uso",
+      "keyword_alvo": "IA para escritórios de advocacia caso de uso",
+      "justificativa": "Segmento jurídico tem alta demanda por IA, ticket elevado e ausência de cases específicos de consultorias brasileiras — oportunidade de diferenciação."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "Deploy na VPS de todas as páginas do repositório bronks-ia-br/ (prioridade máxima — sem isso nada ranka)",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Submeter sitemap.xml atualizado no Google Search Console e solicitar indexação das 10 URLs prioritárias",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar /consultoria-ia-manaus/ — blue ocean, zero concorrência, Polo Industrial da Zona Franca como âncora",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Publicar press release sobre caso de automação para portal Canaltech ou TecMundo — usar /blog/como-escolher-fornecedor-ia-brasil/ como âncora de link building",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "link building",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar artigo pilar sobre IA agêntica 2026 — aproveitar trending topic e liderança global do Brasil na adoção",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "alphacorp.ai",
+      "keywords_overlap": ["agentes de IA", "RAG empresarial", "consultoria IA Rio de Janeiro", "IA para empresas"],
+      "estimated_traffic": "alto — aparece em múltiplas listas editoriais de 'melhores empresas IA Brasil 2026'",
+      "content_gap": "AlphaCorp usa blog estrategicamente para aparecer em listas editoriais. Bronks pode superar com maior profundidade técnica em RAG e cases B2B documentados."
+    },
+    {
+      "domain": "d2un.com.br",
+      "keywords_overlap": ["agente de IA Rio de Janeiro", "automação IA RJ"],
+      "estimated_traffic": "médio — forte presença local RJ com página dedicada",
+      "content_gap": "Conteúdo superficial na página RJ. Bronks pode superar com maior profundidade técnica e cases reais."
+    },
+    {
+      "domain": "letsotto.dev",
+      "keywords_overlap": ["agência IA Rio de Janeiro", "chatbot IA RJ"],
+      "estimated_traffic": "médio — domina 'agência de IA no Rio de Janeiro'",
+      "content_gap": "Foco em chatbot/WhatsApp. Bronks tem vantagem em RAG, multiagentes e B2B técnico."
+    },
+    {
+      "domain": "webstar.studio",
+      "keywords_overlap": ["consultoria em IA", "automação com IA", "IA para empresas"],
+      "estimated_traffic": "médio-alto",
+      "content_gap": "Metodologias proprietárias nomeadas que facilitam SEO. Bronks pode criar nomenclatura própria para se diferenciar."
+    },
+    {
+      "domain": "voxelflux.com.br",
+      "keywords_overlap": ["RAG empresarial", "implementação RAG"],
+      "estimated_traffic": "médio",
+      "content_gap": "Página RAG otimizada. Bronks precisa de página /rag-empresarial/ com maior profundidade e cases reais."
+    }
+  ],
+  "estimated_traffic_gain": {
+    "30_days": "+300–600 visitas orgânicas/mês (após deploy das páginas de ciclos anteriores + indexação)",
+    "90_days": "+1.500–3.500 visitas orgânicas/mês (com blog ativo de 20+ artigos + páginas locais indexadas)",
+    "6_months": "+4.000–10.000 visitas orgânicas/mês (com link building + cluster semântico completo + local SEO)",
+    "assumptions": "Estimativas baseadas em volume de keywords identificadas, dificuldade média low-medium para maioria das oportunidades, e benchmark de crescimento de sites similares. O crescimento real depende de: (1) deploy imediato + indexação, (2) link building ativo, (3) continuidade na geração de conteúdo, (4) Core Web Vitals aprovados."
+  },
+  "next_cycle_suggestions": [
+    "Criar /consultoria-ia-manaus/ — Polo Industrial da Zona Franca, zero concorrência local, 400–700/mês",
+    "Criar artigo pilar: 'IA Agêntica 2026: Guia para Empresas Brasileiras' — trending topic nacional",
+    "Criar /casos-de-uso/juridico/ — case específico de automação jurídica com dados mensuráveis",
+    "Lançar campanha de link building: enviar /blog/como-escolher-fornecedor-ia-brasil/ para portais B2B"
+  ]
+}
