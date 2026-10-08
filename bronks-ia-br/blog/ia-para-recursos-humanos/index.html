@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para RH: Como Automatizar Recrutamento, Onboarding e Folha | Bronks IA</title>
+  <meta name="description" content="Descubra como agentes de IA estão transformando o RH: triagem de currículos em segundos, onboarding automatizado, análise de clima e redução de 60% em tarefas manuais. Veja casos reais.">
+  <link rel="canonical" href="https://bronks.ia.br/blog/ia-para-recursos-humanos/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="IA para RH: Como Automatizar Recrutamento, Onboarding e Folha | Bronks IA">
+  <meta property="og:description" content="Guia prático sobre inteligência artificial para o departamento de Recursos Humanos. Casos de uso reais, resultados mensuráveis e como começar.">
+  <meta property="og:url" content="https://bronks.ia.br/blog/ia-para-recursos-humanos/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IA para RH: Como Automatizar Recrutamento, Onboarding e Folha de Pagamento",
+    "description": "Guia completo sobre inteligência artificial para Recursos Humanos: triagem de currículos, onboarding automatizado, análise de clima organizacional e redução de tarefas manuais.",
+    "author": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br"
+    },
+    "datePublished": "2026-10-08",
+    "dateModified": "2026-10-08",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://bronks.ia.br/blog/ia-para-recursos-humanos/" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como a IA pode ajudar no recrutamento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A IA automatiza a triagem de currículos, ranqueando candidatos por aderência à vaga em segundos. Também pode conduzir entrevistas iniciais por chatbot, analisar respostas e gerar relatórios de fit cultural — reduzindo de 5 horas para 20 minutos o tempo que um recrutador gasta por candidato."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IA pode substituir o profissional de RH?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. A IA libera o profissional de RH das tarefas operacionais e repetitivas para que ele possa focar no que humanos fazem melhor: relações, empatia, negociação, cultura e estratégia. O RH mais eficiente do futuro não é o que tem menos pessoas — é o que usa IA para escalar o alcance das pessoas que tem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para implementar IA no RH?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Um projeto piloto focado — por exemplo, triagem de currículos ou onboarding automatizado — leva de 4 a 8 semanas. Uma implementação completa com múltiplos casos de uso (recrutamento, onboarding, clima e folha) leva de 3 a 6 meses. O diagnóstico gratuito ajuda a definir por onde começar para ter o ROI mais rápido."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root { --primary: #0f172a; --accent: #6366f1; --accent2: #8b5cf6; --text: #1e293b; --muted: #475569; --bg-light: #f8fafc; --border: #e2e8f0; --white: #ffffff; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, Arial, sans-serif; color: var(--text); line-height: 1.75; background: var(--white); }
+    a { color: var(--accent); }
+    a:hover { text-decoration: underline; }
+    header { background: var(--primary); padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .logo { color: #fff; font-size: 1.3rem; font-weight: 800; }
+    .logo span { color: var(--accent); }
+    header nav a { color: #94a3b8; font-size: 0.9rem; margin-left: 24px; text-decoration: none; }
+    header nav a:hover { color: #fff; }
+
+    .article-hero { background: linear-gradient(135deg, var(--primary) 0%, #1e1b4b 100%); color: #fff; padding: 72px 32px 60px; text-align: center; }
+    .article-tag { display: inline-block; background: rgba(99,102,241,0.2); color: #a5b4fc; font-size: 0.8rem; font-weight: 700; padding: 5px 14px; border-radius: 100px; border: 1px solid rgba(99,102,241,0.3); margin-bottom: 18px; text-transform: uppercase; letter-spacing: 1px; }
+    .article-hero h1 { font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 900; line-height: 1.15; max-width: 760px; margin: 0 auto 16px; }
+    .article-hero p { color: #94a3b8; font-size: 1.1rem; max-width: 620px; margin: 0 auto; }
+    .article-meta { margin-top: 24px; font-size: 0.85rem; color: #64748b; }
+
+    .article-body { max-width: 780px; margin: 0 auto; padding: 60px 32px; }
+    .article-body h2 { font-size: 1.6rem; color: var(--primary); font-weight: 800; margin: 48px 0 16px; }
+    .article-body h3 { font-size: 1.2rem; color: var(--primary); font-weight: 700; margin: 32px 0 12px; }
+    .article-body p { color: var(--muted); margin-bottom: 18px; font-size: 1.02rem; }
+    .article-body ul, .article-body ol { color: var(--muted); margin: 0 0 18px 24px; }
+    .article-body li { margin-bottom: 8px; font-size: 1.02rem; }
+
+    .highlight-box { background: var(--bg-light); border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 28px 0; }
+    .highlight-box strong { color: var(--primary); display: block; margin-bottom: 6px; }
+
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 20px; margin: 32px 0; }
+    .stat-box { background: var(--bg-light); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; }
+    .stat-box .num { font-size: 2rem; font-weight: 900; color: var(--accent); display: block; }
+    .stat-box .label { font-size: 0.85rem; color: var(--muted); }
+
+    .use-case { border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin: 20px 0; }
+    .use-case .uc-tag { font-size: 0.78rem; font-weight: 700; color: var(--accent); text-transform: uppercase; margin-bottom: 8px; }
+    .use-case h3 { margin: 0 0 10px; }
+    .use-case p { margin: 0; font-size: 0.95rem; }
+
+    .faq-section { border-top: 1px solid var(--border); margin-top: 48px; padding-top: 48px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+    .faq-item h3 { font-size: 1rem; color: var(--primary); margin-bottom: 10px; }
+    .faq-item p { margin: 0; font-size: 0.97rem; }
+
+    .cta-inline { background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%); border-radius: 16px; padding: 36px; text-align: center; margin: 48px 0; color: #fff; }
+    .cta-inline h3 { color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
+    .cta-inline p { color: rgba(255,255,255,0.85); margin-bottom: 20px; }
+    .btn-white { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--accent); font-size: 1rem; font-weight: 700; padding: 14px 28px; border-radius: 8px; text-decoration: none; }
+
+    .related-posts { background: var(--bg-light); padding: 48px 32px; }
+    .related-inner { max-width: 780px; margin: 0 auto; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 20px; }
+    .related-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .related-card .tag { font-size: 0.75rem; font-weight: 700; color: var(--accent); text-transform: uppercase; margin-bottom: 8px; }
+    .related-card a { color: var(--primary); font-weight: 700; font-size: 0.95rem; text-decoration: none; }
+    .related-card a:hover { color: var(--accent); }
+
+    footer { background: var(--primary); color: #475569; text-align: center; padding: 32px; font-size: 0.875rem; }
+    footer a { color: #64748b; }
+
+    @media (max-width: 600px) {
+      .article-body { padding: 40px 20px; }
+      .article-hero { padding: 48px 20px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Bronks <span>IA</span></div>
+  <nav>
+    <a href="/">Início</a>
+    <a href="/blog/">Blog</a>
+    <a href="/agentes-de-ia/">Agentes de IA</a>
+    <a href="/#contato">Contato</a>
+  </nav>
+</header>
+
+<div class="article-hero">
+  <div class="article-tag">RH & Gestão de Pessoas</div>
+  <h1>IA para RH: Como Automatizar Recrutamento, Onboarding e Rotinas de Pessoal</h1>
+  <p>Um guia prático sobre como agentes de IA estão transformando o departamento de Recursos Humanos — com casos de uso reais, resultados mensuráveis e como começar.</p>
+  <div class="article-meta">Bronks IA · 8 de outubro de 2026 · 9 min de leitura</div>
+</div>
+
+<div class="article-body">
+
+  <p>O RH é um dos departamentos que mais acumula trabalho manual repetitivo em qualquer empresa. Triagem de currículos, resposta a dúvidas de colaboradores, controle de documentos admissionais, pesquisas de clima, cálculos de folha — são horas e horas que profissionais talentosos gastam em tarefas que a IA pode fazer em segundos.</p>
+
+  <p>Não é exagero: estudos da McKinsey apontam que entre 56% e 64% das atividades realizadas por equipes de RH são passíveis de automação com tecnologia disponível hoje. E as empresas que já estão implementando IA no RH estão vendo resultados concretos: menos tempo em triagem, melhor experiência do colaborador e, no final, mais tempo para o que realmente importa — as pessoas.</p>
+
+  <div class="stats-row">
+    <div class="stat-box"><span class="num">5x</span><span class="label">mais rápido na triagem de currículos</span></div>
+    <div class="stat-box"><span class="num">60%</span><span class="label">redução em tempo de onboarding burocrático</span></div>
+    <div class="stat-box"><span class="num">40%</span><span class="label">menos perguntas repetitivas ao RH</span></div>
+    <div class="stat-box"><span class="num">3x</span><span class="label">mais vagas processadas pela mesma equipe</span></div>
+  </div>
+
+  <h2>Os 5 casos de uso de IA no RH com maior ROI</h2>
+
+  <h3>1. Triagem e ranking automático de currículos</h3>
+  <p>Para uma empresa que recebe 200 candidatos por vaga, a triagem manual consome horas — e ainda assim é inconsistente, pois o cansaço humano afeta o critério de avaliação da manhã para a tarde. Um agente de IA treinado com os critérios da vaga consegue ranquear todos os candidatos em minutos, com justificativa clara para cada pontuação.</p>
+
+  <div class="highlight-box">
+    <strong>Como funciona na prática:</strong>
+    O recrutador define os critérios da vaga (experiência mínima, formação, habilidades técnicas, idiomas). O agente lê cada currículo, extrai as informações relevantes, pontua e ordena os candidatos com uma nota e um resumo comparativo. O recrutador foca nos top 10-15 candidatos pré-selecionados pela IA.
+  </div>
+
+  <h3>2. Chatbot de onboarding para novos colaboradores</h3>
+  <p>Os primeiros dias de um colaborador são críticos para sua retenção. Mas também são os mais caóticos para o RH: dezenas de documentos para coletar, sistemas para cadastrar, políticas para explicar, dúvidas para responder. Um agente de onboarding automatiza tudo isso.</p>
+
+  <ul>
+    <li>Coleta documentos de admissão via WhatsApp ou portal interno</li>
+    <li>Responde dúvidas sobre benefícios, ponto, férias e políticas 24/7</li>
+    <li>Envia lembretes de tarefas pendentes (assinar contrato, fazer exame médico)</li>
+    <li>Apresenta a cultura da empresa com conteúdo personalizado por área</li>
+    <li>Agenda reuniões de integração com gestor e time automaticamente</li>
+  </ul>
+
+  <p>Resultado típico: redução de 60% no tempo do RH dedicado ao onboarding, com feedback de novos colaboradores 30% melhor sobre a experiência de entrada.</p>
+
+  <h3>3. Assistente de dúvidas de RH para colaboradores</h3>
+  <p>Quantas vezes por dia sua equipe de RH responde "quando sai o holerite?", "como solicito férias?" ou "qual o prazo para entregar atestado?"? Um assistente de RH com IA integrado ao WhatsApp corporativo ou intranet responde essas perguntas automaticamente — e ainda acessa o sistema de gestão de pessoas para dar respostas personalizadas ("suas férias são de 14/11 a 3/12, você tem 5 dias ainda para usar neste exercício").</p>
+
+  <div class="use-case">
+    <div class="uc-tag">Caso de Uso Real</div>
+    <h3>Empresa de logística com 1.200 colaboradores</h3>
+    <p>Antes: equipe de RH recebia ~80 mensagens/dia com dúvidas operacionais, consumindo 3 horas diárias. Após implementação de assistente com IA: 72% das dúvidas resolvidas automaticamente, equipe liberou 2,5 horas/dia para projetos estratégicos de clima e retenção. Payback do projeto: 4 meses.</p>
+  </div>
+
+  <h3>4. Análise de clima organizacional com IA</h3>
+  <p>Pesquisas de clima anuais são um retrato atrasado da realidade. A IA permite monitoramento contínuo: agentes que enviam micro-pesquisas quinzenais de 2-3 perguntas, analisam as respostas em tempo real, identificam padrões por área e geram alertas quando o engajamento cai em algum time.</p>
+
+  <ul>
+    <li>Micro-pesquisas automáticas via WhatsApp ou e-mail (2-3 perguntas, 1 minuto)</li>
+    <li>Análise de sentimento em respostas abertas sem exposição individual</li>
+    <li>Dashboard com indicadores por área, cargo e tempo de casa</li>
+    <li>Alertas automáticos quando indicadores caem abaixo de threshold definido</li>
+    <li>Sugestões de ações baseadas nos padrões identificados</li>
+  </ul>
+
+  <h3>5. Automação de processos documentais</h3>
+  <p>Rescisões, férias, promoções, transferências — cada evento de pessoal gera uma cadeia de documentos e aprovações. Um sistema de IA pode orquestrar esse fluxo: coletar aprovações, gerar minutas de documentos, notificar os envolvidos e monitorar prazos legais, tudo sem intervenção manual do RH para cada caso.</p>
+
+  <h2>Por onde começar: o mapa de priorização</h2>
+
+  <p>A pergunta que os líderes de RH sempre fazem é: "por qual caso de uso começar?" A resposta depende de três variáveis:</p>
+
+  <ol>
+    <li><strong>Volume:</strong> qual atividade consome mais horas por mês?</li>
+    <li><strong>Repetitividade:</strong> qual atividade tem o processo mais padronizado?</li>
+    <li><strong>Impacto estratégico:</strong> qual atividade, quando feita melhor, gera mais resultado para o negócio?</li>
+  </ol>
+
+  <p>Para a maioria das empresas médias (200 a 2.000 colaboradores), o maior ROI inicial está em:</p>
+
+  <ul>
+    <li>🥇 <strong>1º lugar:</strong> chatbot de dúvidas de RH (volume alto, processo padronizado, ROI em 2-4 meses)</li>
+    <li>🥈 <strong>2º lugar:</strong> triagem de currículos (se a empresa contrata com frequência)</li>
+    <li>🥉 <strong>3º lugar:</strong> onboarding automatizado (impacto na retenção de talentos)</li>
+  </ul>
+
+  <h2>O que a IA não substitui no RH</h2>
+
+  <p>É importante ser claro: a IA não substitui o profissional de RH. Ela substitui o trabalho operacional para que o profissional possa fazer mais do que é genuinamente humano:</p>
+
+  <ul>
+    <li>Conversas difíceis de desempenho e feedback</li>
+    <li>Mediação de conflitos interpessoais</li>
+    <li>Construção de cultura organizacional</li>
+    <li>Desenvolvimento de lideranças</li>
+    <li>Negociações sindicais</li>
+    <li>Decisões de contratação que envolvem julgamento de potencial</li>
+  </ul>
+
+  <div class="highlight-box">
+    <strong>A visão correta:</strong>
+    O RH mais eficiente do futuro não é o que tem menos pessoas — é o que usa IA para escalar o alcance das pessoas que tem. Um analista de RH com IA consegue fazer o trabalho operacional de três analistas sem IA, liberando tempo para o trabalho estratégico de dez.
+  </div>
+
+  <h2>Como integrar IA com os sistemas de RH existentes</h2>
+
+  <p>A maioria das empresas já usa algum sistema de gestão de pessoas: SAP HCM, TOTVS RH, ADP, Senior, Sênior, Gupy, entre outros. A boa notícia é que os agentes de IA que desenvolvemos se integram a esses sistemas via API — o que significa que as respostas que o assistente dá aos colaboradores são baseadas nos dados reais do sistema, não em respostas genéricas.</p>
+
+  <p>As integrações mais comuns que implementamos:</p>
+
+  <ul>
+    <li><strong>TOTVS RH:</strong> saldo de férias, extrato de folha, controle de ponto</li>
+    <li><strong>Gupy:</strong> pipeline de candidatos, comunicação automatizada</li>
+    <li><strong>ADP:</strong> holerites, benefícios, afastamentos</li>
+    <li><strong>Google Workspace / Microsoft 365:</strong> agendamento de reuniões, aprovações por e-mail</li>
+    <li><strong>WhatsApp Business API:</strong> atendimento ao colaborador pelo canal que ele já usa</li>
+  </ul>
+
+  <div class="cta-inline">
+    <h3>Quer implementar IA no seu RH?</h3>
+    <p>Agende um diagnóstico gratuito de 60 minutos. Vamos mapear as atividades com maior potencial de automação e projetar o ROI antes de qualquer investimento.</p>
+    <a href="/#contato" class="btn-white">Agendar Diagnóstico Gratuito →</a>
+  </div>
+
+  <div class="faq-section">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-item">
+      <h3>Como a IA pode ajudar no recrutamento?</h3>
+      <p>A IA automatiza a triagem de currículos, ranqueando candidatos por aderência à vaga em segundos. Também pode conduzir entrevistas iniciais por chatbot, analisar respostas e gerar relatórios de fit cultural — reduzindo de 5 horas para 20 minutos o tempo que um recrutador gasta por candidato.</p>
+    </div>
+    <div class="faq-item">
+      <h3>IA pode substituir o profissional de RH?</h3>
+      <p>Não. A IA libera o profissional de RH das tarefas operacionais para que ele possa focar no que humanos fazem melhor: relações, empatia, negociação, cultura e estratégia. O RH mais eficiente do futuro não é o que tem menos pessoas — é o que usa IA para escalar o alcance das pessoas que tem.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Quanto tempo leva para implementar IA no RH?</h3>
+      <p>Um projeto piloto focado — por exemplo, triagem de currículos ou onboarding automatizado — leva de 4 a 8 semanas. Uma implementação completa com múltiplos casos de uso leva de 3 a 6 meses. O diagnóstico gratuito ajuda a definir por onde começar para ter o ROI mais rápido.</p>
+    </div>
+    <div class="faq-item">
+      <h3>IA no RH é só para grandes empresas?</h3>
+      <p>Não. Empresas a partir de 50 colaboradores já têm volume suficiente para justificar um chatbot de dúvidas de RH. Empresas a partir de 150 colaboradores geralmente têm ROI claro em triagem e onboarding. O diagnóstico gratuito ajuda a avaliar a viabilidade para o tamanho da sua empresa.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="related-posts">
+  <div class="related-inner">
+    <h3>Leia também</h3>
+    <div class="related-grid">
+      <div class="related-card">
+        <div class="tag">IA para Empresas</div>
+        <a href="/blog/agentes-ia-vs-rpa/">Agentes de IA vs. RPA: Qual a Diferença?</a>
+      </div>
+      <div class="related-card">
+        <div class="tag">ROI & Resultados</div>
+        <a href="/blog/roi-projetos-de-ia/">Como Calcular o ROI de Projetos de IA</a>
+      </div>
+      <div class="related-card">
+        <div class="tag">Estratégia</div>
+        <a href="/blog/piloto-de-ia-como-comecar/">Como Começar um Piloto de IA na sua Empresa</a>
+      </div>
+      <div class="related-card">
+        <div class="tag">Automação</div>
+        <a href="/ia-para-rh/">IA para RH — Serviços Bronks</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Bronks IA — Consultoria em Inteligência Artificial para Empresas | <a href="/">bronks.ia.br</a></p>
+</footer>
+
+</body>
+</html>
