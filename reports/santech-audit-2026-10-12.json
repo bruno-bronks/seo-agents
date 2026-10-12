@@ -1,0 +1,336 @@
+{
+  "timestamp": "2026-10-12T00:00:00Z",
+  "domain": "santechseguranca.com.br",
+  "seo_score": 0,
+  "sre_score": 0,
+  "local_rank_score": 0,
+  "ranking_potential": "alto (quando o site voltar)",
+  "audit_status": "BLOQUEADO — site completamente offline (DNS não resolve)",
+  "critical_alert": "SITE FORA DO AR — getaddrinfo ENOTFOUND santechseguranca.com.br",
+  "indexed_pages": [],
+  "keyword_opportunities": [
+    {
+      "keyword": "instalação de câmeras Rio de Janeiro",
+      "tier": 2,
+      "estimated_volume": "1.000–3.000/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia (site offline)",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/instalacao-cameras-rio-de-janeiro"
+    },
+    {
+      "keyword": "câmeras de segurança Barra da Tijuca",
+      "tier": 2,
+      "estimated_volume": "300–800/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia (site offline)",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cameras-barra-da-tijuca"
+    },
+    {
+      "keyword": "automação de portão Rio de Janeiro",
+      "tier": 2,
+      "estimated_volume": "500–1.500/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia (site offline)",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/automacao-portoes"
+    },
+    {
+      "keyword": "cerca elétrica zona oeste RJ",
+      "tier": 2,
+      "estimated_volume": "200–600/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia (site offline)",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cerca-eletrica-zona-oeste"
+    },
+    {
+      "keyword": "cftv residencial",
+      "tier": 1,
+      "estimated_volume": "2.000–5.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia (site offline)",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cftv-residencial"
+    },
+    {
+      "keyword": "segurança eletrônica Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "1.500–4.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia (site offline)",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/seguranca-eletronica-rio-de-janeiro"
+    },
+    {
+      "keyword": "empresa de câmeras de segurança perto de mim RJ",
+      "tier": 3,
+      "estimated_volume": "400–1.000/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia (site offline)",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/instalacao-cameras-rio-de-janeiro"
+    },
+    {
+      "keyword": "eletroposto instalação residencial RJ",
+      "tier": 3,
+      "estimated_volume": "100–300/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia (site offline)",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/eletroposto"
+    }
+  ],
+  "technical_issues": [
+    {
+      "type": "performance",
+      "severity": "crítico",
+      "description": "SITE COMPLETAMENTE FORA DO AR — DNS não resolve (getaddrinfo ENOTFOUND santechseguranca.com.br). O domínio não está apontando para nenhum servidor ativo. Curl retornou 403 via proxy, confirmando que não há resposta HTTP válida. Nenhuma página é acessível.",
+      "affected_urls": ["https://santechseguranca.com.br", "https://santechseguranca.com.br/robots.txt", "https://santechseguranca.com.br/sitemap.xml"],
+      "fix": "AÇÃO IMEDIATA: 1) Verificar painel do registrador de domínio (registro.br ou provedor) se o domínio está ativo e pago; 2) Verificar configuração de DNS (registros A/CNAME apontando para o servidor correto); 3) Verificar se o servidor de hospedagem está ativo; 4) Verificar se o certificado SSL expirou (pode ter causado queda); 5) Contatar a empresa de hospedagem."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Zero páginas indexadas no Google. A busca site:santechseguranca.com.br não retornou nenhum resultado do domínio, confirmando que o Google não tem nenhuma página indexada.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "Após restaurar o site: 1) Submeter sitemap.xml no Google Search Console; 2) Solicitar indexação manual das páginas principais; 3) Verificar robots.txt para garantir que não está bloqueando o Googlebot."
+    },
+    {
+      "type": "local SEO",
+      "severity": "crítico",
+      "description": "Empresa completamente invisível no Google. Nenhuma busca por 'Santech Segurança' ou 'santechseguranca.com.br' retornou resultados da empresa. Empresa não encontrada em Google Maps, diretórios ou buscas orgânicas.",
+      "affected_urls": [],
+      "fix": "Após restaurar o site: 1) Criar/verificar Google Business Profile; 2) Solicitar reindexação; 3) Criar perfis em diretórios locais (Habitissimo, GuiaFix, GetNinjas, OHub)."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "SSL/HTTPS inacessível — impossível verificar se o certificado SSL está válido devido ao DNS não resolver. Alta probabilidade de que o certificado expirou e isso causou ou contribuiu para a queda.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "Após restaurar o DNS: 1) Verificar validade do certificado SSL; 2) Renovar certificado se expirado (Let's Encrypt é gratuito); 3) Configurar renovação automática."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "alto",
+      "description": "Impossível auditar meta tags, schema markup, H1s, H2s, links internos, WhatsApp e formulários — site offline impede qualquer análise de conteúdo.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "Restaurar o site. Após restauração, executar nova auditoria completa."
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "página de serviço",
+      "title": "Instalação de Câmeras de Segurança Rio de Janeiro",
+      "target_keyword": "instalação câmeras segurança RJ",
+      "estimated_leads_gain": "15–40 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página local",
+      "title": "Câmeras de Segurança Barra da Tijuca",
+      "target_keyword": "câmeras segurança barra da tijuca",
+      "estimated_leads_gain": "5–15 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Automação de Portões Rio de Janeiro",
+      "target_keyword": "automação portão RJ",
+      "estimated_leads_gain": "10–25 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "artigo",
+      "title": "Quanto custa instalar câmeras de segurança no Rio de Janeiro em 2026?",
+      "target_keyword": "quanto custa instalar câmeras Rio de Janeiro",
+      "estimated_leads_gain": "8–20 leads/mês",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página local",
+      "title": "Segurança Eletrônica Recreio dos Bandeirantes",
+      "target_keyword": "segurança eletrônica recreio",
+      "estimated_leads_gain": "5–12 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/instalacao-cameras-rio-de-janeiro",
+      "tipo": "local",
+      "keyword_alvo": "instalação de câmeras Rio de Janeiro",
+      "h1_sugerido": "Instalação de Câmeras de Segurança no Rio de Janeiro — Orçamento pelo WhatsApp",
+      "justificativa": "Keyword Tier 2 com alta intenção transacional, volume estimado de 1.000–3.000 buscas/mês, baixa concorrência orgânica de sites locais especializados. Gap identificado: concorrentes encontrados são sites genéricos ou diretórios, sem conteúdo técnico local aprofundado."
+    },
+    {
+      "url_sugerida": "/cameras-barra-da-tijuca",
+      "tipo": "local",
+      "keyword_alvo": "câmeras de segurança barra da tijuca",
+      "h1_sugerido": "Câmeras de Segurança na Barra da Tijuca — Instalação Profissional",
+      "justificativa": "Bairro nobre com alta demanda por segurança, renda per capita elevada = ticket médio maior. Nenhuma empresa com site ranqueando especificamente para este bairro foi encontrada."
+    },
+    {
+      "url_sugerida": "/eletroposto",
+      "tipo": "serviço",
+      "keyword_alvo": "instalação eletroposto residencial RJ",
+      "h1_sugerido": "Instalação de Eletroposto Residencial no Rio de Janeiro",
+      "justificativa": "Mercado crescente de veículos elétricos no Brasil. Concorrência praticamente inexistente entre empresas de segurança eletrônica. Alta margem de lucro, cliente de alto poder aquisitivo."
+    },
+    {
+      "url_sugerida": "/energia-solar",
+      "tipo": "serviço",
+      "keyword_alvo": "energia solar residencial Rio de Janeiro",
+      "h1_sugerido": "Energia Solar Residencial no Rio de Janeiro — Instalação e Projeto",
+      "justificativa": "Volume alto, intenção comercial/transacional, nicho complementar à base de clientes de segurança eletrônica."
+    },
+    {
+      "url_sugerida": "/seguranca-recreio",
+      "tipo": "local",
+      "keyword_alvo": "segurança eletrônica Recreio",
+      "h1_sugerido": "Segurança Eletrônica no Recreio dos Bandeirantes — CFTV, Cerca e Portão",
+      "justificativa": "Bairro com alta densidade residencial e condomínios. Demanda por portões automáticos, cercas elétricas e câmeras muito presente. Nenhuma empresa local encontrada ranqueando para esta combinação."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "URGENTE: Identificar e corrigir a causa raiz do site offline — verificar domínio (registro.br), DNS (registros A/CNAME), servidor de hospedagem e certificado SSL",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Após restaurar o site: verificar Google Search Console para entender o histórico de indexação e submeter sitemap.xml",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar/verificar Google Business Profile completo com endereço, telefone, horário, fotos, área de atendimento e link do site",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Verificar e reparar link de WhatsApp em todas as páginas — principal canal de conversão do negócio",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "conversão",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Implementar schema LocalBusiness completo (nome, endereço, telefone, horário, área de atendimento, serviços) no site restaurado",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar página /instalacao-cameras-rio-de-janeiro com H1 otimizado, 800+ palavras, schema Service, CTA WhatsApp e embed de mapa",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar páginas locais para os 3 bairros prioritários: Barra da Tijuca, Recreio dos Bandeirantes e Copacabana",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Verificar e atualizar robots.txt e sitemap.xml para garantir que todas as páginas de serviço e locais sejam indexáveis",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar perfis em diretórios locais prioritários: Habitissimo, GuiaFix, GetNinjas, OHub — com NAP consistente e link para o site",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Publicar artigo 'Quanto custa instalar câmeras de segurança no Rio de Janeiro em 2026?' — captura topo de funil e gera backlinks naturais",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 mês"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "segurancaeletronicarj.com.br",
+      "keywords_overlap": ["segurança eletrônica Rio de Janeiro", "câmeras segurança RJ", "cerca elétrica RJ"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Oportunidade: bairros específicos (Barra, Recreio, Copacabana) com páginas dedicadas",
+      "has_local_pages": false
+    },
+    {
+      "domain": "padrao3d.com.br",
+      "keywords_overlap": ["portão automático RJ", "CFTV Rio de Janeiro", "alarme residencial RJ"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Oportunidade: eletroposto e energia solar — nichos não cobertos por concorrentes tradicionais de segurança",
+      "has_local_pages": false
+    },
+    {
+      "domain": "informeservice.com.br",
+      "keywords_overlap": ["segurança eletrônica", "câmeras", "cancela automática"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Oportunidade: artigos informativos (cauda longa) sobre preços e comparativos",
+      "has_local_pages": false
+    },
+    {
+      "domain": "alsegurancaeletronicarj.com",
+      "keywords_overlap": ["segurança eletrônica RJ", "câmeras Rio de Janeiro"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Oportunidade: schema markup e Core Web Vitals — maioria dos concorrentes não tem implementados",
+      "has_local_pages": false
+    },
+    {
+      "domain": "hmpereirarefrigeracao.com.br",
+      "keywords_overlap": ["câmeras segurança", "cerca elétrica", "alarmes RJ"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Oportunidade: combinação única de segurança + ar-condicionado + energia solar — posicionamento diferenciado",
+      "has_local_pages": false
+    }
+  ],
+  "kpis_snapshot": {
+    "pages_indexed": 0,
+    "pages_with_local_keyword": 0,
+    "pages_missing_schema": 0,
+    "whatsapp_link_working": null,
+    "mobile_speed_score": null,
+    "core_web_vitals_passed": null,
+    "dns_resolving": false,
+    "site_online": false,
+    "ssl_valid": null,
+    "google_maps_profile_found": false
+  },
+  "estimated_leads_gain": {
+    "30_days": "0 (site offline)",
+    "90_days": "30–80 leads (se o site for restaurado e otimizações básicas forem feitas em até 2 semanas)",
+    "6_months": "150–400 leads (com páginas locais, schema LocalBusiness, GBP otimizado e artigos de cauda longa)",
+    "assumptions": "Estimativas baseadas em volumes de busca dos concorrentes encontrados e taxas médias de conversão para serviços de segurança eletrônica no RJ (CTR médio 3–8% para posições 1–3, taxa de contato via WhatsApp ~25% dos visitantes qualificados). NENHUMA estimativa pode ser realizada enquanto o site estiver offline."
+  }
+}
