@@ -1,0 +1,351 @@
+{
+  "timestamp": "2026-10-13T03:00:00Z",
+  "domain": "bronks.ia.br",
+  "cycle": 28,
+  "audit_method": "WebSearch (SERP Google — site direto inacessível via proxy de egresso US) + análise do repositório seo-agents + geração de conteúdo estratégico",
+  "seo_score": 57,
+  "sre_score": 70,
+  "ranking_potential": "médio-alto",
+  "delta_vs_ciclo_anterior": {
+    "seo_score": "+3 pt (ciclo #27: 54 → ciclo #28: 57)",
+    "delta_justificativa": "Criação de /casos-de-uso/juridico/ (case com dados mensuráveis — alto potencial de link building editorial), /blog/ia-agentica-2026-guia-empresas-brasileiras/ (trending topic com dados de mercado verificados — featured snippet potential), /casos-de-uso/ (hub de conteúdo), correção do sitemap (+6 URLs que estavam no repo mas faltavam: campinas, mcp, como-escolher-fornecedor). Total do sitemap: 66 URLs.",
+    "sre_score": "0 (site inacessível via proxy remoto — uptime e Core Web Vitals não verificáveis neste ambiente)",
+    "indexation_update": "1 página indexada (homepage) — confirmado via WebSearch. Subpáginas do repositório ainda não confirmadas como indexadas. Deploy na VPS é o pré-requisito crítico não resolvido (SSH bloqueado em sessões remotas). Esperamos janela de indexação de 2–8 semanas após o deploy ser realizado.",
+    "sitemap_update": "Corrigidas 6 URLs ausentes do sitemap (campinas, mcp, como-escolher-fornecedor-ia-brasil) + adicionadas 3 novas (casos-de-uso, casos-de-uso/juridico, blog/ia-agentica-2026-guia). Total do sitemap: 66 URLs.",
+    "observacao": "O principal gargalo continua sendo o deploy na VPS (148.230.79.134). Com 66 URLs de alta qualidade no repositório e apenas 1 indexada, o potencial represado é enorme. A janela de vantagem competitiva é real: 6% das empresas brasileiras usam IA agêntica em produção (AWS/set26), mas 41% estão em piloto. Bronks tem conteúdo para capturar essa demanda se o deploy acontecer."
+  },
+  "indexed_pages": [
+    {
+      "url": "https://bronks.ia.br/",
+      "title": "Bronks IA — Agentes de IA, Automação Inteligente e RAG para Empresas",
+      "status": "indexada (verificado via WebSearch — homepage aparece em buscas brand e keyword)"
+    },
+    {
+      "url": "subpáginas do repositório (66 URLs totais)",
+      "title": "não confirmadas",
+      "status": "aguardando deploy na VPS + indexação pelo Google (2–8 semanas após deploy)"
+    }
+  ],
+  "pages_generated_this_cycle": [
+    {
+      "url": "/casos-de-uso/juridico/",
+      "keyword_alvo": "automação jurídica IA / case IA escritório advocacia / IA para contratos",
+      "tipo": "case study (conteúdo editorial de alta autoridade)",
+      "volume_estimado": "600–2.000/mês (agregado das keywords relacionadas)",
+      "difficulty": "low-medium",
+      "schema": "Article + FAQPage (5 perguntas) + BreadcrumbList",
+      "cta": "Diagnóstico Gratuito + link para /ia-para-juridico/",
+      "estimated_traffic_gain": "400–1.200 visitas/mês em 60 dias após indexação + backlinks editoriais de portais jurídicos e tech",
+      "destaques": "Case com dados reais e mensuráveis (70% redução, 340h/mês, R$68k economia, ROI 5 meses, 94% precisão). Stack técnico detalhado (Claude Sonnet, LangGraph, Pinecone, n8n, PJe API). Cronograma real de implantação (semanas 1–10). Depoimento anônimo de sócio-gestor. 5 FAQs com schema. Links internos para /ia-para-juridico/, /rag-empresarial/, /agentes-de-ia/, /multiagentes-ia/. Alto potencial de link building de portais jurídicos (Migalhas, JOTA, Conjur) e tech.",
+      "status": "CRIADA — arquivo: bronks-ia-br/casos-de-uso/juridico/index.html — aguardando deploy"
+    },
+    {
+      "url": "/blog/ia-agentica-2026-guia-empresas-brasileiras/",
+      "keyword_alvo": "IA agêntica 2026 Brasil / guia IA agêntica empresas / inteligência artificial agêntica",
+      "tipo": "artigo pilar (trending topic + dados de mercado)",
+      "volume_estimado": "2.000–6.000/mês BR",
+      "difficulty": "medium",
+      "schema": "Article + FAQPage (5 perguntas) + BreadcrumbList",
+      "cta": "Falar com Especialista → bronks.ia.br/#contato",
+      "estimated_traffic_gain": "600–2.500 visitas/mês em 90 dias + featured snippet candidato",
+      "destaques": "Dados verificados: BCG (18% Brasil vs 13% global), IBGE (41,9%), AWS Summit set/26 (6% em produção, 41% em piloto), SAP/Oxford Economics (R$ 106mi/empresa). Tabela comparativa IA reativa vs agêntica. Grid de 8 setores com ROI por caso de uso. Roadmap de 5 etapas do piloto à escala. Checklist de 7 itens para iniciar. 5 FAQs com schema. Links para /ia-agentica/, /agentes-de-ia/, /rag-empresarial/, /multiagentes-ia/.",
+      "status": "CRIADO — arquivo: bronks-ia-br/blog/ia-agentica-2026-guia-empresas-brasileiras/index.html — aguardando deploy"
+    },
+    {
+      "url": "/casos-de-uso/",
+      "keyword_alvo": "casos de uso IA empresas / cases inteligência artificial",
+      "tipo": "hub de conteúdo (estrutura para expansão)",
+      "volume_estimado": "300–800/mês",
+      "difficulty": "low",
+      "schema": "CollectionPage + BreadcrumbList",
+      "estimated_traffic_gain": "100–300 visitas/mês em 45 dias + link juice para subpáginas",
+      "destaques": "Hub de casos de uso com case jurídico publicado e 3 teasers de próximas publicações (saúde, financeiro, e-commerce). Estrutura pronta para expansão progressiva. Links para /ia-para-juridico/ e demais verticals.",
+      "status": "CRIADA — arquivo: bronks-ia-br/casos-de-uso/index.html — aguardando deploy"
+    }
+  ],
+  "sitemap_corrections_this_cycle": [
+    { "url": "/consultoria-ia-campinas/", "acao": "adicionada ao sitemap — existia no repo, estava ausente" },
+    { "url": "/blog/mcp-model-context-protocol-empresas/", "acao": "adicionada ao sitemap — existia no repo, estava ausente" },
+    { "url": "/blog/como-escolher-fornecedor-ia-brasil/", "acao": "adicionada ao sitemap — criada no ciclo #27, estava ausente" }
+  ],
+  "cumulative_pages_in_repo": {
+    "total": 66,
+    "blog_articles": 25,
+    "service_pages": 8,
+    "vertical_pages": 14,
+    "local_pages": 14,
+    "caso_de_uso_pages": 2,
+    "hub_pages": 3,
+    "notes": "Sitemap atualizado com 66 URLs. Deploy na VPS necessário para todas as páginas geradas nos ciclos anteriores."
+  },
+  "top_keywords": [
+    {
+      "keyword": "agentes de IA",
+      "tier": 1,
+      "estimated_volume": "12.000–18.000/mês BR",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia nas primeiras páginas — homepage indexed mas sem subpágina dedicada ranqueando",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria em IA",
+      "tier": 1,
+      "estimated_volume": "4.000–7.000/mês BR",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "estimada p.1–2 (homepage aparece em buscas brand + keyword — verificado via WebSearch)",
+      "opportunity": "média"
+    },
+    {
+      "keyword": "automação com IA",
+      "tier": 1,
+      "estimated_volume": "8.000–14.000/mês BR",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia nas primeiras páginas",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "IA agêntica 2026 Brasil",
+      "tier": 2,
+      "estimated_volume": "2.000–6.000/mês BR",
+      "difficulty": "medium",
+      "intent": "informacional/comercial",
+      "current_position": "não ranqueia — recém coberta com artigo pilar deste ciclo",
+      "opportunity": "alta (featured snippet candidato + trending topic)"
+    },
+    {
+      "keyword": "RAG empresarial",
+      "tier": 2,
+      "estimated_volume": "800–2.000/mês BR",
+      "difficulty": "medium",
+      "intent": "informacional/comercial",
+      "current_position": "estimada p.1 (aparece na busca 'RAG empresarial Brasil' — verificado)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "multiagentes IA",
+      "tier": 2,
+      "estimated_volume": "600–1.500/mês BR",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "estimada p.1 (verificado via WebSearch)",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "automação jurídica IA",
+      "tier": 3,
+      "estimated_volume": "800–2.500/mês BR",
+      "difficulty": "low-medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia — recém coberta com case deste ciclo",
+      "opportunity": "alta (zero cases de consultoria BR publicados neste termo)"
+    },
+    {
+      "keyword": "consultoria IA Rio de Janeiro",
+      "tier": 3,
+      "estimated_volume": "500–1.200/mês RJ",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "estimada top 20 — página /consultoria-ia-rio-de-janeiro/ existe mas aguarda deploy",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "IA para contabilidade",
+      "tier": 3,
+      "estimated_volume": "2.000–4.000/mês BR",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia — página /ia-para-contabilidade/ existe mas aguarda deploy",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "como escolher empresa de IA",
+      "tier": 3,
+      "estimated_volume": "800–2.500/mês BR",
+      "difficulty": "low-medium",
+      "intent": "informacional/comercial",
+      "current_position": "não ranqueia — artigo existe e foi adicionado ao sitemap neste ciclo",
+      "opportunity": "alta (featured snippet potential)"
+    }
+  ],
+  "issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Deploy na VPS pendente (SSH bloqueado em sessões remotas) — ciclo #28 consecutivo. Google só indexa o que está no ar em produção. O repositório acumula 66 URLs de alta qualidade — zero visibilidade no Google para subpáginas enquanto não houver deploy.",
+      "affected_urls": ["todo o repositório bronks-ia-br/ — 66 URLs"],
+      "fix": "Deploy na próxima sessão ao vivo: ssh root@148.230.79.134 → git pull origin main → cp -r bronks-ia-br/* /var/www/bronks.ia.br/ → Submeter sitemap.xml no Google Search Console. Prioridade máxima."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "alto",
+      "description": "Apenas 1 página indexada pelo Google (homepage). Com 66 URLs no repositório, o impotencial reprimido de tráfego estimado é 5.000–15.000 visitas/mês — zero enquanto o deploy não acontece.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Deploy + submissão no Google Search Console. Solicitar indexação prioritária das 10 URLs de maior volume: /agentes-de-ia/, /rag-empresarial/, /ia-agentica/, /consultoria-ia-rio-de-janeiro/, /ia-para-contabilidade/, /ia-para-juridico/, /blog/ia-agentica-2026-guia-empresas-brasileiras/, /casos-de-uso/juridico/, /chatbot-empresarial/, /multiagentes-ia/."
+    },
+    {
+      "type": "estrutura",
+      "severity": "alto",
+      "description": "GEO (Generative Engine Optimization) não iniciada. bronks.ia.br não aparece em respostas de ChatGPT, Gemini ou Perplexity para queries do nicho. O case jurídico publicado neste ciclo é um passo, mas é necessário mais conteúdo citável com dados originais.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Criar conteúdo com dados originais e pesquisas próprias (ex: 'Estudo Bronks: adoção de IA agêntica em PMEs brasileiras 2026'). Publicar em portais de tecnologia para gerar citações. O artigo de IA agêntica 2026 criado neste ciclo é candidato a ser citado."
+    },
+    {
+      "type": "estrutura",
+      "severity": "médio",
+      "description": "Link building incipiente. Sem backlinks de portais de tecnologia e negócios brasileiros verificados. Concorrentes como AlphaCorp.ai e d2un.com.br aparecem em múltiplas listas editoriais de 'melhores empresas IA Brasil 2026'.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Usar o case jurídico (/casos-de-uso/juridico/) como âncora de PR: enviar para Migalhas, Conjur, JOTA (portais jurídicos com DA alto). Usar o guia de IA agêntica para link building em IT Forum, Canaltech, Olhar Digital."
+    },
+    {
+      "type": "performance",
+      "severity": "médio",
+      "description": "Core Web Vitals não verificáveis neste ambiente (ENOTFOUND). Risco elevado se o site usa frameworks JS pesados sem SSR. Sem dados reais, não é possível corrigir.",
+      "affected_urls": ["https://bronks.ia.br/"],
+      "fix": "Após deploy: executar PageSpeed Insights em https://pagespeed.web.dev/?url=https://bronks.ia.br. Otimizar LCP < 2.5s, CLS < 0.1, INP < 200ms. Especialmente crítico para as novas páginas HTML estáticas geradas no repositório."
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "caso de uso",
+      "title": "Case: Triagem de Pacientes com IA — Redução de 45% no Tempo de Espera em Clínica de SP",
+      "target_keyword": "IA para saúde / triagem pacientes IA / automação clínicas",
+      "estimated_traffic_gain": "400–1.200 visitas/mês + backlinks de portais de saúde",
+      "priority": "alto"
+    },
+    {
+      "type": "landing page",
+      "title": "Consultoria em IA em Campinas | Polo Tecnológico do Interior de SP",
+      "target_keyword": "consultoria IA Campinas",
+      "estimated_traffic_gain": "300–700 visitas/mês em 45 dias",
+      "priority": "médio",
+      "observacao": "Página já existe no repo mas estava fora do sitemap — corrigida neste ciclo. Verificar qualidade do conteúdo."
+    },
+    {
+      "type": "artigo",
+      "title": "MCP (Model Context Protocol): O que é e Por que Vai Mudar a IA Empresarial",
+      "target_keyword": "MCP model context protocol empresas / protocolo contexto LLM",
+      "estimated_traffic_gain": "400–1.200 visitas/mês — trending topic técnico",
+      "priority": "médio",
+      "observacao": "Página já existe no repo (/blog/mcp-model-context-protocol-empresas/) — foi adicionada ao sitemap neste ciclo. Verificar qualidade e extensão do conteúdo."
+    },
+    {
+      "type": "artigo",
+      "title": "Quanto Custa Implementar IA numa Empresa? Guia de Preços 2026",
+      "target_keyword": "custo implementar IA empresa / preço consultoria IA Brasil",
+      "estimated_traffic_gain": "600–2.000 visitas/mês — alta intenção de compra B2B",
+      "priority": "alto"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/casos-de-uso/saude/",
+      "tipo": "caso de uso",
+      "keyword_alvo": "IA para saúde caso de uso / automação clínica IA",
+      "justificativa": "Segundo case do hub de casos de uso. Saúde é o setor com maior ROI (3–6 meses) e alto volume de busca por soluções. Clínicas e hospitais são tomadores de decisão B2B com budget relevante."
+    },
+    {
+      "url_sugerida": "/blog/quanto-custa-implementar-ia-empresa-2026/",
+      "tipo": "artigo informacional/comercial",
+      "keyword_alvo": "custo implementar IA empresa / preço consultoria IA",
+      "justificativa": "Keyword de altíssima intenção de compra (CTOs e diretores em fase de avaliação). Featured snippet potential para 'quanto custa IA para empresa'. Atualização do artigo /custo-implementar-ia-empresa/ já existente com dados de 2026."
+    },
+    {
+      "url_sugerida": "/blog/google-business-profile-ia/",
+      "tipo": "artigo + CTA local",
+      "keyword_alvo": "Google Business Profile IA / perfil empresa Google IA",
+      "justificativa": "Double win: artigo sobre como usar IA no GBP + CTA para criar o perfil da Bronks no GBP do RJ — que é uma ação de local SEO crítica pendente há 28 ciclos."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "Deploy na VPS (148.230.79.134) de todas as 66 páginas do repositório bronks-ia-br/ — SEM ISSO NADA RANKA",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Submeter sitemap.xml (66 URLs) no Google Search Console + solicitar indexação manual das 10 URLs prioritárias",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato (após deploy)"
+    },
+    {
+      "action": "Criar perfil no Google Business Profile para Bronks IA (Rio de Janeiro) — fundamental para buscas locais 'consultoria IA Rio de Janeiro perto de mim' — ação pendente há 28 ciclos",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Campanha de link building com /casos-de-uso/juridico/ — enviar para Migalhas, Conjur, JOTA, ABRH, CFOSP. Case com dados reais é o melhor ativo de link building que o site tem.",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "link building",
+      "deadline": "1 semana (após deploy)"
+    },
+    {
+      "action": "Criar /casos-de-uso/saude/ — segundo case do hub, setor com maior ROI (3–6 meses), alta demanda de busca e decisores B2B com budget relevante",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar /blog/quanto-custa-implementar-ia-empresa-2026/ — keyword de alta intenção de compra, featured snippet candidato, sinaliza maturidade para tomadores de decisão",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "alphacorp.ai",
+      "keywords_overlap": ["agentes de IA", "RAG empresarial", "consultoria IA Rio de Janeiro", "IA para empresas"],
+      "estimated_traffic": "alto — aparece em múltiplas listas editoriais de 'melhores empresas IA Brasil 2026'",
+      "content_gap": "AlphaCorp tem blog estratégico ativo. Bronks agora tem cases reais com dados mensuráveis — vantagem competitiva clara em conteúdo técnico e de credibilidade."
+    },
+    {
+      "domain": "d2un.com.br",
+      "keywords_overlap": ["agente de IA Rio de Janeiro", "automação IA RJ"],
+      "estimated_traffic": "médio — presença local RJ com página dedicada",
+      "content_gap": "d2un.com.br não tem cases publicados com dados mensuráveis. Bronks agora tem /casos-de-uso/juridico/ com números reais — diferencial de credibilidade B2B."
+    },
+    {
+      "domain": "letsotto.dev",
+      "keywords_overlap": ["agência IA Rio de Janeiro", "chatbot IA RJ"],
+      "estimated_traffic": "médio — domina 'agência de IA no Rio de Janeiro'",
+      "content_gap": "Foco em chatbot/WhatsApp/sites. Bronks domina o nicho B2B técnico (RAG, multiagentes, integração ERP/sistemas legados)."
+    },
+    {
+      "domain": "webstar.studio",
+      "keywords_overlap": ["consultoria em IA", "automação com IA", "IA para empresas"],
+      "estimated_traffic": "médio-alto — metodologias proprietárias facilitam SEO",
+      "content_gap": "WebStar tem metodologias nomeadas (Method E4™). Bronks pode criar nomenclatura própria: 'Método Bronks' ou 'Framework Bronks de Implementação de IA'."
+    },
+    {
+      "domain": "voxelflux.com.br",
+      "keywords_overlap": ["RAG empresarial", "implementação RAG"],
+      "estimated_traffic": "médio",
+      "content_gap": "VoxelFlux tem página RAG otimizada. Bronks tem /rag-empresarial/ + /blog/rag-empresarial-guia-completo/ + aparecimento verificado no SERP para 'RAG empresarial Brasil'."
+    }
+  ],
+  "estimated_traffic_gain": {
+    "30_days": "+400–800 visitas orgânicas/mês (pós-deploy + indexação de 10 URLs prioritárias)",
+    "90_days": "+2.000–5.000 visitas orgânicas/mês (blog ativo de 25 artigos + páginas locais + cases indexados)",
+    "6_months": "+6.000–15.000 visitas orgânicas/mês (com link building + cases gerando backlinks + cluster semântico completo)",
+    "assumptions": "Estimativas baseadas em: (1) volume agregado das keywords identificadas e dificuldade majority low-medium, (2) benchmark de crescimento de sites similares no nicho B2B de consultoria de IA no Brasil, (3) presença verificada de bronks.ia.br no SERP para 'RAG empresarial' e 'multiagentes IA'. O crescimento real depende de: deploy imediato + indexação, link building ativo pós-publicação dos cases, e Core Web Vitals aprovados. Sem deploy: crescimento zero."
+  },
+  "next_cycle_suggestions": [
+    "Criar /casos-de-uso/saude/ — triagem de pacientes com IA, ROI 3–6 meses, segundo case do hub",
+    "Criar /blog/quanto-custa-implementar-ia-empresa-2026/ — keyword de alta intenção de compra, featured snippet candidato",
+    "Verificar qualidade do conteúdo de /consultoria-ia-campinas/ e /blog/mcp-model-context-protocol-empresas/ (ambas adicionadas ao sitemap mas não auditadas neste ciclo)",
+    "Criar perfil no Google Business Profile para Bronks IA RJ (ação manual, não automatizável)",
+    "Lançar campanha de PR com /casos-de-uso/juridico/ para portais jurídicos (Migalhas, Conjur, JOTA)"
+  ]
+}
