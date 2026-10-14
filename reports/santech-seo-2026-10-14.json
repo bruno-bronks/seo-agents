@@ -1,0 +1,372 @@
+{
+  "timestamp": "2026-10-14T03:00:00Z",
+  "domain": "santechseguranca.com.br",
+  "cycle": 28,
+  "audit_method": "WebFetch (DNS ENOTFOUND — domínio inacessível) + WebSearch (SERP Google) + análise do repositório seo-agents + geração de conteúdo",
+  "seo_score": 40,
+  "sre_score": 0,
+  "local_rank_score": 21,
+  "ranking_potential": "muito alto (57 URLs de conteúdo otimizado prontas no repositório — deploy e resolução DNS são os únicos bloqueios para 70–200 leads/mês)",
+  "delta_vs_ciclo_anterior": {
+    "seo_score": "+1 pt (ciclo #27: 39 → ciclo #28: 40 — adição de /cameras-flamengo/ completando cobertura de Zona Sul Clássica, e /blog/instalacao-ar-condicionado-piso-teto-rj/ inaugurando keyword de nicho comercial e alto ticket de AC)",
+    "sre_score": "0 (site inacessível via DNS — ENOTFOUND santechseguranca.com.br — uptime, SSL e formulários não verificáveis pelo 28º ciclo consecutivo)",
+    "local_rank_score": "0 (sem mudança — indexação permanece zero sem deploy)",
+    "observacao": "CRÍTICO: domínio santechseguranca.com.br não resolve DNS pelo 28º ciclo consecutivo. site:santechseguranca.com.br retorna 0 resultados no Google. O repositório acumulou 57 URLs completas com schema, CTA WhatsApp e conteúdo semântico. Deploy e resolução de DNS permanecem o único bloqueio. URGENTE: verificar painel do registrador (registro.br), DNS e hospedagem HOJE."
+  },
+  "indexed_pages": [
+    {
+      "url": "santechseguranca.com.br",
+      "title": "não verificado — DNS ENOTFOUND",
+      "status": "CRÍTICO — zero páginas retornadas no operador site:santechseguranca.com.br no Google pelo 28º ciclo consecutivo. 57 páginas HTML com schema completo existem no repositório mas nunca foram deployadas."
+    }
+  ],
+  "pages_generated_this_cycle": [
+    {
+      "url": "/cameras-flamengo/",
+      "keyword_alvo": "câmeras de segurança Flamengo",
+      "tipo": "local (bairro específico — Zona Sul clássica)",
+      "volume_estimado": "400–700/mês",
+      "difficulty": "low",
+      "schema": "LocalBusiness + Service + FAQPage (5 perguntas)",
+      "cta_whatsapp": "Olá, quero orçamento de câmeras de segurança no Flamengo",
+      "estimated_leads": "2–5 leads/mês após indexação (bairro nobre, mix residencial e comercial, alto ticket médio)",
+      "destaques": "Cobertura de Flamengo, Catete, Glória, Laranjeiras, Cosme Velho, Botafogo, Humaitá. Tabela de preços 2026 com 5 faixas (R$1.200–R$25.000 para condomínios). Seção especial sobre câmeras Wi-Fi vs cabeada para apartamentos históricos. 5 perguntas FAQ com schema. Links internos para /instalacao-cameras/, /cftv-residencial/, /cameras-botafogo/, /cameras-copacabana/, /cameras-ipanema/, /cameras-zona-sul/",
+      "status": "CRIADA HOJE — arquivo: santech/cameras-flamengo/index.html — aguardando deploy"
+    },
+    {
+      "url": "/blog/instalacao-ar-condicionado-piso-teto-rj/",
+      "keyword_alvo": "instalação ar condicionado piso teto Rio de Janeiro / ar condicionado piso teto RJ",
+      "tipo": "blog (informacional + transacional)",
+      "volume_estimado": "800–1.500/mês",
+      "difficulty": "low",
+      "schema": "Article + FAQPage (5 perguntas)",
+      "cta_whatsapp": "Olá, quero orçamento de instalação de ar-condicionado piso-teto no Rio de Janeiro",
+      "estimated_leads": "3–8 leads/mês (keyword de nicho com altíssimo ticket médio — projetos de R$5.000–R$18.000, segmento comercial e residencial premium)",
+      "destaques": "Artigo de nicho para segmento AC comercial e coberturas premium. Tabela comparativa piso-teto vs split convencional. Tabela de preços 2026 (5 faixas). Seção especial sobre maresia na orla carioca. Orientações sobre instalação em condomínios tombados. 7 itens obrigatórios para exigir do instalador. 5 itens FAQ com schema. Links internos para /manutencao-ar-condicionado/ e artigos do blog de AC.",
+      "status": "CRIADO HOJE — arquivo: santech/blog/instalacao-ar-condicionado-piso-teto-rj/index.html — aguardando deploy"
+    }
+  ],
+  "cumulative_pages_in_repo": {
+    "total": 57,
+    "sitemap_total_urls": 72,
+    "servico": [
+      "/instalacao-cameras/", "/cftv-residencial/", "/automacao-portoes/", "/cerca-eletrica/",
+      "/cerca-eletrica-residencial/", "/alarme-residencial/", "/alarme-comercial/",
+      "/monitoramento-24h/", "/controle-acesso/", "/portaria-virtual/",
+      "/portaria-virtual-condominio/", "/seguranca-condominio/", "/cameras-comerciais/",
+      "/manutencao-ar-condicionado/", "/energia-solar/", "/eletroposto/",
+      "/instalacao-cerca-eletrica-condominio/", "/cftv-residencial-rio-de-janeiro/",
+      "/cerca-eletrica-automacao-portao-rj/"
+    ],
+    "local": [
+      "/cameras-barra-da-tijuca/", "/cameras-recreio/", "/cameras-tijuca/",
+      "/cameras-copacabana/", "/cameras-niteroi/", "/cameras-niteroi-centro/",
+      "/cameras-zona-norte/", "/cameras-zona-sul/", "/cameras-zona-oeste/",
+      "/cameras-bangu/", "/cameras-campo-grande/", "/cameras-jacarepagua/",
+      "/cameras-madureira/", "/cameras-sao-goncalo/", "/cameras-ilha-do-governador/",
+      "/cameras-petropolis/", "/cameras-duque-de-caxias/", "/cameras-nova-iguacu/",
+      "/automacao-portao-zona-oeste/", "/cerca-eletrica-zona-oeste/",
+      "/instalacao-cameras-rio-de-janeiro/", "/instalacao-cameras-zona-oeste/",
+      "/alarme-residencial-rio-de-janeiro/", "/cameras-meier/", "/cameras-botafogo/",
+      "/cameras-ipanema/", "/cameras-leblon/", "/cameras-flamengo/"
+    ],
+    "blog": [
+      "/blog/", "/blog/quanto-custa-instalar-cameras-rj/",
+      "/blog/monitoramento-remoto-cameras-celular/", "/blog/diferenca-cftv-cameras-ip/",
+      "/blog/portao-automatico-vale-a-pena/", "/blog/dicas-seguranca-residencial-rj/",
+      "/blog/como-escolher-cameras-seguranca-residencial/", "/blog/cameras-wifi-ou-cabeada/",
+      "/blog/quanto-custa-portaria-virtual-condominio/", "/blog/camera-ip-vs-hd-como-escolher/",
+      "/blog/alarme-monitorado-vs-nao-monitorado/", "/blog/como-instalar-cameras-areas-externas/",
+      "/blog/energia-solar-residencial-rio-vale-a-pena/", "/blog/nvr-vs-dvr-qual-escolher/",
+      "/blog/manutencao-preventiva-cameras-seguranca/", "/blog/controle-acesso-condominio/",
+      "/blog/manutencao-ar-condicionado-quando-fazer/", "/blog/cameras-4k-vs-fullhd-qual-vale-a-pena/",
+      "/blog/como-escolher-empresa-cftv-rj/", "/blog/eletroposto-residencial-como-instalar-rj/",
+      "/blog/instalacao-ar-condicionado-split-rj/", "/blog/instalacao-cameras-chuva-umidade-rj/",
+      "/blog/quanto-custa-sistema-alarme-residencial-rj/",
+      "/blog/instalacao-ar-condicionado-piso-teto-rj/"
+    ],
+    "pages_pending_deploy": 57,
+    "whatsapp_placeholder_occurrences": "~166 (todos os arquivos — necessário substituir 5521XXXXXXXX pelo número real antes do deploy)"
+  },
+  "keyword_opportunities": [
+    {
+      "keyword": "instalação câmeras rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "2.900/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta",
+      "page_to_create_or_optimize": "/instalacao-cameras-rio-de-janeiro/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "câmeras de segurança barra da tijuca",
+      "tier": 2,
+      "estimated_volume": "500–900/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta",
+      "page_to_create_or_optimize": "/cameras-barra-da-tijuca/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "cftv residencial",
+      "tier": 1,
+      "estimated_volume": "2.000–5.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta",
+      "page_to_create_or_optimize": "/cftv-residencial/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "ar condicionado piso teto rio de janeiro",
+      "tier": 3,
+      "estimated_volume": "800–1.500/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta (nicho de alto ticket — R$5k–R$18k por projeto)",
+      "page_to_create_or_optimize": "/blog/instalacao-ar-condicionado-piso-teto-rj/ (CRIADA HOJE)"
+    },
+    {
+      "keyword": "câmeras de segurança Flamengo",
+      "tier": 2,
+      "estimated_volume": "400–700/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta — recém coberta",
+      "page_to_create_or_optimize": "/cameras-flamengo/ (CRIADA HOJE)"
+    },
+    {
+      "keyword": "energia solar residencial rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "3.200/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta (ticket médio R$18k–R$55k)",
+      "page_to_create_or_optimize": "/energia-solar/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "eletroposto instalação residencial rj",
+      "tier": 3,
+      "estimated_volume": "400/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta (blue ocean — 0 concorrentes locais com página dedicada)",
+      "page_to_create_or_optimize": "/eletroposto/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "alarme residencial rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "2.000/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/alarme-residencial-rio-de-janeiro/ (existente — deploy pendente)"
+    }
+  ],
+  "technical_issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Domínio santechseguranca.com.br não resolve DNS (getaddrinfo ENOTFOUND) pelo 28º ciclo consecutivo. Site completamente inacessível para visitantes, Googlebot e qualquer ferramenta externa.",
+      "affected_urls": ["santechseguranca.com.br"],
+      "fix": "URGENTE (hoje): (1) Acessar painel do registrador de domínio (registro.br) — verificar se o domínio está pago e ativo, se não expirou. (2) Verificar registros DNS: A, CNAME e AAAA devem apontar para IP do servidor de hospedagem. (3) Verificar painel da hospedagem — servidor ativo? (4) Contatar suporte técnico com o erro getaddrinfo ENOTFOUND santechseguranca.com.br. (5) Se domínio expirou: renovar via registro.br imediatamente."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "57 páginas HTML completas com schema, CTA WhatsApp, internal links e conteúdo semântico existem no repositório seo-agents/santech/ mas nunca foram deployadas para o domínio ao vivo.",
+      "affected_urls": ["todo o repositório santech/"],
+      "fix": "Após restaurar o DNS: (1) Substituir placeholder +55-21-XXXX-XXXX / 5521XXXXXXXX pelo número real em todos os arquivos. (2) Deploy de todos os arquivos de santech/ para o servidor. (3) Submeter sitemap.xml no Google Search Console. (4) Solicitar indexação manual das 5 URLs prioritárias via Inspeção de URL."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "Número de WhatsApp placeholder (5521XXXXXXXX) em ~166 pontos em todas as páginas do repositório.",
+      "affected_urls": ["todos os arquivos do repositório santech/"],
+      "fix": "Antes do deploy executar: find santech/ -name '*.html' | xargs sed -i 's/5521XXXXXXXX/NUMERORREAL/g'"
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "página local",
+      "title": "Câmeras de Segurança no Flamengo | CFTV Residencial e Comercial",
+      "target_keyword": "câmeras de segurança Flamengo",
+      "estimated_leads_gain": "2–5 leads/mês após indexação",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "artigo",
+      "title": "Instalação de Ar-Condicionado Piso-Teto no Rio de Janeiro: Guia Completo 2026",
+      "target_keyword": "instalação ar condicionado piso teto rio de janeiro",
+      "estimated_leads_gain": "3–8 leads/mês após indexação (alto ticket)",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página local",
+      "title": "Câmeras de Segurança no Méier | CFTV Zona Norte",
+      "target_keyword": "câmeras de segurança méier",
+      "estimated_leads_gain": "2–4 leads/mês após indexação",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página local",
+      "title": "Cerca Elétrica na Zona Sul do Rio | Instalação e Manutenção",
+      "target_keyword": "cerca elétrica zona sul rio de janeiro",
+      "estimated_leads_gain": "2–6 leads/mês (bairros nobres, ticket médio alto)",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/cameras-flamengo/",
+      "tipo": "local",
+      "keyword_alvo": "câmeras de segurança Flamengo",
+      "h1_sugerido": "Câmeras de Segurança no Flamengo — Instalação Profissional de CFTV",
+      "justificativa": "CRIADA HOJE — Flamengo é bairro nobre da Zona Sul com alta densidade de prédios e comércios. Complementa cobertura de Botafogo, Copacabana, Ipanema e Leblon. 400–700 buscas/mês, dificuldade baixa, sem concorrente local com página dedicada ao bairro."
+    },
+    {
+      "url_sugerida": "/blog/instalacao-ar-condicionado-piso-teto-rj/",
+      "tipo": "blog",
+      "keyword_alvo": "instalação ar condicionado piso teto rio de janeiro",
+      "h1_sugerido": "Instalação de Ar-Condicionado Piso-Teto no Rio de Janeiro: Guia Completo 2026",
+      "justificativa": "CRIADO HOJE — Nicho de alto ticket (R$5k–R$18k por projeto) com keyword de baixa dificuldade e volume de 800–1.500/mês. Segmento comercial e residencial premium do RJ. Complementa /manutencao-ar-condicionado/ e /blog/instalacao-ar-condicionado-split-rj/."
+    },
+    {
+      "url_sugerida": "/cameras-meier/",
+      "tipo": "local",
+      "keyword_alvo": "câmeras de segurança méier",
+      "h1_sugerido": "Câmeras de Segurança no Méier — CFTV Residencial e Comercial Zona Norte",
+      "justificativa": "PRÓXIMO CICLO — Méier é o principal polo comercial da Zona Norte do Rio, com alta demanda por câmeras para comércios e residências. 300–600 buscas/mês, dificuldade baixa, sem cobertura dedicada ainda."
+    },
+    {
+      "url_sugerida": "/cerca-eletrica-zona-sul/",
+      "tipo": "local",
+      "keyword_alvo": "cerca elétrica zona sul rio de janeiro",
+      "h1_sugerido": "Cerca Elétrica na Zona Sul do Rio de Janeiro | Instalação e Manutenção",
+      "justificativa": "PRÓXIMO CICLO — Bairros nobres da Zona Sul (Botafogo, Flamengo, Laranjeiras, Humaitá) com casas e sobrados de alto ticket. Ticket médio cerca elétrica: R$2.500–R$8.000. Complementa /cerca-eletrica/ e /cerca-eletrica-zona-oeste/."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "Verificar painel do registrador (registro.br) — confirmar se domínio está ativo e DNS configurado corretamente",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Contatar suporte da hospedagem com erro ENOTFOUND santechseguranca.com.br para diagnóstico urgente",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Substituir número de WhatsApp placeholder (5521XXXXXXXX) e fazer deploy do repositório santech/ (57 URLs) para produção",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Submeter sitemap.xml (72 URLs) ao Google Search Console e solicitar indexação manual das 5 URLs prioritárias",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar/otimizar Google Business Profile com endereço RJ, área de atendimento, fotos e serviços completos",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar /cameras-meier/ — Zona Norte, polo comercial, 300–600/mês, low difficulty",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar /cerca-eletrica-zona-sul/ — bairros nobres, alto ticket médio, complementa cobertura de cerca elétrica",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "tech-servcom.com.br",
+      "keywords_overlap": ["câmeras de segurança rj", "cftv residencial", "instalação câmeras tijuca", "alarme residencial"],
+      "google_maps_reviews": "estimativa: 50+ reviews",
+      "content_gap": "Sem cobertura de Barra da Tijuca e Zona Oeste com páginas dedicadas. Sem cobertura de eletroposto, energia solar e piso-teto.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "segurancaeletronicarj.com.br",
+      "keywords_overlap": ["segurança eletrônica rj", "instalação câmeras rio de janeiro", "alarme residencial rj"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Cobertura principalmente em Campo Grande. Pouca cobertura de Zona Sul e Barra da Tijuca. Sem AC, energia solar, eletroposto.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "aepseguranca.com.br",
+      "keywords_overlap": ["câmeras barra da tijuca", "cftv barra da tijuca"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Especializado na Barra. Sem cobertura de AC, energia solar, eletroposto, Zona Sul, Zona Norte.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "alsegurancaeletronicarj.com",
+      "keywords_overlap": ["câmeras de segurança rj", "cerca elétrica rj", "alarme residencial rj"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Sem blog editorial. Sem cobertura de AC, energia solar e eletroposto. Sem páginas por bairro.",
+      "has_local_pages": false
+    },
+    {
+      "domain": "jmcarneiro.com.br",
+      "keywords_overlap": ["portão automático rj", "automação portão rio de janeiro"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Especializado em automação. Sem câmeras, alarme, AC, energia solar.",
+      "has_local_pages": false
+    }
+  ],
+  "kpis_snapshot": {
+    "pages_indexed": 0,
+    "pages_in_repo_ready_to_deploy": 57,
+    "sitemap_urls": 72,
+    "pages_with_local_keyword": 28,
+    "pages_missing_schema": 0,
+    "whatsapp_link_working": "não verificado — placeholder 5521XXXXXXXX presente em ~166 pontos",
+    "mobile_speed_score": "não verificado (site offline)",
+    "core_web_vitals_passed": "não verificado (site offline)",
+    "dns_status": "ENOTFOUND — domínio inacessível",
+    "ssl_status": "não verificado (DNS falhou antes da conexão TLS)"
+  },
+  "estimated_leads_gain": {
+    "30_days": "5–15 leads (se deploy e resolução DNS forem executados esta semana)",
+    "90_days": "30–65 leads/mês (com 57 URLs indexadas + Google Business Profile ativo + reviews)",
+    "6_months": "80–160 leads/mês (com todas as URLs ranqueando + blog + autoridade de domínio crescendo)",
+    "assumptions": "Pressupõe: (1) resolução do DNS e deploy imediato das 57 URLs do repositório, (2) substituição dos números placeholder pelo número real, (3) Google Business Profile ativo com 10+ reviews, (4) WhatsApp Business ativo com resposta rápida (< 1h). Todas as estimativas pressupõem que o site não existe em produção — se existir com noindex ou bloqueio técnico, o tempo para leads pode ser menor após correção."
+  },
+  "next_cycle_suggestions": [
+    "Criar /cameras-meier/ — Zona Norte, polo comercial, 300–600/mês, low difficulty",
+    "Criar /cerca-eletrica-zona-sul/ — bairros nobres, ticket médio alto (R$2.500–R$8.000)",
+    "Criar /blog/ar-condicionado-maresia-rj/ — artigo específico sobre maresia e AC na orla carioca, alto ticket em bairros de praia",
+    "Criar /portaria-virtual-barra-da-tijuca/ — segmento portaria virtual para condomínios da Barra, ticket médio R$800–R$2.500/mês (recorrente)"
+  ]
+}
