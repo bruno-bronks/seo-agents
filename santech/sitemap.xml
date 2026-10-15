@@ -384,7 +384,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Adicionados em 2026-10-08 -->
   <url>
     <loc>https://santechseguranca.com.br/cameras-nova-iguacu/</loc>
     <lastmod>2026-10-08</lastmod>
@@ -403,7 +402,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Adicionados em 2026-10-09 -->
   <url>
     <loc>https://santechseguranca.com.br/cameras-leblon/</loc>
     <lastmod>2026-10-09</lastmod>
@@ -422,7 +420,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Adicionados em 2026-10-14 -->
   <url>
     <loc>https://santechseguranca.com.br/cameras-flamengo/</loc>
     <lastmod>2026-10-14</lastmod>
@@ -432,6 +429,25 @@
   <url>
     <loc>https://santechseguranca.com.br/blog/instalacao-ar-condicionado-piso-teto-rj/</loc>
     <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Adicionados em 2026-10-15 — Ciclo #29 -->
+  <url>
+    <loc>https://santechseguranca.com.br/cerca-eletrica-zona-sul/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/portaria-virtual-barra-da-tijuca/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/blog/ar-condicionado-maresia-rj/</loc>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
