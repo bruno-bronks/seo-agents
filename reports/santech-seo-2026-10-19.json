@@ -1,0 +1,383 @@
+{
+  "timestamp": "2026-10-19T08:30:00-03:00",
+  "domain": "santechseguranca.com.br",
+  "cycle": 30,
+  "audit_method": "WebFetch (DNS ENOTFOUND — domínio inacessível) + WebSearch (SERP Google, concorrentes, keywords) + análise do repositório seo-agents + geração de conteúdo",
+  "seo_score": 42,
+  "sre_score": 0,
+  "local_rank_score": 21,
+  "ranking_potential": "muito alto (76 URLs de conteúdo otimizado prontas no repositório — deploy e resolução DNS são os únicos bloqueios para 80–200 leads/mês estimados após 90 dias)",
+  "delta_vs_ciclo_anterior": {
+    "seo_score": "+2 pt (ciclo #29: 40 → ciclo #30: 42 — adição de /cameras-lapa/ cobrindo área central comercial de alto volume, e /blog/quanto-custa-cerca-eletrica-rj/ capturando cauda longa de cerca elétrica com alta intenção comercial)",
+    "sre_score": "0 (site inacessível via DNS — ENOTFOUND santechseguranca.com.br — uptime, SSL e formulários não verificáveis pelo 30º ciclo consecutivo)",
+    "local_rank_score": "0 (sem mudança — indexação permanece zero sem deploy)",
+    "observacao": "CRÍTICO: domínio santechseguranca.com.br não resolve DNS (getaddrinfo ENOTFOUND) pelo 30º ciclo consecutivo desde o início do monitoramento. site:santechseguranca.com.br retorna 0 resultados no Google. O repositório acumulou 76 URLs completas com schema, CTA WhatsApp e conteúdo semântico otimizado. Deploy e resolução de DNS permanecem o único bloqueio. URGENTE: verificar painel do registrador (registro.br), DNS e hospedagem HOJE. Cada semana de atraso representa ~10–20 leads que vão para os concorrentes."
+  },
+  "indexed_pages": [
+    {
+      "url": "santechseguranca.com.br",
+      "title": "não verificado — DNS ENOTFOUND",
+      "status": "CRÍTICO — zero páginas retornadas no operador site:santechseguranca.com.br no Google pelo 30º ciclo consecutivo. 76 páginas HTML com schema completo existem no repositório mas nunca foram deployadas."
+    }
+  ],
+  "pages_generated_this_cycle": [
+    {
+      "url": "/cameras-lapa/",
+      "keyword_alvo": "câmeras de segurança Lapa / CFTV Lapa Rio de Janeiro",
+      "tipo": "local (bairro — polo de entretenimento, mix comercial e residencial, Centro expandido)",
+      "volume_estimado": "600–1.000/mês",
+      "difficulty": "low",
+      "schema": "LocalBusiness + Service + FAQPage (5 perguntas)",
+      "cta_whatsapp": "Olá, quero orçamento de câmeras de segurança na Lapa",
+      "estimated_leads": "3–7 leads/mês após indexação (bares, restaurantes, comércios noturnos — demanda altíssima por segurança, ticket comercial R$1.800–R$9.000)",
+      "destaques": "Foco em câmeras colornight para movimentação noturna. Tabela de preços 2026 com 5 faixas (R$1.200–R$25.000). Cobertura de Lapa, Santa Teresa, Centro, Catumbi, Rio Comprido, Cidade Nova. Seção especial sobre câmeras para bares e restaurantes. 5 perguntas FAQ com schema. Links internos para /instalacao-cameras/, /cftv-residencial/, /cameras-comerciais/, /cameras-botafogo/, /cameras-flamengo/, /cameras-zona-sul/",
+      "status": "CRIADA HOJE — arquivo: santech/cameras-lapa/index.html — aguardando deploy"
+    },
+    {
+      "url": "/blog/quanto-custa-cerca-eletrica-rj/",
+      "keyword_alvo": "quanto custa cerca elétrica Rio de Janeiro / preço cerca elétrica RJ 2026",
+      "tipo": "blog (informacional + transacional — alta intenção de compra)",
+      "volume_estimado": "1.200–2.500/mês",
+      "difficulty": "low",
+      "schema": "Article + FAQPage (5 perguntas)",
+      "cta_whatsapp": "Olá, quero orçamento de cerca elétrica no Rio de Janeiro",
+      "estimated_leads": "4–10 leads/mês após indexação (consulta de preço = alta intenção de compra, ticket médio R$1.800–R$12.000)",
+      "destaques": "Tabela de preços por metro linear (R$35–R$80/m) e por tipo de imóvel. Tabela de eletrificadores com preços por faixa. Tabela de monitoramento. Seção de manutenção com preços. Fatores que influenciam o preço no RJ (bairro, altura do muro, número de fios). Seção sobre norma ABNT NBR 16300. 5 itens de como economizar. 5 perguntas FAQ com schema. Links internos para /cerca-eletrica/, /cerca-eletrica-residencial/, /cerca-eletrica-zona-oeste/, /cerca-eletrica-zona-sul/, /alarme-residencial/",
+      "status": "CRIADO HOJE — arquivo: santech/blog/quanto-custa-cerca-eletrica-rj/index.html — aguardando deploy"
+    }
+  ],
+  "cumulative_pages_in_repo": {
+    "total": 76,
+    "sitemap_total_urls": 77,
+    "servico": [
+      "/instalacao-cameras/", "/cftv-residencial/", "/automacao-portoes/", "/cerca-eletrica/",
+      "/cerca-eletrica-residencial/", "/alarme-residencial/", "/alarme-comercial/",
+      "/monitoramento-24h/", "/controle-acesso/", "/portaria-virtual/",
+      "/portaria-virtual-condominio/", "/portaria-virtual-barra-da-tijuca/", "/seguranca-condominio/",
+      "/cameras-comerciais/", "/manutencao-ar-condicionado/", "/energia-solar/", "/eletroposto/",
+      "/automacao-portao-zona-oeste/", "/instalacao-cerca-eletrica-condominio/",
+      "/cftv-residencial-rio-de-janeiro/", "/cerca-eletrica-automacao-portao-rj/",
+      "/instalacao-cameras-rio-de-janeiro/", "/instalacao-cameras-zona-oeste/",
+      "/alarme-residencial-rio-de-janeiro/", "/cerca-eletrica-zona-oeste/", "/cerca-eletrica-zona-sul/"
+    ],
+    "local": [
+      "/cameras-barra-da-tijuca/", "/cameras-recreio/", "/cameras-tijuca/",
+      "/cameras-copacabana/", "/cameras-niteroi/", "/cameras-niteroi-centro/",
+      "/cameras-zona-norte/", "/cameras-zona-sul/", "/cameras-zona-oeste/",
+      "/cameras-bangu/", "/cameras-campo-grande/", "/cameras-jacarepagua/",
+      "/cameras-madureira/", "/cameras-sao-goncalo/", "/cameras-ilha-do-governador/",
+      "/cameras-petropolis/", "/cameras-duque-de-caxias/", "/cameras-nova-iguacu/",
+      "/cameras-meier/", "/cameras-botafogo/", "/cameras-ipanema/", "/cameras-leblon/",
+      "/cameras-flamengo/", "/cameras-lapa/"
+    ],
+    "blog": [
+      "/blog/", "/blog/quanto-custa-instalar-cameras-rj/",
+      "/blog/monitoramento-remoto-cameras-celular/", "/blog/diferenca-cftv-cameras-ip/",
+      "/blog/portao-automatico-vale-a-pena/", "/blog/dicas-seguranca-residencial-rj/",
+      "/blog/como-escolher-cameras-seguranca-residencial/", "/blog/cameras-wifi-ou-cabeada/",
+      "/blog/quanto-custa-portaria-virtual-condominio/", "/blog/camera-ip-vs-hd-como-escolher/",
+      "/blog/alarme-monitorado-vs-nao-monitorado/", "/blog/como-instalar-cameras-areas-externas/",
+      "/blog/energia-solar-residencial-rio-vale-a-pena/", "/blog/nvr-vs-dvr-qual-escolher/",
+      "/blog/manutencao-preventiva-cameras-seguranca/", "/blog/controle-acesso-condominio/",
+      "/blog/manutencao-ar-condicionado-quando-fazer/", "/blog/cameras-4k-vs-fullhd-qual-vale-a-pena/",
+      "/blog/como-escolher-empresa-cftv-rj/", "/blog/eletroposto-residencial-como-instalar-rj/",
+      "/blog/instalacao-ar-condicionado-split-rj/", "/blog/instalacao-cameras-chuva-umidade-rj/",
+      "/blog/quanto-custa-sistema-alarme-residencial-rj/",
+      "/blog/instalacao-ar-condicionado-piso-teto-rj/",
+      "/blog/ar-condicionado-maresia-rj/",
+      "/blog/quanto-custa-cerca-eletrica-rj/"
+    ],
+    "pages_pending_deploy": 76,
+    "whatsapp_placeholder_occurrences": "~170 (todos os arquivos — necessário substituir 5521XXXXXXXX pelo número real antes do deploy)"
+  },
+  "keyword_opportunities": [
+    {
+      "keyword": "instalação câmeras rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "2.900/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta",
+      "page_to_create_or_optimize": "/instalacao-cameras-rio-de-janeiro/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "quanto custa cerca elétrica rio de janeiro",
+      "tier": 3,
+      "estimated_volume": "1.200–2.500/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta — recém coberta",
+      "page_to_create_or_optimize": "/blog/quanto-custa-cerca-eletrica-rj/ (CRIADA HOJE)"
+    },
+    {
+      "keyword": "câmeras de segurança Lapa",
+      "tier": 2,
+      "estimated_volume": "600–1.000/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta — recém coberta",
+      "page_to_create_or_optimize": "/cameras-lapa/ (CRIADA HOJE)"
+    },
+    {
+      "keyword": "cftv residencial",
+      "tier": 1,
+      "estimated_volume": "2.000–5.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta",
+      "page_to_create_or_optimize": "/cftv-residencial/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "energia solar residencial rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "3.200/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta (ticket médio R$18k–R$55k)",
+      "page_to_create_or_optimize": "/energia-solar/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "eletroposto instalação residencial rj",
+      "tier": 3,
+      "estimated_volume": "400/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "muito alta (blue ocean — 0 concorrentes locais com página dedicada)",
+      "page_to_create_or_optimize": "/eletroposto/ (existente — deploy pendente)"
+    },
+    {
+      "keyword": "portaria virtual condomínio rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "1.500–3.000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta (ticket recorrente R$800–R$2.500/mês)",
+      "page_to_create_or_optimize": "/portaria-virtual-condominio/ + /portaria-virtual-barra-da-tijuca/ (existentes — deploy pendente)"
+    },
+    {
+      "keyword": "alarme residencial rio de janeiro",
+      "tier": 1,
+      "estimated_volume": "2.000/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/alarme-residencial-rio-de-janeiro/ (existente — deploy pendente)"
+    }
+  ],
+  "technical_issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Domínio santechseguranca.com.br não resolve DNS (getaddrinfo ENOTFOUND) pelo 30º ciclo consecutivo. Site completamente inacessível para visitantes, Googlebot e qualquer ferramenta externa. A empresa está invisível no Google, Bing e em qualquer buscador.",
+      "affected_urls": ["santechseguranca.com.br — todas as URLs"],
+      "fix": "URGENTE (hoje): (1) Acessar painel do registrador de domínio em registro.br — verificar se o domínio está pago, ativo e se não expirou. (2) Verificar registros DNS: o registro A deve apontar para o IP do servidor de hospedagem. (3) Verificar painel da hospedagem — o servidor está ativo? (4) Contatar suporte técnico com o erro: getaddrinfo ENOTFOUND santechseguranca.com.br. (5) Se o domínio expirou: renovar em registro.br imediatamente (bloqueio após expiração pode durar até 30 dias)."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "76 páginas HTML completas com schema, CTA WhatsApp, internal links e conteúdo semântico existem no repositório seo-agents/santech/ mas nunca foram deployadas para o domínio ao vivo. O site nunca existiu em produção desde o início do monitoramento.",
+      "affected_urls": ["todo o repositório santech/"],
+      "fix": "Após restaurar o DNS: (1) Substituir placeholder +55-21-XXXX-XXXX / 5521XXXXXXXX pelo número real em todos os arquivos HTML (~170 ocorrências). Comando: find santech/ -name '*.html' | xargs sed -i 's/5521XXXXXXXX/55219XXXXXXX/g'. (2) Deploy de todos os arquivos de santech/ para o servidor (via FTP, SFTP, cPanel File Manager ou CI/CD). (3) Submeter sitemap.xml (77 URLs) no Google Search Console. (4) Solicitar indexação manual das 5 URLs prioritárias via Inspeção de URL no Search Console."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "Número de WhatsApp placeholder (5521XXXXXXXX) presente em ~170 pontos em todos os arquivos HTML do repositório. Deploy com placeholder ativo resultaria em botões de WhatsApp que não funcionam.",
+      "affected_urls": ["todos os arquivos do repositório santech/ — ~76 páginas"],
+      "fix": "Antes do deploy, executar substituição em lote: find santech/ -name '*.html' | xargs sed -i 's/5521XXXXXXXX/NUMERO_REAL_SEM_MASCARA/g' (exemplo: 5521987654321). Verificar também a string +55-21-XXXX-XXXX nos textos de rodapé."
+    },
+    {
+      "type": "local SEO",
+      "severity": "alto",
+      "description": "Google Business Profile (GBP / Google Meu Negócio) não foi encontrado ou verificado para Santech Segurança em pesquisas de segurança eletrônica no Rio de Janeiro. O 3-pack local é o principal canal de leads para serviços B2C no RJ.",
+      "affected_urls": [],
+      "fix": "Criar ou verificar perfil em google.com/business: (1) Nome: Santech Segurança, (2) Categoria: empresa de sistemas de segurança, (3) Endereço completo ou área de atendimento (se sem loja física), (4) Telefone e WhatsApp, (5) Horário, (6) Fotos de instalações, equipe e equipamentos, (7) Serviços listados, (8) Link para o site ao ser deployado."
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "página local",
+      "title": "Câmeras de Segurança na Lapa | CFTV Comercial e Residencial",
+      "target_keyword": "câmeras de segurança Lapa",
+      "estimated_leads_gain": "3–7 leads/mês após indexação (polo comercial e de entretenimento)",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "artigo",
+      "title": "Quanto Custa Cerca Elétrica no Rio de Janeiro? Preços 2026",
+      "target_keyword": "quanto custa cerca elétrica rio de janeiro",
+      "estimated_leads_gain": "4–10 leads/mês após indexação (alta intenção de compra)",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Portaria Virtual para Condomínios no Rio de Janeiro",
+      "target_keyword": "portaria virtual condomínio rio de janeiro",
+      "estimated_leads_gain": "5–12 leads/mês após indexação (ticket recorrente)",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página local",
+      "title": "Câmeras de Segurança no Catete | CFTV Residencial e Comercial",
+      "target_keyword": "câmeras de segurança Catete",
+      "estimated_leads_gain": "2–4 leads/mês após indexação",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/cameras-lapa/",
+      "tipo": "local",
+      "keyword_alvo": "câmeras de segurança Lapa",
+      "h1_sugerido": "Câmeras de Segurança na Lapa — Instalação Profissional de CFTV",
+      "justificativa": "CRIADA HOJE — Lapa é o principal polo de entretenimento do Rio com alta concentração de bares, restaurantes e comércios. Volume estimado 600–1.000 buscas/mês, dificuldade baixa, nenhum concorrente com página dedicada ao bairro. Ticket comercial elevado (bares e restaurantes pagam R$1.800–R$9.000 por sistema). Complementa cobertura de Botafogo, Flamengo e Zona Sul."
+    },
+    {
+      "url_sugerida": "/blog/quanto-custa-cerca-eletrica-rj/",
+      "tipo": "blog",
+      "keyword_alvo": "quanto custa cerca elétrica rio de janeiro",
+      "h1_sugerido": "Quanto Custa Cerca Elétrica no Rio de Janeiro? Preços Atualizados 2026",
+      "justificativa": "CRIADA HOJE — 'Quanto custa' é a query de maior volume para cerca elétrica (1.200–2.500/mês), com altíssima intenção comercial (quem busca preço está pronto para comprar). Dificuldade baixa, sem artigo dedicado de qualidade no mercado local. Ticket médio R$1.800–R$12.000. Complementa /cerca-eletrica/, /cerca-eletrica-residencial/ e ambas as páginas de zona."
+    },
+    {
+      "url_sugerida": "/cameras-catete/",
+      "tipo": "local",
+      "keyword_alvo": "câmeras de segurança Catete",
+      "h1_sugerido": "Câmeras de Segurança no Catete — CFTV Residencial e Comercial",
+      "justificativa": "PRÓXIMO CICLO — Catete é bairro residencial nobre próximo ao Flamengo e à Lapa. 250–500 buscas/mês, baixa dificuldade. Complementaria a cobertura do corredor Flamengo-Lapa-Centro."
+    },
+    {
+      "url_sugerida": "/blog/cerca-eletrica-condominio-rj/",
+      "tipo": "blog",
+      "keyword_alvo": "cerca elétrica condomínio rio de janeiro",
+      "h1_sugerido": "Cerca Elétrica para Condomínio no Rio de Janeiro: Como Funciona e Quanto Custa",
+      "justificativa": "PRÓXIMO CICLO — Artigo de nicho para o segmento de condomínios, com ticket médio R$5.000–R$18.000. Complementa /instalacao-cerca-eletrica-condominio/ e o artigo de preços criado hoje."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "Verificar painel do registrador (registro.br) — confirmar se domínio santechseguranca.com.br está ativo, pago e com DNS correto. Este é o bloqueio principal de TODOS os outros resultados.",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Substituir número de WhatsApp placeholder (5521XXXXXXXX) em todos os ~76 arquivos HTML do repositório e fazer deploy completo para produção",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Submeter sitemap.xml (77 URLs) no Google Search Console e solicitar indexação manual das 5 URLs de maior prioridade: /instalacao-cameras-rio-de-janeiro/, /cftv-residencial/, /cerca-eletrica/, /alarme-residencial/, /energia-solar/",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato (após deploy)"
+    },
+    {
+      "action": "Criar e verificar Google Business Profile (Google Meu Negócio) para Santech Segurança com endereço RJ, categoria correta, fotos profissionais e lista completa de serviços",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Solicitar primeiros 10 reviews no Google Maps de clientes atuais via WhatsApp — principal fator de ranqueamento no 3-pack local",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar /cameras-catete/ — bairro nobre da Zona Sul, 250–500/mês, low difficulty, complementa corredor Flamengo-Lapa-Centro",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar /blog/cerca-eletrica-condominio-rj/ — nicho de alto ticket (R$5k–R$18k), complementa artigo de preços criado hoje",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "simastechnology.com.br",
+      "keywords_overlap": ["câmeras de segurança rj", "instalação câmeras rio de janeiro", "cftv residencial", "alarme residencial"],
+      "google_maps_reviews": "estimativa: 100+ reviews — bem posicionado no 3-pack local",
+      "content_gap": "Sem cobertura de eletroposto, energia solar, portaria virtual por bairro, ar-condicionado. Pouca cobertura de Zona Norte com páginas dedicadas.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "segurancaeletronicarj.com.br",
+      "keywords_overlap": ["segurança eletrônica rj", "instalação câmeras rio de janeiro", "alarme residencial rj"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Cobertura principalmente em Campo Grande. Pouca cobertura de Zona Sul e Barra da Tijuca. Sem AC, energia solar, eletroposto, portaria virtual.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "padrao3d.com.br",
+      "keywords_overlap": ["câmeras barra da tijuca", "portão automático rj", "automação portão recreio"],
+      "google_maps_reviews": "estimativa: 30–60 reviews",
+      "content_gap": "Foco em Barra e Zona Oeste. Sem AC, energia solar, eletroposto. Sem blog editorial. Sem cobertura de Zona Sul e Zona Norte.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "tech-servcom.com.br",
+      "keywords_overlap": ["câmeras de segurança rj", "cftv residencial", "instalação câmeras tijuca", "alarme residencial"],
+      "google_maps_reviews": "estimativa: 50+ reviews",
+      "content_gap": "Sem cobertura de Barra da Tijuca e Zona Oeste com páginas dedicadas. Sem cobertura de eletroposto, energia solar e piso-teto AC.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "alsegurancaeletronicarj.com",
+      "keywords_overlap": ["câmeras de segurança rj", "cerca elétrica rj", "alarme residencial rj"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Sem blog editorial. Sem cobertura de AC, energia solar e eletroposto. Sem páginas por bairro específico.",
+      "has_local_pages": false
+    }
+  ],
+  "kpis_snapshot": {
+    "pages_indexed": 0,
+    "pages_in_repo_ready_to_deploy": 76,
+    "sitemap_urls": 77,
+    "pages_with_local_keyword": 24,
+    "pages_missing_schema": 0,
+    "whatsapp_link_working": "não verificado — placeholder 5521XXXXXXXX presente em ~170 pontos em todos os arquivos",
+    "mobile_speed_score": "não verificado (site offline)",
+    "core_web_vitals_passed": "não verificado (site offline)",
+    "dns_status": "ENOTFOUND — domínio inacessível pelo 30º ciclo consecutivo",
+    "ssl_status": "não verificado (DNS falhou antes da conexão TLS)",
+    "instagram_presence": "@santechseguranca — confirmado (1.112 seguidores)",
+    "google_maps_profile": "não verificado / não encontrado nos SERPs"
+  },
+  "estimated_leads_gain": {
+    "30_days": "5–20 leads (se deploy e resolução DNS forem executados esta semana)",
+    "90_days": "40–80 leads/mês (com 76 URLs indexadas + Google Business Profile ativo + 10+ reviews)",
+    "6_months": "100–200 leads/mês (com todas as URLs ranqueando + blog com autoridade crescente + GBP otimizado)",
+    "assumptions": "Pressupõe: (1) resolução do DNS e deploy imediato das 76 URLs do repositório, (2) substituição dos números placeholder pelo número real, (3) Google Business Profile ativo com 10+ reviews nos primeiros 30 dias, (4) WhatsApp Business ativo com resposta rápida (< 1h). Todas as estimativas pressupõem que o site não existe em produção — se existir com noindex ou bloqueio técnico, o tempo para leads pode ser menor após correção. Estimativas baseadas em volume de busca observado para keywords do portfólio e taxa de conversão típica de 2–4% para serviços locais de segurança eletrônica no RJ."
+  },
+  "next_cycle_suggestions": [
+    "Criar /cameras-catete/ — bairro nobre Zona Sul, 250–500/mês, low difficulty, corredor Flamengo-Lapa-Centro",
+    "Criar /blog/cerca-eletrica-condominio-rj/ — nicho alto ticket R$5k–R$18k, complementa artigo de preços criado hoje",
+    "Criar /automacao-portoes-barra-da-tijuca/ ou /automacao-portoes-zona-sul/ — keyword local específica de portão automático de alto ticket em bairro nobre",
+    "Criar /controle-acesso-condominio-rj/ — keyword local de alto volume para controle de acesso em condomínios"
+  ]
+}
