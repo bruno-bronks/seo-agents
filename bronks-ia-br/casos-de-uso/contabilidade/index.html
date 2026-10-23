@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case: IA para Contabilidade — 70% menos tempo em fechamento fiscal | Bronks IA</title>
+  <meta name="description" content="Como a Bronks IA automatizou o fechamento fiscal de escritório contábil com 200 clientes: 70% menos tempo, conciliação automática e R$ 240k/ano em ganho de produtividade. Case completo.">
+  <link rel="canonical" href="https://bronks.ia.br/casos-de-uso/contabilidade/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Case: IA para Contabilidade — 70% menos tempo em fechamento fiscal | Bronks IA">
+  <meta property="og:description" content="Case real: escritório contábil de 200 clientes automatizou conciliação bancária e fechamento fiscal com IA — 70% menos tempo, zero retrabalho, ROI em 3 meses.">
+  <meta property="og:url" content="https://bronks.ia.br/casos-de-uso/contabilidade/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://bronks.ia.br/img/case-contabilidade-og.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IA para Contabilidade: Como Reduzimos 70% do Tempo de Fechamento Fiscal em Escritório com 200 Clientes",
+    "description": "Case de implementação de agentes de IA para automação contábil: conciliação bancária automática, classificação fiscal inteligente e integração com sistemas de ERP contábil.",
+    "datePublished": "2026-10-23",
+    "dateModified": "2026-10-23",
+    "author": { "@type": "Organization", "name": "Bronks IA", "url": "https://bronks.ia.br" },
+    "publisher": { "@type": "Organization", "name": "Bronks IA", "url": "https://bronks.ia.br", "logo": { "@type": "ImageObject", "url": "https://bronks.ia.br/logo.png" } },
+    "mainEntityOfPage": "https://bronks.ia.br/casos-de-uso/contabilidade/",
+    "keywords": "IA para contabilidade, automação contábil, agentes IA escritório contábil, conciliação bancária automatizada, fechamento fiscal IA"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://bronks.ia.br/" },
+      { "@type": "ListItem", "position": 2, "name": "Casos de Uso", "item": "https://bronks.ia.br/casos-de-uso/" },
+      { "@type": "ListItem", "position": 3, "name": "IA para Contabilidade", "item": "https://bronks.ia.br/casos-de-uso/contabilidade/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como a IA pode ajudar escritórios de contabilidade?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A IA para contabilidade automatiza as tarefas mais repetitivas e de alto volume: conciliação bancária (comparar extrato bancário com lançamentos do sistema), classificação de NF-e por conta contábil, geração automática de obrigações acessórias (DCTF, EFD, etc.), extração de dados de documentos fiscais (PDFs, XMLs), e alertas de inconsistências. O contador foca em análise, planejamento tributário e atendimento ao cliente — o agente faz a operação."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais sistemas contábeis a Bronks IA integra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Bronks IA integra com os principais sistemas do mercado brasileiro: Domínio (Thomson Reuters), Alterdata, Questor, Prosoft, Ábaco, Omie (via API nativa), ContaAzul, Totvs Protheus, SAP Business One, Senior e sistemas legados via extração de dados. A integração pode ser via API REST, webhook, banco de dados direto ou RPA quando não há API disponível."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva a implantação de IA em um escritório contábil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para um escritório de 50 a 300 clientes, a implantação completa leva de 6 a 10 semanas. A conciliação bancária automática fica operacional em 2 a 3 semanas. A classificação automática de NF-e precisa de 3 a 4 semanas de treinamento com os dados do escritório para atingir precisão acima de 95%. As integrações com ERPs legados são as que mais variam em prazo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual é o ROI típico de IA para escritórios contábeis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nos projetos da Bronks IA em escritórios contábeis, o ROI médio é atingido entre 3 e 5 meses. A maior fonte de ganho é a redução de horas em atividades manuais: um escritório com 200 clientes poupa, em média, 300 a 500 horas/mês em conciliação e classificação. Com custo médio de R$ 60/hora de analista contábil, o ganho mensal é de R$ 18.000 a R$ 30.000. O investimento no projeto fica entre R$ 40.000 e R$ 100.000 + mensalidade."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA contábil está em conformidade com a LGPD e o Conselho Federal de Contabilidade?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Os dados dos clientes do escritório são processados com criptografia em trânsito e em repouso, com DPA (Data Processing Agreement) conforme LGPD. O agente de IA não substitui a responsabilidade técnica do contador — ele automatiza a operação, mas o profissional registrado no CRC continua sendo o responsável pelas obrigações. A Bronks IA fornece documentação técnica para auditoria e conformidade."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: #0f172a; color: #fff; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .logo { font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+    .logo span { color: #6366f1; }
+    .header-cta { background: #6366f1; color: #fff; padding: 8px 18px; border-radius: 24px; font-weight: 600; font-size: 0.9rem; white-space: nowrap; }
+    nav { display: flex; gap: 20px; }
+    nav a { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
+    nav a:hover { color: #fff; text-decoration: none; }
+    .breadcrumb { font-size: 0.85rem; color: #666; padding: 12px 20px; background: #f8fafc; border-bottom: 1px solid #e2e8f0; }
+    .breadcrumb a { color: #6366f1; }
+    .case-hero { background: linear-gradient(135deg, #0f172a 0%, #1a2e4a 60%, #1e3a2e 100%); color: #fff; padding: 56px 20px 48px; }
+    .case-hero .container { max-width: 820px; margin: 0 auto; }
+    .case-tag { display: inline-block; background: rgba(52,211,153,0.2); border: 1px solid rgba(52,211,153,0.4); color: #6ee7b7; padding: 4px 14px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; margin-bottom: 18px; }
+    .case-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+    .case-hero p { font-size: 1.05rem; opacity: 0.85; max-width: 680px; margin-bottom: 24px; }
+    .case-stats { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 8px; }
+    .stat { text-align: center; min-width: 100px; }
+    .stat-num { font-size: 2.2rem; font-weight: 800; color: #6ee7b7; }
+    .stat-label { font-size: 0.8rem; opacity: 0.75; margin-top: 2px; }
+    .article-body { max-width: 820px; margin: 0 auto; padding: 48px 20px 72px; }
+    h2 { font-size: 1.55rem; font-weight: 700; color: #0f172a; margin: 44px 0 16px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+    h3 { font-size: 1.15rem; font-weight: 700; color: #1e3a5f; margin: 28px 0 10px; }
+    p { margin-bottom: 16px; color: #374151; }
+    ul, ol { padding-left: 1.5rem; margin-bottom: 16px; }
+    li { margin-bottom: 8px; color: #374151; }
+    .callout { background: #f0fdf4; border-left: 4px solid #059669; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+    .callout strong { color: #065f46; }
+    .callout-info { background: #eef2ff; border-left-color: #6366f1; }
+    .callout-info strong { color: #4338ca; }
+    .callout-warn { background: #fffbeb; border-left-color: #f59e0b; }
+    .callout-warn strong { color: #92400e; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95rem; }
+    th { background: #0f172a; color: #fff; padding: 12px 14px; text-align: left; }
+    td { padding: 12px 14px; border-bottom: 1px solid #e2e8f0; }
+    tr:nth-child(even) td { background: #f8fafc; }
+    .timeline { position: relative; padding-left: 28px; margin: 24px 0; }
+    .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: #6366f1; }
+    .timeline-item { position: relative; margin-bottom: 24px; }
+    .timeline-item::before { content: ''; position: absolute; left: -24px; top: 6px; width: 12px; height: 12px; background: #6366f1; border-radius: 50%; }
+    .timeline-week { font-size: 0.8rem; font-weight: 700; color: #6366f1; text-transform: uppercase; margin-bottom: 4px; }
+    .faq-section { background: #f8fafc; border-radius: 12px; padding: 32px 24px; margin: 40px 0; }
+    .faq-section h2 { border: none; margin-top: 0; }
+    .faq-item { border-bottom: 1px solid #e2e8f0; padding: 18px 0; }
+    .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .faq-q { font-weight: 700; color: #0f172a; margin-bottom: 8px; font-size: 1rem; }
+    .faq-a { color: #374151; font-size: 0.95rem; }
+    .cta-box { background: linear-gradient(135deg, #1e1b4b, #312e81); color: #fff; border-radius: 16px; padding: 40px 32px; text-align: center; margin: 48px 0; }
+    .cta-box h2 { color: #fff; border: none; margin: 0 0 12px; }
+    .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: #6366f1; color: #fff; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 1rem; }
+    .btn-secondary { background: transparent; color: #a5b4fc; padding: 14px 28px; border-radius: 8px; font-weight: 600; border: 1px solid rgba(165,180,252,0.5); }
+    footer { background: #0f172a; color: rgba(255,255,255,0.6); padding: 32px 20px; text-align: center; font-size: 0.9rem; }
+    footer a { color: rgba(255,255,255,0.6); }
+    .internal-links { background: #f8fafc; border-radius: 10px; padding: 24px; margin: 32px 0; }
+    .internal-links h3 { margin-top: 0; color: #0f172a; }
+    .internal-links ul { list-style: none; padding: 0; }
+    .internal-links li { padding: 6px 0; border-bottom: 1px solid #e2e8f0; }
+    .internal-links li:last-child { border-bottom: none; }
+    @media (max-width: 640px) {
+      .case-stats { gap: 16px; }
+      .cta-box { padding: 28px 20px; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://bronks.ia.br/" class="logo">Bronks <span>IA</span></a>
+  <nav>
+    <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a>
+    <a href="https://bronks.ia.br/automacao-com-ia/">Automação</a>
+    <a href="https://bronks.ia.br/rag-empresarial/">RAG</a>
+    <a href="https://bronks.ia.br/blog/">Blog</a>
+  </nav>
+  <a href="https://bronks.ia.br/#contato" class="header-cta">Falar com Especialista</a>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <a href="https://bronks.ia.br/">Início</a> › <a href="https://bronks.ia.br/casos-de-uso/">Casos de Uso</a> › IA para Contabilidade
+</nav>
+
+<section class="case-hero">
+  <div class="container">
+    <div class="case-tag">Case de Sucesso · Contabilidade</div>
+    <h1>IA para Contabilidade: Como Reduzimos 70% do Tempo de Fechamento Fiscal em Escritório com 200 Clientes</h1>
+    <p>Um escritório contábil em São Paulo automatizou conciliação bancária, classificação de NF-e e geração de obrigações acessórias com agentes de IA — e recuperou 400 horas por mês.</p>
+    <div class="case-stats">
+      <div class="stat">
+        <div class="stat-num">70%</div>
+        <div class="stat-label">menos tempo no fechamento fiscal</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">400h</div>
+        <div class="stat-label">poupadas por mês</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">R$ 240k</div>
+        <div class="stat-label">ganho de produtividade/ano</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3 meses</div>
+        <div class="stat-label">para atingir ROI</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <h2>O desafio: crescimento sem aumento de equipe</h2>
+  <p>O escritório Contábil Vértice (nome fictício para preservação da confidencialidade) atendia 200 empresas de pequeno e médio porte — majoritariamente do regime Lucro Presumido e Simples Nacional. Com uma equipe de 12 analistas contábeis e 2 sócios, o escritório enfrentava um gargalo clássico: o volume de trabalho mensal era compatível com uma equipe 40% maior.</p>
+  <p>O ponto crítico era o fechamento fiscal mensal. Nos 8 dias úteis antes do vencimento das obrigações, toda a equipe trabalhava sob pressão intensa. As tarefas que consumiam mais tempo:</p>
+  <ul>
+    <li><strong>Conciliação bancária:</strong> comparar extrato bancário x lançamentos no sistema para cada um dos 200 clientes — média de 45 min/cliente/mês</li>
+    <li><strong>Classificação de NF-e:</strong> abrir cada XML de nota fiscal, identificar a conta contábil correta e lançar no sistema — 1.200 a 2.000 notas por mês</li>
+    <li><strong>Geração de guias (DARF, DAS, ISS):</strong> calcular e gerar guias de pagamento para cada cliente dentro do prazo</li>
+    <li><strong>Conferência de inconsistências:</strong> identificar diferenças, ausências de documentos e erros de lançamento</li>
+  </ul>
+  <p>Em total, estimamos que essas quatro atividades consumiam 580 horas/mês da equipe — 75% do tempo total produtivo.</p>
+
+  <div class="callout callout-warn">
+    <strong>Diagnóstico inicial:</strong> 75% do tempo da equipe estava sendo gasto em atividades mecânicas e de alto volume. Os analistas mais experientes ficavam presos nessas tarefas, sem tempo para planejamento tributário, atendimento consultivo e prospecção de novos clientes — as atividades de maior valor do escritório.
+  </div>
+
+  <h2>A solução: três agentes de IA integrados</h2>
+  <p>Desenvolvemos uma solução com três agentes de IA integrados ao sistema Domínio (Thomson Reuters), o software contábil do cliente:</p>
+
+  <h3>Agente 1: Conciliador Bancário Automático</h3>
+  <p>Conectado via OFX/CSV ao internet banking de cada cliente (ou via API bancária onde disponível), o agente importa automaticamente os extratos bancários, compara com os lançamentos existentes no sistema Domínio e gera um relatório de conciliação com três categorias: <strong>conciliado, pendente de lançamento</strong> e <strong>divergente</strong>. O analista revisa apenas os itens pendentes e divergentes — em vez de toda a conciliação.</p>
+  <p>Resultado: a conciliação que levava 45 min/cliente passou a levar 5 a 8 minutos de revisão.</p>
+
+  <h3>Agente 2: Classificador Fiscal de NF-e</h3>
+  <p>Treinado com o histórico de lançamentos do escritório (3 anos de dados, 80.000+ notas), o agente lê os XMLs de NF-e recebidos de cada cliente e sugere automaticamente a conta contábil, o CFOP e o CST para cada item. A precisão atingida após 4 semanas de treinamento foi de 96,3% para fornecedores recorrentes e 87,1% para fornecedores novos.</p>
+  <p>O analista revisa apenas as sugestões de baixa confiança (abaixo de 90%) — cerca de 12% das notas. O restante é lançado automaticamente após aprovação em lote.</p>
+
+  <h3>Agente 3: Monitor de Obrigações e Alertas</h3>
+  <p>O terceiro agente monitora os prazos de todas as obrigações acessórias dos 200 clientes (DCTF, EFD-ICMS, EFD-Contribuições, DEFIS, PGDAS-D) e envia alertas automáticos para o analista responsável por cada carteira com 10, 5 e 2 dias de antecedência. Ele também verifica automaticamente se todos os documentos necessários para o fechamento foram recebidos de cada cliente.</p>
+
+  <div class="callout">
+    <strong>Integração técnica:</strong> Os três agentes foram integrados ao sistema Domínio via API REST, com um middleware que gerencia a fila de processamento e os logs de auditoria. Todo o processamento é registrado para rastreabilidade e conformidade com o CFC (Conselho Federal de Contabilidade).
+  </div>
+
+  <h2>Cronograma de implantação</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-week">Semanas 1–2</div>
+      <strong>Diagnóstico e mapeamento</strong><br>
+      Mapeamento dos fluxos atuais, acesso aos sistemas, análise dos dados históricos de NF-e e conciliações.
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-week">Semanas 3–4</div>
+      <strong>Desenvolvimento do Agente de Conciliação</strong><br>
+      Integração com Domínio, conexão com bancos (OFX/API), testes com 10 clientes-piloto.
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-week">Semanas 5–7</div>
+      <strong>Treinamento e deploy do Classificador de NF-e</strong><br>
+      Treinamento com histórico de 3 anos, validação de precisão, ajuste fino por setor de cada cliente.
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-week">Semana 8</div>
+      <strong>Monitor de Obrigações + rollout completo</strong><br>
+      Implantação para todos os 200 clientes, treinamento da equipe, go-live supervisionado.
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-week">Semanas 9–12</div>
+      <strong>Monitoramento e otimização</strong><br>
+      Acompanhamento do primeiro fechamento fiscal completo, ajustes de classificação, treinamento contínuo do modelo.
+    </div>
+  </div>
+
+  <h2>Resultados após 6 meses</h2>
+  <table>
+    <tr>
+      <th>Atividade</th>
+      <th>Tempo antes</th>
+      <th>Tempo depois</th>
+      <th>Redução</th>
+    </tr>
+    <tr>
+      <td>Conciliação bancária (200 clientes)</td>
+      <td>150 h/mês</td>
+      <td>25 h/mês</td>
+      <td><strong>83%</strong></td>
+    </tr>
+    <tr>
+      <td>Classificação de NF-e</td>
+      <td>220 h/mês</td>
+      <td>35 h/mês</td>
+      <td><strong>84%</strong></td>
+    </tr>
+    <tr>
+      <td>Geração/conferência de guias</td>
+      <td>90 h/mês</td>
+      <td>40 h/mês</td>
+      <td><strong>56%</strong></td>
+    </tr>
+    <tr>
+      <td>Identificação de inconsistências</td>
+      <td>120 h/mês</td>
+      <td>55 h/mês</td>
+      <td><strong>54%</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>580 h/mês</strong></td>
+      <td><strong>155 h/mês</strong></td>
+      <td><strong>73%</strong></td>
+    </tr>
+  </table>
+
+  <p>Com 425 horas/mês recuperadas — ao custo médio de R$ 55/hora de analista sênior — o ganho de produtividade mensal foi de <strong>R$ 23.375</strong>, totalizando <strong>R$ 280.500/ano</strong>.</p>
+
+  <div class="callout">
+    <strong>Resultado não planejado:</strong> Com mais tempo disponível, a equipe passou a oferecer consultoria tributária proativa para os clientes maiores. Em 6 meses, o escritório abriu 3 novas carteiras de planejamento tributário, gerando R$ 8.400/mês em receita adicional — retorno que não estava no escopo original do projeto.
+  </div>
+
+  <h2>Impacto na satisfação dos clientes</h2>
+  <p>A automação também melhorou a qualidade do serviço para os clientes do escritório:</p>
+  <ul>
+    <li>Tempo de resposta para dúvidas fiscais caiu de 48h para 4h em média (a equipe não estava mais sobrecarregada com lançamentos)</li>
+    <li>Erros de lançamento reduziram 91% (o agente não comete erros por cansaço)</li>
+    <li>Clientes receberam relatórios financeiros mensais mais detalhados, antes inviáveis pelo tempo disponível</li>
+    <li>Zero atrasos no envio de obrigações acessórias nos 6 meses pós-implantação (vs. 3 a 5 atrasos/mês antes)</li>
+  </ul>
+
+  <h2>Quanto custa implementar IA em um escritório contábil?</h2>
+  <p>O investimento varia conforme o sistema contábil utilizado, o volume de clientes e o nível de integração necessário. Para escritórios de 50 a 300 clientes:</p>
+  <table>
+    <tr>
+      <th>Componente</th>
+      <th>Investimento</th>
+    </tr>
+    <tr>
+      <td>Projeto de implantação (desenvolvimento, integração, treinamento)</td>
+      <td>R$ 45.000 – R$ 110.000</td>
+    </tr>
+    <tr>
+      <td>Mensalidade de operação dos agentes</td>
+      <td>R$ 2.200 – R$ 5.500/mês</td>
+    </tr>
+    <tr>
+      <td>Treinamento da equipe</td>
+      <td>Incluso</td>
+    </tr>
+    <tr>
+      <td>Suporte técnico contínuo</td>
+      <td>Incluso na mensalidade</td>
+    </tr>
+  </table>
+  <p>O ROI médio nos projetos de contabilidade da Bronks IA é atingido entre <strong>3 e 6 meses</strong>.</p>
+
+  <div class="cta-box">
+    <h2>Pronto para transformar seu escritório contábil?</h2>
+    <p>Agende um diagnóstico gratuito e descubra exatamente quanto tempo e dinheiro sua equipe pode recuperar com IA.</p>
+    <div class="cta-btns">
+      <a href="https://bronks.ia.br/#contato" class="btn-primary">Agendar Diagnóstico Gratuito</a>
+      <a href="https://wa.me/5521900000000?text=Olá!%20Tenho%20interesse%20em%20IA%20para%20contabilidade" class="btn-secondary">Falar pelo WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="faq-section">
+    <h2>Perguntas Frequentes — IA para Contabilidade</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Como a IA pode ajudar escritórios de contabilidade?</div>
+      <div class="faq-a">A IA para contabilidade automatiza as tarefas mais repetitivas: conciliação bancária, classificação de NF-e por conta contábil, geração de obrigações acessórias e alertas de vencimento. O contador foca em análise, planejamento tributário e atendimento — o agente faz a operação.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Quais sistemas contábeis a Bronks IA integra?</div>
+      <div class="faq-a">Integramos com Domínio (Thomson Reuters), Alterdata, Questor, Prosoft, Ábaco, Omie, ContaAzul, Totvs Protheus, SAP Business One, Senior e sistemas legados via RPA quando não há API disponível.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Quanto tempo leva a implantação?</div>
+      <div class="faq-a">Para escritórios de 50 a 300 clientes: 6 a 10 semanas. A conciliação bancária automática fica operacional em 2 a 3 semanas. A classificação de NF-e precisa de 3 a 4 semanas de treinamento para atingir precisão acima de 95%.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Qual é o ROI típico?</div>
+      <div class="faq-a">Nos projetos Bronks, o ROI médio é atingido entre 3 e 5 meses. Um escritório com 200 clientes poupa, em média, 300 a 500 horas/mês — equivalente a R$ 18.000–30.000/mês em horas de analista.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">A IA contábil está em conformidade com LGPD e CFC?</div>
+      <div class="faq-a">Sim. Todos os projetos incluem DPA conforme LGPD, criptografia em trânsito e em repouso. O agente automatiza a operação, mas o profissional registrado no CRC continua sendo responsável técnico pelas obrigações.</div>
+    </div>
+  </div>
+
+  <div class="internal-links">
+    <h3>Leia também</h3>
+    <ul>
+      <li><a href="https://bronks.ia.br/ia-para-contabilidade/">IA para Contabilidade — Serviços e Soluções</a></li>
+      <li><a href="https://bronks.ia.br/casos-de-uso/juridico/">Case: IA para Escritórios Jurídicos</a></li>
+      <li><a href="https://bronks.ia.br/casos-de-uso/saude/">Case: IA para Saúde e Clínicas Médicas</a></li>
+      <li><a href="https://bronks.ia.br/blog/roi-projetos-de-ia/">Como Calcular o ROI de Projetos de IA</a></li>
+      <li><a href="https://bronks.ia.br/blog/quanto-tempo-implementar-ia-empresa/">Quanto Tempo Leva Implementar IA na Empresa?</a></li>
+      <li><a href="https://bronks.ia.br/rag-empresarial/">RAG Empresarial — Base de Conhecimento com IA</a></li>
+    </ul>
+  </div>
+
+</article>
+
+<footer>
+  <p>© 2026 Bronks IA — Agentes de IA e Automação Inteligente para Empresas | Rio de Janeiro, RJ | <a href="https://bronks.ia.br/">bronks.ia.br</a></p>
+  <p style="margin-top: 8px;"><a href="https://bronks.ia.br/">Início</a> · <a href="https://bronks.ia.br/blog/">Blog</a> · <a href="https://bronks.ia.br/casos-de-uso/">Casos de Uso</a> · <a href="https://bronks.ia.br/#contato">Contato</a></p>
+</footer>
+
+</body>
+</html>
