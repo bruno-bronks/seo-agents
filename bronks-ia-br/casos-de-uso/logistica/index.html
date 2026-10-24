@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case: IA para Logística — 43% menos custo com roteirização e previsão de demanda automatizada | Bronks IA</title>
+  <meta name="description" content="Como a Bronks IA automatizou a roteirização, previsão de demanda e gestão de estoque de uma transportadora brasileira: 43% de redução em custo por entrega e ROI em 5 meses. Case completo.">
+  <link rel="canonical" href="https://bronks.ia.br/casos-de-uso/logistica/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Case: IA para Logística — 43% menos custo por entrega | Bronks IA">
+  <meta property="og:description" content="Case real: transportadora brasileira automatizou roteirização, previsão de demanda e gestão de avarias com agentes de IA — 43% de redução no custo por entrega, ROI em 5 meses.">
+  <meta property="og:url" content="https://bronks.ia.br/casos-de-uso/logistica/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://bronks.ia.br/img/case-logistica-og.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IA para Logística: Como Reduzimos 43% do Custo por Entrega em uma Transportadora Brasileira",
+    "description": "Case de implementação de agentes de IA no setor logístico: roteirização inteligente, previsão de demanda com LLM e automação de gestão de avarias.",
+    "datePublished": "2026-10-24",
+    "dateModified": "2026-10-24",
+    "author": { "@type": "Organization", "name": "Bronks IA", "url": "https://bronks.ia.br" },
+    "publisher": { "@type": "Organization", "name": "Bronks IA", "url": "https://bronks.ia.br", "logo": { "@type": "ImageObject", "url": "https://bronks.ia.br/logo.png" } },
+    "mainEntityOfPage": "https://bronks.ia.br/casos-de-uso/logistica/",
+    "keywords": "IA para logística, automação logística IA, agentes IA transporte, roteirização IA, previsão demanda logística, gestão estoque IA"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://bronks.ia.br/" },
+      { "@type": "ListItem", "position": 2, "name": "Casos de Uso", "item": "https://bronks.ia.br/casos-de-uso/" },
+      { "@type": "ListItem", "position": 3, "name": "IA para Logística", "item": "https://bronks.ia.br/casos-de-uso/logistica/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como a IA pode ser usada na logística?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Na logística, agentes de IA atuam em: roteirização dinâmica de entregas (reduzindo km rodados e tempo de entrega), previsão de demanda com análise de sazonalidade, eventos e dados externos, gestão automática de estoque (alertas de reposição, identificação de giro baixo), monitoramento de frota e manutenção preditiva de veículos, automação do atendimento a clientes sobre status de entregas (rastreamento via chatbot), e detecção de anomalias em avarias e devoluções."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais sistemas de logística a Bronks IA integra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Bronks IA integra com os principais sistemas do mercado logístico brasileiro: TMS (SAP TM, Totvs Logix, Oracle TMS, Omie), WMS (Manhattan, Totvs WMS, sistemas próprios), ERP (SAP, Oracle, Totvs), plataformas de rastreamento de frota (Sascar, Onixsat, Trimble), marketplaces (Mercado Livre, Shopee, Amazon via API), transportadoras parceiras (Correios, Jadlog, Total Express via API), e sistemas de gestão de armazéns com integração RFID e código de barras."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva a implantação de IA em operações logísticas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para uma operação logística com 500 a 5.000 entregas/mês, a implantação completa leva de 10 a 14 semanas. O agente de roteirização fica operacional em 4 a 6 semanas após a integração com o TMS e a base de dados de endereços. O modelo de previsão de demanda precisa de 8 a 10 semanas para treinar com o histórico da empresa. O prazo total depende da qualidade dos dados históricos, do número de sistemas a integrar e da complexidade das rotas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual é o ROI típico de IA em logística?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nos projetos da Bronks IA em empresas do setor logístico, o ROI médio é atingido entre 4 e 6 meses. As principais fontes de ganho são: (1) redução de km rodados com roteirização otimizada — tipicamente 15% a 30% de redução; (2) redução de estoque parado com previsão de demanda mais precisa — 10% a 25% menos capital imobilizado; (3) redução de horas de operadores em tarefas manuais de roteirização e planejamento — 60% a 80%; (4) redução de avarias com alertas preditivos de manutenção."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IA para roteirização funciona para logística no interior do Brasil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, com adaptações. Operações no interior do Brasil têm particularidades que o agente aprende ao longo do tempo: estradas não pavimentadas, rotas alternativas não mapeadas, sazonalidade de colheitas em áreas rurais, e restrições de horário em municípios menores. A Bronks IA alimenta o agente com dados específicos da operação — mapas offline, histórico de tempos reais de percurso e restrições de acesso — para calibrar o modelo às características locais."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: #0f172a; color: #fff; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .logo { font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+    .logo span { color: #6366f1; }
+    .header-cta { background: #6366f1; color: #fff; padding: 8px 18px; border-radius: 24px; font-weight: 600; font-size: 0.9rem; white-space: nowrap; }
+    nav { display: flex; gap: 20px; }
+    nav a { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
+    nav a:hover { color: #fff; text-decoration: none; }
+    .breadcrumb { font-size: 0.85rem; color: #666; padding: 12px 20px; background: #f8fafc; border-bottom: 1px solid #e2e8f0; }
+    .breadcrumb a { color: #6366f1; }
+    .case-hero { background: linear-gradient(135deg, #0f172a 0%, #1a2e4a 60%, #0c1f3e 100%); color: #fff; padding: 56px 20px 48px; }
+    .case-hero .container { max-width: 820px; margin: 0 auto; }
+    .case-tag { display: inline-block; background: rgba(99,102,241,0.2); border: 1px solid rgba(99,102,241,0.4); color: #a5b4fc; padding: 4px 14px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; margin-bottom: 18px; }
+    .case-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+    .case-hero p { font-size: 1.05rem; opacity: 0.85; max-width: 680px; margin-bottom: 24px; }
+    .case-stats { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 8px; }
+    .stat { text-align: center; min-width: 100px; }
+    .stat-num { font-size: 2.2rem; font-weight: 800; color: #a5b4fc; }
+    .stat-label { font-size: 0.8rem; opacity: 0.75; margin-top: 2px; }
+    .article-body { max-width: 820px; margin: 0 auto; padding: 48px 20px 72px; }
+    h2 { font-size: 1.55rem; font-weight: 700; color: #0f172a; margin: 44px 0 16px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+    h3 { font-size: 1.15rem; font-weight: 700; color: #1e3a5f; margin: 28px 0 10px; }
+    p { margin-bottom: 16px; color: #374151; }
+    ul, ol { padding-left: 1.5rem; margin-bottom: 16px; }
+    li { margin-bottom: 8px; color: #374151; }
+    .callout { background: #eef2ff; border-left: 4px solid #6366f1; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+    .callout strong { color: #4338ca; }
+    .callout-success { background: #f0fdf4; border-left-color: #059669; }
+    .callout-success strong { color: #065f46; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95rem; }
+    th { background: #0f172a; color: #fff; padding: 12px 14px; text-align: left; }
+    td { padding: 12px 14px; border-bottom: 1px solid #e2e8f0; }
+    tr:nth-child(even) td { background: #f8fafc; }
+    .timeline { position: relative; padding-left: 28px; margin: 24px 0; }
+    .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: #6366f1; }
+    .timeline-item { position: relative; margin-bottom: 24px; }
+    .timeline-item::before { content: ''; position: absolute; left: -24px; top: 6px; width: 12px; height: 12px; background: #6366f1; border-radius: 50%; }
+    .timeline-week { font-size: 0.8rem; font-weight: 700; color: #6366f1; text-transform: uppercase; margin-bottom: 4px; }
+    .faq-section { background: #f8fafc; border-radius: 12px; padding: 32px 24px; margin: 40px 0; }
+    .faq-section h2 { border: none; margin-top: 0; }
+    .faq-item { border-bottom: 1px solid #e2e8f0; padding: 18px 0; }
+    .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .faq-q { font-weight: 700; color: #0f172a; margin-bottom: 8px; font-size: 1rem; }
+    .faq-a { color: #374151; font-size: 0.95rem; }
+    .cta-box { background: linear-gradient(135deg, #1e1b4b, #312e81); color: #fff; border-radius: 16px; padding: 40px 32px; text-align: center; margin: 48px 0; }
+    .cta-box h2 { color: #fff; border: none; margin: 0 0 12px; }
+    .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: #6366f1; color: #fff; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 1rem; }
+    .btn-secondary { background: transparent; color: #a5b4fc; padding: 14px 28px; border-radius: 8px; font-weight: 600; border: 1px solid rgba(165,180,252,0.5); }
+    footer { background: #0f172a; color: rgba(255,255,255,0.6); padding: 32px 20px; text-align: center; font-size: 0.9rem; }
+    footer a { color: rgba(255,255,255,0.6); }
+    .internal-links { background: #f8fafc; border-radius: 10px; padding: 24px; margin: 32px 0; }
+    .internal-links h3 { margin-top: 0; color: #0f172a; }
+    .internal-links ul { list-style: none; padding: 0; }
+    .internal-links li { padding: 6px 0; border-bottom: 1px solid #e2e8f0; }
+    .internal-links li:last-child { border-bottom: none; }
+    @media (max-width: 640px) { .case-stats { gap: 16px; } .cta-box { padding: 28px 20px; } nav { display: none; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://bronks.ia.br/" class="logo">Bronks <span>IA</span></a>
+  <nav>
+    <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a>
+    <a href="https://bronks.ia.br/automacao-com-ia/">Automação</a>
+    <a href="https://bronks.ia.br/rag-empresarial/">RAG</a>
+    <a href="https://bronks.ia.br/blog/">Blog</a>
+  </nav>
+  <a href="https://bronks.ia.br/#contato" class="header-cta">Falar com Especialista</a>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <a href="https://bronks.ia.br/">Início</a> › <a href="https://bronks.ia.br/casos-de-uso/">Casos de Uso</a> › IA para Logística
+</nav>
+
+<section class="case-hero">
+  <div class="container">
+    <div class="case-tag">Case de Sucesso · Logística e Transporte</div>
+    <h1>IA para Logística: Como Reduzimos 43% do Custo por Entrega em uma Transportadora Brasileira</h1>
+    <p>Uma transportadora de médio porte com 1.200 entregas/dia eliminou a roteirização manual, automatizou a previsão de demanda e reduziu drasticamente o custo operacional — com agentes de IA integrados ao TMS legado.</p>
+    <div class="case-stats">
+      <div class="stat">
+        <div class="stat-num">43%</div>
+        <div class="stat-label">menos custo por entrega</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">27%</div>
+        <div class="stat-label">menos km rodados/dia</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">R$ 320k</div>
+        <div class="stat-label">economia operacional/ano</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5 meses</div>
+        <div class="stat-label">para atingir ROI</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <h2>O desafio: operação crescendo mais rápido que a capacidade de planejamento</h2>
+  <p>A LogBrasil (nome fictício) é uma transportadora de médio porte sediada em São Paulo, operando rotas no eixo SP-RJ-MG-RS. Em 2025, a empresa processava 1.200 entregas por dia e crescia 60% ao ano em volume — mas seu modelo operacional foi projetado para 400 entregas/dia em 2019.</p>
+  <p>O gargalo não era veículo nem motorista. Era o planejamento: a equipe de operações passava 6 horas diárias construindo rotas manualmente no Excel, cruzando janelas de entrega, restrições de peso por veículo e proibições de circulação em centros urbanos. O resultado era previsível: rotas subotímas, horas extras evitáveis e janelas de entrega perdidas.</p>
+
+  <h3>Gargalo 1: Roteirização manual de 1.200 entregas por dia</h3>
+  <p>Com 1.200 pedidos chegando até as 18h para entrega no dia seguinte, a equipe de operações precisava montar as rotas de 60 veículos em menos de 4 horas. O processo manual resultava em rotas com 18% a 35% de ineficiência — veículos passando por regiões vizinhas em viagens distintas, cargas subutilizadas e motoristas dirigindo 140 km a mais que o necessário em média.</p>
+
+  <h3>Gargalo 2: Previsão de demanda imprecisa</h3>
+  <p>O estoque de insumos logísticos (embalagens, lacres, fitas) e a alocação de motoristas terceirizados eram baseados em médias históricas simples. Sazonalidades — Black Friday, períodos de colheita, datas comemorativas — causavam ou excesso de estoque ou rupturas que atrasavam entregas. Em 2024, a empresa teve 14 dias com rupturas de embalagens específicas, gerando R$ 180.000 em entregas atrasadas.</p>
+
+  <h3>Gargalo 3: Gestão reativa de avarias e devoluções</h3>
+  <p>O processo de registro e tratamento de avarias era manual: o motorista fotografava, enviava pelo WhatsApp, e um operador transcrevia para o sistema. Não havia análise de padrões — se um veículo específico gerava mais avarias por vibração excessiva, a detecção só ocorria semanas depois na auditoria mensal.</p>
+
+  <div class="callout">
+    <strong>Diagnóstico central:</strong> a operação da LogBrasil era gerida por pessoas tomando decisões computacionais — a roteirização, em particular, é um problema de otimização combinatória que computadores resolvem em segundos e humanos resolvem em horas, de forma subotíma.
+  </div>
+
+  <h2>A solução: três agentes de IA integrados ao TMS</h2>
+
+  <h3>Agente 1: Roteirizador Inteligente com Restrições Dinâmicas</h3>
+  <p>O coração da solução é um agente de roteirização que recebe os pedidos do dia (via API com o TMS da LogBrasil) e resolve o problema de roteamento de veículos (VRP — Vehicle Routing Problem) com restrições dinâmicas: janelas de entrega por cliente, capacidade de carga por veículo, restrições de RODÍZIO e zonas de baixo carbono nas cidades, tempo de serviço estimado por tipo de entrega, e tempo real de tráfego via Google Maps API e Waze for Dispatch.</p>
+  <p>O resultado é um conjunto de rotas otimizadas para cada veículo, exportado automaticamente para o TMS às 20h — antes do início do turno de carregamento. O supervisor de operações revisa as rotas em um dashboard e pode fazer ajustes manuais em até 15 minutos antes da confirmação final.</p>
+
+  <h3>Agente 2: Forecaster de Demanda Multi-Variável</h3>
+  <p>O segundo agente consome dados históricos de 3 anos de pedidos, mais dados externos: calendário de feriados, eventos regionais (feiras, jogos de futebol), dados de clima, e tendências de vendas dos principais clientes (com autorização). O modelo de previsão usa um ensemble de métodos estatísticos clássicos (Prophet, ARIMA) combinado com um LLM que sintetiza os contextos textuais — como "Natal antecipado em SP em 2024 puxou demanda 3 semanas antes".</p>
+  <p>O agente gera previsões diárias de demanda para as próximas 4 semanas, alimentando automaticamente o módulo de compras (pedidos de insumos) e o sistema de alocação de motoristas terceirizados.</p>
+
+  <h3>Agente 3: Monitor de Avarias com Visão Computacional</h3>
+  <p>O terceiro agente processa automaticamente as fotos de avarias enviadas pelos motoristas via app. Usando visão computacional, classifica o tipo de avaria (embalagem danificada, produto quebrado, etiqueta ilegível), estima a severidade, e associa a avaria ao veículo, motorista, rota e tipo de produto. Em casos críticos — avarias com suspeita de responsabilidade —, o agente gera um relatório automático para o setor jurídico.</p>
+  <p>Mais importante: o agente identifica padrões. Se veículos de um determinado tipo causam mais avarias em produtos frágeis, ou se uma rota específica tem alto índice de avarias por pavimento ruim, o supervisor recebe um alerta proativo — não um relatório mensal.</p>
+
+  <div class="callout callout-success">
+    <strong>Stack técnico:</strong> Python + OR-Tools (VRP), Google Maps Platform (distâncias e trânsito real), LangGraph (orquestração dos agentes), Claude Sonnet (análise de contexto e reports), Prophet + ensemble temporal (forecasting), Google Vision API + modelo customizado (classificação de avarias), PostgreSQL + TimescaleDB (séries temporais de demanda), integração com TMS via REST API e webhooks.
+  </div>
+
+  <h2>Cronograma de implantação</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-week">Semanas 1–2</div>
+      <strong>Diagnóstico e acesso</strong><br>
+      Mapeamento dos fluxos de roteirização, acesso ao TMS em homologação, extração de 3 anos de histórico de pedidos e rotas, entrevistas com equipe de operações e motoristas.
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-week">Semanas 3–6</div>
+      <strong>Agente de Roteirização — desenvolvimento e calibração</strong><br>
+      Integração com TMS via API, modelagem das restrições específicas da operação (janelas, veículos, zonas), integração com dados de tráfego em tempo real, calibração com 30 dias de histórico comparando rotas geradas vs. rotas manuais.
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-week">Semanas 7–9</div>
+      <strong>Forecaster de Demanda — treinamento</strong><br>
+      Limpeza e estruturação dos dados históricos, treinamento do ensemble temporal com 3 anos de pedidos, integração de dados externos (calendário, clima), validação com backtesting de 6 meses.
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-week">Semanas 10–11</div>
+      <strong>Monitor de Avarias — visão computacional</strong><br>
+      Coleta de 2.000+ fotos de avarias históricas para treino, fine-tuning do modelo de classificação, integração com app do motorista (via webhook), dashboard de análise de padrões.
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-week">Semanas 12–14</div>
+      <strong>Go-live e operação supervisionada</strong><br>
+      Operação paralela (agente + manual) por 2 semanas. Validação de qualidade das rotas. Treinamento da equipe de operações no dashboard. Handover com documentação completa.
+    </div>
+  </div>
+
+  <h2>Resultados após 7 meses em produção</h2>
+  <table>
+    <tr>
+      <th>Indicador</th>
+      <th>Antes</th>
+      <th>Depois</th>
+      <th>Variação</th>
+    </tr>
+    <tr>
+      <td>Custo médio por entrega</td>
+      <td>R$ 14,70</td>
+      <td>R$ 8,38</td>
+      <td><strong>−43%</strong></td>
+    </tr>
+    <tr>
+      <td>Km médios por veículo/dia</td>
+      <td>312 km</td>
+      <td>228 km</td>
+      <td><strong>−27%</strong></td>
+    </tr>
+    <tr>
+      <td>Tempo de roteirização</td>
+      <td>6 horas (manual)</td>
+      <td>22 minutos (revisão)</td>
+      <td><strong>−94%</strong></td>
+    </tr>
+    <tr>
+      <td>Entregas no prazo</td>
+      <td>84%</td>
+      <td>96%</td>
+      <td><strong>+12 pp</strong></td>
+    </tr>
+    <tr>
+      <td>Rupturas de insumos/mês</td>
+      <td>2,3 eventos</td>
+      <td>0,1 evento</td>
+      <td><strong>−96%</strong></td>
+    </tr>
+    <tr>
+      <td>Avarias detectadas proativamente</td>
+      <td>0%</td>
+      <td>78%</td>
+      <td><strong>+78 pp</strong></td>
+    </tr>
+  </table>
+
+  <p>O retorno sobre o investimento foi atingido no 5º mês de operação. No acumulado de 7 meses, a LogBrasil economizou R$ 186.000 em combustível e horas extras, R$ 97.000 em entregas atrasadas evitadas, e R$ 44.000 em avarias — totalizando R$ 327.000 de valor gerado contra um investimento de R$ 172.000 no projeto.</p>
+
+  <div class="callout callout-success">
+    <strong>Depoimento:</strong> "Antes, minha equipe passava metade do dia construindo rotas. Agora, em 20 minutos revisamos o que o agente gerou e ajustamos exceções. Isso liberou nossos melhores operadores para focar em clientes estratégicos e gestão de exceções — onde o julgamento humano realmente importa." — Diretor de Operações da empresa (nome confidencial a pedido)
+  </div>
+
+  <h2>Para quais empresas esse modelo se aplica?</h2>
+  <ul>
+    <li>Transportadoras com volume acima de 200 entregas/dia em múltiplas regiões</li>
+    <li>Distribuidoras de alimentos, bebidas, farmacêuticos e bens de consumo</li>
+    <li>Operadores logísticos (3PLs) com frota mista própria e terceirizada</li>
+    <li>E-commerces com operação de last-mile própria</li>
+    <li>Empresas de serviços com equipes em campo (técnicos, vendedores externos)</li>
+    <li>Indústrias com distribuição direta ao varejo (DSD — Direct Store Delivery)</li>
+  </ul>
+
+  <div class="faq-section">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-item">
+      <div class="faq-q">Como a IA pode ser usada na logística?</div>
+      <div class="faq-a">Na logística, agentes de IA atuam em roteirização dinâmica, previsão de demanda, gestão automática de estoque, monitoramento de frota e manutenção preditiva, automação de atendimento sobre status de entregas, e detecção de anomalias em avarias e devoluções.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Quais sistemas logísticos a Bronks IA integra?</div>
+      <div class="faq-a">A Bronks IA integra com os principais TMS, WMS, ERP e plataformas de rastreamento do mercado: SAP TM, Totvs Logix, Oracle TMS, Omie, Manhattan, Sascar, Onixsat, Correios, Jadlog e Total Express via API, além de marketplaces como Mercado Livre e Amazon.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Quanto tempo leva a implantação?</div>
+      <div class="faq-a">Para operações com 500 a 5.000 entregas/mês, a implantação completa leva de 10 a 14 semanas. O agente de roteirização fica operacional em 4 a 6 semanas. O modelo de previsão de demanda precisa de 8 a 10 semanas para treinar com o histórico da empresa.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Qual é o ROI típico?</div>
+      <div class="faq-a">O ROI médio em projetos logísticos é atingido entre 4 e 6 meses. As principais fontes de ganho são redução de km rodados (15% a 30%), menos capital imobilizado em estoque (10% a 25%), e redução de 60% a 80% do tempo em tarefas manuais de roteirização.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">IA para roteirização funciona para logística no interior do Brasil?</div>
+      <div class="faq-a">Sim, com adaptações. O agente aprende as particularidades locais: estradas não pavimentadas, rotas alternativas não mapeadas, sazonalidade de colheitas e restrições de municípios menores. Alimentamos o modelo com dados específicos da operação para calibrá-lo às características locais.</div>
+    </div>
+  </div>
+
+  <div class="internal-links">
+    <h3>Explore soluções relacionadas</h3>
+    <ul>
+      <li><a href="https://bronks.ia.br/automacao-com-ia/">Automação com IA — como funciona</a></li>
+      <li><a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA — arquitetura e casos de uso</a></li>
+      <li><a href="https://bronks.ia.br/casos-de-uso/financeiro/">Case: IA para o Setor Financeiro</a></li>
+      <li><a href="https://bronks.ia.br/casos-de-uso/juridico/">Case: IA para o Setor Jurídico</a></li>
+      <li><a href="https://bronks.ia.br/blog/automacao-de-processos-com-ia/">Automação de Processos com IA: guia completo</a></li>
+      <li><a href="https://bronks.ia.br/blog/agentes-ia-para-vendas/">Agentes de IA para Vendas e CRM</a></li>
+    </ul>
+  </div>
+
+  <div class="cta-box">
+    <h2>Quer otimizar sua operação logística com IA?</h2>
+    <p>Nossos especialistas analisam sua operação e identificam onde a IA gera impacto mais rápido — roteirização, previsão de demanda ou gestão de avarias. Diagnóstico gratuito, sem compromisso.</p>
+    <div class="cta-btns">
+      <a href="https://bronks.ia.br/#contato" class="btn-primary">Solicitar Diagnóstico Gratuito</a>
+      <a href="https://bronks.ia.br/casos-de-uso/" class="btn-secondary">Ver outros cases</a>
+    </div>
+  </div>
+
+</article>
+
+<footer>
+  <p>© 2026 Bronks IA — Consultoria em Inteligência Artificial para Empresas | Rio de Janeiro, Brasil</p>
+  <p style="margin-top: 8px;"><a href="https://bronks.ia.br/">Home</a> · <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a> · <a href="https://bronks.ia.br/rag-empresarial/">RAG</a> · <a href="https://bronks.ia.br/blog/">Blog</a> · <a href="https://bronks.ia.br/#contato">Contato</a></p>
+</footer>
+
+</body>
+</html>

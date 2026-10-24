@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocolo A2A (Agent-to-Agent) do Google: O Que É e Como Impacta a IA Empresarial no Brasil | Bronks IA</title>
+  <meta name="description" content="O protocolo A2A do Google permite que agentes de IA de diferentes fornecedores se comuniquem diretamente. Entenda o que é, como funciona e o que muda para empresas brasileiras que adotam IA agentica.">
+  <link rel="canonical" href="https://bronks.ia.br/blog/protocolo-a2a-agentes-ia/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Protocolo A2A do Google: O Que Muda para a IA Empresarial no Brasil">
+  <meta property="og:description" content="O A2A (Agent-to-Agent) é o protocolo aberto do Google para comunicação entre agentes de IA. Entenda como ele funciona, quem já adotou e o que muda na prática para empresas brasileiras.">
+  <meta property="og:url" content="https://bronks.ia.br/blog/protocolo-a2a-agentes-ia/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://bronks.ia.br/img/blog-a2a-og.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Protocolo A2A do Google: O Que É e Como Impacta a IA Empresarial no Brasil",
+    "description": "Análise do protocolo A2A (Agent-to-Agent) do Google: como funciona a comunicação entre agentes de IA, quem já adotou e o impacto prático para empresas brasileiras que adotam IA agentica.",
+    "datePublished": "2026-10-24",
+    "dateModified": "2026-10-24",
+    "author": { "@type": "Organization", "name": "Bronks IA", "url": "https://bronks.ia.br" },
+    "publisher": { "@type": "Organization", "name": "Bronks IA", "url": "https://bronks.ia.br", "logo": { "@type": "ImageObject", "url": "https://bronks.ia.br/logo.png" } },
+    "mainEntityOfPage": "https://bronks.ia.br/blog/protocolo-a2a-agentes-ia/",
+    "keywords": "protocolo A2A, agent-to-agent Google, agentes IA comunicação, IA agentica protocolo, multiagentes IA empresas, A2A vs MCP"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é o protocolo A2A do Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O A2A (Agent-to-Agent) é um protocolo aberto lançado pelo Google em abril de 2025 para padronizar a comunicação entre agentes de IA de diferentes fornecedores e plataformas. Ele define como um agente descobre as capacidades de outro agente (via 'Agent Card'), como solicita tarefas e como troca mensagens estruturadas — incluindo texto, código, formulários e arquivos. O objetivo é criar um ecossistema interoperável onde agentes de IA possam colaborar sem que cada empresa precise construir sua própria camada de integração."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual a diferença entre A2A e MCP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O MCP (Model Context Protocol) da Anthropic e o A2A do Google são complementáres, não concorrentes. O MCP define como um agente de IA se conecta a ferramentas e fontes de dados externas — bancos de dados, APIs, sistemas de arquivos. O A2A define como agentes de IA se comunicam entre si — como um agente orquestrador delega tarefas a agentes especialistas. Em uma analogia: MCP é como o agente acessa seus 'instrumentos de trabalho'; A2A é como ele 'colabora com colegas de equipe'."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O protocolo A2A já é adotado no Brasil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Em 2026, o A2A está em fase de adoção inicial no Brasil. Grandes fornecedores internacionais (SAP, Salesforce, ServiceNow) já implementaram suporte ao A2A em suas plataformas enterprise. No mercado brasileiro, empresas de consultoria de IA como a Bronks IA já constroem sistemas multiagentes compatíveis com o protocolo, mas a adoção generalizada em PMEs brasileiras ainda está no início — a maioria das implementações usa arquiteturas proprietárias que eventualmente deverão migrar para o padrão A2A."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como o A2A beneficia empresas que já usam IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para empresas que já têm agentes de IA em produção, o A2A reduz o custo de integração entre sistemas. Em vez de construir adaptadores customizados para cada par de agentes (agente de CRM + agente de ERP + agente de atendimento), o A2A padroniza a comunicação — qualquer agente compatível pode ser conectado a qualquer outro. Isso reduz o tempo de desenvolvimento de novas integrações, facilita a substituição de um agente por outro (sem reescrever os vizinhos) e permite comprar agentes especializados de fornecedores diferentes sem lock-in de plataforma."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: #0f172a; color: #fff; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .logo { font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+    .logo span { color: #6366f1; }
+    .header-cta { background: #6366f1; color: #fff; padding: 8px 18px; border-radius: 24px; font-weight: 600; font-size: 0.9rem; white-space: nowrap; }
+    nav { display: flex; gap: 20px; }
+    nav a { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
+    nav a:hover { color: #fff; text-decoration: none; }
+    .breadcrumb { font-size: 0.85rem; color: #666; padding: 12px 20px; background: #f8fafc; border-bottom: 1px solid #e2e8f0; }
+    .breadcrumb a { color: #6366f1; }
+    .blog-hero { background: linear-gradient(135deg, #0f172a 0%, #1a2e4a 60%, #0c1f3e 100%); color: #fff; padding: 48px 20px 40px; }
+    .blog-hero .container { max-width: 800px; margin: 0 auto; }
+    .blog-tag { display: inline-block; background: rgba(99,102,241,0.2); border: 1px solid rgba(99,102,241,0.4); color: #a5b4fc; padding: 4px 14px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; margin-bottom: 16px; }
+    .blog-hero h1 { font-size: clamp(1.45rem, 3.5vw, 2.2rem); font-weight: 800; line-height: 1.2; margin-bottom: 14px; }
+    .blog-meta { font-size: 0.88rem; opacity: 0.7; }
+    .article-body { max-width: 800px; margin: 0 auto; padding: 44px 20px 72px; }
+    h2 { font-size: 1.5rem; font-weight: 700; color: #0f172a; margin: 40px 0 14px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+    h3 { font-size: 1.1rem; font-weight: 700; color: #1e3a5f; margin: 26px 0 10px; }
+    p { margin-bottom: 16px; color: #374151; }
+    ul, ol { padding-left: 1.5rem; margin-bottom: 16px; }
+    li { margin-bottom: 8px; color: #374151; }
+    code { background: #f1f5f9; padding: 2px 7px; border-radius: 4px; font-size: 0.9em; font-family: 'Courier New', monospace; color: #334155; }
+    .callout { background: #eef2ff; border-left: 4px solid #6366f1; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+    .callout strong { color: #4338ca; }
+    .callout-success { background: #f0fdf4; border-left-color: #059669; }
+    .callout-success strong { color: #065f46; }
+    .callout-warn { background: #fffbeb; border-left-color: #f59e0b; }
+    .callout-warn strong { color: #92400e; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.93rem; }
+    th { background: #0f172a; color: #fff; padding: 11px 14px; text-align: left; }
+    td { padding: 11px 14px; border-bottom: 1px solid #e2e8f0; }
+    tr:nth-child(even) td { background: #f8fafc; }
+    .faq-section { background: #f8fafc; border-radius: 12px; padding: 32px 24px; margin: 40px 0; }
+    .faq-section h2 { border: none; margin-top: 0; }
+    .faq-item { border-bottom: 1px solid #e2e8f0; padding: 18px 0; }
+    .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .faq-q { font-weight: 700; color: #0f172a; margin-bottom: 8px; }
+    .faq-a { color: #374151; font-size: 0.95rem; }
+    .cta-box { background: linear-gradient(135deg, #1e1b4b, #312e81); color: #fff; border-radius: 16px; padding: 40px 32px; text-align: center; margin: 48px 0; }
+    .cta-box h2 { color: #fff; border: none; margin: 0 0 12px; }
+    .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: #6366f1; color: #fff; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 1rem; }
+    .btn-secondary { background: transparent; color: #a5b4fc; padding: 14px 28px; border-radius: 8px; font-weight: 600; border: 1px solid rgba(165,180,252,0.5); }
+    footer { background: #0f172a; color: rgba(255,255,255,0.6); padding: 32px 20px; text-align: center; font-size: 0.9rem; }
+    footer a { color: rgba(255,255,255,0.6); }
+    .internal-links { background: #f8fafc; border-radius: 10px; padding: 24px; margin: 32px 0; }
+    .internal-links h3 { margin-top: 0; color: #0f172a; }
+    .internal-links ul { list-style: none; padding: 0; }
+    .internal-links li { padding: 6px 0; border-bottom: 1px solid #e2e8f0; }
+    .internal-links li:last-child { border-bottom: none; }
+    @media (max-width: 640px) { nav { display: none; } .cta-box { padding: 28px 20px; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://bronks.ia.br/" class="logo">Bronks <span>IA</span></a>
+  <nav>
+    <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a>
+    <a href="https://bronks.ia.br/multiagentes-ia/">Multiagentes</a>
+    <a href="https://bronks.ia.br/ia-agentica/">IA Agêntica</a>
+    <a href="https://bronks.ia.br/blog/">Blog</a>
+  </nav>
+  <a href="https://bronks.ia.br/#contato" class="header-cta">Falar com Especialista</a>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <a href="https://bronks.ia.br/">Início</a> › <a href="https://bronks.ia.br/blog/">Blog</a> › Protocolo A2A: Agentes de IA
+</nav>
+
+<section class="blog-hero">
+  <div class="container">
+    <div class="blog-tag">Blog · IA Agêntica · Outubro 2026</div>
+    <h1>Protocolo A2A do Google: O Que É e Como Impacta a IA Empresarial no Brasil</h1>
+    <div class="blog-meta">Publicado em 24 de outubro de 2026 · 12 min de leitura · Equipe Bronks IA</div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>Em abril de 2025, o Google anunciou o protocolo A2A (Agent-to-Agent) — um padrão aberto para comunicação entre agentes de inteligência artificial. Ao lado do MCP (Model Context Protocol) da Anthropic, o A2A representa uma virada no desenvolvimento de sistemas multiagentes: a transição de arquiteturas proprietárias e isoladas para um ecossistema interoperável onde agentes de diferentes fornecedores colaboram como equipes de pessoas.</p>
+  <p>Para empresas brasileiras que já investem em IA ou estão começando agora, entender o A2A é estratégico. Neste artigo, explicamos o que é o protocolo, como ele funciona na prática, qual a diferença em relação ao MCP, e o que muda para quem constrói ou contrata sistemas de agentes de IA.</p>
+
+  <h2>O que é o protocolo A2A?</h2>
+  <p>O A2A é uma especificação técnica aberta que define como agentes de IA se descobrem, se comunicam e colaboram. Antes do A2A, se você quisesse que um agente de CRM conversasse com um agente de ERP e ambos acionassem um agente de análise de dados, precisava construir adaptadores customizados para cada par de sistemas — um trabalho de integração caro e frágil.</p>
+  <p>O A2A resolve esse problema com três conceitos centrais:</p>
+
+  <h3>1. Agent Card (Cartão do Agente)</h3>
+  <p>Cada agente compatível com A2A publica um <em>Agent Card</em> — um arquivo JSON acessível via URL que descreve o que o agente sabe fazer: suas capacidades, as tarefas que aceita, os tipos de entrada e saída esperados, e como se autenticar para usá-lo. É como um currículo padronizado que qualquer agente orquestrador pode ler e entender automaticamente.</p>
+
+  <h3>2. Task Protocol</h3>
+  <p>O A2A define um protocolo de tarefas estruturado: o agente cliente cria uma <strong>Task</strong>, o agente servidor a processa e retorna atualizações de status (<code>working</code>, <code>completed</code>, <code>failed</code>) e artefatos (o resultado da tarefa — texto, código, arquivo, formulário preenchido). A comunicação pode ser síncrona (espera o resultado) ou assíncrona com streaming de eventos.</p>
+
+  <h3>3. Multi-Modal Content</h3>
+  <p>O A2A suporta nativamente múltiplos tipos de conteúdo nas mensagens entre agentes: texto, JSON estruturado, imagens, arquivos, formulários interativos e até widgets de interface. Isso permite que um agente entregue não só dados mas experiências completas para outros agentes ou para o usuário final.</p>
+
+  <div class="callout">
+    <strong>Em resumo:</strong> o A2A é o "protocolo de colaboração" entre agentes, enquanto o MCP é o "protocolo de ferramentas". Um agente usa MCP para acessar um banco de dados; usa A2A para solicitar que outro agente especialista processe aqueles dados.
+  </div>
+
+  <h2>A2A vs. MCP: qual a diferença e como se complementam?</h2>
+  <p>A confusão entre A2A e MCP é comum — ambos são protocolos abertos para IA agêntica, mas resolvem problemas diferentes:</p>
+
+  <table>
+    <tr>
+      <th>Aspecto</th>
+      <th>MCP (Anthropic)</th>
+      <th>A2A (Google)</th>
+    </tr>
+    <tr>
+      <td>O que define</td>
+      <td>Como agentes se conectam a ferramentas e dados</td>
+      <td>Como agentes se comunicam entre si</td>
+    </tr>
+    <tr>
+      <td>Analogia</td>
+      <td>Agente ↔ Ferramentas de trabalho</td>
+      <td>Agente ↔ Colegas de equipe</td>
+    </tr>
+    <tr>
+      <td>Exemplo de uso</td>
+      <td>Agente consulta banco de dados via MCP</td>
+      <td>Agente orquestrador delega análise a agente especialista via A2A</td>
+    </tr>
+    <tr>
+      <td>Principais adotantes</td>
+      <td>Claude, VS Code, Cursor, Zed</td>
+      <td>SAP, Salesforce, ServiceNow, Google Workspace</td>
+    </tr>
+    <tr>
+      <td>Compatíveis entre si?</td>
+      <td colspan="2" style="text-align:center">Sim — um agente pode usar MCP e A2A simultaneamente</td>
+    </tr>
+  </table>
+
+  <p>Na prática, um sistema multiagente empresarial moderno usa <strong>ambos</strong>: MCP para que cada agente acesse seus sistemas específicos (CRM, ERP, banco de dados), e A2A para que os agentes se coordenem e deleguem tarefas entre si.</p>
+
+  <h2>Quem já adota o A2A?</h2>
+  <p>O Google lançou o A2A como protocolo aberto no Google Cloud Next 2025, com uma lista inicial de mais de 50 parceiros anunciando suporte. Entre os principais:</p>
+  <ul>
+    <li><strong>SAP:</strong> integração com SAP Joule (agente de IA corporativo) para comunicação com agentes de parceiros via A2A</li>
+    <li><strong>Salesforce:</strong> Agentforce aceita e emite tarefas A2A com outros agentes no ecossistema Salesforce e externo</li>
+    <li><strong>ServiceNow:</strong> Now Assist usa A2A para orquestrar agentes de ITSM com sistemas externos</li>
+    <li><strong>Atlassian:</strong> Rovo (agente da Atlassian) expõe capacidades via A2A para integração com ferramentas de desenvolvimento</li>
+    <li><strong>LangChain e LangGraph:</strong> suporte nativo ao A2A para frameworks de desenvolvimento de agentes open-source</li>
+    <li><strong>Google Workspace:</strong> agentes de Gemini no Gmail, Docs e Meet se comunicam via A2A com agentes de terceiros</li>
+  </ul>
+
+  <h2>O que muda na prática para empresas brasileiras?</h2>
+  <p>Para quem está desenvolvendo ou contratando sistemas de IA no Brasil, o A2A tem implicações práticas que já estão chegando em 2026:</p>
+
+  <h3>1. Redução do custo de integração entre sistemas</h3>
+  <p>A maior barreira para IA empresarial no Brasil não é o custo dos modelos — é o custo de integração com sistemas legados. Com o A2A, qualquer agente compatível pode se comunicar com qualquer outro sem adaptadores customizados. Para uma empresa que usa SAP + Salesforce + um chatbot customizado, isso pode reduzir o custo de integração em 40% a 60%.</p>
+
+  <h3>2. Agentes especializados como "serviços" contratáveis</h3>
+  <p>O A2A abre caminho para um mercado de agentes especializados: assim como hoje você contrata uma API de CEP ou de nota fiscal, em breve será possível contratar um agente especialista em análise jurídica de contratos, um agente de classificação fiscal de produtos ou um agente de análise de crédito — e conectá-lo ao seu orquestrador via A2A sem necessidade de customização profunda.</p>
+
+  <h3>3. Portabilidade e redução de lock-in</h3>
+  <p>Com arquiteturas A2A, trocar o modelo de IA subjacente de um agente (de GPT para Claude, por exemplo) não requer reescrever os agentes vizinhos — a interface A2A permanece a mesma. Isso reduz o lock-in de fornecedor e aumenta o poder de negociação das empresas.</p>
+
+  <h3>4. Governança e rastreabilidade em sistemas multiagentes</h3>
+  <p>O A2A define uma trilha de tarefas rastregável: cada delegação entre agentes é registrada com ID de tarefa, timestamps e status. Para empresas em setores regulados (financeiro, saúde, jurídico), isso facilita a conformidade com exigências de auditoria e explicabilidade — você sabe exatamente qual agente tomou qual decisão em qual momento.</p>
+
+  <div class="callout callout-warn">
+    <strong>Atenção:</strong> o A2A ainda é um protocolo em evolução. Em 2026, a versão 0.2 está estável para produção, mas atualizações significativas são esperadas para 2027. Implemente com abstração adequada para facilitar a atualização futura sem reescrever a lógica de negócio.
+  </div>
+
+  <h2>Como a Bronks IA usa A2A nos projetos de clientes</h2>
+  <p>Na Bronks IA, já adotamos o A2A em projetos de clientes que constroem sistemas multiagentes — particularmente em setores jurídico, financeiro e logístico, onde a delegação de tarefas entre agentes especializados é central para o design da solução.</p>
+  <p>Em um projeto típico com A2A, a arquitetura segue este padrão:</p>
+  <ol>
+    <li><strong>Agente orquestrador</strong> recebe a solicitação do usuário (via chat, API ou sistema interno)</li>
+    <li>O orquestrador consulta os Agent Cards dos agentes disponíveis para identificar qual agente especialista pode resolver a subtarefa</li>
+    <li>O orquestrador cria uma Task A2A e a delega ao agente especialista (análise de documento, consulta ao ERP, geração de relatório)</li>
+    <li>O agente especialista processa e retorna o artefato via A2A ao orquestrador</li>
+    <li>O orquestrador consolida os resultados e entrega a resposta ao usuário final</li>
+  </ol>
+  <p>Esse padrão permite que o sistema cresça adicionando novos agentes especialistas sem modificar o orquestrador ou os outros agentes — uma arquitetura extensível por design.</p>
+
+  <div class="callout callout-success">
+    <strong>Compatibilidade com MCP:</strong> em todos os projetos com A2A, usamos MCP em paralelo. Os agentes especialistas usam MCP para acessar ferramentas (banco de dados, APIs, sistemas legados), e o A2A para receber tarefas do orquestrador. As duas especificações convivem naturalmente na mesma arquitetura.
+  </div>
+
+  <h2>O A2A vai substituir as arquiteturas proprietárias atuais?</h2>
+  <p>A transição será gradual. A maioria das empresas brasileiras que já tem agentes em produção usa frameworks como LangChain, CrewAI ou AutoGen com integrações customizadas. Migrar para A2A não é obrigatório agora — mas a tendência é clara: à medida que os grandes fornecedores de ERP, CRM e plataformas SaaS adotam o padrão, a pressão para compatibilidade vai crescer.</p>
+  <p>Nossa recomendação: para projetos novos de multiagentes, construa com A2A desde o início — o custo marginal é baixo e os benefícios de longo prazo são significativos. Para sistemas existentes, planeje uma migração incremental, agente por agente, priorizando os pontos de integração mais caros de manter.</p>
+
+  <div class="faq-section">
+    <h2>Perguntas frequentes sobre o protocolo A2A</h2>
+    <div class="faq-item">
+      <div class="faq-q">O que é o protocolo A2A do Google?</div>
+      <div class="faq-a">O A2A (Agent-to-Agent) é um protocolo aberto lançado pelo Google em abril de 2025 para padronizar a comunicação entre agentes de IA de diferentes fornecedores. Ele define como um agente descobre as capacidades de outro (via Agent Card), como delega tarefas e como troca mensagens estruturadas.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Qual a diferença entre A2A e MCP?</div>
+      <div class="faq-a">O MCP define como um agente acessa ferramentas e dados externos; o A2A define como agentes se comunicam entre si. São complementáres: um sistema multiagente típico usa ambos — MCP para ferramentas, A2A para colaboração entre agentes.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">O protocolo A2A já é adotado no Brasil?</div>
+      <div class="faq-a">Em 2026, o A2A está em adoção inicial. Grandes fornecedores como SAP, Salesforce e ServiceNow já implementaram suporte. No Brasil, empresas de consultoria como a Bronks IA já constroem sistemas compatíveis, mas a adoção generalizada em PMEs ainda está no início.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Como o A2A beneficia empresas que já usam IA?</div>
+      <div class="faq-a">O A2A reduz o custo de integração entre sistemas de IA, facilita a troca de fornecedores sem reescrever os agentes vizinhos, e permite comprar agentes especialistas de fornecedores diferentes sem lock-in de plataforma.</div>
+    </div>
+  </div>
+
+  <div class="internal-links">
+    <h3>Leia também</h3>
+    <ul>
+      <li><a href="https://bronks.ia.br/multiagentes-ia/">Multiagentes de IA para Empresas — como funcionam</a></li>
+      <li><a href="https://bronks.ia.br/ia-agentica/">IA Agêntica: o que é e por que importa</a></li>
+      <li><a href="https://bronks.ia.br/blog/ia-agentica-o-que-e/">IA Agêntica 2026: guia completo para empresas brasileiras</a></li>
+      <li><a href="https://bronks.ia.br/blog/mcp-model-context-protocol-empresas/">MCP (Model Context Protocol): o que é e como usar na empresa</a></li>
+      <li><a href="https://bronks.ia.br/blog/multiagentes-ia-empresas/">Sistemas Multiagentes de IA: arquitetura e casos de uso</a></li>
+      <li><a href="https://bronks.ia.br/blog/governanca-de-ia-empresas/">Governança de IA: como controlar agentes autônomos em produção</a></li>
+    </ul>
+  </div>
+
+  <div class="cta-box">
+    <h2>Quer implementar uma arquitetura multiagente na sua empresa?</h2>
+    <p>A Bronks IA projeta e implanta sistemas de agentes de IA compatíveis com A2A e MCP — do diagnóstico inicial ao go-live. Fale com nossos especialistas e descubra o que é possível na sua operação.</p>
+    <div class="cta-btns">
+      <a href="https://bronks.ia.br/#contato" class="btn-primary">Solicitar Diagnóstico Gratuito</a>
+      <a href="https://bronks.ia.br/multiagentes-ia/" class="btn-secondary">Saiba mais sobre Multiagentes</a>
+    </div>
+  </div>
+
+</article>
+
+<footer>
+  <p>© 2026 Bronks IA — Consultoria em Inteligência Artificial para Empresas | Rio de Janeiro, Brasil</p>
+  <p style="margin-top: 8px;"><a href="https://bronks.ia.br/">Home</a> · <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a> · <a href="https://bronks.ia.br/multiagentes-ia/">Multiagentes</a> · <a href="https://bronks.ia.br/blog/">Blog</a> · <a href="https://bronks.ia.br/#contato">Contato</a></p>
+</footer>
+
+</body>
+</html>
