@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governança de IA nas Empresas: Guia Prático 2026 — Do Piloto à Escala com Controle | Bronks IA</title>
+  <meta name="description" content="Apenas 7-8% das empresas brasileiras têm maturidade em governança de IA agêntica. Aprenda como estruturar políticas, trilhas de auditoria e controles para escalar agentes de IA com segurança.">
+  <link rel="canonical" href="https://bronks.ia.br/blog/governanca-de-ia-empresas/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Governança de IA nas Empresas: Guia Prático 2026 | Bronks IA">
+  <meta property="og:description" content="Guia completo de governança de IA para empresas brasileiras em 2026: políticas, auditoria, controle de agentes autônomos e framework para escalar com segurança. Dados de EY, Gartner e Deloitte.">
+  <meta property="og:url" content="https://bronks.ia.br/blog/governanca-de-ia-empresas/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://bronks.ia.br/img/blog-governanca-ia-og.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Governança de IA nas Empresas: Guia Prático 2026 — Do Piloto à Escala com Controle",
+    "description": "Framework completo de governança de IA para empresas brasileiras: como estruturar políticas, trilhas de auditoria, controles operacionais e gestão de risco para agentes autônomos em produção.",
+    "datePublished": "2026-10-24",
+    "dateModified": "2026-10-24",
+    "author": { "@type": "Organization", "name": "Bronks IA", "url": "https://bronks.ia.br" },
+    "publisher": { "@type": "Organization", "name": "Bronks IA", "url": "https://bronks.ia.br", "logo": { "@type": "ImageObject", "url": "https://bronks.ia.br/logo.png" } },
+    "mainEntityOfPage": "https://bronks.ia.br/blog/governanca-de-ia-empresas/",
+    "keywords": "governança de IA empresas, governança agentes IA, controle de IA empresarial, política de IA, auditoria de IA, gestão de risco IA, compliance IA Brasil 2026"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://bronks.ia.br/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bronks.ia.br/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Governança de IA nas Empresas", "item": "https://bronks.ia.br/blog/governanca-de-ia-empresas/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é governança de IA para empresas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Governança de IA para empresas é o conjunto de políticas, processos, controles técnicos e responsabilidades organizacionais que garantem que os sistemas de IA operem de forma segura, auditável, ética e alinhada aos objetivos do negócio. Inclui: quem pode aprovar e implantar agentes de IA, como as decisões dos agentes são registradas e auditadas, quais ações os agentes podem executar autonomamente, como erros e vieses são detectados e corrigidos, e como a empresa demonstra conformidade para reguladores."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Por que a maioria das empresas falha em governança de IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Segundo EY Brasil, Gartner e Deloitte (2026), apenas 7% a 8% das empresas têm maturidade efetiva em governança de agentes de IA. Os motivos mais comuns de falha são: adoção tática sem estrutura (cada área implanta IA de forma isolada, sem política unificada), ausência de trilha de auditoria (o agente age mas não registra o raciocínio), falta de responsabilidade clara (quem é dono quando o agente erra?), confiar demais no fornecedor (governança é responsabilidade da empresa, não do provedor de LLM), e subestimar o risco de alucinações em contexto de negócios críticos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual é o risco de não ter governança de IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O Gartner projeta que 40% dos projetos de IA em andamento serão cancelados até 2027 por falta de controle operacional. Os riscos concretos incluem: decisões automatizadas com viés que geram perdas ou passivos legais, vazamento de dados confidenciais via prompts mal desenhados, incapacidade de auditar e explicar decisões para reguladores, dano à reputação por falhas públicas de agentes, e dependência crítica de um sistema que a empresa não entende nem controla."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como implementar governança de IA passo a passo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O Framework Bronks de Governança de IA tem 5 camadas: (1) Inventário — catalogar todos os agentes e sistemas de IA em operação; (2) Classificação de risco — definir nível de risco de cada agente (baixo, médio, alto, crítico); (3) Controles por nível — definir trilha de auditoria, alçada de aprovação e mecanismos de override conforme o risco; (4) Monitoramento contínuo — dashboards de uso, alertas de anomalia, revisão periódica de precisão; (5) Responsabilidade — definir AI Owner para cada agente, com SLA de resposta a incidentes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Governança de IA é obrigatória por lei no Brasil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O Brasil ainda não tem uma lei geral de IA em vigor, mas o PL 2338/2023 (Marco Legal da IA) avança no Senado com previsão de aprovação em 2026. Para setores regulados já existem obrigações: BACEN exige documentação e auditabilidade de modelos de risco (Resolução BCB 85/2021), ANPD fiscaliza o uso de IA em decisões automatizadas que afetam titulares de dados (LGPD, Art. 20), e CFM orienta sobre IA em diagnósticos médicos. Mesmo onde não há obrigação legal, a governança reduz risco operacional, reputacional e de responsabilidade civil."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: #0f172a; color: #fff; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .logo { font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+    .logo span { color: #6366f1; }
+    .header-cta { background: #6366f1; color: #fff; padding: 8px 18px; border-radius: 24px; font-weight: 600; font-size: 0.9rem; white-space: nowrap; }
+    nav { display: flex; gap: 20px; }
+    nav a { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
+    nav a:hover { color: #fff; text-decoration: none; }
+    .breadcrumb { font-size: 0.85rem; color: #666; padding: 12px 20px; background: #f8fafc; border-bottom: 1px solid #e2e8f0; }
+    .breadcrumb a { color: #6366f1; }
+    .article-hero { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); color: #fff; padding: 56px 20px 48px; }
+    .article-hero .container { max-width: 820px; margin: 0 auto; }
+    .article-tag { display: inline-block; background: rgba(99,102,241,0.2); border: 1px solid rgba(99,102,241,0.4); color: #a5b4fc; padding: 4px 14px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; margin-bottom: 18px; }
+    .article-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+    .article-hero .meta { font-size: 0.9rem; opacity: 0.7; }
+    .article-hero .lead { font-size: 1.1rem; opacity: 0.88; max-width: 680px; margin: 16px 0 0; line-height: 1.6; }
+    .article-body { max-width: 820px; margin: 0 auto; padding: 48px 20px 72px; }
+    h2 { font-size: 1.55rem; font-weight: 700; color: #0f172a; margin: 44px 0 16px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+    h3 { font-size: 1.15rem; font-weight: 700; color: #1e3a5f; margin: 28px 0 10px; }
+    p { margin-bottom: 16px; color: #374151; }
+    ul, ol { padding-left: 1.5rem; margin-bottom: 16px; }
+    li { margin-bottom: 8px; color: #374151; }
+    .callout { background: #eef2ff; border-left: 4px solid #6366f1; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+    .callout strong { color: #4338ca; }
+    .callout-warn { background: #fef2f2; border-left-color: #ef4444; }
+    .callout-warn strong { color: #991b1b; }
+    .callout-success { background: #f0fdf4; border-left-color: #059669; }
+    .callout-success strong { color: #065f46; }
+    .callout-data { background: #fffbeb; border-left-color: #f59e0b; }
+    .callout-data strong { color: #92400e; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95rem; }
+    th { background: #0f172a; color: #fff; padding: 12px 14px; text-align: left; }
+    td { padding: 12px 14px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+    tr:nth-child(even) td { background: #f8fafc; }
+    .risk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
+    .risk-card { border-radius: 10px; padding: 20px 16px; }
+    .risk-low { background: #f0fdf4; border: 1px solid #86efac; }
+    .risk-med { background: #fffbeb; border: 1px solid #fcd34d; }
+    .risk-high { background: #fff7ed; border: 1px solid #fdba74; }
+    .risk-crit { background: #fef2f2; border: 1px solid #fca5a5; }
+    .risk-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+    .risk-low .risk-label { color: #166534; }
+    .risk-med .risk-label { color: #92400e; }
+    .risk-high .risk-label { color: #c2410c; }
+    .risk-crit .risk-label { color: #991b1b; }
+    .risk-title { font-weight: 700; font-size: 0.95rem; color: #0f172a; margin-bottom: 6px; }
+    .risk-desc { font-size: 0.85rem; color: #374151; }
+    .framework-step { display: flex; gap: 16px; margin-bottom: 28px; align-items: flex-start; }
+    .step-num { background: #6366f1; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1rem; flex-shrink: 0; margin-top: 4px; }
+    .step-content { flex: 1; }
+    .step-title { font-weight: 700; font-size: 1.05rem; color: #0f172a; margin-bottom: 6px; }
+    .checklist { list-style: none; padding: 0; }
+    .checklist li { padding: 6px 0 6px 28px; border-bottom: 1px solid #e2e8f0; color: #374151; position: relative; font-size: 0.95rem; }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before { content: '☐'; position: absolute; left: 4px; color: #6366f1; font-size: 1rem; }
+    .stat-banner { background: linear-gradient(90deg, #1e1b4b, #312e81); color: #fff; border-radius: 12px; padding: 24px 28px; margin: 32px 0; display: flex; gap: 32px; flex-wrap: wrap; }
+    .stat-banner .s { text-align: center; flex: 1; min-width: 100px; }
+    .stat-banner .sn { font-size: 2rem; font-weight: 800; color: #a5b4fc; }
+    .stat-banner .sl { font-size: 0.8rem; opacity: 0.8; margin-top: 2px; }
+    .faq-section { background: #f8fafc; border-radius: 12px; padding: 32px 24px; margin: 40px 0; }
+    .faq-section h2 { border: none; margin-top: 0; }
+    .faq-item { border-bottom: 1px solid #e2e8f0; padding: 18px 0; }
+    .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .faq-q { font-weight: 700; color: #0f172a; margin-bottom: 8px; font-size: 1rem; }
+    .faq-a { color: #374151; font-size: 0.95rem; }
+    .cta-box { background: linear-gradient(135deg, #1e1b4b, #312e81); color: #fff; border-radius: 16px; padding: 40px 32px; text-align: center; margin: 48px 0; }
+    .cta-box h2 { color: #fff; border: none; margin: 0 0 12px; }
+    .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: #6366f1; color: #fff; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 1rem; }
+    .btn-secondary { background: transparent; color: #a5b4fc; padding: 14px 28px; border-radius: 8px; font-weight: 600; border: 1px solid rgba(165,180,252,0.5); }
+    footer { background: #0f172a; color: rgba(255,255,255,0.6); padding: 32px 20px; text-align: center; font-size: 0.9rem; }
+    footer a { color: rgba(255,255,255,0.6); }
+    .internal-links { background: #f8fafc; border-radius: 10px; padding: 24px; margin: 32px 0; }
+    .internal-links h3 { margin-top: 0; color: #0f172a; }
+    .internal-links ul { list-style: none; padding: 0; }
+    .internal-links li { padding: 6px 0; border-bottom: 1px solid #e2e8f0; }
+    .internal-links li:last-child { border-bottom: none; }
+    @media (max-width: 640px) {
+      .stat-banner { gap: 16px; }
+      .cta-box { padding: 28px 20px; }
+      nav { display: none; }
+      .framework-step { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://bronks.ia.br/" class="logo">Bronks <span>IA</span></a>
+  <nav>
+    <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a>
+    <a href="https://bronks.ia.br/automacao-com-ia/">Automação</a>
+    <a href="https://bronks.ia.br/ia-agentica/">IA Agêntica</a>
+    <a href="https://bronks.ia.br/blog/">Blog</a>
+  </nav>
+  <a href="https://bronks.ia.br/#contato" class="header-cta">Falar com Especialista</a>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <a href="https://bronks.ia.br/">Início</a> › <a href="https://bronks.ia.br/blog/">Blog</a> › Governança de IA nas Empresas
+</nav>
+
+<section class="article-hero">
+  <div class="container">
+    <div class="article-tag">Gestão de IA · Compliance · 2026</div>
+    <h1>Governança de IA nas Empresas: Guia Prático 2026 — Do Piloto à Escala com Controle</h1>
+    <div class="meta">Publicado em 24 out 2026 · Bronks IA · 12 min de leitura</div>
+    <p class="lead">Apenas 7–8% das empresas brasileiras têm maturidade real em governança de agentes de IA. O Gartner projeta que 40% dos projetos de IA serão cancelados até 2027 por falta de controle. Este guia mostra como estruturar governança sem travar a inovação.</p>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <div class="stat-banner">
+    <div class="s"><div class="sn">7–8%</div><div class="sl">empresas brasileiras com maturidade em gov. de IA (EY/Gartner/Deloitte, 2026)</div></div>
+    <div class="s"><div class="sn">40%</div><div class="sl">dos projetos de IA serão cancelados até 2027 por falta de controle (Gartner)</div></div>
+    <div class="s"><div class="sn">41,9%</div><div class="sl">das empresas brasileiras com 100+ func. já usam IA (IBGE, 2026)</div></div>
+    <div class="s"><div class="sn">6%</div><div class="sl">têm IA agêntica em produção; 41% ainda em piloto (AWS Summit Brasil, set/2026)</div></div>
+  </div>
+
+  <p>O paradoxo da IA empresarial em 2026: as empresas nunca adotaram IA tão rápido — e nunca estiveram tão despreparadas para controlá-la. O IBGE aponta que 41,9% das empresas com mais de 100 funcionários já usam IA nas operações. O AWS Summit Brasil de setembro mostrou que 6% têm agentes em produção e 41% estão em pilotos ativos. Mas o Gartner alerta que 40% desses projetos serão cancelados até 2027. O motivo não é tecnologia — é governança.</p>
+
+  <p>Este guia apresenta o <strong>Framework Bronks de Governança de IA</strong>: uma abordagem prática para empresas que querem escalar IA sem perder controle, baseada em nossa experiência implantando agentes em empresas brasileiras de médio e grande porte.</p>
+
+  <h2>Por que a governança falha na maioria das empresas</h2>
+  <p>Segundo análises independentes publicadas entre abril e maio de 2026 pela EY Brasil, Gartner e Deloitte, apenas 7% a 8% das empresas apresentam maturidade efetiva em governança de agentes de IA. Os diagnósticos convergem para os mesmos padrões de falha:</p>
+
+  <div class="callout callout-warn">
+    <strong>Os 5 erros mais comuns de governança de IA:</strong>
+    <ol style="margin-top: 10px; padding-left: 1.5rem;">
+      <li><strong>Adoção tática sem política:</strong> cada área implanta IA de forma isolada, sem inventário centralizado ou critérios de aprovação</li>
+      <li><strong>Sem trilha de auditoria:</strong> o agente age mas não registra o raciocínio — quando algo dá errado, não há como explicar o que aconteceu</li>
+      <li><strong>Responsabilidade difusa:</strong> "IA errou" não é uma causa — alguém tem que responder</li>
+      <li><strong>Confiar no fornecedor:</strong> governança é responsabilidade da empresa, não do provedor de LLM ou da consultoria que implantou</li>
+      <li><strong>Subestimar alucinações em contexto crítico:</strong> um agente que "inventa" uma resposta numa FAQ de marketing é irritante; o mesmo comportamento num agente de crédito ou jurídico é um passivo</li>
+    </ol>
+  </div>
+
+  <p>O resultado prático desses erros: projetos pausados após incidentes, auditorias que não conseguem explicar decisões automatizadas, ANPD questionando uso de dados em processos automáticos, e confiança interna quebrada após um caso público de falha.</p>
+
+  <h2>O que é, de fato, governança de IA</h2>
+  <p>Governança de IA não é burocracia — é a infraestrutura de confiança que permite escalar. Uma empresa com boa governança consegue:</p>
+  <ul>
+    <li>Responder em 24h: "qual agente tomou essa decisão, por que, com quais dados?"</li>
+    <li>Desligar um agente específico sem afetar os outros</li>
+    <li>Demonstrar conformidade com LGPD e regulamentações setoriais</li>
+    <li>Detectar quando um agente começa a degradar sem esperar um incidente</li>
+    <li>Escalar novos agentes com confiança, porque o processo é testado</li>
+  </ul>
+
+  <h2>Framework Bronks de Governança de IA — 5 Camadas</h2>
+
+  <div class="framework-step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <div class="step-title">Inventário de IA</div>
+      <p>O ponto de partida: saber o que existe. Muitas empresas não têm um registro completo dos sistemas de IA em uso. O inventário deve incluir: nome e descrição do agente/sistema, área responsável, data de implantação, fornecedor/tecnologia, tipo de dados processados, ações que pode executar autonomamente, e versão atual do modelo.</p>
+      <p>Sem inventário, não há governança — é impossível controlar o que não se conhece. Recomendamos um inventário auditado semestralmente.</p>
+    </div>
+  </div>
+
+  <div class="framework-step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <div class="step-title">Classificação de Risco por Agente</div>
+      <p>Cada agente de IA tem um nível de risco diferente, que determina os controles necessários:</p>
+      <div class="risk-grid">
+        <div class="risk-card risk-low">
+          <div class="risk-label">Risco Baixo</div>
+          <div class="risk-title">Assistente de conteúdo</div>
+          <div class="risk-desc">Gera rascunhos, responde FAQs. Humano sempre revisa antes de publicar.</div>
+        </div>
+        <div class="risk-card risk-med">
+          <div class="risk-label">Risco Médio</div>
+          <div class="risk-title">Agente de atendimento</div>
+          <div class="risk-desc">Responde clientes, escala para humano em casos complexos. Impacta reputação.</div>
+        </div>
+        <div class="risk-card risk-high">
+          <div class="risk-label">Risco Alto</div>
+          <div class="risk-title">Agente operacional</div>
+          <div class="risk-desc">Executa lançamentos, envia comunicações, acessa sistemas críticos.</div>
+        </div>
+        <div class="risk-card risk-crit">
+          <div class="risk-label">Risco Crítico</div>
+          <div class="risk-title">Agente de decisão</div>
+          <div class="risk-desc">Aprova crédito, libera pagamentos, define diagnósticos. Impacto financeiro ou legal direto.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="framework-step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <div class="step-title">Controles por Nível de Risco</div>
+      <p>Os controles necessários escalam com o risco:</p>
+      <table>
+        <tr>
+          <th>Controle</th>
+          <th>Baixo</th>
+          <th>Médio</th>
+          <th>Alto</th>
+          <th>Crítico</th>
+        </tr>
+        <tr>
+          <td>Trilha de auditoria (log de ações)</td>
+          <td>30 dias</td>
+          <td>90 dias</td>
+          <td>1 ano</td>
+          <td>5 anos</td>
+        </tr>
+        <tr>
+          <td>Explainability (registro do raciocínio)</td>
+          <td>Resumo</td>
+          <td>Resumo</td>
+          <td>Detalhado</td>
+          <td>Completo + auditável</td>
+        </tr>
+        <tr>
+          <td>Override humano</td>
+          <td>Opcional</td>
+          <td>Recomendado</td>
+          <td>Obrigatório</td>
+          <td>Obrigatório + aprovação dual</td>
+        </tr>
+        <tr>
+          <td>Monitoramento de drift</td>
+          <td>Mensal</td>
+          <td>Semanal</td>
+          <td>Diário</td>
+          <td>Tempo real</td>
+        </tr>
+        <tr>
+          <td>Aprovação para go-live</td>
+          <td>Área responsável</td>
+          <td>TI + Área</td>
+          <td>TI + Jurídico + Área</td>
+          <td>Comitê de IA + C-Level</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="framework-step">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <div class="step-title">Monitoramento Contínuo</div>
+      <p>Um agente que funcionava bem na implantação pode se degradar por mudanças de contexto: novos produtos, mudanças de processo, atualização do LLM base pelo fornecedor. O monitoramento contínuo deve cobrir:</p>
+      <ul>
+        <li><strong>Precisão operacional:</strong> amostras periódicas das saídas do agente revisadas por humano</li>
+        <li><strong>Taxa de escalada:</strong> se o agente começa a escalar muito mais para humanos, algo mudou</li>
+        <li><strong>Drift de comportamento:</strong> comparar distribuição de respostas vs. baseline histórico</li>
+        <li><strong>Alertas de custo:</strong> aumento súbito no uso de tokens pode indicar loops ou prompts inesperados</li>
+        <li><strong>Incidentes e reclamações:</strong> canal claro para reportar comportamentos inesperados</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="framework-step">
+    <div class="step-num">5</div>
+    <div class="step-content">
+      <div class="step-title">AI Owner — Responsabilidade Clara</div>
+      <p>Cada agente em produção precisa de um <strong>AI Owner</strong>: uma pessoa (não um time) responsável pelo comportamento, desempenho e conformidade daquele sistema. O AI Owner:</p>
+      <ul>
+        <li>Aprova mudanças no prompt e na configuração do agente</li>
+        <li>Revisa relatórios de monitoramento periodicamente</li>
+        <li>É o primeiro ponto de contato em caso de incidente</li>
+        <li>Decide quando o agente precisa ser retrained ou substituído</li>
+        <li>Garante que a documentação está atualizada</li>
+      </ul>
+      <p>Sem AI Owner definido, a governança existe no papel mas não na prática.</p>
+    </div>
+  </div>
+
+  <h2>Checklist de Governança: antes de colocar um agente em produção</h2>
+  <div class="callout">
+    <strong>Use este checklist para cada novo agente de IA antes do go-live:</strong>
+  </div>
+  <ul class="checklist">
+    <li>O agente está no inventário de IA com todos os campos preenchidos?</li>
+    <li>O nível de risco foi classificado e documentado?</li>
+    <li>Os controles correspondentes ao nível de risco foram implementados?</li>
+    <li>A trilha de auditoria está funcionando e retendo logs pelo período exigido?</li>
+    <li>O mecanismo de override humano foi testado?</li>
+    <li>Os dados de treinamento ou contexto foram verificados quanto a viés e conformidade com LGPD?</li>
+    <li>O AI Owner foi designado e aceita a responsabilidade?</li>
+    <li>O processo de monitoramento está definido (frequência, responsável, critérios de alerta)?</li>
+    <li>A aprovação formal (conforme o nível de risco) foi obtida e registrada?</li>
+    <li>O processo de rollback (como desligar o agente em caso de problema) foi testado?</li>
+    <li>A equipe que interage com o agente foi treinada nos limites do sistema?</li>
+    <li>A documentação técnica foi entregue e está em local acessível?</li>
+  </ul>
+
+  <h2>Governança e regulamentação no Brasil</h2>
+  <p>O Brasil ainda não tem uma lei geral de IA em vigor, mas o ambiente regulatório está evoluindo rapidamente:</p>
+
+  <table>
+    <tr>
+      <th>Regulação / Norma</th>
+      <th>Escopo</th>
+      <th>Impacto na Governança de IA</th>
+    </tr>
+    <tr>
+      <td>LGPD (Lei 13.709/2018)</td>
+      <td>Geral</td>
+      <td>Art. 20 exige revisão humana de decisões automatizadas que afetam titulares. Direito a explicação.</td>
+    </tr>
+    <tr>
+      <td>PL 2338/2023 (Marco Legal da IA)</td>
+      <td>Geral — em tramitação</td>
+      <td>Classifica sistemas de IA por risco. Sistemas de alto risco precisarão de avaliação de conformidade.</td>
+    </tr>
+    <tr>
+      <td>Resolução BCB 85/2021</td>
+      <td>Setor financeiro</td>
+      <td>Modelos de risco devem ser documentados, versionados e auditáveis. Explainability obrigatória.</td>
+    </tr>
+    <tr>
+      <td>Resolução CMN 4.557/2017</td>
+      <td>Instituições financeiras</td>
+      <td>Framework de gestão de risco inclui modelos de IA. Stress testing de modelos requerido.</td>
+    </tr>
+    <tr>
+      <td>CFM (Conselho Federal de Medicina)</td>
+      <td>Saúde</td>
+      <td>IA pode auxiliar diagnóstico mas não substituir médico. Responsabilidade é do profissional.</td>
+    </tr>
+    <tr>
+      <td>OAB (Conselho Federal)</td>
+      <td>Advocacia</td>
+      <td>Advogado responde pelos atos produzidos com auxílio de IA. Não há "culpa da IA" em peças jurídicas.</td>
+    </tr>
+  </table>
+
+  <div class="callout callout-data">
+    <strong>Atenção ao PL 2338/2023:</strong> se aprovado em sua versão atual, sistemas de IA usados em crédito, contratação, saúde, educação e infraestrutura crítica serão classificados como "alto risco" e exigirão avaliação prévia de conformidade, registro e relatório de impacto — similar ao GDPR europeu. Empresas que já têm governança estruturada terão muito menos trabalho de adequação.
+  </div>
+
+  <h2>Como começar: o roteiro de 90 dias</h2>
+  <p>Para empresas que já têm IA em uso mas ainda não têm governança formal, este é o caminho mínimo para os primeiros 90 dias:</p>
+
+  <table>
+    <tr>
+      <th>Semanas</th>
+      <th>Atividade</th>
+      <th>Responsável</th>
+    </tr>
+    <tr>
+      <td>1–2</td>
+      <td>Inventário: mapear todos os sistemas de IA em uso (perguntar a cada área)</td>
+      <td>TI + Líderes de área</td>
+    </tr>
+    <tr>
+      <td>3–4</td>
+      <td>Classificação de risco: para cada sistema do inventário</td>
+      <td>TI + Jurídico</td>
+    </tr>
+    <tr>
+      <td>5–6</td>
+      <td>Designar AI Owner para cada agente</td>
+      <td>C-Level</td>
+    </tr>
+    <tr>
+      <td>7–9</td>
+      <td>Implementar trilha de auditoria nos sistemas de alto e crítico risco (se não existir)</td>
+      <td>TI + fornecedor</td>
+    </tr>
+    <tr>
+      <td>10–11</td>
+      <td>Criar política de IA corporativa: o que pode, o que não pode, quem aprova</td>
+      <td>Jurídico + C-Level</td>
+    </tr>
+    <tr>
+      <td>12–13</td>
+      <td>Treinamento das equipes que operam agentes</td>
+      <td>AI Owners</td>
+    </tr>
+  </table>
+
+  <div class="callout callout-success">
+    <strong>Resultado esperado:</strong> ao final de 90 dias, a empresa sabe o que tem, sabe quem responde por cada sistema, tem auditabilidade nos pontos mais críticos, e tem uma política que orienta novos projetos. Isso coloca a empresa no top 15–20% de maturidade de governança no Brasil — acima da média do mercado, com muito menos risco.
+  </div>
+
+  <h2>Governança não trava a inovação — ela acelera</h2>
+  <p>O argumento que mais ouvimos contra governança é: "vai burocratizar, vai frear a adoção de IA". Nossa experiência mostra o oposto. Empresas com boa governança:</p>
+  <ul>
+    <li><strong>Aprovam novos agentes mais rápido</strong> — porque o processo é claro e o risco já foi mapeado</li>
+    <li><strong>Escalam com confiança</strong> — C-Level aprova expansão quando sabe que há controle</li>
+    <li><strong>Recuperam-se mais rápido de incidentes</strong> — porque a trilha de auditoria permite entender e corrigir</li>
+    <li><strong>Atraem melhores parceiros</strong> — grandes clientes e parceiros B2B perguntam sobre governança de IA antes de fechar contratos</li>
+    <li><strong>Preparam-se para regulação</strong> — o Marco Legal da IA vem. Quem se prepara agora não precisa correr depois</li>
+  </ul>
+
+  <div class="faq-section">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-item">
+      <div class="faq-q">O que é governança de IA para empresas?</div>
+      <div class="faq-a">Governança de IA é o conjunto de políticas, processos, controles técnicos e responsabilidades que garantem que os sistemas de IA operem de forma segura, auditável e alinhada ao negócio. Inclui inventário de agentes, classificação de risco, trilhas de auditoria, mecanismos de override humano e responsabilidade clara por cada sistema.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Por que a maioria das empresas falha em governança de IA?</div>
+      <div class="faq-a">Os 5 erros mais comuns: adoção tática sem política unificada, ausência de trilha de auditoria, responsabilidade difusa ("a IA errou"), confiar no fornecedor para fazer a governança, e subestimar o risco de alucinações em contextos de negócio críticos.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Qual é o risco de não ter governança de IA?</div>
+      <div class="faq-a">O Gartner projeta que 40% dos projetos de IA serão cancelados até 2027 por falta de controle. Riscos concretos: decisões com viés, vazamento de dados, incapacidade de auditar para reguladores, dano à reputação e dependência de sistemas que a empresa não controla.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Como implementar governança de IA passo a passo?</div>
+      <div class="faq-a">5 camadas do Framework Bronks: (1) Inventário de todos os sistemas de IA; (2) Classificação de risco por agente; (3) Controles proporcionais ao risco; (4) Monitoramento contínuo de precisão e comportamento; (5) AI Owner designado para cada agente. O roteiro de 90 dias acima detalha como começar.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Governança de IA é obrigatória por lei no Brasil?</div>
+      <div class="faq-a">Não ainda de forma geral, mas o PL 2338/2023 (Marco Legal da IA) avança no Senado. Para setores regulados já existem obrigações: BACEN (Resolução 85/2021), LGPD (Art. 20 sobre decisões automatizadas) e normas do CFM e OAB. Implementar governança agora prepara a empresa para o marco regulatório que está chegando.</div>
+    </div>
+  </div>
+
+  <div class="internal-links">
+    <h3>Conteúdo relacionado</h3>
+    <ul>
+      <li><a href="https://bronks.ia.br/ia-agentica/">IA Agêntica: o que é e como funciona</a></li>
+      <li><a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA para Empresas</a></li>
+      <li><a href="https://bronks.ia.br/blog/ia-agentica-2026-guia-empresas-brasileiras/">Guia Completo de IA Agêntica para Empresas Brasileiras em 2026</a></li>
+      <li><a href="https://bronks.ia.br/casos-de-uso/financeiro/">Case: IA no Setor Financeiro — Conciliação e Análise de Risco</a></li>
+      <li><a href="https://bronks.ia.br/casos-de-uso/juridico/">Case: IA no Setor Jurídico — Análise de Contratos</a></li>
+      <li><a href="https://bronks.ia.br/blog/piloto-de-ia-como-comecar/">Como Começar um Piloto de IA na Sua Empresa</a></li>
+    </ul>
+  </div>
+
+  <div class="cta-box">
+    <h2>Quer estruturar a governança de IA da sua empresa?</h2>
+    <p>Nossos especialistas mapeiam os seus sistemas de IA, classificam riscos e constroem o framework de governança adequado ao seu contexto. Diagnóstico gratuito.</p>
+    <div class="cta-btns">
+      <a href="https://bronks.ia.br/#contato" class="btn-primary">Solicitar Diagnóstico Gratuito</a>
+      <a href="https://bronks.ia.br/ia-agentica/" class="btn-secondary">Entender IA Agêntica</a>
+    </div>
+  </div>
+
+</article>
+
+<footer>
+  <p>© 2026 Bronks IA — Consultoria em Inteligência Artificial para Empresas | Rio de Janeiro, Brasil</p>
+  <p style="margin-top: 8px;"><a href="https://bronks.ia.br/">Home</a> · <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a> · <a href="https://bronks.ia.br/rag-empresarial/">RAG</a> · <a href="https://bronks.ia.br/blog/">Blog</a> · <a href="https://bronks.ia.br/#contato">Contato</a></p>
+</footer>
+
+</body>
+</html>
