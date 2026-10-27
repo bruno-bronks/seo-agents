@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA Agêntica para E-commerce: Como Automatizar Vendas, Estoque e Atendimento em 2026</title>
+  <meta name="description" content="Descubra como a IA agêntica está transformando o e-commerce brasileiro em 2026: agentes que gerenciam estoque, personalizam ofertas, respondem clientes e recuperam carrinhos abandonados.">
+  <link rel="canonical" href="https://bronks.ia.br/blog/ia-agentica-para-e-commerce/">
+  <meta property="og:title" content="IA Agêntica para E-commerce: Automatize Vendas, Estoque e Atendimento em 2026">
+  <meta property="og:description" content="Guia completo: o que é IA agêntica para e-commerce, quais tarefas os agentes automatizam e como implementar no Brasil.">
+  <meta property="og:url" content="https://bronks.ia.br/blog/ia-agentica-para-e-commerce/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Bronks IA">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IA Agêntica para E-commerce: Como Automatizar Vendas, Estoque e Atendimento em 2026",
+    "description": "Guia completo sobre como a IA agêntica está transformando o e-commerce brasileiro em 2026.",
+    "url": "https://bronks.ia.br/blog/ia-agentica-para-e-commerce/",
+    "datePublished": "2026-10-27",
+    "dateModified": "2026-10-27",
+    "author": {"@type": "Organization", "name": "Bronks Inteligência Artificial"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bronks.ia.br/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bronks.ia.br/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "IA Agêntica para E-commerce", "item": "https://bronks.ia.br/blog/ia-agentica-para-e-commerce/"}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é IA agêntica para e-commerce?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IA agêntica para e-commerce é o uso de agentes de inteligência artificial autônomos que executam tarefas operacionais da loja virtual sem intervenção humana: atualizar preços, responder clientes, gerenciar estoque, recuperar carrinhos abandonados e personalizar recomendações em tempo real."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual a diferença entre chatbot e agente de IA no e-commerce?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Um chatbot responde perguntas com respostas pré-definidas. Um agente de IA age: pesquisa no estoque, processa pedidos, emite reembolsos, atualiza sistemas — e decide qual ação tomar com base no contexto. O agente integra múltiplos sistemas e executa tarefas de ponta a ponta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto custa implementar IA agêntica para e-commerce no Brasil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O custo varia conforme a complexidade: uma solução de atendimento automatizado com RAG começa em R$ 20.000 a R$ 50.000 para implementação. Soluções mais completas (gestão de estoque + personalização + atendimento) ficam entre R$ 80.000 e R$ 200.000, com ROI médio de 6 a 12 meses."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --azul: #1e3a5f; --azul-claro: #2563eb; --verde: #059669; --cinza-bg: #f8fafc; --cinza-texto: #475569; --branco: #ffffff; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #1e293b; background: var(--cinza-bg); line-height: 1.7; }
+    a { color: var(--azul-claro); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header { background: var(--azul); color: var(--branco); padding: 16px 0; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+    nav { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .logo { font-size: 1.5rem; font-weight: 700; color: var(--branco); }
+    .logo span { color: #60a5fa; }
+    .nav-links { display: flex; gap: 20px; }
+    .nav-links a { color: #cbd5e1; font-size: 0.95rem; }
+    .btn-header { background: var(--azul-claro); color: var(--branco) !important; padding: 8px 18px; border-radius: 6px; font-weight: 600; }
+
+    .article-hero { background: linear-gradient(135deg, #1e3a5f, #1e40af); color: var(--branco); padding: 64px 0 48px; }
+    .article-meta { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+    .meta-tag { background: rgba(255,255,255,0.15); color: #bfdbfe; padding: 4px 12px; border-radius: 12px; font-size: 0.82rem; font-weight: 600; }
+    .article-hero h1 { font-size: clamp(1.7rem, 3.5vw, 2.5rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+    .article-hero .subtitle { font-size: 1.1rem; color: #bfdbfe; max-width: 640px; }
+
+    .article-layout { display: grid; grid-template-columns: 1fr 300px; gap: 48px; padding: 56px 0; align-items: start; }
+    @media(max-width: 900px) { .article-layout { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+    .article-body h2 { font-size: 1.6rem; color: var(--azul); margin: 40px 0 16px; border-left: 4px solid var(--azul-claro); padding-left: 16px; }
+    .article-body h3 { font-size: 1.2rem; color: var(--azul); margin: 28px 0 12px; }
+    .article-body p { font-size: 1rem; color: #334155; margin-bottom: 16px; }
+    .article-body ul, .article-body ol { margin: 16px 0 16px 24px; }
+    .article-body li { font-size: 1rem; color: #334155; margin-bottom: 8px; }
+    .article-body strong { color: #1e293b; }
+
+    .highlight-box { background: #eff6ff; border-left: 4px solid var(--azul-claro); border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 28px 0; }
+    .highlight-box p { color: #1e40af; margin: 0; font-weight: 500; }
+    .highlight-box strong { color: var(--azul); }
+
+    .table-wrap { overflow-x: auto; margin: 24px 0; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+    table { width: 100%; border-collapse: collapse; }
+    th { background: var(--azul); color: var(--branco); padding: 14px 16px; text-align: left; font-size: 0.9rem; }
+    td { padding: 12px 16px; border-bottom: 1px solid #f1f5f9; font-size: 0.93rem; }
+    tr:nth-child(even) td { background: #f8fafc; }
+
+    .use-case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin: 28px 0; }
+    .uc-card { background: var(--branco); border-radius: 10px; padding: 22px; border: 1.5px solid #e2e8f0; }
+    .uc-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .uc-card h4 { font-size: 1rem; color: var(--azul); margin-bottom: 8px; }
+    .uc-card p { font-size: 0.88rem; color: var(--cinza-texto); }
+
+    .faq-item { background: var(--branco); border-radius: 10px; padding: 22px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    .faq-item h3 { font-size: 1.05rem; color: var(--azul); margin-bottom: 10px; }
+    .faq-item p { font-size: 0.95rem; color: var(--cinza-texto); margin: 0; }
+
+    .sidebar { position: sticky; top: 24px; }
+    .sidebar-box { background: var(--branco); border-radius: 12px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 24px; }
+    .sidebar-box h3 { font-size: 1rem; color: var(--azul); margin-bottom: 16px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+    .toc-link { display: block; padding: 8px 0; font-size: 0.9rem; color: var(--cinza-texto); border-bottom: 1px solid #f1f5f9; }
+    .toc-link:hover { color: var(--azul-claro); }
+    .cta-sidebar { background: linear-gradient(135deg, var(--azul), #1e40af); color: var(--branco); border-radius: 12px; padding: 28px; text-align: center; }
+    .cta-sidebar h3 { font-size: 1.1rem; margin-bottom: 12px; }
+    .cta-sidebar p { font-size: 0.88rem; color: #bfdbfe; margin-bottom: 20px; }
+    .btn-cta-side { display: block; background: #f59e0b; color: #1e293b; padding: 12px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; text-align: center; }
+    .btn-cta-side:hover { background: #d97706; text-decoration: none; }
+
+    .cta-article { background: #eff6ff; border: 2px solid var(--azul-claro); border-radius: 12px; padding: 32px; text-align: center; margin: 48px 0 32px; }
+    .cta-article h3 { font-size: 1.4rem; color: var(--azul); margin-bottom: 12px; }
+    .cta-article p { color: var(--cinza-texto); margin-bottom: 20px; }
+    .btn-cta-article { display: inline-block; background: var(--azul-claro); color: var(--branco); padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 1rem; }
+    .btn-cta-article:hover { background: #1d4ed8; text-decoration: none; }
+
+    footer { background: var(--azul); color: #94a3b8; padding: 40px 0; text-align: center; font-size: 0.9rem; }
+    footer a { color: #60a5fa; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="https://bronks.ia.br/" class="logo">Bronks <span>IA</span></a>
+      <div class="nav-links">
+        <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a>
+        <a href="https://bronks.ia.br/ia-para-ecommerce/">IA para E-commerce</a>
+        <a href="https://bronks.ia.br/blog/">Blog</a>
+        <a href="https://bronks.ia.br/contato/" class="btn-header">Consultoria Grátis</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="container">
+    <div class="article-meta">
+      <span class="meta-tag">📅 27 de outubro de 2026</span>
+      <span class="meta-tag">🛍️ E-commerce</span>
+      <span class="meta-tag">⏱️ 12 min de leitura</span>
+    </div>
+    <h1>IA Agêntica para E-commerce: Como Automatizar Vendas, Estoque e Atendimento em 2026</h1>
+    <p class="subtitle">Guia completo para donos de e-commerce que querem usar agentes de IA para crescer sem contratar mais gente.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="article-layout">
+
+    <article class="article-body">
+
+      <p>Se você tem uma loja virtual no Brasil e já tentou "usar IA" no seu negócio, provavelmente acabou com um chatbot que responde as mesmas 5 perguntas em loop — e o cliente ainda precisa falar com um atendente no final.</p>
+
+      <p>O problema não é a IA. É que chatbots são a versão 1.0 da tecnologia. A versão atual — IA agêntica — é completamente diferente: em vez de apenas responder, o agente <strong>age</strong>. Ele consulta o estoque, processa o pedido, emite o reembolso, atualiza o ERP e manda a notificação para o cliente. Tudo sem humano no meio.</p>
+
+      <p>Neste guia, vou explicar o que muda para e-commerces brasileiros com a IA agêntica — e como implementar na prática.</p>
+
+      <h2>O que é IA agêntica no contexto do e-commerce?</h2>
+
+      <p>IA agêntica é o uso de <strong>agentes autônomos de inteligência artificial</strong> que executam tarefas completas de ponta a ponta. No e-commerce, isso significa que o agente não só "entende" o que o cliente quer — ele age nos sistemas da loja para resolver o problema.</p>
+
+      <p>A diferença prática é enorme:</p>
+
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Abordagem</th>
+            <th>Chatbot Tradicional</th>
+            <th>Agente de IA Agêntico</th>
+          </tr>
+          <tr>
+            <td>Cliente pergunta sobre rastreamento</td>
+            <td>Manda link dos Correios</td>
+            <td>Consulta o sistema, informa status exato e ETA</td>
+          </tr>
+          <tr>
+            <td>Cliente quer cancelar pedido</td>
+            <td>Direciona para atendente humano</td>
+            <td>Verifica elegibilidade, cancela, estorna e confirma no chat</td>
+          </tr>
+          <tr>
+            <td>Produto acabou no estoque</td>
+            <td>Não sabe</td>
+            <td>Detecta, atualiza a vitrine, notifica compradores e aciona reposição</td>
+          </tr>
+          <tr>
+            <td>Carrinho abandonado</td>
+            <td>Não age</td>
+            <td>Envia mensagem personalizada com incentivo contextual em 30 min</td>
+          </tr>
+        </table>
+      </div>
+
+      <p>A chave está na capacidade do agente de <strong>integrar múltiplos sistemas</strong> (ERP, plataforma, logística, pagamentos) e tomar decisões baseadas em dados reais — não em scripts fixos.</p>
+
+      <h2>As 7 aplicações mais impactantes de IA agêntica no e-commerce</h2>
+
+      <div class="use-case-grid">
+        <div class="uc-card">
+          <div class="uc-icon">💬</div>
+          <h4>1. Atendimento autônomo ao cliente</h4>
+          <p>Resolve 70-85% das solicitações sem humano: rastreamento, trocas, cancelamentos, dúvidas sobre produto.</p>
+        </div>
+        <div class="uc-card">
+          <div class="uc-icon">🛒</div>
+          <h4>2. Recuperação de carrinho abandonado</h4>
+          <p>Agente detecta abandono, analisa histórico do cliente e envia mensagem personalizada com incentivo certo.</p>
+        </div>
+        <div class="uc-card">
+          <div class="uc-icon">📦</div>
+          <h4>3. Gestão inteligente de estoque</h4>
+          <p>Monitora níveis, aciona reposição automaticamente, ajusta vitrine e avisa compradores quando produto volta.</p>
+        </div>
+        <div class="uc-card">
+          <div class="uc-icon">💰</div>
+          <h4>4. Precificação dinâmica</h4>
+          <p>Monitora concorrentes, demanda e margem. Ajusta preços automaticamente dentro de limites definidos por você.</p>
+        </div>
+        <div class="uc-card">
+          <div class="uc-icon">🎯</div>
+          <h4>5. Personalização de vitrine</h4>
+          <p>Cada visitante vê produtos relevantes baseados no comportamento, histórico de compras e contexto em tempo real.</p>
+        </div>
+        <div class="uc-card">
+          <div class="uc-icon">📝</div>
+          <h4>6. Geração de conteúdo de produtos</h4>
+          <p>Cria títulos SEO, descrições otimizadas e FAQs para novos produtos automaticamente ao cadastrar no sistema.</p>
+        </div>
+      </div>
+
+      <h2>Como funciona tecnicamente um agente de IA para e-commerce?</h2>
+
+      <p>Para entender o que diferencia o agente de um chatbot simples, você precisa entender três componentes:</p>
+
+      <h3>1. O modelo de linguagem (o "cérebro")</h3>
+      <p>Um LLM como o Claude, GPT-4o ou Gemini entende o contexto, interpreta a intenção do cliente e decide qual ação tomar. Diferente de um chatbot baseado em regras, o modelo entende frases que nunca foram programadas.</p>
+
+      <h3>2. As ferramentas (os "braços")</h3>
+      <p>O agente tem acesso a ferramentas que se conectam aos sistemas da loja: API do ERP para consultar estoque, API da plataforma (VTEX, Shopify, Tray) para processar pedidos, API dos Correios/transportadoras para rastrear, API do gateway de pagamento para estornos. Cada ação que o agente pode executar é uma "ferramenta" que ele aprende a usar.</p>
+
+      <h3>3. A memória e o contexto</h3>
+      <p>O agente lembra de toda a conversa anterior com o cliente, do histórico de pedidos e de interações passadas. Isso permite respostas contextualizadas — "vi que você comprou o tênis tamanho 42 no mês passado, o novo modelo chegou" — que parecem humanas.</p>
+
+      <div class="highlight-box">
+        <p><strong>Exemplo real:</strong> Cliente manda no chat "meu pedido #34521 não chegou e amanhã viajo". O agente consulta o rastreamento, verifica que o pacote está retido na alfândega, avalia a política de reenvio, oferece as opções disponíveis (aguardar ou reenvio expresso com custo extra) e processa a escolha do cliente — tudo em menos de 30 segundos, sem nenhum atendente humano.</p>
+      </div>
+
+      <h2>Resultados reais: o que esperar no Brasil</h2>
+
+      <p>Com base em implementações de e-commerces brasileiros de médio porte (R$ 10M–R$ 100M/ano de faturamento), esses são resultados típicos após 3 a 6 meses:</p>
+
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Métrica</th>
+            <th>Antes da IA agêntica</th>
+            <th>Após implementação</th>
+          </tr>
+          <tr>
+            <td>% tickets resolvidos sem humano</td>
+            <td>20–30%</td>
+            <td>70–85%</td>
+          </tr>
+          <tr>
+            <td>Taxa de recuperação de carrinho</td>
+            <td>5–8%</td>
+            <td>14–22%</td>
+          </tr>
+          <tr>
+            <td>CSAT (satisfação no atendimento)</td>
+            <td>3.8/5.0</td>
+            <td>4.4/5.0</td>
+          </tr>
+          <tr>
+            <td>Custo por atendimento</td>
+            <td>R$ 18–35</td>
+            <td>R$ 3–8</td>
+          </tr>
+          <tr>
+            <td>Ruptura de estoque não detectada</td>
+            <td>4–12h</td>
+            <td>Tempo real</td>
+          </tr>
+        </table>
+      </div>
+
+      <h2>O que você precisa ter antes de implementar</h2>
+
+      <p>IA agêntica não funciona no vácuo — ela amplifica o que já existe. Para que o projeto dê resultado, você precisa de:</p>
+
+      <ul>
+        <li><strong>APIs abertas nos seus sistemas:</strong> A plataforma de e-commerce (VTEX, Shopify, Tray, WooCommerce), ERP e logística precisam ter APIs que o agente possa usar. Sistemas legados sem API são o principal bloqueador.</li>
+        <li><strong>Dados históricos limpos:</strong> Histórico de pedidos, devoluções e comportamento de cliente treinam o agente para personalizar. Sem dados, o agente começa genérico.</li>
+        <li><strong>Processos bem definidos:</strong> O agente executa processos. Se "cancelamento de pedido" tem 3 políticas diferentes dependendo do caso, você precisa documentar isso antes — não durante — a implementação.</li>
+        <li><strong>Volume mínimo para o ROI fazer sentido:</strong> Abaixo de 500 atendimentos/mês ou R$ 2M/ano de faturamento, o investimento dificilmente se paga em menos de 18 meses.</li>
+      </ul>
+
+      <h2>Como implementar: os 4 passos da Bronks</h2>
+
+      <p>O processo que usamos com e-commerces brasileiros segue 4 fases bem definidas:</p>
+
+      <h3>Fase 1 — Diagnóstico (2 semanas)</h3>
+      <p>Mapeamos os principais gargalos operacionais: quais são os tipos de atendimento mais frequentes, qual é a taxa de resolução atual, quais sistemas já têm API disponível. O resultado é um roadmap de implementação com estimativa de ROI por funcionalidade.</p>
+
+      <h3>Fase 2 — Piloto focado (4 a 6 semanas)</h3>
+      <p>Implementamos um agente para um caso de uso de alto impacto e baixa complexidade: geralmente, atendimento para rastreamento e cancelamentos. O piloto valida a integração técnica e treina o time interno para supervisionar o agente.</p>
+
+      <h3>Fase 3 — Expansão (8 a 12 semanas)</h3>
+      <p>Com o piloto validado, expandimos para recuperação de carrinho, gestão de estoque e personalização. Cada módulo é implementado com monitoramento para garantir que a qualidade não caia.</p>
+
+      <h3>Fase 4 — Operação contínua</h3>
+      <p>O agente é um produto vivo: novos produtos, políticas e campanhas precisam ser refletidos nas instruções do agente. Estabelecemos um processo de revisão mensal para manter a qualidade.</p>
+
+      <h2>Perguntas frequentes sobre IA agêntica para e-commerce</h2>
+
+      <div class="faq-item">
+        <h3>O que é IA agêntica para e-commerce?</h3>
+        <p>IA agêntica para e-commerce é o uso de agentes de inteligência artificial autônomos que executam tarefas operacionais da loja virtual sem intervenção humana: atualizar preços, responder clientes, gerenciar estoque, recuperar carrinhos abandonados e personalizar recomendações em tempo real.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Qual a diferença entre chatbot e agente de IA no e-commerce?</h3>
+        <p>Um chatbot responde perguntas com respostas pré-definidas. Um agente de IA age: pesquisa no estoque, processa pedidos, emite reembolsos, atualiza sistemas — e decide qual ação tomar com base no contexto. O agente integra múltiplos sistemas e executa tarefas de ponta a ponta.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Quanto custa implementar IA agêntica para e-commerce no Brasil?</h3>
+        <p>O custo varia conforme a complexidade: uma solução de atendimento automatizado com RAG começa em R$ 20.000 a R$ 50.000 para implementação. Soluções mais completas (gestão de estoque + personalização + atendimento) ficam entre R$ 80.000 e R$ 200.000, com ROI médio de 6 a 12 meses.</p>
+      </div>
+
+      <div class="cta-article">
+        <h3>Quer implementar IA agêntica no seu e-commerce?</h3>
+        <p>Em 30 minutos, a Bronks mostra um diagnóstico do seu e-commerce e quais agentes trariam maior retorno para a sua operação.</p>
+        <a href="https://bronks.ia.br/contato/" class="btn-cta-article">→ Agendar consultoria gratuita</a>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sidebar-box">
+        <h3>Neste artigo</h3>
+        <a href="#" class="toc-link">O que é IA agêntica</a>
+        <a href="#" class="toc-link">7 aplicações no e-commerce</a>
+        <a href="#" class="toc-link">Como funciona tecnicamente</a>
+        <a href="#" class="toc-link">Resultados esperados</a>
+        <a href="#" class="toc-link">Pré-requisitos</a>
+        <a href="#" class="toc-link">Como implementar</a>
+        <a href="#" class="toc-link">FAQ</a>
+      </div>
+      <div class="cta-sidebar">
+        <h3>Consultoria gratuita para o seu e-commerce</h3>
+        <p>Especialista da Bronks analisa seu caso e mostra o que a IA pode fazer.</p>
+        <a href="https://bronks.ia.br/contato/" class="btn-cta-side">→ Agendar agora</a>
+      </div>
+      <div class="sidebar-box">
+        <h3>Artigos relacionados</h3>
+        <a href="https://bronks.ia.br/ia-para-ecommerce/" class="toc-link">IA para E-commerce</a>
+        <a href="https://bronks.ia.br/agentes-de-ia/" class="toc-link">O que são Agentes de IA</a>
+        <a href="https://bronks.ia.br/rag-empresarial/" class="toc-link">RAG Empresarial</a>
+        <a href="https://bronks.ia.br/blog/ia-agentica-o-que-e/" class="toc-link">IA Agêntica: o que é</a>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Bronks Inteligência Artificial — <a href="https://bronks.ia.br/">bronks.ia.br</a></p>
+    <p style="margin-top:8px;">
+      <a href="https://bronks.ia.br/">Home</a> ·
+      <a href="https://bronks.ia.br/blog/">Blog</a> ·
+      <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a> ·
+      <a href="https://bronks.ia.br/contato/">Contato</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
