@@ -1,0 +1,457 @@
+{
+  "timestamp": "2026-10-28T11:34:49Z",
+  "domain": "santechseguranca.com.br",
+  "seo_score": 12,
+  "sre_score": 0,
+  "local_rank_score": 8,
+  "ranking_potential": "alto",
+  "auditoria_nota": "ALERTA CRÍTICO: O domínio santechseguranca.com.br NÃO retorna resultados no operador site: do Google. Zero páginas indexadas detectadas. O site pode estar com bloqueio no robots.txt, problemas de DNS/hospedagem, ou nunca foi rastreado pelo Google.",
+  "indexed_pages": [
+    {
+      "url": "https://santechseguranca.com.br",
+      "title": "Não verificável — acesso direto bloqueado pela política de rede da sessão de auditoria",
+      "status": "não indexada"
+    }
+  ],
+  "keyword_opportunities": [
+    {
+      "keyword": "instalação de câmeras Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "1.000–2.000/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/instalacao-cameras-rio-de-janeiro"
+    },
+    {
+      "keyword": "câmeras de segurança barra da tijuca",
+      "tier": 2,
+      "estimated_volume": "200–500/mês",
+      "difficulty": "medium",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cameras-barra-da-tijuca"
+    },
+    {
+      "keyword": "instalação câmeras segurança recreio",
+      "tier": 2,
+      "estimated_volume": "100–300/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cameras-recreio-dos-bandeirantes"
+    },
+    {
+      "keyword": "automação de portão Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "500–1.000/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/automacao-portoes"
+    },
+    {
+      "keyword": "cerca elétrica zona oeste RJ",
+      "tier": 2,
+      "estimated_volume": "100–300/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cerca-eletrica-zona-oeste"
+    },
+    {
+      "keyword": "cftv residencial Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "500–800/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cftv-residencial"
+    },
+    {
+      "keyword": "alarme residencial Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "300–600/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/alarme-residencial"
+    },
+    {
+      "keyword": "instalação ar condicionado Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "1.000–3.000/mês",
+      "difficulty": "high",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "média",
+      "page_to_create_or_optimize": "/manutencao-ar-condicionado"
+    },
+    {
+      "keyword": "energia solar residencial RJ",
+      "tier": 1,
+      "estimated_volume": "300–700/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/energia-solar"
+    },
+    {
+      "keyword": "eletroposto instalação residencial RJ",
+      "tier": 3,
+      "estimated_volume": "50–150/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/eletroposto"
+    },
+    {
+      "keyword": "empresa câmeras segurança perto de mim",
+      "tier": 3,
+      "estimated_volume": "variável/local",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "Google Business Profile otimizado + páginas locais"
+    },
+    {
+      "keyword": "controle de acesso condomínio Rio de Janeiro",
+      "tier": 2,
+      "estimated_volume": "200–400/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/controle-acesso"
+    }
+  ],
+  "technical_issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "ZERO páginas indexadas no Google. O operador site:santechseguranca.com.br não retornou nenhum resultado. O site é completamente invisível para motores de busca. Causas prováveis: robots.txt bloqueando o Googlebot, diretiva noindex no HTML, domínio sem configuração de indexação, problema de DNS/hospedagem, ou site nunca submetido ao Google Search Console.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "1) Verificar robots.txt e remover Disallow: / se existir; 2) Remover meta tag noindex de todas as páginas; 3) Criar e verificar conta no Google Search Console; 4) Submeter sitemap.xml; 5) Solicitar indexação manual das páginas principais."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Domínio não resolve via DNS na auditoria automatizada desta sessão (ENOTFOUND). Isso pode indicar problema de hospedagem ou configuração DNS intermitente, o que causaria downtime e impediria rastreamento pelo Google.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "Verificar configuração de DNS no painel do registrador. Checar registros A e CNAME. Usar ferramenta como dnschecker.org para propagação global. Confirmar que o servidor web está ativo e respondendo."
+    },
+    {
+      "type": "local SEO",
+      "severity": "crítico",
+      "description": "Nenhuma presença orgânica detectada no Google para as keywords principais de Barra da Tijuca e Recreio, enquanto concorrentes como AEP Segurança, Padrão 3D e Construcam já têm páginas locais ranqueando para essas buscas.",
+      "affected_urls": [],
+      "fix": "Criar páginas locais para /cameras-barra-da-tijuca, /cameras-recreio, /seguranca-jacarepagua com schema LocalBusiness e conteúdo geo-específico."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "alto",
+      "description": "Ausência de páginas de serviço individuais detectada (nenhuma URL de serviço aparece no Google). Sem páginas como /instalacao-cameras, /cerca-eletrica, /automacao-portoes, é impossível ranquear para keywords transacionais de alta conversão.",
+      "affected_urls": [],
+      "fix": "Criar 10 páginas de serviço conforme mapeamento na skill: /instalacao-cameras, /cftv-residencial, /automacao-portoes, /cerca-eletrica, /alarme-residencial, /controle-acesso, /manutencao-ar-condicionado, /energia-solar, /seguranca-condominio, /eletroposto."
+    },
+    {
+      "type": "técnico",
+      "severity": "alto",
+      "description": "Sitemap.xml não verificável — provavelmente ausente ou não submetido ao Google Search Console. Sem sitemap, o rastreamento é prejudicado, especialmente em sites novos.",
+      "affected_urls": ["https://santechseguranca.com.br/sitemap.xml"],
+      "fix": "Gerar sitemap.xml com todas as URLs do site. Submeter no Google Search Console. Adicionar referência ao sitemap no robots.txt: Sitemap: https://santechseguranca.com.br/sitemap.xml"
+    },
+    {
+      "type": "técnico",
+      "severity": "alto",
+      "description": "Schema markup LocalBusiness, Service e FAQPage não confirmados. Sem schema, o site não aparece em rich results, reduzindo CTR e visibilidade no 3-pack do Google Maps.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "Implementar schema LocalBusiness na homepage com nome, endereço, telefone, horário de funcionamento e área de atendimento. Adicionar schema Service em cada página de serviço."
+    },
+    {
+      "type": "performance",
+      "severity": "médio",
+      "description": "Core Web Vitals e velocidade mobile não verificáveis diretamente. Histórico de ENOTFOUND sugere possíveis instabilidades de servidor que afetam TTFB.",
+      "affected_urls": ["https://santechseguranca.com.br"],
+      "fix": "Testar via PageSpeed Insights (pagespeed.web.dev). Meta: LCP < 2.5s, CLS < 0.1, INP < 200ms, TTFB < 600ms. Ativar CDN, comprimir imagens, minificar JS/CSS."
+    },
+    {
+      "type": "local SEO",
+      "severity": "médio",
+      "description": "Google Business Profile não confirmado ou não otimizado. Sem GBP completo com fotos, reviews e posts regulares, a empresa não aparece no 3-pack local — principal canal de conversão para serviços de segurança no RJ.",
+      "affected_urls": [],
+      "fix": "Criar/reclamar GBP em google.com/business. Completar 100% do perfil: fotos de equipamentos instalados, horário, área de atendimento (bairros), descrição com keywords, link para WhatsApp. Solicitar reviews de clientes ativos."
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "página local",
+      "title": "Instalação de Câmeras de Segurança na Barra da Tijuca - Santech",
+      "target_keyword": "câmeras de segurança barra da tijuca",
+      "estimated_leads_gain": "3–8 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Instalação de Câmeras CFTV | Santech Segurança RJ",
+      "target_keyword": "instalação de câmeras Rio de Janeiro",
+      "estimated_leads_gain": "5–15 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Automação de Portão | Santech Segurança RJ",
+      "target_keyword": "automação de portão Rio de Janeiro",
+      "estimated_leads_gain": "3–8 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página local",
+      "title": "Câmeras de Segurança no Recreio dos Bandeirantes - Santech",
+      "target_keyword": "câmeras segurança recreio dos bandeirantes",
+      "estimated_leads_gain": "2–5 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "artigo",
+      "title": "Quanto custa instalar câmeras de segurança no Rio de Janeiro em 2026?",
+      "target_keyword": "quanto custa instalar câmeras de segurança",
+      "estimated_leads_gain": "4–10 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Instalação de Cerca Elétrica Rio de Janeiro | Santech",
+      "target_keyword": "cerca elétrica Rio de Janeiro",
+      "estimated_leads_gain": "2–6 leads/mês",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Eletroposto Residencial RJ | Instalação de Ponto de Recarga",
+      "target_keyword": "eletroposto instalação residencial RJ",
+      "estimated_leads_gain": "2–5 leads/mês",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "artigo",
+      "title": "Câmera Wi-Fi ou cabeada: qual escolher para sua casa?",
+      "target_keyword": "câmera wifi ou cabeada qual melhor",
+      "estimated_leads_gain": "2–5 leads/mês",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/cameras-barra-da-tijuca",
+      "tipo": "local",
+      "keyword_alvo": "câmeras de segurança barra da tijuca",
+      "h1_sugerido": "Instalação de Câmeras de Segurança na Barra da Tijuca",
+      "justificativa": "Concorrentes AEP Segurança e Padrão 3D já ranqueiam para essa keyword. Janela de oportunidade alta com baixa dificuldade relativa."
+    },
+    {
+      "url_sugerida": "/cameras-recreio-dos-bandeirantes",
+      "tipo": "local",
+      "keyword_alvo": "câmeras segurança recreio dos bandeirantes",
+      "h1_sugerido": "Câmeras de Segurança no Recreio dos Bandeirantes",
+      "justificativa": "Bairro nobre com alta demanda. Poucos concorrentes com página específica para Recreio."
+    },
+    {
+      "url_sugerida": "/instalacao-cameras",
+      "tipo": "serviço",
+      "keyword_alvo": "instalação de câmeras Rio de Janeiro",
+      "h1_sugerido": "Instalação de Câmeras de Segurança no Rio de Janeiro",
+      "justificativa": "Keyword de maior volume e conversão. Página-mãe do serviço principal. Necessária para qualquer presença orgânica."
+    },
+    {
+      "url_sugerida": "/cftv-residencial",
+      "tipo": "serviço",
+      "keyword_alvo": "cftv residencial Rio de Janeiro",
+      "h1_sugerido": "CFTV Residencial no Rio de Janeiro | Santech Segurança",
+      "justificativa": "Complementa a página de câmeras com foco em sistemas completos. Captura busca por CFTV vs câmeras individuais."
+    },
+    {
+      "url_sugerida": "/automacao-portoes",
+      "tipo": "serviço",
+      "keyword_alvo": "automação de portão Rio de Janeiro",
+      "h1_sugerido": "Automação de Portão no Rio de Janeiro",
+      "justificativa": "Segunda keyword mais buscada no portfólio. Alta intenção de compra."
+    },
+    {
+      "url_sugerida": "/cerca-eletrica",
+      "tipo": "serviço",
+      "keyword_alvo": "cerca elétrica Rio de Janeiro",
+      "h1_sugerido": "Instalação de Cerca Elétrica no Rio de Janeiro",
+      "justificativa": "Serviço de alta margem. Frequente em residências da Zona Oeste."
+    },
+    {
+      "url_sugerida": "/eletroposto",
+      "tipo": "serviço",
+      "keyword_alvo": "eletroposto instalação residencial RJ",
+      "h1_sugerido": "Eletroposto Residencial no Rio de Janeiro | Ponto de Recarga",
+      "justificativa": "Mercado emergente com busca crescendo 309% (dado de 2026). Baixa concorrência SEO para instaladores locais."
+    },
+    {
+      "url_sugerida": "/energia-solar",
+      "tipo": "serviço",
+      "keyword_alvo": "energia solar residencial Rio de Janeiro",
+      "h1_sugerido": "Energia Solar Residencial no Rio de Janeiro | Santech",
+      "justificativa": "Ticket médio alto. Diferencial competitivo (poucos instaladores de segurança oferecem solar também)."
+    },
+    {
+      "url_sugerida": "/seguranca-jacarepagua",
+      "tipo": "local",
+      "keyword_alvo": "segurança eletrônica jacarepaguá",
+      "h1_sugerido": "Segurança Eletrônica em Jacarepaguá - Câmeras e Automação",
+      "justificativa": "Bairro vizinho com alta demanda residencial. Cobre a área entre Barra e Recreio."
+    },
+    {
+      "url_sugerida": "/seguranca-condominio",
+      "tipo": "serviço",
+      "keyword_alvo": "segurança para condomínio Rio de Janeiro",
+      "h1_sugerido": "Segurança para Condomínios no Rio de Janeiro | Santech",
+      "justificativa": "Ticket mais alto. Contratos recorrentes de manutenção. Alta demanda em condomínios da Barra e Zona Oeste."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "URGENTE: Diagnosticar por que o site tem zero páginas indexadas no Google. Verificar robots.txt, meta noindex, DNS e acessar Google Search Console para ver erros de rastreamento.",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar/verificar conta no Google Search Console, submeter sitemap.xml e solicitar indexação manual das páginas principais.",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar/completar Google Business Profile com: nome Santech Segurança, endereço, telefone, horário, fotos de trabalhos realizados, link WhatsApp, área de atendimento (Barra da Tijuca, Recreio, Jacarepaguá, Zona Oeste), categoria principal: Empresa de segurança.",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar página /cameras-barra-da-tijuca com H1 'Instalação de Câmeras de Segurança na Barra da Tijuca', 800+ palavras, schema LocalBusiness, embed de mapa, CTA WhatsApp com pré-mensagem 'Olá, gostaria de um orçamento para câmeras na Barra da Tijuca'.",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar página /instalacao-cameras como página-mãe do serviço principal, 1.000+ palavras, meta title 'Instalação de Câmeras de Segurança no Rio de Janeiro | Santech', schema Service, CTA WhatsApp visível.",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Implementar schema LocalBusiness no HTML da homepage com: name, address (endereço completo), telephone, openingHours, areaServed (lista de bairros), url, sameAs (links redes sociais).",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Solicitar reviews de clientes atuais no Google Business Profile. Meta: 20+ reviews com nota 4.5+. Enviar mensagem WhatsApp para clientes recentes com link direto para avaliação.",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar página /automacao-portoes e /cerca-eletrica com conteúdo otimizado, H1 com keyword + cidade, 800+ palavras, CTA WhatsApp.",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 mês"
+    },
+    {
+      "action": "Criar artigo 'Quanto custa instalar câmeras de segurança no Rio de Janeiro?' com 1.200+ palavras, schema FAQPage, CTA WhatsApp, link interno para /instalacao-cameras.",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 mês"
+    },
+    {
+      "action": "Criar página /eletroposto aproveitando mercado emergente com busca crescendo 309%. Diferencial competitivo alto, baixa concorrência SEO local.",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 mês"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "aepseguranca.com.br",
+      "keywords_overlap": ["câmeras barra da tijuca", "instalação câmeras RJ", "CFTV residencial"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "AEP tem página específica para Barra da Tijuca (/instalacao-de-cameras-barra-da-tijuca.html). Santech não tem nenhuma página local.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "padrao3d.com.br",
+      "keywords_overlap": ["instalação câmeras RJ", "CFTV residencial", "portão automático"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "20+ anos de mercado, cobre Barra, Recreio e Jacarepaguá. Forte autoridade de domínio.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "construcam.com.br",
+      "keywords_overlap": ["câmeras barra da tijuca", "câmeras recreio", "segurança jacarepaguá"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Baseado na Av. das Américas (Barra). Atende Barra, Recreio e Jacarepaguá. Forte proximidade geográfica.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "dpaulainstala.com.br",
+      "keywords_overlap": ["portão automático RJ", "cerca elétrica RJ", "câmeras RJ"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Cobre Grande Rio. Especializado em portão + cerca elétrica.",
+      "has_local_pages": false
+    },
+    {
+      "domain": "segurancaeletronicarj.com.br",
+      "keywords_overlap": ["câmeras RJ", "automação portão", "cerca elétrica", "alarme residencial"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Nome de domínio com keyword forte (segurancaeletronicarj). Vantagem de brand em buscas genéricas.",
+      "has_local_pages": true
+    }
+  ],
+  "kpis_snapshot": {
+    "pages_indexed": 0,
+    "pages_with_local_keyword": 0,
+    "pages_missing_schema": "todas (estimado)",
+    "whatsapp_link_working": "não verificado — acesso ao site bloqueado na sessão",
+    "mobile_speed_score": "não verificado",
+    "core_web_vitals_passed": "não verificado"
+  },
+  "estimated_leads_gain": {
+    "30_days": "0–2 leads orgânicos (site invisível no Google atualmente)",
+    "90_days": "10–25 leads/mês (após indexação + 3 páginas locais + GBP otimizado)",
+    "6_months": "40–80 leads/mês (após estrutura completa de serviços + locais + blog)",
+    "assumptions": "Estimativas conservadoras baseadas em volume de busca local do RJ, CTR médio de 3–5% para posições 3–5 no Google, taxa de conversão de 8–12% para serviços de segurança residencial com CTA WhatsApp. Projeção de 90 dias assume resolução do problema de indexação na semana 1, criação de 3 páginas locais e GBP ativo com 10+ reviews."
+  }
+}
