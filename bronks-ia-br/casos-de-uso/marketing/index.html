@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Marketing Digital: Automação, Conteúdo e Análise com Agentes | Bronks IA</title>
+  <meta name="description" content="Equipes de marketing usam IA para criar conteúdo em escala, analisar campanhas, personalizar e-mails e automatizar SEO. Veja como a Bronks implementa para empresas brasileiras.">
+  <link rel="canonical" href="https://bronks.ia.br/casos-de-uso/marketing/">
+  <meta property="og:title" content="IA para Marketing Digital: Automação, Conteúdo e Análise com Agentes de IA">
+  <meta property="og:description" content="Como agentes de IA transformam times de marketing — criação de conteúdo em escala, análise de campanhas, personalização e SEO automatizado.">
+  <meta property="og:url" content="https://bronks.ia.br/casos-de-uso/marketing/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta name="robots" content="index, follow">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IA para Marketing Digital",
+    "description": "Implementação de agentes de IA para equipes de marketing: criação de conteúdo em escala, análise automatizada de campanhas, personalização de e-mails e SEO.",
+    "url": "https://bronks.ia.br/casos-de-uso/marketing/",
+    "provider": {"@type": "Organization", "name": "Bronks Inteligência Artificial", "url": "https://bronks.ia.br"},
+    "areaServed": "Brazil",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bronks.ia.br/"},
+        {"@type": "ListItem", "position": 2, "name": "Casos de Uso", "item": "https://bronks.ia.br/casos-de-uso/"},
+        {"@type": "ListItem", "position": 3, "name": "Marketing Digital", "item": "https://bronks.ia.br/casos-de-uso/marketing/"}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "IA de marketing funciona para empresas pequenas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, especialmente para produção de conteúdo. Uma empresa pequena com uma pessoa de marketing consegue produzir o volume de uma equipe de 5 com auxílio de agentes de IA para redação, adaptação de formatos e distribuição. O impacto é proporcionalmente maior em equipes menores."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo para ver resultados de IA no marketing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para produção de conteúdo e análise de campanhas, os resultados aparecem em 15 a 30 dias. Para SEO e tráfego orgânico, o horizonte é de 60 a 90 dias, que é o tempo que o Google leva para indexar e ranquear o novo conteúdo. Conversões e ROI são mensuráveis em 60 dias."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IA substitui a agência de marketing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não substitui, mas muda a relação. Uma agência que usa IA produz 3 a 5x mais conteúdo no mesmo tempo e entrega análises mais rápidas. Para o cliente, significa que um budget menor consegue contratar uma agência maior, ou que o mesmo budget compra muito mais entregáveis."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --azul: #1e3a5f; --azul-claro: #2563eb; --verde: #059669; --cinza-bg: #f8fafc; --cinza-texto: #475569; --branco: #ffffff; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #1e293b; background: var(--cinza-bg); line-height: 1.7; }
+    a { color: var(--azul-claro); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: var(--azul); color: var(--branco); padding: 16px 0; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+    nav { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .logo { font-size: 1.4rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+    .logo span { color: #60a5fa; }
+    .nav-links { display: flex; gap: 24px; list-style: none; flex-wrap: wrap; }
+    .nav-links a { color: #cbd5e1; font-size: 0.9rem; }
+    .nav-links a:hover { color: #fff; }
+    .btn-cta { background: var(--verde); color: #fff !important; padding: 8px 20px; border-radius: 6px; font-weight: 600; font-size: 0.9rem; }
+    .btn-cta:hover { background: #047857; text-decoration: none !important; }
+    .hero { background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%); color: #fff; padding: 64px 0; }
+    .breadcrumb { font-size: 0.82rem; opacity: 0.7; margin-bottom: 20px; }
+    .breadcrumb a { color: #93c5fd; }
+    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; line-height: 1.2; max-width: 760px; margin-bottom: 16px; }
+    .hero p { font-size: 1.1rem; opacity: 0.85; max-width: 680px; }
+    .use-cases { padding: 64px 0; }
+    .section-title { font-size: 1.8rem; font-weight: 700; color: var(--azul); margin-bottom: 8px; }
+    .section-sub { color: var(--cinza-texto); margin-bottom: 40px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px; }
+    .card-icon { width: 48px; height: 48px; border-radius: 10px; background: #eff6ff; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 1.4rem; }
+    .card h3 { font-size: 1.05rem; font-weight: 700; color: var(--azul); margin-bottom: 8px; }
+    .card p { color: var(--cinza-texto); font-size: 0.92rem; }
+    .results { background: #0f172a; color: #fff; padding: 64px 0; }
+    .results .section-title { color: #fff; }
+    .results .section-sub { color: #94a3b8; }
+    .results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .result-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 28px; }
+    .result-card .metric { font-size: 2.4rem; font-weight: 800; color: #34d399; margin-bottom: 6px; }
+    .result-card .desc { color: #94a3b8; font-size: 0.9rem; line-height: 1.4; }
+    .result-card .company { font-size: 0.8rem; color: #60a5fa; margin-top: 10px; font-weight: 600; }
+    .integrations { padding: 64px 0; }
+    .tool-list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .tool-tag { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px 16px; font-size: 0.88rem; color: #334155; font-weight: 500; }
+    .limits { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 12px; padding: 32px; margin: 48px 0; }
+    .limits h2 { color: #c2410c; margin-bottom: 12px; }
+    .limits ul { margin-left: 20px; }
+    .limits li { color: #7c2d12; margin-bottom: 8px; }
+    .faq-section { padding: 64px 0; }
+    .faq-item { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; margin-bottom: 16px; }
+    .faq-item h3 { font-size: 1rem; font-weight: 700; color: var(--azul); margin-bottom: 10px; }
+    .faq-item p { color: var(--cinza-texto); margin: 0; }
+    .cta { background: linear-gradient(135deg, #1e3a5f, #1e40af); color: #fff; padding: 72px 0; text-align: center; }
+    .cta h2 { font-size: 2rem; font-weight: 800; margin-bottom: 16px; }
+    .cta p { font-size: 1.1rem; opacity: 0.85; margin-bottom: 32px; max-width: 580px; margin-left: auto; margin-right: auto; }
+    .btn-verde { display: inline-block; background: var(--verde); color: #fff; padding: 16px 36px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; }
+    .btn-verde:hover { background: #047857; text-decoration: none; }
+    .floating-cta { position: fixed; bottom: 24px; right: 24px; z-index: 999; }
+    .floating-cta a { display: flex; align-items: center; gap: 10px; background: var(--verde); color: #fff; padding: 14px 20px; border-radius: 50px; font-weight: 700; font-size: 0.9rem; box-shadow: 0 4px 20px rgba(5,150,105,0.4); text-decoration: none; }
+    .floating-cta a:hover { background: #047857; }
+    footer { background: var(--azul); color: #94a3b8; padding: 32px 0; font-size: 0.88rem; }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 12px; }
+    .footer-links a { color: #94a3b8; }
+    .footer-links a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="/" class="logo">Bronks<span>.ia.br</span></a>
+      <ul class="nav-links">
+        <li><a href="/agentes-de-ia/">Agentes de IA</a></li>
+        <li><a href="/rag-empresarial/">RAG Empresarial</a></li>
+        <li><a href="/automacao-com-ia/">Automação com IA</a></li>
+        <li><a href="/casos-de-uso/">Casos de Uso</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contato/" class="btn-cta">Consulta Gratuita</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> › <a href="/casos-de-uso/">Casos de Uso</a> › Marketing Digital</div>
+    <h1>IA para Marketing Digital: O Que Agentes de IA Fazem pelo Seu Time</h1>
+    <p>Times de marketing que usam IA produzem mais conteúdo, analisam campanhas mais rápido e personalizam comunicação em escala. Veja como funciona na prática.</p>
+  </div>
+</section>
+
+<section class="use-cases">
+  <div class="container">
+    <h2 class="section-title">O Que Agentes de IA Fazem no Marketing</h2>
+    <p class="section-sub">Cada agente assume uma função específica e integra com as ferramentas que seu time já usa.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">✍️</div>
+        <h3>Criação de Conteúdo em Escala</h3>
+        <p>Artigos de blog, posts para redes sociais, e-mail marketing, scripts de vídeo e copy de anúncios — o agente gera rascunhos de alta qualidade que um editor humano revisa em 20% do tempo original.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Análise Automática de Campanhas</h3>
+        <p>O agente consolida dados de Google Ads, Meta Ads, e-mail e SEO todos os dias, identifica campanhas com queda de performance e apresenta recomendações antes que o problema aumente.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Personalização de E-mail</h3>
+        <p>Segmentação automática da base por comportamento + geração de e-mails personalizados por perfil. CTR médio aumenta 40 a 70% com personalização real versus envio em massa genérico.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>SEO Automatizado</h3>
+        <p>Pesquisa de palavras-chave, geração de briefings de conteúdo, auditoria técnica de páginas, análise de concorrentes e identificação de oportunidades de conteúdo — tudo automatizado.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">👂</div>
+        <h3>Social Listening e Monitoramento</h3>
+        <p>O agente monitora menções à marca, ao produto e aos concorrentes em redes sociais e fóruns, e envia alertas quando há picos de menção ou sentimento negativo.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Adaptação Multicanal</h3>
+        <p>Um único conteúdo é adaptado automaticamente para todos os canais: LinkedIn, Instagram, e-mail, WhatsApp, blog e landing page — em minutos, mantendo a consistência da mensagem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="results">
+  <div class="container">
+    <h2 class="section-title">Resultados Reais com Métricas</h2>
+    <p class="section-sub">Casos de implementação da Bronks em empresas brasileiras:</p>
+    <div class="results-grid">
+      <div class="result-card">
+        <div class="metric">5×</div>
+        <div class="desc">aumento na produção de conteúdo semanal — de 40 para 200 posts/semana</div>
+        <div class="company">Agência de marketing digital, São Paulo</div>
+      </div>
+      <div class="result-card">
+        <div class="metric">+67%</div>
+        <div class="desc">de CTR em e-mail marketing com personalização automática por segmento de comportamento</div>
+        <div class="company">E-commerce de moda, Rio de Janeiro</div>
+      </div>
+      <div class="result-card">
+        <div class="metric">3 min</div>
+        <div class="desc">tempo de resposta a leads inbound — antes era 4 horas. Conversão de trial aumentou 34%</div>
+        <div class="company">SaaS B2B, Belo Horizonte</div>
+      </div>
+      <div class="result-card">
+        <div class="metric">-60%</div>
+        <div class="desc">de horas gastas em relatórios de performance — analistas focam em estratégia, não em planilhas</div>
+        <div class="company">Agência de growth, Curitiba</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="integrations">
+  <div class="container">
+    <h2 class="section-title">Integração com Suas Ferramentas Atuais</h2>
+    <p class="section-sub">Os agentes se conectam às plataformas que seu time já usa — sem migração de dados.</p>
+    <div class="tool-list">
+      <span class="tool-tag">HubSpot</span>
+      <span class="tool-tag">RD Station</span>
+      <span class="tool-tag">Google Analytics 4</span>
+      <span class="tool-tag">Meta Ads</span>
+      <span class="tool-tag">Google Ads</span>
+      <span class="tool-tag">Mailchimp</span>
+      <span class="tool-tag">Klaviyo</span>
+      <span class="tool-tag">WordPress</span>
+      <span class="tool-tag">Notion</span>
+      <span class="tool-tag">Slack</span>
+      <span class="tool-tag">WhatsApp Business API</span>
+      <span class="tool-tag">Google Search Console</span>
+      <span class="tool-tag">Semrush / Ahrefs</span>
+      <span class="tool-tag">Instagram Graph API</span>
+      <span class="tool-tag">LinkedIn API</span>
+    </div>
+
+    <div class="limits">
+      <h2>O Que a IA NÃO Substitui no Marketing</h2>
+      <ul>
+        <li><strong>Estratégia e posicionamento de marca:</strong> decisões sobre onde competir, para quem falar e qual mensagem central adotar exigem julgamento humano com conhecimento de mercado.</li>
+        <li><strong>Relacionamento com influenciadores e parceiros:</strong> negociação e construção de confiança são eminentemente humanas.</li>
+        <li><strong>Criatividade de ruptura:</strong> uma campanha que muda o mercado não nasce de automação — nasce de insights sobre comportamento humano.</li>
+        <li><strong>Aprovação de crise:</strong> em situações de reputação ou crise de marca, a resposta pública precisa de revisão humana.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <h3>IA de marketing funciona para empresas pequenas?</h3>
+      <p>Sim, especialmente para produção de conteúdo. Uma empresa pequena com uma pessoa de marketing consegue produzir o volume de uma equipe de 5 com auxílio de agentes de IA para redação, adaptação de formatos e distribuição. O impacto é proporcionalmente maior em equipes menores.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Quanto tempo para ver resultados de IA no marketing?</h3>
+      <p>Para produção de conteúdo e análise de campanhas, os resultados aparecem em 15 a 30 dias. Para SEO e tráfego orgânico, o horizonte é de 60 a 90 dias. Conversões e ROI são mensuráveis em 60 dias.</p>
+    </div>
+    <div class="faq-item">
+      <h3>IA substitui a agência de marketing?</h3>
+      <p>Não substitui, mas muda a relação. Uma agência que usa IA produz 3 a 5x mais conteúdo no mesmo tempo e entrega análises mais rápidas. Para o cliente, significa que um budget menor consegue contratar uma agência maior ou que o mesmo budget compra muito mais entregáveis.</p>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:16px; padding:16px 0 48px;">
+    <a href="/ia-para-ecommerce/" style="background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:20px; text-align:center; color:#1e3a5f; font-weight:600; font-size:0.9rem;">IA para E-commerce</a>
+    <a href="/agentes-de-ia/" style="background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:20px; text-align:center; color:#1e3a5f; font-weight:600; font-size:0.9rem;">Agentes de IA</a>
+    <a href="/automacao-com-ia/" style="background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:20px; text-align:center; color:#1e3a5f; font-weight:600; font-size:0.9rem;">Automação com IA</a>
+    <a href="/casos-de-uso/" style="background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:20px; text-align:center; color:#1e3a5f; font-weight:600; font-size:0.9rem;">Todos os Casos de Uso</a>
+  </div>
+</div>
+
+<section class="cta">
+  <div class="container">
+    <h2>Pronto para Escalar seu Marketing com IA?</h2>
+    <p>Agende uma consultoria gratuita de 30 minutos e veja como agentes de IA podem transformar a produtividade do seu time de marketing.</p>
+    <a href="/contato/" class="btn-verde">Agendar Consultoria Gratuita</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div style="font-weight:700; color:#e2e8f0; font-size:1rem;">Bronks Inteligência Artificial</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/casos-de-uso/">Casos de Uso</a>
+      <a href="/blog/">Blog</a>
+      <a href="/agentes-de-ia/">Agentes de IA</a>
+      <a href="/contato/">Contato</a>
+    </div>
+    <div style="margin-top:16px; font-size:0.8rem;">© 2026 Bronks Inteligência Artificial. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<div class="floating-cta">
+  <a href="/contato/">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+    Consultoria Gratuita
+  </a>
+</div>
+
+</body>
+</html>

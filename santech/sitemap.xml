@@ -477,7 +477,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Adicionados em 2026-10-25 — Ciclo #32 -->
+  <!-- Adicionados em 2026-10-25 — Ciclo #32 (correção de sitemap) -->
   <url>
     <loc>https://santechseguranca.com.br/cameras-catete/</loc>
     <lastmod>2026-10-27</lastmod>
@@ -486,16 +486,49 @@
   </url>
   <url>
     <loc>https://santechseguranca.com.br/blog/cerca-eletrica-condominio-rj/</loc>
-    <loc>https://santechseguranca.com.br/cameras-realengo/</loc>
-    <loc>https://santechseguranca.com.br/cameras-penha/</loc>
-    <loc>https://santechseguranca.com.br/alarme-residencial-zona-oeste/</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://santechseguranca.com.br/cameras-realengo/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/cameras-penha/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/alarme-residencial-zona-oeste/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://santechseguranca.com.br/cameras-centro/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://santechseguranca.com.br/blog/como-proteger-casa-ferias-rio-de-janeiro/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Adicionados em 2026-10-29 — Ciclo #33 -->
+  <url>
+    <loc>https://santechseguranca.com.br/cameras-angra-dos-reis/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/blog/seguranca-residencial-verao-rj/</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

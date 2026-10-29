@@ -417,12 +417,41 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Adicionados em 2026-10-27 — Ciclo #32 (correção de sitemap) -->
   <url>
     <loc>https://bronks.ia.br/blog/protocolo-a2a-agentes-ia/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://bronks.ia.br/contato/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://bronks.ia.br/agentes-de-vendas/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://bronks.ia.br/blog/ia-agentica-para-e-commerce/</loc>
     <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Adicionados em 2026-10-29 — Ciclo #33 -->
+  <url>
+    <loc>https://bronks.ia.br/blog/ia-para-startups-scale-ups/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://bronks.ia.br/casos-de-uso/marketing/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
