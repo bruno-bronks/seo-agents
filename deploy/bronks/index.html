@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bronks | Consultoria em IA e Agentes de Automação para Empresas</title>
+  <meta name="description" content="Consultoria especializada em IA, agentes autônomos, RAG e automação empresarial. Transforme processos com inteligência artificial. Agende uma consultoria gratuita.">
+  <link rel="canonical" href="https://bronks.ia.br/">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bronks | Consultoria em IA e Agentes de Automação para Empresas">
+  <meta property="og:description" content="Consultoria especializada em IA, agentes autônomos, RAG e automação empresarial no Rio de Janeiro e Brasil.">
+  <meta property="og:url" content="https://bronks.ia.br/">
+  <meta property="og:image" content="https://bronks.ia.br/og-image.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bronks | Consultoria em IA e Agentes de Automação">
+  <meta name="twitter:description" content="Consultoria especializada em IA, agentes autônomos, RAG e automação empresarial.">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Bronks",
+    "url": "https://bronks.ia.br",
+    "logo": "https://bronks.ia.br/logo.png",
+    "description": "Consultoria especializada em Inteligência Artificial, agentes autônomos, RAG e automação empresarial.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "areaServed": "BR",
+      "availableLanguage": "Portuguese"
+    },
+    "sameAs": [],
+    "knowsAbout": [
+      "Inteligência Artificial",
+      "Agentes de IA",
+      "RAG",
+      "Automação Empresarial",
+      "IA Generativa",
+      "Multiagentes"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bronks Consultoria em IA",
+    "url": "https://bronks.ia.br",
+    "description": "Consultoria em IA, agentes autônomos e automação empresarial no Rio de Janeiro.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-22.9068",
+      "longitude": "-43.1729"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Brasil"
+    },
+    "priceRange": "$$"
+  }
+  </script>
+
+  <style>
+    :root {
+      --cor-principal: #1a1a2e;
+      --cor-acento: #7c3aed;
+      --cor-acento-hover: #6d28d9;
+      --cor-texto: #1f2937;
+      --cor-fundo: #ffffff;
+      --cor-fundo-alt: #f8f7ff;
+      --cor-borda: #e5e7eb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--cor-texto); background: var(--cor-fundo); line-height: 1.6; }
+    a { color: var(--cor-acento); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* HEADER */
+    header { background: var(--cor-principal); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+    .logo { color: #fff; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+    .logo span { color: var(--cor-acento); }
+    nav a { color: #d1d5db; margin-left: 1.5rem; font-size: 0.9rem; }
+    nav a:hover { color: #fff; text-decoration: none; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, var(--cor-principal) 0%, #16213e 60%, #0f3460 100%); color: #fff; padding: 5rem 2rem 4rem; text-align: center; }
+    .hero-badge { display: inline-block; background: rgba(124,58,237,0.2); border: 1px solid var(--cor-acento); color: #a78bfa; padding: 0.3rem 1rem; border-radius: 999px; font-size: 0.85rem; margin-bottom: 1.5rem; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.2; max-width: 800px; margin: 0 auto 1.5rem; }
+    .hero h1 em { color: #a78bfa; font-style: normal; }
+    .hero p { font-size: 1.15rem; color: #d1d5db; max-width: 600px; margin: 0 auto 2.5rem; }
+    .btn-primary { display: inline-block; background: var(--cor-acento); color: #fff; padding: 1rem 2.5rem; border-radius: 8px; font-size: 1rem; font-weight: 600; transition: background 0.2s; }
+    .btn-primary:hover { background: var(--cor-acento-hover); text-decoration: none; }
+    .btn-secondary { display: inline-block; border: 2px solid rgba(255,255,255,0.3); color: #fff; padding: 1rem 2rem; border-radius: 8px; font-size: 1rem; margin-left: 1rem; }
+
+    /* STATS */
+    .stats { background: var(--cor-fundo-alt); padding: 3rem 2rem; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto; text-align: center; }
+    .stat-number { font-size: 2.5rem; font-weight: 800; color: var(--cor-acento); }
+    .stat-label { font-size: 0.9rem; color: #6b7280; margin-top: 0.25rem; }
+
+    /* SECTIONS */
+    section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
+    .section-label { color: var(--cor-acento); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.75rem; }
+    h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 700; color: var(--cor-principal); margin-bottom: 1rem; }
+    .section-intro { font-size: 1.1rem; color: #6b7280; max-width: 600px; margin-bottom: 3rem; }
+
+    /* CARDS */
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: var(--cor-fundo); border: 1px solid var(--cor-borda); border-radius: 12px; padding: 2rem; transition: box-shadow 0.2s, transform 0.2s; }
+    .card:hover { box-shadow: 0 8px 30px rgba(124,58,237,0.1); transform: translateY(-2px); }
+    .card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .card h3 { font-size: 1.1rem; font-weight: 700; color: var(--cor-principal); margin-bottom: 0.5rem; }
+    .card p { color: #6b7280; font-size: 0.95rem; }
+
+    /* SERVIÇOS */
+    .servicos-bg { background: var(--cor-fundo-alt); }
+    .servicos-bg section { max-width: 1100px; }
+
+    /* VERTICALS */
+    .verticals { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .vertical-tag { background: #fff; border: 1px solid var(--cor-borda); border-radius: 8px; padding: 1rem; text-align: center; font-size: 0.9rem; color: var(--cor-principal); font-weight: 600; }
+    .vertical-tag span { display: block; font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+    /* FAQ */
+    .faq-list { max-width: 800px; }
+    .faq-item { border-bottom: 1px solid var(--cor-borda); padding: 1.25rem 0; }
+    .faq-item summary { font-weight: 600; cursor: pointer; color: var(--cor-principal); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .faq-item summary:after { content: '+'; font-size: 1.5rem; color: var(--cor-acento); }
+    details[open] summary:after { content: '−'; }
+    .faq-item p { color: #6b7280; margin-top: 0.75rem; font-size: 0.95rem; }
+
+    /* CTA FINAL */
+    .cta-final { background: linear-gradient(135deg, var(--cor-acento) 0%, #4f46e5 100%); color: #fff; text-align: center; padding: 5rem 2rem; }
+    .cta-final h2 { color: #fff; font-size: 2rem; margin-bottom: 1rem; }
+    .cta-final p { color: rgba(255,255,255,0.85); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .btn-white { display: inline-block; background: #fff; color: var(--cor-acento); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 700; font-size: 1rem; transition: transform 0.2s; }
+    .btn-white:hover { transform: scale(1.03); text-decoration: none; }
+
+    /* FOOTER */
+    footer { background: var(--cor-principal); color: #9ca3af; padding: 2rem; text-align: center; font-size: 0.85rem; }
+    footer a { color: #a78bfa; }
+
+    @media (max-width: 640px) {
+      nav { display: none; }
+      .btn-secondary { display: none; }
+      .hero { padding: 3rem 1rem 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">bron<span>ks</span>.ia</div>
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#verticais">Setores</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="max-width:100%; padding-left:1rem; padding-right:1rem;">
+  <div class="hero-badge">🤖 Especialistas em IA Agêntica no Rio de Janeiro</div>
+  <h1>Transforme sua empresa com <em>Agentes de IA</em> que trabalham por você</h1>
+  <p>Consultoria em IA, automação empresarial, RAG e multiagentes. Do diagnóstico à implementação em produção — com resultados mensuráveis.</p>
+  <a href="#contato" class="btn-primary">Agendar consultoria gratuita</a>
+  <a href="#servicos" class="btn-secondary">Ver serviços</a>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-grid">
+    <div>
+      <div class="stat-number">96%</div>
+      <div class="stat-label">das empresas brasileiras ampliam uso de IA em 2026</div>
+    </div>
+    <div>
+      <div class="stat-number">41%</div>
+      <div class="stat-label">do mercado latino-americano de IA está no Brasil</div>
+    </div>
+    <div>
+      <div class="stat-number">10x</div>
+      <div class="stat-label">mais produtividade com agentes autônomos bem implementados</div>
+    </div>
+    <div>
+      <div class="stat-number">US$4bi</div>
+      <div class="stat-label">investimento previsto em IA no Brasil em 2026</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVIÇOS -->
+<div class="servicos-bg" id="servicos">
+  <section>
+    <div class="section-label">Nossos Serviços</div>
+    <h2>Soluções de IA que geram resultado real</h2>
+    <p class="section-intro">Cada projeto começa com um diagnóstico honesto do seu negócio. Só implementamos o que faz sentido para a sua realidade.</p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>Agentes de IA Autônomos</h3>
+        <p>Criamos agentes que executam tarefas complexas de forma autônoma — atendimento, análise de dados, geração de relatórios e muito mais.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <h3>RAG Empresarial</h3>
+        <p>Sistemas de Retrieval Augmented Generation que conectam IA à base de conhecimento da sua empresa. Respostas precisas sobre seus documentos internos.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Automação com IA</h3>
+        <p>Automatize processos repetitivos com inteligência: fluxos de aprovação, extração de dados, integração entre sistemas e muito mais.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔗</div>
+        <h3>Multiagentes e Orquestração</h3>
+        <p>Arquiteturas de múltiplos agentes que colaboram entre si para resolver problemas complexos que um único agente não conseguiria.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💬</div>
+        <h3>Chatbot com IA no WhatsApp</h3>
+        <p>Atendimento inteligente via WhatsApp integrado aos seus sistemas — com memória de contexto, personalidade da sua marca e escalabilidade.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Consultoria Estratégica em IA</h3>
+        <p>Diagnóstico completo de onde a IA pode gerar mais valor no seu negócio. Roadmap priorizado por ROI e viabilidade técnica.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- VERTICAIS -->
+<section id="verticais">
+  <div class="section-label">Setores atendidos</div>
+  <h2>IA especializada para cada setor</h2>
+  <p class="section-intro">Temos experiência com os desafios específicos de cada vertical. Não é IA genérica — é IA que conhece o seu setor.</p>
+
+  <div class="verticals">
+    <div class="vertical-tag"><span>⚖️</span>Jurídico</div>
+    <div class="vertical-tag"><span>📋</span>Contabilidade</div>
+    <div class="vertical-tag"><span>🏥</span>Saúde</div>
+    <div class="vertical-tag"><span>🏦</span>Financeiro</div>
+    <div class="vertical-tag"><span>🚚</span>Logística</div>
+    <div class="vertical-tag"><span>🛒</span>E-commerce</div>
+    <div class="vertical-tag"><span>🏗️</span>Construção Civil</div>
+    <div class="vertical-tag"><span>👥</span>RH & Recrutamento</div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<div class="servicos-bg" id="sobre">
+  <section>
+    <div class="section-label">Sobre a Bronks</div>
+    <h2>Especialistas em IA com foco em resultado</h2>
+    <p style="color:#6b7280; font-size:1.05rem; max-width:700px; margin-bottom:1.5rem;">
+      A Bronks é uma consultoria especializada em Inteligência Artificial com sede no Rio de Janeiro. Nosso foco é implementar IA que funciona em produção — não proof of concept que fica na gaveta.
+    </p>
+    <p style="color:#6b7280; font-size:1.05rem; max-width:700px; margin-bottom:1.5rem;">
+      Trabalhamos com empresas de médio e grande porte que precisam de agentes, RAG e automação com IA implementados com rigor técnico e integrados aos processos existentes. Do diagnóstico ao deploy — com suporte contínuo.
+    </p>
+    <p style="color:#6b7280; font-size:1.05rem; max-width:700px;">
+      Atuamos em todo o Brasil com foco especial no mercado carioca e em segmentos B2B que têm muito a ganhar com automação inteligente: jurídico, contabilidade, saúde, logística e financial services.
+    </p>
+  </section>
+</div>
+
+<!-- PROCESSO -->
+<section>
+  <div class="section-label">Como funciona</div>
+  <h2>Do diagnóstico ao resultado em semanas</h2>
+  <p class="section-intro">Processo estruturado para garantir que a IA entregue valor real no menor tempo possível.</p>
+
+  <div class="cards-grid">
+    <div class="card">
+      <div style="font-size:1.5rem; font-weight:800; color:var(--cor-acento); margin-bottom:0.75rem;">01</div>
+      <h3>Diagnóstico gratuito</h3>
+      <p>Analisamos seus processos, sistemas e dores. Identificamos onde a IA gera mais valor com menor risco.</p>
+    </div>
+    <div class="card">
+      <div style="font-size:1.5rem; font-weight:800; color:var(--cor-acento); margin-bottom:0.75rem;">02</div>
+      <h3>Proposta e roadmap</h3>
+      <p>Entregamos uma proposta clara com escopo, prazo, custo e ROI projetado. Sem surpresas no meio do caminho.</p>
+    </div>
+    <div class="card">
+      <div style="font-size:1.5rem; font-weight:800; color:var(--cor-acento); margin-bottom:0.75rem;">03</div>
+      <h3>Implementação ágil</h3>
+      <p>Squads especializados em IA implementam a solução em ciclos curtos, com entrega de valor incremental.</p>
+    </div>
+    <div class="card">
+      <div style="font-size:1.5rem; font-weight:800; color:var(--cor-acento); margin-bottom:0.75rem;">04</div>
+      <h3>Produção e evolução</h3>
+      <p>Monitoramos a solução em produção e evoluímos continuamente. IA que funciona hoje e melhora amanhã.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<div class="servicos-bg" id="faq">
+  <section>
+    <div class="section-label">Dúvidas Frequentes</div>
+    <h2>Perguntas e respostas sobre IA para empresas</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>O que são agentes de IA e por que minha empresa precisa deles?</summary>
+        <p>Agentes de IA são sistemas autônomos que percebem o ambiente, tomam decisões e executam ações para atingir objetivos. Diferente de chatbots simples, agentes podem usar ferramentas, acessar APIs, gerar documentos e tomar decisões complexas sem intervenção humana. Em 2026, empresas com agentes bem implementados têm vantagem competitiva significativa em produtividade e escala.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quanto custa implementar IA na minha empresa?</summary>
+        <p>Depende muito do escopo. Um projeto de agente de IA focado pode começar a partir de R$ 15.000 para casos de uso específicos (como automação de atendimento ou extração de dados). Projetos maiores de RAG ou multiagentes ficam entre R$ 40.000 e R$ 200.000. Sempre começamos com um diagnóstico gratuito para entender o que faz sentido para o seu tamanho e orçamento.</p>
+      </details>
+      <details class="faq-item">
+        <summary>O que é RAG e quando faz sentido usar?</summary>
+        <p>RAG (Retrieval Augmented Generation) é uma técnica que permite que modelos de IA respondam perguntas com base na sua base de conhecimento interna — manuais, contratos, políticas, e-mails. Faz sentido quando você quer que a IA "saiba" sobre assuntos específicos da sua empresa sem o custo e risco de fine-tuning.</p>
+      </details>
+      <details class="faq-item">
+        <summary>A Bronks atende empresas fora do Rio de Janeiro?</summary>
+        <p>Sim! Temos clientes em todo o Brasil. A maior parte do trabalho é feita remotamente, com visitas presenciais quando necessário para alinhamentos estratégicos. Atendemos desde startups até empresas de médio e grande porte em qualquer estado.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Em quanto tempo vejo resultado?</summary>
+        <p>Projetos focados (um caso de uso bem definido) costumam ter as primeiras entregas funcionais em 3 a 6 semanas. Projetos maiores têm uma fase piloto em 4 a 8 semanas, seguida de expansão gradual. Nosso modelo prioriza entregar valor incremental, não esperar 6 meses para ver algo funcionando.</p>
+      </details>
+    </div>
+  </section>
+</div>
+
+<!-- CTA FINAL -->
+<div class="cta-final" id="contato">
+  <h2>Pronto para implementar IA que funciona?</h2>
+  <p>Agende uma conversa de 30 minutos. Sem compromisso. Sem papo de vendedor. Só um diagnóstico honesto do que a IA pode fazer pelo seu negócio.</p>
+  <a href="mailto:contato@bronks.ia.br" class="btn-white">Agendar consultoria gratuita →</a>
+</div>
+
+<footer>
+  <p>© 2026 Bronks Consultoria em IA · Rio de Janeiro, RJ · <a href="mailto:contato@bronks.ia.br">contato@bronks.ia.br</a></p>
+  <p style="margin-top:0.5rem;"><a href="/sitemap.xml">Sitemap</a> · <a href="/robots.txt">Robots.txt</a></p>
+</footer>
+
+</body>
+</html>
