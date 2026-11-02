@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Hotéis e Hospitalidade | Agentes Inteligentes | Bronks IA</title>
+  <meta name="description" content="Inteligência artificial para hotéis, pousadas e resorts. Automatize reservas, atendimento, housekeeping e revenue management com agentes de IA. Diagnóstico gratuito!">
+  <link rel="canonical" href="https://bronks.ia.br/ia-para-hoteis/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IA para Hotéis e Hospitalidade | Bronks IA">
+  <meta property="og:description" content="Automatize reservas, atendimento 24h, gestão de quartos e revenue management com agentes de IA para hotéis. Diagnóstico gratuito.">
+  <meta property="og:url" content="https://bronks.ia.br/ia-para-hoteis/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Bronks IA">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IA para Hotéis e Hospitalidade",
+    "description": "Soluções de inteligência artificial para hotéis, pousadas, resorts e meios de hospedagem. Agentes de IA para reservas, atendimento ao hóspede, housekeeping e revenue management.",
+    "url": "https://bronks.ia.br/ia-para-hoteis/",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "telephone": "+55-21-99999-9999",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "serviceType": ["Consultoria em IA", "Agentes de IA", "Automação Hoteleira", "Revenue Management com IA"],
+    "areaServed": {"@type": "Country", "name": "Brasil"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que a IA pode fazer por um hotel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A IA pode automatizar o atendimento ao hóspede 24 horas via WhatsApp, chatbot no site e voz; otimizar preços em tempo real (revenue management); gerenciar reservas e check-in/check-out digital; coordenar housekeeping com priorização inteligente de quartos; e gerar relatórios automáticos de ocupação, RevPAR e NPS."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para implantar IA em um hotel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O primeiro agente (normalmente o de atendimento via WhatsApp) pode ser implantado em 2 a 4 semanas. A integração com PMS (sistema hoteleiro), OTAs e channel manager leva de 4 a 8 semanas dependendo da plataforma. Trabalhamos com todos os principais PMSs do Brasil: TOTVS Hospitality, HSystem, Desbravador, Opera Cloud."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual o ROI de IA para um hotel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Em hotéis de 50 a 200 UHs, os principais ganhos são: redução de 60 a 80% nas chamadas para a recepção; aumento de 5 a 15% na receita via upsell automático; redução de 20 a 35% no tempo de resposta a solicitações de hóspedes; e economia de 1 a 3 FTEs em tarefas administrativas repetitivas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA funciona com os sistemas hoteleiros que já uso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Integramos com os principais PMSs do mercado brasileiro (TOTVS, HSystem, Desbravador, Opera), além de OTAs (Booking.com, Expedia, Airbnb), channel managers e sistemas de gestão de tarefas de housekeeping."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: #1a1a2e; background: #fff; line-height: 1.6; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header { background: #0f172a; color: #fff; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+    header .logo { font-size: 1.4rem; font-weight: 800; color: #60a5fa; }
+    nav a { color: #cbd5e1; margin-left: 1.5rem; font-size: 0.9rem; }
+    nav a:hover { color: #fff; text-decoration: none; }
+
+    .hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); color: #fff; padding: 4rem 2rem; text-align: center; }
+    .hero .tag { background: #2563eb; color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 2rem; display: inline-block; margin-bottom: 1rem; }
+    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; max-width: 750px; margin: 0 auto 1rem; line-height: 1.2; }
+    .hero p { font-size: 1.1rem; color: #94a3b8; max-width: 620px; margin: 0 auto 2rem; }
+    .cta-btn { background: #2563eb; color: #fff; padding: 0.9rem 2.2rem; border-radius: 0.5rem; font-weight: 700; font-size: 1rem; display: inline-block; }
+    .cta-btn:hover { background: #1d4ed8; text-decoration: none; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+    section { padding: 4rem 2rem; }
+    h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; color: #0f172a; margin-bottom: 1.2rem; }
+    h3 { font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.6rem; }
+    p { margin-bottom: 1rem; color: #334155; }
+
+    .stats-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem; background: #f8fafc; padding: 2.5rem 2rem; border-bottom: 1px solid #e2e8f0; }
+    .stat { text-align: center; min-width: 130px; }
+    .stat .number { font-size: 2.2rem; font-weight: 800; color: #2563eb; }
+    .stat .label { font-size: 0.82rem; color: #64748b; margin-top: 0.3rem; max-width: 130px; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; }
+    .card .icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
+
+    .use-cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .use-case { background: #fff; border: 1px solid #e2e8f0; border-left: 4px solid #2563eb; border-radius: 0.5rem; padding: 1.5rem; }
+    .use-case .uc-tag { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #2563eb; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
+    .use-case .roi { font-size: 0.85rem; color: #16a34a; font-weight: 600; margin-top: 0.8rem; }
+
+    .roi-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+    .roi-table th { background: #1e3a8a; color: #fff; padding: 0.75rem 1rem; text-align: left; font-size: 0.9rem; }
+    .roi-table td { padding: 0.75rem 1rem; border-bottom: 1px solid #e2e8f0; font-size: 0.9rem; }
+    .roi-table tr:nth-child(even) td { background: #f8fafc; }
+
+    .faq-item { border-bottom: 1px solid #e2e8f0; padding: 1.2rem 0; }
+    .faq-item h3 { font-size: 1rem; color: #0f172a; }
+    .faq-item p { color: #64748b; font-size: 0.95rem; margin-top: 0.5rem; margin-bottom: 0; }
+
+    .process { }
+    .step { display: flex; gap: 1.5rem; margin-bottom: 1.8rem; align-items: flex-start; }
+    .step-num { background: #2563eb; color: #fff; width: 2.2rem; height: 2.2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; flex-shrink: 0; font-size: 0.9rem; }
+
+    .cta-section { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); color: #fff; text-align: center; padding: 4rem 2rem; }
+    .cta-section h2 { color: #fff; }
+    .cta-section p { color: #bfdbfe; margin: 1rem auto 2rem; max-width: 550px; }
+    .cta-section .cta-btn { background: #fff; color: #1e3a8a; }
+
+    .breadcrumb { font-size: 0.85rem; color: #64748b; padding: 1rem 2rem; }
+    .breadcrumb a { color: #2563eb; }
+
+    footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 2rem; font-size: 0.85rem; }
+    footer a { color: #60a5fa; }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 1rem; }
+      nav { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+      nav a { margin: 0; }
+      .roi-table { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo">Bronks IA</a>
+  <nav>
+    <a href="/agentes-de-ia/">Agentes de IA</a>
+    <a href="/automacao-com-ia/">Automação</a>
+    <a href="/rag-empresarial/">RAG</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contato/">Contato</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">Início</a> &rsaquo; <a href="/ia-para-saude/">IA por Setor</a> &rsaquo; <strong>IA para Hotéis</strong>
+</div>
+
+<section class="hero">
+  <span class="tag">Setor de Hospitalidade</span>
+  <h1>Inteligência Artificial para Hotéis e Meios de Hospedagem</h1>
+  <p>Automatize atendimento 24h, revenue management, housekeeping e check-in digital. Seus hóspedes mais satisfeitos, sua operação mais enxuta.</p>
+  <a href="/contato/" class="cta-btn">Agendar Diagnóstico Gratuito</a>
+</section>
+
+<div class="stats-row">
+  <div class="stat">
+    <div class="number">80%</div>
+    <div class="label">Redução em chamadas para recepção com chatbot IA</div>
+  </div>
+  <div class="stat">
+    <div class="number">+12%</div>
+    <div class="label">Receita média via upsell automático de quarto e serviços</div>
+  </div>
+  <div class="stat">
+    <div class="number">2–4</div>
+    <div class="label">Semanas para implantar o primeiro agente de IA</div>
+  </div>
+  <div class="stat">
+    <div class="number">24/7</div>
+    <div class="label">Atendimento automático em português, inglês e espanhol</div>
+  </div>
+</div>
+
+<section class="container">
+  <h2>Por que hotéis precisam de IA agora?</h2>
+  <p>O setor hoteleiro brasileiro enfrenta um paradoxo: a demanda cresceu 18% em 2025, mas a disponibilidade de mão de obra qualificada caiu e os custos operacionais aumentaram acima da inflação. Hotéis que não automatizam agora perdem margem para concorrentes que já usam IA.</p>
+  <p>Os principais gargalos resolvidos por IA na hotelaria são: (1) atendimento ao hóspede fora do horário da recepção, (2) gestão de preços em tempo real nas OTAs, (3) coordenação de housekeeping e manutenção, e (4) comunicação pré e pós-estadia para aumentar retenção e avaliações no Booking e TripAdvisor.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🤖</div>
+      <h3>Concierge Virtual 24h</h3>
+      <p>Agente de IA no WhatsApp e no site que responde dúvidas, faz reservas de restaurante, agenda transfers, informa sobre atrações locais e processa solicitações dos hóspedes a qualquer hora.</p>
+    </div>
+    <div class="card">
+      <div class="icon">💰</div>
+      <h3>Revenue Management Inteligente</h3>
+      <p>IA que monitora a concorrência, a ocupação, eventos locais e sazonalidade para sugerir ou ajustar preços automaticamente nas OTAs e no motor de reservas próprio.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🛏️</div>
+      <h3>Gestão de Housekeeping</h3>
+      <p>Sistema que prioriza a limpeza de quartos com base nas saídas previstas, horários de check-in e solicitações especiais, reduzindo tempo ocioso e aumentando a satisfação do hóspede.</p>
+    </div>
+    <div class="card">
+      <div class="icon">⭐</div>
+      <h3>Gestão de Reputação</h3>
+      <p>Agente que monitora avaliações no Booking, Google e TripAdvisor, gera respostas personalizadas e alerta a equipe sobre avaliações negativas para ação imediata.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background: #f8fafc; padding: 4rem 2rem;">
+  <div class="container">
+    <h2>Casos de uso com maior ROI em hotelaria</h2>
+    <div class="use-cases">
+      <div class="use-case">
+        <div class="uc-tag">Atendimento</div>
+        <h3>Chatbot WhatsApp para Hóspedes</h3>
+        <p>Responde em português, inglês e espanhol sobre check-in, check-out, serviços, localização e solicitações. Integrado ao PMS para consulta de reservas em tempo real.</p>
+        <div class="roi">ROI: redução de 60–80% nas chamadas para a recepção</div>
+      </div>
+      <div class="use-case">
+        <div class="uc-tag">Vendas</div>
+        <h3>Upsell Automático de Quarto</h3>
+        <p>Antes do check-in, o agente oferece upgrades, early check-in, late check-out e pacotes de serviços com desconto temporário. Tudo automatizado, sem esforço da equipe.</p>
+        <div class="roi">ROI: +8 a +15% na receita por hóspede (TRevPAR)</div>
+      </div>
+      <div class="use-case">
+        <div class="uc-tag">Operacional</div>
+        <h3>Check-in Digital Sem Fila</h3>
+        <p>Hóspede preenche dados e envia documentos pelo WhatsApp antes de chegar. Na chegada, recebe a chave imediatamente. Reduz tempo de espera na recepção em 70%.</p>
+        <div class="roi">ROI: NPS +12 pontos, revisão positiva no Booking</div>
+      </div>
+      <div class="use-case">
+        <div class="uc-tag">Receita</div>
+        <h3>Recuperação de Reservas Abandonadas</h3>
+        <p>IA identifica usuários que iniciaram mas não concluíram uma reserva no site e envia sequência de mensagens personalizadas para recuperar a conversão.</p>
+        <div class="roi">ROI: recuperação de 15–25% das reservas abandonadas</div>
+      </div>
+      <div class="use-case">
+        <div class="uc-tag">Pós-estadia</div>
+        <h3>Campanha de Retenção Automática</h3>
+        <p>Após o check-out, o agente envia mensagem personalizada pedindo avaliação, oferece desconto para próxima estadia e mantém o hóspede engajado para retorno direto.</p>
+        <div class="roi">ROI: +20% em reservas diretas, redução de comissão de OTA</div>
+      </div>
+      <div class="use-case">
+        <div class="uc-tag">Gestão</div>
+        <h3>Dashboard de KPIs Hoteleiros com IA</h3>
+        <p>Relatório diário automático com ocupação, RevPAR, ADR, NPS consolidado de todas as plataformas, alertas de manutenção e projeção de receita para os próximos 30 dias.</p>
+        <div class="roi">ROI: 2–4h/dia economizadas em coleta manual de dados</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>ROI estimado por porte de hotel</h2>
+  <table class="roi-table">
+    <thead>
+      <tr>
+        <th>Porte do Hotel</th>
+        <th>Solução de IA</th>
+        <th>Investimento Estimado</th>
+        <th>Retorno Esperado / Mês</th>
+        <th>Payback</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pousada (10–30 UHs)</td>
+        <td>Chatbot WhatsApp + check-in digital</td>
+        <td>R$ 5.000–8.000</td>
+        <td>R$ 2.000–4.000 em horas economizadas</td>
+        <td>2–4 meses</td>
+      </tr>
+      <tr>
+        <td>Hotel médio (30–100 UHs)</td>
+        <td>Chatbot + upsell + reputação</td>
+        <td>R$ 12.000–20.000</td>
+        <td>R$ 5.000–12.000</td>
+        <td>2–4 meses</td>
+      </tr>
+      <tr>
+        <td>Hotel grande (100+ UHs)</td>
+        <td>Suite completa: atendimento + revenue + operacional</td>
+        <td>R$ 25.000–60.000</td>
+        <td>R$ 15.000–40.000</td>
+        <td>2–4 meses</td>
+      </tr>
+      <tr>
+        <td>Rede hoteleira (múltiplas unidades)</td>
+        <td>Plataforma centralizada + agentes por unidade</td>
+        <td>Sob consulta</td>
+        <td>Escala linear com número de unidades</td>
+        <td>3–6 meses</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.8rem;">*Estimativas baseadas em projetos implantados. O diagnóstico gratuito produz projeção personalizada para o seu hotel.</p>
+</section>
+
+<section style="background: #f8fafc; padding: 4rem 2rem;">
+  <div class="container">
+    <h2>Integrações com sistemas hoteleiros</h2>
+    <p>Não exigimos que você troque o seu PMS. Integramos com os principais sistemas do mercado brasileiro:</p>
+    <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+      <div class="card">
+        <h3>TOTVS Hospitality</h3>
+        <p>Integração via API com o TOTVS Hospitalidade para leitura de reservas e status de UHs em tempo real.</p>
+      </div>
+      <div class="card">
+        <h3>HSystem</h3>
+        <p>Conexão nativa com o HSystem para automação de check-in, check-out e ordens de serviço.</p>
+      </div>
+      <div class="card">
+        <h3>Desbravador</h3>
+        <p>Integração com o Desbravador para hotéis de médio porte com extração de dados de ocupação e receita.</p>
+      </div>
+      <div class="card">
+        <h3>Opera Cloud</h3>
+        <p>Conexão com o Opera (Oracle Hospitality) para redes hoteleiras e grandes propriedades.</p>
+      </div>
+      <div class="card">
+        <h3>Booking / Expedia</h3>
+        <p>Integração com channel manager para leitura de avaliações e envio de respostas automáticas.</p>
+      </div>
+      <div class="card">
+        <h3>WhatsApp Business API</h3>
+        <p>Agente de atendimento 24h no número de WhatsApp do hotel, com handoff para humano quando necessário.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Como funciona a implantação</h2>
+  <div class="process">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h3>Diagnóstico Gratuito (1–2h)</h3>
+        <p>Entrevista com gerente de operações e recepção para mapear os principais gargalos: volume de solicitações por canal, reclamações recorrentes dos hóspedes e oportunidades de upsell inexploradas.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h3>Prova de Conceito (1–2 semanas)</h3>
+        <p>Desenvolvemos o agente de IA prioritário (geralmente o concierge WhatsApp) em ambiente de teste integrado com o PMS. Você vê como funciona antes de qualquer compromisso financeiro maior.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h3>Implantação em Produção (2–4 semanas)</h3>
+        <p>Lançamos o agente com o número real do WhatsApp do hotel, configuramos as integrações com PMS e OTAs, treinamos a equipe e ajustamos os fluxos com base no feedback dos primeiros hóspedes.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <h3>Evolução Contínua</h3>
+        <p>Após o primeiro agente validado, expandimos para revenue management, upsell automático e gestão de reputação. Entregamos relatório mensal de impacto com métricas quantificadas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background: #f8fafc; padding: 4rem 2rem;">
+  <div class="container">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <h3>O que a IA pode fazer por um hotel?</h3>
+      <p>A IA pode automatizar o atendimento ao hóspede 24 horas via WhatsApp, chatbot no site e voz; otimizar preços em tempo real (revenue management); gerenciar reservas e check-in/check-out digital; coordenar housekeeping com priorização inteligente de quartos; e gerar relatórios automáticos de ocupação, RevPAR e NPS.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Quanto tempo leva para implantar IA em um hotel?</h3>
+      <p>O primeiro agente (normalmente o de atendimento via WhatsApp) pode ser implantado em 2 a 4 semanas. A integração com PMS, OTAs e channel manager leva de 4 a 8 semanas dependendo da plataforma.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Qual o ROI de IA para um hotel?</h3>
+      <p>Em hotéis de 50 a 200 UHs, os principais ganhos são: redução de 60 a 80% nas chamadas para a recepção; aumento de 5 a 15% na receita via upsell automático; redução de 20 a 35% no tempo de resposta a solicitações; e economia de 1 a 3 FTEs em tarefas administrativas repetitivas.</p>
+    </div>
+    <div class="faq-item">
+      <h3>A IA funciona com os sistemas hoteleiros que já uso?</h3>
+      <p>Sim. Integramos com os principais PMSs do mercado brasileiro (TOTVS, HSystem, Desbravador, Opera), além de OTAs (Booking.com, Expedia, Airbnb) e channel managers.</p>
+    </div>
+    <div class="faq-item">
+      <h3>O hóspede vai saber que está falando com uma IA?</h3>
+      <p>O agente pode ser configurado de forma transparente (identificando-se como assistente virtual) ou como extensão da equipe humana. A maioria dos hotéis prefere transparência — hóspedes tendem a avaliar positivamente a rapidez do atendimento, independentemente de ser IA ou humano, desde que o problema seja resolvido.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Pronto para modernizar seu hotel com IA?</h2>
+  <p>Agende um diagnóstico gratuito e receba um plano de ação personalizado para o seu hotel — sem compromisso e sem burocracia.</p>
+  <a href="/contato/" class="cta-btn">Agendar Diagnóstico Gratuito</a>
+</section>
+
+<footer>
+  <p>© 2026 Bronks IA — IA para Hotéis e Hospitalidade | <a href="/ia-para-saude/">Saúde</a> | <a href="/ia-para-juridico/">Jurídico</a> | <a href="/ia-para-financas/">Finanças</a> | <a href="/blog/">Blog</a></p>
+</footer>
+
+</body>
+</html>
