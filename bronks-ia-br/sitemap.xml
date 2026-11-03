@@ -480,4 +480,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <!-- Adicionados em 2026-11-03 — Ciclo #38 -->
+  <url>
+    <loc>https://bronks.ia.br/blog/roi-inteligencia-artificial-empresa/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

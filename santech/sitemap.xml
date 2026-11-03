@@ -559,4 +559,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <!-- Adicionados em 2026-11-03 — Ciclo #38 -->
+  <url>
+    <loc>https://santechseguranca.com.br/cameras-urca/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://santechseguranca.com.br/manutencao-ar-condicionado-barra-da-tijuca/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 </urlset>
