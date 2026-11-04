@@ -1,0 +1,258 @@
+{
+  "timestamp": "2026-11-04T13:00:00-03:00",
+  "domain": "bronks.ia.br",
+  "seo_score": 11,
+  "sre_score": 15,
+  "ranking_potential": "baixo",
+  "nota_metodologica": "Auditoria executada sem acesso direto ao site (DNS bronks.ia.br não resolve a partir do ambiente cloud). site:bronks.ia.br confirmado com 0 resultados no Google. Dados baseados no repositório e WebSearch. Contexto de mercado atualizado com dados de novembro de 2026.",
+  "indexed_pages": [
+    {
+      "url": "https://bronks.ia.br",
+      "title": "Homepage — não verificável (site inacessível nesta sessão)",
+      "status": "não indexada"
+    }
+  ],
+  "top_keywords": [
+    {
+      "keyword": "agentes de IA",
+      "tier": 1,
+      "estimated_volume": "18.000–40.000/mês",
+      "difficulty": "high",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "média"
+    },
+    {
+      "keyword": "automação com IA",
+      "tier": 1,
+      "estimated_volume": "5.000–12.000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "média"
+    },
+    {
+      "keyword": "IA para empresas",
+      "tier": 1,
+      "estimated_volume": "8.000–20.000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "média"
+    },
+    {
+      "keyword": "consultoria em IA",
+      "tier": 1,
+      "estimated_volume": "2.000–6.000/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "RAG empresarial",
+      "tier": 2,
+      "estimated_volume": "200–800/mês",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "IA para construção civil",
+      "tier": 2,
+      "estimated_volume": "800–2.000/mês",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria IA Belém Pará",
+      "tier": 3,
+      "estimated_volume": "50–200/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "consultoria IA Rio de Janeiro",
+      "tier": 3,
+      "estimated_volume": "100–400/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "agentes IA Brasil",
+      "tier": 3,
+      "estimated_volume": "500–1.500/mês",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    },
+    {
+      "keyword": "IA agentica empresas 2026",
+      "tier": 2,
+      "estimated_volume": "1.000–3.000/mês",
+      "difficulty": "medium",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta"
+    }
+  ],
+  "issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "site:bronks.ia.br retorna ZERO resultados no Google. Nenhuma das 82 URLs do repositório está indexada.",
+      "affected_urls": ["https://bronks.ia.br"],
+      "fix": "1) Deploy imediato na VPS. 2) Configurar Google Search Console. 3) Submeter sitemap.xml com 82 URLs. 4) Indexação manual das páginas prioritárias."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "DNS bronks.ia.br falha resolução a partir de servidores externos neste ambiente. Site pode estar offline ou DNS não propagado.",
+      "affected_urls": ["https://bronks.ia.br"],
+      "fix": "Verificar com 'dig bronks.ia.br' ou 'nslookup bronks.ia.br 8.8.8.8' da máquina local. Confirmar registro A no provedor DNS e ativação do domínio .ia.br no registro.br."
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Deploy bloqueado: SSH para 148.230.79.134:22 inacessível a partir do ambiente cloud (timeout). Conteúdo não publicado na VPS.",
+      "affected_urls": ["https://bronks.ia.br"],
+      "fix": "Executar deploy manualmente da máquina local: scp -r bronks-ia-br/ root@148.230.79.134:/var/www/bronks.ia.br/ — ou configurar GitHub Actions com secret SSH_KEY."
+    },
+    {
+      "type": "estrutura",
+      "severity": "alto",
+      "description": "Google Search Console não configurado. Impossível monitorar rastreamento, cobertura de índice e performance de keywords.",
+      "affected_urls": ["https://bronks.ia.br"],
+      "fix": "search.google.com/search-console → verificar propriedade → submeter sitemap.xml"
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "Mercado brasileiro de IA em 2026 cresce fortemente (Brasil = 41,7% do mercado LatAm de IA, US$4,2bi investimentos). Bronks não aparece em nenhuma busca sobre consultoria IA Brasil — oportunidade enorme com conteúdo já criado mas não indexado.",
+      "affected_urls": ["https://bronks.ia.br"],
+      "fix": "Indexação urgente. Após deploy, priorizar artigos pilar para keywords Tier 1 e landing pages por setor vertical."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "Nenhuma cobertura de Belém (PA) — única capital do Norte selecionada pelo BID para investimentos em IA. COP30 2025 em Belém aumentou visibilidade internacional do Pará. Página criada neste ciclo.",
+      "affected_urls": ["/consultoria-ia-belem/"],
+      "fix": "CONCLUÍDO neste ciclo — página /consultoria-ia-belem/ criada com contexto COP30 e ecossistema de IA do Pará."
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "landing page",
+      "title": "IA para Construção Civil e Incorporadoras",
+      "target_keyword": "IA para construção civil",
+      "estimated_traffic_gain": "400–1.200 visitas/mês após indexação",
+      "priority": "alto"
+    },
+    {
+      "type": "página local",
+      "title": "Consultoria de IA em Belém do Pará",
+      "target_keyword": "consultoria IA Belém Pará",
+      "estimated_traffic_gain": "80–300 visitas/mês (baixo volume, alta intenção, zero concorrência)",
+      "priority": "alto"
+    },
+    {
+      "type": "artigo",
+      "title": "IA Agêntica em 2026: Guia para Empresas Brasileiras",
+      "target_keyword": "IA agentica 2026 empresas Brasil",
+      "estimated_traffic_gain": "500–2.000 visitas/mês",
+      "priority": "alto"
+    },
+    {
+      "type": "página local",
+      "title": "Consultoria de IA em João Pessoa",
+      "target_keyword": "consultoria IA João Pessoa",
+      "estimated_traffic_gain": "50–150 visitas/mês",
+      "priority": "médio"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/consultoria-ia-belem/",
+      "tipo": "local",
+      "keyword_alvo": "consultoria de IA em Belém Pará",
+      "justificativa": "Belém é única capital do Norte selecionada pelo BID para IA, sede COP30, e recebe R$250M em data center de IA (Elea). Nenhuma consultoria de IA tinha página específica para Belém no SERP — janela de oportunidade de primeiro a ranquear. Criada neste ciclo."
+    },
+    {
+      "url_sugerida": "/ia-para-construcao-civil/",
+      "tipo": "serviço por setor",
+      "keyword_alvo": "IA para construção civil",
+      "justificativa": "Construção civil é 2º maior setor do PIB brasileiro. 70% das construtoras ainda digitalizam lentamente. Keyword com dificuldade baixa e volume crescente. Havia apenas um artigo de blog (/blog/ia-para-construcao-civil/) — a landing page de serviço com schema e CTA aumenta conversão. Criada neste ciclo."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "IMEDIATO — Deploy bronks.ia.br na VPS via SCP/SFTP da máquina local: scp -r bronks-ia-br/ root@148.230.79.134:/var/www/bronks.ia.br/",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Configurar Google Search Console para bronks.ia.br: verificar propriedade + submeter sitemap.xml (82 URLs)",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Configurar GitHub Actions para auto-deploy SSH: em cada push para main, rsync automático para VPS — resolve o bloqueador de deploy permanentemente",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "técnico",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar perfil LinkedIn da empresa Bronks IA com link para bronks.ia.br — aumenta autoridade de domínio e garante primeiro backlink externo",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "link building",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar página /consultoria-ia-joao-pessoa/ — João Pessoa tem baixa cobertura de IA no SERP local, alta oportunidade de primeiro a ranquear",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "agenciacognitiva.com.br (estimado)",
+      "keywords_overlap": ["agentes de IA empresas", "IA agentica Brasil", "consultoria IA"],
+      "estimated_traffic": "não verificável",
+      "content_gap": "Bronks tem cobertura maior de cidades (16 capitais + interiores) e verticais setoriais (15+ setores)"
+    },
+    {
+      "domain": "bridgeco.com.br",
+      "keywords_overlap": ["automação empresarial", "IA para grandes corporações", "dados e IA"],
+      "estimated_traffic": "não verificável",
+      "content_gap": "Bridge foca em grandes empresas — Bronks pode diferenciar com foco em PMEs e médias empresas"
+    },
+    {
+      "domain": "innowise.com (global)",
+      "keywords_overlap": ["consultoria IA Brasil", "desenvolvimento agentes IA"],
+      "estimated_traffic": "não verificável",
+      "content_gap": "Empresa global — Bronks pode diferenciar com presença local brasileira e casos de uso por setor"
+    }
+  ],
+  "estimated_traffic_gain": {
+    "30_days": "0 — zero indexação sem deploy",
+    "90_days": "500–1.500 visitas/mês SE deploy + Search Console IMEDIATAMENTE (82 páginas × posição média 25–50 × CTR 1–3%)",
+    "6_months": "3.000–8.000 visitas/mês com 82 páginas indexadas + backlinks iniciais + blog otimizado",
+    "assumptions": "Mercado de IA Brasil crescendo: 41,7% do LatAm, US$4,2bi em 2026 (IDC). 88% dos executivos brasileiros veem IA como principal driver de competitividade até 2030. Demanda por consultoria de IA em alta — janela de oportunidade aberta. Estimativas conservadoras baseadas em volume de keywords monitoradas e dificuldade low/medium."
+  }
+}
