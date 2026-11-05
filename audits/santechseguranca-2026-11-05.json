@@ -1,0 +1,420 @@
+{
+  "timestamp": "2026-11-05T06:00:00-03:00",
+  "domain": "santechseguranca.com.br",
+  "seo_score": 22,
+  "sre_score": 55,
+  "local_rank_score": 8,
+  "ranking_potential": "alto",
+  "data_quality_note": "Site não acessível diretamente desta sessão cloud (restrito por política de rede). Verificações on-page (meta tags, schema, sitemap, robots.txt, WhatsApp) não realizadas diretamente. Dados baseados em Google Search + análise de mercado. Itens estimados sinalizado como 'estimado'.",
+  "indexed_pages": [
+    { "url": "santechseguranca.com.br/*", "title": "Desconhecido", "status": "não indexada", "note": "VERIFICADO — site:santechseguranca.com.br retornou 0 resultados no Google" }
+  ],
+  "social_presence": [
+    { "platform": "Instagram", "handle": "@santechseguranca", "status": "ativo", "url": "https://www.instagram.com/santechseguranca/" },
+    { "platform": "Facebook", "handle": "santechsegurancaeservico", "status": "ativo", "url": "https://www.facebook.com/santechsegurancaeservico/" }
+  ],
+  "keyword_opportunities": [
+    {
+      "keyword": "instalação de câmeras rio de janeiro",
+      "tier": 2,
+      "estimated_volume": "1200-2400/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/instalacao-cameras-rio-de-janeiro"
+    },
+    {
+      "keyword": "câmeras de segurança barra da tijuca",
+      "tier": 2,
+      "estimated_volume": "400-800/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cameras-barra-da-tijuca"
+    },
+    {
+      "keyword": "cftv residencial",
+      "tier": 1,
+      "estimated_volume": "2000-4000/mês",
+      "difficulty": "medium",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cftv-residencial"
+    },
+    {
+      "keyword": "automação de portão recreio",
+      "tier": 2,
+      "estimated_volume": "300-600/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/automacao-portao-zona-oeste"
+    },
+    {
+      "keyword": "alarme residencial",
+      "tier": 1,
+      "estimated_volume": "5000-8000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "média",
+      "page_to_create_or_optimize": "/alarme-residencial"
+    },
+    {
+      "keyword": "cerca elétrica zona oeste",
+      "tier": 2,
+      "estimated_volume": "500-900/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cerca-eletrica-zona-norte"
+    },
+    {
+      "keyword": "manutenção ar condicionado tijuca",
+      "tier": 2,
+      "estimated_volume": "600-1200/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/manutencao-ar-condicionado"
+    },
+    {
+      "keyword": "empresa de cftv rio de janeiro",
+      "tier": 3,
+      "estimated_volume": "800-1500/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/instalacao-cameras-rio-de-janeiro"
+    },
+    {
+      "keyword": "eletroposto instalação residencial rj",
+      "tier": 3,
+      "estimated_volume": "200-500/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/eletroposto"
+    },
+    {
+      "keyword": "energia solar residencial rj",
+      "tier": 1,
+      "estimated_volume": "2000-4000/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "média",
+      "page_to_create_or_optimize": "/energia-solar"
+    },
+    {
+      "keyword": "câmera wifi ou cabeada qual melhor",
+      "tier": 3,
+      "estimated_volume": "600-1200/mês",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "Blog: artigo comparativo"
+    },
+    {
+      "keyword": "instalação câmera segurança perto de mim",
+      "tier": 3,
+      "estimated_volume": "1000-2000/mês",
+      "difficulty": "medium",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "GBP + páginas locais"
+    }
+  ],
+  "technical_issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Site não indexado no Google — site: operator retornou 0 resultados",
+      "affected_urls": ["santechseguranca.com.br/*"],
+      "fix": "Verificar robots.txt (não bloquear Googlebot), remover noindex, criar sitemap.xml, submeter no Google Search Console, solicitar indexação manual"
+    },
+    {
+      "type": "local SEO",
+      "severity": "crítico",
+      "description": "Ausência completa de páginas locais por bairro — 0 de 8 páginas previstas existentes",
+      "affected_urls": [],
+      "fix": "Criar 8 páginas geo-segmentadas: /cameras-barra-da-tijuca, /seguranca-recreio, /cftv-copacabana, /automacao-portao-zona-oeste, /cameras-niteroi, /cameras-tijuca, /cerca-eletrica-zona-norte, /instalacao-cameras-rio-de-janeiro"
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "Schema LocalBusiness não verificado / provavelmente ausente — nenhum rich snippet encontrado no SERP",
+      "affected_urls": ["santechseguranca.com.br"],
+      "fix": "Implementar JSON-LD LocalBusiness com name, address, telephone, openingHours, areaServed, priceRange na homepage e em todas as páginas locais"
+    },
+    {
+      "type": "técnico",
+      "severity": "alto",
+      "description": "Sitemap.xml — status desconhecido, possivelmente inexistente",
+      "affected_urls": ["santechseguranca.com.br/sitemap.xml"],
+      "fix": "Criar sitemap.xml com todas as URLs, submeter no Google Search Console"
+    },
+    {
+      "type": "local SEO",
+      "severity": "alto",
+      "description": "Google Business Profile — estado de otimização desconhecido",
+      "affected_urls": [],
+      "fix": "Verificar/criar GBP com categoria, serviços, fotos, horário, área de atendimento e link WhatsApp. Solicitar reviews de clientes ativos."
+    },
+    {
+      "type": "técnico",
+      "severity": "alto",
+      "description": "Backlinks externos muito baixos — apenas Instagram, Facebook e GitHub encontrados referenciando o domínio",
+      "affected_urls": ["santechseguranca.com.br"],
+      "fix": "Cadastrar em oHub, Apontador, Infobel, Reclame Aqui, LinkedIn, diretórios de parceiros Intelbras/Hikvision"
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "Meta titles e descriptions — não verificados diretamente",
+      "affected_urls": ["santechseguranca.com.br/*"],
+      "fix": "Garantir title único 50-60 chars com keyword + cidade em cada página. Meta description 150-160 chars com CTA + WhatsApp."
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "Páginas de serviço dedicadas — 0 de 10 confirmadas no SERP",
+      "affected_urls": [],
+      "fix": "Criar /instalacao-cameras, /cftv-residencial, /automacao-portoes, /cerca-eletrica, /alarme-residencial com 800+ palavras e schema Service"
+    },
+    {
+      "type": "performance",
+      "severity": "baixo",
+      "description": "Performance mobile — não verificada. PageSpeed Insights não executado.",
+      "affected_urls": ["santechseguranca.com.br"],
+      "fix": "Executar PageSpeed Insights. Otimizar imagens para WebP, lazy loading, minificar CSS/JS. Meta: Mobile Score >75"
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "página local",
+      "title": "Câmeras de Segurança na Barra da Tijuca",
+      "target_keyword": "câmeras barra da tijuca",
+      "estimated_leads_gain": "8-15 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página local",
+      "title": "Segurança Eletrônica no Recreio dos Bandeirantes",
+      "target_keyword": "segurança eletrônica recreio",
+      "estimated_leads_gain": "6-12 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Instalação de Câmeras CFTV Rio de Janeiro",
+      "target_keyword": "instalação câmeras rio de janeiro",
+      "estimated_leads_gain": "10-20 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Automação de Portões — Instalação e Manutenção RJ",
+      "target_keyword": "automação portão zona oeste",
+      "estimated_leads_gain": "4-8 leads/mês",
+      "priority": "alto",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "artigo",
+      "title": "Câmera Wi-Fi ou Cabeada: qual escolher para sua casa?",
+      "target_keyword": "câmera wifi ou cabeada qual melhor",
+      "estimated_leads_gain": "topo de funil — 2-5 leads/mês indiretos",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    },
+    {
+      "type": "artigo",
+      "title": "Quanto custa instalar câmeras de segurança no Rio de Janeiro?",
+      "target_keyword": "quanto custa instalar câmeras",
+      "estimated_leads_gain": "5-10 leads/mês",
+      "priority": "médio",
+      "cta": "WhatsApp"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/cameras-barra-da-tijuca",
+      "tipo": "local",
+      "keyword_alvo": "câmeras de segurança barra da tijuca",
+      "h1_sugerido": "Instalação de Câmeras de Segurança na Barra da Tijuca",
+      "justificativa": "Alta renda, alta demanda, dificuldade de keyword baixa, 0 concorrentes dominando com página local específica"
+    },
+    {
+      "url_sugerida": "/instalacao-cameras-rio-de-janeiro",
+      "tipo": "local",
+      "keyword_alvo": "instalação de câmeras rio de janeiro",
+      "h1_sugerido": "Instalação de Câmeras de Segurança no Rio de Janeiro",
+      "justificativa": "Keyword transacional de alto volume, landing page hub para toda a cidade"
+    },
+    {
+      "url_sugerida": "/seguranca-recreio",
+      "tipo": "local",
+      "keyword_alvo": "segurança eletrônica recreio",
+      "h1_sugerido": "Segurança Eletrônica no Recreio dos Bandeirantes",
+      "justificativa": "Bairro residencial crescente, alta demanda por automação e câmeras em condomínios"
+    },
+    {
+      "url_sugerida": "/cftv-residencial",
+      "tipo": "serviço",
+      "keyword_alvo": "cftv residencial",
+      "h1_sugerido": "CFTV Residencial: Câmeras de Segurança para sua Casa no Rio de Janeiro",
+      "justificativa": "Keyword comercial de alto volume, ainda sem página dedicada confirmada"
+    },
+    {
+      "url_sugerida": "/automacao-portoes",
+      "tipo": "serviço",
+      "keyword_alvo": "automação de portão",
+      "h1_sugerido": "Automação de Portões no Rio de Janeiro — Instalação e Manutenção",
+      "justificativa": "Serviço complementar às câmeras, alta intenção de compra no contexto residencial"
+    },
+    {
+      "url_sugerida": "/eletroposto",
+      "tipo": "serviço",
+      "keyword_alvo": "instalação eletroposto residencial rj",
+      "h1_sugerido": "Instalação de Eletroposto Residencial no Rio de Janeiro",
+      "justificativa": "Nicho emergente, dificuldade muito baixa, Santech tem diferencial competitivo sendo uma das poucas a oferecer"
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "Corrigir indexação: verificar robots.txt/noindex, criar sitemap.xml, submeter no Google Search Console, solicitar indexação manual",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Otimizar Google Business Profile: categoria, serviços, fotos, área de atendimento, link WhatsApp",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar página local /cameras-barra-da-tijuca com H1, schema LocalBusiness, 800+ palavras, embed mapa, CTA WhatsApp",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Implementar schema JSON-LD LocalBusiness na homepage com areaServed, telephone, openingHours",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar 3 páginas de serviço prioritárias: /instalacao-cameras, /cftv-residencial, /automacao-portoes",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Verificar e ativar botão WhatsApp flutuante em todas as páginas com pré-mensagem contextual",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "conversão",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar 5 páginas locais adicionais: /seguranca-recreio, /cameras-niteroi, /automacao-portao-zona-oeste, /cftv-copacabana, /cameras-tijuca",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "local SEO",
+      "deadline": "1 mês"
+    },
+    {
+      "action": "Publicar artigo blog: 'Câmera Wi-Fi ou Cabeada: qual escolher?' com 1.200+ palavras, schema Article + FAQ",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 mês"
+    },
+    {
+      "action": "Cadastrar em diretórios: oHub, Apontador, Infobel, LinkedIn, Reclame Aqui. Garantir NAP idêntico.",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "1 mês"
+    },
+    {
+      "action": "Executar PageSpeed Insights, otimizar imagens WebP, lazy loading, minificar CSS/JS. Meta: Mobile Score >75",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "técnico",
+      "deadline": "1 mês"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "simastechnology.com.br",
+      "keywords_overlap": ["câmeras segurança rj", "instalação câmeras rio de janeiro", "cftv rj"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Verificar se tem páginas locais por bairro — oportunidade na Zona Oeste",
+      "has_local_pages": false
+    },
+    {
+      "domain": "tech-servcom.com.br",
+      "keywords_overlap": ["empresa cftv rj", "câmeras segurança rio de janeiro"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Site possivelmente desatualizado sem estratégia mobile-first. Sem WhatsApp proeminente.",
+      "has_local_pages": false
+    },
+    {
+      "domain": "assintec.com.br",
+      "keywords_overlap": ["instalação cftv rj", "cftv niterói"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Foco em Niterói — Zona Oeste e Barra desatendidas",
+      "has_local_pages": false
+    },
+    {
+      "domain": "systemframe.com.br",
+      "keywords_overlap": ["instalação cftv ip rio de janeiro", "cftv lapa", "cftv centro rio"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "JÁ USA estratégia de páginas por bairro (/onde-atuamos/lapa, /centro). Maior ameaça SEO local.",
+      "has_local_pages": true
+    },
+    {
+      "domain": "alarmeforte.com.br",
+      "keywords_overlap": ["instalação câmeras cftv rio", "alarme residencial rj"],
+      "google_maps_reviews": "não verificado",
+      "content_gap": "Foco em Centro RJ — Zona Oeste completamente descoberta",
+      "has_local_pages": false
+    }
+  ],
+  "kpis_snapshot": {
+    "pages_indexed": 0,
+    "pages_with_local_keyword": 0,
+    "pages_missing_schema": "desconhecido — site não acessível diretamente",
+    "whatsapp_link_working": "não verificado",
+    "mobile_speed_score": "não verificado",
+    "core_web_vitals_passed": "não verificado"
+  },
+  "estimated_leads_gain": {
+    "30_days": "3–8 leads/mês",
+    "90_days": "15–35 leads/mês",
+    "6_months": "40–80 leads/mês",
+    "assumptions": "CTR médio 3-5% posições 3-5 pacote local. Taxa conversão lead/visita 8-12%. Volume keywords Tier 1+2 no RJ estimado 8k-15k/mês. Ticket médio R$1.200-3.500. Estimativas conservadoras; podem dobrar com GBP ativo e reviews."
+  }
+}
