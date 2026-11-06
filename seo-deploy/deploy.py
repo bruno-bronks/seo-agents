@@ -33,12 +33,17 @@ DEPLOY_TASKS = [
     ('santech/sitemap.xml',                             '/var/www/santech/sitemap.xml',                         False),
     ('santech/instalacao-cameras/index.html',           '/var/www/santech/instalacao-cameras/index.html',       True),
     ('santech/cerca-eletrica/index.html',               '/var/www/santech/cerca-eletrica/index.html',           True),
+    ('santech/automacao-portao/index.html',             '/var/www/santech/automacao-portao/index.html',         True),
+    # bronks new pages
+    ('bronks/agentes-de-ia/index.html',                '/var/www/bronks.ia.br/agentes-de-ia/index.html',       True),
 ]
 
 MKDIR_TASKS = [
     '/var/www/santech/instalacao-cameras',
     '/var/www/santech/cerca-eletrica',
+    '/var/www/santech/automacao-portao',
     '/var/www/bronks.ia.br/consultoria-em-ia',
+    '/var/www/bronks.ia.br/agentes-de-ia',
     '/root/seo-reports',
 ]
 
