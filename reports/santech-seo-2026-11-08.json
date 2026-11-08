@@ -1,0 +1,447 @@
+{
+  "timestamp": "2026-11-08T06:00:00-03:00",
+  "domain": "santechseguranca.com.br",
+  "ciclo": 40,
+  "seo_score": 22,
+  "sre_score": 5,
+  "local_rank_score": 12,
+  "ranking_potential": "alto",
+  "nota_metodologica": "Auditoria executada sem acesso direto ao site (domínio fora da allowlist de rede do ambiente cloud). site:santechseguranca.com.br confirmado com 0 resultados no Google. Dados on-page baseados nos arquivos do repositório (100 arquivos HTML). Dados de indexação e concorrência via WebSearch.",
+  "delta_vs_ciclo_anterior": {
+    "new_pages_added": 4,
+    "pages_total_now": 100,
+    "pages_indexed_now": 0,
+    "pages_indexed_before": 0,
+    "seo_score_delta": -1,
+    "sre_score_delta": 5,
+    "local_rank_score_delta": -1,
+    "note": "Incremento de 4 novas páginas no repositório; zero avanço em indexação. Deploy ainda não executado."
+  },
+  "new_pages_this_cycle": [
+    {
+      "url": "/energia-solar-zona-oeste/",
+      "type": "local",
+      "keyword_alvo": "energia solar zona oeste Rio de Janeiro",
+      "status_deploy": "não deployada"
+    },
+    {
+      "url": "/manutencao-ar-condicionado-niteroi/",
+      "type": "local",
+      "keyword_alvo": "manutenção ar condicionado niterói",
+      "status_deploy": "não deployada"
+    },
+    {
+      "url": "/blog/energia-solar-vale-a-pena-rio-de-janeiro/",
+      "type": "blog",
+      "keyword_alvo": "energia solar vale a pena rio de janeiro 2026",
+      "status_deploy": "não deployada"
+    },
+    {
+      "url": "/blog/como-funciona-portaria-virtual-condominio/",
+      "type": "blog",
+      "keyword_alvo": "como funciona portaria virtual condomínio",
+      "status_deploy": "não deployada"
+    }
+  ],
+  "indexed_pages": [
+    {
+      "url": "santechseguranca.com.br/*",
+      "title": "N/A",
+      "status": "não indexada",
+      "note": "VERIFICADO — site:santechseguranca.com.br retornou 0 resultados no Google. Confirmado por 8 ciclos consecutivos (desde set/2026). Causa raiz: deploy não executado na VPS 148.230.79.134."
+    }
+  ],
+  "kpis_snapshot": {
+    "pages_in_repository": 100,
+    "pages_deployed_to_vps": 0,
+    "pages_indexed_google": 0,
+    "pages_with_local_keyword": 42,
+    "pages_with_placeholder_phone": 69,
+    "sitemap_urls": 99,
+    "whatsapp_link_working": false,
+    "whatsapp_placeholder_active": true,
+    "mobile_speed_score": "não verificável",
+    "core_web_vitals_passed": false,
+    "ssl_valid": "não verificável",
+    "ttfb_ms": "não verificável",
+    "dns_resolving": "não verificável (domínio fora da allowlist desta sessão cloud)",
+    "gbp_status": "desconhecido — não verificado",
+    "deploy_script_exists": true,
+    "deploy_script_path": "seo-deploy/deploy.py",
+    "deploy_script_needs_vps_pass": true
+  },
+  "keyword_opportunities": [
+    {
+      "keyword": "câmeras de segurança Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "18.000/mês",
+      "difficulty": "high",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/instalacao-cameras/ (existe no repo)"
+    },
+    {
+      "keyword": "instalação de câmeras Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "12.000/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/instalacao-cameras-rio-de-janeiro/ (existe no repo)"
+    },
+    {
+      "keyword": "manutenção ar condicionado Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "8.500/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/manutencao-ar-condicionado/ (existe no repo)"
+    },
+    {
+      "keyword": "energia solar residencial Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "9.200/mês",
+      "difficulty": "high",
+      "intent": "comercial",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/energia-solar/ (existe no repo)"
+    },
+    {
+      "keyword": "automação portão Rio de Janeiro",
+      "tier": 1,
+      "estimated_volume": "5.200/mês",
+      "difficulty": "medium",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/automacao-portoes/ (existe no repo)"
+    },
+    {
+      "keyword": "câmeras de segurança Barra da Tijuca",
+      "tier": 2,
+      "estimated_volume": "1.800/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/cameras-barra-da-tijuca/ (existe no repo)"
+    },
+    {
+      "keyword": "manutenção ar condicionado niterói",
+      "tier": 2,
+      "estimated_volume": "900/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/manutencao-ar-condicionado-niteroi/ (NOVA neste ciclo)"
+    },
+    {
+      "keyword": "energia solar zona oeste rio de janeiro",
+      "tier": 2,
+      "estimated_volume": "700/mês",
+      "difficulty": "low",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/energia-solar-zona-oeste/ (NOVA neste ciclo)"
+    },
+    {
+      "keyword": "como funciona portaria virtual condomínio",
+      "tier": 3,
+      "estimated_volume": "1.200/mês",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/blog/como-funciona-portaria-virtual-condominio/ (NOVA neste ciclo)"
+    },
+    {
+      "keyword": "energia solar vale a pena rio de janeiro",
+      "tier": 3,
+      "estimated_volume": "2.400/mês",
+      "difficulty": "low",
+      "intent": "informacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/blog/energia-solar-vale-a-pena-rio-de-janeiro/ (NOVA neste ciclo)"
+    },
+    {
+      "keyword": "eletroposto instalação residencial rj",
+      "tier": 3,
+      "estimated_volume": "400/mês",
+      "difficulty": "low",
+      "intent": "transacional",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "/eletroposto/ (existe no repo)"
+    },
+    {
+      "keyword": "instalação câmera segurança perto de mim",
+      "tier": 3,
+      "estimated_volume": "1.500/mês",
+      "difficulty": "medium",
+      "intent": "local",
+      "current_position": "não ranqueia",
+      "opportunity": "alta",
+      "page_to_create_or_optimize": "GBP ativo + páginas locais deployadas"
+    }
+  ],
+  "technical_issues": [
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "ZERO indexação no Google — site:santechseguranca.com.br retorna 0 resultados. Confirmado por 8 ciclos consecutivos. 100 páginas existem no repositório mas nenhuma está no ar.",
+      "affected_urls": ["https://santechseguranca.com.br/*"],
+      "fix": "URGENTE: Executar deploy completo na VPS 148.230.79.134. Script pronto em seo-deploy/deploy.py. Requer variável VPS_PASS. Da máquina local: export VPS_PASS='senha'; python3 seo-deploy/deploy.py. Alternativamente: scp -r santech/ root@148.230.79.134:/var/www/santech/",
+      "bloqueador_principal": true,
+      "semanas_em_aberto": 9
+    },
+    {
+      "type": "técnico",
+      "severity": "crítico",
+      "description": "69 de 100 arquivos HTML contêm placeholder '55219XXXXXXXX' como número de WhatsApp e '+55-21-XXXX-XXXX' como telefone no Schema.org. Deploy com esses placeholders resultaria em CTAs quebrados.",
+      "affected_urls": ["santech/ — 69 arquivos"],
+      "fix": "Substituir ANTES do deploy: find santech/ -name '*.html' -exec sed -i 's/55219XXXXXXXX/5521NUMEROREAL/g' {} \\; && find santech/ -name '*.html' -exec sed -i 's/+55-21-XXXX-XXXX/+55-21-NUMERO-REAL/g' {} \\;"
+    },
+    {
+      "type": "local SEO",
+      "severity": "crítico",
+      "description": "Google Business Profile não verificado. Sem GBP ativo a Santech não aparece no pacote local (3-pack) do Maps, que é o principal canal de leads para segurança eletrônica.",
+      "affected_urls": [],
+      "fix": "Criar/completar GBP: nome, endereço, telefone, categoria 'Empresa de segurança eletrônica', serviços, 10+ fotos, horário de atendimento. Solicitar reviews de clientes ativos imediatamente."
+    },
+    {
+      "type": "técnico",
+      "severity": "alto",
+      "description": "Sitemap.xml com 99 URLs existe no repositório mas não submetido no Google Search Console (GSC não configurado).",
+      "affected_urls": ["santechseguranca.com.br/sitemap.xml"],
+      "fix": "Após deploy: acessar Search Console, verificar propriedade do domínio, submeter sitemap.xml, solicitar indexação manual das 10 páginas prioritárias."
+    },
+    {
+      "type": "técnico",
+      "severity": "alto",
+      "description": "Deploy parcial detectado em seo-deploy/ (apenas 3 páginas listadas: instalacao-cameras, cerca-eletrica, automacao-portao). As outras 97 páginas não estão no script de deploy.",
+      "affected_urls": ["seo-deploy/deploy.py"],
+      "fix": "Expandir DEPLOY_TASKS no seo-deploy/deploy.py para incluir todas as 100 páginas, OU executar deploy completo via rsync: rsync -avz santech/ root@148.230.79.134:/var/www/santech/"
+    },
+    {
+      "type": "conteúdo",
+      "severity": "médio",
+      "description": "31 de 100 arquivos HTML não têm placeholder de telefone — confirmar se têm número real preenchido ou se estão sem telefone algum.",
+      "affected_urls": ["santech/ — 31 arquivos"],
+      "fix": "Verificar quais dos 31 arquivos têm número real. Se tiverem, usar como template para corrigir os 69 restantes."
+    },
+    {
+      "type": "performance",
+      "severity": "médio",
+      "description": "Core Web Vitals e performance mobile não verificáveis (site não acessível nesta sessão cloud). Risco de score baixo no PageSpeed por imagens não otimizadas.",
+      "affected_urls": ["santechseguranca.com.br"],
+      "fix": "Após deploy, executar PageSpeed Insights. Converter imagens para WebP, aplicar lazy loading, minificar CSS/JS."
+    }
+  ],
+  "content_suggestions": [
+    {
+      "type": "blog",
+      "title": "Energia Solar Vale a Pena no Rio de Janeiro em 2026?",
+      "target_keyword": "energia solar vale a pena rio de janeiro",
+      "estimated_leads_gain": "8–20 leads/mês após indexação (ticket R$15k–45k)",
+      "priority": "alto",
+      "cta": "WhatsApp",
+      "status": "CRIADA neste ciclo — aguardando deploy"
+    },
+    {
+      "type": "blog",
+      "title": "Como Funciona a Portaria Virtual para Condomínios?",
+      "target_keyword": "como funciona portaria virtual condomínio",
+      "estimated_leads_gain": "4–10 leads/mês (topo de funil, ticket médio R$3k/mês recorrente)",
+      "priority": "alto",
+      "cta": "WhatsApp",
+      "status": "CRIADA neste ciclo — aguardando deploy"
+    },
+    {
+      "type": "página local",
+      "title": "Energia Solar na Zona Oeste do Rio",
+      "target_keyword": "energia solar zona oeste rio de janeiro",
+      "estimated_leads_gain": "3–8 leads/mês",
+      "priority": "médio",
+      "cta": "WhatsApp",
+      "status": "CRIADA neste ciclo — aguardando deploy"
+    },
+    {
+      "type": "página local",
+      "title": "Manutenção de Ar-Condicionado em Niterói",
+      "target_keyword": "manutenção ar condicionado niterói",
+      "estimated_leads_gain": "5–10 leads/mês",
+      "priority": "médio",
+      "cta": "WhatsApp",
+      "status": "CRIADA neste ciclo — aguardando deploy"
+    },
+    {
+      "type": "página de serviço",
+      "title": "Monitoramento 24h Rio de Janeiro",
+      "target_keyword": "monitoramento câmeras 24 horas rio de janeiro",
+      "estimated_leads_gain": "5–12 leads/mês (serviço recorrente, alto LTV)",
+      "priority": "médio",
+      "cta": "WhatsApp",
+      "status": "página /monitoramento-24h/ existe no repo — verificar conteúdo"
+    },
+    {
+      "type": "artigo",
+      "title": "Quanto custa instalar câmeras de segurança no Rio de Janeiro?",
+      "target_keyword": "quanto custa instalar câmeras rio de janeiro",
+      "estimated_leads_gain": "5–10 leads/mês (intenção comercial alta)",
+      "priority": "médio",
+      "cta": "WhatsApp",
+      "status": "verificar se existe no blog/ — se não, criar"
+    }
+  ],
+  "new_pages": [
+    {
+      "url_sugerida": "/portaria-virtual-barra-da-tijuca/",
+      "tipo": "local",
+      "keyword_alvo": "portaria virtual barra da tijuca",
+      "h1_sugerido": "Portaria Virtual na Barra da Tijuca — Segurança 24h para seu Condomínio",
+      "justificativa": "Alta concentração de condomínios na Barra. /portaria-virtual/ e /portaria-virtual-condominio/ existem no repo mas falta a página local Barra. Combinação com blog recém-criado sobre portaria virtual gera cluster de conteúdo forte."
+    },
+    {
+      "url_sugerida": "/cameras-sao-goncalo/",
+      "tipo": "local",
+      "keyword_alvo": "câmeras de segurança são gonçalo",
+      "h1_sugerido": "Câmeras de Segurança em São Gonçalo — Instalação e Manutenção",
+      "justificativa": "São Gonçalo é o 2º município mais populoso do RJ — alto volume de busca, baixa concorrência específica. Já existe /cameras-niteroi/ no repo — São Gonçalo é adjacente e complementa a cobertura Leste."
+    },
+    {
+      "url_sugerida": "/cerca-eletrica-niteroi/",
+      "tipo": "local",
+      "keyword_alvo": "cerca elétrica niterói",
+      "h1_sugerido": "Instalação de Cerca Elétrica em Niterói",
+      "justificativa": "Niterói já tem página de câmeras no repo. Adicionar cerca elétrica + automação portão completa o cluster local de segurança para a cidade."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "Substituir placeholders: find santech/ -name '*.html' -exec sed -i 's/55219XXXXXXXX/5521NUMEROREAL/g' {} \\; (substitua pelo número real antes de rodar)",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Executar deploy COMPLETO na VPS via rsync: rsync -avz --delete santech/ root@148.230.79.134:/var/www/santech/ — ou via deploy.py com VPS_PASS preenchido",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Configurar Google Search Console: verificar propriedade de santechseguranca.com.br, submeter sitemap.xml (99 URLs), solicitar indexação manual das 5 páginas prioritárias",
+      "impact": "alto",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Criar/otimizar Google Business Profile: categoria 'Empresa de segurança eletrônica', serviços completos, 10+ fotos, link WhatsApp. Pedir reviews para clientes ativos.",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "local SEO",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Adicionar santechseguranca.com.br à allowlist de rede no ambiente Claude Code (code.claude.com → Environments → Network settings) para habilitar auditoria técnica ao vivo (SSL, TTFB, Core Web Vitals)",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Expandir deploy.py para incluir todas as 100 páginas (atualmente cobre apenas 3). Usar rsync como alternativa mais robusta.",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "técnico",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Criar GitHub Actions CI/CD para auto-deploy via SSH a cada push na branch main — eliminar a dependência de deploy manual e garantir que novas páginas sejam publicadas automaticamente.",
+      "impact": "alto",
+      "effort": "médio",
+      "category": "técnico",
+      "deadline": "1 mês"
+    },
+    {
+      "action": "Publicar 4 novas páginas criadas neste ciclo: /energia-solar-zona-oeste/, /manutencao-ar-condicionado-niteroi/, /blog/energia-solar-vale-a-pena-rio-de-janeiro/, /blog/como-funciona-portaria-virtual-condominio/",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "conteúdo",
+      "deadline": "imediato (após deploy)"
+    },
+    {
+      "action": "Criar 3 novas páginas recomendadas: /portaria-virtual-barra-da-tijuca/, /cameras-sao-goncalo/, /cerca-eletrica-niteroi/",
+      "impact": "médio",
+      "effort": "médio",
+      "category": "conteúdo",
+      "deadline": "1 semana"
+    },
+    {
+      "action": "Cadastrar Santech em diretórios: oHub, Apontador, Infobel, Reclame Aqui, Guia Mais — NAP idêntico ao GBP em todos",
+      "impact": "médio",
+      "effort": "baixo",
+      "category": "local SEO",
+      "deadline": "1 mês"
+    }
+  ],
+  "competitors": [
+    {
+      "domain": "segurancaeletronicarj.com.br",
+      "keywords_overlap": ["câmeras de segurança Rio de Janeiro", "CFTV residencial RJ", "segurança eletrônica RJ"],
+      "google_maps_reviews": "não verificável neste ambiente",
+      "content_gap": "Santech tem cobertura de ar-condicionado, energia solar e eletroposto — que concorrentes de segurança pura não têm",
+      "has_local_pages": true,
+      "threat_level": "alto"
+    },
+    {
+      "domain": "simastechnology.com.br",
+      "keywords_overlap": ["câmeras segurança rj", "instalação câmeras rio de janeiro", "cftv rj"],
+      "google_maps_reviews": "não verificável",
+      "content_gap": "Foco corporativo — Santech pode dominar mercado residencial e zona oeste",
+      "has_local_pages": false,
+      "threat_level": "médio"
+    },
+    {
+      "domain": "tech-servcom.com.br",
+      "keywords_overlap": ["empresa cftv rj", "câmeras segurança rio de janeiro"],
+      "google_maps_reviews": "não verificável",
+      "content_gap": "Site possivelmente desatualizado sem estratégia mobile-first",
+      "has_local_pages": false,
+      "threat_level": "médio"
+    },
+    {
+      "domain": "systemframe.com.br",
+      "keywords_overlap": ["instalação cftv ip rio de janeiro", "cftv lapa", "cftv centro rio"],
+      "google_maps_reviews": "não verificável",
+      "content_gap": "JÁ USA estratégia de páginas por bairro (/onde-atuamos/). É o concorrente mais próximo da estratégia da Santech.",
+      "has_local_pages": true,
+      "threat_level": "alto"
+    },
+    {
+      "domain": "brasilwlan.com.br",
+      "keywords_overlap": ["câmeras de segurança rj", "instalação câmeras", "cftv rj"],
+      "google_maps_reviews": "não verificável",
+      "content_gap": "Foco em Centro RJ — Zona Oeste e Barra desatendidas",
+      "has_local_pages": false,
+      "threat_level": "médio"
+    }
+  ],
+  "estimated_leads_gain": {
+    "30_days": "0 sem deploy. Se deploy hoje: 2–5 leads/mês nos primeiros 30 dias.",
+    "90_days": "Se deploy + GSC + GBP nos próximos 7 dias: 25–60 leads/mês",
+    "6_months": "Com 100 páginas indexadas + GBP ativo: 100–250 leads/mês",
+    "assumptions": "CTR 2–4% posições 10–20 (primeiros 90 dias). CTR 5–8% posições 3–7 (após 6 meses com domínio authority crescendo). Conversão WhatsApp 8–12%. Volume total keywords monitoradas: ~90k buscas/mês no RJ. Ticket médio: câmeras R$1.800, solar R$25.000, ar-cond R$800, eletroposto R$3.500. ALERTA: cada semana sem deploy reduz projeção de 90 dias em ~15–20%."
+  }
+}
