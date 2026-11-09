@@ -1,0 +1,82 @@
+{
+  "timestamp": "2026-11-09T06:00:00-03:00",
+  "domain": "bronks.ia.br",
+  "ciclo": 41,
+  "seo_score": 23,
+  "ranking_potential": "médio-alto",
+  "nota_metodologica": "Auditoria executada via WebSearch (domínio fora da allowlist de rede). site:bronks.ia.br retornou 1 resultado — homepage indexada. MELHORA em relação a ciclos anteriores onde retornava 0 resultados.",
+  "delta_vs_ciclo_anterior": {
+    "new_pages_added": 3,
+    "pages_total_now": 90,
+    "pages_indexed_now": 1,
+    "pages_indexed_before": 0,
+    "seo_score_delta": 1,
+    "note": "Homepage indexada pelo Google confirmada neste ciclo. 3 novas páginas adicionadas ao repositório."
+  },
+  "new_pages_this_cycle": [
+    {
+      "url": "/consultoria-ia-maceio/",
+      "type": "local",
+      "keyword_alvo": "consultoria IA Maceió",
+      "estimated_volume": "50-200/mês",
+      "difficulty": "muito baixa",
+      "status_deploy": "não deployada"
+    },
+    {
+      "url": "/ia-para-turismo/",
+      "type": "serviço",
+      "keyword_alvo": "IA para turismo e hotelaria",
+      "estimated_volume": "300-900/mês",
+      "difficulty": "baixa",
+      "status_deploy": "não deployada"
+    },
+    {
+      "url": "/blog/brasil-lidera-ia-agentica-america-latina/",
+      "type": "blog",
+      "keyword_alvo": "brasil IA agêntica liderança América Latina 2026",
+      "estimated_volume": "200-600/mês",
+      "difficulty": "baixa",
+      "status_deploy": "não deployada"
+    }
+  ],
+  "indexed_pages": [
+    {
+      "url": "https://bronks.ia.br/",
+      "title": "Bronks IA — Agentes de IA, Automação Inteligente e RAG para Empresas",
+      "status": "INDEXADA",
+      "note": "Confirmado via site:bronks.ia.br em WebSearch ciclo #41. Contém contato, depoimentos de clientes. MELHORA em relação a ciclos anteriores."
+    }
+  ],
+  "market_context": {
+    "brasil_ia_market": "Brasil concentra 41,7% do mercado de IA da América Latina — US$ 3,4 bilhões (IDC 2026)",
+    "agentic_adoption": "18% de adoção de IA agêntica no Brasil — acima da média global de 13% (BCG 2026)",
+    "org_adoption": "96% das organizações globais já usam alguma forma de agente de IA (ServiceNow 2026)",
+    "window": "Early adopters ainda têm janela de 12-18 meses de vantagem competitiva"
+  },
+  "coverage_summary": {
+    "cidades_cobertas": 18,
+    "setores_verticais": 18,
+    "blog_articles": 37,
+    "landing_pages_servico": 8
+  },
+  "priority_actions": [
+    {
+      "action": "Deploy completo na VPS da máquina local: rsync -avz bronks-ia-br/ root@148.230.79.134:/var/www/bronks.ia.br/",
+      "impact": "crítico",
+      "effort": "baixo",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Google Search Console — verificar propriedade bronks.ia.br, submeter sitemap (91 URLs), solicitar indexação manual das 10 páginas prioritárias",
+      "impact": "alto",
+      "effort": "baixo",
+      "deadline": "imediato após deploy"
+    },
+    {
+      "action": "Criar perfil LinkedIn da empresa Bronks IA com link para bronks.ia.br (backlink de alta autoridade que acelera indexação)",
+      "impact": "alto",
+      "effort": "baixo",
+      "deadline": "1 semana"
+    }
+  ]
+}

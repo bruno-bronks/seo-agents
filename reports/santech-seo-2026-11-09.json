@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-11-09T06:00:00-03:00",
+  "domain": "santechseguranca.com.br",
+  "ciclo": 41,
+  "seo_score": 23,
+  "sre_score": 5,
+  "local_rank_score": 12,
+  "ranking_potential": "alto",
+  "nota_metodologica": "Auditoria executada sem acesso direto ao site (domínio e IP 148.230.79.134 fora da allowlist de rede do ambiente cloud). site:santechseguranca.com.br confirmado com 0 resultados no Google (10º ciclo consecutivo). Dados on-page baseados nos arquivos do repositório (102 arquivos HTML). Dados de indexação e concorrência via WebSearch.",
+  "delta_vs_ciclo_anterior": {
+    "new_pages_added": 3,
+    "pages_total_now": 102,
+    "pages_indexed_now": 0,
+    "pages_indexed_before": 0,
+    "seo_score_delta": 1,
+    "sre_score_delta": 0,
+    "local_rank_score_delta": 0,
+    "note": "Incremento de 3 novas páginas no repositório (+cerca-eletrica-niteroi, +portaria-virtual-zona-sul, +blog/quanto-custa-energia-solar-rj). Sitemap atualizado para 102 URLs. Zero avanço em indexação por deploy pendente."
+  },
+  "new_pages_this_cycle": [
+    {
+      "url": "/cerca-eletrica-niteroi/",
+      "type": "local",
+      "keyword_alvo": "cerca elétrica Niterói",
+      "estimated_volume": "500-1200/mês",
+      "difficulty": "baixa",
+      "status_deploy": "não deployada"
+    },
+    {
+      "url": "/portaria-virtual-zona-sul/",
+      "type": "local",
+      "keyword_alvo": "portaria virtual Zona Sul Rio de Janeiro",
+      "estimated_volume": "1200-2800/mês",
+      "difficulty": "média",
+      "status_deploy": "não deployada"
+    },
+    {
+      "url": "/blog/quanto-custa-energia-solar-rj/",
+      "type": "blog",
+      "keyword_alvo": "quanto custa energia solar Rio de Janeiro",
+      "estimated_volume": "5000-12000/mês",
+      "difficulty": "média",
+      "status_deploy": "não deployada"
+    }
+  ],
+  "indexed_pages": [
+    {
+      "url": "santechseguranca.com.br/*",
+      "status": "não indexada",
+      "note": "VERIFICADO — site:santechseguranca.com.br retornou 0 resultados no Google. Confirmado por 10 ciclos consecutivos. Causa raiz: deploy não executado na VPS 148.230.79.134."
+    }
+  ],
+  "kpis_snapshot": {
+    "pages_in_repository": 102,
+    "pages_deployed_to_vps": 0,
+    "pages_indexed_google": 0,
+    "sitemap_urls": 102,
+    "whatsapp_placeholder_active": true,
+    "deploy_script_exists": true,
+    "semanas_sem_indexacao": 10
+  },
+  "market_context": {
+    "rio_cameras_investment": "Prefeitura do Rio investiu R$1,1 bilhão em segurança em 2026 com 10 mil câmeras — contexto favorável para demanda privada",
+    "civitas_integration": "Câmara Municipal aprovou integração de câmeras privadas ao Civitas — oportunidade de serviço especializado",
+    "solar_market": "Instalações de painéis solares dobraram no RJ em 12 meses — mercado em expansão acelerada"
+  },
+  "priority_actions": [
+    {
+      "action": "Substituir placeholders de WhatsApp/telefone e executar deploy COMPLETO na VPS",
+      "command": "find santech/ -name '*.html' -exec sed -i 's/55219XXXXXXXX/5521SEUTELEFONE/g' {} \\; && rsync -avz --delete santech/ root@148.230.79.134:/var/www/santech/",
+      "impact": "crítico",
+      "effort": "baixo",
+      "deadline": "imediato"
+    },
+    {
+      "action": "Configurar Google Search Console — verificar propriedade, submeter sitemap (102 URLs)",
+      "impact": "alto",
+      "effort": "baixo",
+      "deadline": "imediato após deploy"
+    },
+    {
+      "action": "Criar/otimizar Google Business Profile com 10+ fotos, serviços completos, horário e WhatsApp",
+      "impact": "alto",
+      "effort": "médio",
+      "deadline": "1 semana após deploy"
+    }
+  ]
+}
