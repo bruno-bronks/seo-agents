@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bronks — Agentes de IA e Automação Empresarial com Inteligência Artificial</title>
+  <meta name="description" content="Bronks transforma sua empresa com agentes de IA, RAG empresarial e automação inteligente. Consultoria especializada em IA para PMEs e grandes empresas. Agende uma consultoria gratuita.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bronks.ia.br/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bronks — Agentes de IA e Automação Empresarial">
+  <meta property="og:description" content="Transforme sua empresa com agentes de IA, RAG empresarial e automação inteligente. Consultoria especializada para PMEs e grandes corporações.">
+  <meta property="og:url" content="https://bronks.ia.br/">
+  <meta property="og:site_name" content="Bronks">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bronks — Agentes de IA e Automação Empresarial">
+  <meta name="twitter:description" content="Transforme sua empresa com agentes de IA e automação inteligente. Consultoria gratuita disponível.">
+
+  <!-- Schema.org Organization + Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bronks.ia.br/#organization",
+        "name": "Bronks",
+        "url": "https://bronks.ia.br",
+        "logo": "https://bronks.ia.br/logo.png",
+        "description": "Consultoria especializada em agentes de IA, automação empresarial e RAG para empresas brasileiras.",
+        "foundingDate": "2024",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Brasil"
+        },
+        "knowsAbout": ["Agentes de IA", "Automação com IA", "RAG Empresarial", "Consultoria em Inteligência Artificial", "LLM para Negócios"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bronks.ia.br/#website",
+        "url": "https://bronks.ia.br",
+        "name": "Bronks",
+        "publisher": {"@id": "https://bronks.ia.br/#organization"}
+      },
+      {
+        "@type": "Service",
+        "@id": "https://bronks.ia.br/#service-agentes-ia",
+        "name": "Agentes de IA para Empresas",
+        "description": "Desenvolvimento e implantação de agentes de IA autônomos para automatizar processos empresariais complexos.",
+        "provider": {"@id": "https://bronks.ia.br/#organization"},
+        "areaServed": {"@type": "Country", "name": "Brasil"},
+        "serviceType": "Consultoria em Inteligência Artificial"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://bronks.ia.br/#service-rag",
+        "name": "RAG Empresarial",
+        "description": "Implementação de Retrieval-Augmented Generation para bases de conhecimento corporativas, integração com documentos internos e dados proprietários.",
+        "provider": {"@id": "https://bronks.ia.br/#organization"},
+        "serviceType": "Inteligência Artificial Aplicada"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #0A0E1A;
+      --accent: #6C63FF;
+      --accent2: #00D4FF;
+      --text: #E8EAF0;
+      --muted: #9AA0B4;
+      --card-bg: #12182A;
+      --border: #1E2740;
+      --white: #FFFFFF;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--primary); color: var(--text); line-height: 1.6; }
+
+    /* Nav */
+    nav { background: rgba(10,14,26,0.95); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border); padding: 0 24px; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-size: 1.5rem; font-weight: 800; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--white); }
+    .btn-nav { background: var(--accent); color: var(--white) !important; padding: 8px 20px; border-radius: 8px; font-weight: 600; }
+    .btn-nav:hover { background: #5a52e0 !important; }
+
+    /* Hero */
+    .hero { min-height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 80px 24px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%, rgba(108,99,255,0.15) 0%, transparent 60%); }
+    .hero-content { max-width: 800px; position: relative; }
+    .badge { display: inline-block; background: rgba(108,99,255,0.15); border: 1px solid rgba(108,99,255,0.3); color: var(--accent); padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 24px; }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.1; margin-bottom: 24px; }
+    h1 span { background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.2rem; color: var(--muted); max-width: 600px; margin: 0 auto 40px; }
+    .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: var(--white); padding: 14px 32px; border-radius: 10px; font-size: 1rem; font-weight: 700; text-decoration: none; display: inline-block; transition: transform 0.2s, box-shadow 0.2s; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(108,99,255,0.4); }
+    .btn-secondary { background: transparent; border: 1px solid var(--border); color: var(--text); padding: 14px 32px; border-radius: 10px; font-size: 1rem; font-weight: 600; text-decoration: none; display: inline-block; transition: border-color 0.2s; }
+    .btn-secondary:hover { border-color: var(--accent); }
+
+    /* Stats */
+    .stats { background: var(--card-bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 48px 24px; }
+    .stats-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center; }
+    .stat-num { font-size: 2.5rem; font-weight: 900; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .stat-label { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+
+    /* Sections */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-title { text-align: center; margin-bottom: 56px; }
+    .section-title h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; margin-bottom: 12px; }
+    .section-title p { color: var(--muted); max-width: 600px; margin: 0 auto; }
+
+    /* Services Grid */
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .service-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 32px; transition: border-color 0.2s, transform 0.2s; }
+    .service-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+    .service-icon { font-size: 2rem; margin-bottom: 16px; }
+    .service-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+    .service-card p { color: var(--muted); font-size: 0.95rem; }
+
+    /* Process */
+    .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .step { text-align: center; }
+    .step-num { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.1rem; margin: 0 auto 16px; }
+    .step h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .step p { color: var(--muted); font-size: 0.9rem; }
+
+    /* FAQ */
+    .faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+    .faq-item { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+    .faq-item h3 { font-size: 1rem; font-weight: 700; margin-bottom: 10px; }
+    .faq-item p { color: var(--muted); font-size: 0.95rem; }
+
+    /* CTA */
+    .cta-section { background: var(--card-bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .cta-box { text-align: center; max-width: 700px; margin: 0 auto; }
+    .cta-box h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 16px; }
+    .cta-box p { color: var(--muted); margin-bottom: 32px; }
+
+    /* Footer */
+    footer { background: var(--card-bg); border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; color: var(--muted); font-size: 0.9rem; }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="logo">bronks</span>
+    <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#como-funciona">Como Funciona</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contato" class="btn-nav">Consultoria Gratuita</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">🤖 Agentes de IA para Empresas Brasileiras</span>
+      <h1>Automatize sua empresa com <span>Agentes de IA</span> que realmente trabalham</h1>
+      <p>Da consultoria ao deploy: criamos agentes autônomos, sistemas RAG e automações com IA que reduzem custos operacionais e aceleram decisões.</p>
+      <div class="hero-btns">
+        <a href="#contato" class="btn-primary">Agendar Consultoria Gratuita</a>
+        <a href="#servicos" class="btn-secondary">Ver Serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div>
+        <div class="stat-num">40+</div>
+        <div class="stat-label">Projetos de IA entregues</div>
+      </div>
+      <div>
+        <div class="stat-num">60%</div>
+        <div class="stat-label">Redução média em tarefas manuais</div>
+      </div>
+      <div>
+        <div class="stat-num">3x</div>
+        <div class="stat-label">Velocidade de resposta ao cliente</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Dados em infraestrutura controlada</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <div class="section-inner">
+      <div class="section-title">
+        <h2>Nossas Soluções em Inteligência Artificial</h2>
+        <p>Da estratégia à implementação, construímos IA que funciona no contexto real do seu negócio.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>Agentes de IA Autônomos</h3>
+          <p>Agentes que executam tarefas complexas de ponta a ponta: pesquisa, análise, escrita, envio de e-mails, atualização de sistemas — sem intervenção humana para cada etapa.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📚</div>
+          <h3>RAG Empresarial</h3>
+          <p>Faça seu time conversar com os documentos da empresa: contratos, manuais, bases de dados, planilhas. Retrieval-Augmented Generation com seus dados privados, hospedado na sua infra.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Automação com IA</h3>
+          <p>Automatize fluxos que hoje dependem de pessoas: triagem de leads, respostas a clientes, geração de relatórios, classificação de documentos e integração entre sistemas.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔗</div>
+          <h3>Integração de LLMs</h3>
+          <p>Integramos modelos como GPT-4, Claude, Gemini e modelos open-source (LLaMA, Mistral) nos seus sistemas legados, ERPs e plataformas de comunicação.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Consultoria Estratégica em IA</h3>
+          <p>Mapeamos os processos com maior ROI para automação com IA, priorizamos iniciativas e criamos o roadmap de transformação digital para sua empresa.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>IA Privada e On-Premise</h3>
+          <p>Para empresas com restrições de compliance (financeiras, jurídicas, saúde): implementamos LLMs privados em infraestrutura própria, sem dados saindo da empresa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section id="como-funciona" style="background: var(--card-bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section-inner">
+      <div class="section-title">
+        <h2>Como Funciona a Nossa Consultoria</h2>
+        <p>Um processo claro e transparente, do diagnóstico ao resultado mensurado.</p>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Diagnóstico Gratuito</h3>
+          <p>Mapeamos seus processos e identificamos onde IA gera maior impacto.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Proposta e Roadmap</h3>
+          <p>Apresentamos o plano técnico, estimativas de ROI e cronograma de entrega.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Desenvolvimento e Teste</h3>
+          <p>Construímos o agente ou sistema em sprints iterativos com validação do seu time.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Deploy e Suporte</h3>
+          <p>Implantamos em produção e acompanhamos a operação com suporte contínuo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="section-inner">
+      <div class="section-title">
+        <h2>Perguntas Frequentes</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>O que é um agente de IA e como ele se diferencia de um chatbot?</h3>
+          <p>Um agente de IA executa tarefas de forma autônoma, tomando decisões e usando ferramentas (APIs, bancos de dados, e-mails) para atingir um objetivo. Um chatbot apenas responde perguntas. Nossos agentes trabalham enquanto você dorme: processam pedidos, atualizam sistemas, geram relatórios e enviam respostas automáticas.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Quanto tempo leva para implementar um agente de IA?</h3>
+          <p>Depende da complexidade. Um agente de automação simples pode ser entregue em 2 a 3 semanas. Projetos de RAG empresarial com integração de múltiplas fontes de dados geralmente levam de 4 a 8 semanas. Começamos com um MVP funcional rápido e iteramos.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Meus dados ficam seguros? A IA acessa documentos confidenciais?</h3>
+          <p>Segurança é prioridade. Para dados sensíveis, implementamos tudo em infraestrutura própria da empresa (on-premise ou cloud privada). Os dados nunca saem do seu ambiente. Para dados não sensíveis, usamos APIs dos principais provedores com contratos de privacidade adequados.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Preciso ter equipe técnica interna para contratar a Bronks?</h3>
+          <p>Não. Atendemos empresas sem time de TI próprio. Cuidamos de toda a infraestrutura, configuração e manutenção. Para empresas com equipe técnica, fazemos transferência de conhecimento para que o time interno possa operar e evoluir as soluções.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Qual é o investimento mínimo para começar?</h3>
+          <p>A consultoria diagnóstica inicial é gratuita. Projetos de automação começam a partir de R$ 8.000 para soluções pontuais. Projetos mais robustos de RAG e agentes complexos têm orçamento personalizado conforme escopo. Entre em contato para uma estimativa sem compromisso.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Vocês trabalham com empresas de qualquer setor?</h3>
+          <p>Sim. Já implementamos soluções para RH, jurídico, financeiro, e-commerce, saúde, logística e indústria. Cada setor tem especificidades que respeitamos, especialmente em relação a compliance, LGPD e regulações setoriais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contato" class="cta-section">
+    <div class="section-inner">
+      <div class="cta-box">
+        <h2>Pronto para transformar sua empresa com Inteligência Artificial?</h2>
+        <p>Agende uma consultoria gratuita de 45 minutos. Sem compromisso, sem pitch de vendas — apenas uma conversa honesta sobre o que a IA pode (e não pode) fazer pelo seu negócio.</p>
+        <a href="mailto:contato@bronks.ia.br?subject=Consultoria%20Gratuita%20em%20IA&body=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consultoria%20gratuita." class="btn-primary" style="font-size:1.1rem; padding: 16px 40px;">
+          Agendar Consultoria Gratuita →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Bronks — Agentes de IA e Automação Empresarial | <a href="https://bronks.ia.br">bronks.ia.br</a></p>
+  <p style="margin-top:8px;"><a href="/politica-de-privacidade">Política de Privacidade</a> · <a href="/termos-de-uso">Termos de Uso</a></p>
+</footer>
+
+</body>
+</html>
