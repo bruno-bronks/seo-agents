@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA para Saúde Complementar | Operadoras e Planos | Bronks</title>
+  <meta name="description" content="Inteligência artificial para operadoras de planos de saúde: redução de glosas, triagem automática, pré-autorização inteligente e análise de sinistralidade. Agende diagnóstico gratuito.">
+  <link rel="canonical" href="https://bronks.ia.br/ia-para-saude-complementar/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IA para Saúde Complementar | Operadoras e Planos | Bronks">
+  <meta property="og:description" content="Reduza glosas, automatize pré-autorizações e controle sinistralidade com IA. Soluções para operadoras de planos de saúde e hospitais. Diagnóstico gratuito.">
+  <meta property="og:url" content="https://bronks.ia.br/ia-para-saude-complementar/">
+  <meta property="og:site_name" content="Bronks | IA para Empresas">
+  <meta property="og:locale" content="pt_BR">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Inteligência Artificial para Saúde Complementar",
+    "description": "Soluções de IA para operadoras de planos de saúde, seguradoras de saúde e hospitais: automação de pré-autorização, redução de glosas, triagem inteligente e análise preditiva de sinistralidade.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Bronks",
+      "url": "https://bronks.ia.br",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    },
+    "serviceType": "Consultoria em Inteligência Artificial",
+    "areaServed": {"@type": "Country", "name": "Brasil"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://bronks.ia.br/"},
+      {"@type": "ListItem", "position": 2, "name": "Setores", "item": "https://bronks.ia.br/ia-para-saude/"},
+      {"@type": "ListItem", "position": 3, "name": "Saúde Complementar", "item": "https://bronks.ia.br/ia-para-saude-complementar/"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como a IA reduz glosas em planos de saúde?",
+        "acceptedAnswer": {"@type": "Answer", "text": "O agente de IA analisa cada guia de TISS antes do envio à operadora, comparando o código do procedimento com o diagnóstico, a CID e o histórico do paciente. Erros de codificação, incompatibilidades e itens sujeitos a glosa são identificados automaticamente, com sugestão de correção em tempo real. Operadoras que implantaram esse processo relatam redução de 40–65% no índice de glosas."}
+      },
+      {
+        "@type": "Question",
+        "name": "É possível automatizar a pré-autorização de procedimentos?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Sim. Agentes de IA analisam o pedido médico, o histórico do beneficiário, as diretrizes clínicas e as coberturas contratuais para autorizar automaticamente procedimentos de baixo risco (geralmente 60–70% das solicitações). Procedimentos complexos são encaminhados ao auditor médico com um resumo gerado pela IA, reduzindo o tempo de análise de dias para horas."}
+      },
+      {
+        "@type": "Question",
+        "name": "Como a IA ajuda no controle da sinistralidade?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Modelos preditivos analisam o histórico de utilização, perfil epidemiológico, dados de crônicas e padrões de consumo para identificar beneficiários com alta probabilidade de internação ou alto custo nos próximos 90–180 dias. Com essa previsão, a operadora pode acionar programas de gestão de saúde preventiva antes do sinistro acontecer, reduzindo custos e melhorando desfechos."}
+      },
+      {
+        "@type": "Question",
+        "name": "A integração funciona com os sistemas de gestão já usados pelas operadoras?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Sim. Os agentes da Bronks se integram via API com os principais sistemas de gestão de operadoras do mercado brasileiro (Tasy, MV, Totvs Saúde, Easy Health, entre outros), além de conectar diretamente com o padrão TISS da ANS. A integração é feita sem substituir os sistemas existentes — a IA actua como camada de inteligência sobre a infraestrutura que a operadora já tem."}
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para implantar IA em uma operadora de saúde?",
+        "acceptedAnswer": {"@type": "Answer", "text": "O piloto inicial, cobrindo um ou dois processos prioritários (como pré-autorização ou triagem de glosas), leva entre 6 e 12 semanas do kickoff até o go-live. A implantação completa, com todos os módulos ativos e equipe treinada, leva de 4 a 9 meses dependendo do porte da operadora e do escopo contratado."}
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root { --primary: #0a1f4e; --accent: #2563eb; --text: #1a1a1a; --muted: #555; --bg-light: #f0f4ff; --border: #d1daf5; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--text); line-height: 1.65; background: #fff; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: var(--primary); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    header .logo { color: #fff; font-size: 1.5rem; font-weight: 800; letter-spacing: -0.5px; }
+    header .logo span { color: #60a5fa; }
+    header nav a { color: #93c5fd; font-size: 0.9rem; margin-left: 18px; }
+    .hero { background: linear-gradient(135deg, var(--primary) 55%, #1e3a8a); color: #fff; padding: 64px 24px 52px; text-align: center; }
+    .hero .kicker { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: #93c5fd; margin-bottom: 14px; font-weight: 600; }
+    .hero h1 { font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.2; margin-bottom: 18px; }
+    .hero p { font-size: 1.1rem; color: #bfdbfe; max-width: 650px; margin: 0 auto 32px; }
+    .btn-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-size: 1.05rem; font-weight: 700; padding: 15px 32px; border-radius: 8px; transition: background 0.2s, transform 0.2s; }
+    .btn-cta:hover { background: #1d4ed8; transform: translateY(-2px); text-decoration: none; color: #fff; }
+    .metrics { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px 24px; background: var(--bg-light); }
+    .metric { text-align: center; min-width: 160px; }
+    .metric .num { font-size: 2.2rem; font-weight: 800; color: var(--primary); line-height: 1; }
+    .metric .label { font-size: 0.9rem; color: var(--muted); margin-top: 4px; }
+    section { padding: 60px 24px; max-width: 920px; margin: 0 auto; }
+    section h2 { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 20px; }
+    section p, section li { color: var(--muted); font-size: 1.05rem; margin-bottom: 14px; }
+    ul, ol { padding-left: 1.4em; }
+    li { margin-bottom: 10px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 24px; }
+    .card { background: var(--bg-light); border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
+    .card h3 { font-size: 1.05rem; color: var(--primary); margin-bottom: 10px; font-weight: 700; }
+    .card p { font-size: 0.97rem; color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.98rem; }
+    th { background: var(--primary); color: #fff; padding: 10px 14px; text-align: left; }
+    td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--muted); }
+    tr:nth-child(even) td { background: var(--bg-light); }
+    .highlight { color: #16a34a; font-weight: 700; }
+    .faq { max-width: 920px; margin: 0 auto; padding: 60px 24px; }
+    .faq h2 { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 32px; }
+    details { border-bottom: 1px solid var(--border); padding: 16px 0; }
+    summary { font-size: 1.05rem; font-weight: 600; cursor: pointer; color: var(--text); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    summary::after { content: '+'; font-size: 1.3rem; color: var(--accent); }
+    details[open] summary::after { content: '−'; }
+    details p { padding-top: 12px; color: var(--muted); font-size: 1rem; line-height: 1.7; }
+    .cta-band { background: var(--primary); color: #fff; text-align: center; padding: 56px 24px; }
+    .cta-band h2 { font-size: 1.7rem; font-weight: 800; margin-bottom: 14px; }
+    .cta-band p { color: #bfdbfe; margin-bottom: 28px; font-size: 1.05rem; max-width: 580px; margin-left: auto; margin-right: auto; }
+    .breadcrumb { max-width: 920px; margin: 20px auto 0; padding: 0 24px; font-size: 0.88rem; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); }
+    footer { background: #0d1424; color: #94a3b8; text-align: center; padding: 24px; font-size: 0.88rem; }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.5rem; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Bronks<span>.ia.br</span></div>
+  <nav>
+    <a href="https://bronks.ia.br/">Início</a>
+    <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a>
+    <a href="https://bronks.ia.br/consultoria-ia-rio-de-janeiro/">Consultoria</a>
+    <a href="https://bronks.ia.br/contato/">Contato</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="https://bronks.ia.br/">Início</a> › <a href="https://bronks.ia.br/ia-para-saude/">Saúde</a> › Saúde Complementar
+</div>
+
+<div class="hero">
+  <div class="kicker">Saúde Complementar + IA</div>
+  <h1>Inteligência Artificial para Operadoras de Planos de Saúde</h1>
+  <p>Reduza glosas em até 60%, automatize pré-autorizações e controle sinistralidade com agentes de IA treinados para o setor de saúde suplementar.</p>
+  <a href="https://bronks.ia.br/contato/" class="btn-cta">Agendar diagnóstico gratuito</a>
+</div>
+
+<div class="metrics">
+  <div class="metric">
+    <div class="num">60%</div>
+    <div class="label">redução de glosas<br>em média</div>
+  </div>
+  <div class="metric">
+    <div class="num">70%</div>
+    <div class="label">das pré-autorizações<br>automatizadas</div>
+  </div>
+  <div class="metric">
+    <div class="num">8–12 sem</div>
+    <div class="label">do kickoff ao<br>piloto em produção</div>
+  </div>
+  <div class="metric">
+    <div class="num">R$ 4–8 bi</div>
+    <div class="label">em glosas anuais<br>no Brasil (ANS)</div>
+  </div>
+</div>
+
+<section>
+  <h2>O Problema que a Bronks Resolve</h2>
+  <p>O setor de saúde suplementar brasileiro convive com uma perda crônica e evitável: só em 2025, as operadoras glosaram mais de R$ 4 bilhões em contas hospitalares, enquanto hospitais e clínicas recorrem manualmente a um volume que sobrecarrega as equipes de faturamento de ambos os lados. Ao mesmo tempo, a pré-autorização manual trava o fluxo assistencial — beneficiários esperam horas ou dias por autorizações que poderiam ser emitidas em segundos com base em critérios objetivos.</p>
+  <p>A sinistralidade disparou no pós-pandemia e as operadoras enfrentam dificuldade em agir de forma preventiva: os dados existem, mas ninguém tem capacidade operacional para analisar 10 ou 20 mil vidas em busca dos 300 que concentram os maiores riscos para os próximos seis meses.</p>
+  <p>A Bronks aplica agentes de IA especializados em saúde suplementar para resolver cada um desses problemas de forma integrada, sem substituir os sistemas atuais e com resultados mensuráveis desde o primeiro piloto.</p>
+</section>
+
+<section>
+  <h2>Soluções de IA para Saúde Suplementar</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Auditor de Glosas</h3>
+      <p>Analisa cada guia de TISS antes do envio, identifica incompatibilidades CID/procedimento, itens divergentes do rol ANS e erros de codificação. Redução de 40–65% no índice de glosas desde o primeiro mês.</p>
+    </div>
+    <div class="card">
+      <h3>Pré-Autorização Inteligente</h3>
+      <p>Autoriza automaticamente procedimentos de baixo risco com base em diretrizes clínicas, histórico do beneficiário e cobertura contratual. 60–70% das solicitações liberadas sem interveniência humana.</p>
+    </div>
+    <div class="card">
+      <h3>Gestão Preditiva de Sinistralidade</h3>
+      <p>Identifica beneficiários com alto risco de internação ou custo elevado nos próximos 90–180 dias. Aciona programas de saúde preventiva antes do sinistro, reduzindo custos e melhorando desfechos.</p>
+    </div>
+    <div class="card">
+      <h3>Triagem de Urgência e Emergência</h3>
+      <p>Agente de triagem via WhatsApp ou app classifica a urgência do atendimento, orienta o beneficiário para o serviço adequado e reduz internações desnecessárias em Pronto-Socorros.</p>
+    </div>
+    <div class="card">
+      <h3>Atendimento ao Beneficiário 24h</h3>
+      <p>Assistente virtual treinado no manual do beneficiário, rede credenciada e regras de cobertura. Responde dúvidas, emite segunda via de carteirinha, agenda consultas e abre recursos de glosa — sem fila.</p>
+    </div>
+    <div class="card">
+      <h3>Análise de Contestações e Recursos</h3>
+      <p>Automatiza a triagem e resposta de recursos de glosa, priorizando por valor e prazo, gerando argumentação baseada em protocolos ANS e histórico de julgamentos.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Resultados Reais: O que Muda com IA em Operadoras</h2>
+  <table>
+    <thead>
+      <tr><th>Processo</th><th>Antes da IA</th><th>Depois da IA</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Tempo médio de pré-autorização</td><td>24–72 horas</td><td class="highlight">2–8 minutos</td></tr>
+      <tr><td>Índice de glosas recebidas</td><td>12–18% das contas</td><td class="highlight">4–7% (redução de ~60%)</td></tr>
+      <tr><td>Custo operacional de auditoria</td><td>Equipe de 8–15 auditores</td><td class="highlight">Equipe de 2–4 auditores (revisão exceções)</td></tr>
+      <tr><td>Identificação de alto risco</td><td>Reativa (após sinistro)</td><td class="highlight">Preditiva (90–180 dias de antecedência)</td></tr>
+      <tr><td>Tempo de resposta ao beneficiário</td><td>45 min (call center)</td><td class="highlight">Imediato (assistente IA 24h)</td></tr>
+      <tr><td>Taxa de resolução no primeiro contato</td><td>55–65%</td><td class="highlight">82–90%</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Como Funciona a Implantação</h2>
+  <ol>
+    <li><strong>Diagnóstico gratuito (semanas 1–2):</strong> mapeamos os processos com maior impacto operacional e financeiro na sua operadora — glosas, pré-autorização ou sinistralidade — e definimos o escopo do piloto.</li>
+    <li><strong>Integração de dados (semanas 3–5):</strong> conectamos os agentes de IA ao seu sistema de gestão (Tasy, MV, Totvs Saúde ou outro) via API, sem migração de dados. Os dados ficam na sua infraestrutura.</li>
+    <li><strong>Piloto controlado (semanas 6–10):</strong> o agente roda em paralelo com o processo atual. Você compara os resultados lado a lado antes de qualquer mudança operacional.</li>
+    <li><strong>Go-live e treinamento (semanas 11–12):</strong> implantação completa do piloto com treinamento da equipe. Métricas de redução de glosa e tempo de autorização aferidas na primeira semana.</li>
+    <li><strong>Expansão modular:</strong> após o piloto validado, expandimos para outros processos — triagem, sinistralidade, atendimento — no ritmo da sua operação.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Para Quem É Esta Solução</h2>
+  <p>A Bronks atende operadoras de planos de saúde, seguradoras de saúde, hospitais e redes de clínicas que buscam eficiência operacional e controle de custos sem abrir mão da qualidade assistencial:</p>
+  <ul>
+    <li>Operadoras de médio e grande porte (5.000 a 500.000 beneficiários)</li>
+    <li>Administradoras de benefícios (AB) que gerenciam múltiplos contratos</li>
+    <li>Cooperativas médicas com gestão própria de operadora</li>
+    <li>Hospitais que processam grandes volumes de guias TISS</li>
+    <li>Clínicas e laboratórios com alto volume de pré-autorizações</li>
+    <li>Seguradoras de saúde em busca de automação de back-office</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Por que a Bronks para Saúde Complementar</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Especialização Setorial</h3>
+      <p>Nossos agentes são treinados com as regulamentações ANS, padrão TISS, rol de procedimentos e fluxos operacionais específicos do setor. Não é um chatbot genérico adaptado — é IA construída para saúde suplementar.</p>
+    </div>
+    <div class="card">
+      <h3>Integração sem Disrupção</h3>
+      <p>Conectamos à sua infraestrutura existente sem substituir sistemas. Sua equipe não precisa aprender uma nova plataforma — a IA trabalha nos bastidores e entrega resultados na interface que você já usa.</p>
+    </div>
+    <div class="card">
+      <h3>ROI Mensurável desde o Piloto</h3>
+      <p>Definimos métricas financeiras claras antes de começar: redução percentual de glosas, número de autorizações automatizadas, horas de auditor economizadas. Você vê o retorno antes de escalar.</p>
+    </div>
+    <div class="card">
+      <h3>Conformidade ANS e LGPD</h3>
+      <p>Todos os fluxos respeitam as regulamentações ANS, incluindo prazos de pré-autorização e critérios do rol de procedimentos. Dados de saúde são tratados em conformidade com a LGPD.</p>
+    </div>
+  </div>
+</section>
+
+<div class="faq">
+  <h2>Perguntas Frequentes</h2>
+  <details>
+    <summary>Como a IA reduz glosas em planos de saúde?</summary>
+    <p>O agente de IA analisa cada guia de TISS antes do envio à operadora, comparando o código do procedimento com o diagnóstico, a CID e o histórico do paciente. Erros de codificação, incompatibilidades e itens sujeitos a glosa são identificados automaticamente, com sugestão de correção em tempo real. Operadoras que implantaram esse processo relatam redução de 40–65% no índice de glosas.</p>
+  </details>
+  <details>
+    <summary>É possível automatizar a pré-autorização de procedimentos?</summary>
+    <p>Sim. Agentes de IA analisam o pedido médico, o histórico do beneficiário, as diretrizes clínicas e as coberturas contratuais para autorizar automaticamente procedimentos de baixo risco (geralmente 60–70% das solicitações). Procedimentos complexos são encaminhados ao auditor médico com um resumo gerado pela IA, reduzindo o tempo de análise de dias para horas.</p>
+  </details>
+  <details>
+    <summary>Como a IA ajuda no controle da sinistralidade?</summary>
+    <p>Modelos preditivos analisam o histórico de utilização, perfil epidemiológico, dados de crônicas e padrões de consumo para identificar beneficiários com alta probabilidade de internação ou alto custo nos próximos 90–180 dias. Com essa previsão, a operadora pode acionar programas de saúde preventiva antes do sinistro acontecer.</p>
+  </details>
+  <details>
+    <summary>A integração funciona com os sistemas já usados pelas operadoras?</summary>
+    <p>Sim. Os agentes da Bronks integram com Tasy, MV, Totvs Saúde, Easy Health e outros sistemas via API, além de conectar diretamente com o padrão TISS da ANS. A integração não exige substituição dos sistemas existentes.</p>
+  </details>
+  <details>
+    <summary>Quanto tempo leva para implantar IA em uma operadora de saúde?</summary>
+    <p>O piloto inicial, cobrindo um ou dois processos prioritários, leva entre 6 e 12 semanas do kickoff até o go-live. A implantação completa leva de 4 a 9 meses dependendo do porte da operadora e do escopo contratado.</p>
+  </details>
+</div>
+
+<section>
+  <h2>Veja Também</h2>
+  <ul>
+    <li><a href="https://bronks.ia.br/ia-para-saude/">IA para Saúde — Visão Geral</a></li>
+    <li><a href="https://bronks.ia.br/ia-para-seguros/">IA para Seguradoras</a></li>
+    <li><a href="https://bronks.ia.br/ia-para-juridico/">IA para Jurídico (contratos, ANS)</a></li>
+    <li><a href="https://bronks.ia.br/rag-empresarial/">RAG Empresarial</a></li>
+    <li><a href="https://bronks.ia.br/agentes-de-ia/">O que são Agentes de IA</a></li>
+  </ul>
+</section>
+
+<div class="cta-band">
+  <h2>Quanto a sua operadora perde em glosas por mês?</h2>
+  <p>Faça o diagnóstico gratuito com a Bronks e descubra em até 48 horas quais processos têm maior potencial de automação e qual o retorno financeiro estimado para o seu caso.</p>
+  <a href="https://bronks.ia.br/contato/" class="btn-cta">Agendar diagnóstico gratuito</a>
+</div>
+
+<footer>
+  <p>© 2026 Bronks — Inteligência Artificial para Empresas | Rio de Janeiro, RJ | <a href="https://bronks.ia.br/">bronks.ia.br</a></p>
+</footer>
+
+</body>
+</html>
