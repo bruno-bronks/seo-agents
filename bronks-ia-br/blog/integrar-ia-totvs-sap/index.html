@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA no TOTVS e SAP: integração sem substituir o ERP | Bronks</title>
+  <meta name="description" content="Como conectar agentes de IA ao TOTVS e SAP via MCP sem reescrever código. Guia prático para CTOs e diretores de TI de empresas brasileiras. Cases reais.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bronks.ia.br/blog/integrar-ia-totvs-sap/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="IA no TOTVS e SAP: integração sem substituir o ERP | Bronks IA">
+  <meta property="og:description" content="Como conectar agentes de IA ao TOTVS e SAP via MCP sem reescrever código. Guia prático para CTOs de empresas brasileiras. Cases reais e passo a passo.">
+  <meta property="og:url" content="https://bronks.ia.br/blog/integrar-ia-totvs-sap/">
+  <meta property="og:site_name" content="Bronks IA">
+  <meta property="og:locale" content="pt_BR">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Como integrar IA ao TOTVS e SAP sem substituir o ERP — guia prático para empresas brasileiras",
+    "description": "Guia completo sobre como conectar agentes de IA ao TOTVS (Protheus, Datasul) e SAP (S/4HANA, Business One) via protocolo MCP sem reescrever código legado.",
+    "author": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bronks IA",
+      "url": "https://bronks.ia.br",
+      "logo": "https://bronks.ia.br/assets/logo.png"
+    },
+    "datePublished": "2026-11-27",
+    "dateModified": "2026-11-27",
+    "url": "https://bronks.ia.br/blog/integrar-ia-totvs-sap/"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "É possível integrar IA ao TOTVS sem substituir o sistema?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. O protocolo MCP (Model Context Protocol) permite que agentes de IA se conectem ao TOTVS Protheus e Datasul via APIs REST ou conectores nativos sem alterar o código-fonte do ERP. A IA acessa dados em tempo real, executa consultas e até lança movimentos contábeis ou pedidos de compra via integração bidirecional — tudo sem migração ou substituição do sistema."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva uma integração de IA com TOTVS ou SAP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Uma prova de conceito (POC) com um caso de uso simples — por exemplo, um agente que responde dúvidas sobre saldo de estoque consultando o TOTVS — pode ser entregue em 2 a 4 semanas. Uma implantação completa com múltiplos agentes e casos de uso (financeiro, compras, RH) leva de 2 a 4 meses. O prazo depende da maturidade das APIs do ERP e da complexidade dos processos a integrar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual a diferença de integrar IA com TOTVS vs SAP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TOTVS Protheus usa APIs REST nativas desde a versão 12. O SAP S/4HANA tem o SAP Integration Suite e as OData APIs — mais robustos, mas com licenciamento adicional. SAP Business One é mais acessível para médias empresas via SAP Service Layer. A arquitetura de integração é similar em ambos: um conector MCP expõe os dados do ERP para o agente de IA. A principal diferença está na documentação e maturidade das APIs de cada plataforma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais casos de uso de IA funcionam melhor com ERP legado?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os casos de maior ROI em ERPs legados são: (1) agente de RH para triagem de folha e responder dúvidas de colaboradores sobre contracheque; (2) agente de compras que monitora estoque mínimo e abre pedidos automaticamente; (3) agente financeiro que faz conciliação bancária e identifica divergências; (4) agente de atendimento ao cliente que consulta status de pedido em tempo real no ERP; (5) relatórios executivos gerados em linguagem natural consultando o banco de dados do ERP."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A integração de IA com ERP é segura? E a LGPD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, quando bem arquitetada. O agente de IA não armazena dados do ERP — ele consulta em tempo real via conector seguro (OAuth 2.0 ou chave de API com escopo mínimo). Para LGPD, recomendamos: (1) conector com acesso read-only para campos sensíveis de RH e clientes; (2) logs de todas as consultas do agente; (3) dados de PF processados em infraestrutura nacional (AWS São Paulo, Azure Brasil Sul). A Bronks entrega arquitetura de integração com documentação de conformidade LGPD incluída."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',Arial,sans-serif;color:#1a1a1a;background:#f9fafb}
+    header{background:#0a0f1e;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+    header .logo{color:#fff;font-size:1.3rem;font-weight:700;text-decoration:none;font-family:'Space Grotesk',sans-serif}
+    header .logo span{color:#6366f1}
+    header nav a{color:#cbd5e1;text-decoration:none;font-size:.9rem;margin-left:16px}
+    header nav a:hover{color:#fff}
+    .hero{background:linear-gradient(135deg,#0a0f1e 0%,#1e1b4b 60%,#312e81 100%);color:#fff;padding:56px 20px 48px;text-align:center}
+    .hero .tag{display:inline-block;background:rgba(99,102,241,.25);color:#a5b4fc;border:1px solid rgba(99,102,241,.4);border-radius:50px;padding:4px 14px;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:16px}
+    .hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,4vw,2.4rem);font-weight:700;line-height:1.2;margin-bottom:16px;max-width:800px;margin-left:auto;margin-right:auto}
+    .hero p{font-size:1.05rem;opacity:.85;max-width:680px;margin:0 auto 28px}
+    .hero .meta{color:#94a3b8;font-size:.85rem;margin-top:12px}
+    .btn-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:14px 28px;border-radius:10px;font-weight:700;font-size:1rem;text-decoration:none;margin-top:8px}
+    .container{max-width:800px;margin:0 auto;padding:48px 20px}
+    .article-body{background:#fff;border-radius:16px;padding:40px;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+    h2{font-family:'Space Grotesk',sans-serif;font-size:1.4rem;color:#0a0f1e;margin:36px 0 14px;border-left:4px solid #6366f1;padding-left:14px}
+    h3{font-family:'Space Grotesk',sans-serif;font-size:1.1rem;color:#312e81;margin:24px 0 10px}
+    p{line-height:1.8;margin-bottom:14px;color:#374151}
+    ul,ol{margin:14px 0 14px 24px;line-height:1.8}
+    li{margin-bottom:6px;color:#374151}
+    .highlight-box{background:#f0f0ff;border:1px solid #c7d2fe;border-radius:12px;padding:20px 24px;margin:28px 0}
+    .highlight-box p{margin-bottom:0;color:#312e81;font-weight:500}
+    .table-wrap{overflow-x:auto;margin:24px 0}
+    table{width:100%;border-collapse:collapse;font-size:.9rem}
+    th{background:#0a0f1e;color:#fff;padding:10px 14px;text-align:left;font-weight:600}
+    td{padding:10px 14px;border-bottom:1px solid #e5e7eb;color:#374151}
+    tr:nth-child(even) td{background:#f9fafb}
+    .cta-box{background:linear-gradient(135deg,#0a0f1e,#312e81);color:#fff;border-radius:16px;padding:36px;text-align:center;margin:40px 0}
+    .cta-box h2{color:#fff;border-left:none;padding-left:0;font-size:1.5rem}
+    .cta-box p{color:#cbd5e1;margin-bottom:20px}
+    .faq-section{margin-top:40px}
+    .faq-item{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px 24px;margin-bottom:12px}
+    .faq-item h3{color:#0a0f1e;margin:0 0 10px;font-size:1rem}
+    .faq-item p{margin-bottom:0;font-size:.93rem;color:#4b5563}
+    footer{background:#0a0f1e;color:#94a3b8;text-align:center;padding:28px 20px;font-size:.85rem;margin-top:40px}
+    footer a{color:#6366f1;text-decoration:none}
+    @media(max-width:600px){.article-body{padding:24px 16px}.hero{padding:40px 16px 32px}}
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://bronks.ia.br" class="logo">Bronks<span>.ia</span></a>
+  <nav>
+    <a href="https://bronks.ia.br/agentes-de-ia/">Agentes de IA</a>
+    <a href="https://bronks.ia.br/rag-empresarial/">RAG Empresarial</a>
+    <a href="https://bronks.ia.br/blog/">Blog</a>
+    <a href="https://bronks.ia.br/contato/">Contato</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="tag">Artigo Técnico</div>
+  <h1>Como integrar IA ao TOTVS e SAP sem substituir o ERP</h1>
+  <p>Guia prático para CTOs e diretores de TI de empresas brasileiras que querem usar IA sem abrir mão do sistema legado</p>
+  <div class="meta">Por Bronks IA &nbsp;·&nbsp; 27 de novembro de 2026 &nbsp;·&nbsp; 10 min de leitura</div>
+</div>
+
+<div class="container">
+  <div class="article-body">
+
+    <p>O dilema é real: sua empresa quer usar inteligência artificial para automatizar processos, mas tem um TOTVS Protheus com dez anos de customizações ou um SAP que custou milhões para implantar. Substituir? Impossível. Não usar IA? Concorrentes não vão esperar.</p>
+
+    <p>A boa notícia é que você não precisa escolher. O protocolo MCP (Model Context Protocol) e as APIs modernas de ERP tornaram possível conectar agentes de IA a qualquer sistema legado — lendo dados em tempo real, executando tarefas e respondendo perguntas de negócio — sem tocar uma linha do código-fonte do ERP.</p>
+
+    <p>Neste guia, vamos mostrar exatamente como isso funciona para TOTVS (Protheus e Datasul) e SAP (S/4HANA e Business One), com casos de uso reais e passo a passo de implementação.</p>
+
+    <h2>O problema: por que tantas empresas travam com IA</h2>
+
+    <p>Conversamos com diretores de TI de médias e grandes empresas todo mês. O padrão se repete: há vontade de implementar IA, budget aprovado, até um caso de uso claro. O travamento vem quando o time de TI faz a pergunta óbvia — "mas como a IA vai acessar os dados do ERP?"</p>
+
+    <p>As abordagens tradicionais não funcionam bem:</p>
+    <ul>
+      <li><strong>Exportar dados para um data warehouse</strong> — funciona para relatórios, mas não para IA que precisa agir em tempo real (gerar um pedido de compra, consultar saldo de estoque no momento da venda).</li>
+      <li><strong>Reescrever APIs customizadas</strong> — caro, lento e cria débito técnico. Para cada caso de uso novo, um novo desenvolvimento.</li>
+      <li><strong>Aguardar o módulo de IA nativo do fornecedor</strong> — TOTVS e SAP estão lançando recursos, mas a adoção real ainda é limitada e as melhores aplicações dependem de modelos de linguagem que eles não fornecem.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p>A solução moderna: um conector MCP que expõe os dados e ações do ERP como "ferramentas" para o agente de IA. O agente consulta, decide e age — sem scripts frágeis, sem exportações em lote.</p>
+    </div>
+
+    <h2>O que é o protocolo MCP e por que ele resolve este problema</h2>
+
+    <p>O MCP (Model Context Protocol), lançado pela Anthropic em 2024 e adotado amplamente em 2025–2026, é um padrão aberto que define como modelos de linguagem (LLMs) se comunicam com fontes de dados externas. Em termos práticos, pense nele como um "USB para IA": você cria um servidor MCP que expõe seu ERP, e qualquer agente compatível consegue "plugar" e usar esses dados.</p>
+
+    <p>A arquitetura é simples:</p>
+    <ol>
+      <li>Um servidor MCP roda na sua infraestrutura (nuvem ou on-premises).</li>
+      <li>Ele se conecta ao ERP via API REST, banco de dados ou conector nativo.</li>
+      <li>Ele expõe "ferramentas" para o agente: <code>consultar_estoque(produto_id)</code>, <code>listar_pedidos_em_aberto(cliente_id)</code>, <code>criar_pedido_compra(itens)</code>.</li>
+      <li>O agente de IA decide quando chamar cada ferramenta com base no objetivo do usuário.</li>
+    </ol>
+
+    <p>O resultado: o agente consegue responder "qual o prazo de entrega do pedido 45321?" consultando o TOTVS em tempo real — sem você precisar programar um único if/else.</p>
+
+    <h2>Integração com TOTVS Protheus: como funciona na prática</h2>
+
+    <p>O TOTVS Protheus (a versão mais usada nas médias empresas brasileiras) tem suporte a APIs REST nativas desde a versão 12.1.17. Isso significa que a maioria das instalações ativas já tem o endpoint disponível — você só precisa habilitá-lo e criar o conector MCP.</p>
+
+    <h3>Passo 1: habilitar o REST Server no Protheus</h3>
+    <p>No arquivo <code>appserver.ini</code>, adicione a seção <code>[HTTPV11]</code> com as configurações de porta e autenticação. O Protheus já vem com endpoints REST para os módulos principais: Estoque (SB1/SB2), Financeiro (SE1/SE2/SE5), Compras (SC7/SC1), RH (SRA). Não é necessário customização de código.</p>
+
+    <h3>Passo 2: criar o servidor MCP</h3>
+    <p>Um servidor MCP para TOTVS pode ser desenvolvido em Python (fastmcp) ou TypeScript (mcp-server) em 2 a 5 dias de trabalho. O servidor autentica no Protheus via Basic Auth ou OAuth 2.0, faz as chamadas REST e expõe as ferramentas padronizadas para o agente.</p>
+
+    <h3>Passo 3: configurar o agente de IA</h3>
+    <p>Com o servidor MCP rodando, você conecta o agente de IA (Claude, GPT-4o ou modelo open-source como LLaMA 3) ao servidor via configuração — sem código adicional. O agente aprende as ferramentas disponíveis no momento da inicialização.</p>
+
+    <h3>Casos de uso reais com TOTVS + IA</h3>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Caso de Uso</th><th>Módulo TOTVS</th><th>ROI Típico</th></tr>
+        <tr><td>Agente de Atendimento ao Cliente (status de pedido, NF, boleto)</td><td>Faturamento / Financeiro</td><td>-60% volume de chamados</td></tr>
+        <tr><td>Agente de Compras (alerta de estoque mínimo + abertura automática de SC)</td><td>Estoque / Compras</td><td>-30% ruptura de estoque</td></tr>
+        <tr><td>Agente de RH (triagem de folha, consulta de saldo de férias, resposta a colaboradores)</td><td>RH / DP</td><td>-50% consultas manuais ao DP</td></tr>
+        <tr><td>Conciliação bancária automática com identificação de divergências</td><td>Financeiro (SE5)</td><td>-80% tempo de conciliação</td></tr>
+        <tr><td>Relatório executivo em linguagem natural consultando ERP</td><td>Contábil / BI</td><td>-4h/semana por gestor</td></tr>
+      </table>
+    </div>
+
+    <h2>Integração com SAP: S/4HANA e Business One</h2>
+
+    <p>O SAP tem uma maturidade de APIs ainda maior que o TOTVS, mas com uma curva de configuração mais íngreme (e licenciamento adicional para algumas funcionalidades).</p>
+
+    <h3>SAP S/4HANA — OData APIs e SAP Integration Suite</h3>
+    <p>O S/4HANA expõe dados via OData V4 (REST). Para integração com IA, o caminho mais limpo é usar o SAP Integration Suite (antigo SAP Cloud Integration) como middleware, que já tem conectores para dezenas de sistemas. O agente de IA conversa com o Integration Suite, que por sua vez conversa com o S/4HANA. Latência de 50–300ms, adequada para interações em tempo real.</p>
+
+    <p>Para empresas sem Integration Suite, é possível criar um servidor MCP que chama as OData APIs diretamente usando a chave de API do SAP API Business Hub. Funciona, mas exige mais manutenção quando o SAP faz updates.</p>
+
+    <h3>SAP Business One — SAP Service Layer</h3>
+    <p>Para médias empresas com SAP Business One, o SAP Service Layer é a API REST nativa — disponível a partir da versão 9.3. É mais simples que o S/4HANA e tem documentação mais acessível. Um conector MCP para Business One pode ser desenvolvido em 3–7 dias e cobre os principais módulos: parceiros de negócio, notas fiscais, estoque e contas a pagar.</p>
+
+    <div class="highlight-box">
+      <p>Dica prática: antes de desenvolver qualquer conector, valide se as APIs do seu ERP estão habilitadas e acessíveis. 40% dos projetos que chegam até nós travam nesta etapa — não por limitação técnica, mas por burocracia interna de TI para liberar credenciais de API.</p>
+    </div>
+
+    <h2>Quanto custa e quanto tempo leva</h2>
+
+    <p>Sem rodeios, os números reais de projetos que a Bronks conduziu:</p>
+
+    <div class="table-wrap">
+      <table>
+        <tr><th>Escopo</th><th>Prazo</th><th>Investimento</th></tr>
+        <tr><td>POC com 1 caso de uso (ex: agente de atendimento consultando pedidos no TOTVS)</td><td>2–4 semanas</td><td>R$ 8.000 – R$ 18.000</td></tr>
+        <tr><td>Implantação completa — 3 agentes, 2 módulos ERP, integração WhatsApp</td><td>6–10 semanas</td><td>R$ 35.000 – R$ 80.000</td></tr>
+        <tr><td>Projeto enterprise — ERP + CRM + BI, múltiplos departamentos</td><td>3–6 meses</td><td>R$ 100.000 – R$ 300.000</td></tr>
+      </table>
+    </div>
+
+    <p>Esses valores incluem: desenvolvimento do conector MCP, configuração dos agentes, treinamento do time de operações e 90 dias de suporte pós-implantação. <strong>Não</strong> incluem licença do modelo de IA (Claude, GPT-4o) — que gira em torno de R$ 500 a R$ 3.000/mês dependendo do volume.</p>
+
+    <h2>O passo a passo de uma implantação típica</h2>
+
+    <p>Este é o processo que a Bronks segue com clientes:</p>
+    <ol>
+      <li><strong>Diagnóstico gratuito (1–2 dias)</strong> — mapeamos os módulos do ERP em uso, verificamos a maturidade das APIs, identificamos os 3 casos de uso de maior ROI.</li>
+      <li><strong>Desenho de arquitetura (1 semana)</strong> — definimos a stack de agentes, o escopo do conector MCP, as regras de segurança e o plano de rollout.</li>
+      <li><strong>Desenvolvimento do conector MCP (2–4 semanas)</strong> — desenvolvemos e testamos o servidor MCP com as APIs do ERP, cobrindo os módulos mapeados.</li>
+      <li><strong>Configuração e treino dos agentes (2–3 semanas)</strong> — configuramos os agentes de IA, escrevemos os system prompts, integramos com WhatsApp ou painel web interno.</li>
+      <li><strong>Piloto controlado (2 semanas)</strong> — implantação com um grupo reduzido de usuários, coleta de feedbacks, ajustes finos.</li>
+      <li><strong>Rollout completo + treinamento do time (1 semana)</strong> — implantação para todos os usuários, treinamento do time de TI para manutenção.</li>
+    </ol>
+
+    <h2>Erros mais comuns — e como evitá-los</h2>
+
+    <p>Depois de dezenas de projetos, esses são os erros que mais vemos:</p>
+
+    <ul>
+      <li><strong>Tentar resolver tudo de uma vez</strong> — comece com um único caso de uso bem delimitado. Um agente de atendimento que responde status de pedido entrega valor em 3 semanas. Uma plataforma de IA que integra 12 módulos leva 6 meses e costuma travar.</li>
+      <li><strong>Ignorar a qualidade dos dados no ERP</strong> — IA não magicamente limpa dados sujos. Se o cadastro de clientes está inconsistente no TOTVS, o agente vai perpetuar o erro. Planejar limpeza de dados como pré-requisito.</li>
+      <li><strong>Dar acesso irrestrito ao ERP</strong> — o conector MCP deve ter escopo mínimo. Um agente de atendimento precisa de acesso read-only aos pedidos e NFs — não precisa criar registros ou acessar folha de pagamento.</li>
+      <li><strong>Não envolver o time de TI interno</strong> — o time que mantém o ERP precisa entender a integração para suportá-la. Faça o onboarding técnico desde o início.</li>
+    </ul>
+
+    <div class="cta-box">
+      <h2>Pronto para integrar IA ao seu TOTVS ou SAP?</h2>
+      <p>A Bronks faz um diagnóstico gratuito do seu ERP: mapeamos as APIs disponíveis, identificamos os 3 melhores casos de uso e estimamos o investimento necessário. Sem compromisso.</p>
+      <a href="https://bronks.ia.br/contato/" class="btn-cta">Agendar diagnóstico gratuito</a>
+    </div>
+
+    <h2 class="faq-section">Perguntas frequentes</h2>
+
+    <div class="faq-item">
+      <h3>É possível integrar IA ao TOTVS sem substituir o sistema?</h3>
+      <p>Sim. O protocolo MCP permite que agentes de IA se conectem ao TOTVS Protheus e Datasul via APIs REST ou conectores nativos sem alterar o código-fonte do ERP. A IA acessa dados em tempo real, executa consultas e até lança movimentos contábeis ou pedidos de compra via integração bidirecional — tudo sem migração ou substituição do sistema.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Quanto tempo leva uma integração de IA com TOTVS ou SAP?</h3>
+      <p>Uma prova de conceito com um caso de uso simples pode ser entregue em 2 a 4 semanas. Uma implantação completa com múltiplos agentes e casos de uso (financeiro, compras, RH) leva de 2 a 4 meses. O prazo depende da maturidade das APIs do ERP e da complexidade dos processos a integrar.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Qual a diferença de integrar IA com TOTVS vs SAP?</h3>
+      <p>TOTVS Protheus usa APIs REST nativas desde a versão 12. O SAP S/4HANA tem o SAP Integration Suite e as OData APIs — mais robustos, mas com licenciamento adicional. SAP Business One é mais acessível para médias empresas via SAP Service Layer. A arquitetura de integração é similar em ambos: um conector MCP expõe os dados do ERP para o agente de IA.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Quais casos de uso de IA funcionam melhor com ERP legado?</h3>
+      <p>Os casos de maior ROI são: agente de atendimento ao cliente (consulta status de pedido no ERP), agente de compras (monitora estoque mínimo e abre pedidos automaticamente), agente financeiro (conciliação bancária e identificação de divergências), agente de RH (responde dúvidas sobre contracheque e férias) e relatórios executivos gerados em linguagem natural.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>A integração de IA com ERP é segura? E a LGPD?</h3>
+      <p>Sim, quando bem arquitetada. O agente de IA não armazena dados do ERP — ele consulta em tempo real via conector seguro (OAuth 2.0 ou chave de API com escopo mínimo). Para LGPD, recomendamos conector com acesso read-only para campos sensíveis, logs de todas as consultas do agente e dados de PF processados em infraestrutura nacional. A Bronks entrega arquitetura de integração com documentação de conformidade LGPD incluída.</p>
+    </div>
+
+  </div>
+
+  <div style="margin-top:32px;padding:0 8px">
+    <p style="font-size:.85rem;color:#6b7280">Leia também: <a href="https://bronks.ia.br/rag-empresarial/" style="color:#6366f1">RAG Empresarial</a> · <a href="https://bronks.ia.br/agentes-de-ia/" style="color:#6366f1">Agentes de IA para Empresas</a> · <a href="https://bronks.ia.br/blog/mcp-model-context-protocol-empresas/" style="color:#6366f1">O que é MCP para empresas</a> · <a href="https://bronks.ia.br/blog/ia-agentica-vs-chatgpt/" style="color:#6366f1">IA Agêntica vs ChatGPT</a></p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 <a href="https://bronks.ia.br">Bronks IA</a> — Agentes de IA, Automação Inteligente e RAG para Empresas</p>
+</footer>
+
+</body>
+</html>
