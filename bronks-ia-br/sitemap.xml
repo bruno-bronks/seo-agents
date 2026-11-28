@@ -649,4 +649,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Adicionado em 2026-11-28 — Ciclo #53 -->
+  <url>
+    <loc>https://bronks.ia.br/blog/llms-para-empresas-claude-vs-gpt-gemini/</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
